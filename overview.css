@@ -1,22 +1,20 @@
 .overview-container-large {
     display: inline-block;
-    width: 100%;
+    width: 98%;
     margin: 0px;
     overflow: hidden;
 }
 
 .overview-container-small {
     display: inline-block;
-    margin: 0px 1%;
+    margin: 0px;
     width: 98%;
-    border: darkgrey 1px solid;
-    border-radius: 10px;
-    box-shadow: 1px 1px 5px grey;
-
+    overflow: hidden;
 }
+
 .overview-invoice-chart-wrapper {
     background-color: white;
-    margin: 0px auto;
+    margin: 1%;
     width: 98%;
     height: 200px;
     border: darkgrey 1px solid;
@@ -83,7 +81,7 @@
 .overview-cashFlow-chart-wrapper {
     display: inline-block;
     background-color: white;
-    margin: 20px 1%;
+    margin: 1%;
     width: 98%;
     height: 350px;
     border: darkgrey 1px solid;
@@ -219,6 +217,16 @@
     font-size: .6rem;
 }
 
+.overview-payments-chart-wrapper {
+    background-color: white;
+    margin: 0px auto;
+    width: 98%;
+    height: 570px;
+    border: darkgrey 1px solid;
+    border-radius: 10px;
+    box-shadow: 1px 1px 5px grey;
+}
+
 table {
     width: 92%;
     margin: 20px auto;
@@ -227,6 +235,7 @@ table {
 
 td {
     display: inline-block;
+    overflow: hidden;
 }
 
 td:nth-child(1) {
@@ -237,6 +246,7 @@ td:nth-child(2) {
     font-size: 1rem;
     color: darkblue;
     width: 50%;
+    height: 20px;
     font-weight: bold;
 }
 
@@ -316,7 +326,7 @@ td:nth-child(4) {
 
     .overview-container-large {
         display: inline-block;
-        margin: 20px 20px 20px 4%;
+        margin: 20px auto 20px;
         min-width: 750px;
         width: 80%;
         height: 600px;
@@ -325,13 +335,12 @@ td:nth-child(4) {
 
     .overview-container-small {
         display: inline-block;
-        margin: 20px 20px 50px 10%;
+        margin: 0px auto 20px;
         min-width: 750px;
         width: 78%;
-        height: 570px;
+        height: 600px;
         overflow: hidden;
-        border: none;
-        box-shadow: none;
+        
     }
 
 }
@@ -340,7 +349,7 @@ td:nth-child(4) {
     
     .overview-container-large,
     .overview-container-small {
-        margin-left: 10%;
+        margin: 20px auto
     }
 
     
