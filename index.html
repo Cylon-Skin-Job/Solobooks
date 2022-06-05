@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+
+    <meta name="theme-color" content="#2a2438" media="(prefers-color-scheme: light)">
+    <meta name="theme-color" content="#2a2438" media="(prefers-color-scheme: dark)">
+    <link rel="stylesheet" href="./overview.css">
+    <link rel="stylesheet" href="./main.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+
+<body>
+
+
+    <nav>
+        <div class="site-nav">
+
+            <div class="site-nav-top">
+                <h1 class="solo">SoloBooks</h1>
+                <span class="site-header-company-name">RC Exhaust</span>
+            </div>
+
+            <ul class="navigation">
+                <li class="active">
+                    <a href="/index.html">
+                        <span class="material-icons" alt=" ">analytics
+                        </span>
+                        Overview
+                    </a>
+                </li>
+                <li>
+                    <a href="/invoices.html">
+                        <span class="material-icons" alt=" ">description</span>
+                        Invoices
+                    </a>
+                </li>
+                <li>
+                    <a href="/expenses.html">
+                        <span class="material-icons" alt=" ">receipt_long</span>
+                        Expenses
+                    </a>
+                </li>
+                <li>
+                    <a href="/customers.html">
+                        <span class="material-icons" alt=" ">people</span>
+                        Customers
+                    </a>
+                </li>
+                <li>
+                    <a href="/settings.html">
+                        <span class="material-icons" alt=" ">settings</span>
+                        Settings
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <header>
+        <h2>Overview</h2>
+    </header>
+    <div class="main">
+        <section>
+
+
+            <div class="overview-container-large">
+                <div class="overview-invoice-chart-wrapper">
+
+                    <h3 class="overview-chart-header">Invoices</h3>
+                    <p class="overview-chart-p">Year-to-date</p>
+
+
+                    <div class="overview-chart-invoice-bar-wrapper">
+                        <span class="overview-chart-invoice-PAID-span"><strong>$11,970.00</strong></span>
+                        <span class="overview-chart-invoice-UNPAID-span"><strong>$2,190.00</strong></span>
+                        <br>
+                        <span class="overview-chart-invoice-PAID-span">PAID</span>
+                        <span class="overview-chart-invoice-UNPAID-span">UNPAID</span>
+                        <div class="invoice-bar-paid"></div>
+                        <div class="invoice-bar-unpaid"></div>
+
+                    </div>
+
+                </div>
+
+                <div class="overview-cashFlow-chart-wrapper">
+
+                    <h3 class="overview-chart-header">Cash Flow</h3>
+                    <p class="overview-chart-p">Year-to-date</p>
+                    <br>
+
+                    <div class="overview-profit-loss-chart">
+                        <div class="overview-bar-payments"></div>
+                        <div class="overview-bar-expenses"></div>
+                        <div class="overview-bar-profit"></div>
+                    </div>
+                    <span class="overview-profit-loss-left-bold">$11,970.00</span>
+                    <span class="overview-profit-loss-center-bold">$2,399.42</span>
+                    <span class="overview-profit-loss-right-bold">$9,570.58</span>
+                    <br>
+                    <span class="overview-profit-loss-left-small">Payments</span>
+                    <span class="overview-profit-loss-center-small">Expenses</span>
+                    <span class="overview-profit-loss-right-small">Remaining</span>
+                    <br>
+                    <span class="overview-profit-loss-left-small">Recieved</span>
+                    <span class="overview-profit-loss-center-small">Paid</span>
+                    <span class="overview-profit-loss-right-small">Profit</span>
+
+                </div>
+
+
+                <div class="overview-cashFlow-chart-wrapper">
+
+                    <h4 class="overview-chart-header">Expenses</h4>
+                    <p class="overview-chart-p">Year-to-date</p>
+                    <br>
+                    <br>
+                    <ul class="overview-expense-list">
+                        <li><span class="overview-expense-list-bold">$219.03</span>
+                            <br>
+                            <span class="overview-expense-list-small">Advertising</span>
+                        </li>
+
+                        <li><span class="overview-expense-list-bold">$52.44</span>
+                            <br>
+                            <span class="overview-expense-list-small">Equipment Repairs</span>
+                        </li>
+
+                        <li><span class="overview-expense-list-bold">$66.52</span>
+                            <br>
+                            <span class="overview-expense-list-small">Fuel</span>
+                        </li>
+
+                        <li><span class="overview-expense-list-bold">$204.76</span>
+                            <br>
+                            <span class="overview-expense-list-small">Insurance</span>
+                        </li>
+
+                        <li><span class="overview-expense-list-bold">$940.23</span>
+                            <br>
+                            <span class="overview-expense-list-small">Job Supplies</span>
+                        </li>
+
+                        <li><span class="overview-expense-list-bold">$320.28</span>
+                            <br>
+                            <span class="overview-expense-list-small">Office Supplies</span>
+                        </li>
+                        <li><span class="overview-expense-list-bold">$373.01</span>
+                            <br>
+                            <span class="overview-expense-list-small">Travel</span>
+                        </li>
+
+                        <li><span class="overview-expense-list-bold">$427.04</span>
+                            <br>
+                            <span class="overview-expense-list-small">Utilities & Phone</span>
+                        </li>
+
+
+                    </ul>
+                </div>
+
+            </div>
+
+            <div class="overview-container-small">
+
+                <h4 class="overview-chart-header">Recent Payments</h4>
+                <br>
+
+
+                <table>
+
+                    <tbody>
+
+                        <tr>
+                            <td>08/12/2021</td>
+                            <td>Bob's Burgers</td>
+                            <td>$550</td>
+                            <td>08/12/2021</td>
+                        </tr>
+
+                        <tr>
+                            <td>08/11/2021</td>
+                            <td>Paunch Burger</td>
+                            <td>$625</td>
+                            <td>08/11/2021</td>
+                        </tr>
+
+                        <tr>
+                            <td>08/10/2021</td>
+                            <td>Arnold's Drive In</td>
+                            <td>$485</td>
+                            <td>08/10/2021</td>
+                        </tr>
+
+                        <tr>
+                            <td>08/05/2021</td>
+                            <td>Central Perk</td>
+                            <td>$385</td>
+                            <td>08/05/2021</td>
+                        </tr>
+
+                        <tr>
+                            <td>08/04/2021</td>
+                            <td>Cafe Nervosa</td>
+                            <td>$690</td>
+                            <td>08/04/2021</td>
+                        </tr>
+
+                        <tr>
+                            <td>08/03/2021</td>
+                            <td>The Indigo Tea Shop</td>
+                            <td>$565</td>
+                            <td>08/03/2021</td>
+                        </tr>
+
+                        <tr>
+                            <td>08/01/2021</td>
+                            <td>Cheer's</td>
+                            <td>$450</td>
+                            <td>08/01/2021</td>
+                        </tr>
+
+                        <tr>
+                            <td>07/28/2021</td>
+                            <td>Joe's Bar</td>
+                            <td>$485</td>
+                            <td>07/28/2021</td>
+                        </tr>
+
+                        <tr>
+                            <td>07/27/2021</td>
+                            <td>Three Broomsticks</td>
+                            <td>$645</td>
+                            <td>07/27/2021</td>
+                        </tr>
+                    </tbody>
+
+                </table>
+
+                <span class="overview-table-more"><a href="">See more...</a></span>
+            </div>
+
+
+
+
+
+
+
+
+        </section>
+
+    </div>
+</body>
