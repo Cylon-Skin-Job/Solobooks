@@ -66,8 +66,9 @@
 
         
         <div class="invoices-container-unpaid">
-            <button class="invoice-button-unpaid">Unpaid</button>
-
+           <button class="invoice-button-unpaid-top"><a href="./invoices.html">Unpaid</a></button>
+           <button class="invoice-button-paid-top"><a href="#invoices-paid">Paid</a></button>
+            
         <table class="invoices-table">
 
             <thead class="invoices-thead">
@@ -78,14 +79,11 @@
                     <th>Customer</th>
                     <th>Amount</th>
                     <th>Status</th>
-                    <th>Action</th>
                     <th>$2,190.00</th>
                 </tr>
             </thead>
 
             <tbody class="table-invoices">
-
-                <>
                     <td>
                         <a href="">
                             9/28/2022
@@ -109,6 +107,11 @@
                         $690
                         </a>
                     </td>
+                     <td>
+                         <a href="">
+                             Unpaid
+                         </a>
+                     </td>
                 </tr>
 
                 <tr>
@@ -167,8 +170,9 @@
 
         </div>
 
-        <div class="invoices-container-paid">
-            <button class="invoice-button-paid">Paid</button>
+        <div class="invoices-container-paid" id="invoices-paid">
+            <button class="invoice-button-unpaid-bottom"><a href="./invoices.html">Unpaid</a></button>
+            <button class="invoice-button-paid-bottom"><a href="#invoices-paid">Paid</a></button>
 
         <table id="table">
 
