@@ -85,7 +85,7 @@
 }
 
 .overview-cashFlow-chart-wrapper {
-    box-sizing:border-box;
+    box-sizing: border-box;
     display: inline-block;
     background-color: white;
     margin: 1% 1% 0px;
@@ -156,8 +156,8 @@
     float: left;
     width: 20%;
     text-align: center;
-    margin: 0 0 0 12.2%;
-    font-size: .6rem;
+    margin: 0 0 0 12.5%;
+    font-size: .7rem;
     font-weight: bold;
 }
 
@@ -166,7 +166,7 @@
     text-align: center;
     width: 20%;
     margin: 0 0 0 7.8%;
-    font-size: .6rem;
+    font-size: .7rem;
     font-weight: bold;
 }
 
@@ -174,8 +174,8 @@
     float: right;
     text-align: center;
     width: 20%;
-    margin: 0 13.9% 0 0;
-    font-size: .6rem;
+    margin: 0 14% 0 0;
+    font-size: .7rem;
     font-weight: bold;
 }
 
@@ -183,8 +183,8 @@
     float: left;
     width: 20%;
     text-align: center;
-    margin: 0 0 0 12.2%;
-    font-size: .6rem;
+    margin: 0 0 0 12.5%;
+    font-size: .7rem;
 }
 
 .overview-profit-loss-center-small {
@@ -192,15 +192,15 @@
     text-align: center;
     width: 20%;
     margin: 0 0 0 7.8%;
-    font-size: .6rem;
+    font-size: .7rem;
 }
 
 .overview-profit-loss-right-small {
     float: right;
     text-align: center;
     width: 20%;
-    margin: 0 13.9% 0 0;
-    font-size: .6rem;
+    margin: 0 14% 0 0;
+    font-size: .7rem;
 }
 
 .overview-expense-list {
@@ -292,7 +292,10 @@ td:nth-child(4) {
     }
 
     .overview-cashFlow-chart-wrapper {
-        width: 47.73%;
+        width: 47.6%;
+        margin: 1%;
+    }
+    .overview-payments-chart-wrapper {
         margin: 1%;
     }
 
@@ -333,50 +336,14 @@ td:nth-child(4) {
 
 @media screen and (min-width: 1025px) {
 
-    .overview-container-large {
-        display: inline-block;
-        margin: 20px auto 20px;
-        min-width: 750px;
-        width: 80%;
-        height: 600px;
-        overflow: hidden;
-    }
-
-    .overview-container-small {
-        display: inline-block;
-        margin: 0px auto 20px;
-        min-width: 750px;
-        width: 78%;
-        height: 600px;
-        overflow: hidden;
-        
-    }
-    .overview-payments-chart-wrapper {
-        height: 570px;
-    }
-
-}
-
-@media screen and (min-width: 1280px) {
-    
     .overview-container-large,
     .overview-container-small {
-        width: 90%;
-        margin: 1vw auto 0px;
+        width: 70%;
+        margin: 0px auto 0px 5%;
     }
 
-    
 }
 
-@media screen and (min-width: 1600px) {
-    .overview-container-large {
-        max-width: 800px;
-        margin-left: 1%;
-    }
 
-    .overview-container-small {
-        margin-left: 1%;
-        min-width: 450px;
-        width: 35%;
-    }
-}
+
+
