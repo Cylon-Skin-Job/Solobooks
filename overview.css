@@ -1,18 +1,24 @@
+
 .overview-container-large {
+    box-sizing:border-box;
     display: inline-block;
     width: 98%;
     margin: 0px;
     overflow: hidden;
+    padding: 0px;
 }
 
 .overview-container-small {
+    box-sizing:border-box;
     display: inline-block;
     margin: 0px;
     width: 98%;
     overflow: hidden;
+    padding: 0px;
 }
 
 .overview-invoice-chart-wrapper {
+    box-sizing:border-box;
     background-color: white;
     margin: 1%;
     width: 98%;
@@ -79,9 +85,10 @@
 }
 
 .overview-cashFlow-chart-wrapper {
+    box-sizing:border-box;
     display: inline-block;
     background-color: white;
-    margin: 1%;
+    margin: auto;
     width: 98%;
     height: 350px;
     border: darkgrey 1px solid;
@@ -218,8 +225,9 @@
 }
 
 .overview-payments-chart-wrapper {
+    box-sizing:border-box;
     background-color: white;
-    margin: 0px auto;
+    margin: auto;
     width: 98%;
     height: 570px;
     border: darkgrey 1px solid;
@@ -284,7 +292,8 @@ td:nth-child(4) {
     }
 
     .overview-cashFlow-chart-wrapper {
-        width: 47.5%;
+        width: 47.73%;
+        margin: 1%;
     }
 
     td {
@@ -349,7 +358,8 @@ td:nth-child(4) {
     
     .overview-container-large,
     .overview-container-small {
-        margin: 20px auto
+        width: 90%;
+        margin: 1vw auto 0px;
     }
 
     
