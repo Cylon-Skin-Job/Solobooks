@@ -244,6 +244,9 @@ table {
 td {
     display: inline-block;
     overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    height: 23px;
 }
 
 td:nth-child(1) {
@@ -254,7 +257,6 @@ td:nth-child(2) {
     font-size: 1rem;
     color: darkblue;
     width: 50%;
-    height: 20px;
     font-weight: bold;
 }
 
