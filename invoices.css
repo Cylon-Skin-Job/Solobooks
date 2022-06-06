@@ -149,12 +149,7 @@ td:nth-child(6) {
     padding-right: 10px;
 }
 
-@media {
-    .invoices-container-paid,
-    .invoices-container-unpaid {
-        padding-left: 0px;
-    }
-}
+
 
 
 
