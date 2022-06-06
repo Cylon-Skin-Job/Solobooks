@@ -12,12 +12,12 @@
     position: fixed;
     top: 61.5px;
     left: 240px;
-    height: 52px;
+    height: 51.5px;
     width: 150px;
     background: white;
     z-index: 12;
     border: solid 2px darkgrey;
-    border-bottom: none;
+    border-bottom: white solid 4px;
     border-radius: 10px 10px 0px 0px;
 }
 
@@ -63,7 +63,7 @@
     position: fixed;
     top: 62.5px;
     left: 240px;
-    height: 47px;
+    height: 47.5px;
     width: 150px;
     background: #dbd8e3;
     z-index: 120;
@@ -81,7 +81,7 @@
     background: white;
     z-index: 11;
     border: solid 2px darkgrey;
-    border-bottom: none;
+    border-bottom: white solid 4px;
     border-radius: 10px 10px 0px 0px;
 }
 
