@@ -9,7 +9,6 @@
 
     <link rel="stylesheet" href="./main.css">
     <link rel="stylesheet" href="./invoices.css">
-    <link rel="stylesheet" href="./overview.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
 </head>
@@ -59,11 +58,15 @@
             </ul>
         </div>
     </nav>
-    <header>
+    <header class="invoices-header">
         <h2>Invoices</h2>
     </header>
 
-    <div class="main">
+    <div class="invoices-main">
+
+        
+        <div class="invoices-container-unpaid">
+            <button class="invoice-button-unpaid">Unpaid</button>
 
         <table class="invoices-table">
 
@@ -82,21 +85,30 @@
 
             <tbody class="table-invoices">
 
-                <tr>
-                    <td style="text-align: left"><a
-                            href="https://rc-resume.neocities.org/fakeData/invoices/cafeNervosaInvoice.html">Cafe
-                            Nervosa</a></td>
-                    <td style="text-align: right"><a
-                            href="https://rc-resume.neocities.org/fakeData/invoices/cafeNervosaInvoice.html">$690</a>
+                <>
+                    <td>
+                        <a href="">
+                            9/28/2022
+                        </a>
                     </td>
-                </tr>
-                <tr>
-                    <td style="text-align: left"><a
-                            href="https://rc-resume.neocities.org/fakeData/invoices/cafeNervosaInvoice.html">9/28/2022</a>
+                    <td>
+                        <a href="">
+                        5224
+                        </a>
                     </td>
-                    <td style="text-align: right"><a
-                            href="https://rc-resume.neocities.org/fakeData/invoices/cafeNervosaInvoice.html"><span
-                                class="redbox">UNPAID</span> No. 5224</a></td>
+                    <td>
+                    UNPAID    
+                    </td>
+                    <td>
+                        <a href="">
+                            Cafe Nervosa
+                        </a>
+                    </td>
+                    <td>
+                        <a href="">
+                        $690
+                        </a>
+                    </td>
                 </tr>
 
                 <tr>
@@ -152,6 +164,11 @@
 
             </tbody>
         </table>
+
+        </div>
+
+        <div class="invoices-container-paid">
+            <button class="invoice-button-paid">Paid</button>
 
         <table id="table">
 
@@ -450,6 +467,8 @@
 
 
         </table>
+
+        </div>
 
     </div>
 

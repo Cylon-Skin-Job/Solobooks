@@ -197,6 +197,7 @@ h2 {
         display: block;
         padding: 0px;
         margin: 0px;
+        border-bottom: none;
     }
 
     .navigation li {
@@ -265,3 +266,17 @@ h2 {
     }
 
 }
+
+
+@media screen and (min-width: 1025px) {
+
+    .overview-container-large,
+    .overview-container-small {
+        width: 65%;
+        min-width: 750px;
+        max-width: 1000px;
+        margin: 0px auto 0px 5%;
+    }
+
+}
+
