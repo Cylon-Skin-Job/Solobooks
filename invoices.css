@@ -23,7 +23,7 @@
 
 .invoice-button-paid-top {
     position: fixed;
-    top: 63px;
+    top: 62.5px;
     left: 390px;
     height: 47px;
     width: 150px;
@@ -60,7 +60,7 @@
 
 .invoice-button-unpaid-bottom {
     position: fixed;
-    top: 63px;
+    top: 62.5px;
     left: 240px;
     height: 47px;
     width: 150px;
