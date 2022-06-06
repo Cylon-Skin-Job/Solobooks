@@ -229,7 +229,7 @@
     background-color: white;
     margin: 0px auto;
     width: 98%;
-    height: 570px;
+    height: auto;
     border: darkgrey 1px solid;
     border-radius: 10px;
     box-shadow: 1px 1px 5px grey;
@@ -350,6 +350,9 @@ td:nth-child(4) {
         height: 600px;
         overflow: hidden;
         
+    }
+    .overview-payments-chart-wrapper {
+        height: 570px;
     }
 
 }
