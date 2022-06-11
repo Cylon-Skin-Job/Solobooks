@@ -17,7 +17,7 @@ a {
     background-color: white;
     width: 100%;
     margin: 0px;
-    padding: 80px 0px;
+    padding: 45px 0px;
 }
 
 .invoices-button-unpaid-top,
@@ -60,54 +60,52 @@ hr {
 
 .invoices-table-row {
     width: 100%;
-    margin: 5px auto;
     display: flex;
     flex-flow: row wrap;
     justify-content: space-between;
     padding: 0px;
-    border: solid 1px darkgrey;
-    border-radius: 10px;
-    box-shadow: 1px 1px 1px grey;
+    padding-bottom: 10px;
+    border-bottom: solid 1px darkgrey;
 }
 
 .invoices-table-row span {
     display: inline-block;
     height: 30px;
-    padding: 0px 10px 0px;
+    padding: 10px;
 }
 
 .span-1 {
-    order: 4;
-    width: 50%;
-    font-size: .8rem;
+    order: 3;
+    width: 25%;
+    font-size: .9rem;
 }
 
 .span-2 {
-    order: 1;
-    width: 100%;
+    order: 4;
+    width: 50%;
     text-align: center;
     font-size: .9rem;
 
 }
 
 .span-3 {
-    order: 2;
+    order: 1;
     width: 80%;
     font-weight: bold;
-    font-size: 1.1rem;
+    font-size: 1rem;
 }
 
 .span-4 {
-    order: 3;
+    order: 2;
     width: 20%;
     font-weight: bold;
     text-align: right;
-    font-size: 1.1rem;
+    font-size: 1rem;
 }
 
 .span-5 {
     order: 5;
-    width: 50%;
+    width: 25%;
     font-size: .9rem;
     text-align: right;
 }
@@ -118,6 +116,17 @@ hr {
 
 .invoices-container-paid .span-5 {
     color: darkgreen;
+}
+
+.table-row-link {
+    color: #565656;
+}
+
+.table-row-link div:hover {
+    color: black;
+    background-color: #f0c993;
+    border: solid 2px #f0b36a;
+    border-radius: 5px;
 }
 
 .invoices-footer-unpaid {
@@ -154,7 +163,7 @@ hr {
 @media screen and (max-width: 767px) {
 
     .span-2::before {
-        content: "Invoice No."
+        content: "No."
     }
 }
 
@@ -231,16 +240,6 @@ hr {
         border-radius: 0px;
         box-shadow: none;
         border-bottom: solid 1px darkgrey;
-    }
-    .table-row-link {
-        color: #565656;
-    }
-
-    .table-row-link div:hover {
-        color: black;
-        background-color: #f0c993;
-        border: solid 2px #f0b36a;
-        border-radius: 5px;
     }
 
 }
@@ -482,17 +481,6 @@ hr {
         height: 30px;
         padding: 10px;
         width: 8%;
-    }
-
-    .table-row-link {
-        color: #565656;
-    }
-
-    .table-row-link div:hover {
-        color: black;
-        background-color: #f0c993;
-        border: solid 2px #f0b36a;
-        border-radius: 5px;
     }
 
     .invoices-table-row span:nth-child(3) {
