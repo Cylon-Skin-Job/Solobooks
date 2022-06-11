@@ -1,3 +1,11 @@
+* {
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
 
 .invoices-header {
     border: none;
@@ -8,30 +16,60 @@
     background-color: #dbd8e3;
 }
 
+
 .invoice-button-unpaid-top {
     position: fixed;
     top: 61.5px;
     left: 240px;
-    height: 51px;
-    width: 150px;
-    background: white;
+    background: transparent;
     z-index: 12;
-    border: solid 2px darkgrey;
-    border-bottom: white solid 4px;
-    border-radius: 10px 10px 0px 0px;
+    border: none;
 }
 
 .invoice-button-paid-top {
     position: fixed;
+    padding: 0px;
     top: 62.5px;
-    left: 390px;
-    height: 47px;
-    width: 150px;
+    left: 410px;
     background: #dbd8e3;
     z-index: 12;
-    border: solid 2px darkgrey;
+    border: none;
+}
+
+
+.invoice-button-unpaid-top a {
+    display: block;
+    height: 49.5px;
+    width: 150px;
+    padding: 20px;
+    color: #2a2438;
+    background-color: white;
+    font-weight: bold;
+    font-size: 1rem;
+    border: solid 2px #2a2438;
+    border-radius: 10px 10px 0px 0px;
+    border-bottom: solid 3px white;
+
+}
+
+.invoice-button-paid-top a {
+    display: block;
+    height: 47px;
+    width: 150px;
+    padding: 20px;
+    color: grey;
+    font-size: 1rem;
+    border: solid 1px grey;
     border-bottom: none;
     border-radius: 10px 10px 0px 0px;
+}
+
+.invoice-button-paid-top a:hover {
+    color: #2a2438;
+    font-weight: bold;
+    background: white;
+    border: solid 2px #2a2438;
+    height: 49px;
 }
 
 .invoices-container-unpaid {
@@ -43,7 +81,8 @@
     padding-left: 200px;
     background: white;
     height: calc(100vh - 100px);
-    border-top: darkgrey 2px solid;
+    border-top: #2a2438 2px solid;
+    overflow:auto;
 }
 
 .invoices-container-paid {
@@ -54,50 +93,160 @@
     padding-left: 200px;
     background: white;
     height: calc(100vh - 100px);
-    border-top: darkgrey 2px solid;
+    border-top: #2a2438 2px solid;
     z-index: 101;
     display: none;
+    overflow: auto;
 }
 
 .invoice-button-unpaid-bottom {
     position: fixed;
-    top: 62.5px;
+    top: 61px;
     left: 240px;
-    height: 47.5px;
+    background: transparent;
+    color: grey;
+    z-index: 8;
+    border: none;
+}
+
+.invoice-button-unpaid-bottom a {
+    display: block;
+    font-size: 1rem;
+    height: 48px;
     width: 150px;
+    padding: 20px;
     background: #dbd8e3;
-    z-index: 120;
-    border: solid 2px darkgrey;
+    color: grey;
+    font-size: 1rem;
+    border: solid 1px grey;
     border-bottom: none;
     border-radius: 10px 10px 0px 0px;
+    
+}
+
+.invoice-button-unpaid-bottom a:hover {
+    color: #2a2438;
+    font-weight: bold;
+    background: white;
+    border: solid 2px #2a2438;
+    height: 49px;
+
 }
 
 .invoice-button-paid-bottom {
     position: fixed;
-    top: 61.5px;
-    left: 390px;
-    height: 51px;
-    width: 150px;
-    background: white;
+    background: transparent;
+    top: 61px;
+    left: 405px;
     z-index: 11;
-    border: solid 2px darkgrey;
-    border-bottom: white solid 4px;
+    border:none;
+}
+
+.invoice-button-paid-bottom a {
+    display: block;
+    color: #2a2438;
+    height: 50px;
+    width: 150px;
+    padding: 20px;
+    background-color: white;
+    font-size: 1rem;
+    font-weight: bold;
+    border: solid 2px #2a2438;
     border-radius: 10px 10px 0px 0px;
+    border-bottom: solid .1px white;
 }
 
 .invoices-container-paid:target {
     display: block;
 }
 
-table {
-    width: 90%;
-    max-width: 1000px;
-    margin: 5%;
-    border-collapse: collapse;
+.invoices-table-head {
+    max-width: 1600px;
+    width: 75vw;
+    margin: 0px auto;
+    height: 40px;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    border-bottom: solid 2px black;
+    position: fixed;
+    background: white;
+    z-index: 20;
+    top: 112px;
+    left: 215px;
+
 }
 
-th{
-    border-bottom: solid 2px black;
+.invoices-table-head span {
+    display: inline-block;
+    height: 30px;
+    padding: 10px;
+    width: 15%;
+}
+
+.invoices-table-head span:nth-child(3) {
+    display: none;
+}
+
+.invoices-table-head span:nth-child(4) {
+    width: 45%;
+}
+
+.invoices-table-head span:nth-child(6) {
+    width: 8%;
+}
+
+hr {
+    max-width: 1600px;
+    width: 75vw;
+    margin: auto;
+}
+
+.table-row-container {
+    max-width: 1600px;
+    width: 75vw;
+    margin: auto;
+    position: absolute;
+    top: 40px;
+    left: 215px;
+}
+
+.invoices-table-row {
+    width: 100%;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    padding-bottom: 5px;
+    
+}
+
+.invoices-table-row span {
+    display: inline-block;
+    height: 30px;
+    padding: 10px;
+    width: 15%;
+}
+
+.invoices-table-row span:nth-child(5) {
+    display: inline-block;
+    height: 30px;
+    padding: 10px;
+    width: 8%;
+}
+
+.table-row-link {
+    color: #565656;
+}
+
+.table-row-link div:hover {
+    color: black;
+    background-color: #f0c993;
+    border: solid 2px #f0b36a;
+    border-radius: 5px;
+}
+
+.invoices-table-row span:nth-child(3) {
+    width: 45%;
 }
 
 tr {
@@ -118,7 +267,7 @@ th:nth-child(1) {
     padding-left: 10px;
 }
 
-th:nth-child(6){
+th:nth-child(6) {
     text-align: right;
     padding-right: 10px;
 }
@@ -149,9 +298,3 @@ td:nth-child(6) {
     text-align: right;
     padding-right: 10px;
 }
-
-
-
-
-
-

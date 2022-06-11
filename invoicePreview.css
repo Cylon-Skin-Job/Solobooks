@@ -425,6 +425,9 @@ Modify for tablets and desktop below*/
     text-align: center;
 }
 
+option {
+    color: black;
+}
 
 @media screen and (min-width: 600px) {
 

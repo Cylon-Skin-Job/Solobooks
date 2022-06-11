@@ -31,7 +31,7 @@
                         Overview
                     </a>
                 </li>
-                <li>
+                <li class="active">
                     <a href="invoices.html">
                         <span class="material-icons" alt=" ">description</span>
                         Invoices
@@ -64,413 +64,633 @@
 
     <div class="invoices-main">
 
-        
+
         <div class="invoices-container-unpaid">
-           <button class="invoice-button-unpaid-top"><a href="./invoices.html">Unpaid</a></button>
-           <button class="invoice-button-paid-top"><a href="#invoices-paid">Paid</a></button>
-            
-        <table class="invoices-table">
+            <button class="invoice-button-unpaid-top"><a href="./invoices.html">Unpaid</a></button>
+            <button class="invoice-button-paid-top"><a href="#invoices-paid">Paid</a></button>
 
-            <thead class="invoices-thead">
-                <tr>
-                    <th>Date</th>
-                    <th>Invoice No.</th>
-                    <th>Unpaid Invoices</th>
-                    <th>Customer</th>
-                    <th>Amount</th>
-                    <th>Status</th>
-                    <th>$2,190.00</th>
-                </tr>
-            </thead>
 
-            <tbody class="table-invoices">
-                    <td>
-                        <a href="">
-                            9/28/2022
-                        </a>
-                    </td>
-                    <td>
-                        <a href="">
+            <div class="invoices-table-head">
+                <span>Date</span>
+                <span>Invoice No.</span>
+                <span>$2,190.00</span>
+                <span>Customer</span>
+                <span>Amount</span>
+                <span>Status</span>
+            </div>
+
+            <div class="table-row-container">
+
+            <a class="table-row-link" href="./invoicePreview.html">
+                <div class="invoices-table-row">
+
+                    <span>
+                        9/28/2022
+                    </span>
+                    <span>
                         5224
-                        </a>
-                    </td>
-                    <td>
-                    UNPAID    
-                    </td>
-                    <td>
-                        <a href="">
-                            Cafe Nervosa
-                        </a>
-                    </td>
-                    <td>
-                        <a href="">
+                    </span>
+                    <span>
+                        Cafe Nervosa
+                    </span>
+                    <span>
                         $690
-                        </a>
-                    </td>
-                     <td>
-                         <a href="">
-                             Unpaid
-                         </a>
-                     </td>
-                </tr>
+                    </span>
+                    <span>
+                        Unpaid
+                    </span>
+                </div>
+            </a>
 
-                <tr>
-                    <td style="text-align: left"><a
-                            href="https://rc-resume.neocities.org/fakeData/invoices/indigoTeaInvoice.html">The
-                            Indigo Tea Shop</a></td>
-                    <td style="text-align: right"><a
-                            href="https://rc-resume.neocities.org/fakeData/invoices/indigoTeaInvoice.html">$565</a>
-                    </td>
-                </tr>
-                <tr>
-                    <td style="text-align: left"><a
-                            href="https://rc-resume.neocities.org/fakeData/invoices/indigoTeaInvoice.html">9/25/21</a>
-                    </td>
-                    <td style="text-align: right"><a
-                            href="https://rc-resume.neocities.org/fakeData/invoices/indigoTeaInvoice.html"><span
-                                class="redbox">UNPAID</span> No. 5141</a></td>
-                </tr>
+            <hr>
 
-                <tr>
-                    <td style="text-align: left"><a
-                            href="https://rc-resume.neocities.org/fakeData/invoices/cheersInvoice.html">Cheer's</a>
-                    </td>
-                    <td style="text-align: right"><a
-                            href="https://rc-resume.neocities.org/fakeData/invoices/cheersInvoice.html">$450</a>
-                    </td>
-                </tr>
-                <tr>
-                    <td style="text-align: left"><a
-                            href="https://rc-resume.neocities.org/fakeData/invoices/cheersInvoice.html">9/20/21</a>
-                    </td>
-                    <td style="text-align: right"><a
-                            href="https://rc-resume.neocities.org/fakeData/invoices/cheersInvoice.html"><span
-                                class="redbox">UNPAID</span> No. 5140</a></td>
-                </tr>
+            <a class="table-row-link" href="./invoicePreview.html">
+                <div class="invoices-table-row">
+                    <span>
+                        9/25/2021
+                    </span>
+                    <span>
+                        5141
+                    </span>
+                    <span>
+                        The Indigo Tea Shop
+                    </span>
+                    <span>
+                        $565
+                    </span>
+                    <span>
+                        Unpaid
+                    </span>
+                </div>
+            </a>
 
-                <tr>
-                    <td style="text-align: left"><a
-                            href="https://rc-resume.neocities.org/fakeData/invoices/JoesBarInvoice.html">Joe's
-                            Bar</a></td>
-                    <td style="text-align: right"><a
-                            href="https://rc-resume.neocities.org/fakeData/invoices/JoesBarInvoice.html">$485</a>
-                    </td>
-                </tr>
-                <tr>
-                    <td style="text-align: left"><a
-                            href="https://rc-resume.neocities.org/fakeData/invoices/JoesBarInvoice.html">9/15/21</a>
-                    </td>
-                    <td style="text-align: right"><a
-                            href="https://rc-resume.neocities.org/fakeData/invoices/JoesBarInvoice.html"><span
-                                class="redbox">UNPAID</span> No. 5139</a></td>
-                </tr>
+            <hr>
 
-            </tbody>
-        </table>
+            <a class="table-row-link" href="./invoicePreview.html">
+                <div class="invoices-table-row">
+                    <span>
+                        9/20/2021
+                    </span>
+                    <span>
+                        5140
+                    </span>
+                    <span>
+                        Cheer's
+                    </span>
+                    <span>
+                        $450
+                    </span>
+                    <span>
+                        Unpaid
+                    </span>
+                </div>
+            </a>
+            <hr>
 
+            <a class="table-row-link" href="./invoicePreview.html">
+                <div class="invoices-table-row">
+                    <span>
+                        9/15/2021
+                    </span>
+                    <span>
+                        5139
+                    </span>
+                    <span>
+                        Joe's Bar
+                    </span>
+                    <span>
+                        $485
+                    </span>
+                    <span>
+                        Unpaid
+                    </span>
+                </div>
+            </a>
         </div>
+        </div>
+
+
+
 
         <div class="invoices-container-paid" id="invoices-paid">
             <button class="invoice-button-unpaid-bottom"><a href="./invoices.html">Unpaid</a></button>
             <button class="invoice-button-paid-bottom"><a href="#invoices-paid">Paid</a></button>
+            <div class="invoices-table-head">
+                <span>Date</span>
+                <span>Invoice No.</span>
+                <span>$11,970.00</span>
+                <span>Customer</span>
+                <span>Amount</span>
+                <span>Status</span>
+            </div>
 
-        <table id="table">
+            <div class="table-row-container">
 
-            <thead class="table-summary-sticky">
-                <tr>
-                    <th class="left-column">Paid Invoices</th>
-                    <th class="right-column">$11,970.00</th>
-                </tr>
-            </thead>
+            <a class="table-row-link" href="./invoicePreview.html">
+                <div class="invoices-table-row">
+                    <span>
+                        08/12/2021
+                    </span>
+                    <span>
+                        5127
+                    </span>
+                    <span>
+                        Bob's Burgers
+                    </span>
+                    <span>
+                        $550
+                    </span>
+                    <span>
+                        Paid
+                    </span>
+                </div>
+            </a>
 
-            <tbody class="table-invoices">
+            <hr>
 
-                <tr>
-                    <td style="text-align: left"><a
-                            href="https://rc-resume.neocities.org/fakeData/invoices/bobsBurgersInvoice.html">Bob's
-                            Burgers</a></td>
-                    <td style="text-align: right"><a
-                            href="https://rc-resume.neocities.org/fakeData/invoices/bobsBurgersInvoice.html">$550</a>
-                    </td>
-                </tr>
-                <tr style>
-                    <td style="text-align: left"><a
-                            href="https://rc-resume.neocities.org/fakeData/invoices/bobsBurgersInvoice.html">08/12/2021</a>
-                    </td>
-                    <td style="text-align: right"><a
-                            href="https://rc-resume.neocities.org/fakeData/invoices/bobsBurgersInvoice.html"><span
-                                class="greenbox">PAID</span> No. 5127</a></td>
-                </tr>
+            <a class="table-row-link" href="./invoicePreview.html">
+                <div class="invoices-table-row">
+                    <span>
+                        08/11/2021
+                    </span>
+                    <span>
+                        5126
+                    </span>
+                    <span>
+                        Paunch Burger
+                    </span>
+                    <span>
+                        $625
+                    </span>
+                    <span>
+                        Paid
+                    </span>
+                </div>
+            </a>
 
-                <tr>
-                    <td style="text-align: left"><a
-                            href="https://rc-resume.neocities.org/fakeData/invoices/paunchBurgerInvoice.html">Paunch
-                            Burger</a></td>
-                    <td style="text-align: right"><a
-                            href="https://rc-resume.neocities.org/fakeData/invoices/paunchBurgerInvoice.html">$625</a>
-                    </td>
-                </tr>
-                <tr>
-                    <td style="text-align: left"><a
-                            href="https://rc-resume.neocities.org/fakeData/invoices/paunchBurgerInvoice.html">08/10/2021</a>
-                    </td>
-                    <td style="text-align: right"><a
-                            href="https://rc-resume.neocities.org/fakeData/invoices/paunchBurgerInvoice.html"><span
-                                class="greenbox">PAID</span> No. 5126</a></td>
-                </tr>
+            <hr>
 
-                <tr>
-                    <td style="text-align: left"><a
-                            href="https://rc-resume.neocities.org/fakeData/invoices/arnoldsDriveInInvoice.html">Arnold's
-                            Drive In</a></td>
-                    <td style="text-align: right"><a
-                            href="https://rc-resume.neocities.org/fakeData/invoices/arnoldsDriveInInvoice.html">$485</a>
-                    </td>
-                </tr>
-                <tr>
-                    <td style="text-align: left"><a
-                            href="https://rc-resume.neocities.org/fakeData/invoices/arnoldsDriveInInvoice.html">08/05/2021</a>
-                    </td>
-                    <td style="text-align: right"><a
-                            href="https://rc-resume.neocities.org/fakeData/invoices/arnoldsDriveInInvoice.html"><span
-                                class="greenbox">PAID</span> No. 5125</a></td>
-                </tr>
+            <a class="table-row-link" href="./invoicePreview.html">
+                <div class="invoices-table-row">
+                    <span>
+                        08/05/2021
+                    </span>
+                    <span>
+                        5125
+                    </span>
+                    <span>
+                        Arnold's Drive In
+                    </span>
+                    <span>
+                        $485
+                    </span>
+                    <span>
+                        Paid
+                    </span>
+                </div>
+            </a>
 
-                <tr>
-                    <td style="text-align: left"><a
-                            href="https://rc-resume.neocities.org/fakeData/invoices/CentralPerkInvoice.html">Central
-                            Perk</a></td>
-                    <td style="text-align: right"><a
-                            href="https://rc-resume.neocities.org/fakeData/invoices/CentralPerkInvoice.html">$385</a>
-                    </td>
-                </tr>
-                <tr>
-                    <td style="text-align: left"><a
-                            href="https://rc-resume.neocities.org/fakeData/invoices/CentralPerkInvoice.html">08/04/2021</a>
-                    </td>
-                    <td style="text-align: right"><a
-                            href="https://rc-resume.neocities.org/fakeData/invoices/CentralPerkInvoice.html"><span
-                                class="greenbox">PAID</span> No. 5124</a></td>
-                </tr>
-
-                <tr>
-                    <td style="text-align: left"><a
-                            href="https://rc-resume.neocities.org/fakeData/invoices/cafeNervosaInvoicePaid.html">Cafe
-                            Nervosa</a></td>
-                    <td style="text-align: right"><a
-                            href="https://rc-resume.neocities.org/fakeData/invoices/cafeNervosaInvoicePaid.html">$690</a>
-                    </td>
-                </tr>
-                <tr>
-                    <td style="text-align: left"><a
-                            href="https://rc-resume.neocities.org/fakeData/invoices/cafeNervosaInvoicePaid.html"></a>08/03/2021
-                    </td>
-                    <td style="text-align: right"><a
-                            href="https://rc-resume.neocities.org/fakeData/invoices/cafeNervosaInvoicePaid.html"><span
-                                class="greenbox">PAID</span> No. 5123</a></td>
-                </tr>
-
-                <tr>
-                    <td style="text-align: left"><a
-                            href="https://rc-resume.neocities.org/fakeData/invoices/indigoTeaInvoice.html">The
-                            Indigo Tea Shop</a></td>
-                    <td style="text-align: right"><a
-                            href="https://rc-resume.neocities.org/fakeData/invoices/indigoTeaInvoice.html">$565</a>
-                    </td>
-                </tr>
-                <tr>
-                    <td style="text-align: left"><a
-                            href="https://rc-resume.neocities.org/fakeData/invoices/indigoTeaInvoice.html">08/01/2021</a>
-                    </td>
-                    <td style="text-align: right"><a
-                            href="https://rc-resume.neocities.org/fakeData/invoices/indigoTeaInvoice.html"><span
-                                class="greenbox">PAID</span> No. 5122</a></td>
-                </tr>
-
-                <tr>
-                    <td style="text-align: left"><a
-                            href="https://rc-resume.neocities.org/fakeData/invoices/cheersInvoice.html">Cheer's</a>
-                    </td>
-                    <td style="text-align: right"><a
-                            href="https://rc-resume.neocities.org/fakeData/invoices/cheersInvoice.html">$450</a>
-                    </td>
-                </tr>
-                <tr>
-                    <td style="text-align: left"><a
-                            href="https://rc-resume.neocities.org/fakeData/invoices/cheersInvoice.html">07/25/2021</a>
-                    </td>
-                    <td style="text-align: right"><a
-                            href="https://rc-resume.neocities.org/fakeData/invoices/cheersInvoice.html"><span
-                                class="greenbox">PAID</span> No. 5121</a></td>
-                </tr>
-
-                <tr>
-                    <td style="text-align: left"><a
-                            href="https://rc-resume.neocities.org/fakeData/invoices/JoesBarInvoice.html">Joe's
-                            Bar</a></td>
-                    <td style="text-align: right"><a
-                            href="https://rc-resume.neocities.org/fakeData/invoices/JoesBarInvoice.html">$485</a>
-                    </td>
-                </tr>
-                <tr>
-                    <td style="text-align: left"><a
-                            href="https://rc-resume.neocities.org/fakeData/invoices/JoesBarInvoice.html">07/23/2021</a>
-                    </td>
-                    <td style="text-align: right"><a
-                            href="https://rc-resume.neocities.org/fakeData/invoices/JoesBarInvoice.html"><span
-                                class="greenbox">PAID</span> No. 5120</a></td>
-                </tr>
-
-                <tr>
-                    <td style="text-align: left">Three Broomsticks</td>
-                    <td style="text-align: right">$645</td>
-                </tr>
-                <tr>
-                    <td style="text-align: left">07/20/2021</td>
-                    <td style="text-align: right"><span class="greenbox">PAID</span> No. 5119</td>
-                </tr>
-
-                <tr>
-                    <td style="text-align: left">Gaston's</td>
-                    <td style="text-align: right">$760</td>
-                </tr>
-                <tr>
-                    <td style="text-align: left">07/18/2021</td>
-                    <td style="text-align: right"><span class="greenbox">PAID</span> No. 5118</td>
-                </tr>
-
-                <tr>
-                    <td style="text-align: left">Mos Eisley Cantina</td>
-                    <td style="text-align: right">$650</td>
-                </tr>
-                <tr>
-                    <td style="text-align: left">07/16/2021</td>
-                    <td style="text-align: right"><span class="greenbox">PAID</span> No. 5117</td>
-                </tr>
-
-                <tr>
-                    <td style="text-align: left">The Krusty Krab</td>
-                    <td style="text-align: right">$585</td>
-                </tr>
-                <tr>
-                    <td style="text-align: left">07/12/2021</td>
-                    <td style="text-align: right"><span class="greenbox">PAID</span> No. 5116</td>
-                </tr>
-
-                <tr>
-                    <td style="text-align: left">La Ratatouille</td>
-                    <td style="text-align: right">$485</td>
-                </tr>
-                <tr>
-                    <td style="text-align: left">07/09/2021</td>
-                    <td style="text-align: right"><span class="greenbox">PAID</span> No. 5115</td>
-                </tr>
-
-                <tr>
-                    <td style="text-align: left">Pizza Planet</td>
-                    <td style="text-align: right">$525</td>
-                </tr>
-                <tr>
-                    <td style="text-align: left">07/07/2021</td>
-                    <td style="text-align: right"><span class="greenbox">PAID</span> No. 5114</td>
-                </tr>
-
-                <tr>
-                    <td style="text-align: left">Frozen Banana</td>
-                    <td style="text-align: right">$540</td>
-                </tr>
-                <tr>
-                    <td style="text-align: left">07/06/2021</td>
-                    <td style="text-align: right"><span class="greenbox">PAID</span> No. 5113</td>
-                </tr>
-
-                <tr>
-                    <td style="text-align: left">Monk's Cafe</td>
-                    <td style="text-align: right">$625</td>
-                </tr>
-                <tr>
-                    <td style="text-align: left">07/04/2021</td>
-                    <td style="text-align: right"><span class="greenbox">PAID</span> No. 5112</td>
-                </tr>
-
-                <tr>
-                    <td style="text-align: left">Los Pollos Hermanos</td>
-                    <td style="text-align: right">$720</td>
-                </tr>
-                <tr>
-                    <td style="text-align: left">06/28/2021</td>
-                    <td style="text-align: right"><span class="greenbox">PAID</span> No. 5111</td>
-                </tr>
-
-                <tr>
-                    <td style="text-align: left">The Whistle Stop Cafe</td>
-                    <td style="text-align: right">$385</td>
-                </tr>
-                <tr>
-                    <td style="text-align: left">06/26/2021</td>
-                    <td style="text-align: right"><span class="greenbox">PAID</span> No. 5110</td>
-                </tr>
-
-                <tr>
-                    <td style="text-align: left">Vesuvio</td>
-                    <td style="text-align: right">$530</td>
-                </tr>
-                <tr>
-                    <td style="text-align: left">06/20/2021</td>
-                    <td style="text-align: right"><span class="greenbox">PAID</span> No. 5109</td>
-                </tr>
-
-                <tr>
-                    <td style="text-align: left">The Pie Pole</td>
-                    <td style="text-align: right">$515</td>
-                </tr>
-                <tr>
-                    <td style="text-align: left">06/15/2021</td>
-                    <td style="text-align: right"><span class="greenbox">PAID</span> No. 5108</td>
-                </tr>
-
-                <tr>
-                    <td style="text-align: left">Louie's Italian Restaurant</td>
-                    <td style="text-align: right">$510</td>
-                </tr>
-                <tr>
-                    <td style="text-align: left">06/10/2021</td>
-                    <td style="text-align: right"><span class="greenbox">PAID</span> No. 5107</td>
-                </tr>
-
-                <tr>
-                    <td style="text-align: left">The Frosty Place</td>
-                    <td style="text-align: right">$505</td>
-                </tr>
-                <tr>
-                    <td style="text-align: left">06/08/2021</td>
-                    <td style="text-align: right"><span class="greenbox">PAID</span> No. 5106</td>
-                </tr>
-
-                <tr>
-                    <td style="text-align: left">Joe's Pie Diner</td>
-                    <td style="text-align: right">$685</td>
-                </tr>
-                <tr>
-                    <td style="text-align: left">06/05/2021</td>
-                    <td style="text-align: right"><span class="greenbox">PAID</span> No. 5105</td>
-                </tr>
-
-                <tr>
-                    <td style="text-align: left"><a
-                            href="https://rc-resume.neocities.org/fakeData/invoices/invoiceTest.html">The
-                            Chocolate Factory</a></td>
-                    <td style="text-align: right">$575</td>
-                </tr>
-                <tr>
-                    <td style="text-align: left">06/02/2021</td>
-                    <td style="text-align: right"><span class="greenbox">PAID</span> No. 5104</td>
-                </tr>
-
-            </tbody>
+            <hr>
 
 
-        </table>
+            <a class="table-row-link" href="./invoicePreview.html">
+                <div class="invoices-table-row">
+                    <span>
+                        08/04/2021
+                    </span>
+                    <span>
+                        5124
+                    </span>
+                    <span>
+                        Central Perk
+                    </span>
+                    <span>
+                        $385
+                    </span>
+                    <span>
+                        Paid
+                    </span>
+                </div>
+            </a>
+
+            <hr>
+
+            <a class="table-row-link" href="./invoicePreview.html">
+                <div class="invoices-table-row">
+                    <span>
+                        08/03/2021
+                    </span>
+                    <span>
+                        5123
+                    </span>
+                    <span>
+                        Cafe Nervosa
+                    </span>
+                    <span>
+                        $690
+                    </span>
+                    <span>
+                        Paid
+                    </span>
+                </div>
+            </a>
+
+            <hr>
+
+            <a class="table-row-link" href="./invoicePreview.html">
+                <div class="invoices-table-row">
+                    <span>
+                        08/01/2021
+                    </span>
+                    <span>
+                        5122
+                    </span>
+                    <span>
+                        The Indigo Tea Shop
+                    </span>
+                    <span>
+                        $565
+                    </span>
+                    <span>
+                        Paid
+                    </span>
+                </div>
+            </a>
+
+            <hr>
+
+            <a class="table-row-link" href="./invoicePreview.html">
+                <div class="invoices-table-row">
+                    <span>
+                        07/25/2021
+                    </span>
+                    <span>
+                        5121
+                    </span>
+                    <span>
+                        Cheer's
+                    </span>
+                    <span>
+                        $450
+                    </span>
+                    <span>
+                        Paid
+                    </span>
+                </div>
+            </a>
+
+            <hr>
+
+            <a class="table-row-link" href="./invoicePreview.html">
+                <div class="invoices-table-row">
+                    <span>
+                        07/23/2021
+                    </span>
+                    <span>
+                        5120
+                    </span>
+                    <span>
+                        Joe's Bar
+                    </span>
+                    <span>
+                        $485
+                    </span>
+                    <span>
+                        Paid
+                    </span>
+                </div>
+            </a>
+
+            <hr>
+
+            <a class="table-row-link" href="./invoicePreview.html">
+                <div class="invoices-table-row">
+                    <span>
+                        07/20/2021
+                    </span>
+                    <span>
+                        5119
+                    </span>
+                    <span>
+                        Three Broomsticks
+                    </span>
+                    <span>
+                        $645
+                    </span>
+                    <span>
+                        Paid
+                    </span>
+                </div>
+            </a>
+
+            <hr>
+
+            <a class="table-row-link" href="./invoicePreview.html">
+                <div class="invoices-table-row">
+                    <span>
+                        07/16/2021
+                    </span>
+                    <span>
+                        5117
+                    </span>
+                    <span>
+                        Mos Eisley Cantina
+                    </span>
+                    <span>
+                        $650
+                    </span>
+                    <span>
+                        Paid
+                    </span>
+                </div>
+            </a>
+
+            <hr>
+
+            <a class="table-row-link" href="./invoicePreview.html">
+                <div class="invoices-table-row">
+                    <span>
+                        07/12/2021
+                    </span>
+                    <span>
+                        5117
+                    </span>
+                    <span>
+                        The Krusty Krab
+                    </span>
+                    <span>
+                        $585
+                    </span>
+                    <span>
+                        Paid
+                    </span>
+                </div>
+            </a>
+
+            <hr>
+
+            <a class="table-row-link" href="./invoicePreview.html">
+                <div class="invoices-table-row">
+                    <span>
+                        07/16/2021
+                    </span>
+                    <span>
+                        5115
+                    </span>
+                    <span>
+                        La Ratatouille
+                    </span>
+                    <span>
+                        $485
+                    </span>
+                    <span>
+                        Paid
+                    </span>
+                </div>
+            </a>
+
+            <hr>
+
+            <a class="table-row-link" href="./invoicePreview.html">
+                <div class="invoices-table-row">
+                    <span>
+                        07/07/2021
+                    </span>
+                    <span>
+                        5115
+                    </span>
+                    <span>
+                        Pizza Planet
+                    </span>
+                    <span>
+                        $525
+                    </span>
+                    <span>
+                        Paid
+                    </span>
+                </div>
+            </a>
+
+            <hr>
+
+            <a class="table-row-link" href="./invoicePreview.html">
+                <div class="invoices-table-row">
+                    <span>
+                        07/06/2021
+                    </span>
+                    <span>
+                        5113
+                    </span>
+                    <span>
+                        Frozen Banana
+                    </span>
+                    <span>
+                        $525
+                    </span>
+                    <span>
+                        Paid
+                    </span>
+                </div>
+            </a>
+
+            <hr>
+
+            <a class="table-row-link" href="./invoicePreview.html">
+                <div class="invoices-table-row">
+                    <span>
+                        07/04/2021
+                    </span>
+                    <span>
+                        5112
+                    </span>
+                    <span>
+                        Monk's Cafe
+                    </span>
+                    <span>
+                        $525
+                    </span>
+                    <span>
+                        Paid
+                    </span>
+                </div>
+            </a>
+
+            <hr>
+
+            <a class="table-row-link" href="./invoicePreview.html">
+                <div class="invoices-table-row">
+                    <span>
+                        06/28/2021
+                    </span>
+                    <span>
+                        5111
+                    </span>
+                    <span>
+                        Los Pollos Hermanos
+                    </span>
+                    <span>
+                        $720
+                    </span>
+                    <span>
+                        Paid
+                    </span>
+                </div>
+            </a>
+
+            <hr>
+
+            <a class="table-row-link" href="./invoicePreview.html">
+                <div class="invoices-table-row">
+                    <span>
+                        06/28/2021
+                    </span>
+                    <span>
+                        5110
+                    </span>
+                    <span>
+                        The Whistle Stop Cafe
+                    </span>
+                    <span>
+                        $385
+                    </span>
+                    <span>
+                        Paid
+                    </span>
+                </div>
+            </a>
+
+            <hr>
+
+            <a class="table-row-link" href="./invoicePreview.html">
+                <div class="invoices-table-row">
+                    <span>
+                        06/20/2021
+                    </span>
+                    <span>
+                        5109
+                    </span>
+                    <span>
+                        Vesuvio
+                    </span>
+                    <span>
+                        $385
+                    </span>
+                    <span>
+                        Paid
+                    </span>
+                </div>
+            </a>
+
+            <hr>
+
+            <a class="table-row-link" href="./invoicePreview.html">
+                <div class="invoices-table-row">
+                    <span>
+                        06/20/2021
+                    </span>
+                    <span>
+                        5108
+                    </span>
+                    <span>
+                        The Pie Pole
+                    </span>
+                    <span>
+                        $515
+                    </span>
+                    <span>
+                        Paid
+                    </span>
+                </div>
+            </a>
+
+            <hr>
+
+            <a class="table-row-link" href="./invoicePreview.html">
+                <div class="invoices-table-row">
+                    <span>
+                        06/10/2021
+                    </span>
+                    <span>
+                        5107
+                    </span>
+                    <span>
+                        Louie's Italian Restaurant
+                    </span>
+                    <span>
+                        $515
+                    </span>
+                    <span>
+                        Paid
+                    </span>
+                </div>
+            </a>
+
+            <hr>
+
+            <a class="table-row-link" href="./invoicePreview.html">
+                <div class="invoices-table-row">
+                    <span>
+                        06/10/2021
+                    </span>
+                    <span>
+                        5106
+                    </span>
+                    <span>
+                        The Frosty Place
+                    </span>
+                    <span>
+                        $505
+                    </span>
+                    <span>
+                        Paid
+                    </span>
+                </div>
+            </a>
+
+            <hr>
+
+            <a class="table-row-link" href="./invoicePreview.html">
+                <div class="invoices-table-row">
+                    <span>
+                        06/10/2021
+                    </span>
+                    <span>
+                        5105
+                    </span>
+                    <span>
+                        Joe's Pie Diner
+                    </span>
+                    <span>
+                        $685
+                    </span>
+                    <span>
+                        Paid
+                    </span>
+                </div>
+            </a>
+
+            <hr>
+
+            <a class="table-row-link" href="./invoicePreview.html">
+                <div class="invoices-table-row">
+                    <span>
+                        06/02/2021
+                    </span>
+                    <span>
+                        5104
+                    </span>
+                    <span>
+                        Chocolate Factory
+                    </span>
+                    <span>
+                        $575
+                    </span>
+                    <span>
+                        Paid
+                    </span>
+                </div>
+            </a>
+            </div>
 
         </div>
 
