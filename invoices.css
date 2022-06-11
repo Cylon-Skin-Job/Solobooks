@@ -124,6 +124,7 @@ hr {
     display: block;
     z-index: 199;
     position: sticky;
+    position: -webkit-sticky;
     top: 88px;
     left: 0px;
     width: 100%;
@@ -138,6 +139,7 @@ hr {
     display: block;
     z-index: 199;
     position: sticky;
+    position: -webkit-sticky;
     top: 88px;
     left: 0px;
     width: 100%;
