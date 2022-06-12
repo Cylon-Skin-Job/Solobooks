@@ -432,6 +432,7 @@ hr {
 
     .invoices-table-head-box-shadow {
         height: 3px;
+        max-width: 1590px;
         width: 74.5vw;
         position: fixed;
         z-index: 201;
