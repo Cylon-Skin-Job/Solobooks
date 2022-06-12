@@ -142,8 +142,8 @@ h2 {
     display: block;
     position: fixed;
     z-index: 301;
-    top: 90%;
-    right: 30px;
+    bottom: 10px;
+    right: 10px;
     border: none;
     background: transparent;
 }
@@ -151,10 +151,10 @@ h2 {
 .plus-button .material-icons {
     float: left;
     display: inline-block;
-    font-size: 64px;
+    font-size: 48px;
     padding: 2px;
     border: solid 2px #2a2438;
-    border-radius: 36px;
+    border-radius: 27px;
     background: #dbd8e3;
     box-shadow: 1px 1px 5px grey;
     margin: 10px;
@@ -171,6 +171,21 @@ h2 {
 }
 
 @media screen and (min-width:768px) {
+
+    .plus-button {
+        bottom: 20px;
+        right: 20px;
+    }
+
+    .plus-button .material-icons {
+        font-size: 64px;
+        border-radius: 36px;
+    }
+
+    .plus-button-text {
+        display: none;
+
+    }
 
     header {
         height: 30px;
@@ -319,6 +334,7 @@ h2 {
         z-index: 301;
         top: 30px;
         right: 30px;
+        bottom:auto;
         border: solid 2px #2a2438;
         border-radius: 20px;
         background: #dbd8e3;
