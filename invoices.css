@@ -72,6 +72,7 @@ hr {
     display: inline-block;
     height: 30px;
     padding: 10px;
+    color:black;
 }
 
 .span-1 {
@@ -200,7 +201,6 @@ hr {
         flex-flow: row nowrap;
         justify-content: space-between;
         border-bottom: solid 2px black;
-        position: fixed;
         background: white;
         z-index: 101;
         position: sticky;
