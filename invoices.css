@@ -132,14 +132,14 @@ hr {
 
 .invoices-footer-unpaid {
     display: block;
-    z-index: 199;
-    position: sticky;
-    position: -webkit-sticky;
-    top: 88px;
+    z-index: 198;
+    position: fixed;
+    height: 30px;
+    top: 50px;
     left: 0px;
     width: 100%;
-    margin: 40px 0px 5px;
-    padding: 3px;
+    margin: 40px 0px 0px;
+    padding: 5px 10px;
     font-size: .9rem;
     font-weight: bold;
     background-color: #dbd8e3;
@@ -150,11 +150,12 @@ hr {
     z-index: 199;
     position: sticky;
     position: -webkit-sticky;
+    height: 30px;
     top: 88px;
     left: 0px;
     width: 100%;
-    margin: 40px 0px 5px;
-    padding: 3px;
+    margin: 40px 0px 0px;
+    padding: 5px 10px;
     font-size: .9rem;
     font-weight: bold;
     background-color: #dbd8e3;
@@ -173,7 +174,7 @@ hr {
     .invoices-main {
         background: white;
         width: 100%;
-        padding-top: 130px;
+        padding-top: 120px;
     }
 
     .invoices-container-unpaid {
@@ -200,12 +201,16 @@ hr {
         display: flex;
         flex-flow: row nowrap;
         justify-content: space-between;
-        border-bottom: solid 2px black;
+        border-bottom: solid 1px darkgrey;
         background: white;
         z-index: 101;
-        position: sticky;
+        position: fixed;
         top: 115px;
-
+        box-shadow: 1px 1px 5px grey;
+    }
+    .invoices-table-head-2 {
+        box-shadow: none;
+        position: sticky;
     }
 
     .invoices-table-head span,

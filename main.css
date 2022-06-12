@@ -151,11 +151,10 @@ h2 {
 .plus-button .material-icons {
     float: left;
     display: inline-block;
-    font-size: 36px;
+    font-size: 64px;
     padding: 2px;
-    margin: auto 0px auto -5px;
     border: solid 2px #2a2438;
-    border-radius: 24px;
+    border-radius: 36px;
     background: #dbd8e3;
     box-shadow: 1px 1px 5px grey;
 }
@@ -181,37 +180,10 @@ h2 {
         top: 5px;
         height: 30px;
         font-size: 1rem;
+        padding-left: 5px;
     }
 
-    .plus-button {
-        display: block;
-        position: fixed;
-        z-index: 301;
-        top: 93%;
-        right: 30px;
-        border: solid 2px #2a2438;
-        border-radius: 20px;
-        background: #dbd8e3;
-    }
-
-    .plus-button-text {
-        font-size: 1rem;
-        font-weight: bold;
-        display: inline-block;
-        height: 16px;
-        padding: 9px 5px 8px;
-    }
-
-    .plus-button .material-icons {
-        float: left;
-        display: inline-block;
-        font-size: 36px;
-        padding: 0px;
-        margin: auto 0px auto -5px;
-        border: none;
-        background: #dbd8e3;
-        box-shadow: none;
-    }
+    
 }
 
 @media screen and (min-width:1025px) {
@@ -340,9 +312,15 @@ h2 {
         background: #dbd8e3;
     }
 
-    .plus-button .material-icons {
-        border: none;
-        box-shadow: none;
+    .plus-button {
+        display: block;
+        position: fixed;
+        z-index: 301;
+        top: 30px;
+        right: 30px;
+        border: solid 2px #2a2438;
+        border-radius: 20px;
+        background: #dbd8e3;
     }
 
     .plus-button-text {
@@ -351,6 +329,17 @@ h2 {
         display: inline-block;
         height: 16px;
         padding: 9px 5px 8px;
+    }
+
+    .plus-button .material-icons {
+        float: left;
+        display: inline-block;
+        font-size: 36px;
+        padding: 0px;
+        margin: auto 0px auto -5px;
+        border: none;
+        background: #dbd8e3;
+        box-shadow: none;
     }
 
 }
