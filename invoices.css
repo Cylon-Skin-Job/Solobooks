@@ -40,10 +40,6 @@ table {
     border: none;
 }
 
-thead {
-    display: none;  
-}
-
 tr {
     position: relative;
     width: 100%;
@@ -129,10 +125,10 @@ td {
     z-index: 199;
     position: fixed;
     height: 30px;
-    top: 45px;
+    top: 85px;
     left: 0px;
     width: 100%;
-    margin: 40px 0px 0px;
+    margin: 0px;
     padding: 5px 10px;
     font-size: .9rem;
     font-weight: bold;
@@ -144,12 +140,12 @@ td {
     z-index: 200;
     position: sticky;
     position: -webkit-sticky;
-    height: 30px;
-    top: 85px;
+    height: 60px;
+    top: 55px;
     left: 0px;
     width: 100%;
-    margin: 40px 0px 0px;
-    padding: 5px 10px;
+    margin: 0px;
+    padding: 40px 10px 15px;
     font-size: .9rem;
     font-weight: bold;
     background-color: #dbd8e3;
@@ -167,22 +163,16 @@ td {
     body {
         padding-top: 140px;
     }
-    .table-container{
-        display: block;
-        position: relative;
-        left: 0px;
-        width: 100%;
-        background: white;
-    }
 
+    .table-container,
     .table-container-alt {
         display: block;
         position: relative;
-        left: 0px;
         width: 100%;
         background: white;
-
     }
+
+    .table-container
 
     thead {
         width: 100%;
@@ -325,7 +315,7 @@ td {
         left: 0px;
         width: 100%;
         z-index: 9;
-        padding: 200px;
+        padding-left: 200px;
         background: white;
         height: calc(100vh - 100px);
         border-top: #2a2438 2px solid;
@@ -418,40 +408,23 @@ td {
 
     thead,
     tr {
-        width: 100%;
         display: flex;
         flex-flow: row nowrap;
         justify-content: space-between;
-        border-bottom: solid 2px black;
+        border-bottom: solid 1px black;
         background: white;
         box-shadow: none;
-        position: relative;
     }
 
     thead {
-        position: relative;
         height: 60px;
+        position: fixed;
+        z-index: 200;
+        width: inherit;
     }
 
-    .invoices-button-unpaid-top {
-        display: block;
-        position: fixed;
-        top: 61.5px;
-        left: 240px;
-        background: transparent;
-        z-index: 12;
-        border: none;
-    }
-
-    .invoices-button-paid-top {
-        display: block;
-        position: fixed;
-        padding: 0px;
-        top: 62.5px;
-        left: 411px;
-        background: #dbd8e3;
-        z-index: 12;
-        border: none;
+    tr {
+        position: relative;
     }
 
     .invoices-footer-paid,
