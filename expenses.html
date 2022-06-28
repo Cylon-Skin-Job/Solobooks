@@ -8,7 +8,7 @@
     <meta name="theme-color" content="#2a2438" media="(prefers-color-scheme: dark)">
 
     <link rel="stylesheet" href="./main.css">
-    <link rel="stylesheet" href="./invoices.css">
+    <link rel="stylesheet" href="./expenses.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
 </head>
@@ -31,13 +31,13 @@
                         Overview
                     </a>
                 </li>
-                <li class="active">
+                <li>
                     <a href="invoices.html">
                         <span class="material-icons" alt=" ">description</span>
                         Invoices
                     </a>
                 </li>
-                <li>
+                <li class="active">
                     <a href="expenses.html">
                         <span class="material-icons" alt=" ">receipt_long</span>
                         Expenses
@@ -59,127 +59,127 @@
         </div>
     </nav>
     <header>
-        <h2>Invoices</h2>
+        <h2>Expenses</h2>
     </header>
 
 
     <div class="table-container">
-        <button class="invoices-button-unpaid-top"><a href="./invoices.html">Unpaid</a></button>
-        <button class="invoices-button-paid-top"><a href="#invoices-paid">Paid</a></button>
-
-<div class="invoices-footer-unpaid"><span class="invoices-footer-total">Unpaid: </span><span
-        class="invoices-footer-amount"> $2,190.00</span></div>
 
         <div class="table-head-box-shadow"></div>
 
-        <table class="invoices">
+        <div class="expenses-header-ribbon"><span class="expenses-header-month">Sept. </span><span
+                class="expenses-header-year">2021</span></div>
+
+
+        <table class="expenses">
             <thead>
-                <th>Date</th>
-                <th>Invoice No.</th>
-                <th>Customer</th>
-                <th>Amount</th>
-                <th>Status</th>
+                <th class="col-1">Date</th>
+                <th class="col-2">Category</th>
+                <th class="col-3">Notes</th>
+                <th class="col-4">Amount</th>
             </thead>
 
             <tbody>
 
 
                 <tr>
-
-                    <td class="col-1">
-                        9/28/2022
-                    </td>
-                    <td class="col-2">
-                        5224
-                    </td>
-                    <td class="col-3">
-                        Cafe Nervosa
-                    </td>
+                    <td class="col-1">09/21/2021</td>
+                    <td class="col-2">Job Supplies</td>
+                    <td class="col-3">Home Depot</td>
                     <td class="col-4">
-                        $690
-                    </td>
-                    <td class="col-5">
-                        <a href="invoicePreview.html" class="row-link red">Unpaid</a>
-                    </td>
+                        <a class="row-link" href="expensePreview.html">
+                            $69.58
+                        </a></td>
+                    
                 </tr>
-
-
 
                 <tr>
-                    <td class="col-1">
-                        9/25/2021
-                    </td>
-                    <td class="col-2">
-                        5141
-                    </td>
-                    <td class="col-3">
-                        The Indigo Tea Shop
-                    </td>
+                    <td class="col-1">09/18/2021</td>
+                    <td class="col-2">Insurance</td>
+                    <td class="col-3">Regressive</td>
                     <td class="col-4">
-                        $565
-                    </td>
-                    <td class="col-5">
-                        <a href="invoicePreview.html" class="row-link red">Unpaid</a>
-                    </td>
+                        <a class="row-link" href="expensePreview.html">
+                            $102.38
+                        </a></td>
                 </tr>
-
 
                 <tr>
-                    <td class="col-1">
-                        9/20/2021
-                    </td>
-                    <td class="col-2">
-                        5140
-                    </td>
-                    <td class="col-3">
-                        Cheer's
-                    </td>
+                    <td class="col-1">09/15/2021</td>
+                    <td class="col-2">Advertising</td>
+                    <td class="col-3">XP Printers (business mailer)</td>
                     <td class="col-4">
-                        $450
-                    </td>
-                    <td class="col-5">
-                        <a href="invoicePreview.html" class="row-link red">Unpaid</a>
-                    </td>
+                        <a class="row-link" href="expensePreview.html">
+                            $73.01
+                        </a></td>
                 </tr>
-
 
                 <tr>
-                    <td class="col-1">
-                        9/15/2021
-                    </td>
-                    <td class="col-2">
-                        5139
-                    </td>
-                    <td class="col-3">
-                        Joe's Bar
-                    </td>
+                    <td class="col-1">09/12/2021</td>
+                    <td class="col-2">Utilities & Phone</td>
+                    <td class="col-3">Mountain Communications</td>
                     <td class="col-4">
-                        $485
-                    </td>
-                    <td class="col-5">
-                        <a href="invoicePreview.html" class="row-link red">Unpaid</a>
-                    </td>
+                        <a class="row-link" href="expensePreview.html">
+                            $106.76
+                        </a></td>
                 </tr>
 
+                <tr>
+                    <td class="col-1">09/09/2021</td>
+                    <td class="col-2">Fuel</td>
+                    <td class="col-3">Giggle Springs Gas Station</td>
+                    <td class="col-4">
+                        <a class="row-link" href="expensePreview.html">
+                            $27.48         
+                        </a></td>
+                </tr>
+
+                <tr>
+                    <td class="col-1">09/07/2021</td>
+                    <td class="col-2">Job Supplies</td>
+                    <td class="col-3">Lowes</td>
+                    <td class="col-4">
+                        <a class="row-link" href="expensePreview.html">
+                            $19.52
+                        </a></td>
+                </tr>
+
+                <tr>
+                    <td class="col-1">09/06/2021</td>
+                    <td class="col-2">Job Supplies</td>
+                    <td class="col-3">Amazon.com (plastic sheeting)</td>
+                    <td class="col-4"><a class="row-link" href="expensePreview.html">
+                        $12.38
+                    </a></td>
+                </tr>
             </tbody>
+
+            <tfoot>
+
+                <tr>
+                    <td class="table-foot-1" colspan="2">Total:</td>
+                    <td class="table-foot-2">$411.11</td>
+                </tr>
+
+            </tfoot>
         </table>
 
 
     </div>
 
 
-    
+
 
     <div class="table-container-alt" id="invoices-paid">
         <button class="invoices-button-unpaid-bottom"><a href="./invoices.html">Unpaid</a></button>
         <button class="invoices-button-paid-bottom"><a href="#invoices-paid">Paid</a></button>
 
-<div class="invoices-footer-paid"><span class="invoices-footer-total">Paid: </span><span class="invoices-footer-amount">
-        $11,970.00</span></div>
+        <div class="invoices-footer-paid"><span class="invoices-footer-total">Paid: </span><span
+                class="invoices-footer-amount">
+                $11,970.00</span></div>
 
         <div class="table-head-box-shadow"></div>
 
-        <table class="invoices">
+        <table>
             <thead>
                 <th>Date</th>
                 <th>Invoice No.</th>
@@ -197,7 +197,8 @@
                     <td class="col-2">
                         5127
                     </td>
-                    <td class="col-3">
+                    <td class="col-3">""</td>
+                    <td class="col-4">
                         Bob's Burgers
                     </td>
                     <td class="col-4">
@@ -216,7 +217,8 @@
                     <td class="col-2">
                         5126
                     </td>
-                    <td class="col-3">
+                    <td class="col-3">""</td>
+                    <td class="col-4">
                         Paunch Burger
                     </td>
                     <td class="col-4">
@@ -235,7 +237,8 @@
                     <td class="col-2">
                         5125
                     </td>
-                    <td class="col-3">
+                    <td class="col-3">""</td>
+                    <td class="col-4">
                         Arnold's Drive In
                     </td>
                     <td class="col-4">
@@ -254,7 +257,8 @@
                     <td class="col-2">
                         5124
                     </td>
-                    <td class="col-3">
+                    <td class="col-3">""</td>
+                    <td class="col-4">
                         Central Perk
                     </td>
                     <td class="col-4">
@@ -273,7 +277,8 @@
                     <td class="col-2">
                         5123
                     </td>
-                    <td class="col-3">
+                    <td class="col-3">""</td>
+                    <td class="col-4">
                         Cafe Nervosa
                     </td>
                     <td class="col-4">
@@ -292,7 +297,8 @@
                     <td class="col-2">
                         5122
                     </td>
-                    <td class="col-3">
+                    <td class="col-3">""</td>
+                    <td class="col-4">
                         The Indigo Tea Shop
                     </td>
                     <td class="col-4">
@@ -311,7 +317,8 @@
                     <td class="col-2">
                         5121
                     </td>
-                    <td class="col-3">
+                    <td class="col-3">""</td>
+                    <td class="col-4">
                         Cheer's
                     </td>
                     <td class="col-4">
@@ -330,7 +337,8 @@
                     <td class="col-2">
                         5120
                     </td>
-                    <td class="col-3">
+                    <td class="col-3">""</td>
+                    <td class="col-4">
                         Joe's Bar
                     </td>
                     <td class="col-4">
@@ -349,7 +357,8 @@
                     <td class="col-2">
                         5119
                     </td>
-                    <td class="col-3">
+                    <td class="col-3">""</td>
+                    <td class="col-4">
                         Three Broomsticks
                     </td>
                     <td class="col-4">
@@ -368,7 +377,8 @@
                     <td class="col-2">
                         5117
                     </td>
-                    <td class="col-3">
+                    <td class="col-3">""</td>
+                    <td class="col-4">
                         Mos Eisley Cantina
                     </td>
                     <td class="col-4">
@@ -387,7 +397,8 @@
                     <td class="col-2">
                         5117
                     </td>
-                    <td class="col-3">
+                    <td class="col-3">""</td>
+                    <td class="col-4">
                         The Krusty Krab
                     </td>
                     <td class="col-4">
@@ -406,7 +417,8 @@
                     <td class="col-2">
                         5115
                     </td>
-                    <td class="col-3">
+                    <td class="col-3">""</td>
+                    <td class="col-4">
                         La Ratatouille
                     </td>
                     <td class="col-4">
@@ -425,7 +437,8 @@
                     <td class="col-2">
                         5115
                     </td>
-                    <td class="col-3">
+                    <td class="col-3">""</td>
+                    <td class="col-4">
                         Pizza Planet
                     </td>
                     <td class="col-4">
@@ -444,7 +457,8 @@
                     <td class="col-2">
                         5113
                     </td>
-                    <td class="col-3">
+                    <td class="col-3">""</td>
+                    <td class="col-4">
                         Frozen Banana
                     </td>
                     <td class="col-4">
@@ -463,7 +477,8 @@
                     <td class="col-2">
                         5112
                     </td>
-                    <td class="col-3">
+                    <td class="col-3">""</td>
+                    <td class="col-4">
                         Monk's Cafe
                     </td>
                     <td class="col-4">
@@ -482,7 +497,8 @@
                     <td class="col-2">
                         5111
                     </td>
-                    <td class="col-3">
+                    <td class="col-3">""</td>
+                    <td class="col-4">
                         Los Pollos Hermanos
                     </td>
                     <td class="col-4">
@@ -501,7 +517,8 @@
                     <td class="col-2">
                         5110
                     </td>
-                    <td class="col-3">
+                    <td class="col-3">""</td>
+                    <td class="col-4">
                         The Whistle Stop Cafe
                     </td>
                     <td class="col-4">
@@ -520,7 +537,8 @@
                     <td class="col-2">
                         5109
                     </td>
-                    <td class="col-3">
+                    <td class="col-3">""</td>
+                    <td class="col-4">
                         Vesuvio
                     </td>
                     <td class="col-4">
@@ -537,7 +555,8 @@
                     <td class="col-2">
                         5108
                     </td>
-                    <td class="col-3">
+                    <td class="col-3">""</td>
+                    <td class="col-4">
                         The Pie Pole
                     </td>
                     <td class="col-4">
@@ -556,7 +575,8 @@
                     <td class="col-2">
                         5107
                     </td>
-                    <td class="col-3">
+                    <td class="col-3">""</td>
+                    <td class="col-4">
                         Louie's Italian Restaurant
                     </td>
                     <td class="col-4">
@@ -575,7 +595,8 @@
                     <td class="col-2">
                         5106
                     </td>
-                    <td class="col-3">
+                    <td class="col-3">""</td>
+                    <td class="col-4">
                         The Frosty Place
                     </td>
                     <td class="col-4">
@@ -594,7 +615,8 @@
                     <td class="col-2">
                         5105
                     </td>
-                    <td class="col-3">
+                    <td class="col-3">""</td>
+                    <td class="col-4">
                         Joe's Pie Diner
                     </td>
                     <td class="col-4">
@@ -613,7 +635,8 @@
                     <td class="col-2">
                         5104
                     </td>
-                    <td class="col-3">
+                    <td class="col-3">""</td>
+                    <td class="col-4">
                         Chocolate Factory
                     </td>
                     <td class="col-4">

@@ -6,7 +6,8 @@ a {
     text-decoration: none;
     color: black;
 }
-body{
+
+body {
     padding-top: 120px;
 }
 
@@ -63,27 +64,27 @@ td {
     color: black;
 }
 
-.col-1 {
+.invoices.col-1 {
     order: 3;
     width: 25%;
     font-size: .9rem;
 }
 
-.col-2 {
+.invoices.col-2 {
     order: 4;
     width: 50%;
     text-align: center;
     font-size: .9rem;
 }
 
-.col-3 {
+.invoices.col-3 {
     order: 1;
     width: 80%;
     font-weight: bold;
     font-size: 1rem;
 }
 
-.col-4 {
+.invoices.col-4 {
     order: 2;
     width: 20%;
     font-weight: bold;
@@ -91,21 +92,56 @@ td {
     font-size: 1rem;
 }
 
-.col-5 {
+.invoices.col-5 {
     order: 5;
     width: 25%;
     font-size: .9rem;
     text-align: right;
 }
 
+.expenses .col-1 {
+    width: 25%;
+    font-size: .8rem;
+}
+
+.expenses .col-2 {
+    width: 50%;
+    font-size: .8rem;
+}
+
+.expenses .col-3 {
+    width: 15%;
+    font-size: .8rem;
+    display: none;
+}
+
+.expenses .col-4 {
+    width: 25%;
+    font-size: .8rem;
+    text-align: left;
+}
+
+.expenses .table-foot-1 {
+    font-size: .9rem;
+    font-weight: bold;
+    text-align: right;
+    width: 70%;
+}
+
+.expenses .table-foot-2 {
+    font-size: .9rem;
+    font-weight: bold;
+    width: 30%;
+}
+
 .row-link:before {
-        position: absolute;
-        content: "";
-        width: 100%;
-        height: 100%;
-        top: 0;
-        left: 0;
-    }
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+}
 
 .red {
     color: darkred;
@@ -131,6 +167,7 @@ td {
     color: #2a2438;
 }
 
+.expenses-header-ribbon,
 .invoices-footer-paid {
     display: block;
     z-index: 200;
@@ -150,7 +187,7 @@ td {
 
 @media screen and (max-width: 767px) {
 
-    .col-2::before {
+    .invoices .col-2::before {
         content: "No."
     }
 }
@@ -184,11 +221,11 @@ td {
         box-shadow: 1px 1px 5px grey;
     }
 
-    .col-1,
-    .col-2,
-    .col-3,
-    .col-4,
-    .col-5 {
+    .invoices.col-1,
+    .invoices.col-2,
+    .invoices.col-3,
+    .invoices.col-4,
+    .invoices.col-5 {
         height: 30px;
         padding: 10px;
         width: 15%;
@@ -210,15 +247,17 @@ td {
         z-index: 11;
     }
 
-    th:nth-child(3), .col-3 {
+    th:nth-child(3),
+    .col-3 {
         width: 45%;
     }
 
-    th:nth-child(5), .col-5 {
+    th:nth-child(5),
+    .col-5 {
         width: 10%;
     }
 
-    
+
 
     tr {
         width: 100%;
@@ -242,7 +281,7 @@ td {
     }
 
     header {
-        box-shadow:none;
+        box-shadow: none;
         border: none;
     }
 
@@ -304,7 +343,7 @@ td {
     }
 
     .table-container,
-     .table-container-alt {
+    .table-container-alt {
         position: fixed;
         top: 110px;
         left: 0px;
@@ -323,7 +362,7 @@ td {
 
     .table-container-alt {
         display: none;
-       
+
     }
 
     .invoices-button-unpaid-bottom {
@@ -405,11 +444,11 @@ td {
     }
 
     table {
-      max-width: 1600px;
-      width: 75vw;
-      margin: 0px auto;
-      position: relative;
-      top: 60px;
+        max-width: 1600px;
+        width: 75vw;
+        margin: 0px auto;
+        position: relative;
+        top: 60px;
     }
 
     thead,
