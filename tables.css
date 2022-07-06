@@ -6,6 +6,7 @@
     background: white;
     margin: 0px;
     border: none;
+    padding-top: 35px;
 }
 
 .tr-head {
@@ -22,30 +23,26 @@
 }
 
 .sticky-ribbon {
-    background-color: #e9e7ee;
+    background-color: #dbd8e3;
     position: sticky;
-    top: 119px;
+    top: 84px;
     z-index: 97;
     margin-top: 20px;
     border-top: solid darkgrey 1px;
 }
 
 .fixed-ribbon{
-    background-color: #e9e7ee;
+    background-color: #dbd8e3;
     box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 2px 0px;
     border-bottom: solid darkgrey 1px;
     border-top: none;
     position: fixed;
-    top: 120px;
+    top: 85px;
     z-index: 96;
 }
 
 .gradient {
-    display: block;
-    height: 50px;
-    width: 100%;
-    margin: 0px;
-    background-image: linear-gradient(#e9e7ee, white);
+    display: none;
 }
 
 table {
@@ -118,7 +115,7 @@ th {
 
     .table-container,
     .table-container-alt {
-        padding-top: 40px;
+        padding-top: 75px;
     }
 
     .ribbon {
@@ -137,7 +134,11 @@ th {
     }
 
     .gradient {
-        background-image: linear-gradient(#dbdbdb, white);
+        display: block;
+        height: 50px;
+        width: 100%;
+        margin: 0px;
+        background-image: linear-gradient(#dbd8e3, white);
     }
 
     tr {
@@ -180,7 +181,7 @@ th {
         left: 0px;
         width: 100%;
         z-index: 9;
-        padding-top: 50px;
+        padding-top: 85px;
         background: white;
         border-top: solid 1px darkgrey;
         height: calc(100vh - 100px);
@@ -219,7 +220,7 @@ th {
     }
 
     .sticky-ribbon {
-        top: 0px;
+        top: -36px;
         box-shadow: none;
         z-index: 100;
     }
@@ -227,6 +228,11 @@ th {
     .fixed-ribbon {
         top: 160px;
         z-index: 99;
+    }
+
+    .fixed-desktop {
+        position: fixed;
+        top: 160px;
     }
 
     .header-ribbon {

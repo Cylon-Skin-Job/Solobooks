@@ -7,7 +7,7 @@
     <meta name="theme-color" content="#2a2438" media="(prefers-color-scheme: light)">
     <meta name="theme-color" content="#2a2438" media="(prefers-color-scheme: dark)">
 
-    <link rel="stylesheet" href="./main.css">
+    <link rel="stylesheet" href="main.css">
     <link rel="stylesheet" href="invoices.css">
     <link rel="stylesheet" href="tables.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
@@ -66,7 +66,7 @@
     <div class="main">
 
 
-        <div class="table-container">
+        <div class="table-container" id="invoicesUnpaid">
             <button class="invoices-button-unpaid">
                 <a href="/invoices.html">
                     Unpaid
@@ -78,11 +78,11 @@
                 </a>
             </button>
 
-            <div class="invoices-footer-unpaid ribbon fixed-ribbon"><span class="invoices-footer-total">Unpaid: </span><span
-                    class="invoices-footer-amount"> $2,190.00</span>
+            <div class="ribbon fixed-ribbon" id="invoices-footer"><span class="invoices-footer-total">Unpaid</span>
+                <span class="invoices-footer-amount">: $2,190.00</span>
             </div>
 
-            <div class="gradient"></div>
+            
 
             <table>
                 <thead>
@@ -197,9 +197,8 @@
                 </a>
             </button>
 
-            <div class="invoices-footer-paid ribbon sticky-ribbon"><span class="invoices-footer-total">Paid: </span><span
-                    class="invoices-footer-amount">
-                    $11,970.00</span></div>
+            <div class="ribbon sticky-ribbon fixed-desktop" id="invoices-footer"><span class="invoices-footer-total">Paid</span>
+                <span class="invoices-footer-amount">: $11,970.00</span></div>
 
             <div class="gradient"></div>
 

@@ -49,6 +49,10 @@ a {
     text-align: right;
 }
 
+.invoices-footer-amount {
+    margin-left: -5px;
+}
+
 
 @media screen and (max-width: 767px) {
 
@@ -58,33 +62,35 @@ a {
 }
 
 @media screen and (min-width: 768px) {
-.col-1 {
-    width: 15%;
-}
+    .col-1 {
+        width: 15%;
+    }
 
-.col-2 {
-    width: 15%;
-}
+    .col-2 {
+        width: 15%;
+    }
 
-.col-3 {
-    width: 44%;
-}
+    .col-3 {
+        width: 44%;
+    }
 
-.col-4 {
-    width: 15%;
-}
+    .col-4 {
+        width: 15%;
+    }
 
-.col-5 {
-    width: 11%;
-}
+    .col-5 {
+        width: 11%;
+    }
 }
 
 @media screen and (min-width: 1025px) {
 
 
-    header {
-        display: block;
-    }
+   #invoicesPaid, #invoicesUnpaid {
+       padding-top: 50px;
+   }
+
+
 
     .invoices-button-paid,
     .invoices-button-paid-alt {
@@ -154,14 +160,13 @@ a {
         background: white;
     }
 
-    .invoices-footer-paid,
-    .invoices-footer-unpaid {
+    #invoices-footer {
         width: calc(100% - 200px);
         position: fixed;
         top: auto;
         bottom: 0px;
         left: 200px;
-        padding: 15px 0px 0px 10px;
+        padding: 20px 0px 0px 10px;
         margin: 0px;
         height: 60px;
         background-color: #dbd8e3;
@@ -173,21 +178,32 @@ a {
 
     .invoices-footer-total {
         display: inline-block;
-        width: 20%;
         font-weight: bold;
-        text-align: right;
-        padding: 5px;
+        text-align: left;
+        padding: 0px 0px 5px 0px;
     }
+ .invoices-footer-total {
+     display: inline-block;
+     font-weight: bold;
+     text-align: left;
+     padding: 0px 0px 5px 0px;
+ }
 
-    .invoices-footer-total::before {
-        content: "Total ";
-    }
+ .invoices-footer-total::after {
+     content: " Total";
+ }
+
+ .invoices-footer-amount {
+     display: inline-block;
+     font-weight: bold;
+     padding: 0px 5px 5px;
+     margin-right: 100px;
+ }
 
     .invoices-footer-amount {
         display: inline-block;
-        width: 20%;
         font-weight: bold;
-        padding: 5px;
+        padding: 0px 5px 5px;
     }
 
 }
