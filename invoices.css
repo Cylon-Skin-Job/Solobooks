@@ -160,21 +160,35 @@ a {
         background: white;
     }
 
-    #invoices-footer {
-        width: calc(100% - 200px);
+    #invoices-footer-container {
+        width: 100%;
         position: fixed;
         top: auto;
         bottom: 0px;
-        left: 200px;
+        right: 0px;
+        height: 60px;
+        z-index: 190;
+        background-image: linear-gradient(to right, #dbd8e3 50%, transparent 50%);
+        border-top: solid 2px darkgrey;
+    }
+
+    #invoices-footer {
+        width: 100%;
+        position: fixed;
+        top: auto;
+        bottom: 0px;
+        right: 0px;
         padding: 20px 0px 0px 10px;
         margin: 0px;
         height: 60px;
+        z-index: ;
         background-color: #dbd8e3;
         border-top: solid 2px darkgrey;
         display: flex;
         flex-flow: row nowrap;
         justify-content: flex-end;
     }
+
 
     .invoices-footer-total {
         display: inline-block;

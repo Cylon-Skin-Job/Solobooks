@@ -8,24 +8,42 @@ a {
 }
 
 .col-1 {
-    width: 30%;
-    font-size: .8rem;
+    width: 60%;
+    font-size: 1rem;
+    font-weight: bold;
+    order: 1;
 }
 
 .col-2 {
-    width: 45%;
+    width: 60%;
+    height: 40px;
+    font-size: .9rem;
+    order: 3;
+}
+
+.customer-address-1,
+.customer-address-2 {
+    display: block;
+    width: 100%;
     font-size: .8rem;
 }
 
 .col-3 {
-    display: none;
+    width: 30%;
+    font-size: 1rem;
+    text-align: right;
+    font-weight: bold;
+    order: 2;
 }
 
 .col-4 {
-    width: 25%;
-    font-size: .8rem;
-    text-align: left;
+    width: 40%;
+    font-size: .9rem;
+    text-align: right;
+    order: 4;
 }
+
+
 
 .table-foot-1 {
     display: inline-block;
@@ -43,7 +61,7 @@ a {
 }
 
 .tr-foot {
-    background: white;
+    back-ground: white;
     border-bottom: none;
     height: 50px;
     border-top: darkgrey solid 1px;
@@ -66,25 +84,37 @@ a {
         font-size: 1rem;
     }
 
+    .col-1 {
+        width: 25%;
+        padding-right: 15px;
+    }
+
     .col-2 {
-        width: 30%;
+        width: 45%;
+        text-overflow: ellipsis;
+        height: 25px;
+        padding-right: 15px;
     }
 
-    .col-3 {
-        width: 40%;
+
+
+    .customer-address-1,
+    .customer-address-2 {
+        display: inline;
+        width: auto;
+        font-size: inherit;
     }
 
-    .table-foot-1 {
-        font-size: 1rem;
-        width: 85%;
+    .customer-address-1::after {
+        content: ","
     }
 
-    .table-foot-2 {
-        font-size: 1rem;
-        width: 15%;
+    .customer-address-2::before {
+        content: " "
     }
 
-}  
+
+}
 
 @media screen and (min-width: 1025px) {
 
@@ -93,8 +123,16 @@ a {
         padding-top: 0px;
     }
 
-    .tr-foot {
-        height: 100px;
+    tr:nth-last-child(1) {
+        border-bottom: solid 1px darkgrey;
     }
+
+    .table-customers {
+        margin-bottom: 80px;
+    }
+
+        
+
+    
 
 }

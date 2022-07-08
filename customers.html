@@ -1,0 +1,508 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+
+    <meta name="theme-color" content="#2a2438" media="(prefers-color-scheme: light)">
+    <meta name="theme-color" content="#2a2438" media="(prefers-color-scheme: dark)">
+
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="customers.css">
+    <link rel="stylesheet" href="tables.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+</head>
+
+<body>
+
+    <nav>
+        <div class="site-nav">
+
+            <div class="site-nav-top">
+                <h1 class="solo">SoloBooks</h1>
+                <span class="site-header-company-name">RC Exhaust</span>
+            </div>
+
+            <ul class="navigation">
+                <li>
+                    <a href="index.html">
+                        <span class="material-icons" alt=" ">analytics
+                        </span>
+                        Overview
+                    </a>
+                </li>
+                <li>
+                    <a href="invoices.html">
+                        <span class="material-icons" alt=" ">description</span>
+                        Invoices
+                    </a>
+                </li>
+                <li>
+                    <a href="expenses.html">
+                        <span class="material-icons" alt=" ">receipt_long</span>
+                        Expenses
+                    </a>
+                </li>
+                <li class="active">
+                    <a href="customers.html">
+                        <span class="material-icons" alt=" ">people</span>
+                        Customers
+                    </a>
+                </li>
+                <li>
+                    <a href="settings.html">
+                        <span class="material-icons" alt=" ">settings</span>
+                        Settings
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <header>
+        <h2>Customers</h2>
+    </header>
+
+    <div class="main">
+        
+
+        
+        <div class="table-container">
+
+            <div class="ribbon fixed-ribbon"><span>B</span></div>
+
+
+            <table class="table-customers">
+                <thead>
+                    <tr class="tr-head">
+                        <th class="col-1">Customer</th>
+                        <th class="col-2">Address</th>
+                        <th class="col-3">Balance</th>
+                        <th class="col-4 col-last">Status</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+
+                    <tr>
+                        <td class="col-1">Bob's Burgers</td>
+                        <td class="col-2">
+                            <span class="customer-address-1">115 W Ocean Drive</span>
+                            <span class="customer-address-2">Ocean City, NJ. 17740</span>
+                        </td>
+                        <td class="col-3">---</td>
+                        <td class="col-4 col-last">
+                            <a class="row-link" href="customerPreview.html">
+                                Current
+                            </a></td>
+                    </tr>
+
+                </tbody>
+
+            </table>
+
+            <div class="ribbon sticky-ribbon"><span>C</span></div>
+
+            <table class="table-customers">
+
+                <tbody>
+
+                    <tr>
+                        <td class="col-1">Cafe Nervosa</td>
+                        <td class="col-2">
+                            <span class="customer-address-1">2115 E 3rd St.</span>
+                            <span class="customer-address-2">Seattle, WA. 98101</span>
+                        </td>
+                        <td class="col-3">$690.00</td>
+                        <td class="col-4 col-last">
+                            <a class="row-link red" href="customerPreview.html">
+                                Balance Due
+                            </a></td>
+                    </tr>
+
+                    <tr>
+                        <td class="col-1">Central Perk</td>
+                        <td class="col-2">
+                            <span class="customer-address-1">565 5th Ave.</span>
+                            <span class="customer-address-2">New York, NY. 10001</span>
+                        </td>
+                        <td class="col-3">$450.00</td>
+                        <td class="col-4 col-last">
+                            <a class="row-link red" href="customerPreview.html">
+                                Balance Due
+                            </a></td>
+                    </tr>
+
+                    <tr>
+                        <td class="col-1">Cheer's</td>
+                        <td class="col-2">
+                            <span class="customer-address-1">84 Beacon St.</span>
+                            <span class="customer-address-2">Boston, MA 02108</span>
+                        </td>
+                        <td class="col-3">$450.00</td>
+                        <td class="col-4 col-last">
+                            <a class="row-link red" href="customerPreview.html">
+                                Balance Due
+                            </a></td>
+                    </tr>
+
+                    <tr>
+                        <td class="col-1">Chocolate Factory</td>
+                        <td class="col-2">
+                            <span class="customer-address-1">Munich, Bavaria</span>
+                            <span class="customer-address-2">West Germany</span>
+                        </td>
+                        <td class="col-3">---</td>
+                        <td class="col-4 col-last">
+                            <a class="row-link" href="customerPreview.html">
+                                Current
+                            </a></td>
+                    </tr>
+
+                </tbody>
+
+            </table>
+
+            <div class="ribbon sticky-ribbon"><span>F</span></div>
+
+            <table class="table-customers">
+
+                <tbody>
+
+                    <tr>
+                        <td class="col-1">Frosty Place</td>
+                        <td class="col-2">
+                            <span class="customer-address-1">32 E Idaho Ave</span>
+                            <span class="customer-address-2">Homedale, ID 83628</span>
+                        </td>
+                        <td class="col-3">---</td>
+                        <td class="col-4 col-last">
+                            <a class="row-link" href="customerPreview.html">
+                                Current
+                            </a></td>
+                    </tr>
+
+                    <tr>
+                        <td class="col-1">Frozen Banana</td>
+                        <td class="col-2">
+                            <span class="customer-address-1">565 Ocean Wharf Blvd.</span>
+                            <span class="customer-address-2">Oceanside, CA 92003</span>
+                        </td>
+                        <td class="col-3">---</td>
+                        <td class="col-4 col-last">
+                            <a class="row-link" href="customerPreview.html">
+                                Current
+                            </a></td>
+                    </tr>
+
+                </tbody>
+
+            </table>
+
+            <div class="ribbon sticky-ribbon"><span>G</span></div>
+
+            <table class="table-customers">
+
+                <tbody>
+
+                    <tr>
+                        <td class="col-1">Gaston's</td>
+                        <td class="col-2">
+                            <span class="customer-address-1">234 Main St.</span>
+                            <span class="customer-address-2">Villeneuve, France</span>
+                        </td>
+                        <td class="col-3">---</td>
+                        <td class="col-4 col-last">
+                            <a class="row-link" href="customerPreview.html">
+                                Current
+                            </a></td>
+                    </tr>
+
+                </tbody>
+
+            </table>
+
+            <div class="ribbon sticky-ribbon"><span>I</span></div>
+
+            <table class="table-customers">
+
+                <tbody>
+
+                    <tr>
+                        <td class="col-1">Indigo Tea Shop</td>
+                        <td class="col-2">
+                            <span class="customer-address-1">1501 Riverwood Dr.</span>
+                            <span class="customer-address-2">Burnsville, MN 55337</span>
+                        </td>
+                        <td class="col-3">$565</td>
+                        <td class="col-4 col-last">
+                            <a class="row-link red" href="customerPreview.html">
+                                Balance Due
+                            </a></td>
+                    </tr>
+
+                </tbody>
+
+            </table>
+
+            <div class="ribbon sticky-ribbon"><span>J</span></div>
+
+            <table class="table-customers">
+
+                <tbody>
+
+                    <tr>
+                        <td class="col-1">Joe's Bar</td>
+                        <td class="col-2">
+                            <span class="customer-address-1">940 W Weed St</span>
+                            <span class="customer-address-2">Chicago, IL 60642</span>
+                        </td>
+                        <td class="col-3">$485</td>
+                        <td class="col-4 col-last">
+                            <a class="row-link red" href="customerPreview.html">
+                                Balance Due
+                            </a></td>
+                    </tr>
+
+                    <tr>
+                        <td class="col-1">Joes Pie Diner</td>
+                        <td class="col-2">
+                            <span class="customer-address-1">565 North Clinton Drive</span>
+                            <span class="customer-address-2">Milwaukee, WI. 53201</span>
+                        </td>
+                        <td class="col-3">---</td>
+                        <td class="col-4 col-last">
+                            <a class="row-link" href="customerPreview.html">
+                                Current
+                            </a></td>
+                    </tr>
+
+                </tbody>
+
+            </table>
+
+            <div class="ribbon sticky-ribbon"><span>K</span></div>
+
+            <table class="table-customers">
+
+                <tbody>
+
+                    <tr>
+                        <td class="col-1">Krusty Krab</td>
+                        <td class="col-2">
+                            <span class="customer-address-1">Bikini Atoll</span>
+                            <span class="customer-address-2">Pacific Ocean</span>
+                        </td>
+                        <td class="col-3">---</td>
+                        <td class="col-4 col-last">
+                            <a class="row-link" href="customerPreview.html">
+                                Current
+                            </a></td>
+                    </tr>
+
+                </tbody>
+
+            </table>
+
+            <div class="ribbon sticky-ribbon"><span>L</span></div>
+
+            <table class="table-customers">
+
+                <tbody>
+
+                    <tr>
+                        <td class="col-1">La Ratatouille</td>
+                        <td class="col-2">
+                            <span class="customer-address-1">234 Main St.</span>
+                            <span class="customer-address-2">Villeneuve, France</span>
+                        </td>
+                        <td class="col-3">---</td>
+                        <td class="col-4 col-last">
+                            <a class="row-link" href="customerPreview.html">
+                                Current
+                            </a></td>
+                    </tr>
+
+                    <tr>
+                        <td class="col-1">Los Pollos Hermanos</td>
+                        <td class="col-2">
+                            <span class="customer-address-1">9358 Eagle Ranch Rd NW</span>
+                            <span class="customer-address-2">Albuquerque, NM 87114</span>
+                        </td>
+                        <td class="col-3">---</td>
+                        <td class="col-4 col-last">
+                            <a class="row-link" href="customerPreview.html">
+                                Current
+                            </a></td>
+                    </tr>
+
+                </tbody>
+
+            </table>
+
+            <div class="ribbon sticky-ribbon"><span>M</span></div>
+
+            <table class="table-customers">
+
+                <tbody>
+
+                    <tr>
+                        <td class="col-1">Monk's Cafe</td>
+                        <td class="col-2">
+                            <span class="customer-address-1">555 W 112th Street</span>
+                            <span class="customer-address-2">New York, NY. 10001</span>
+                        </td>
+                        <td class="col-3">---</td>
+                        <td class="col-4 col-last">
+                            <a class="row-link" href="customerPreview.html">
+                                Current
+                            </a></td>
+                    </tr>
+
+                    <tr>
+                        <td class="col-1">Mos Eisley Cantina</td>
+                        <td class="col-2">
+                            <span class="customer-address-1">Tattoine</span>
+                            <span class="customer-address-2">Outer Rim Territories</span>
+                        </td>
+                        <td class="col-3">---</td>
+                        <td class="col-4 col-last">
+                            <a class="row-link" href="customerPreview.html">
+                                Current
+                            </a></td>
+                    </tr>
+
+                </tbody>
+
+            </table>
+
+            <div class="ribbon sticky-ribbon"><span>P</span></div>
+
+            <table class="table-customers">
+
+                <tbody>
+
+                    <tr>
+                        <td class="col-1">Paunch Burger</td>
+                        <td class="col-2">
+                            <span class="customer-address-1">565 North Clinton Drive</span>
+                            <span class="customer-address-2">Pawnee, IN 56100</span>
+                        </td>
+                        <td class="col-3">---</td>
+                        <td class="col-4 col-last">
+                            <a class="row-link" href="customerPreview.html">
+                                Current
+                            </a></td>
+                    </tr>
+
+                    <tr>
+                        <td class="col-1">Pie Pole</td>
+                        <td class="col-2">
+                            <span class="customer-address-1">714 Traction Ave</span>
+                            <span class="customer-address-2">Los Angeles, CA 90013</span>
+                        </td>
+                        <td class="col-3">---</td>
+                        <td class="col-4 col-last">
+                            <a class="row-link" href="customerPreview.html">
+                                Current
+                            </a></td>
+                    </tr>
+
+                    <tr>
+                        <td class="col-1">Pizza Planet</td>
+                        <td class="col-2">
+                            <span class="customer-address-1">745 Anchor Ave</span>
+                            <span class="customer-address-2">Orange Cove, CA 93646</span>
+                        </td>
+                        <td class="col-3">---</td>
+                        <td class="col-4 col-last">
+                            <a class="row-link" href="customerPreview.html">
+                                Current
+                            </a></td>
+                    </tr>
+
+                </tbody>
+
+            </table>
+
+            <div class="ribbon sticky-ribbon"><span>T</span></div>
+
+            <table class="table-customers">
+
+                <tbody>
+
+                    <tr>
+                        <td class="col-1">Three Broomsticks</td>
+                        <td class="col-2">
+                            <span class="customer-address-1">100 Universal City Plaza</span>
+                            <span class="customer-address-2">Universal City, CA 91608</span>
+                        </td>
+                        <td class="col-3">---</td>
+                        <td class="col-4 col-last">
+                            <a class="row-link" href="customerPreview.html">
+                                Current
+                            </a></td>
+                    </tr>
+
+                </tbody>
+
+            </table>
+
+            <div class="ribbon sticky-ribbon"><span>T</span></div>
+
+            <table class="table-customers">
+
+                <tbody>
+
+                    <tr>
+                        <td class="col-1">Vesuvio</td>
+                        <td class="col-2">
+                            <span class="customer-address-1">91 Elizabeth Ave</span>
+                            <span class="customer-address-2">Elizabeth, NJ 07206</span>
+                        </td>
+                        <td class="col-3">---</td>
+                        <td class="col-4 col-last">
+                            <a class="row-link" href="customerPreview.html">
+                                Current
+                            </a></td>
+                    </tr>
+
+                </tbody>
+
+            </table>
+
+            <div class="ribbon sticky-ribbon"><span>T</span></div>
+
+            <table class="table-customers">
+
+                <tbody>
+
+                    <tr>
+                        <td class="col-1">Whistle Stop</td>
+                        <td class="col-2">
+                            <span class="customer-address-1">443 McCrackin St</span>
+                            <span class="customer-address-2">Juliette, GA 31046</span>
+                        </td>
+                        <td class="col-3">---</td>
+                        <td class="col-4 col-last">
+                            <a class="row-link" href="customerPreview.html">
+                                Current
+                            </a></td>
+                    </tr>
+
+                </tbody>
+
+            </table>
+
+        </div>
+
+    </div>
+
+
+
+    <button class="plus-button"><a href="/customerPreview.html#expense-edit"><span class="material-icons"
+                id="plusButton">add_circle</span><span class="plus-button-text">New
+                Customer</span></a></button>
+
+
+</body>
