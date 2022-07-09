@@ -36,11 +36,9 @@ a {
     order: 2;
 }
 
-.col-4 {
-    width: 40%;
-    font-size: .9rem;
-    text-align: right;
-    order: 4;
+.company-logo {
+    height: 250px;
+    border: none;
 }
 
 @media screen and (min-width: 768px) {
@@ -95,13 +93,5 @@ a {
         background-color: #dbd8e3;
         padding-top: 0px;
     }
-
-    tr:nth-last-child(1) {
-        border-bottom: solid 1px darkgrey;
-    }
-
-        
-
-    
 
 }

@@ -172,32 +172,9 @@ header {
 
     .plus-button-text {
         display: none;
-
     }
 
-    header {
-            display: block;
-            width: 100%;
-            position: fixed;
-            top: 85px;
-            left: 0px;
-            z-index: 98;
-            height: 30px;
-            width: 100%;
-            margin: 0px;
-            padding: 5px 10px 5px;
-            border: none;
-            background-color: #dbd8e3;
-        }
 
-    h2 {
-        position: relative;
-        top: 5px;
-        height: 30px;
-        font-size: 1rem;
-        padding-left: 5px;
-        color: #2a2438;
-    }
 }
 
 @media screen and (min-width:1025px) {
@@ -295,6 +272,7 @@ header {
     }
 
     header {
+        display: block;
         width: calc(100% - 200px);
         position: fixed;
         z-index: 202;
@@ -306,6 +284,15 @@ header {
         background-color: #dbd8e3;
         box-shadow: none;
         border: none;
+    }
+
+    h2 {
+        position: relative;
+        top: 5px;
+        height: 30px;
+        font-size: 1rem;
+        padding-left: 5px;
+        color: #2a2438;
     }
 
     body {

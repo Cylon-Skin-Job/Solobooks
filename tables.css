@@ -7,6 +7,7 @@
     margin: 0px;
     border: none;
     padding-top: 35px;
+    overflow: visible;
 }
 
 .tr-head {
@@ -52,6 +53,9 @@ table {
     border: none;
     border-collapse: collapse;
 }
+
+
+
 
 tr {
     position: relative;
@@ -100,6 +104,10 @@ th {
     color: forestgreen;
 }
 
+
+
+
+
 @media screen and (min-width:768px) {
 
     .col-1,
@@ -135,10 +143,11 @@ th {
 
     .gradient {
         display: block;
-        height: 50px;
+        height: 40px;
         width: 100%;
         margin: 0px;
-        background-image: linear-gradient(#dbd8e3, white);
+        background: white;
+        border-top: darkgrey solid 1px;
     }
 
     tr {
@@ -164,12 +173,13 @@ th {
         height: 40px;
         background: white;
         border-bottom: solid 1px darkgrey;
-        box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 2px 0px;
     }
 
     .tr-head th {
         font-weight: bold;
     }
+
+    
 }
 
 @media screen and (min-width:1025px) {
