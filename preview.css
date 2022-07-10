@@ -140,6 +140,7 @@ button a:hover,
     border: none;
     font-weight: bold;
     font-size: 1em;
+    border: solid 1px #2a2438;
 }
 
 .button-large-right {
