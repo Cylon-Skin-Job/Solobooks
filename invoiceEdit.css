@@ -1,0 +1,417 @@
+/* 8.5 x 11 sheet of paper. 
+--global settings-- 
+Style the containter itself respective to screen size below using:
+.invoice-preview-page-container
+Mobile First
+
+*/
+
+.page-container {
+    position: relative;
+    margin: auto;
+    width: 99vw;
+    height: 130vw;
+    background: white;
+    color: black;
+    z-index: 2;
+    box-shadow: 3px 2px 18px -2px rgba(0, 0, 0, 0.39);
+}
+
+/* Formats address for both customer and company */
+.address-container {
+    display: block;
+    width: 50%;
+    position: absolute;
+}
+
+.address-container p,
+h2 {
+    font-weight: bold;
+    padding: 0;
+    margin: 0;
+}
+
+/* Company address in upper left corner*/
+.company-address {
+    top: 3%;
+    left: 3%;
+}
+
+/* Company logo in upper right corner */
+.logo {
+    width: 15%;
+    margin-top: 0;
+    position: absolute;
+    top: 2.5%;
+    right: 2.5%;
+}
+
+/* Customer "BILL TO:" name and address*/
+.customer-address {
+    top: 13%;
+    left: 7%;
+}
+
+
+/* Table to contain company info (phone, email, invoice, date). */
+.table-1 {
+    position: absolute;
+    top: 17%;
+    right: 5%;
+    width: 50%;
+    padding: 0;
+    margin: 0 0%;
+}
+
+/* Table to contain item descriptions and amount */
+.invoice-preview-table-2 {
+    border-collapse: collapse;
+    position: absolute;
+    top: 28%;
+    left: 4%;
+    width: 92%;
+    padding: 1%;
+}
+
+thead tr {
+    border-bottom: darkgrey solid 1px;
+}
+
+tfoot tr {
+    border-top: darkgrey solid 1px;
+}
+
+.width-95 {
+    width: 95%;
+}
+
+.table-bottom {
+    padding-bottom: 5%;
+}
+
+.page-footer {
+    display: inline;
+    text-align: center;
+    width: 100%;
+    position: absolute;
+    bottom: 5%;
+}
+
+.greenbox {
+    border: solid 3vmax darkGreen;
+    border-radius: 6vmax;
+    color: darkGreen;
+    padding: 1%;
+    font-weight: bold;
+    font-size: 10%;
+    margin: 1%;
+    transform: rotate(-39deg);
+    position: absolute;
+    top: 60%;
+    left: 45%;
+    z-index: 10000;
+}
+
+/* Font-size of invoice page container 7.5px for small screens, larger by scale. */
+.page-container-font {
+    font-size: 2vw;
+}
+
+
+/* Modal-mobile DATE  */
+
+.invoice-preview-edit-wrapper-1,
+.invoice-preview-edit-wrapper-2 {
+    width: 100%;
+    margin: 20px auto 0px;
+    background-color: transparent;
+    border: none;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+
+.invoice-preview-date-container,
+.invoice-preview-customer-container,
+.invoice-preview-items-container {
+    width: 98%;
+    background-color: transparent;
+    color: black;
+    border-radius: 10px;
+    display: block;
+    margin: 5% auto 0px;
+}
+
+.invoice-preview-items-container {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    background-color: #f2f2f2;
+    border: solid 1px darkgrey;
+}
+
+.item-span-all {
+    display: none;
+}
+
+.invoice-preview-date-label,
+.invoice-preview-customer-label,
+.invoice-preview-items-label {
+    display: inline-block;
+    font-size: .8rem;
+    padding-left: 10px;
+
+}
+
+.invoice-preview-date-field,
+.invoice-preview-customer-field,
+.invoice-preview-items-field {
+    display: inline-block;
+    width: 96%;
+    height: 40px;
+    border-radius: 10px;
+    background: white;
+    text-align: center;
+    font-size: 1rem;
+    margin: 10px auto 0px;
+}
+
+.description-label,
+.address-label,
+.amount-label {
+    display: none;
+}
+
+.invoice-preview-address-text,
+.invoice-preview-description-text,
+.invoice-preview-amount-text {
+    width: 96%;
+    height: 85px;
+    border: 1px solid darkgrey;
+    border-radius: 10px;
+    background: white;
+    padding: 1% 5%;
+    resize: none;
+    overflow: hidden;
+    font-size: 1rem;
+    margin: 10px 0px 0px;
+}
+
+.invoice-preview-amount-text {
+    width: 39%;
+    height: 40px;
+    margin-left: 57%;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+option {
+    color: black;
+}
+
+@media screen and (min-width: 600px) {
+
+    .invoice-preview-edit-wrapper-1 {
+        flex-direction: row-reverse;
+        justify-content: flex-end;
+        align-items: flex-start;
+    }
+
+    .invoice-preview-date-container {
+        width: 150px;
+        margin: 30px;
+    }
+
+    .invoice-preview-customer-container {
+        width: 300px;
+        margin: 30px;
+    }
+
+
+    .invoice-preview-items-container {
+        width: 98%;
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-between;
+        align-items: baseline;
+    }
+
+    .invoice-preview-items-label {
+        display: block;
+        width: 100%;
+        margin: 5px;
+        height: 20px;
+        order: 1;
+        text-align: center;
+    }
+
+    .invoice-preview-items-field {
+        display: inline-block;
+        width: 300px;
+        margin: 0px 5px;
+        order: 2;
+    }
+
+    .invoice-preview-description-text {
+        order: 4;
+    }
+
+    
+
+    .invoice-preview-amount-text {
+        display: inline-block;
+        width: 150px;
+        margin: .5%;
+        order: 3;
+        padding: 10px 5px;
+    }
+
+    .invoice-preview-description-text {
+        width: 99%;
+        margin: .5%;
+    }
+
+    .invoice-preview-amount-label {
+        display: none;
+    }
+
+}
+
+/* Desktop */
+
+@media screen and (min-width: 1025px) {
+    
+
+    .page-container-font {
+        font-size: 1.4vh;
+    }
+
+    .page-container {
+        display: block;
+        position: relative;
+        width: 72vh;
+        height: 92vh;
+        background-color: white;
+        color: black;
+        border: darkgrey 1px solid;
+        z-index: 101;
+    }
+
+    .invoice-preview-edit-wrapper-1 {
+        width: 90%;
+        margin-left: auto;
+    }
+
+    .invoice-preview-edit-wrapper-2 {
+        width: 100%;
+        margin: 50px 0px;
+        display: flex;
+        flex-flow: column wrap;
+        align-content: stretch;
+        border: solid 1px darkgrey;
+        border-radius: 15px;
+        background: #f2f2f2;
+    }
+
+    .invoice-preview-date-container {
+        width: 150px;
+        margin: 30px 20%;
+    }
+
+    .invoice-preview-items-container {
+        display: flex;
+        flex-flow: row nowrap;
+        margin-top: 0px;
+        border: none;
+        background: transparent;
+
+    }
+
+    .invoice-preview-items-label {
+        display: none;
+    }
+
+
+    .invoice-preview-items-field,
+    .items-span {
+        order: 1;
+        margin: .5%;
+        min-width: 200px;
+        width: 25%;
+        height: 50px;
+    }
+
+    .invoice-preview-description-text,
+    .description-span {
+        order: 2;
+        width: 60%;
+        height: 50px;
+        margin: .5%;
+    }
+
+    .invoice-preview-amount-text,
+    .amount-span {
+        order: 3;
+        margin: .5%;
+        min-width: 150px;
+        width: 10%;
+        height: 50px;
+
+    }
+
+    .item-span-all {
+        display: inline-block;
+        height: 20px;
+        font-size: .8rem;
+        padding-left: 10px;
+        margin-bottom: 0px;
+    }
+
+}
+
+
+
+
+
+@media print {
+
+    .invoice-preview-main {
+        width: 750px;
+        height: 940px;
+        z-index: 1;
+        background-color: white;
+        border: none;
+        box-sizing: border-box;
+    }
+
+    .content-font-1 {
+        font-size: 12px;
+    }
+
+    .page-container {
+        display: block;
+        box-sizing: border-box;
+        width: 750px;
+        margin: none;
+        height: 940px;
+        position: fixed;
+        top: 0px;
+        left: 0px;
+        background: white;
+        color: black;
+        z-index: 102;
+        border: none;
+        box-shadow: none;
+    }
+
+    .invoice-preview-foot {
+        bottom: 0%;
+    }
+
+    .print-none {
+        display: none;
+
+    }
+
+}

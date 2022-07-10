@@ -21,42 +21,43 @@
     <meta name="theme-color1" content="#dbd8e3" media="(prefers-color1-scheme: light)">
     <meta name="theme-color1" content="#dbd8e3" media="(prefers-color1-scheme: dark)">
     <meta name="format-detection" content="telephone=no">
-    <link rel="stylesheet" href="./invoicePreview.css">
+    <link rel="stylesheet" href="preview.css">
+    <link rel="stylesheet" href="invoiceEdit.css">
     <link rel="stylesheet"
         href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
 </head>
 
 <body>
 
-    <div class="color1 invoice-preview-header-view shadow border-bottom print-none">
-        <button class="color1 back-button border-none button" onclick="javascript:history.back()">
+    <div class="header-view print-none">
+        <button class="back-button button" onclick="javascript:history.back()">
             <span class="material-symbols-outlined">arrow_back</span>
         </button>
-        <h1 class="color1">Invoice No. 9999</h1>
+        <h1>Invoice No. 9999</h1>
     </div> <!-- invoice-preview-header -->
 
     <!-- 8.5 x 11 sheet of paper. -->
-    <div class="invoice-preview-main">
-        <div class="invoice-preview-page-container shadow border">
+    <div class="preview-main">
+        <div class="page-container">
 
             <!-- Address COMPANY-->
-            <div class="invoice-preview-address-container invoice-preview-company-address">
-                <p class="invoice-preview-page-container-font">RC Exhaust</p>
-                <address class="invoice-preview-page-container-font">
+            <div class="address-container company-address">
+                <p class= "page-container-font">RC Exhaust</p>
+                <address class= "page-container-font">
                     PO Box 287
                     <br>
                     Bishop, Ca. 93515
                 </address>
             </div>
 
-            <img src="https://rc-resume.neocities.org/companyLogo.png" alt="Company Logo" class="invoice-preview-logo">
+            <img src="https://rc-resume.neocities.org/companyLogo.png" alt="Company Logo" class="logo">
 
             <!-- Address CUSTOMER-->
-            <div class="invoice-preview-address-container invoice-preview-customer-address">
-                <h2 class="invoice-preview-page-container-font">BILL TO:</h2>
+            <div class="address-container customer-address">
+                <h2 class= "page-container-font">BILL TO:</h2>
                 <br>
-                <p class="invoice-preview-page-container-font">Bob's Burgers</p>
-                <address class="invoice-preview-page-container-font">
+                <p class= "page-container-font">Bob's Burgers</p>
+                <address class= "page-container-font">
                     115 W Ocean Drive
                     <br>
                     Ocean City, NJ. 17740
@@ -64,23 +65,23 @@
             </div>
 
             <!-- Table to contain company info (phone, email, invoice, date). -->
-            <table class="invoice-preview-table-1">
+            <table class="table-1">
                 <tbody>
 
                     <tr>
-                        <td class="invoice-preview-page-container-font align-right bold">
+                        <td class= "page-container-font align-right bold">
                             Invoice No.
                         </td>
-                        <td class="invoice-preview-page-container-font  align-left">
+                        <td class= "page-container-font  align-left">
                             5224
                         </td>
                     </tr>
 
                     <tr>
-                        <td class="invoice-preview-page-container-font align-right bold">
+                        <td class= "page-container-font align-right bold">
                             Date
                         </td>
-                        <td class="invoice-preview-page-container-font  align-left">
+                        <td class= "page-container-font  align-left">
                             09/28/2021
                         </td>
                     </tr>
@@ -92,53 +93,53 @@
             <table class="invoice-preview-table-2">
                 <thead>
                     <tr class="border-bottom">
-                        <th class="width-95 invoice-preview-page-container-font align-left">
+                        <th class="width-95 page-container-font align-left">
                             Description
                         </th>
-                        <th class="invoice-preview-page-container-font align-right">
+                        <th class= "page-container-font align-right">
                             Amount
                         </th>
                     </tr>
                 </thead>
                 <tbody>
                     <tr>
-                        <td class="width-95 invoice-preview-page-container-font align-left">
+                        <td class="width-95 page-container-font align-left">
                             Lorem ipsum is placeholder text
                         </td>
-                        <td class="invoice-preview-page-container-font align-right">
+                        <td class= "page-container-font align-right">
                             $90,000.01
                         </td>
                     </tr>
                     <tr>
-                        <td class="width-95 invoice-preview-page-container-font align-left">
+                        <td class="width-95 page-container-font align-left">
                             Lorem ipsum
                         </td>
-                        <td class="invoice-preview-page-container-font align-right">
+                        <td class= "page-container-font align-right">
                             $590
                         </td>
                     </tr>
                     <tr>
-                        <td class="table-bottom width-95 invoice-preview-page-container-font align-left">
+                        <td class="table-bottom width-95 page-container-font align-left">
                             previewing layouts and visual mockups.
                         </td>
-                        <td class="table-bottom invoice-preview-page-container-font align-right">
+                        <td class="table-bottom page-container-font align-right">
                             $590
                         </td>
                     </tr>
                 </tbody>
                 <tfoot>
-                    <tr class="border-top">
-                        <td class="width-95 invoice-preview-page-container-font  align-right bold">
+                    <tr>
+                        <td class= "width-95 page-container-font  align-right bold">
                             Total
                         </td>
-                        <td class="invoice-preview-page-container-font align-right">
+                        <td class= "page-container-font align-right">
                             $590
                         </td>
                     </tr>
                 </tfoot>
             </table>
 
-            <div class="invoice-preview-foot invoice-preview-page-container-font">
+            <div class="page-footer page-container-font">
                 <address>Phone: (867) 867-5309 | Email: accountspayable@rcexhaust.com</address>
             </div>
         </div>
@@ -146,20 +147,20 @@
 
     <!-- Invoice EDITOR. -->
 
-    <div class="invoice-preview-edit-container print-none " id="invoice-edit">
+    <div class="preview-edit-container print-none " id="invoice-edit">
 
         <!-- Invoice EDIT HEADER. -->
 
-        <div class="color1 invoice-preview-header-edit shadow border-bottom print-none">
-            <button class="color1 back-button border-none button" onclick="javascript:history.back()">
+        <div class="header-edit print-none">
+            <button class="back-button button" onclick="javascript:history.back()">
                 <span class="material-symbols-outlined">arrow_back</span>
             </button>
-            <h1 class="color1">Edit Invoice</h1>
+            <h1>Edit Invoice</h1>
         </div> <!-- invoice-preview-header -->
 
         <!-- modal-header -->
 
-        <div class="invoice-preview-edit-window">
+        <div class="preview-edit-window">
             <!-- Invoice EDIT DATE. -->
             <div class="invoice-preview-edit-wrapper-1">
                 <div class="invoice-preview-date-container">
@@ -202,7 +203,7 @@
                     </select>
 
                     <!-- Invoice EDIT BILLING ADDRESS. -->
-                    <label for="text-area-customer-address" class="invoice-preview-address-label">Billing
+                    <label for="text-area-customer-address" class="address-label">Billing
                         Address:</label>
                     <textarea id="text-area-customer-address" name="customer-address"
                         class="invoice-preview-address-text border">Bob's Burgers
@@ -234,13 +235,13 @@ Ocean City, NJ. 17740
                         <option value="6">Triple Hood System ................... $750</option>
                     </select>
 
-                    <label for="invoice-preview-items-field" class="invoice-preview-description-label">
+                    <label for="invoice-preview-items-field" class="description-label">
                         Description:
                     </label>
                     <input type="text" id="invoice-preview-description-text border" name="customer-address"
                         class="invoice-preview-description-text black" maxlength="120"
                         value="Single System Service"></input>
-                    <label for="invoice-preview-items-field" class="invoice-preview-amount-label">
+                    <label for="invoice-preview-items-field" class="amount-label">
                         Amount:
                     </label>
                     <input type="number" rows="1" cols="10" id="text-area-item-amount" name="amount"
@@ -262,13 +263,13 @@ Ocean City, NJ. 17740
                         <option value="6">Triple Hood System ................... $750</option>
                     </select>
 
-                    <label for="invoice-preview-items-field" class="invoice-preview-description-label">
+                    <label for="invoice-preview-items-field" class="description-label">
                         Description:
                     </label>
                     <input type="text" id="invoice-preview-description-text border" name="customer-address"
                         class="invoice-preview-description-text black" maxlength="120"
                         placeholder="Item description text here"></input>
-                    <label for="invoice-preview-items-field" class="invoice-preview-amount-label">
+                    <label for="invoice-preview-items-field" class="amount-label">
                         Amount:
                     </label>
                     <input type="number" rows="1" cols="10" id="text-area-item-amount" name="amount"
@@ -290,13 +291,13 @@ Ocean City, NJ. 17740
                         <option value="6">Triple Hood System ................... $750</option>
                     </select>
 
-                    <label for="invoice-preview-items-field" class="invoice-preview-description-label">
+                    <label for="invoice-preview-items-field" class="description-label">
                         Description:
                     </label>
                     <input type="text" id="invoice-preview-description-text border" name="customer-address"
                         class="invoice-preview-description-text" maxlength="120"
                         placeholder="Item description text here"></input>
-                    <label for="invoice-preview-items-field" class="invoice-preview-amount-label">
+                    <label for="invoice-preview-items-field" class="amount-label">
                         Amount:
                     </label>
                     <input type="number" rows="1" cols="10" id="text-area-item-amount" name="amount"
@@ -318,13 +319,13 @@ Ocean City, NJ. 17740
                         <option value="6">Triple Hood System ................... $750</option>
                     </select>
 
-                    <label for="invoice-preview-items-field" class="invoice-preview-description-label">
+                    <label for="invoice-preview-items-field" class="description-label">
                         Description:
                     </label>
                     <input type="text" id="invoice-preview-description-text border" name="customer-address"
                         class="invoice-preview-description-text" maxlength="120"
                         placeholder="Item description text here"></input>
-                    <label for="invoice-preview-items-field" class="invoice-preview-amount-label">
+                    <label for="invoice-preview-items-field" class="amount-label">
                         Amount:
                     </label>
                     <input type="number" rows="1" cols="10" id="text-area-item-amount" name="amount"
@@ -346,13 +347,13 @@ Ocean City, NJ. 17740
                         <option value="6">Triple Hood System ................... $750</option>
                     </select>
 
-                    <label for="invoice-preview-items-field" class="invoice-preview-description-label">
+                    <label for="invoice-preview-items-field" class="description-label">
                         Description:
                     </label>
                     <input type="text" id="invoice-preview-description-text black border" name="customer-address"
                         class="invoice-preview-description-text" maxlength="120"
                         placeholder="Item description text here"></input>
-                    <label for="invoice-preview-items-field" class="invoice-preview-amount-label">
+                    <label for="invoice-preview-items-field" class="amount-label">
                         Amount:
                     </label>
                     <input type="number" rows="1" cols="10" id="text-area-item-amount" name="amount"
@@ -374,13 +375,13 @@ Ocean City, NJ. 17740
                         <option value="6">Triple Hood System ................... $750</option>
                     </select>
 
-                    <label for="invoice-preview-items-field" class="invoice-preview-description-label">
+                    <label for="invoice-preview-items-field" class="description-label">
                         Description:
                     </label>
                     <input type="text" id="invoice-preview-description-text border" name="customer-address"
                         class="invoice-preview-description-text black" maxlength="120"
                         placeholder="Item description text here"></input>
-                    <label for="invoice-preview-items-field" class="invoice-preview-amount-label">
+                    <label for="invoice-preview-items-field" class="amount-label">
                         Amount:
                     </label>
                     <input type="number" rows="1" cols="10" id="text-area-item-amount" name="amount"
@@ -389,13 +390,13 @@ Ocean City, NJ. 17740
                 </div>
             </div>
         </div>
-        <div class="color1 invoice-preview-footer-edit border-top print-none">
+        <div class="footer-edit print-none">
 
-            <button class="color1 radius-15 mobile-display invoice-preview-button-large-left button"
+            <button class="mobile-display button-large-left button"
                 onclick="javascript:history.back()">
                 Cancel
             </button>
-            <button class="color1 radius-15 mobile-display invoice-preview-button-large-right button"
+            <button class="mobile-display button-large-right button"
                 onclick="javascript:history.back()">
                 Save
             </button>
@@ -409,21 +410,21 @@ Ocean City, NJ. 17740
 
 
 
-    <div class="color1 invoice-preview-footer-view print-none">
+    <div class="color1 footer-view print-none">
 
 
-        <button id="myBtn" class="color1 invoice-preview-button-mini-icon button    ">
-            <span class="color1 material-symbols-outlined">delete</span>
+        <button id="myBtn" class="button-mini-icon button">
+            <span class="material-symbols-outlined">delete</span>
         </button>
-        <button class="color1 invoice-preview-button-mini-icon button" onclick="window.print()">
-            <span class="color1 material-symbols-outlined">print</span>
+        <button class="button-mini-icon button" onclick="window.print()">
+            <span class="material-symbols-outlined">print</span>
         </button>
-        <button class="color1 invoice-preview-button-mini-icon button">
-            <a class="color1" href="https://rc-resume.neocities.org/fakeData/payments/ArnoldsDriveInPayment.html">
-                <span class="color1 material-symbols-outlined">price_check</span></a>
+        <button class="button-mini-icon button">
+            <a href="payment.html">
+                <span class="material-symbols-outlined">price_check</span></a>
         </button>
-        <button class="color1 mobile-display invoice-preview-button-large-right button">
-            <a class="color1" href="#invoice-edit">Edit</a>
+        <button class="mobile-display button-large-right button">
+            <a href="#invoice-edit">Edit</a>
         </button>
 
     </div> <!-- preview-footer -->
