@@ -107,10 +107,6 @@ Header. */
     background-color: #dbd8e3;
 }
 
-.button a {
-    color:#2a2438;
-}
-
 .button:hover,
 button a:hover,
 .material-symbols-outlined:hover {
@@ -129,6 +125,14 @@ button a:hover,
     border: none;
     margin: 0px 1vw;
     border-radius: 20px;
+}
+
+.button-mini-icon a, 
+.button a,
+.button-large-left a,
+.button-large-right a {
+    text-decoration: none;
+    color: #2a2438;
 }
 
 .button-large-left,
@@ -168,7 +172,8 @@ select,
 option,
 textarea,
 input {
-    color: black;
+    color: darkgrey;
+    border: solid darkgrey 1px;
 }
 
 /* Mobile MODAL 
