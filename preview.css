@@ -89,7 +89,6 @@ Header. */
     display: block;
     padding: 15px;
     background-color: #e9e7ee;
-    border-top: solid 1px darkgrey;
 }
 
 /* Buttons */
@@ -179,7 +178,7 @@ Modify for tablets and desktop below*/
     display: none;
     position: absolute;
     top: 0px;
-    background-color: white;
+    background-color: #e9e7ee;
     width: 100%;
     min-height: 100%;
     padding-bottom: 70px;
@@ -196,7 +195,7 @@ Modify for tablets and desktop below*/
     top: 70px;
     width: 98%;
     margin: auto;
-    background-color: white;
+    background-color: #e9e7ee;
     display: flex;
     flex-flow: column wrap;
     justify-content: flex-start;
