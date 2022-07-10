@@ -14,7 +14,6 @@ Mobile First
     background: white;
     color: black;
     z-index: 201;
-    box-shadow: 3px 2px 18px -2px rgba(0, 0, 0, 0.39);
 }
 
 /* Formats address for both customer and company */
