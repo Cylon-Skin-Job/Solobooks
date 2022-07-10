@@ -6,6 +6,10 @@ Mobile First
 
 */
 
+.preview-main {
+    padding-top: 70px;
+}
+
 .page-container {
     position: relative;
     margin: auto;
