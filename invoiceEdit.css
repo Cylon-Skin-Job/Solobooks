@@ -13,7 +13,7 @@ Mobile First
     height: 130vw;
     background: white;
     color: black;
-    z-index: 2;
+    z-index: 201;
     box-shadow: 3px 2px 18px -2px rgba(0, 0, 0, 0.39);
 }
 

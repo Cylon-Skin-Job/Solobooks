@@ -70,8 +70,6 @@ Header. */
     z-index: 200;
     padding: 5px;
     background: #e9e7ee;
-    border-bottom: solid darkgrey 1px;
-    box-shadow: 0px 3px 15px -9px rgba(0, 0, 0, 0.75);
 }
 
 .header-view h1,
@@ -84,7 +82,8 @@ Header. */
     height: 30px;
     width: 50%;
     text-align: center;
-    font-size: 1rem;
+    font-size: 20px;
+    font-weight: bold;
 }
 
 .footer-edit,
