@@ -107,6 +107,10 @@ Header. */
     background-color: #dbd8e3;
 }
 
+.button a {
+    color:#2a2438;
+}
+
 .button:hover,
 button a:hover,
 .material-symbols-outlined:hover {
@@ -157,6 +161,13 @@ button a:hover,
 
 .button:hover {
     box-shadow: 1px 1px 5px grey;
+}
+
+select,
+option,
+textarea,
+input {
+    color: black;
 }
 
 /* Mobile MODAL 
