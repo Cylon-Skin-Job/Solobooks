@@ -48,6 +48,14 @@ address {
         overflow: auto;
     }
 
+input,
+select {
+    color: black;
+    border: solid black 1px;
+    border-radius: 15px;
+    padding: 5px;
+}
+
 
 /* Mobile UI
 
