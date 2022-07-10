@@ -126,6 +126,7 @@ button a:hover,
     margin: 0px 1vw;
     border-radius: 20px;
     color: #2a2438;
+    text-align: center;
 }
 
 .back-button a,
