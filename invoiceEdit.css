@@ -376,7 +376,7 @@ option {
 
 @media print {
 
-    .invoice-preview-main {
+    .preview-main {
         width: 750px;
         height: 940px;
         z-index: 1;
