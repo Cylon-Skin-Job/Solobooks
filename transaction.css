@@ -124,8 +124,9 @@ td:nth-child(2) {
  }
 
 .input {
-    color: darkgrey;
+    color: black;
     border: solid 1px darkgrey;
+    background-color: white;
 }
 
 

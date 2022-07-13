@@ -13,8 +13,7 @@
     height: 140vh;
 }
 
-.invoice-summary table {
-}
+.invoice-summary table {}
 
 .invoice-summary tr {
     min-height: 60px;
@@ -298,7 +297,7 @@ option {
         order: 4;
     }
 
-    
+
 
     .invoice-preview-amount-text {
         display: inline-block;
@@ -322,7 +321,7 @@ option {
 /* Desktop */
 
 @media screen and (min-width: 1025px) {
-    
+
     .header-view,
     .header-edit {
         position: fixed;
@@ -330,6 +329,7 @@ option {
         right: 0px;
         top: 0px;
         width: calc(96vw - 76vh);
+        z-index: 250;
     }
 
     .header-view h1,
@@ -340,7 +340,24 @@ option {
         padding: 20px;
         width: 100%;
         text-align: left;
-        }
+    }
+
+    .invoice-table-container {
+        position: fixed;
+        left: auto;
+        right: 0px;
+        top: 200px;
+        width: calc(96vw - 76vh);
+        justify-content: flex-start;
+        padding: 20px;
+    }
+
+    .invoice-table-container table {
+        width: 500px;
+    }
+
+    
+
 
 
     .footer-view {
@@ -350,7 +367,7 @@ option {
         right: 0px;
         left: auto;
         z-index: 200;
-         width: calc(96vw - 76vh);
+        width: calc(96vw - 76vh);
         height: 50px;
         display: flex;
         flex-flow: row nowrap;
@@ -448,7 +465,7 @@ option {
         margin-bottom: 0px;
     }
 
-    
+
 
 }
 

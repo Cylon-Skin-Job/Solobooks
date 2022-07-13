@@ -123,7 +123,7 @@ Header. */
 }
 
 .exit-button {
-    float: right;
+    display: none;
 }
 
 .back-button a,
@@ -205,6 +205,12 @@ Modify for tablets and desktop below*/
 
     .desktop-display {
         display: block;
+    }
+
+    .exit-button {
+        float: right;
+        display: inline;
+        z-index: 300;
     }
 
     .button:hover,
