@@ -30,11 +30,32 @@
 <body>
 
     <div class="header-view print-none">
-        <button class="back-button button" onclick="javascript:history.back()">
-            <span class="material-symbols-outlined">arrow_back</span>
-        </button>
+
         <h1>Invoice No. 9999</h1>
     </div> <!-- invoice-preview-header -->
+
+    <div class="invoice-table-container">
+        <table class="invoice-summary">
+            <tbody>
+                <tr>
+                    <td>Date</td>
+                    <td>09/28/2021</td>
+                </tr>
+                <tr>
+                    <td>Customer</td>
+                    <td>Bob's Burgers</td>
+                </tr>
+                <tr>
+                    <td>Total</td>
+                    <td>$590.00</td>
+                </tr>
+                <tr>
+                    <td>Status</td>
+                    <td>Unpaid</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
 
     <!-- 8.5 x 11 sheet of paper. -->
     <div class="preview-main">
@@ -42,8 +63,8 @@
 
             <!-- Address COMPANY-->
             <div class="address-container company-address">
-                <p class= "page-container-font">RC Exhaust</p>
-                <address class= "page-container-font">
+                <p class="page-container-font">RC Exhaust</p>
+                <address class="page-container-font">
                     PO Box 287
                     <br>
                     Bishop, Ca. 93515
@@ -54,10 +75,10 @@
 
             <!-- Address CUSTOMER-->
             <div class="address-container customer-address">
-                <h2 class= "page-container-font">BILL TO:</h2>
+                <h2 class="page-container-font">BILL TO:</h2>
                 <br>
-                <p class= "page-container-font">Bob's Burgers</p>
-                <address class= "page-container-font">
+                <p class="page-container-font">Bob's Burgers</p>
+                <address class="page-container-font">
                     115 W Ocean Drive
                     <br>
                     Ocean City, NJ. 17740
@@ -69,19 +90,19 @@
                 <tbody>
 
                     <tr>
-                        <td class= "page-container-font align-right bold">
+                        <td class="page-container-font align-right bold">
                             Invoice No.
                         </td>
-                        <td class= "page-container-font  align-left">
+                        <td class="page-container-font  align-left">
                             5224
                         </td>
                     </tr>
 
                     <tr>
-                        <td class= "page-container-font align-right bold">
+                        <td class="page-container-font align-right bold">
                             Date
                         </td>
-                        <td class= "page-container-font  align-left">
+                        <td class="page-container-font  align-left">
                             09/28/2021
                         </td>
                     </tr>
@@ -96,7 +117,7 @@
                         <th class="width-95 page-container-font align-left">
                             Description
                         </th>
-                        <th class= "page-container-font align-right">
+                        <th class="page-container-font align-right">
                             Amount
                         </th>
                     </tr>
@@ -106,7 +127,7 @@
                         <td class="width-95 page-container-font align-left">
                             Lorem ipsum is placeholder text
                         </td>
-                        <td class= "page-container-font align-right">
+                        <td class="page-container-font align-right">
                             $90,000.01
                         </td>
                     </tr>
@@ -114,7 +135,7 @@
                         <td class="width-95 page-container-font align-left">
                             Lorem ipsum
                         </td>
-                        <td class= "page-container-font align-right">
+                        <td class="page-container-font align-right">
                             $590
                         </td>
                     </tr>
@@ -129,10 +150,10 @@
                 </tbody>
                 <tfoot>
                     <tr>
-                        <td class= "width-95 page-container-font  align-right bold">
+                        <td class="width-95 page-container-font  align-right bold">
                             Total
                         </td>
-                        <td class= "page-container-font align-right">
+                        <td class="page-container-font align-right">
                             $590
                         </td>
                     </tr>
@@ -143,20 +164,32 @@
                 <address>Phone: (867) 867-5309 | Email: accountspayable@rcexhaust.com</address>
             </div>
         </div>
+        <div class="color1 footer-view print-none">
+
+
+            <button class="mobile-display button-large-left button" onclick="javascript:history.back()">
+                Close
+            </button>
+            <button id="myBtn" class="button-mini-icon button delete">
+                <span class="material-symbols-outlined">delete</span>
+            </button>
+            <button class="button-mini-icon button print" onclick="window.print()">
+                <span class="material-symbols-outlined">print</span>
+            </button>
+            <button class="button-mini-icon button payment">
+                <a href="payment.html">
+                    <span class="material-symbols-outlined">price_check</span></a>
+            </button>
+            <button class="mobile-display button-large-right button">
+                <a href="#invoice-edit">Edit</a>
+            </button>
+
+        </div> <!-- preview-footer -->
     </div>
 
     <!-- Invoice EDITOR. -->
 
     <div class="preview-edit-container print-none " id="invoice-edit">
-
-        <!-- Invoice EDIT HEADER. -->
-
-        <div class="header-edit print-none">
-            <button class="back-button button" onclick="javascript:history.back()">
-                <span class="material-symbols-outlined">arrow_back</span>
-            </button>
-            <h1>Edit Invoice</h1>
-        </div> <!-- invoice-preview-header -->
 
         <!-- modal-header -->
 
@@ -388,20 +421,19 @@ Ocean City, NJ. 17740
                         class="invoice-preview-amount-text black" placeholder="Amount">
                     </input>
                 </div>
+                <div class="footer-edit print-none">
+
+                    <button class="mobile-display button-large-left button" onclick="javascript:history.back()">
+                        Cancel
+                    </button>
+                    <button class="mobile-display button-large-right button" onclick="javascript:history.back()">
+                        Save
+                    </button>
+
+                </div> <!-- preview-footer -->
             </div>
         </div>
-        <div class="footer-edit print-none">
 
-            <button class="mobile-display button-large-left button"
-                onclick="javascript:history.back()">
-                Cancel
-            </button>
-            <button class="mobile-display button-large-right button"
-                onclick="javascript:history.back()">
-                Save
-            </button>
-
-        </div> <!-- preview-footer -->
     </div> <!-- closing tag for modal-window -->
 
 
@@ -410,23 +442,6 @@ Ocean City, NJ. 17740
 
 
 
-    <div class="color1 footer-view print-none">
 
-
-        <button id="myBtn" class="button-mini-icon button">
-            <span class="material-symbols-outlined">delete</span>
-        </button>
-        <button class="button-mini-icon button" onclick="window.print()">
-            <span class="material-symbols-outlined">print</span>
-        </button>
-        <button class="button-mini-icon button">
-            <a href="payment.html">
-                <span class="material-symbols-outlined">price_check</span></a>
-        </button>
-        <button class="mobile-display button-large-right button">
-            <a href="#invoice-edit">Edit</a>
-        </button>
-
-    </div> <!-- preview-footer -->
 
 </body>

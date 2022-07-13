@@ -193,4 +193,15 @@ table {
     border-radius: 5px;
 }
 
+.footer-payment {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.button-large-right {
+    margin-left: 350px;
+}
+
 }

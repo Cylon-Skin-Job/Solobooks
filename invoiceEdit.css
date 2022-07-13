@@ -1,3 +1,38 @@
+.invoice-table-container {
+    position: fixed;
+    top: 60px;
+    width: 100%;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+}
+
+.preview-main {
+    position: relative;
+    background: transparent;
+    height: 135vh;
+}
+
+.invoice-summary table {
+}
+
+.invoice-summary tr {
+    min-height: 60px;
+}
+
+.invoice-summary td {
+    padding: 20px 10px;
+    background-color: #f2f2f2;
+}
+
+.invoice-summary td:nth-child(1) {
+    width: 35%;
+}
+
+.invoice-summary td:nth-child(2) {
+    width: 65%;
+}
+
 /* 8.5 x 11 sheet of paper. 
 --global settings-- 
 Style the containter itself respective to screen size below using:
@@ -6,18 +41,17 @@ Mobile First
 
 */
 
-.preview-main {
-    padding-top: 70px;
-}
+
 
 .page-container {
     position: relative;
-    margin: auto;
+    top: 250px;
+    margin: 0px auto 200px;
     width: 99vw;
     height: 130vw;
+    z-index: 201;
     background: white;
     color: black;
-    z-index: 201;
 }
 
 /* Formats address for both customer and company */
@@ -215,6 +249,10 @@ option {
 
 @media screen and (min-width: 600px) {
 
+    .preview-main {
+        height: 1400px;
+    }
+
     .invoice-preview-edit-wrapper-1 {
         flex-direction: row-reverse;
         justify-content: flex-end;
@@ -285,6 +323,43 @@ option {
 
 @media screen and (min-width: 1025px) {
     
+    .header-view,
+    .header-edit {
+        position: fixed;
+        left: auto;
+        right: 0px;
+        top: 0px;
+        width: calc(96vw - 76vh);
+    }
+
+    .header-view h1,
+    .header-edit h1 {
+        position: inherit;
+        left: auto;
+        right: auto;
+        padding: 20px;
+        width: 100%;
+        text-align: left;
+        }
+
+
+    .footer-view {
+        position: fixed;
+        top: auto;
+        bottom: 30px;
+        right: 0px;
+        left: auto;
+        z-index: 200;
+         width: calc(96vw - 76vh);
+        height: 50px;
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: flex-end;
+        align-items: center;
+        padding: 10px 20px 0px;
+        border: none;
+        box-shadow: none;
+    }
 
     .page-container-font {
         font-size: 1.4vh;
@@ -292,9 +367,11 @@ option {
 
     .page-container {
         display: block;
-        position: relative;
-        width: 72vh;
-        height: 92vh;
+        position: fixed;
+        top: 10px;
+        left: 10px;
+        width: 76vh;
+        height: 98vh;
         background-color: white;
         color: black;
         border: darkgrey 1px solid;
@@ -370,6 +447,8 @@ option {
         padding-left: 10px;
         margin-bottom: 0px;
     }
+
+    
 
 }
 

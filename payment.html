@@ -30,10 +30,11 @@
 <body>
 
     <div class="header-view print-none">
-        <button class="back-button button" onclick="javascript:history.back()">
-            <span class="material-symbols-outlined">arrow_back</span>
-        </button>
         <h1>Payment Record</h1>
+
+        <button class="exit-button button-mini-icon button" onclick="javascript:history.back()">
+            <span class="material-symbols-outlined">close</span>
+        </button>
     </div> <!-- invoice-preview-header -->
 
     <div class="preview-main">
@@ -67,9 +68,12 @@
             <div class="footer-payment print-none">
 
 
-<button id="myBtn" class="button-mini-icon button transparent">
-    <span class="material-symbols-outlined">delete</span>
-</button>
+                <button id="myBtn" class="button-mini-icon button transparent">
+                    <span class="material-symbols-outlined">delete</span>
+                </button>
+                <button class="mobile-display button-large-left button" onclick="javascript:history.back()">
+                    Close
+                </button>
                 <button class="mobile-display button-large-right button">
                     <a href="#payment-edit">Edit</a>
                 </button>
@@ -86,9 +90,6 @@
             <!-- Invoice EDIT HEADER. -->
 
             <div class="header-edit print-none">
-                <button class="back-button button" onclick="javascript:history.back()">
-                    <span class="material-symbols-outlined">arrow_back</span>
-                </button>
                 <h1>Edit Payment</h1>
             </div> <!-- invoice-preview-header -->
 
@@ -146,6 +147,6 @@
 
 
 
-     <!-- preview-footer -->
+    <!-- preview-footer -->
 
 </body>

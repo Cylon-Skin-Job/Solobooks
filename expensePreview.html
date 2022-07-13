@@ -30,13 +30,15 @@
 <body>
 
     <div class="header-view print-none">
-        <button class="back-button button"><a href="expenses.html">
-            <span class="material-symbols-outlined">arrow_back</span></a>
-        </button>
         <h1>Expense Record</h1>
+        <button class="exit-button button-mini-icon button" onclick="javascript:history.back()">
+            <span class="material-symbols-outlined">close</span>
+        </button>
     </div> <!-- invoice-preview-header -->
 
     <div class="preview-main">
+
+        
         <div class="expense-container">
             <table>
                 <tbody>
@@ -55,14 +57,17 @@
                     <tr>
                         <td>Notes</td>
                         <td>Home Depot<br>
-                        <br>
-                            Here is some random text to take up a few lines. None of this info is in a database. RC NEEDS TO LEARN JAVASCRIPT!</td>
+                            <br>
+                            Here is some random text to take up a few lines. None of this info is in a database. RC
+                            NEEDS TO LEARN JAVASCRIPT!</td>
                     </tr>
                 </tbody>
             </table>
 
             <div class="footer-payment print-none">
-
+                <button class="mobile-display button-large-left button" onclick="javascript:history.back()">
+                    Close
+                </button>
 
                 <button id="myBtn" class="button-mini-icon button transparent">
                     <span class="material-symbols-outlined">delete</span>
@@ -82,13 +87,6 @@
 
             <!-- Invoice EDIT HEADER. -->
 
-            <div class="header-edit print-none">
-                <button class="back-button button" onclick="javascript:history.back()">
-                    <span class="material-symbols-outlined">arrow_back</span>
-                </button>
-                <h1>Edit Expense</h1>
-            </div> <!-- invoice-preview-header -->
-
             <!-- modal-header -->
 
             <div class="edit-window">
@@ -103,7 +101,7 @@
 
                     <label for="reference-payment" class="label">Amount</label>
                     <input type="text" value="$69.58" id="reference-payment" name="reference-payment" class="input">
-                    
+
                     <label for="expense-categories-field" class="label">
                         Expense Category
                     </label>
