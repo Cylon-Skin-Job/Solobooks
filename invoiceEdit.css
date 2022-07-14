@@ -10,7 +10,9 @@
 .preview-main {
     position: relative;
     background: transparent;
-    height: 140vh;
+    height: 2000px;
+    padding-top: 320px;
+    overflow: visible;
 }
 
 .invoice-summary table {}
@@ -43,8 +45,8 @@ Mobile First
 
 
 .page-container {
-    position: relative;
-    top: 250px;
+    position: sticky;
+    top: 60px;
     margin: 0px auto 200px;
     width: 99vw;
     height: 130vw;

@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+
+    <meta name="theme-color" content="#2a2438" media="(prefers-color-scheme: light)">
+    <meta name="theme-color" content="#2a2438" media="(prefers-color-scheme: dark)">
+
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="customerPreview.css">
+    <link rel="stylesheet" href="tables.css">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+</head>
+
+<body>
+
+    <nav>
+        <div class="site-nav">
+
+            <div class="site-nav-top">
+                <h1 class="solo">SoloBooks</h1>
+                <span class="site-header-company-name">RC Exhaust</span>
+            </div>
+
+            <ul class="navigation">
+                <li>
+                    <a href="index.html">
+                        <span class="material-icons" alt=" ">analytics
+                        </span>
+                        Overview
+                    </a>
+                </li>
+                <li>
+                    <a href="invoices.html">
+                        <span class="material-icons" alt=" ">description</span>
+                        Invoices
+                    </a>
+                </li>
+                <li>
+                    <a href="expenses.html">
+                        <span class="material-icons" alt=" ">receipt_long</span>
+                        Expenses
+                    </a>
+                </li>
+                <li class="active">
+                    <a href="customers.html">
+                        <span class="material-icons" alt=" ">people</span>
+                        Customers
+                    </a>
+                </li>
+                <li>
+                    <a href="settings.html">
+                        <span class="material-icons" alt=" ">settings</span>
+                        Settings
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <header>
+        <a class="back-arrow" href="customers.html">
+            <span class="material-symbols-outlined">arrow_back</span> Customers
+        </a>
+        <br>
+        <h2>Bob's Burgers</h2>
+        <span class="customer-balance">Balance: $690</span>
+    </header>
+
+    <button class="plus-button"><a href="/customerPreview.html#expense-edit"><span class="material-icons"
+                id="plusButton">add_circle</span><span class="plus-button-text">New Invoice</span></a></button>
+
+    <div class="main">
+
+<div class="tr-head"></div>
+
+        <div class="table-container">
+
+            <div class="ribbon fixed-ribbon"><span>Customer Information</span></div>
+
+
+            <table class="customer-preview-info-table">
+
+                <tbody>
+
+                    <tr>
+                        <td class="col-1">Customer</td>
+                        <td class="col-2">Bob's Burger's</td>
+                        <td class="col-3"><a href="./fakeData/Customers/CafeNervosa.html"></a><span
+                                class="material-icons">edit</span></td>
+                    </tr>
+
+                    <tr>
+                        <td class="col-1">Address</td>
+                        <td class="col-2">
+                            <span class="table-address-1">Address Line 1</span>
+                            <span class="table-address-1">Address Line 2</span>
+                            <span class="table-address-2">City, State, Zip Code</span>
+                        </td>
+                        <td class="col-3"><a href="./fakeData/Customers/CafeNervosa.html"></a><span
+                                class="material-icons">edit</span></td>
+                    </tr>
+
+                    <tr>
+                        <td class="col-1">Phone Number</td>
+                        <td class="col-2">
+                            (555) 867-5309
+                        </td>
+                        <td class="col-3"><a href="./fakeData/Customers/CafeNervosa.html"></a><span
+                                class="material-icons">edit</span></td>
+                    </tr>
+
+                    <tr>
+                        <td class="col-1">Email</td>
+                        <td class="col-2">
+                            bob@bobsbugers.com
+                        </td>
+                        <td class="col-3"><a href="./fakeData/Customers/CafeNervosa.html"></a><span
+                                class="material-icons">edit</span></td>
+                    </tr>
+
+                </tbody>
+
+            </table>
+
+            <div class="ribbon fixed-ribbon-alt"><span>Invoices</span></div>
+
+            <table class="customer-preview-invoice-table">
+                <thead>
+                    <tr class="tr-customers">
+                        <th class="col-1">Date</th>
+                        <th class="col-2">Invoice No.</th>
+                        <th class="col-3">Amount</th>
+                        <th class="col-4 col-last">Status</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+
+
+                    <tr>
+
+                        <td class="col-1">
+                            9/28/2022
+                        </td>
+                        <td class="col-2">
+                            5224
+                        </td>
+                        <td class="col-3">
+                            $690
+                        </td>
+                        <td class="col-4 col-last">
+                            <a href="invoicePreview.html" class="row-link red">Unpaid</a>
+                        </td>
+                    </tr>
+
+
+
+                    <tr>
+                        <td class="col-1">
+                            9/25/2021
+                        </td>
+                        <td class="col-2">
+                            5141
+                        </td>
+                        <td class="col-3">
+                            $565
+                        </td>
+                        <td class="col-4 col-last">
+                            <a href="invoicePreview.html" class="row-link">Paid</a>
+                        </td>
+                    </tr>
+
+
+                    <tr>
+                        <td class="col-1">
+                            9/20/2021
+                        </td>
+                        <td class="col-2">
+                            5140
+                        </td>
+                        <td class="col-3">
+                            $450
+                        </td>
+                        <td class="col-4 col-last">
+                            <a href="invoicePreview.html" class="row-link">Paid</a>
+                        </td>
+                    </tr>
+
+
+                    <tr>
+                        <td class="col-1">
+                            9/15/2021
+                        </td>
+                        <td class="col-2">
+                            5139
+                        </td>
+                        <td class="col-3">
+                            $485
+                        </td>
+                        <td class="col-4 col-last">
+                            <a href="invoicePreview.html" class="row-link">Paid</a>
+                        </td>
+                    </tr>
+
+                </tbody>
+            </table>
+
+        </div>
+
+    </div>
+
+
+
+    
+
+
+</body>
