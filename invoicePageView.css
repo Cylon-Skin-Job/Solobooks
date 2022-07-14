@@ -1,38 +1,160 @@
-.invoice-table-container {
-    position: fixed;
-    top: 60px;
-    width: 100%;
-    display: flex;
-    flex-flow: row nowrap;
-    justify-content: center;
+* {
+    box-sizing: border-box;
 }
 
-.preview-main {
+.page-container {
     position: relative;
-    background: transparent;
-    height: 2000px;
-    padding-top: 320px;
-    overflow: visible;
+    width: 99vw;
+    height: 130vw;
+    background: white;
+    color: black;
 }
 
-.invoice-summary table {}
-
-.invoice-summary tr {
-    min-height: 60px;
+address {
+    font-style: normal;
+    margin-top: -4%;
 }
 
-.invoice-summary td {
-    padding: 20px 10px;
-    background-color: #f2f2f2;
+.top-grid {
+    display: inline-block;
+    width: 49%;
+    height: 15%;
 }
 
-.invoice-summary td:nth-child(1) {
-    width: 35%;
+/* Company address in upper left corner*/
+.company-address {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    margin: 0px;
+    padding: 2% 0px 0px 3%;
 }
 
-.invoice-summary td:nth-child(2) {
-    width: 65%;
+.company-address p {
+    font-weight: bold;
+
 }
+
+/* Company logo in upper right corner */
+
+.logo-container {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    margin: 0px;
+    padding: 2% 3% 0px 0px;
+}
+
+.logo {
+    float: right;
+    width: 30%;
+    height: auto;
+    margin-top: 0;
+
+}
+
+/* Customer "BILL TO:" name and address*/
+.customer-address {
+    position: absolute;
+    top: 16%;
+    left: 0px;
+    margin: 0px;
+    padding: 0px 0px 0px 5%;
+}
+
+.customer-address h3 {
+    height: 25%;
+
+}
+
+.box-4 {
+    position: absolute;
+    top: 16%;
+    right: 0px;
+    margin: 0px;
+    padding: 2% 3% 0px 0px;
+}
+
+.box-4 h2 {
+    display: block;
+    text-align: right;
+    width: 100%;
+    height: 30%;
+    font-size: 4vw;
+    padding: 0px;
+    margin: -5% 0px 0px;
+}
+
+.span-left,
+.span-right {
+    display: inline-block;
+    width: 48%;
+    background-color: white;
+    height: 30%;
+    margin: 0px;
+}
+
+.span-left {
+    text-align: right;
+    font-weight: bold;
+}
+
+.center-box {
+    display: block;
+    position: absolute;
+    top: 31%;
+    width: 100%;
+    height: 60%;
+}
+
+
+.pageview-table {
+    width: 96%;
+    position: relative;
+    border-collapse: collapse;
+    margin: 0px auto;
+}
+
+.pageview-table thead tr {
+    width: 100%;
+    background-color: lightgrey;
+}
+
+.pageview-table tr {
+    width: 100%;
+    height: 5vw;
+}
+
+.pageview-table td:nth-child(1),
+.pageview-table th:nth-child(1) {
+    width: 85%;
+    padding-left: 2vw;
+}
+
+.pageview-table td:nth-child(2),
+.pageview-table th:nth-child(2) {
+    width: 15%;
+    text-align: right;
+    padding-right: 2vw;
+}
+
+.pageview-table tfoot tr {
+    border-top: solid black 1px;
+}
+
+.pageview-table tfoot td:nth-child(1) {
+    text-align: right;
+}
+
+.pageview-footer {
+    display: block;
+    text-align: center;
+    width: 100%;
+    position: absolute;
+    bottom: 5%;
+}
+
+
 
 /* 8.5 x 11 sheet of paper. 
 --global settings-- 
@@ -44,80 +166,19 @@ Mobile First
 
 
 
-.page-container {
-    position: sticky;
-    top: 60px;
-    margin: 0px auto 200px;
-    width: 99vw;
-    height: 130vw;
-    z-index: 201;
-    background: white;
-    color: black;
-}
+
 
 /* Formats address for both customer and company */
-.address-container {
-    display: block;
-    width: 50%;
-    position: absolute;
-}
 
-.address-container p,
-h2 {
-    font-weight: bold;
-    padding: 0;
-    margin: 0;
-}
 
-/* Company address in upper left corner*/
-.company-address {
-    top: 3%;
-    left: 3%;
-}
 
-/* Company logo in upper right corner */
-.logo {
-    width: 15%;
-    margin-top: 0;
-    position: absolute;
-    top: 2.5%;
-    right: 2.5%;
-}
-
-/* Customer "BILL TO:" name and address*/
-.customer-address {
-    top: 13%;
-    left: 7%;
-}
 
 
 /* Table to contain company info (phone, email, invoice, date). */
-.table-1 {
-    position: absolute;
-    top: 17%;
-    right: 5%;
-    width: 50%;
-    padding: 0;
-    margin: 0 0%;
-}
+
 
 /* Table to contain item descriptions and amount */
-.invoice-preview-table-2 {
-    border-collapse: collapse;
-    position: absolute;
-    top: 28%;
-    left: 4%;
-    width: 92%;
-    padding: 1%;
-}
 
-thead tr {
-    border-bottom: darkgrey solid 1px;
-}
-
-tfoot tr {
-    border-top: darkgrey solid 1px;
-}
 
 .width-95 {
     width: 95%;
@@ -151,7 +212,7 @@ tfoot tr {
 }
 
 /* Font-size of invoice page container 7.5px for small screens, larger by scale. */
-.page-container-font {
+.pageview-font {
     font-size: 2vw;
 }
 
@@ -358,7 +419,7 @@ option {
         width: 500px;
     }
 
-    
+
 
 
 
@@ -380,7 +441,7 @@ option {
         box-shadow: none;
     }
 
-    .page-container-font {
+    .pageview-font {
         font-size: 1.4vh;
     }
 
