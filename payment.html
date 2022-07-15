@@ -29,116 +29,118 @@
 
 <body>
 
-    <div class="header-view print-none">
-        <h1>Payment Record</h1>
+    <div class="container-1 transaction" id="table-view">
 
-        <button class="exit-button button-mini-icon button" onclick="javascript:history.back()">
-            <span class="material-symbols-outlined">close</span>
-        </button>
-    </div> <!-- invoice-preview-header -->
+        <div class="header">
+            <button class="top-left-mobile">
+                <a href="Viewinvoice.html"><span class="material-symbols-outlined">arrow_back</span></a>
+            </button>
 
-    <div class="preview-main">
-        <div class="payment-container">
-            <br>
+            <h2>Payment Record</h2>
+
+            <button class="top-right-desktop">
+                <a href="invoices.html"><span class="material-symbols-outlined">close</span></a>
+            </button>
+
             <p>Bob's Burger's</p>
             <p>Invoice No. 5382</p>
             <p>$565</p>
-            <table>
-                <tbody>
-                    <tr>
-                        <td class="payment">Method</td>
-                        <td>Check</td>
-                    </tr>
-                    <tr>
-                        <td class="recieved">Date</td>
-                        <td>06/22/2021</td>
-                    </tr>
-                    <tr>
-                        <td class="number">Reference</td>
-                        <td>4398</td>
-                    </tr>
-                    <tr>
-                        <td>Notes</td>
-                        <td>Here is some random text to take up a few lines. None of this info is in a database. RC
-                            NEEDS TO LEARN JAVASCRIPT!</td>
-                    </tr>
-                </tbody>
-            </table>
 
-            <div class="footer-payment print-none">
+        </div> <!-- invoice-preview-header -->
+
+        
+
+        <table class="summary">
+            <tbody>
+                <tr>
+                    <td>Date</td>
+                    <td>09/28/2021</td>
+                </tr>
+                <tr>
+                    <td>Customer</td>
+                    <td>Bob's Burgers</td>
+                </tr>
+                <tr>
+                    <td>Total</td>
+                    <td>$590.00</td>
+                </tr>
+                <tr>
+                    <td>Status</td>
+                    <td>Unpaid</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <div class="footer">
+
+            <button class="large-left" onclick="javascript:history.back()">
+                Close
+            </button>
+            <button id="myBtn" class="mini-icon">
+                <span class="material-symbols-outlined">delete</span>
+            </button>
+            <button class="large-right">
+                <a href="#invoice-edit">Edit</a>
+            </button>
+
+        </div> <!-- preview-footer -->
+    </div>
 
 
-                <button id="myBtn" class="button-mini-icon button transparent">
-                    <span class="material-symbols-outlined">delete</span>
-                </button>
-                <button class="mobile-display button-large-left button" onclick="javascript:history.back()">
-                    Close
-                </button>
-                <button class="mobile-display button-large-right button">
-                    <a href="#payment-edit">Edit</a>
-                </button>
+    <!-- Invoice EDITOR. -->
+
+    <div class="preview-edit-container print-none" id="payment-edit">
+
+        <!-- Invoice EDIT HEADER. -->
+
+        <div class="header-edit print-none">
+            <h1>Edit Payment</h1>
+        </div> <!-- invoice-preview-header -->
+
+        <!-- modal-header -->
+
+        <div class="edit-window">
+            <!-- Invoice EDIT DATE. -->
+
+            <div class="payment-container">
+                <br>
+                
+
+                <form type="radio" class="radio-payment">
+                    <label><input type="radio" id="cash" name="payment" value="cash">Cash</label>
+                    <label><input type="radio" id="check" name="payment" value="check" checked>Check</label>
+                    <label><input type="radio" id="credit" name="payment" value="credit">Credit Card</label>
+                </form>
+
+                <label for="date-payment" class="label">Date</label>
+                <input type="date" id="date-payment" value="2021-08-05" name="date-payment" class="input">
+
+
+                <label for="reference-payment" class="label">Reference Number</label>
+                <input type="text" value="58892" id="reference-payment" name="reference-payment" class="input">
+
+
+                <label for="note-payment" class="text-area label">Notes:</label>
+                <textarea class="text-area" type="text" id="note-payment" name="note-payment" rows="8"
+                    cols="40">Here is some random text to take up a few lines. None of this info is in a database. RC NEEDS TO LEARN JAVASCRIPT!</textarea>
+
+                <div class="footer-payment print-none">
+
+                    <button class="mobile-display button-large-left button" onclick="javascript:history.back()">
+                        Cancel
+                    </button>
+                    <button class="mobile-display button-large-right button" onclick="javascript:history.back()">
+                        Save
+                    </button>
+
+                </div> <!-- preview-footer -->
 
             </div>
-
         </div>
 
 
-        <!-- Invoice EDITOR. -->
 
-        <div class="preview-edit-container print-none" id="payment-edit">
-
-            <!-- Invoice EDIT HEADER. -->
-
-            <div class="header-edit print-none">
-                <h1>Edit Payment</h1>
-            </div> <!-- invoice-preview-header -->
-
-            <!-- modal-header -->
-
-            <div class="edit-window">
-                <!-- Invoice EDIT DATE. -->
-
-                <div class="payment-container">
-                    <br>
-                    <p>Bob's Burger's</p>
-                    <p>Invoice No. 5382</p>
-                    <p class="p-last">$565</p>
-
-                    <form type="radio" class="radio-payment">
-                        <label><input type="radio" id="cash" name="payment" value="cash">Cash</label>
-                        <label><input type="radio" id="check" name="payment" value="check" checked>Check</label>
-                        <label><input type="radio" id="credit" name="payment" value="credit">Credit Card</label>
-                    </form>
-
-                    <label for="date-payment" class="label">Date</label>
-                    <input type="date" id="date-payment" value="2021-08-05" name="date-payment" class="input">
-
-
-                    <label for="reference-payment" class="label">Reference Number</label>
-                    <input type="text" value="58892" id="reference-payment" name="reference-payment" class="input">
-
-
-                    <label for="note-payment" class="text-area label">Notes:</label>
-                    <textarea class="text-area" type="text" id="note-payment" name="note-payment" rows="8"
-                        cols="40">Here is some random text to take up a few lines. None of this info is in a database. RC NEEDS TO LEARN JAVASCRIPT!</textarea>
-
-                    <div class="footer-payment print-none">
-
-                        <button class="mobile-display button-large-left button" onclick="javascript:history.back()">
-                            Cancel
-                        </button>
-                        <button class="mobile-display button-large-right button" onclick="javascript:history.back()">
-                            Save
-                        </button>
-
-                    </div> <!-- preview-footer -->
-
-                </div>
-            </div>
-
-
-
-        </div> <!-- closing tag for modal-window -->
+    </div> <!-- closing tag for modal-window -->
     </div>
 
 

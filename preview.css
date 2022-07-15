@@ -49,6 +49,8 @@ a {
     z-index: 2;
 }
 
+/* container-3 is styled below along with it's contents */
+
 .header {
     display: flex;
     flex-flow: row wrap;
@@ -72,12 +74,11 @@ a {
 .top-right-mobile {
     display: inline-block;
     width: 15%;
-    height: 40px;
+    height: 35px;
     color:#2a2438;
     background-color: transparent;
     border: none;
     padding: 0px 15px 0px;
-    font-size: 1rem;
     font-weight:  bold;
     margin: 0px 0px 5px;
 }
@@ -143,7 +144,7 @@ h2 {
     color:#2a2438;
     background-color: #e9e7ee;
     opacity: 1;
-    padding: 0px 0px 5px;
+    padding: 0px 10px 10px;
     margin: 0px;
     z-index: 2;
     border: none;
@@ -177,9 +178,71 @@ h2 {
     border: none;
 }
 
-.print {
+.container-3 {
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-items: flex-start;
+    padding: 60px 0px;
+    overflow: scroll;
+}
+
+.edit-container,
+.edit-container-2 {
     width: 100%;
 }
+
+.edit-container-2 {
+    background-color: #e9e7ee;
+    margin-top: 20px;
+}
+
+.label,
+.input {
+width: 80%;
+margin: 5px 10%;
+font-size: 1rem;
+height: 40px;
+text-align: center;
+vertical-align:middle;
+padding: 10px;
+color: black;
+}
+
+.label {
+    font-size: .9rem;
+}
+
+.input {
+    background-color: white;
+    border: black 1px solid;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    display: block;
+}
+
+.textarea {
+    height: 100px;
+    overflow: hidden;
+}
+
+.description {
+    width: 96%;
+    margin: 5px 2%;
+}
+
+.amount {
+    width: 40%;
+    margin: 5px 0px 20px 58%;
+}
+
+.transaction p {
+    text-align: center;
+    margin: 0px;
+    height: 30px;
+    width: 100%;
+}
+
+
 
 
 input,
