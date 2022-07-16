@@ -1,14 +1,4 @@
-body {
-    padding: 0;
-    border: none;
-    margin: 0px;
-    padding: 0px;
-    background-color: #e9e7ee;
-    font-family: Verdana;
-    text-align: left;
-    font-size: 100%;
-    overflow: auto;
-}
+/* GENERAL */
 
 a {
     text-decoration: none;
@@ -23,31 +13,38 @@ a {
     font-size: 24px;
 }
 
-
-
-/* Mob-Inv-Prev-Gen */
-
-.preview-container,
-.page-container,
-.edit-container {
-    position: fixed;
-    top: 0px;
-    left: 0px;
-    right: 0px;
+body {
+    padding: 0;
+    border: none;
     margin: 0px;
     padding: 0px;
-    width: 100%;
-    height: 100%;
-    display: flex;
-    flex-flow: column nowrap;
-    justify-content: center;
-    align-items: center;
-    background-color: #e9e7ee;
-    z-index: 1;
+    font-family: Verdana;
+    text-align: left;
+    font-size: 100%;
+    overflow: auto;
 }
 
+textarea,
+input,
+select {
+    font-size: 1rem;
+    color: black;
+    background-color: white;
+    border: black solid 1px;
+    border-radius: 5px;
+}
+
+/* Mobile Navigation --Start-- */
+
+/* Mobile Navigation --End-- */
+
+
+/* Mobile Headers --Start-- */
+
+/* MH --previewInvoice.html-- */
+
 .preview-header,
-.page-header,
+.page-view-header,
 .edit-header {
     display: flex;
     flex-flow: row wrap;
@@ -64,17 +61,56 @@ a {
     padding: 10px 0px 5px;
     margin: 0px;
     border: none;
+    z-index: 3;
 }
 
-.page-container,
-.edit-container {
-    display: none;
-}
-
-.page-container:target,
-.edit-container:target {
-    display: flex;
+.preview-h2 {
+    display: inline;
+    width: 70%;
+    /* adjacent buttons (left/right) are styled at 15% */
+    height: 40px;
+    color: #2a2438;
+    font-size: 1rem;
+    font-weight: bold;
+    text-align: center;
     z-index: 2;
+}
+
+/* Mobile Headers --End-- */
+
+
+/* Mobile Footers -- Start --  */
+
+/* MF -- previewInvoice.html -- */
+
+/* fixed footer accross bottom of screen */
+.preview-footer {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    position: fixed;
+    bottom: 0px;
+    left: 0px;
+    width: 100%;
+    height: 60px;
+    color: #2a2438;
+    background-color: #e9e7ee;
+    opacity: 1;
+    padding: 10px 10px 10px;
+    margin: 0px;
+    z-index: 2;
+    border: none;
+}
+
+/* Mobile Footers -- End --  */
+
+/* Mobile Buttons -- Start -- */
+
+/* MB --previewInvoice.html-- */
+
+.top-right-desktop {
+    display: none;
 }
 
 .top-left-mobile,
@@ -98,58 +134,6 @@ a {
 
 .top-right-mobile {
     text-align: right;
-}
-
-.preview-h2 {
-    display: inline;
-    width: 70%;
-    height: 40px;
-    color: #2a2438;
-    font-size: 1rem;
-    font-weight: bold;
-    text-align: center;
-    z-index: 2;
-}
-
-.top-right-desktop {
-    display: none;
-}
-
-.preview-table {
-    width: 96%;
-    background-color: transparent;
-}
-
-.preview-table td {
-    padding: 25px 15px;
-    background-color: #f2f2f2;
-}
-
-.preview-table td:nth-child(1) {
-    width: 40%;
-}
-
-.preview-table td:nth-child(2) {
-    width: 60%;
-}
-
-.preview-footer {
-    display: flex;
-    flex-flow: row nowrap;
-    justify-content: space-between;
-    align-items: flex-start;
-    position: fixed;
-    bottom: 0px;
-    left: 0px;
-    width: 100%;
-    height: 50px;
-    color: #2a2438;
-    background-color: #e9e7ee;
-    opacity: 1;
-    padding: 0px 10px 10px;
-    margin: 0px;
-    z-index: 2;
-    border: none;
 }
 
 .large-left,
@@ -180,9 +164,256 @@ a {
     border: none;
 }
 
+/* Mobile Buttons -- End -- */
+
+/* Mobile Content -- Start -- */
+
+/* MC -- previewInvoice.html -- */
+
+/* Content Containers. All but one content container hidden until activated */
+.preview-container,
+.page-view-container,
+.edit-container {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    margin: 0px;
+    padding: 0px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    background-color: #e9e7ee;
+    z-index: 1;
+}
+
+.page-view-container,
+.edit-container {
+    display: none;
+}
+
+.page-view-container:target,
+.edit-container:target {
+    display: flex;
+    z-index: 2;
+}
+
+/* Content for previewInvoice.html */
+
+.preview-table {
+    width: 90%;
+    max-width: 500px;
+}
+
+.preview-table td {
+    background-color: lightgrey;
+    padding: 20px 0px 20px 20px;
+}
+
+.preview-table td:nth-child(1) {
+    width: 35%;
+}
+
+.preview-table td:nth-child(2) {
+    width: 65%;
+}
+
+/* MC #page-view */
+
+/* mimics a sheet of paper 99% width with height as a function of
+width to create 8.5 x 11 ratio */
+.x8x11-container {
+    position: relative;
+    width: 99vw;
+    height: 130vw;
+    background: white;
+    color: black;
+}
+
+/* font-size relative to page size / scales from mobile to 
+1024px width screen. Adjusted below for desktop with @media 1025px */
+.x8x11-font {
+    font-size: 2vw;
+}
+
+.x8x11-number-date h2 {
+    font-size: 4vw;
+}
+
+/* eliminate gap between name and address, set font to normal */
+address {
+    font-style: normal;
+    margin-top: -4%;
+}
+
+/* 4 boxes to contain company/customer info, logo and date/invoice number */
+.x8x11-top-grid {
+    display: inline-block;
+    width: 49%;
+    height: 15%;
+}
+
+/* Company address in upper left corner*/
+
+.x8x11-company-address {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    margin: 0px;
+    padding: 2% 0px 0px 3%;
+}
+
+.x8x11-company-address p {
+    font-weight: bold;
+
+}
+
+/* Company logo in upper right corner */
+
+.x8x11-logo {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    margin: 0px;
+    padding: 2% 3% 0px 0px;
+}
+
+.logo {
+    float: right;
+    width: 30%;
+    height: auto;
+    margin-top: 0;
+
+}
+
+/* Customer "BILL TO:" name and address*/
+
+.x8x11-customer-address {
+    position: absolute;
+    top: 16%;
+    left: 0px;
+    margin: 0px;
+    padding: 0px 0px 0px 5%;
+}
+
+.x8x11-customer-address h3 {
+    height: 25%;
+
+}
+
+/* "INVOICE" h2 and invoice number/date */
+
+.x8x11-number-date {
+    position: absolute;
+    top: 16%;
+    right: 0px;
+    margin: 0px;
+    padding: 2% 3% 0px 0px;
+}
+
+.x8x11-number-date h2 {
+    display: block;
+    text-align: right;
+    width: 100%;
+    height: 30%;
+    padding: 0px 2%;
+    margin: -5% 0px 5%;
+    /* Set-font size above */
+}
+
+.span-left,
+.span-right {
+    display: inline-block;
+    width: 48%;
+    background-color: white;
+    height: 5%;
+    margin: 0px;
+}
+
+.span-left {
+    text-align: right;
+    font-weight: bold;
+}
+
+/* Work descriptions and amounts */
+
+/* box to hold table */
+
+.x8x11-center-box {
+    display: block;
+    position: absolute;
+    top: 31%;
+    width: 100%;
+    height: 60%;
+}
+
+/* the table */
+
+.x8x11-table {
+    width: 96%;
+    position: relative;
+    border-collapse: collapse;
+    margin: 0px auto;
+}
+
+.x8x11-table thead tr {
+    width: 100%;
+    border-bottom: solid darkgrey 3px;
+}
+
+.x8x11-table tr {
+    width: 100%;
+}
+
+.x8x11-table td {
+    padding-top: 1%;
+}
+
+.x8x11-table td:nth-child(1),
+.x8x11-table th:nth-child(1) {
+    width: 85%;
+    padding-left: 2vw;
+}
+
+.x8x11-table td:nth-child(2),
+.x8x11-table th:nth-child(2) {
+    width: 15%;
+    text-align: right;
+    padding-right: 2vw;
+}
+
+.x8x11-table tfoot tr {
+    border-top: solid black 1px;
+}
+
+.x8x11-table tfoot td:nth-child(1) {
+    text-align: right;
+}
 
 
-/* Mob-Inv-Edit */
+.x8x11-footer {
+    display: block;
+    text-align: center;
+    width: 100%;
+    position: absolute;
+    bottom: 5%;
+}
+
+/* M Edit View (a div within previewInvoice.html */
+
+/* M Payment View (a div within previewInvoice.html */
+
+
+
+
+
+
+
+
+
 
 .edit-container {
     flex-flow: row wrap;
@@ -230,7 +461,7 @@ a {
     width: 40%;
     text-align: right;
     margin-right: 0px;
-    
+
 }
 
 .amount {
@@ -248,175 +479,41 @@ a {
 }
 
 
+@media screen and (min-width:768px) {
 
+    .preview-header,
+    .page-view-header,
+    .edit-header {
+        height: 60px;
+        
+    }
 
-input,
-select {
-    color: black;
-    border: solid black 1px;
-    border-radius: 15px;
-    padding: 5px;
+    .page-view-container {
+        position: fixed;
+        top: 0px;
+        left: 0px;
+        right: 0px;
+        margin: 0px;
+        padding: 0px;
+        width: 100%;
+        height: 100%;
+        display: block;
+        padding-top: 30px;
+        background-color: #e9e7ee;
+        z-index: 1;
+    }
+
+    .preview-footer {
+        height: 70px;
+        
+    }
 }
 
 
 
-/* Mobile Pageview */
-
-.pageview-font {
-    font-size: 2vw;
-}
-
-.pageview-container {
-    position: relative;
-    width: 99vw;
-    height: 130vw;
-    background: white;
-    color: black;
-}
-
-address {
-    font-style: normal;
-    margin-top: -4%;
-}
-
-.pageview-top-grid {
-    display: inline-block;
-    width: 49%;
-    height: 15%;
-}
-
-/* Company address in upper left corner*/
-.pageview-company-address {
-    position: absolute;
-    top: 0px;
-    left: 0px;
-    margin: 0px;
-    padding: 2% 0px 0px 3%;
-}
-
-.pageview-company-address p {
-    font-weight: bold;
-
-}
-
-/* Company logo in upper right corner */
-
-.logo-container {
-    position: absolute;
-    top: 0px;
-    right: 0px;
-    margin: 0px;
-    padding: 2% 3% 0px 0px;
-}
-
-.logo {
-    float: right;
-    width: 30%;
-    height: auto;
-    margin-top: 0;
-
-}
-
-/* Customer "BILL TO:" name and address*/
-.customer-address {
-    position: absolute;
-    top: 16%;
-    left: 0px;
-    margin: 0px;
-    padding: 0px 0px 0px 5%;
-}
-
-.customer-address h3 {
-    height: 25%;
-
-}
-
-.box-4 {
-    position: absolute;
-    top: 16%;
-    right: 0px;
-    margin: 0px;
-    padding: 2% 3% 0px 0px;
-}
-
-.box-4 h2 {
-    display: block;
-    text-align: right;
-    width: 100%;
-    height: 30%;
-    font-size: 4vw;
-    padding: 0px;
-    margin: -5% 0px 0px;
-}
-
-.span-left,
-.span-right {
-    display: inline-block;
-    width: 48%;
-    background-color: white;
-    height: 30%;
-    margin: 0px;
-}
-
-.span-left {
-    text-align: right;
-    font-weight: bold;
-}
-
-.center-box {
-    display: block;
-    position: absolute;
-    top: 31%;
-    width: 100%;
-    height: 60%;
-}
 
 
-.pageview-table {
-    width: 96%;
-    position: relative;
-    border-collapse: collapse;
-    margin: 0px auto;
-}
 
-.pageview-table thead tr {
-    width: 100%;
-    background-color: lightgrey;
-}
-
-.pageview-table tr {
-    width: 100%;
-    height: 5vw;
-}
-
-.pageview-table td:nth-child(1),
-.pageview-table th:nth-child(1) {
-    width: 85%;
-    padding-left: 2vw;
-}
-
-.pageview-table td:nth-child(2),
-.pageview-table th:nth-child(2) {
-    width: 15%;
-    text-align: right;
-    padding-right: 2vw;
-}
-
-.pageview-table tfoot tr {
-    border-top: solid black 1px;
-}
-
-.pageview-table tfoot td:nth-child(1) {
-    text-align: right;
-}
-
-.pageview-footer {
-    display: block;
-    text-align: center;
-    width: 100%;
-    position: absolute;
-    bottom: 5%;
-}
 
 
 
@@ -467,11 +564,15 @@ Modify for tablets and desktop below*/
 
     /* Desktop Pageview */
 
-    .pageview-font {
+    .x8x11-font {
         font-size: 1.5vh;
     }
 
-    .pageview-container {
+    .x8x11-number-date h2 {
+        font-size: 3vh;
+    }
+
+    .x8x11-container {
         display: block;
         position: fixed;
         top: 10px;
@@ -484,7 +585,7 @@ Modify for tablets and desktop below*/
         z-index: 101;
     }
 
-   
+
 
     .top-right-desktop {
         display: block;
@@ -552,7 +653,7 @@ Modify for tablets and desktop below*/
         padding: 20px;
     }
 
-    .pageview-container {
+    .x8x11-container {
         display: block;
         width: 76vh;
     }
@@ -599,7 +700,7 @@ Modify for tablets and desktop below*/
 
 
 
-    
+
 
     .delete {
         order: 2;
