@@ -18,14 +18,14 @@
 
 <body>
 
-    <div class="container-1" id="table-view">
+    <div class="preview-container" id="table-view">
 
-        <div class="header">
+        <div class="preview-header">
             <button class="top-left-mobile">
                 <a href="invoices.html"><span class="material-symbols-outlined">arrow_back</span></a>
             </button>
 
-            <h2>Invoice No. 5224</h2>
+            <h2 class="preview-h2">Invoice No. 5224</h2>
 
             <button class="top-right-desktop">
                 <a href="invoices.html"><span class="material-symbols-outlined">close</span></a>
@@ -37,7 +37,7 @@
 
         </div> <!-- invoice-preview-header -->
 
-        <table class="summary">
+        <table class="preview-table">
             <tbody>
                 <tr>
                     <td>Date</td>
@@ -58,7 +58,7 @@
             </tbody>
         </table>
 
-        <div class="footer">
+        <div class="preview-footer">
 
 
             <button class="large-left" onclick="javascript:history.back()">
@@ -79,18 +79,18 @@
     </div>
 
     <!-- 8.5 x 11 sheet of paper. -->
-    <div class="container-2" id="page-view">
+    <div class="page-container" id="page-view">
 
 
 
-        <div class="header">
+        <div class="page-header">
             <button class="top-left-mobile">
                 <a href="viewInvoice.html"><span class="material-symbols-outlined">arrow_back</span></a>
             </button>
 
-            <h2>Invoice No. 5224</h2>
+            <h2 class="preview-h2">Invoice No. 5224</h2>
 
-            <button class="mini-icon top-right-mobile" onclick="window.print()">
+            <button class="top-right-mobile" onclick="window.print()">
                 <span class="material-symbols-outlined">print</span>
             </button>
 
@@ -102,25 +102,25 @@
         <div class="page-container">
 
             <!-- Address COMPANY-->
-            <div class="top-grid company-address">
-                <p class="pageview-font">RC Exhaust</p>
-                <address class="pageview-font">
+            <div class="page-top-grid page-company-address">
+                <p class="page-font">RC Exhaust</p>
+                <address class="page-font">
                     PO Box 287
                     <br>
                     Bishop, Ca. 93515
                 </address>
             </div>
 
-            <div class="top-grid logo-container">
+            <div class="page-top-grid logo-preview-container">
                 <img src="https://rc-resume.neocities.org/companyLogo.png" alt="Company Logo" class="logo">
             </div>
 
 
             <!-- Address CUSTOMER-->
-            <div class="top-grid customer-address">
-                <h3 class="pageview-font">BILL TO:</h3>
-                <p class="pageview-font">Bob's Burgers</p>
-                <address class="pageview-font">
+            <div class="page-top-grid customer-address">
+                <h3 class="page-font">BILL TO:</h3>
+                <p class="page-font">Bob's Burgers</p>
+                <address class="page-font">
                     115 W Ocean Drive
                     <br>
                     Ocean City, NJ. 17740
@@ -129,20 +129,20 @@
 
             <!-- Table to contain company info (phone, email, invoice, date). -->
 
-            <div class="top-grid box-4">
+            <div class="page-top-grid box-4">
 
-                <h2>INVOICE</h2>
-                <span class="pageview-font span-left">
+                <h2 class="preview-h2">INVOICE</h2>
+                <span class="page-font span-left">
                     Invoice No.
                 </span>
-                <span class="pageview-font span-right">
+                <span class="page-font span-right">
                     5224
                 </span>
 
-                <span class="pageview-font span-left">
+                <span class="page-font span-left">
                     Date
                 </span>
-                <span class="pageview-font span-right">
+                <span class="page-font span-right">
                     09/28/2021
                 </span>
 
@@ -150,7 +150,7 @@
 
             <!-- Table to contain item descriptions and amount. -->
             <div class="center-box">
-                <table class="pageview-table pageview-font">
+                <table class="page-table page-font">
                     <thead>
                         <tr>
                             <th>
@@ -201,33 +201,24 @@
 
             </div>
 
-            <div class="pageview-footer pageview-font">
+            <div class="page-footer page-font">
                 <address>Phone: (867) 867-5309 | Email: accountspayable@rcexhaust.com</address>
             </div>
         </div>
-        <div class="color1 footer-view print-none">
-
-
-
-
-            
-
-
-
-        </div> <!-- preview-footer -->
+        
     </div>
 
     <!-- Invoice EDITOR. -->
 
-    <div class="container-3 print-none" id="invoice-edit">
+    <div class="edit-container print-none" id="invoice-edit">
 
         
-        <div class="header">
+        <div class="edit-header">
             <button class="top-left-mobile">
                 <a href="invoices.html"><span class="material-symbols-outlined">arrow_back</span></a>
             </button>
 
-            <h2>Invoice No. 5224</h2>
+            <h2 class="preview-h2">Invoice No. 5224</h2>
 
             <button class="top-right-desktop">
                 <a href="invoices.html"><span class="material-symbols-outlined">close</span></a>
@@ -235,12 +226,10 @@
 
         </div> <!-- invoice-preview-header -->
 
-        <div class="edit-container">
-            <!-- Invoice EDIT DATE. -->
+        
             
                 
                     <label for="date" class="label">Date:</label>
-                    <br>
                     <input type="date" id="date" name="date" class="input"
                         placeholder="Date">
                 
@@ -284,14 +273,14 @@
 Line 2,
 Ocean City, NJ. 17740
                     </textarea>
-        </div>
+        
             
 
             <!-- Invoice EDIT ITEMS. -->
-        <div class="edit-container-2">
+        
 
                 
-                    
+                    <!-- Item 1 -->
                     <label for="description" class="label description">
                         Item 1:
                     </label>
@@ -299,19 +288,23 @@ Ocean City, NJ. 17740
                         class="input textarea description" maxlength="120">Single System Service, hoods, ducts &
                         fan</textarea>
 
-                    <label for="amount" class="label amount">
+                    <label for="amount" class="label label-amount">
                         Amount:
                     </label>
                     <input type="number" rows="1" cols="10" id="text-area-item-amount" name="amount"
                         class="amount input" value="485.00">
                     </input>
 
+                    <!-- Item 2 -->
                     <label for="description" class="label description">
                         Item 2:
                     </label>
                     <textarea id="description" name="description" class="input textarea description"
                         maxlength="120">Enter work description...</textarea>
-
+                    
+                    <label for="amount" class="label label-amount">
+                        Amount:
+                    </label>
                     <input type="number" rows="1" cols="10" id="text-area-item-amount" name="amount"
                         class="amount input" value="00.00">
                     </input>
@@ -322,6 +315,9 @@ Ocean City, NJ. 17740
                     <textarea id="description" name="description" class="input textarea description"
                         maxlength="120">Enter work description...</textarea>
 
+                    <label for="amount" class="label label-amount">
+                        Amount:
+                    </label>
                     <input type="number" rows="1" cols="10" id="text-area-item-amount" name="amount"
                         class="amount input" value="00.00">
                     </input>
@@ -331,7 +327,10 @@ Ocean City, NJ. 17740
                     </label>
                     <textarea id="description" name="description" class="input textarea description"
                         maxlength="120">Enter work description...</textarea>
-
+                    
+                    <label for="amount" class="label label-amount">
+                        Amount:
+                    </label>
                     <input type="number" rows="1" cols="10" id="text-area-item-amount" name="amount"
                         class="amount input" value="00.00">
                     </input>
@@ -341,7 +340,10 @@ Ocean City, NJ. 17740
                     </label>
                     <textarea id="description" name="description" class="input textarea description"
                         maxlength="120">Enter work description...</textarea>
-
+                    
+                    <label for="amount" class="label label-amount">
+                        Amount:
+                    </label>
                     <input type="number" rows="1" cols="10" id="text-area-item-amount" name="amount"
                         class="amount input" value="00.00">
                     </input>
@@ -352,11 +354,14 @@ Ocean City, NJ. 17740
                     <textarea id="description" name="description" class="input textarea description"
                         maxlength="120">Enter work description...</textarea>
 
+                    <label for="amount" class="label label-amount">
+                        Amount:
+                    </label>
                     <input type="number" rows="1" cols="10" id="text-area-item-amount" name="amount"
                         class="amount input" value="00.00">
                     </input>
 
-                    <div class="footer">
+                    <div class="preview-footer">
 
                         <button class="large-left" onclick="javascript:history.back()">
                             Cancel
@@ -368,7 +373,7 @@ Ocean City, NJ. 17740
 
                     </div>
 
-        </div>
+        
 
     </div> <!-- closing tag for modal-window -->
 

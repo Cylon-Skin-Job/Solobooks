@@ -19,9 +19,17 @@ a {
     box-sizing: border-box;
 }
 
-.container-1,
-.container-2,
-.container-3 {
+.material-symbols-outlined {
+    font-size: 24px;
+}
+
+
+
+/* (Mobile) Invoice Preview General */
+
+.preview-container,
+.page-container,
+.edit-container {
     position: fixed;
     top: 0px;
     left: 0px;
@@ -38,20 +46,20 @@ a {
     z-index: 1;
 }
 
-.container-2,
-.container-3 {
+.page-container,
+.edit-container {
     display: none;
 }
 
-.container-2:target,
-.container-3:target {
+.page-container:target,
+.edit-container:target {
     display: flex;
     z-index: 2;
 }
 
-/* container-3 is styled below along with it's contents */
-
-.header {
+.preview-header,
+.page-header,
+.edit-header {
     display: flex;
     flex-flow: row wrap;
     justify-content: flex-start;
@@ -61,7 +69,7 @@ a {
     left: 0px;
     height: 45px;
     width: 100%;
-    color:#2a2438;
+    color: #2a2438;
     background-color: #e9e7ee;
     opacity: 1;
     padding: 10px 0px 5px;
@@ -70,16 +78,16 @@ a {
     border: none;
 }
 
-.top-left-mobile, 
+.top-left-mobile,
 .top-right-mobile {
     display: inline-block;
     width: 15%;
-    height: 35px;
-    color:#2a2438;
+    height: 40px;
+    color: #2a2438;
     background-color: transparent;
     border: none;
-    padding: 0px 15px 0px;
-    font-weight:  bold;
+    padding: 0px 20px 0px;
+    font-weight: bold;
     margin: 0px 0px 5px;
 }
 
@@ -91,11 +99,7 @@ a {
     text-align: right;
 }
 
-.material-symbols-outlined {
-    font-size: 24px;
-}
-
-h2 {
+.preview-h2 {
     display: inline-block;
     width: 70%;
     height: 40px;
@@ -110,29 +114,25 @@ h2 {
     display: none;
 }
 
-.summary {
+.preview-table {
     width: 96%;
     background-color: transparent;
 }
 
-.summary td {
+.preview-table td {
     padding: 25px 15px;
     background-color: #f2f2f2;
 }
 
-.summary td:nth-child(1) {
-    width: 30%;
+.preview-table td:nth-child(1) {
+    width: 40%;
 }
 
-.summary td:nth-child(2) {
-    width: 70%;
+.preview-table td:nth-child(2) {
+    width: 60%;
 }
 
-.preview-edit-container {
-    display: none;
-}
-
-.footer {
+.preview-footer {
     display: flex;
     flex-flow: row nowrap;
     justify-content: space-between;
@@ -141,7 +141,7 @@ h2 {
     bottom: 0px;
     left: 0px;
     width: 100%;
-    color:#2a2438;
+    color: #2a2438;
     background-color: #e9e7ee;
     opacity: 1;
     padding: 0px 10px 10px;
@@ -157,7 +157,7 @@ h2 {
     font-size: 1rem;
     font-weight: bold;
     background-color: #e9e7ee;
-    color:#2a2438;
+    color: #2a2438;
     border: none;
 }
 
@@ -174,38 +174,33 @@ h2 {
     font-size: 1rem;
     font-weight: bold;
     background-color: #e9e7ee;
-    color:#2a2438;
+    color: #2a2438;
     border: none;
 }
 
-.container-3 {
+
+
+/* Invoice Editor mobile */
+
+.edit-container {
     flex-flow: row wrap;
     justify-content: space-around;
     align-items: flex-start;
     padding: 60px 0px;
     overflow: scroll;
-}
-
-.edit-container,
-.edit-container-2 {
-    width: 100%;
-}
-
-.edit-container-2 {
     background-color: #e9e7ee;
     margin-top: 20px;
 }
 
 .label,
 .input {
-width: 80%;
-margin: 5px 10%;
-font-size: 1rem;
-height: 40px;
-text-align: center;
-vertical-align:middle;
-padding: 10px;
-color: black;
+    width: 90%;
+    margin: 0px;
+    font-size: 1rem;
+    height: 40px;
+    vertical-align: middle;
+    padding: 10px;
+    color: black;
 }
 
 .label {
@@ -225,15 +220,17 @@ color: black;
     overflow: hidden;
 }
 
-.description {
-    width: 96%;
-    margin: 5px 2%;
+.label-amount {
+    width: 40%;
+    text-align: right;
+    
 }
 
 .amount {
     width: 40%;
-    margin: 5px 0px 20px 58%;
+    text-align: center;
 }
+
 
 .transaction p {
     text-align: center;
@@ -252,6 +249,176 @@ select {
     border-radius: 15px;
     padding: 5px;
 }
+
+
+
+/* Invoice pageview mobile */
+
+.pageview-font {
+    font-size: 2vw;
+}
+
+.pageview-container {
+    position: relative;
+    width: 99vw;
+    height: 130vw;
+    background: white;
+    color: black;
+}
+
+address {
+    font-style: normal;
+    margin-top: -4%;
+}
+
+.pageview-top-grid {
+    display: inline-block;
+    width: 49%;
+    height: 15%;
+}
+
+/* Company address in upper left corner*/
+.pageview-company-address {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    margin: 0px;
+    padding: 2% 0px 0px 3%;
+}
+
+.pageview-company-address p {
+    font-weight: bold;
+
+}
+
+/* Company logo in upper right corner */
+
+.logo-container {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    margin: 0px;
+    padding: 2% 3% 0px 0px;
+}
+
+.logo {
+    float: right;
+    width: 30%;
+    height: auto;
+    margin-top: 0;
+
+}
+
+/* Customer "BILL TO:" name and address*/
+.customer-address {
+    position: absolute;
+    top: 16%;
+    left: 0px;
+    margin: 0px;
+    padding: 0px 0px 0px 5%;
+}
+
+.customer-address h3 {
+    height: 25%;
+
+}
+
+.box-4 {
+    position: absolute;
+    top: 16%;
+    right: 0px;
+    margin: 0px;
+    padding: 2% 3% 0px 0px;
+}
+
+.box-4 h2 {
+    display: block;
+    text-align: right;
+    width: 100%;
+    height: 30%;
+    font-size: 4vw;
+    padding: 0px;
+    margin: -5% 0px 0px;
+}
+
+.span-left,
+.span-right {
+    display: inline-block;
+    width: 48%;
+    background-color: white;
+    height: 30%;
+    margin: 0px;
+}
+
+.span-left {
+    text-align: right;
+    font-weight: bold;
+}
+
+.center-box {
+    display: block;
+    position: absolute;
+    top: 31%;
+    width: 100%;
+    height: 60%;
+}
+
+
+.pageview-table {
+    width: 96%;
+    position: relative;
+    border-collapse: collapse;
+    margin: 0px auto;
+}
+
+.pageview-table thead tr {
+    width: 100%;
+    background-color: lightgrey;
+}
+
+.pageview-table tr {
+    width: 100%;
+    height: 5vw;
+}
+
+.pageview-table td:nth-child(1),
+.pageview-table th:nth-child(1) {
+    width: 85%;
+    padding-left: 2vw;
+}
+
+.pageview-table td:nth-child(2),
+.pageview-table th:nth-child(2) {
+    width: 15%;
+    text-align: right;
+    padding-right: 2vw;
+}
+
+.pageview-table tfoot tr {
+    border-top: solid black 1px;
+}
+
+.pageview-table tfoot td:nth-child(1) {
+    text-align: right;
+}
+
+.pageview-footer {
+    display: block;
+    text-align: center;
+    width: 100%;
+    position: absolute;
+    bottom: 5%;
+}
+
+
+
+
+
+/* edit-container is styled below along with it's contents */
+
+
+
+
 
 
 /* Mobile UI
@@ -278,59 +445,7 @@ Header. */
 /* Buttons */
 
 
-.button {
-    background-color: #e9e7ee;
-}
 
-.button-mini-icon {
-    display: inline-block;
-    width: 40px;
-    height: 40px;
-    float: left;
-    border: none;
-    margin: 0px 1vw;
-    border-radius: 20px;
-    color: #2a2438;
-    text-align: center;
-    padding: 9px;
-}
-
-.exit-button {
-    display: none;
-}
-
-.back-button a,
-.button-mini-icon a,
-.button a,
-.button-large-left a,
-.button-large-right a {
-    text-decoration: none;
-    color: #2a2438;
-}
-
-.button-large-left,
-.button-large-right {
-    padding: auto 0px;
-    margin: 0 2vw;
-    width: 70px;
-    height: 40px;
-    border: none;
-    font-weight: bold;
-    font-size: 1em;
-    border: none;
-    color: #2a2438;
-}
-
-.button-large-right {
-    float: right;
-    text-align: right;
-
-}
-
-.button-large-left {
-    float: left;
-    text-align: left;
-}
 
 
 
@@ -341,6 +456,133 @@ Modify for tablets and desktop below*/
 
 
 @media screen and (min-width: 1025px) {
+
+    /* Invoice Pageview Desktop */
+
+    .pageview-font {
+        font-size: 1.5vh;
+    }
+
+    .pageview-container {
+        display: block;
+        position: fixed;
+        top: 10px;
+        left: 10px;
+        width: 76vh;
+        height: 98vh;
+        background-color: white;
+        color: black;
+        border: darkgrey 1px solid;
+        z-index: 101;
+    }
+
+    .top-right-mobile,
+    .top-left-mobile {
+        display: none;
+    }
+
+    .top-right-desktop {
+        display: block;
+        position: fixed;
+        right: 15px;
+        top: 15px;
+        color: #2a2438;
+        background-color: #e9e7ee;
+        border: none;
+        height: 40px;
+        width: 40px;
+        margin: 0px;
+        padding: 8px;
+        font-weight: bold;
+        border-radius: 40px;
+    }
+
+    .top-right-desktop:hover,
+    .top-right-desktop a:hover {
+        background-color: lightgrey;
+        color: white;
+    }
+
+    .large-left,
+    .large-right {
+        width: 80px;
+        height: 40px;
+        padding: 5px;
+        text-align: center;
+        font-size: 1rem;
+        font-weight: bold;
+        background-color: #e9e7ee;
+        color: #2a2438;
+        border: #2a2438 solid 1px;
+        border-radius: 20px;
+    }
+
+    .mini-icon {
+        font-weight: bold;
+        height: 40px;
+        width: 40px;
+        padding: 7px;
+        text-align: center;
+        background-color: #e9e7ee;
+        color: #2a2438;
+        border: #2a2438 solid 1px;
+        border-radius: 20px;
+    }
+
+    .large-left:hover,
+    .large-right:hover,
+    .mini-icon:hover {
+        background-color: #f5f4f7;
+        box-shadow: 5px 5px 2px darkgrey;
+    }
+
+    .preview-container {
+        display: block;
+        position: fixed;
+        left: auto;
+        right: 0px;
+        top: 150px;
+        width: calc(96vw - 76vh);
+        justify-content: flex-start;
+        padding: 20px;
+    }
+
+    .pageview-container {
+        display: block;
+        width: 76vh;
+    }
+
+    .preview-preview-table-header {
+        top: 0px;
+        left: auto;
+        right: 0px;
+        width: calc(96vw - 76vh);
+        z-index: 2;
+    }
+
+    .preview-page-header {
+        display: none;
+    }
+
+    .footer {
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: space-between;
+        align-items: flex-start;
+        position: fixed;
+        top: auto;
+        left: auto;
+        right: 0px;
+        bottom: 0px;
+        width: calc(96vw - 76vh);
+        color: #2a2438;
+        background-color: #e9e7ee;
+        opacity: 1;
+        padding: 0px 10px 10px;
+        margin: 0px;
+        z-index: 2;
+        border: none;
+    }
 
     .desktop-none {
         display: none;
@@ -356,11 +598,7 @@ Modify for tablets and desktop below*/
         z-index: 300;
     }
 
-    .button:hover,
-    button a:hover,
-    .material-symbols-outlined:hover {
-        background: #e9e7ee;
-    }
+
 
     .button:hover {
         box-shadow: 1px 1px 5px grey;
@@ -401,7 +639,7 @@ Modify for tablets and desktop below*/
     }
 
     .footer-view {
-        position: fixed;
+        display: none;
         top: 0px;
         right: 0px;
         z-index: 200;
@@ -417,7 +655,7 @@ Modify for tablets and desktop below*/
     }
 
     .footer-edit {
-        display: flex;
+        display: none;
         flex-flow: row nowrap;
         justify-content: flex-end;
         padding: 0px 50px;
@@ -444,7 +682,7 @@ Modify for tablets and desktop below*/
         font-size: 12px;
     }
 
-    .page-container {
+    .page-preview-container {
         display: block;
         box-sizing: border-box;
         width: 750px;
