@@ -491,7 +491,7 @@ address {
 
     .page-view-container:target {
         display: block;
-        padding-top: 40px;
+        padding-top: 60px;
         background-color: #e9e7ee;
         z-index: 1;
     }
