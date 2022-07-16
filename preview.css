@@ -46,17 +46,6 @@ a {
     z-index: 1;
 }
 
-.page-container,
-.edit-container {
-    display: none;
-}
-
-.page-container:target,
-.edit-container:target {
-    display: flex;
-    z-index: 2;
-}
-
 .preview-header,
 .page-header,
 .edit-header {
@@ -67,7 +56,7 @@ a {
     position: fixed;
     top: 0px;
     left: 0px;
-    height: 45px;
+    height: 50px;
     width: 100%;
     color: #2a2438;
     background-color: #e9e7ee;
@@ -76,6 +65,17 @@ a {
     margin: 0px;
     z-index: 2;
     border: none;
+}
+
+.page-container,
+.edit-container {
+    display: none;
+}
+
+.page-container:target,
+.edit-container:target {
+    display: flex;
+    z-index: 2;
 }
 
 .top-left-mobile,
