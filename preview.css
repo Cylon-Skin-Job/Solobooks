@@ -217,17 +217,20 @@ a {
 .textarea {
     height: 100px;
     overflow: hidden;
+    padding: 10px;
 }
 
 .label-amount {
-    width: 35%;
+    width: 40%;
     text-align: right;
+    margin-right: 0px;
     
 }
 
 .amount {
     width: 35%;
     text-align: center;
+    margin-left: 5%;
 }
 
 
