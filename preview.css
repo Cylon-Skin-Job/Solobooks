@@ -204,9 +204,8 @@ a {
 }
 
 .date::-webkit-datetime-edit {
-    padding: 5px;
+    padding: 10px 5px;
 }
-
 
 .label {
     font-size: .9rem;
