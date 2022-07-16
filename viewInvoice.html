@@ -10,7 +10,6 @@
     <meta name="theme-color1" content="#dbd8e3" media="(prefers-color1-scheme: light)">
     <meta name="theme-color1" content="#dbd8e3" media="(prefers-color1-scheme: dark)">
     <meta name="format-detection" content="telephone=no">
-    <link rel="stylesheet" href="invoicePageView.css">
     <link rel="stylesheet" href="preview.css">
     <link rel="stylesheet"
         href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
@@ -21,6 +20,7 @@
     <div class="preview-container" id="table-view">
 
         <div class="preview-header">
+
             <button class="top-left-mobile">
                 <a href="invoices.html"><span class="material-symbols-outlined">arrow_back</span></a>
             </button>
@@ -28,7 +28,9 @@
             <h2 class="preview-h2">Invoice No. 5224</h2>
 
             <button class="top-right-desktop">
-                <a href="invoices.html"><span class="material-symbols-outlined">close</span></a>
+                <a href="invoices.html">
+                    <span class="material-symbols-outlined">close</span>
+                </a>
             </button>
 
             <button class="top-right-mobile">
@@ -210,9 +212,9 @@
 
     <!-- Invoice EDITOR. -->
 
-    <input class="edit-container print-none" id="invoice-edit">
+    <div class="edit-container print-none" id="invoice-edit">
 
-        
+    
         <div class="edit-header">
             <button class="top-left-mobile">
                 <a href="invoices.html"><span class="material-symbols-outlined">arrow_back</span></a>
@@ -293,7 +295,7 @@ Ocean City, NJ. 17740
                     </label>
                     <input type="number" rows="1" cols="10" id="text-area-item-amount" name="amount"
                         class="amount input" value="485.00">
-                    </input>
+                    </div>
 
                     <!-- Item 2 -->
                     <label for="description" class="label description">
@@ -361,7 +363,7 @@ Ocean City, NJ. 17740
                         class="amount input" value="00.00">
                     </input>
 
-                    <div class="preview-footer">
+                    <div class="edit-footer">
 
                         <button class="large-left" onclick="javascript:history.back()">
                             Cancel

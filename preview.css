@@ -63,7 +63,6 @@ a {
     opacity: 1;
     padding: 10px 0px 5px;
     margin: 0px;
-    z-index: 2;
     border: none;
 }
 
@@ -80,7 +79,7 @@ a {
 
 .top-left-mobile,
 .top-right-mobile {
-    display: inline-block;
+    display: inline;
     width: 15%;
     height: 40px;
     color: #2a2438;
@@ -89,6 +88,8 @@ a {
     padding: 0px 20px 0px;
     font-weight: bold;
     margin: 0px 0px 5px;
+    border: none;
+    z-index: 2;
 }
 
 .top-left-mobile {
@@ -100,7 +101,7 @@ a {
 }
 
 .preview-h2 {
-    display: inline-block;
+    display: inline;
     width: 70%;
     height: 40px;
     color: #2a2438;
@@ -141,6 +142,7 @@ a {
     bottom: 0px;
     left: 0px;
     width: 100%;
+    height: 50px;
     color: #2a2438;
     background-color: #e9e7ee;
     opacity: 1;
@@ -170,8 +172,8 @@ a {
 }
 
 .mini-icon {
+    display: inline-block;
     padding: 5px 10px 0px;
-    font-size: 1rem;
     font-weight: bold;
     background-color: #e9e7ee;
     color: #2a2438;
@@ -482,10 +484,7 @@ Modify for tablets and desktop below*/
         z-index: 101;
     }
 
-    .top-right-mobile,
-    .top-left-mobile {
-        display: none;
-    }
+   
 
     .top-right-desktop {
         display: block;
@@ -598,39 +597,9 @@ Modify for tablets and desktop below*/
         display: block;
     }
 
-    .exit-button {
-        float: right;
-        display: inline;
-        z-index: 300;
-    }
 
 
-
-    .button:hover {
-        box-shadow: 1px 1px 5px grey;
-    }
-
-
-    .button-large-left,
-    .button-large-right {
-        display: inline-block;
-        border: solid 1px #2a2438;
-        border-radius: 20px;
-        margin: 0px 10px;
-        width: 90px;
-        height: 40px;
-        font-weight: bold;
-        text-align: center;
-        font-size: 1em;
-    }
-
-    .button-large-left {
-        order: 5;
-    }
-
-    .button-large-right {
-        order: 4;
-    }
+    
 
     .delete {
         order: 2;
