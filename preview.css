@@ -197,15 +197,9 @@ a {
     width: 90%;
     margin: 0px 10% 0px;
     height: 40px;
-    padding: 5px;
     font-size: 1rem;
     vertical-align: middle;
     color: black;
-}
-
-.date {
-    padding: 10px 5px;
-    height: 30px;
 }
 
 .label {
@@ -218,6 +212,10 @@ a {
     border-radius: 10px;
     margin-bottom: 20px;
     display: block;
+}
+
+.date {
+    padding: 0px;
 }
 
 .textarea {
