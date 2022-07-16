@@ -231,6 +231,7 @@ width to create 8.5 x 11 ratio */
     height: 130vw;
     background: white;
     color: black;
+    margin: auto;
 }
 
 /* font-size relative to page size / scales from mobile to 
@@ -488,17 +489,9 @@ address {
         
     }
 
-    .page-view-container {
-        position: fixed;
-        top: 0px;
-        left: 0px;
-        right: 0px;
-        margin: 0px;
-        padding: 0px;
-        width: 100%;
-        height: 100%;
+    .page-view-container:target {
         display: block;
-        padding-top: 30px;
+        padding-top: 40px;
         background-color: #e9e7ee;
         z-index: 1;
     }
