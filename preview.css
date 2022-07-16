@@ -25,7 +25,7 @@ a {
 
 
 
-/* (Mobile) Invoice Preview General */
+/* Mob-Inv-Prev-Gen */
 
 .preview-container,
 .page-container,
@@ -180,11 +180,11 @@ a {
 
 
 
-/* Invoice Editor mobile */
+/* Mob-Inv-Edit */
 
 .edit-container {
     flex-flow: row wrap;
-    justify-content: space-around;
+    justify-content: flex-start;
     align-items: flex-start;
     padding: 60px 0px;
     overflow: scroll;
@@ -197,7 +197,6 @@ a {
     width: 90%;
     margin: 0px;
     font-size: 1rem;
-    height: 40px;
     vertical-align: middle;
     padding: 10px;
     color: black;
@@ -252,7 +251,7 @@ select {
 
 
 
-/* Invoice pageview mobile */
+/* Mobile Pageview */
 
 .pageview-font {
     font-size: 2vw;
@@ -457,7 +456,7 @@ Modify for tablets and desktop below*/
 
 @media screen and (min-width: 1025px) {
 
-    /* Invoice Pageview Desktop */
+    /* Desktop Pageview */
 
     .pageview-font {
         font-size: 1.5vh;
