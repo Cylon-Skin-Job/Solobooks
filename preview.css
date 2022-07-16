@@ -195,7 +195,7 @@ a {
 .label,
 .input {
     width: 90%;
-    margin: 0px;
+    margin: 0px 10% 0px;
     font-size: 1rem;
     vertical-align: middle;
     padding: 10px;
