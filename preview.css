@@ -203,13 +203,10 @@ a {
     color: black;
 }
 
-date::::-webkit-datetime-edit {
+.date::-webkit-datetime-edit {
     padding: 5px;
 }
 
-date::-webkit-datetime-edit-text {
-    padding: 5px;
-}
 
 .label {
     font-size: .9rem;
