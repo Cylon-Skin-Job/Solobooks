@@ -449,7 +449,10 @@ address {
 }
 
 .date {
-    padding: 10px;
+    position: fixed;
+    top: 80px;
+    left: 80px;
+    background: transparent;
 }
 
 .textarea {
