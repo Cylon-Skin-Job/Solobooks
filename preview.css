@@ -448,16 +448,18 @@ address {
     display: block;
 }
 
-.date {
+.date:empty {
     position: fixed;
     top: 80px;
     left: 80px;
+    background-color: red;
+    color: purple;
 }
 
-.date:empty {
-    background-color: transparent;
-    color: transparent;
+.date:in-range {
+    background-color: blue;
 }
+
 
 .textarea {
     height: 100px;
