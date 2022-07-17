@@ -276,100 +276,128 @@
         </div>
 
         <!--3.2 Edit Datepicker -->
-        <label for="date" class="label-date">Date:</label>
-        <input type="date" id="date" name="date" placeholder="MM/DD/YYYY" value="" class="date" min="1997-01-01"
-            max="2030-12-31">
+        <div class="p-datepicker-div">
+            <label for="date" class="label-date">Date:</label>
+            <input type="date" id="datePicker" name="date" class="date" min="1997-01-01" max="2030-12-31">
+        </div>
 
         <!--3.3 Customer Drop Down-->
-        <label for="customers" class="label">Customer:</label>
-        <select id="customers" class="input" placeholder="Customer">
-            <option value="Select Customer">Select Customer</option>
-            <option value="Arnold's Drive In">Arnolds's Drive In</option>
-            <option value="Bob's Burgers">Bob's Burgers</option>
-            <option value="Cafe Nervosa">Cafe Nervosa</option>
-            <option value="Central Perk">Central Perk</option>
-            <option value="Central Perk">Cheer's</option>
-            <option value="The Chocolate Factory">Chocolate Factory</option>
-            <option value="Frosty Place">Frosty Place</option>
-            <option value="Frozen Banana">Frozen Banana</option>
-            <option value="Gaston's">Gaston's</option>
-            <option value="Indigo Tea Shop">Indigo Tea Shop</option>
-            <option value="Joe's Bar">Joe's Bar</option>
-            <option value="Joe's Pie Diner">Joe's Pie Diner</option>
-            <option value="Krusty Krab">Krusty Krab</option>
-            <option value="La Ratatouille">La Ratatouille</option>
-            <option value="Los Pollos Hermanos">Los Pollos Hermanos</option>
-            <option value="Louie's Italian Restaurant">Louie's Italian Restaurant</option>
-            <option value="Monk's Cafe">Monk's Cafe</option>
-            <option value="Mos Eisley Cantina">Mos Eisley Cantina</option>
-            <option value="Paunch Burger">Paunch Burger</option>
-            <option value="Pie Pole">Pie Pole</option>
-            <option value="Pizza Planet">Pizza Planet</option>
-            <option value="Three Broomsticks">Three Broomsticks</option>
-            <option value="Vesuvio">Vesuvio</option>
-            <option value="Whistle Stop Cafe">Whistle Stop Cafe</option>
-        </select>
-        <!--3.3.1 Customer Textarea to appear directly beneath drop down-->
-        <textarea name="customer-address" class="input textarea">Bob's Burgers
-115 W Ocean Drive
-Line 2,
-Ocean City, NJ. 17740
-        </textarea>
+        <div class="p-customer-selector-div">
+            <select id="customers" class="customer-selector">
+                <option value="Select Customer">Customer:</option>
+                <option value="Arnold's Drive In">Arnolds's Drive In</option>
+                <option value="Bob's Burgers">Bob's Burgers</option>
+                <option value="Cafe Nervosa">Cafe Nervosa</option>
+                <option value="Central Perk">Central Perk</option>
+                <option value="Central Perk">Cheer's</option>
+                <option value="The Chocolate Factory">Chocolate Factory</option>
+                <option value="Frosty Place">Frosty Place</option>
+                <option value="Frozen Banana">Frozen Banana</option>
+                <option value="Gaston's">Gaston's</option>
+                <option value="Indigo Tea Shop">Indigo Tea Shop</option>
+                <option value="Joe's Bar">Joe's Bar</option>
+                <option value="Joe's Pie Diner">Joe's Pie Diner</option>
+                <option value="Krusty Krab">Krusty Krab</option>
+                <option value="La Ratatouille">La Ratatouille</option>
+                <option value="Los Pollos Hermanos">Los Pollos Hermanos</option>
+                <option value="Louie's Italian Restaurant">Louie's Italian Restaurant</option>
+                <option value="Monk's Cafe">Monk's Cafe</option>
+                <option value="Mos Eisley Cantina">Mos Eisley Cantina</option>
+                <option value="Paunch Burger">Paunch Burger</option>
+                <option value="Pie Pole">Pie Pole</option>
+                <option value="Pizza Planet">Pizza Planet</option>
+                <option value="Three Broomsticks">Three Broomsticks</option>
+                <option value="Vesuvio">Vesuvio</option>
+                <option value="Whistle Stop Cafe">Whistle Stop Cafe</option>
+            </select>
+        </div>
+
 
         <!--3.4 Item Textareas-->
 
         <!-- Item 1 -->
-        <label for="description" class="label description">
-            Item 1:
+        <div class="p-item-description-div item-1">
+            <label for="description" class="p-item-label">
+                Item 1:
+            </label>
+            <textarea id="description" name="description" class="p-item-textarea"
+                maxlength="160">Single System Service, hoods, ducts & fan lets test out how much text can fit in this tiny little space</textarea>
+            <label for="amount" class="p-amount-label">$</label>
+            <input type="number" rows="1" cols="10" id="text-area-item-amount" inputtype="decimal" name="amount" class="p-amount-textarea"
+                value="485.00">
+
+        <hr class="edit-hr">
+
+            <label for="description" class="p-item-label item-2">
+                Item 2:
+            </label>
+            <textarea id="description" name="description" class= "p-item-textarea text-2 "
+                maxlength="160">Single System Service, hoods, ducts & fan lets test out how much text can fit in this tiny little space</textarea>
+            <label for="amount" class="p-amount-label item-2">$</label>
+            <input type="number" rows="1" cols="10" id="text-area-item-amount" inputtype="decimal" name="amount"
+                class="p-amount-textarea item-2" value="485.00">
+        
+
+        <hr class="edit-hr edit-hr-3">
+
+        <label for="description" class="p-item-label item-3">
+            Item 3:
         </label>
-        <textarea id="description" name="description" class="input textarea description"
-            maxlength="120">Single System Service, hoods, ducts & fan</textarea>
-        <label for="amount" class="label label-amount">Amount:</label>
-        <input type="number" rows="1" cols="10" id="text-area-item-amount" name="amount" class="amount input"
-            value="485.00">
+        <textarea id="description" name="description" class= "p-item-textarea text-3"
+            maxlength="160">Single System Service, hoods, ducts & fan lets test out how much text can fit in this tiny little space</textarea>
+        <label for="amount" class="p-amount-label item-3">$</label>
+        <input type="number" rows="1" cols="10" id="text-area-item-amount" inputtype="decimal" name="amount"
+            class="p-amount-textarea item-3" value="485.00">
+        
 
-        <!-- Item 2 -->
-        <label for="description" class="label description">Item 2:</label>
-        <textarea id="description" name="description" class="input textarea description"
-            maxlength="120">Enter work description...</textarea>
-        <label for="amount" class="label label-amount">Amount:</label>
-        <input type="number" inputtype="decimal" rows="1" cols="10" id="text-area-item-amount" name="amount" class="amount input"
-            value="00.00">
+        <hr class="edit-hr edit-hr-4">
 
-        <!-- Item 3 -->
-        <label for="description" class="label description">Item 3:</label>
-        <textarea id="description" name="description" class="input textarea description"
-            maxlength="120">Enter work description...</textarea>
-        <label for="amount" class="label label-amount">Amount:</label>
-        <input type="number" rows="1" cols="10" id="text-area-item-amount" name="amount" class="amount input"
-            value="00.00">
+        <label for="description" class="p-item-label item-4">
+            Item 4:
+        </label>
+        <textarea id="description" name="description" class="p-item-textarea text-4"
+            maxlength="160">Single System Service, hoods, ducts & fan lets test out how much text can fit in this tiny little space</textarea>
+        <label for="amount" class="p-amount-label item-4">$</label>
+        <input type="number" rows="1" cols="10" id="text-area-item-amount" inputtype="decimal" name="amount"
+            class="p-amount-textarea item-4" value="485.00">
 
-        <!-- Item 4 -->
-        <label for="description" class="label description">Item 4:</label>
-        <textarea id="description" name="description" class="input textarea description"
-            maxlength="120">Enter work description...</textarea>
-        <label for="amount" class="label label-amount">Amount:</label>
-        <input type="number" rows="1" cols="10" id="text-area-item-amount" name="amount" class="amount input"
-            value="00.00">
+        <hr class="edit-hr edit-hr-5">
 
-        <!-- Item 5 -->
-        <label for="description" class="label description">Item 5:</label>
-        <textarea id="description" name="description" class="input textarea description"
-            maxlength="120">Enter work description...</textarea>
-        <label for="amount" class="label label-amount">Amount:</label>
-        <input type="number" rows="1" cols="10" id="text-area-item-amount" name="amount" class="amount input"
-            value="00.00">
+        <label for="description" class="p-item-label item-5">
+            Item 5:
+        </label>
+        <textarea id="description" name="description" class="p-item-textarea text-5"
+            maxlength="160">Single System Service, hoods, ducts & fan lets test out how much text can fit in this tiny little space</textarea>
+        <label for="amount" class="p-amount-label item-5">$</label>
+        <input type="number" rows="1" cols="10" id="text-area-item-amount" inputtype="decimal" name="amount"
+            class="p-amount-textarea item-5" value="485.00">
 
+        <hr class="edit-hr edit-hr-6">
 
-        <div class="edit-footer">
-
-            <button class="large-left" onclick="javascript:history.back()">Cancel</button>
-
-            <button class="large-right">
-                <a href="#invoice-edit">Save</a>
-            </button>
-
+        <label for="description" class="p-item-label item-6">
+            Item 6:
+        </label>
+        <textarea id="description" name="description" class="p-item-textarea text-6"
+            maxlength="160">Single System Service, hoods, ducts & fan lets test out how much text can fit in this tiny little space</textarea>
+        <label for="amount" class="p-amount-label item-6">$</label>
+        <input type="number" rows="1" cols="10" id="text-area-item-amount" inputtype="decimal" name="amount"
+            class="p-amount-textarea item-6" value="485.00">
         </div>
+
+        <hr class="edit-hr edit-hr-7">
+
+
+         <div class="preview-footer">
+
+             <button class="large-left">
+                 <a href="previewInvoice.html">Cancel</a>
+             </button>
+        
+             <button class="large-right">
+                 <a href="previewInvoice.html">Save</a>
+             </button>
+        </div>
+       
 
 
 
@@ -384,3 +412,7 @@ Ocean City, NJ. 17740
 
 
 </body>
+
+<script>
+    document.getElementById('datePicker').valueAsDate = new Date();
+</script>
