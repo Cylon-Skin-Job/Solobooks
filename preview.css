@@ -456,7 +456,7 @@ address {
     color: purple;
 }
 
-.date:in-range {
+.date {
     background-color: blue;
 }
 
