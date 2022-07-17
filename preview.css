@@ -452,7 +452,11 @@ address {
     position: fixed;
     top: 80px;
     left: 80px;
-    background: transparent;
+}
+
+.date:blank {
+    background-color: transparent;
+    color: transparent;
 }
 
 .textarea {
