@@ -454,7 +454,7 @@ address {
     left: 80px;
 }
 
-.date:blank {
+.date:empty {
     background-color: transparent;
     color: transparent;
 }
