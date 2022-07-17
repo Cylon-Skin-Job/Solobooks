@@ -263,11 +263,7 @@
         <!--3.1 Edit Header-->
         <div class="edit-header">
 
-            <button class="top-left-mobile">
-                <a href="previewInvoice.html"><span class="material-symbols-outlined">arrow_back</span></a>
-            </button>
-
-            <h2 class="preview-h2">Invoice No. 5224</h2>
+            <h2>Invoice No. 5224</h2>
 
             <button class="top-right-desktop">
                 <a href="invoices.html"><span class="material-symbols-outlined">close</span></a>
@@ -276,13 +272,13 @@
         </div>
 
         <!--3.2 Edit Datepicker -->
-        <div class="p-datepicker-div">
-            <label for="date" class="label-date">Date:</label>
-            <input type="date" id="datePicker" name="date" class="date" min="1997-01-01" max="2030-12-31">
+        <div class="edit-datepicker-div">
+            <label for="date" class="edit-label-date">Date:</label>
+            <input type="date" id="datePicker" name="date" class="edit-date-picker" min="1997-01-01" max="2030-12-31">
         </div>
 
         <!--3.3 Customer Drop Down-->
-        <div class="p-customer-selector-div">
+        <div class="edit-customer-selector-div">
             <select id="customers" class="customer-selector">
                 <option value="Select Customer">Customer:</option>
                 <option value="Arnold's Drive In">Arnolds's Drive In</option>
@@ -323,81 +319,78 @@
             <textarea id="description" name="description" class="p-item-textarea"
                 maxlength="160">Single System Service, hoods, ducts & fan lets test out how much text can fit in this tiny little space</textarea>
             <label for="amount" class="p-amount-label">$</label>
-            <input type="number" rows="1" cols="10" id="text-area-item-amount" inputtype="decimal" name="amount" class="p-amount-textarea"
-                value="485.00">
+            <input type="number" rows="1" cols="10" id="text-area-item-amount" inputtype="decimal" name="amount"
+                class="p-amount-textarea" value="485.00">
 
-        <hr class="edit-hr">
+        </div>
 
+        <div class="p-item-description-div">
             <label for="description" class="p-item-label item-2">
                 Item 2:
             </label>
-            <textarea id="description" name="description" class= "p-item-textarea text-2 "
+            <textarea id="description" name="description" class="p-item-textarea text-2 "
                 maxlength="160">Single System Service, hoods, ducts & fan lets test out how much text can fit in this tiny little space</textarea>
             <label for="amount" class="p-amount-label item-2">$</label>
             <input type="number" rows="1" cols="10" id="text-area-item-amount" inputtype="decimal" name="amount"
                 class="p-amount-textarea item-2" value="485.00">
-        
-
-        <hr class="edit-hr edit-hr-3">
-
-        <label for="description" class="p-item-label item-3">
-            Item 3:
-        </label>
-        <textarea id="description" name="description" class= "p-item-textarea text-3"
-            maxlength="160">Single System Service, hoods, ducts & fan lets test out how much text can fit in this tiny little space</textarea>
-        <label for="amount" class="p-amount-label item-3">$</label>
-        <input type="number" rows="1" cols="10" id="text-area-item-amount" inputtype="decimal" name="amount"
-            class="p-amount-textarea item-3" value="485.00">
-        
-
-        <hr class="edit-hr edit-hr-4">
-
-        <label for="description" class="p-item-label item-4">
-            Item 4:
-        </label>
-        <textarea id="description" name="description" class="p-item-textarea text-4"
-            maxlength="160">Single System Service, hoods, ducts & fan lets test out how much text can fit in this tiny little space</textarea>
-        <label for="amount" class="p-amount-label item-4">$</label>
-        <input type="number" rows="1" cols="10" id="text-area-item-amount" inputtype="decimal" name="amount"
-            class="p-amount-textarea item-4" value="485.00">
-
-        <hr class="edit-hr edit-hr-5">
-
-        <label for="description" class="p-item-label item-5">
-            Item 5:
-        </label>
-        <textarea id="description" name="description" class="p-item-textarea text-5"
-            maxlength="160">Single System Service, hoods, ducts & fan lets test out how much text can fit in this tiny little space</textarea>
-        <label for="amount" class="p-amount-label item-5">$</label>
-        <input type="number" rows="1" cols="10" id="text-area-item-amount" inputtype="decimal" name="amount"
-            class="p-amount-textarea item-5" value="485.00">
-
-        <hr class="edit-hr edit-hr-6">
-
-        <label for="description" class="p-item-label item-6">
-            Item 6:
-        </label>
-        <textarea id="description" name="description" class="p-item-textarea text-6"
-            maxlength="160">Single System Service, hoods, ducts & fan lets test out how much text can fit in this tiny little space</textarea>
-        <label for="amount" class="p-amount-label item-6">$</label>
-        <input type="number" rows="1" cols="10" id="text-area-item-amount" inputtype="decimal" name="amount"
-            class="p-amount-textarea item-6" value="485.00">
         </div>
 
-        <hr class="edit-hr edit-hr-7">
-
-
-         <div class="preview-footer">
-
-             <button class="large-left">
-                 <a href="previewInvoice.html">Cancel</a>
-             </button>
-        
-             <button class="large-right">
-                 <a href="previewInvoice.html">Save</a>
-             </button>
+        <div class="p-item-description-div">
+            <label for="description" class="p-item-label item-3">
+                Item 3:
+            </label>
+            <textarea id="description" name="description" class="p-item-textarea text-3"
+                maxlength="160">Single System Service, hoods, ducts & fan lets test out how much text can fit in this tiny little space</textarea>
+            <label for="amount" class="p-amount-label item-3">$</label>
+            <input type="number" rows="1" cols="10" id="text-area-item-amount" inputtype="decimal" name="amount"
+                class="p-amount-textarea item-3" value="485.00">
         </div>
-       
+
+        <div class="p-item-description-div">
+            <label for="description" class="p-item-label item-4">
+                Item 4:
+            </label>
+            <textarea id="description" name="description" class="p-item-textarea text-4"
+                maxlength="160">Single System Service, hoods, ducts & fan lets test out how much text can fit in this tiny little space</textarea>
+            <label for="amount" class="p-amount-label item-4">$</label>
+            <input type="number" rows="1" cols="10" id="text-area-item-amount" inputtype="decimal" name="amount"
+                class="p-amount-textarea item-4" value="485.00">
+        </div>
+        <div class="p-item-description-div">
+            <label for="description" class="p-item-label item-5">
+                Item 5:
+            </label>
+            <textarea id="description" name="description" class="p-item-textarea text-5"
+                maxlength="160">Single System Service, hoods, ducts & fan lets test out how much text can fit in this tiny little space</textarea>
+            <label for="amount" class="p-amount-label item-5">$</label>
+            <input type="number" rows="1" cols="10" id="text-area-item-amount" inputtype="decimal" name="amount"
+                class="p-amount-textarea item-5" value="485.00">
+        </div>
+
+        <div class="p-item-description-div item-last">
+            <label for="description" class="p-item-label item-6">
+                Item 6:
+            </label>
+            <textarea id="description" name="description" class="p-item-textarea text-6"
+                maxlength="160">Single System Service, hoods, ducts & fan lets test out how much text can fit in this tiny little space</textarea>
+            <label for="amount" class="p-amount-label item-6">$</label>
+            <input type="number" rows="1" cols="10" id="text-area-item-amount" inputtype="decimal" name="amount"
+                class="p-amount-textarea item-6" value="485.00">
+        </div>
+
+
+
+        <div class="preview-footer">
+
+            <button class="large-left">
+                <a href="previewInvoice.html">Cancel</a>
+            </button>
+
+            <button class="large-right">
+                <a href="previewInvoice.html">Save</a>
+            </button>
+        </div>
+
 
 
 

@@ -45,6 +45,7 @@ label {
 
 /* Mobile Headers --Start-- */
 
+
 /* MH --previewInvoice.html-- */
 
 .preview-header,
@@ -68,7 +69,13 @@ label {
     z-index: 3;
 }
 
-.preview-h2 {
+.edit-header {
+    border-bottom: 1px solid darkgrey;
+}
+
+.preview-header h2,
+.page-view-header h2,
+.edit-header h2 {
     display: inline;
     width: 70%;
     /* adjacent buttons (left/right) are styled at 15% */
@@ -78,6 +85,10 @@ label {
     font-weight: bold;
     text-align: center;
     z-index: 2;
+}
+
+.edit-header h2 {
+    width: 100%;
 }
 
 /* Mobile Headers --End-- */
@@ -409,220 +420,115 @@ address {
 
 /* M Edit View (a div within previewInvoice.html */
 
-/* M Payment View (a div within previewInvoice.html */
-
-
-
-
-
-
-
-
-
-
 .edit-container {
-    flex-flow: row wrap;
-    justify-content: flex-start;
-    align-items: flex-start;
-    padding: 60px 0px;
-    overflow: scroll;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    margin: 0px;
+    padding: 50px 0px;
+    width: 100%;
+    height: 100%;
+    display: none;
     background-color: #e9e7ee;
-    margin-top: 20px;
+    z-index: 1;
+    overflow: auto;
 }
 
-.p-datepicker-div,
-.p-customer-selector-div,
-.p-item-description-div {
-    position: fixed;
-    top: 60px;
+.edit-container:target {
+    display: block;
+    z-index: 2;
+}
+
+.edit-datepicker-div,
+.edit-customer-selector-div,
+.edit-item-description-div {
     width: 100%;
     height: 40px;
     background-color: white;
     border-top: solid darkgrey 1px;
     border-bottom: solid darkgrey 1px;
-    padding: 5px 20px;
 }
 
-.p-customer-selector-div {
-    top: 100px;
+.edit-label-date {
+    display: inline-block;
+    margin-left: 3%;
 }
+
+.edit-date-picker {
+    margin-left: 1%;
+    margin-top: 5px;
+} 
 
 .customer-selector {
-    width: 98%;
+    width: 94%;
+    margin-left: 2%;
+    margin-top: 5px;
 }
 
 .p-item-description-div {
-    height: 900px;
-    top: 180px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    border-top: darkgrey 1px solid;
+    background: white;
+}
+
+.item-1 {
+    margin-top: 40px;
+}
+
+.item-last {
+    padding-bottom: 70px;
 }
 
 .p-item-label {
-    position: fixed;
-    top: 190px;
-    left: 3%;
+    display: inline-block;
+    height: 30px;
+    width: 47%;
+    margin-left: 3%;
+    padding: 10px 0px;
+    order: 1;
+}
+
+.p-amount-label {
+    display: inline-block;
     font-weight: bold;
-    font-size: 1rem;
+    order: 2;
+    width: calc(46% - 95px);
+    padding: 10px 0px;
+    text-align: right;
+    margin: 3px 1% 0px 0px;
+}
+
+.p-amount-textarea {
+    display: inline-block;
+    text-align: center;
+    order: 3;
+    height: 30px;
+    padding: 10px 0px;
+    width: 95px;
+    margin: 10px 3% 0px 0px;
+    border: darkgrey solid 1px;
+    border-radius: 5px;
 }
 
 .p-item-textarea {
-    position: fixed;
-    top: 225px;
-    left: 1%;
-    height: 45px;
-    padding: 3px 5px;
-    width: 98%;
+    display: inline-block;
+    order: 4;
+    width: 94%;
+    margin: 5px 3%;
+    padding: 5px 8px;
+    height: 48px;
     overflow: hidden;
     border: darkgrey solid 1px;
     border-radius: 5px;
 }
 
 .p-item-textarea:focus {
-    height: 90px;
+    height: 95px;
     z-index: 200;
-}
-
-.p-amount-label{
-    position: fixed;
-    top: 190px;
-    right: 105px;
-    font-weight: bold;
-}
-
-.p-amount-textarea {
-    position: fixed;
-    top: 190px;
-    right: 5px;
-    text-align: center;
-    height: 30px;
-    padding: 5px 0px;
-    width: 95px;
-    border: darkgrey solid 1px;
-    border-radius: 5px;
-}
-
-.edit-hr {
-    position: fixed;
-    top: 270px;
-    left: 1%;
-    width: 98%;
-    height: 2px;
-    color: black;
-    background-color: black;
-    
-
-}
-.item-2 {
-    top: 290px;
-}
-
-.text-2 {
-    top: 325px;
-}
-
-.edit-hr-3 {
-    top: 370px;
-    
-}
-
-.item-3 {
-    top: 390px;
-}
-
-.text-3 {
-    top: 425px;
-}
-
-.edit-hr-4 {
-    top: 470px;
-}
-
-.item-4 {
-    top: 490px;
-}
-
-.text-4 {
-    top: 525px;
-}
-
-.edit-hr-5 {
-    top: 570px;
-}
-
-.item-5 {
-    top: 590px;
-}
-
-.text-5 {
-    top: 625px;
-}
-
-.edit-hr-6 {
-    top: 670px;
-}
-
-.item-6 {
-    top: 690px;
-}
-
-.text-6 {
-    top: 725px;
-}
-
-.edit-hr-7 {
-    top: 770px;
-}
-
-
-@media screen and (max-height:800px) {
-    
-    .edit-hr-6,
-    .edit-hr-7,
-    .item-5,
-    .item-6,
-    .text-5,
-    .text-6 {
-        display: none;
-    }
-}
-
-@media screen and (max-height:880px) {
-
-    .item-6,
-    .text-6,
-    .edit-hr-7 {
-        display: none;
-    }
-}
-
-
-
-
-
-.textarea {
-    height: 100px;
-    overflow: hidden;
-    padding: 10px;
-}
-
-.label-amount {
-    width: 40%;
-    text-align: right;
-    margin-right: 0px;
-
-}
-
-.amount {
-    width: 35%;
-    text-align: center;
-    margin-left: 5%;
-}
-
-
-.transaction p {
-    text-align: center;
-    margin: 0px;
-    height: 30px;
-    width: 100%;
 }
 
 
