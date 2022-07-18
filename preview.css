@@ -477,7 +477,7 @@ address {
 
 .edit-date-picker {
     margin-left: 1%;
-    margin-top: 5px;
+    margin-top: 3px;
 }
 
 .customer-selector {
@@ -599,7 +599,7 @@ address {
     height: 40px;
     background-color: white;
     border: solid darkgrey 1px;
-    padding-top: 5px;
+    padding-top: 3px;
     border-radius: 5px;
 }
 
