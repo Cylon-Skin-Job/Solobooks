@@ -67,13 +67,13 @@
 
         <div class="preview-footer">
 
-            <button class="large-left" onclick="javascript:history.back()">
+            <button class="close" onclick="javascript:history.back()">
                 Close
             </button>
             <button id="myBtn" class="mini-icon">
                 <span class="material-symbols-outlined">delete</span>
             </button>
-            <button class="top-right-mobile" onclick="window.print()">
+            <button class="mini-icon" onclick="window.print()">
                 <span class="material-symbols-outlined">print</span>
             </button>
             <button class="mini-icon">
@@ -233,13 +233,13 @@
 
             <div class="preview-footer">
 
-                <button class="large-left" onclick="javascript:history.back()">
+                <button class="close" onclick="javascript:history.back()">
                     Close
                 </button>
                 <button id="myBtn" class="mini-icon">
                     <span class="material-symbols-outlined">delete</span>
                 </button>
-                <button class="top-right-mobile" onclick="window.print()">
+                <button class="mini-icon" onclick="window.print()">
                     <span class="material-symbols-outlined">print</span>
                 </button>
                 <button class="mini-icon">
@@ -382,11 +382,11 @@
 
         <div class="preview-footer edit-footer">
 
-            <button class="large-left">
+            <button class="cancel">
                 <a href="previewInvoice.html">Cancel</a>
             </button>
 
-            <button class="large-right">
+            <button class="save">
                 <a href="previewInvoice.html">Save</a>
             </button>
         </div>
@@ -416,7 +416,7 @@
                     onclick="window.location='#paid'">Paid</label>
         </form>
 
-        <div class="preview-footer edit-footer">
+        <div class="preview-footer">
 
             <button class="large-left">
                 <a href="previewInvoice.html">Cancel</a>
@@ -468,23 +468,23 @@
 
         <div class="payment-reference-div">
             <label for="amount" class="payment-label">Reference No.</label>
-            <input type="number" rows="1" cols="10" id="text-area-item-amount" name="amount"
-                class="payment-reference-text-area" value="---">
+            <input type="text" rows="1" cols="10" id="text-area-item-amount" name="amount"
+                class="payment-reference-text-area" value="">
         </div>
 
         <div class="payment-notes-div">
             <label for="amount" class="payment-label">Notes: </label>
-            <input type="number" rows="1" cols="10" id="text-area-item-amount" inputtype="decimal" name="amount"
-                class="payment-notes-text-area" value="---">
+            <input id="description" name="description" maxlength="160"
+                class="payment-notes-text-area" value="">
         </div>
 
-        <div class="preview-footer edit-footer">
+        <div class="preview-footer">
 
-            <button class="large-left">
+            <button class=".cancel">
                 <a href="previewInvoice.html">Cancel</a>
             </button>
 
-            <button class="large-right">
+            <button class=".save">
                 <a href="previewInvoice.html">Save</a>
             </button>
         </div>
