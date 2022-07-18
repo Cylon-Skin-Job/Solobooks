@@ -35,12 +35,10 @@ label {
     padding: 0px;
     margin: 0px;
     font-family: inherit;
-    }
+}
 
 
 /* Mobile Navigation --Start-- */
-
-/* Mobile Navigation --End-- */
 
 
 /* Mobile Headers --Start-- */
@@ -48,10 +46,7 @@ label {
 
 /* MH --previewInvoice.html-- */
 
-.preview-header,
-.page-view-header,
-.edit-header,
-.payment-header {
+.preview-header {
     display: flex;
     flex-flow: row wrap;
     justify-content: flex-start;
@@ -74,10 +69,7 @@ label {
     border-bottom: 1px solid darkgrey;
 }
 
-.preview-header h2,
-.page-view-header h2,
-.edit-header h2,
-.payment-header h2 {
+.preview-header h2 {
     display: inline;
     width: 70%;
     /* adjacent buttons (left/right) are styled at 15% */
@@ -106,10 +98,8 @@ label {
     padding: 0px;
     text-align: center;
     font-weight: bold;
-    color:#2a2438;
+    color: #2a2438;
 }
-
-/* Mobile Headers --End-- */
 
 
 /* Mobile Footers -- Start --  */
@@ -139,7 +129,6 @@ label {
 .edit-footer {
     border-top: 1px solid darkgrey;
 }
-
 
 /* Mobile Buttons -- Start -- */
 
@@ -237,12 +226,12 @@ label {
 }
 
 .edit-container,
-.page-view-container {
+.preview-container {
     display: none;
 }
 
 .edit-container:target,
-.page-view-container:target {
+.preview-container:target {
     display: flex;
     z-index: 2;
 }
@@ -267,17 +256,17 @@ label {
     width: 65%;
 }
 
-/* MC #page-view */
+/* MC #page-view (a div within previewInvoice.html */
 
 /* mimics a sheet of paper 99% width with height as a function of
 width to create 8.5 x 11 ratio */
 .x8x11-container {
     position: relative;
-    width: 99vw;
-    height: 130vw;
+    width: 98vw;
+    height: 129vw;
     background: white;
     color: black;
-    margin: auto;
+    margin: 0px;
 }
 
 /* font-size relative to page size / scales from mobile to 
@@ -448,7 +437,7 @@ address {
     bottom: 5%;
 }
 
-/* M Edit View (a div within previewInvoice.html) */
+/* MC #edit (a div within previewInvoice.html) */
 
 .edit-container {
     position: fixed;
@@ -477,6 +466,8 @@ address {
     background-color: white;
     border: solid darkgrey 1px;
     margin: 5px auto 0px;
+    padding-top: 5px;
+    border-radius: 5px;
 }
 
 .edit-label-date {
@@ -487,8 +478,7 @@ address {
 .edit-date-picker {
     margin-left: 1%;
     margin-top: 5px;
-    padding-top: 5px;
-} 
+}
 
 .customer-selector {
     width: 94%;
@@ -505,6 +495,7 @@ address {
     background: white;
     width: 96%;
     margin: 5px auto 0px;
+    border-radius: 5px;
 }
 
 .item-1 {
@@ -563,7 +554,7 @@ address {
     z-index: 200;
 }
 
-/* M Payment (a div within previewInvoice.html) */
+/* MC #payment (a div within previewInvoice.html) */
 
 .payment-container {
     display: none;
@@ -599,15 +590,17 @@ address {
     background-color: #e9e7ee;
 }
 
+.payment-date-picker-div,
 .payment-reference-div,
 .payment-method-div,
 .payment-notes-div {
     width: 96%;
-    margin: auto;
+    margin: 5px auto 0px;
     height: 40px;
     background-color: white;
     border: solid darkgrey 1px;
     padding-top: 5px;
+    border-radius: 5px;
 }
 
 .payment-label {
@@ -639,23 +632,78 @@ address {
 
 @media screen and (min-width:768px) {
 
+    /* Tablet Headers --Start-- */
+
     .preview-header,
     .page-view-header,
     .edit-header {
         height: 60px;
+        border-bottom: none;
+    }
+
+    /* Tablet Content --Start-- */
+
+    /* TC #edit (a div within previewInvoice.html) */
+
+    .edit-container {
+        padding: 0px;
+        flex-flow: column wrap;
+        justify-content: center;
+        align-items: flex-start;
+    }
+
+    .edit-footer {
+        border-top: none;
+    }
+
+    .edit-container:target {
+        display: flex;
         
+    }
+
+    .radio-payment {
+        width: 375px;
+        margin: 100px auto;
+    }
+
+    .payment-date-picker-div,
+    .payment-method-div,
+    .payment-reference-div,
+    .payment-notes-div,
+    .edit-datepicker-div,
+    .edit-customer-selector-div {
+        width: 375px;
+        height: 40px;
+        background-color: white;
+        border: solid darkgrey 1px;
+        margin: 5px auto 0px;
+    }
+
+    .payment-notes-div {
+        height: 150px;
+    }
+    .method-selector {
+        width: 200px;
+    }
+
+    .p-item-textarea:focus {
+        height: 48px;
+    }
+    
+
+    .page-view-container {
+        padding: 50px 0px;
     }
 
     .page-view-container:target {
         display: block;
-        padding-top: 60px;
         background-color: #e9e7ee;
         z-index: 1;
     }
 
     .preview-footer {
         height: 70px;
-        
+
     }
 }
 
@@ -711,6 +759,29 @@ Modify for tablets and desktop below*/
 
 
 @media screen and (min-width: 1025px) {
+
+
+    .preview-header,
+    .page-view-header,
+    .edit-header,
+    .payment-header {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: flex-end;
+        align-items: flex-start;
+        position: fixed;
+        top: 0px;
+        left: 0px;
+        height: 50px;
+        width: 100%;
+        color: #2a2438;
+        background-color: #e9e7ee;
+        opacity: 1;
+        padding: 10px 0px 5px;
+        margin: 0px;
+        border: none;
+        z-index: 3;
+    }
 
     /* Desktop Pageview */
 

@@ -26,14 +26,14 @@
         <div class="preview-header">
 
             <button class="top-left-mobile">
-                <a href="previewInvoice.html"><span class="material-symbols-outlined">arrow_back</span></a>
+                <a href="invoices.html"><span class="material-symbols-outlined">arrow_back</span></a>
             </button>
             <h2 class="preview-h2">Invoice No. 5224</h2>
             <button class="top-right-mobile">
                 <a href="#page-view"><span class="material-symbols-outlined">pageview</span></a>
             </button>
             <button class="top-right-desktop">
-                <a href="previewInvoice.html"><span class="material-symbols-outlined">close</span></a>
+                <a href="invoices.html"><span class="material-symbols-outlined">close</span></a>
             </button>
 
 
@@ -92,17 +92,17 @@
     <div class="page-view-container" id="page-view">
 
         <!--2.1 Page-view-Header-->
-        <div class="page-view-header">
+        <div class="preview-header page-view-header">
 
             <button class="top-left-mobile">
-                <a href="previewInvoice.html"><span class="material-symbols-outlined">arrow_back</span></a>
+                <a href="invoices.html"><span class="material-symbols-outlined">arrow_back</span></a>
             </button>
             <h2 class="preview-h2">Invoice No. 5224</h2>
             <button class="top-right-mobile">
-                <a href="previewInvoice.html"><span class="material-symbols-outlined">pageview</span></a>
+                <a href="#table-view"><span class="material-symbols-outlined">pageview</span></a>
             </button>
             <button class="top-right-desktop">
-                <a href="previewInvoice.html"><span class="material-symbols-outlined">close</span></a>
+                <a href="invoices.html"><span class="material-symbols-outlined">close</span></a>
             </button>
 
 
@@ -243,7 +243,7 @@
                     <span class="material-symbols-outlined">print</span>
                 </button>
                 <button class="mini-icon">
-                    <a href="payment.html">
+                    <a href="#payment">
                         <span class="material-symbols-outlined">price_check</span></a>
                 </button>
                 <button class="large-right">
@@ -261,7 +261,7 @@
     <div class="edit-container print-none" id="invoice-edit">
 
         <!--3.1 Edit Header-->
-        <div class="edit-header">
+        <div class="preview-header edit-header">
 
             <h2>Invoice No. 5224</h2>
 
@@ -393,11 +393,11 @@
 
     </div> <!-- closing tag for edit-container -->
 
-    <!--4.0 PAYMENT Container-->
+    <!--4.0 Payment Container-->
     <div class="payment-container" id="payment">
 
         <!--4.1 Edit Header-->
-        <div class="payment-header">
+        <div class="preview-header payment-header">
 
             <h2>Invoice No. 5224</h2>
             <p>Payment Record</p>
@@ -412,17 +412,17 @@
 
         <form type="radio" class="radio-payment">
             <label><input type="radio" id="no-payment" name="payment" value="unpaid" checked>Unpaid</label>
-            <label><input type="radio" id="payment" name="payment" value="#paid"
+            <label><input type="radio" id="payment" name="payment" value="paid"
                     onclick="window.location='#paid'">Paid</label>
         </form>
 
         <div class="preview-footer">
 
-            <button class="large-left">
+            <button class="cancel">
                 <a href="previewInvoice.html">Cancel</a>
             </button>
 
-            <button class="large-right">
+            <button class="save">
                 <a href="previewInvoice.html">Save</a>
             </button>
         </div>
@@ -432,7 +432,7 @@
     <div class="payment-container" id="paid">
 
         <!--4.1 Edit Header-->
-        <div class="payment-header">
+        <div class="preview-header payment-header">
 
             <h2>Invoice No. 5224</h2>
             <p>Payment Record</p>
@@ -451,7 +451,7 @@
             <label><input type="radio" id="no-payment" name="payment" value="paid" checked>Paid</label>
         </form>
 
-        <div class="edit-datepicker-div">
+        <div class="payment-date-picker-div">
             <label for="date" class="payment-label">Date:</label>
             <input type="date" id="datePicker2" name="date" class="edit-date-picker" min="1997-01-01" max="2030-12-31">
         </div>
@@ -480,11 +480,11 @@
 
         <div class="preview-footer">
 
-            <button class=".cancel">
+            <button class="cancel">
                 <a href="previewInvoice.html">Cancel</a>
             </button>
 
-            <button class=".save">
+            <button class="save">
                 <a href="previewInvoice.html">Save</a>
             </button>
         </div>
