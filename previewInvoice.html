@@ -80,7 +80,7 @@
                 <a href="#payment">
                     <span class="material-symbols-outlined">price_check</span></a>
             </button>
-            <button class="large-right">
+            <button class="edit">
                 <a href="#invoice-edit">Edit</a>
             </button>
 
@@ -246,7 +246,7 @@
                     <a href="#payment">
                         <span class="material-symbols-outlined">price_check</span></a>
                 </button>
-                <button class="large-right">
+                <button class="edit">
                     <a href="#invoice-edit">Edit</a>
                 </button>
 
@@ -259,237 +259,243 @@
 
     <!--3.0 EDIT Container -->
     <div class="edit-container print-none" id="invoice-edit">
+        <div class="edit-modal">
+            <!--3.1 Edit Header-->
+            <div class="preview-header edit-header">
 
-        <!--3.1 Edit Header-->
-        <div class="preview-header edit-header">
+                <h2>Edit Invoice</h2>
 
-            <h2>Invoice No. 5224</h2>
+                <button class="top-right-desktop">
+                    <a href="previewInvoice.html"><span class="material-symbols-outlined">close</span></a>
+                </button>
 
-            <button class="top-right-desktop">
-                <a href="invoices.html"><span class="material-symbols-outlined">close</span></a>
-            </button>
+            </div>
+
+            <!--3.2 Customer Drop Down-->
+            <div class="edit-customer-selector-div">
+                <select id="customers" class="customer-selector">
+                    <option value="Select Customer">Customer:</option>
+                    <option value="Arnold's Drive In">Arnolds's Drive In</option>
+                    <option value="Bob's Burgers">Bob's Burgers</option>
+                    <option value="Cafe Nervosa">Cafe Nervosa</option>
+                    <option value="Central Perk">Central Perk</option>
+                    <option value="Central Perk">Cheer's</option>
+                    <option value="The Chocolate Factory">Chocolate Factory</option>
+                    <option value="Frosty Place">Frosty Place</option>
+                    <option value="Frozen Banana">Frozen Banana</option>
+                    <option value="Gaston's">Gaston's</option>
+                    <option value="Indigo Tea Shop">Indigo Tea Shop</option>
+                    <option value="Joe's Bar">Joe's Bar</option>
+                    <option value="Joe's Pie Diner">Joe's Pie Diner</option>
+                    <option value="Krusty Krab">Krusty Krab</option>
+                    <option value="La Ratatouille">La Ratatouille</option>
+                    <option value="Los Pollos Hermanos">Los Pollos Hermanos</option>
+                    <option value="Louie's Italian Restaurant">Louie's Italian Restaurant</option>
+                    <option value="Monk's Cafe">Monk's Cafe</option>
+                    <option value="Mos Eisley Cantina">Mos Eisley Cantina</option>
+                    <option value="Paunch Burger">Paunch Burger</option>
+                    <option value="Pie Pole">Pie Pole</option>
+                    <option value="Pizza Planet">Pizza Planet</option>
+                    <option value="Three Broomsticks">Three Broomsticks</option>
+                    <option value="Vesuvio">Vesuvio</option>
+                    <option value="Whistle Stop Cafe">Whistle Stop Cafe</option>
+                </select>
+            </div>
+
+            <!--3.3 Edit Datepicker -->
+            <div class="edit-datepicker-div">
+                <label for="date" class="edit-label-date">Date:</label>
+                <input type="date" id="datePicker" name="date" class="edit-date-picker" min="1997-01-01"
+                    max="2030-12-31">
+            </div>
+
+
+            <!--3.4 Item Textareas-->
+            <span class="description-span">Description</span>
+            <span class="amount-span">Amount</span>
+
+            <!-- Item 1 -->
+            <div class="edit-item-description-div item-1">
+                <label for="description" class="p-item-label">
+                    Item 1:
+                </label>
+                <textarea id="description" name="description" class="p-item-textarea"
+                    maxlength="160">Single System Service, hoods, ducts & fan lets test out how much text can fit in this tiny little space</textarea>
+                <label for="amount" class="p-amount-label">$</label>
+                <input type="number" rows="1" cols="10" id="text-area-item-amount" inputtype="decimal" name="amount"
+                    class="p-amount-textarea" value="485.00">
+
+            </div>
+
+            <div class="edit-item-description-div item-2">
+                <label for="description" class="p-item-label item-2">
+                    Item 2:
+                </label>
+                <textarea id="description" name="description" class="p-item-textarea text-2 "
+                    maxlength="160">Single System Service, hoods, ducts & fan lets test out how much text can fit in this tiny little space</textarea>
+                <label for="amount" class="p-amount-label item-2">$</label>
+                <input type="number" rows="1" cols="10" id="text-area-item-amount" inputtype="decimal" name="amount"
+                    class="p-amount-textarea item-2" value="485.00">
+            </div>
+
+            <div class="edit-item-description-div  item-3">
+                <label for="description" class="p-item-label">
+                    Item 3:
+                </label>
+                <textarea id="description" name="description" class="p-item-textarea text-3"
+                    maxlength="160">Single System Service, hoods, ducts & fan lets test out how much text can fit in this tiny little space</textarea>
+                <label for="amount" class="p-amount-label item-3">$</label>
+                <input type="number" rows="1" cols="10" id="text-area-item-amount" inputtype="decimal" name="amount"
+                    class="p-amount-textarea item-3" value="485.00">
+            </div>
+
+            <div class="edit-item-description-div  item-4">
+                <label for="description" class="p-item-label">
+                    Item 4:
+                </label>
+                <textarea id="description" name="description" class="p-item-textarea text-4"
+                    maxlength="160">Single System Service, hoods, ducts & fan lets test out how much text can fit in this tiny little space</textarea>
+                <label for="amount" class="p-amount-label item-4">$</label>
+                <input type="number" rows="1" cols="10" id="text-area-item-amount" inputtype="decimal" name="amount"
+                    class="p-amount-textarea item-4" value="485.00">
+            </div>
+            <div class="edit-item-description-div  item-5">
+                <label for="description" class="p-item-label">
+                    Item 5:
+                </label>
+                <textarea id="description" name="description" class="p-item-textarea text-5"
+                    maxlength="160">Single System Service, hoods, ducts & fan lets test out how much text can fit in this tiny little space</textarea>
+                <label for="amount" class="p-amount-label item-5">$</label>
+                <input type="number" rows="1" cols="10" id="text-area-item-amount" inputtype="decimal" name="amount"
+                    class="p-amount-textarea item-5" value="485.00">
+            </div>
+
+            <div class="edit-item-description-div item-last  item-6">
+                <label for="description" class="p-item-label">
+                    Item 6:
+                </label>
+                <textarea id="description" name="description" class="p-item-textarea text-6"
+                    maxlength="160">Single System Service, hoods, ducts & fan lets test out how much text can fit in this tiny little space</textarea>
+                <label for="amount" class="p-amount-label item-6">$</label>
+                <input type="number" rows="1" cols="10" id="text-area-item-amount" inputtype="decimal" name="amount"
+                    class="p-amount-textarea item-6" value="485.00">
+            </div>
+
+
+
+            <div class="preview-footer edit-footer">
+
+                <button class="cancel">
+                    <a href="previewInvoice.html">Cancel</a>
+                </button>
+
+                <button class="save">
+                    <a href="previewInvoice.html">Save</a>
+                </button>
+            </div>
 
         </div>
-
-        <!--3.2 Edit Datepicker -->
-        <div class="edit-datepicker-div">
-            <label for="date" class="edit-label-date">Date:</label>
-            <input type="date" id="datePicker" name="date" class="edit-date-picker" min="1997-01-01" max="2030-12-31">
-        </div>
-
-        <!--3.3 Customer Drop Down-->
-        <div class="edit-customer-selector-div">
-            <select id="customers" class="customer-selector">
-                <option value="Select Customer">Customer:</option>
-                <option value="Arnold's Drive In">Arnolds's Drive In</option>
-                <option value="Bob's Burgers">Bob's Burgers</option>
-                <option value="Cafe Nervosa">Cafe Nervosa</option>
-                <option value="Central Perk">Central Perk</option>
-                <option value="Central Perk">Cheer's</option>
-                <option value="The Chocolate Factory">Chocolate Factory</option>
-                <option value="Frosty Place">Frosty Place</option>
-                <option value="Frozen Banana">Frozen Banana</option>
-                <option value="Gaston's">Gaston's</option>
-                <option value="Indigo Tea Shop">Indigo Tea Shop</option>
-                <option value="Joe's Bar">Joe's Bar</option>
-                <option value="Joe's Pie Diner">Joe's Pie Diner</option>
-                <option value="Krusty Krab">Krusty Krab</option>
-                <option value="La Ratatouille">La Ratatouille</option>
-                <option value="Los Pollos Hermanos">Los Pollos Hermanos</option>
-                <option value="Louie's Italian Restaurant">Louie's Italian Restaurant</option>
-                <option value="Monk's Cafe">Monk's Cafe</option>
-                <option value="Mos Eisley Cantina">Mos Eisley Cantina</option>
-                <option value="Paunch Burger">Paunch Burger</option>
-                <option value="Pie Pole">Pie Pole</option>
-                <option value="Pizza Planet">Pizza Planet</option>
-                <option value="Three Broomsticks">Three Broomsticks</option>
-                <option value="Vesuvio">Vesuvio</option>
-                <option value="Whistle Stop Cafe">Whistle Stop Cafe</option>
-            </select>
-        </div>
-
-
-        <!--3.4 Item Textareas-->
-
-        <!-- Item 1 -->
-        <div class="edit-item-description-div item-1">
-            <label for="description" class="p-item-label">
-                Item 1:
-            </label>
-            <textarea id="description" name="description" class="p-item-textarea"
-                maxlength="160">Single System Service, hoods, ducts & fan lets test out how much text can fit in this tiny little space</textarea>
-            <label for="amount" class="p-amount-label">$</label>
-            <input type="number" rows="1" cols="10" id="text-area-item-amount" inputtype="decimal" name="amount"
-                class="p-amount-textarea" value="485.00">
-
-        </div>
-
-        <div class="edit-item-description-div">
-            <label for="description" class="p-item-label item-2">
-                Item 2:
-            </label>
-            <textarea id="description" name="description" class="p-item-textarea text-2 "
-                maxlength="160">Single System Service, hoods, ducts & fan lets test out how much text can fit in this tiny little space</textarea>
-            <label for="amount" class="p-amount-label item-2">$</label>
-            <input type="number" rows="1" cols="10" id="text-area-item-amount" inputtype="decimal" name="amount"
-                class="p-amount-textarea item-2" value="485.00">
-        </div>
-
-        <div class="edit-item-description-div">
-            <label for="description" class="p-item-label item-3">
-                Item 3:
-            </label>
-            <textarea id="description" name="description" class="p-item-textarea text-3"
-                maxlength="160">Single System Service, hoods, ducts & fan lets test out how much text can fit in this tiny little space</textarea>
-            <label for="amount" class="p-amount-label item-3">$</label>
-            <input type="number" rows="1" cols="10" id="text-area-item-amount" inputtype="decimal" name="amount"
-                class="p-amount-textarea item-3" value="485.00">
-        </div>
-
-        <div class="edit-item-description-div">
-            <label for="description" class="p-item-label item-4">
-                Item 4:
-            </label>
-            <textarea id="description" name="description" class="p-item-textarea text-4"
-                maxlength="160">Single System Service, hoods, ducts & fan lets test out how much text can fit in this tiny little space</textarea>
-            <label for="amount" class="p-amount-label item-4">$</label>
-            <input type="number" rows="1" cols="10" id="text-area-item-amount" inputtype="decimal" name="amount"
-                class="p-amount-textarea item-4" value="485.00">
-        </div>
-        <div class="edit-item-description-div">
-            <label for="description" class="p-item-label item-5">
-                Item 5:
-            </label>
-            <textarea id="description" name="description" class="p-item-textarea text-5"
-                maxlength="160">Single System Service, hoods, ducts & fan lets test out how much text can fit in this tiny little space</textarea>
-            <label for="amount" class="p-amount-label item-5">$</label>
-            <input type="number" rows="1" cols="10" id="text-area-item-amount" inputtype="decimal" name="amount"
-                class="p-amount-textarea item-5" value="485.00">
-        </div>
-
-        <div class="edit-item-description-div item-last">
-            <label for="description" class="p-item-label item-6">
-                Item 6:
-            </label>
-            <textarea id="description" name="description" class="p-item-textarea text-6"
-                maxlength="160">Single System Service, hoods, ducts & fan lets test out how much text can fit in this tiny little space</textarea>
-            <label for="amount" class="p-amount-label item-6">$</label>
-            <input type="number" rows="1" cols="10" id="text-area-item-amount" inputtype="decimal" name="amount"
-                class="p-amount-textarea item-6" value="485.00">
-        </div>
-
-
-
-        <div class="preview-footer edit-footer">
-
-            <button class="cancel">
-                <a href="previewInvoice.html">Cancel</a>
-            </button>
-
-            <button class="save">
-                <a href="previewInvoice.html">Save</a>
-            </button>
-        </div>
-
+        <a class="close-modal" href="previewInvoice.html"></a>
     </div> <!-- closing tag for edit-container -->
 
     <!--4.0 Payment Container-->
     <div class="payment-container" id="payment">
+        <div class="payment-modal">
+            <!--4.1 Edit Header-->
+            <div class="preview-header payment-header">
 
-        <!--4.1 Edit Header-->
-        <div class="preview-header payment-header">
+                <h2>Invoice No. 5224</h2>
+                <p>Payment Record</p>
+                <p>Bob's Burger's</p>
+                <p>$ 485.00</p>
 
-            <h2>Invoice No. 5224</h2>
-            <p>Payment Record</p>
-            <p>Bob's Burger's</p>
-            <p>$ 485.00</p>
+                <button class="top-right-desktop">
+                    <a href="invoices.html"><span class="material-symbols-outlined">close</span></a>
+                </button>
 
-            <button class="top-right-desktop">
-                <a href="invoices.html"><span class="material-symbols-outlined">close</span></a>
-            </button>
+            </div>
 
+            <form type="radio" class="radio-payment">
+                <label><input type="radio" id="no-payment" name="payment" value="unpaid" checked>Unpaid</label>
+                <label><input type="radio" id="payment" name="payment" value="paid"
+                        onclick="window.location='#paid'">Paid</label>
+            </form>
+
+            <div class="preview-footer payment-footer">
+
+                <button class="cancel">
+                    <a href="previewInvoice.html">Cancel</a>
+                </button>
+
+                <button class="save">
+                    <a href="previewInvoice.html">Save</a>
+                </button>
+            </div>
         </div>
-
-        <form type="radio" class="radio-payment">
-            <label><input type="radio" id="no-payment" name="payment" value="unpaid" checked>Unpaid</label>
-            <label><input type="radio" id="payment" name="payment" value="paid"
-                    onclick="window.location='#paid'">Paid</label>
-        </form>
-
-        <div class="preview-footer">
-
-            <button class="cancel">
-                <a href="previewInvoice.html">Cancel</a>
-            </button>
-
-            <button class="save">
-                <a href="previewInvoice.html">Save</a>
-            </button>
-        </div>
-
+        <a class="close-modal" href="previewInvoice.html"></a>
     </div>
 
     <div class="payment-container" id="paid">
+        <div class="payment-modal">
+            <!--4.1 Edit Header-->
+            <div class="preview-header payment-header">
 
-        <!--4.1 Edit Header-->
-        <div class="preview-header payment-header">
+                <h2>Invoice No. 5224</h2>
+                <p>Payment Record</p>
+                <p>Bob's Burger's</p>
+                <p>$ 485.00</p>
 
-            <h2>Invoice No. 5224</h2>
-            <p>Payment Record</p>
-            <p>Bob's Burger's</p>
-            <p>$ 485.00</p>
+                <button class="top-right-desktop">
+                    <a href="invoices.html"><span class="material-symbols-outlined">close</span></a>
+                </button>
 
-            <button class="top-right-desktop">
-                <a href="invoices.html"><span class="material-symbols-outlined">close</span></a>
-            </button>
+            </div>
 
+            <form type="radio" class="radio-payment">
+                <label><input type="radio" id="payment" name="payment"
+                        onclick="window.location='#payment'">Unpaid</label>
+                <label><input type="radio" id="no-payment" name="payment" value="paid" checked>Paid</label>
+            </form>
+
+            <div class="payment-date-picker-div">
+                <label for="date" class="payment-label">Date:</label>
+                <input type="date" id="datePicker2" name="date" class="edit-date-picker" min="1997-01-01"
+                    max="2030-12-31">
+            </div>
+
+            <div class="payment-method-div">
+                <label for="method" class="payment-label">Payment Method:</label>
+                <select id="method" class="method-selector">
+                    <option value="Payment Method"></option>
+                    <option value="Cash">Cash</option>
+                    <option value="Check">Check</option>
+                    <option value="Credit Card">Credit Card</option>
+                </select>
+            </div>
+
+            <div class="payment-reference-div">
+                <label for="amount" class="payment-label">Reference No.</label>
+                <input type="text" rows="1" cols="10" id="text-area-item-amount" name="amount"
+                    class="payment-reference-text-area" value="">
+            </div>
+
+            <div class="payment-notes-div">
+                <label for="amount" class="payment-label">Notes: </label>
+                <input id="description" name="description" maxlength="160" class="payment-notes-text-area" value="">
+            </div>
+
+            <div class="preview-footer payment-footer">
+
+                <button class="cancel">
+                    <a href="previewInvoice.html">Cancel</a>
+                </button>
+
+                <button class="save">
+                    <a href="previewInvoice.html">Save</a>
+                </button>
+            </div>
         </div>
-
-        <form type="radio" class="radio-payment">
-            <label><input type="radio" id="payment" name="payment" value="#payment"
-                    onclick="window.location='#payment'">Unpaid</label>
-            <label><input type="radio" id="no-payment" name="payment" value="paid" checked>Paid</label>
-        </form>
-
-        <div class="payment-date-picker-div">
-            <label for="date" class="payment-label">Date:</label>
-            <input type="date" id="datePicker2" name="date" class="edit-date-picker" min="1997-01-01" max="2030-12-31">
-        </div>
-
-        <div class="payment-method-div">
-            <label for="method" class="payment-label">Payment Method:</label>
-            <select id="method" class="method-selector">
-                <option value="Payment Method"></option>
-                <option value="Cash">Cash</option>
-                <option value="Check">Check</option>
-                <option value="Credit Card">Credit Card</option>
-            </select>
-        </div>
-
-        <div class="payment-reference-div">
-            <label for="amount" class="payment-label">Reference No.</label>
-            <input type="text" rows="1" cols="10" id="text-area-item-amount" name="amount"
-                class="payment-reference-text-area" value="">
-        </div>
-
-        <div class="payment-notes-div">
-            <label for="amount" class="payment-label">Notes: </label>
-            <input id="description" name="description" maxlength="160"
-                class="payment-notes-text-area" value="">
-        </div>
-
-        <div class="preview-footer">
-
-            <button class="cancel">
-                <a href="previewInvoice.html">Cancel</a>
-            </button>
-
-            <button class="save">
-                <a href="previewInvoice.html">Save</a>
-            </button>
-        </div>
-
-
+        <a class="close-modal" href="previewInvoice.html"></a>
     </div>
 
 
