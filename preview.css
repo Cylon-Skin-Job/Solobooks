@@ -40,16 +40,38 @@ label {
 
 /* Mobile Navigation --Start-- */
 
+/* Mobile Containers --Start-- */
+
+.summary_preview_invoice_container,
+.pageview_preview_invoice_container,
+.edit-container {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    margin: 0px;
+    padding: 0px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    background-color: #e9e7ee;
+    z-index: 1;
+}
+
 
 /* Mobile Headers --Start-- */
 
 
-/* MH --previewInvoice.html-- */
+/* MH --summary_preview_invoice_containerInvoice.html-- */
 
-.preview-header {
+.summary_preview_invoice_container-header,
+.pageview_preview_invoice_container-header {
     display: flex;
-    flex-flow: row wrap;
-    justify-content: flex-start;
+    flex-flow: row nowrap;
+    justify-content: space-between;
     align-items: flex-start;
     position: fixed;
     top: 0px;
@@ -69,16 +91,18 @@ label {
     border-bottom: 1px solid darkgrey;
 }
 
-.preview-header h2 {
-    display: inline;
-    width: 70%;
-    /* adjacent buttons (left/right) are styled at 15% */
+.summary_preview_invoice_container-header-h2,
+.pageview_preview_invoice_container-header-h2 {
+    display: inline-block;
+    width: 80%;
+    /* adjacent button are styled at 15% */
     height: 40px;
     color: #2a2438;
     font-size: 1rem;
     font-weight: bold;
     text-align: center;
     z-index: 2;
+    margin: 0px;
 }
 
 .payment-header {
@@ -104,10 +128,11 @@ label {
 
 /* Mobile Footers -- Start --  */
 
-/* MF -- previewInvoice.html -- */
+/* MF -- summary_preview_invoice_containerInvoice.html -- */
 
 /* fixed footer accross bottom of screen */
-.preview-footer {
+.summary_preview_invoice_container-footer,
+.pageview_preview_invoice_container-footer {
     display: flex;
     flex-flow: row nowrap;
     justify-content: space-between;
@@ -123,7 +148,7 @@ label {
     padding: 10px 10px 10px;
     margin: 0px;
     z-index: 2;
-    border: none;
+    border: blue solid 1px;;
 }
 
 .edit-footer {
@@ -132,32 +157,35 @@ label {
 
 /* Mobile Buttons -- Start -- */
 
-/* MB --previewInvoice.html-- */
+/* MB --summary_preview_invoice_containerInvoice.html-- */
 
-.top-right-desktop {
+.summary_preview_invoice_container-header-button-exit,
+.pageview_preview_invoice_container-header-button-exit {
     display: none;
 }
 
-.top-left-mobile,
-.top-right-mobile {
-    display: inline;
-    width: 15%;
+.summary_preview_invoice_container-header-button-back,
+.summary_preview_invoice_container-header-button-view,
+.pageview_preview_invoice_container-header-button-back,
+.pageview_preview_invoice_container-header-button-view {
+    display: inline-block;
     height: 40px;
     color: #2a2438;
     background-color: transparent;
     border: none;
-    padding: 0px 20px 0px;
+    padding: 0px 15px 0px;
     font-weight: bold;
-    margin: 0px 0px 5px;
-    border: none;
+    margin: 0px;
     z-index: 2;
 }
 
-.top-left-mobile {
+.summary_preview_invoice_container-header-button-back,
+.pageview_preview_invoice_container-header-button-back {
     text-align: left;
 }
 
-.top-right-mobile {
+.summary_preview_invoice_container-header-button-view,
+.summary_preview_invoice_container-header-button-view {
     text-align: right;
 }
 
@@ -188,7 +216,12 @@ label {
     border: none;
 }
 
-.mini-icon {
+.summary_preview_invoice_container-footer-button-delete,
+.summary_preview_invoice_container-footer-button-print,
+.summary_preview_invoice_container-footer-button-payment,
+.summary_preview_invoice_container-footer-button-delete,
+.summary_preview_invoice_container-footer-button-print,
+.summary_preview_invoice_container-footer-button-payment {
     display: inline-block;
     padding: 5px 10px 0px;
     font-weight: bold;
@@ -201,11 +234,11 @@ label {
 
 /* Mobile Content -- Start -- */
 
-/* MC -- previewInvoice.html -- */
+/* MC -- summary_preview_invoice_containerInvoice.html -- */
 
 /* Content Containers. All but one content container hidden until activated */
-.preview-container,
-.page-view-container,
+.summary_preview_invoice_container,
+.pageview_preview_invoice_container,
 .edit-container {
     position: fixed;
     top: 0px;
@@ -224,37 +257,37 @@ label {
 }
 
 .edit-container,
-.preview-container {
+.summary_preview_invoice_container {
     display: none;
 }
 
 .edit-container:target,
-.preview-container:target {
+.summary_preview_invoice_container:target {
     display: flex;
     z-index: 2;
 }
 
-/* Content for previewInvoice.html */
+/* Content for summary_preview_invoice_containerInvoice.html */
 
-.preview-table {
+.summary_preview_invoice_container-table {
     width: 90%;
     max-width: 500px;
 }
 
-.preview-table td {
+.summary_preview_invoice_container-table td {
     background-color: lightgrey;
     padding: 20px 0px 20px 20px;
 }
 
-.preview-table td:nth-child(1) {
+.summary_preview_invoice_container-table td:nth-child(1) {
     width: 35%;
 }
 
-.preview-table td:nth-child(2) {
+.summary_preview_invoice_container-table td:nth-child(2) {
     width: 65%;
 }
 
-/* MC #page-view (a div within previewInvoice.html */
+/* MC #page-view (a div within summary_preview_invoice_containerInvoice.html */
 
 /* mimics a sheet of paper 99% width with height as a function of
 width to create 8.5 x 11 ratio */
@@ -283,7 +316,7 @@ address {
     margin-top: -4%;
 }
 
-/* 4 boxes to contain company/customer info, logo and date/invoice number */
+/* 4 boxes to contain company/customer info, logo and date/_container number */
 .x8x11-top-grid {
     display: inline-block;
     width: 49%;
@@ -338,7 +371,7 @@ address {
 
 }
 
-/* "INVOICE" h2 and invoice number/date */
+/* "INVOICE" h2 and _container number/date */
 
 .x8x11-number-date {
     position: absolute;
@@ -435,7 +468,7 @@ address {
     bottom: 5%;
 }
 
-/* MC #edit (a div within previewInvoice.html) */
+/* MC #edit (a div within summary_preview_invoice_containerInvoice.html) */
 
 .edit-container {
     position: fixed;
@@ -557,7 +590,7 @@ address {
     z-index: 200;
 }
 
-/* MC #payment (a div within previewInvoice.html) */
+/* MC #payment (a div within summary_preview_invoice_containerInvoice.html) */
 
 .payment-container {
     display: none;
@@ -636,7 +669,7 @@ address {
 
     /* Tablet Headers --Start-- */
 
-    .preview-header,
+    .summary_preview_invoice_container-header,
     .page-view-header,
     .edit-header {
         height: 60px;
@@ -645,7 +678,7 @@ address {
 
     /* Tablet Content --Start-- */
 
-    /* TC #edit (a div within previewInvoice.html) */
+    /* TC #edit (a div within summary_preview_invoice_containerInvoice.html) */
 
     .edit-container {
         padding: 80px 0px;
@@ -657,7 +690,7 @@ address {
 
     .edit-container:target {
         display: block;
-        
+
     }
 
     .radio-payment {
@@ -682,6 +715,7 @@ address {
     .payment-notes-div {
         height: 150px;
     }
+
     .method-selector {
         width: 200px;
     }
@@ -689,7 +723,7 @@ address {
     .p-item-textarea:focus {
         height: 50px;
     }
-    
+
 
     .page-view-container {
         padding: 50px 0px;
@@ -701,7 +735,7 @@ address {
         z-index: 1;
     }
 
-    .preview-footer {
+    .summary_preview_invoice_container-footer {
         height: 70px;
 
     }
@@ -724,11 +758,11 @@ address {
 
 @media screen and (min-width:1024px) {
 
-/* Desktop Header */
+    /* Desktop Header */
 
-/* DH previewInvoice.html */
+    /* DH summary_preview_invoice_containerInvoice.html */
 
-    .preview-header,
+    .summary_preview_invoice_container-header,
     .page-view-header,
     .payment-header {
         display: flex;
@@ -767,7 +801,7 @@ address {
         margin: 0px 0px 20px;
     }
 
-    .preview-header h2 {
+    .summary_preview_invoice_container-header h2 {
         text-align: left;
     }
 
@@ -779,9 +813,9 @@ address {
 
     /* Desktop Footer --Start-- */
 
-    /* DF previewInvoice.html */
+    /* DF summary_preview_invoice_containerInvoice.html */
 
-    .preview-footer {
+    .summary_preview_invoice_container-footer {
         display: flex;
         position: fixed;
         left: auto;
@@ -804,13 +838,13 @@ address {
 
     /* Desktop Buttons --Start-- */
 
-    /* DB previewInvoice.html */
+    /* DB summary_preview_invoice_containerInvoice.html */
 
     .top-right-mobile,
     .top-left-mobile {
         display: none;
     }
-    
+
     .top-right-desktop {
         display: block;
         position: fixed;
@@ -871,13 +905,13 @@ address {
         box-shadow: 5px 5px 2px darkgrey;
     }
 
-    
+
 
     /* Desktop Content --Start-- */
 
-    /* DC previewInvoice.html */
+    /* DC summary_preview_invoice_containerInvoice.html */
 
-    .preview-container {
+    .summary_preview_invoice_container-container {
         display: block;
         position: fixed;
         left: auto;
@@ -893,7 +927,7 @@ address {
     .payment-container {
         background: rgba(0, 0, 0, 0.5);
         z-index: 10000;
-        
+
     }
 
     .edit-modal,
@@ -910,9 +944,7 @@ address {
         z-index: 5;
     }
 
-    .close-modal {
-        
-    }
+    .close-modal {}
 
     .close-modal:before {
         content: "";
@@ -990,7 +1022,7 @@ address {
         margin: 0px;
         height: 30px;
         background: transparent;
-       }
+    }
 
     .p-amount-label {
         order: 2;
@@ -1045,7 +1077,7 @@ address {
         z-index: 101;
     }
 
-    
+
 
     .x8x11-container {
         display: block;
@@ -1103,7 +1135,7 @@ address {
         display: none;
     }
 
-    .preview-main {
+    .summary_preview_invoice_container-main {
         width: 750px;
         height: 940px;
         z-index: 1;
@@ -1116,7 +1148,7 @@ address {
         font-size: 12px;
     }
 
-    .page-preview-container {
+    .page-summary_preview_invoice_container-container {
         display: block;
         box-sizing: border-box;
         width: 750px;
@@ -1132,7 +1164,7 @@ address {
         box-shadow: none;
     }
 
-    .invoice-preview-foot {
+    ._container-summary_preview_invoice_container-foot {
         bottom: 0%;
     }
 
