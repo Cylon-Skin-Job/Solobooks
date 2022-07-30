@@ -1,5 +1,6 @@
 
     .preview-pageview-container {
+        display: block;
         width: 750px;
         height: 1000px;
         z-index: 1;
