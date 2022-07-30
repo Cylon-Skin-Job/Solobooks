@@ -1,0 +1,36 @@
+
+    .preview-pageview-container {
+        width: 750px;
+        height: 1000px;
+        z-index: 1;
+        background-color: white;
+        border: none;
+        box-sizing: border-box;
+    }
+
+    .print-none {
+        display: none;
+    }
+
+    .x8x11_wrapper-font {
+        font-size: 12px;
+    }
+
+    .x8x11_wrapper {
+        position: fixed;
+        top: 0px;
+        left: 0px;
+        display: block;
+        box-sizing: border-box;
+        width: 750px;
+        margin: none;
+        height: 1000px;
+        position: fixed;
+        top: 0px;
+        left: 0px;
+        background: white;
+        color: black;
+        z-index: 9999;
+        border: none;
+        box-shadow: none;
+    }
