@@ -305,7 +305,8 @@ label {
 /* Buttons for Previews and Modals */
 
 .button-exit,
-.button-close {
+.button-close,
+.button-exit-modal {
     display: none;
 }
 
