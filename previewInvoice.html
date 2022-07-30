@@ -17,32 +17,32 @@
 
 
 
-<body class="body_preview_invoice_container">
+<body class="previewInvoice">
 
     <!--1.0 PREVIEW Container  -->
-    <div class="summary_preview_invoice_container" id="summary_preview_invoice">
+    <div class="preview-summary-container" id="invoice_summary">
 
         <!--1.1 Preview Header  -->
-        <di class="summary_preview_invoice_container-header">
+        <div class="preview-header">
 
-            <button class="summary_preview_invoice_container-header-button-back">
+            <button class="button-back">
                 <a href="invoices.html"><span class="material-symbols-outlined">arrow_back</span></a>
             </button>
-            <h2 class="summary_preview_invoice_container-header-h2">Invoice No. 5224</h2>
-            <button class="summary_preview_invoice_container-header-button-view">
-                <a href="#pageview_preview_invoice"><span class="material-symbols-outlined">pageview</span></a>
+            <h3 class="preview-h3">Invoice No. 5224</h3>
+            <button class="button-view">
+                <a href="#invoice_pageview"><span class="material-symbols-outlined">pageview</span></a>
             </button>
-            <button class="summary_preview_invoice_container-header-button-exit">
+            <button class="button-exit">
                 <a href="invoices.html"><span class="material-symbols-outlined">close</span></a>
             </button>
 
 
 
-        </di>
+        </div>
 
         <!--1.2 Preview Table-->
 
-        <table class="summary_preview_invoice_container-table">
+        <table class="summary_container-table">
             <tbody>
                 <tr>
                     <td>Date</td>
@@ -65,23 +65,23 @@
 
         <!--1.3 Preview Footer-->
 
-        <div class="summary_preview_invoice_container-footer">
+        <div class="preview-footer preview-footer-mobile">
 
-            <button class="close" onclick="javascript:history.back()">
-                Close
+            <button class="button-close">
+                <a href="invoices.html">Close</a>
             </button>
-            <button id="myBtn" class="summary_preview_invoice_container-footer-button-delete">
+            <button id="myBtn" class="button-delete">
                 <span class="material-symbols-outlined">delete</span>
             </button>
-            <button class="summary_preview_invoice_container-footer-button-print" onclick="window.print()">
+            <button class="button-print" onclick="window.print()">
                 <span class="material-symbols-outlined">print</span>
             </button>
-            <button class="summary_preview_invoice_container-footer-button-payment">
+            <button class="button-payment">
                 <a href="#payment">
                     <span class="material-symbols-outlined">price_check</span></a>
             </button>
-            <button class="edit">
-                <a href="#invoice-edit">Edit</a>
+            <button class="button-edit">
+                <a href="#invoice_edit">Edit</a>
             </button>
 
         </div>
@@ -89,19 +89,19 @@
     <!--Preview-Container-->
 
     <!--2.0 PAGEVIEW-Container -->
-    <div class="pageview_preview_invoice_container" id="pageview_preview_invoice">
+    <div class="preview-pageview-container" id="invoice_pageview">
 
         <!--2.1 Page-view-Header-->
-        <div class="pageview_preview_invoice_container-header">
+        <div class="preview-header">
 
-            <button class="pageview_preview_invoice_container-header-button-back">
+            <button class="button-back">
                 <a href="invoices.html"><span class="material-symbols-outlined">arrow_back</span></a>
             </button>
-            <h2 class="pageview_preview_invoice_container-header-h2">Invoice No. 5224</h2>
-            <button class="pageview_preview_invoice_container-header-button-view">
-                <a href="#summary_preview_invoice"><span class="material-symbols-outlined">pageview</span></a>
+            <h3 class="preview-h3">Invoice No. 5224</h3>
+            <button class="button-view">
+                <a href="#invoice_summary"><span class="material-symbols-outlined">pageview</span></a>
             </button>
-            <button class="pageview_preview_invoice_container-header-button-exit">
+            <button class="button-exit">
                 <a href="invoices.html"><span class="material-symbols-outlined">close</span></a>
             </button>
 
@@ -111,10 +111,10 @@
         <!--2.2 x8x11 Container is styled using vh and vw relative to a particular @media
         to create appearance of 8.5 x 11 sheet of paper for a printable invoice view. -->
 
-        <div class="x8x11-container">
+        <div class="x8x11_wrapper">
 
             <!-- x8x11 Top Grid 
-            (class="x8x11-top-grid")
+            (class="x8x11_wrapper-top_grid")
             Next four divs are styled two at the top, and two below, 
             left to right using their secondary classes as follows:
             
@@ -123,11 +123,11 @@
             .x8x11-customer-address | .x8x11-number-date-->
 
             <!--2.2.1 Company Address-->
-            <div class="x8x11-top-grid x8x11-company-address">
+            <div class="x8x11_wrapper-top_grid x8x11_wrapper-top_grid-company_address">
 
-                <!--"x8x11-font" uses vh and vw with @media to style font-size to match page size -->
-                <p class="x8x11-font">RC Exhaust</p>
-                <address class="x8x11-font">
+                <!--"x8x11_wrapper-font" uses vh and vw with @media to style font-size to match page size -->
+                <p class="x8x11_wrapper-font">RC Exhaust</p>
+                <address class="x8x11_wrapper-font">
                     PO Box 287
                     <br>
                     Bishop, Ca. 93515
@@ -135,16 +135,17 @@
             </div>
 
             <!--2.2.2 Comapny Logo-->
-            <div class="x8x11-top-grid x8x11-logo">
-                <img src="https://rc-resume.neocities.org/companyLogo.png" alt="Company Logo" class="logo">
+            <div class="x8x11_wrapper-top_grid x8x11_wrapper-top_grid-company_logo">
+                <img src="https://rc-resume.neocities.org/companyLogo.png" alt="Company Logo"
+                    class="x8x11_wrapper-top_grid-company_logo-img_logo">
             </div>
 
 
             <!--2.2.3 Customer Address-->
-            <div class="x8x11-top-grid x8x11-customer-address">
-                <h3 class="x8x11-font">BILL TO:</h3>
-                <p class="x8x11-font">Bob's Burgers</p>
-                <address class="x8x11-font">
+            <div class="x8x11_wrapper-top_grid x8x11_wrapper-top_grid-customer_address">
+                <h3 class="x8x11_wrapper-font">BILL TO:</h3>
+                <p class="x8x11_wrapper-font">Bob's Burgers</p>
+                <address class="x8x11_wrapper-font">
                     115 W Ocean Drive
                     <br>
                     Ocean City, NJ. 17740
@@ -153,29 +154,29 @@
 
             <!--2.2.4 Invoice # and date -->
 
-            <div class="x8x11-top-grid x8x11-number-date">
+            <div class="x8x11_wrapper-top_grid x8x11_wrapper-top_grid-number_date">
 
-                <h2 class="x8x11-h2">INVOICE</h2>
-                <span class="x8x11-font span-left">
+                <h3 class="x8x11-h3">INVOICE</h3>
+                <span class="x8x11_wrapper-font x8x11_wrapper-top_grid-number_date-span-left">
                     Invoice No.
                 </span>
-                <span class="x8x11-font span-right">
+                <span class="x8x11_wrapper-font x8x11_wrapper-top_grid-number_date-span-right">
                     5224
                 </span>
 
-                <span class="x8x11-font span-left">
+                <span class="x8x11_wrapper-font x8x11_wrapper-top_grid-number_date-span-left">
                     Date
                 </span>
-                <span class="x8x11-font span-right">
+                <span class="x8x11_wrapper-font x8x11_wrapper-top_grid-number_date-span-right">
                     09/28/2021
                 </span>
 
             </div>
 
             <!--2.3 Item descriptions and amount. -->
-            <div class="x8x11-center-box">
+            <div class="x8x11_wrapper-center_box">
 
-                <table class="x8x11-table x8x11-font">
+                <table class="x8x11_wrapper-center_box-table x8x11_wrapper-font">
                     <thead>
                         <tr>
                             <th>
@@ -227,7 +228,7 @@
             </div>
 
             <!--2.4 Invoice footer-->
-            <div class="x8x11-footer x8x11-font">
+            <div class="x8x11_wrapper-footer x8x11_wrapper-font">
                 <address>Phone: (867) 867-5309 | Email: accountspayable@rcexhaust.com</address>
             </div>
 
@@ -236,23 +237,23 @@
         </div>
         <!--x8x11-container-->
 
-         <div class="pageview_preview_invoice_container-footer">
+         <div class="preview-footer preview-footer-mobile">
 
-             <button class="close" onclick="javascript:history.back()">
-                 Close
+             <button class="button-close">
+                 <a href="invoices.html">Close</a>
              </button>
-             <button id="myBtn" class="pageview_preview_invoice_container-footer-button-delete">
+             <button id="myBtn" class="button-delete">
                  <span class="material-symbols-outlined">delete</span>
              </button>
-             <button class="pageview_preview_invoice_container-footer-button-print" onclick="window.print()">
+             <button class="button-print" onclick="window.print()">
                  <span class="material-symbols-outlined">print</span>
              </button>
-             <button class="pageview_preview_invoice_container-footer-button-payment">
+             <button class="button-payment">
                  <a href="#payment">
                      <span class="material-symbols-outlined">price_check</span></a>
              </button>
-             <button class="edit">
-                 <a href="#invoice-edit">Edit</a>
+             <button class="button-edit">
+                 <a href="#invoice_edit">Edit</a>
              </button>
 
          </div>
@@ -260,22 +261,22 @@
     <!--pageview-container-->
 
     <!--3.0 EDIT Container -->
-    <div class="edit-container print-none" id="invoice-edit">
-        <div class="edit-modal">
+    <div class="modal-container print-none" id="invoice_edit">
+        <div class="modal-wrapper">
             <!--3.1 Edit Header-->
-            <div class="preview-header edit-header">
+            <div class="modal-header">
 
-                <h2>Edit Invoice</h2>
+                <h3 class="modal-h3">Edit Invoice</h3>
 
-                <button class="top-right-desktop">
-                    <a href="preview_invoice_container.html"><span class="material-symbols-outlined">close</span></a>
+                <button class="button-exit-modal">
+                    <a href="previewInvoice.html"><span class="material-symbols-outlined">close</span></a>
                 </button>
 
             </div>
 
             <!--3.2 Customer Drop Down-->
-            <div class="edit-customer-selector-div">
-                <select id="customers" class="customer-selector">
+            <div class="input_wrapper">
+                <select id="customers" class="selector">
                     <option value="Select Customer">Customer:</option>
                     <option value="Arnold's Drive In">Arnolds's Drive In</option>
                     <option value="Bob's Burgers">Bob's Burgers</option>
@@ -305,199 +306,177 @@
             </div>
 
             <!--3.3 Edit Datepicker -->
-            <div class="edit-datepicker-div">
-                <label for="date" class="edit-label-date">Date:</label>
-                <input type="date" id="datePicker" name="date" class="edit-date-picker" min="1997-01-01"
+            <div class="input_wrapper">
+                <label for="date" class="label">Date:</label>
+                <input type="date" id="datePicker" name="input" class="datepicker" min="1997-01-01"
                     max="2030-12-31">
             </div>
 
 
             <!--3.4 Item Textareas-->
-            <span class="description-span">Description</span>
-            <span class="amount-span">Amount</span>
+            <div class="edit-items-head">
+            <span class="edit-items-description">Description</span>
+            <span class="edit-items-amount">Amount</span>
+            </div>
 
             <!-- Item 1 -->
-            <div class="edit-item-description-div item-1">
-                <label for="description" class="p-item-label">
-                    Item 1:
-                </label>
-                <textarea id="description" name="description" class="p-item-textarea"
+            <div class="edit-items-wrapper">
+                <textarea id="description" name="description" class="textarea-item-description"
                     maxlength="160">Single System Service, hoods, ducts & fan lets test out how much text can fit in this tiny little space</textarea>
-                <label for="amount" class="p-amount-label">$</label>
-                <input type="number" rows="1" cols="10" id="text-area-item-amount" inputtype="decimal" name="amount"
-                    class="p-amount-textarea" value="485.00">
-
+                <input type="number" rows="1" cols="10" id="textarea-item-amount" inputtype="decimal" name="amount"
+                    class="textarea-item-amount" value="485.00">
             </div>
 
-            <div class="edit-item-description-div item-2">
-                <label for="description" class="p-item-label item-2">
-                    Item 2:
-                </label>
-                <textarea id="description" name="description" class="p-item-textarea text-2 "
-                    maxlength="160">Single System Service, hoods, ducts & fan lets test out how much text can fit in this tiny little space</textarea>
-                <label for="amount" class="p-amount-label item-2">$</label>
-                <input type="number" rows="1" cols="10" id="text-area-item-amount" inputtype="decimal" name="amount"
-                    class="p-amount-textarea item-2" value="485.00">
+            <div class="edit-items-wrapper">
+                <textarea id="description" name="description" class="textarea-item-description"
+                    maxlength="160"></textarea>
+                <input type="number" rows="1" cols="10" id="textarea-item-amount" inputtype="decimal" name="amount"
+                    class="textarea-item-amount" value="">
             </div>
 
-            <div class="edit-item-description-div  item-3">
-                <label for="description" class="p-item-label">
-                    Item 3:
-                </label>
-                <textarea id="description" name="description" class="p-item-textarea text-3"
-                    maxlength="160">Single System Service, hoods, ducts & fan lets test out how much text can fit in this tiny little space</textarea>
-                <label for="amount" class="p-amount-label item-3">$</label>
-                <input type="number" rows="1" cols="10" id="text-area-item-amount" inputtype="decimal" name="amount"
-                    class="p-amount-textarea item-3" value="485.00">
+            <div class="edit-items-wrapper">
+                <textarea id="description" name="description" class="textarea-item-description"
+                    maxlength="160"></textarea>
+                <input type="number" rows="1" cols="10" id="textarea-item-amount" inputtype="decimal" name="amount"
+                    class="textarea-item-amount" value="">
             </div>
 
-            <div class="edit-item-description-div  item-4">
-                <label for="description" class="p-item-label">
-                    Item 4:
-                </label>
-                <textarea id="description" name="description" class="p-item-textarea text-4"
-                    maxlength="160">Single System Service, hoods, ducts & fan lets test out how much text can fit in this tiny little space</textarea>
-                <label for="amount" class="p-amount-label item-4">$</label>
-                <input type="number" rows="1" cols="10" id="text-area-item-amount" inputtype="decimal" name="amount"
-                    class="p-amount-textarea item-4" value="485.00">
-            </div>
-            <div class="edit-item-description-div  item-5">
-                <label for="description" class="p-item-label">
-                    Item 5:
-                </label>
-                <textarea id="description" name="description" class="p-item-textarea text-5"
-                    maxlength="160">Single System Service, hoods, ducts & fan lets test out how much text can fit in this tiny little space</textarea>
-                <label for="amount" class="p-amount-label item-5">$</label>
-                <input type="number" rows="1" cols="10" id="text-area-item-amount" inputtype="decimal" name="amount"
-                    class="p-amount-textarea item-5" value="485.00">
+            <div class="edit-items-wrapper">
+                <textarea id="description" name="description" class="textarea-item-description"
+                    maxlength="160"></textarea>
+                <input type="number" rows="1" cols="10" id="textarea-item-amount" inputtype="decimal" name="amount"
+                    class="textarea-item-amount" value="">
             </div>
 
-            <div class="edit-item-description-div item-last  item-6">
-                <label for="description" class="p-item-label">
-                    Item 6:
-                </label>
-                <textarea id="description" name="description" class="p-item-textarea text-6"
-                    maxlength="160">Single System Service, hoods, ducts & fan lets test out how much text can fit in this tiny little space</textarea>
-                <label for="amount" class="p-amount-label item-6">$</label>
-                <input type="number" rows="1" cols="10" id="text-area-item-amount" inputtype="decimal" name="amount"
-                    class="p-amount-textarea item-6" value="485.00">
+            <div class="edit-items-wrapper">
+                <textarea id="description" name="description" class="textarea-item-description"
+                    maxlength="160"></textarea>
+                <input type="number" rows="1" cols="10" id="textarea-item-amount" inputtype="decimal" name="amount"
+                    class="textarea-item-amount" value="">
+            </div>
+
+            <div class="edit-items-wrapper">
+                <textarea id="description" name="description" class="textarea-item-description"
+                    maxlength="160"></textarea>
+                <input type="number" rows="1" cols="10" id="textarea-item-amount" inputtype="decimal" name="amount"
+                    class="textarea-item-amount" value="">
             </div>
 
 
 
-            <div class="preview-footer edit-footer">
+            <div class="preview-footer-mobile modal-footer">
 
-                <button class="cancel">
-                    <a href="preview_invoice_container.html">Cancel</a>
+                <button class="button-cancel">
+                    <a href="previewInvoice.html">Cancel</a>
                 </button>
 
-                <button class="save">
-                    <a href="preview_invoice_container.html">Save</a>
+                <button class="button-save">
+                    <a href="previewInvoice.html">Save</a>
                 </button>
             </div>
 
         </div>
-        <a class="close-modal" href="preview_invoice_container.html"></a>
-    </div> <!-- closing tag for edit-container -->
+        <a class="close-modal" href="previewInvoice.html"></a>
+    </div> <!-- closing tag for edit_container -->
 
     <!--4.0 Payment Container-->
-    <div class="payment-container" id="payment">
-        <div class="payment-modal">
+    <div class="modal-container" id="payment">
+        <div class="modal-wrapper modal-payment">
             <!--4.1 Edit Header-->
-            <div class="preview-header payment-header">
+            <div class="modal-header">
 
-                <h2>Invoice No. 5224</h2>
-                <p>Payment Record</p>
-                <p>Bob's Burger's</p>
-                <p>$ 485.00</p>
+                <h3 class="modal-h3">Invoice No. 5224</h3>
+                <span class="modal-header-info">Payment Record</span>
+                <span class="modal-header-info">Bob's Burger's</span>
+                <span class="modal-header-info">$ 485.00</span>
 
-                <button class="top-right-desktop">
-                    <a href="invoices.html"><span class="material-symbols-outlined">close</span></a>
+                <button class="button-exit-modal">
+                    <a href="previewInvoice.html"><span class="material-symbols-outlined">close</span></a>
                 </button>
 
             </div>
 
-            <form type="radio" class="radio-payment">
-                <label><input type="radio" id="no-payment" name="payment" value="unpaid" checked>Unpaid</label>
-                <label><input type="radio" id="payment" name="payment" value="paid"
-                        onclick="window.location='#paid'">Paid</label>
+            <form type="radio" class="radio">
+                <label><input type="radio" id="no-payment" name="unpaid" value="unpaid" checked> Unpaid</label>
+                <label><input type="radio" id="payment" name="paid" value="paid"
+                        onclick="window.location='#paid'"> Paid</label>
             </form>
 
-            <div class="preview-footer payment-footer">
+            <div class="modal-footer preview-footer-mobile">
 
-                <button class="cancel">
-                    <a href="preview_invoice_container.html">Cancel</a>
+                <button class="button-cancel">
+                    <a href="previewInvoice.html">Cancel</a>
                 </button>
 
-                <button class="save">
-                    <a href="preview_invoice_container.html">Save</a>
+                <button class="button-save">
+                    <a href="previewInvoice.html">Save</a>
                 </button>
             </div>
         </div>
-        <a class="close-modal" href="preview_invoice_container.html"></a>
+        <a class="close-modal" href="previewInvoice.html"></a>
     </div>
 
-    <div class="payment-container" id="paid">
-        <div class="payment-modal">
+    <div class="modal-container" id="paid">
+        <div class="modal-wrapper modal-payment">
             <!--4.1 Edit Header-->
-            <div class="preview-header payment-header">
+            <div class="modal-header">
 
-                <h2>Invoice No. 5224</h2>
-                <p>Payment Record</p>
-                <p>Bob's Burger's</p>
-                <p>$ 485.00</p>
+                <h3 class="modal-h3">Invoice No. 5224</h3>
+                <span class="modal-header-info">Payment Record</span>
+                <span class="modal-header-info">Bob's Burger's</span>
+                <span class="modal-header-info">$ 485.00</span>
 
-                <button class="top-right-desktop">
-                    <a href="invoices.html"><span class="material-symbols-outlined">close</span></a>
+                <button class="button-exit-modal">
+                    <a href="previewInvoice.html"><span class="material-symbols-outlined">close</span></a>
                 </button>
 
             </div>
 
-            <form type="radio" class="radio-payment">
+            <form type="radio" class="radio">
                 <label><input type="radio" id="payment" name="payment"
                         onclick="window.location='#payment'">Unpaid</label>
                 <label><input type="radio" id="no-payment" name="payment" value="paid" checked>Paid</label>
             </form>
 
-            <div class="payment-date-picker-div">
-                <label for="date" class="payment-label">Date:</label>
-                <input type="date" id="datePicker2" name="date" class="edit-date-picker" min="1997-01-01"
+            <div class="input_wrapper">
+                <label for="date" class="label">Date:</label>
+                <input type="date" id="datePicker2" name="date" class="datepicker" min="1997-01-01"
                     max="2030-12-31">
             </div>
 
-            <div class="payment-method-div">
-                <label for="method" class="payment-label">Payment Method:</label>
-                <select id="method" class="method-selector">
-                    <option value="Payment Method"></option>
+            <div class="input_wrapper">
+                <select id="method" class="selector">
+                    <option value="Method">Payment Method:</option>
                     <option value="Cash">Cash</option>
                     <option value="Check">Check</option>
                     <option value="Credit Card">Credit Card</option>
                 </select>
             </div>
 
-            <div class="payment-reference-div">
-                <label for="amount" class="payment-label">Reference No.</label>
+            <div class="input_wrapper">
+                <label for="amount" class="label">Reference No. </label>
                 <input type="text" rows="1" cols="10" id="text-area-item-amount" name="amount"
-                    class="payment-reference-text-area" value="">
+                    class="input" value="">
             </div>
 
-            <div class="payment-notes-div">
-                <label for="amount" class="payment-label">Notes: </label>
-                <input id="description" name="description" maxlength="160" class="payment-notes-text-area" value="">
+            <div class="input_wrapper notes_wrapper">
+                <label for="notes" class="label label-notes">Notes:</label>
+                <textarea id="description" name="notes" class="textarea-notes"
+                    maxlength="160"></textarea>
             </div>
 
-            <div class="preview-footer payment-footer">
+            <div class="modal-footer preview-footer-mobile">
 
-                <button class="cancel">
-                    <a href="preview_invoice_container.html">Cancel</a>
+                <button class="button-cancel">
+                    <a href="previewInvoice.html">Cancel</a>
                 </button>
 
-                <button class="save">
-                    <a href="preview_invoice_container.html">Save</a>
+                <button class="button-save">
+                    <a href="previewInvoice.html">Save</a>
                 </button>
             </div>
         </div>
-        <a class="close-modal" href="preview_invoice_container.html"></a>
+        <a class="close-modal" href="previewInvoice.html"></a>
     </div>
 
 

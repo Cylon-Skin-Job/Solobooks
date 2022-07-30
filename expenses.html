@@ -458,33 +458,39 @@
                     id="plusButton">add_circle</span><span class="plus-button-text">New
                     Expense</span></a></button>
 
-        <div class="expense-container" id="expense">
-            <div class="edit-modal">
-                <!--4.1 Edit Header-->
-                <div class="expense-header edit-header">
+        <div class="modal-container" id="expense">
+            <div class="modal-wrapper modal-expense">
+                
+                
+                    <div class="modal-header">
 
-                    <h3>Expense Record</h3>
-                </div>
+                        <h3 class="modal-h3">Edit Expense</h3>
 
-                <div class="payment-reference-div">
-                    <label for="amount" class="payment-label">Amount: $ </label>
+                        <button class="button-exit-modal">
+                            <a href="expenses.html"><span class="material-symbols-outlined">close</span></a>
+                        </button>
+
+                    </div>
+
+                <div class="input_wrapper">
+                    <label for="amount" class="label">Amount: $ </label>
                     <input type="text" rows="1" cols="10" id="text-area-item-amount" name="amount"
-                        class="payment-reference-text-area" value="69.58">
+                        class="input" value="69.58">
                 </div>
 
-                <div class="payment-date-picker-div">
-                    <label for="date" class="payment-label">Date:</label>
-                    <input type="date" id="datePicker2" name="date" class="edit-date-picker" min="1997-01-01" value="2021-09-21"
+                <div class="input_wrapper">
+                    <label for="date" class="label">Date:</label>
+                    <input type="date" id="datePicker2" name="date" class="datepicker" min="1997-01-01" value="2021-09-21"
                         max="2030-12-31">
                 </div>
 
-                <div class="payment-method-div">
-                    <label for="method" class="payment-label">Expense Category:</label>
-                    <select id="selectItem" class="input">
+                <div class="input_wrapper">
+                    <select id="selectItem" class="selector">
+                        <option value="0">Expense Category:</option>
                         <option value="0">Advertizing</option>
                         <option value="1">Fuel</option>
                         <option value="2">Insurance</option>
-                        <option value="3" slected>Job Supplies</option>
+                        <option value="3" selected>Job Supplies</option>
                         <option value="4">Office Supplies</option>
                         <option value="5">Utilities & Phone</option>
                     </select>
@@ -492,23 +498,22 @@
 
                 
 
-                <div class="payment-notes-div">
-                    <label for="amount" class="payment-label">Notes: </label>
-                    <input id="description" name="description" maxlength="160" class="payment-notes-text-area" value="Home Depot">
+                <div class="input_wrapper notes_wrapper">
+                    <label for="notes" class="label label-notes">Notes:</label>
+                    <textarea id="description" name="notes" class="textarea-notes" maxlength="160"></textarea>
                 </div>
 
-                <div class="preview-footer payment-footer">
-                    <button id="myBtn" class="mini-icon" style="margin-right: 700px">
-                        <span class="material-symbols-outlined">delete</span>
-                    </button>
-                    <button class="cancel">
+                <div class="modal-footer preview-footer-mobile">
+
+                    <button class="button-cancel">
                         <a href="expenses.html">Cancel</a>
                     </button>
 
-                    <button class="save">
+                    <button class="button-save">
                         <a href="expenses.html">Save</a>
                     </button>
                 </div>
+
             </div>
             <a class="close-modal" href="expenses.html"></a>
         </div>

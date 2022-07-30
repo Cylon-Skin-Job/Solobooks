@@ -8,17 +8,16 @@ a {
 }
 
 .col-1 {
-    width: 60%;
+    width: 90%;
     font-size: 1rem;
     font-weight: bold;
-    order: 1;
+
 }
 
 .col-2 {
     width: 60%;
     height: 40px;
     font-size: .9rem;
-    order: 3;
 }
 
 .table-address-1,
@@ -29,45 +28,38 @@ a {
 }
 
 .col-3 {
-    width: 30%;
+    width: 20%;
     font-size: 1rem;
     text-align: right;
     font-weight: bold;
-    order: 2;
 }
 
-.company-logo {
+.tr-logo {
     height: 250px;
+}
+
+.col-logo {
     border: none;
+    width: 80%;
+    height: 250px;
+}
+
+.pay-1 {
+    width: 15%;
+    font-size: 1rem;
+}
+
+.pay-2 {
+    width: 55%;
+    font-size: 1rem;
 }
 
 @media screen and (min-width: 768px) {
 
-    .col-1,
-    .col-2,
-    .col-3,
-    .col-4 {
-        display: inline-block;
-        width: 15%;
-        order: unset;
-        text-align: left;
-        font-weight: normal;
-        font-size: 1rem;
-    }
-
     .col-1 {
-        width: 25%;
-        padding-right: 15px;
+        width: 20%;
     }
-
-    .col-2 {
-        width: 45%;
-        text-overflow: ellipsis;
-        height: 25px;
-        padding-right: 15px;
-    }
-
-
+    
 
     .table-address-1,
     .table-address-2 {
