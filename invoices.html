@@ -4,660 +4,629 @@
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 
-    <meta name="theme-color" content="#2a2438" media="(prefers-color-scheme: light)">
-    <meta name="theme-color" content="#2a2438" media="(prefers-color-scheme: dark)">
+    <meta name="theme-invoices-table-color" content="#2a2438" media="(prefers-invoices-table-color-scheme: light)">
+    <meta name="theme-invoices-table-color" content="#2a2438" media="(prefers-invoices-table-color-scheme: dark)">
 
-    <link rel="stylesheet" href="main.css">
-    <link rel="stylesheet" href="invoices.css">
-    <link rel="stylesheet" href="tables.css">
+    <link rel="stylesheet" href="styles.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
 </head>
 
 <body>
 
-    <nav>
+    <div class="site-grid">
+
+        <div class="site-header">
+            <header>
+                <h1 class="site-h1">SoloBooks</h1>
+                <h2 class="site-h2">RC Exhaust</h2>
+            </header>
+        </div>
+
+        <div class="site-nav-background"></div>
+        <div class="site-nav-background-alt"></div>
         <div class="site-nav">
+            <nav>
+                <ul class="navigation">
+                    <li>
 
-            <div class="site-nav-top">
-                <h1 class="solo">SoloBooks</h1>
-                <span class="site-header-company-name">RC Exhaust</span>
-            </div>
+                        <a href="index.html">
+                            <span class="material-icons" alt=" ">analytics
+                            </span>
+                            Overview
+                        </a>
 
-            <ul class="navigation">
-                <li>
-                    <a href="index.html">
-                        <span class="material-icons" alt=" ">analytics
-                        </span>
-                        Overview
-                    </a>
-                </li>
-                <li class="active">
-                    <a href="invoices.html">
-                        <span class="material-icons" alt=" ">description</span>
-                        Invoices
-                    </a>
-                </li>
-                <li>
-                    <a href="expenses.html">
-                        <span class="material-icons" alt=" ">receipt_long</span>
-                        Expenses
-                    </a>
-                </li>
-                <li>
-                    <a href="customers.html">
-                        <span class="material-icons" alt=" ">people</span>
-                        Customers
-                    </a>
-                </li>
-                <li>
-                    <a href="settings.html">
-                        <span class="material-icons" alt=" ">settings</span>
-                        Settings
-                    </a>
-                </li>
-            </ul>
-        </div>
-    </nav>
-    <header>
-        <h2>Invoices</h2>
-    </header>
-
-    <div class="main">
-
-
-        <div class="table-container" id="invoicesUnpaid">
-            <button class="invoices-button-unpaid">
-                <a href="/invoices.html">
-                    Unpaid
-                </a>
-            </button>
-            <button class="invoices-button-paid">
-                <a href="#invoicesPaid">
-                    Paid
-                </a>
-            </button>
-
-            <div class="ribbon fixed-ribbon" id="invoices-footer"><span class="invoices-footer-total">Unpaid</span>
-                <span class="invoices-footer-amount">: $2,190.00</span>
-            </div>
-
-            
-
-            <table>
-                <thead>
-                    <tr class="tr-head">
-                        <th class="col-1">Date</th>
-                        <th class="col-2">Invoice No.</th>
-                        <th class="col-3">Customer</th>
-                        <th class="col-4">Amount</th>
-                        <th class="col-5 col-last">Status</th>
-                    </tr>
-                </thead>
-
-                <tbody>
-
-
-                    <tr>
-
-                        <td class="col-1">
-                            9/28/2022
-                        </td>
-                        <td class="col-2">
-                            5224
-                        </td>
-                        <td class="col-3">
-                            Cafe Nervosa
-                        </td>
-                        <td class="col-4">
-                            $690
-                        </td>
-                        <td class="col-5 col-last">
-                            <a href="previewInvoice.html" class="row-link red">Unpaid</a>
-                        </td>
-                    </tr>
-
-
-
-                    <tr>
-                        <td class="col-1">
-                            9/25/2021
-                        </td>
-                        <td class="col-2">
-                            5141
-                        </td>
-                        <td class="col-3">
-                            The Indigo Tea Shop
-                        </td>
-                        <td class="col-4">
-                            $565
-                        </td>
-                        <td class="col-5 col-last">
-                            <a href="previewInvoice.html" class="row-link red">Unpaid</a>
-                        </td>
-                    </tr>
-
-
-                    <tr>
-                        <td class="col-1">
-                            9/20/2021
-                        </td>
-                        <td class="col-2">
-                            5140
-                        </td>
-                        <td class="col-3">
-                            Cheer's
-                        </td>
-                        <td class="col-4">
-                            $450
-                        </td>
-                        <td class="col-5 col-last">
-                            <a href="previewInvoice.html" class="row-link red">Unpaid</a>
-                        </td>
-                    </tr>
-
-
-                    <tr>
-                        <td class="col-1">
-                            9/15/2021
-                        </td>
-                        <td class="col-2">
-                            5139
-                        </td>
-                        <td class="col-3">
-                            Joe's Bar
-                        </td>
-                        <td class="col-4">
-                            $485
-                        </td>
-                        <td class="col-5 col-last">
-                            <a href="previewInvoice.html" class="row-link red">Unpaid</a>
-                        </td>
-                    </tr>
-
-                </tbody>
-            </table>
-
-
+                    </li>
+                    <li class="active">
+                        <a href="invoices.html">
+                            <span class="material-icons" alt=" ">description</span>
+                            Invoices
+                        </a>
+                    </li>
+                    <li>
+                        <a href="expenses.html">
+                            <span class="material-icons" alt=" ">receipt_long</span>
+                            Expenses
+                        </a>
+                    </li>
+                    <li>
+                        <a href="customers.html">
+                            <span class="material-icons" alt=" ">people</span>
+                            Customers
+                        </a>
+                    </li>
+                    <li>
+                        <a href="settings.html">
+                            <span class="material-icons" alt=" ">settings</span>
+                            Settings
+                        </a>
+                    </li>
+                </ul>
+            </nav>
         </div>
 
 
+        <section>
+            <div class="site-section">
+                <h3 class="site-h3">Invoices</h3>
+            </div>
+        </section>
+
+        <div class="site-main">
+
+            <div class="whitespace"></div>
+
+            <div class="site-content">
+
+                <div class="ribbon ribbon-top">
+                    <h4 class="site-h4">Unpaid Invoices</h4>
+                    <span class="ribbon-total">Total: $2,190.00</span>
+                </div>
 
 
-        <div class="table-container-alt" id="invoicesPaid">
 
-            <button class="invoices-button-unpaid-alt">
-                <a href="/invoices.html">
-                    Unpaid
-                </a>
-            </button>
-            <button class="invoices-button-paid-alt">
-                <a href="#invoicesPaid">
-                    Paid
-                </a>
-            </button>
+                <table class="top-table invoices-table-unpaid">
+                    <thead>
+                        <tr class="table-head-row">
+                            <th class="invoices-table-col-1">Date</th>
+                            <th class="invoices-table-col-2">Invoice No.</th>
+                            <th class="invoices-table-col-3">Customer</th>
+                            <th class="invoices-table-col-4">Status</th>
+                            <th class="invoices-table-col-5 invoices-table-col-last">Amount</th>
+                        </tr>
+                    </thead>
 
-            <div class="ribbon sticky-ribbon" id="invoices-footer"><span
-                    class="invoices-footer-total">Paid</span>
-                <span class="invoices-footer-amount">: $11,970.00</span></div>
+                    <tbody class="row-hover">
 
-            <div class="gradient"></div>
-
-            <table>
-                <thead>
-                    <tr class="tr-head">
-                        <th class="col-1">Date</th>
-                        <th class="col-2">Invoice No.</th>
-                        <th class="col-3">Customer</th>
-                        <th class="col-4">Amount</th>
-                        <th class="col-5 col-last">Status</th>
-                    </tr>
-                </thead>
-
-                <tbody>
-
-                    <tr>
-                        <td class="col-1">
-                            08/12/2021
-                        </td>
-                        <td class="col-2">
-                            5127
-                        </td>
-                        <td class="col-3">
-                            Bob's Burgers
-                        </td>
-                        <td class="col-4">
-                            $550
-                        </td>
-                        <td class="col-5 col-last">
-                            <a href="previewInvoice.html" class="row-link green">
-                                Paid</a>
-                        </td>
-                    </tr>
-
-                    <tr>
-                        <td class="col-1">
-                            08/11/2021
-                        </td>
-                        <td class="col-2">
-                            5126
-                        </td>
-                        <td class="col-3">
-                            Paunch Burger
-                        </td>
-                        <td class="col-4">
-                            $625
-                        </td>
-                        <td class="col-5 col-last">
-                            <a href="previewInvoice.html" class="row-link green">
-                                Paid
-                            </a>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td class="col-1">
-                            08/05/2021
-                        </td>
-                        <td class="col-2">
-                            5125
-                        </td>
-                        <td class="col-3">
-                            Arnold's Drive In
-                        </td>
-                        <td class="col-4">
-                            $485
-                        </td>
-                        <td class="col-5 col-last">
-                            <a href="previewInvoice.html" class="row-link green">
-                                Paid
-                            </a>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td class="col-1">
-                            08/04/2021
-                        </td>
-                        <td class="col-2">
-                            5124
-                        </td>
-                        <td class="col-3">
-                            Central Perk
-                        </td>
-                        <td class="col-4">
-                            $385
-                        </td>
-                        <td class="col-5 col-last">
-                            <a href="previewInvoice.html" class="row-link green">
-                                Paid
-                            </a>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td class="col-1">
-                            08/03/2021
-                        </td>
-                        <td class="col-2">
-                            5123
-                        </td>
-                        <td class="col-3">
-                            Cafe Nervosa
-                        </td>
-                        <td class="col-4">
-                            $690
-                        </td>
-                        <td class="col-5 col-last">
-                            <a href="previewInvoice.html" class="row-link green">
-                                Paid
-                            </a>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td class="col-1">
-                            08/01/2021
-                        </td>
-                        <td class="col-2">
-                            5122
-                        </td>
-                        <td class="col-3">
-                            The Indigo Tea Shop
-                        </td>
-                        <td class="col-4">
-                            $565
-                        </td>
-                        <td class="col-5 col-last">
-                            <a href="previewInvoice.html" class="row-link green">
-                                Paid
-                            </a>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td class="col-1">
-                            07/25/2021
-                        </td>
-                        <td class="col-2">
-                            5121
-                        </td>
-                        <td class="col-3">
-                            Cheer's
-                        </td>
-                        <td class="col-4">
-                            $450
-                        </td>
-                        <td class="col-5 col-last">
-                            <a href="previewInvoice.html" class="row-link green">
-                                Paid
-                            </a>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td class="col-1">
-                            07/23/2021
-                        </td>
-                        <td class="col-2">
-                            5120
-                        </td>
-                        <td class="col-3">
-                            Joe's Bar
-                        </td>
-                        <td class="col-4">
-                            $485
-                        </td>
-                        <td class="col-5 col-last">
-                            <a href="previewInvoice.html" class="row-link green">
-                                Paid
-                            </a>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td class="col-1">
-                            07/20/2021
-                        </td>
-                        <td class="col-2">
-                            5119
-                        </td>
-                        <td class="col-3">
-                            Three Broomsticks
-                        </td>
-                        <td class="col-4">
-                            $645
-                        </td>
-                        <td class="col-5 col-last">
-                            <a href="previewInvoice.html" class="row-link green">
-                                Paid
-                            </a>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td class="col-1">
-                            07/16/2021
-                        </td>
-                        <td class="col-2">
-                            5117
-                        </td>
-                        <td class="col-3">
-                            Mos Eisley Cantina
-                        </td>
-                        <td class="col-4">
-                            $650
-                        </td>
-                        <td class="col-5 col-last">
-                            <a href="previewInvoice.html" class="row-link green">
-                                Paid
-                            </a>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td class="col-1">
-                            07/12/2021
-                        </td>
-                        <td class="col-2">
-                            5117
-                        </td>
-                        <td class="col-3">
-                            The Krusty Krab
-                        </td>
-                        <td class="col-4">
-                            $585
-                        </td>
-                        <td class="col-5 col-last">
-                            <a href="previewInvoice.html" class="row-link green">
-                                Paid
-                            </a>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td class="col-1">
-                            07/16/2021
-                        </td>
-                        <td class="col-2">
-                            5115
-                        </td>
-                        <td class="col-3">
-                            La Ratatouille
-                        </td>
-                        <td class="col-4">
-                            $485
-                        </td>
-                        <td class="col-5 col-last">
-                            <a href="previewInvoice.html" class="row-link green">
-                                Paid
-                            </a>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td class="col-1">
-                            07/07/2021
-                        </td>
-                        <td class="col-2">
-                            5115
-                        </td>
-                        <td class="col-3">
-                            Pizza Planet
-                        </td>
-                        <td class="col-4">
-                            $525
-                        </td>
-                        <td class="col-5 col-last">
-                            <a href="previewInvoice.html" class="row-link green">
-                                Paid
-                            </a>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td class="col-1">
-                            07/06/2021
-                        </td>
-                        <td class="col-2">
-                            5113
-                        </td>
-                        <td class="col-3">
-                            Frozen Banana
-                        </td>
-                        <td class="col-4">
-                            $525
-                        </td>
-                        <td class="col-5 col-last">
-                            <a href="previewInvoice.html" class="row-link green">
-                                Paid
-                            </a>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td class="col-1">
-                            07/04/2021
-                        </td>
-                        <td class="col-2">
-                            5112
-                        </td>
-                        <td class="col-3">
-                            Monk's Cafe
-                        </td>
-                        <td class="col-4">
-                            $525
-                        </td>
-                        <td class="col-5 col-last">
-                            <a href="previewInvoice.html" class="row-link green">
-                                Paid
-                            </a>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td class="col-1">
-                            06/28/2021
-                        </td>
-                        <td class="col-2">
-                            5111
-                        </td>
-                        <td class="col-3">
-                            Los Pollos Hermanos
-                        </td>
-                        <td class="col-4">
-                            $720
-                        </td>
-                        <td class="col-5 col-last">
-                            <a href="previewInvoice.html" class="row-link green">
-                                Paid
-                            </a>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td class="col-1">
-                            06/28/2021
-                        </td>
-                        <td class="col-2">
-                            5110
-                        </td>
-                        <td class="col-3">
-                            The Whistle Stop Cafe
-                        </td>
-                        <td class="col-4">
-                            $385
-                        </td>
-                        <td class="col-5 col-last">
-                            <a href="previewInvoice.html" class="row-link green">
-                                Paid
-                            </a>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td class="col-1">
-                            06/20/2021
-                        </td>
-                        <td class="col-2">
-                            5109
-                        </td>
-                        <td class="col-3">
-                            Vesuvio
-                        </td>
-                        <td class="col-4">
-                            $385
-                        </td>
-                        <td class="col-5 col-last">
-                            <a href="previewInvoice.html" class="row-link green">Paid</a> </td>
+                        <tr id="hover">
+                            <td class="invoices-table-col-1">
+                                09/28/2022
+                            </td>
+                            <td class="invoices-table-col-2">
+                                5224
+                            </td>
+                            <td class="invoices-table-col-3">
+                                Cafe Nervosa
+                            </td>
+                            <td class="invoices-table-col-4">
+                                Unpaid
+                            </td>
+                            <td class="invoices-table-col-5 invoices-table-col-last">
+                                <a href="previewInvoice.html" class="row-link red">$690</a>
+                            </td>
+                        </tr>
 
 
-                    <tr>
-                        <td class="col-1">
-                            06/20/2021
-                        </td>
-                        <td class="col-2">
-                            5108
-                        </td>
-                        <td class="col-3">
-                            The Pie Pole
-                        </td>
-                        <td class="col-4">
-                            $515
-                        </td>
-                        <td class="col-5 col-last">
-                            <a href="previewInvoice.html" class="row-link green">
+
+                        <tr>
+                            <td class="invoices-table-col-1">
+                                09/25/2021
+                            </td>
+                            <td class="invoices-table-col-2">
+                                5141
+                            </td>
+                            <td class="invoices-table-col-3">
+                                The Indigo Tea Shop
+                            </td>
+                            <td class="invoices-table-col-4">
+                                Unpaid
+                            </td>
+                            <td class="invoices-table-col-5 invoices-table-col-last">
+                                <a href="previewInvoice.html" class="row-link red">$565</a>
+                            </td>
+                        </tr>
+
+
+                        <tr>
+                            <td class="invoices-table-col-1">
+                                09/20/2021
+                            </td>
+                            <td class="invoices-table-col-2">
+                                5140
+                            </td>
+                            <td class="invoices-table-col-3">
+                                Cheer's
+                            </td>
+                            <td class="invoices-table-col-4">
+                                Unpaid
+                            </td>
+                            <td class="invoices-table-col-5 invoices-table-col-last">
+                                <a href="previewInvoice.html" class="row-link red">$450</a>
+                            </td>
+                        </tr>
+
+
+                        <tr>
+                            <td class="invoices-table-col-1">
+                                09/15/2021
+                            </td>
+                            <td class="invoices-table-col-2">
+                                5139
+                            </td>
+                            <td class="invoices-table-col-3">
+                                Joe's Bar
+                            </td>
+                            <td class="invoices-table-col-4">
+                                Unpaid
+                            </td>
+                            <td class="invoices-table-col-5 invoices-table-col-last">
+                                <a href="previewInvoice.html" class="row-link red">$485</a>
+                            </td>
+                        </tr>
+
+                    </tbody>
+                </table>
+
+                <div class="ribbon">
+                    <h4 class="site-h4">Paid Invoices</h4>
+                    <span class="ribbon-total">Total: $11,280.00</span>
+                </div>
+
+                <table class="invoices-table-paid">
+
+                    <tbody class="row-hover">
+
+                        <tr class="test">
+                            <td class="invoices-table-col-1">
+                                08/12/2021
+                            </td>
+                            <td class="invoices-table-col-2">
+                                5127
+                            </td>
+                            <td class="invoices-table-col-3">
+                                Bob's Burgers
+                            </td>
+                            <td class="invoices-table-col-4">
                                 Paid
-                            </a>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td class="col-1">
-                            06/10/2021
-                        </td>
-                        <td class="col-2">
-                            5107
-                        </td>
-                        <td class="col-3">
-                            Louie's Italian Restaurant
-                        </td>
-                        <td class="col-4">
-                            $515
-                        </td>
-                        <td class="col-5 col-last">
-                            <a href="previewInvoice.html" class="row-link green">
+                            </td>
+                            <td class="invoices-table-col-5 invoices-table-col-last">
+                                <a href="previewInvoice.html" class="row-link green">
+                                    $550</a>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td class="invoices-table-col-1">
+                                08/11/2021
+                            </td>
+                            <td class="invoices-table-col-2">
+                                5126
+                            </td>
+                            <td class="invoices-table-col-3">
+                                Paunch Burger
+                            </td>
+                            <td class="invoices-table-col-4">
                                 Paid
-                            </a>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td class="col-1">
-                            06/10/2021
-                        </td>
-                        <td class="col-2">
-                            5106
-                        </td>
-                        <td class="col-3">
-                            The Frosty Place
-                        </td>
-                        <td class="col-4">
-                            $505
-                        </td>
-                        <td class="col-5 col-last">
-                            <a href="previewInvoice.html" class="row-link green">
+                            </td>
+                            <td class="invoices-table-col-5 invoices-table-col-last">
+                                <a href="previewInvoice.html" class="row-link green">
+                                    $625
+                                </a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="invoices-table-col-1">
+                                08/05/2021
+                            </td>
+                            <td class="invoices-table-col-2">
+                                5125
+                            </td>
+                            <td class="invoices-table-col-3">
+                                Arnold's Drive In
+                            </td>
+                            <td class="invoices-table-col-4">
                                 Paid
-                            </a>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td class="col-1">
-                            06/10/2021
-                        </td>
-                        <td class="col-2">
-                            5105
-                        </td>
-                        <td class="col-3">
-                            Joe's Pie Diner
-                        </td>
-                        <td class="col-4">
-                            $685
-                        </td>
-                        <td class="col-5 col-last">
-                            <a href="previewInvoice.html" class="row-link green">
+                            </td>
+                            <td class="invoices-table-col-5 invoices-table-col-last">
+                                <a href="previewInvoice.html" class="row-link green">
+                                    $485
+                                </a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="invoices-table-col-1">
+                                08/04/2021
+                            </td>
+                            <td class="invoices-table-col-2">
+                                5124
+                            </td>
+                            <td class="invoices-table-col-3">
+                                Central Perk
+                            </td>
+                            <td class="invoices-table-col-4">
                                 Paid
-                            </a>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td class="col-1">
-                            06/02/2021
-                        </td>
-                        <td class="col-2">
-                            5104
-                        </td>
-                        <td class="col-3">
-                            Chocolate Factory
-                        </td>
-                        <td class="col-4">
-                            $575
-                        </td>
-                        <td class="col-5 col-last">
-                            <a href="previewInvoice.html" class="row-link green">Paid</a> </td>
-                    </tr>
-                </tbody>
-            </table>
+                            </td>
+                            <td class="invoices-table-col-5 invoices-table-col-last">
+                                <a href="previewInvoice.html" class="row-link green">
+                                    $385
+                                </a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="invoices-table-col-1">
+                                08/03/2021
+                            </td>
+                            <td class="invoices-table-col-2">
+                                5123
+                            </td>
+                            <td class="invoices-table-col-3">
+                                Cafe Nervosa
+                            </td>
+                            <td class="invoices-table-col-4">
+                                Paid
+                            </td>
+                            <td class="invoices-table-col-5 invoices-table-col-last">
+                                <a href="previewInvoice.html" class="row-link green">
+                                    $690
+                                </a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="invoices-table-col-1">
+                                08/01/2021
+                            </td>
+                            <td class="invoices-table-col-2">
+                                5122
+                            </td>
+                            <td class="invoices-table-col-3">
+                                The Indigo Tea Shop
+                            </td>
+                            <td class="invoices-table-col-4">
+                                Paid
+                            </td>
+                            <td class="invoices-table-col-5 invoices-table-col-last">
+                                <a href="previewInvoice.html" class="row-link green">
+                                    $565
+                                </a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="invoices-table-col-1">
+                                07/25/2021
+                            </td>
+                            <td class="invoices-table-col-2">
+                                5121
+                            </td>
+                            <td class="invoices-table-col-3">
+                                Cheer's
+                            </td>
+                            <td class="invoices-table-col-4">
+                                Paid
+                            </td>
+                            <td class="invoices-table-col-5 invoices-table-col-last">
+                                <a href="previewInvoice.html" class="row-link green">
+                                    $450
+                                </a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="invoices-table-col-1">
+                                07/23/2021
+                            </td>
+                            <td class="invoices-table-col-2">
+                                5120
+                            </td>
+                            <td class="invoices-table-col-3">
+                                Joe's Bar
+                            </td>
+                            <td class="invoices-table-col-4">
+                                Paid
+                            </td>
+                            <td class="invoices-table-col-5 invoices-table-col-last">
+                                <a href="previewInvoice.html" class="row-link green">
+                                    $485
+                                </a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="invoices-table-col-1">
+                                07/20/2021
+                            </td>
+                            <td class="invoices-table-col-2">
+                                5119
+                            </td>
+                            <td class="invoices-table-col-3">
+                                Three Broomsticks
+                            </td>
+                            <td class="invoices-table-col-4">
+                                Paid
+                            </td>
+                            <td class="invoices-table-col-5 invoices-table-col-last">
+                                <a href="previewInvoice.html" class="row-link green">
+                                    $645
+                                </a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="invoices-table-col-1">
+                                07/16/2021
+                            </td>
+                            <td class="invoices-table-col-2">
+                                5117
+                            </td>
+                            <td class="invoices-table-col-3">
+                                Mos Eisley Cantina
+                            </td>
+                            <td class="invoices-table-col-4">
+                                Paid
+                            </td>
+                            <td class="invoices-table-col-5 invoices-table-col-last">
+                                <a href="previewInvoice.html" class="row-link green">
+                                    $650
+                                </a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="invoices-table-col-1">
+                                07/12/2021
+                            </td>
+                            <td class="invoices-table-col-2">
+                                5117
+                            </td>
+                            <td class="invoices-table-col-3">
+                                The Krusty Krab
+                            </td>
+                            <td class="invoices-table-col-4">
+                                Paid
+                            </td>
+                            <td class="invoices-table-col-5 invoices-table-col-last">
+                                <a href="previewInvoice.html" class="row-link green">
+                                    $585
+                                </a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="invoices-table-col-1">
+                                07/16/2021
+                            </td>
+                            <td class="invoices-table-col-2">
+                                5115
+                            </td>
+                            <td class="invoices-table-col-3">
+                                La Ratatouille
+                            </td>
+                            <td class="invoices-table-col-4">
+                                Paid
+                            </td>
+                            <td class="invoices-table-col-5 invoices-table-col-last">
+                                <a href="previewInvoice.html" class="row-link green">
+                                    $485
+                                </a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="invoices-table-col-1">
+                                07/07/2021
+                            </td>
+                            <td class="invoices-table-col-2">
+                                5115
+                            </td>
+                            <td class="invoices-table-col-3">
+                                Pizza Planet
+                            </td>
+                            <td class="invoices-table-col-4">
+                                Paid
+                            </td>
+                            <td class="invoices-table-col-5 invoices-table-col-last">
+                                <a href="previewInvoice.html" class="row-link green">
+                                    $525
+                                </a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="invoices-table-col-1">
+                                07/06/2021
+                            </td>
+                            <td class="invoices-table-col-2">
+                                5113
+                            </td>
+                            <td class="invoices-table-col-3">
+                                Frozen Banana
+                            </td>
+                            <td class="invoices-table-col-4">
+                                Paid
+                            </td>
+                            <td class="invoices-table-col-5 invoices-table-col-last">
+                                <a href="previewInvoice.html" class="row-link green">
+                                    $525
+                                </a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="invoices-table-col-1">
+                                07/04/2021
+                            </td>
+                            <td class="invoices-table-col-2">
+                                5112
+                            </td>
+                            <td class="invoices-table-col-3">
+                                Monk's Cafe
+                            </td>
+                            <td class="invoices-table-col-4">
+                                Paid
+                            </td>
+                            <td class="invoices-table-col-5 invoices-table-col-last">
+                                <a href="previewInvoice.html" class="row-link green">
+                                    $525
+                                </a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="invoices-table-col-1">
+                                06/28/2021
+                            </td>
+                            <td class="invoices-table-col-2">
+                                5111
+                            </td>
+                            <td class="invoices-table-col-3">
+                                Los Pollos Hermanos
+                            </td>
+                            <td class="invoices-table-col-4">
+                                Paid
+                            </td>
+                            <td class="invoices-table-col-5 invoices-table-col-last">
+                                <a href="previewInvoice.html" class="row-link green">
+                                    $720
+                                </a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="invoices-table-col-1">
+                                06/28/2021
+                            </td>
+                            <td class="invoices-table-col-2">
+                                5110
+                            </td>
+                            <td class="invoices-table-col-3">
+                                The Whistle Stop Cafe
+                            </td>
+                            <td class="invoices-table-col-4">
+                                Paid
+                            </td>
+                            <td class="invoices-table-col-5 invoices-table-col-last">
+                                <a href="previewInvoice.html" class="row-link green">
+                                    $385
+                                </a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="invoices-table-col-1">
+                                06/20/2021
+                            </td>
+                            <td class="invoices-table-col-2">
+                                5109
+                            </td>
+                            <td class="invoices-table-col-3">
+                                Vesuvio
+                            </td>
+                            <td class="invoices-table-col-4">
+                                Paid
+                            </td>
+                            <td class="invoices-table-col-5 invoices-table-col-last">
+                                <a href="previewInvoice.html" class="row-link green">$385</a> </td>
+
+
+                        <tr>
+                            <td class="invoices-table-col-1">
+                                06/20/2021
+                            </td>
+                            <td class="invoices-table-col-2">
+                                5108
+                            </td>
+                            <td class="invoices-table-col-3">
+                                The Pie Pole
+                            </td>
+                            <td class="invoices-table-col-4">
+                                Paid
+                            </td>
+                            <td class="invoices-table-col-5 invoices-table-col-last">
+                                <a href="previewInvoice.html" class="row-link green">
+                                    $515
+                                </a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="invoices-table-col-1">
+                                06/10/2021
+                            </td>
+                            <td class="invoices-table-col-2">
+                                5107
+                            </td>
+                            <td class="invoices-table-col-3">
+                                Louie's Italian Restaurant
+                            </td>
+                            <td class="invoices-table-col-4">
+                                Paid
+                            </td>
+                            <td class="invoices-table-col-5 invoices-table-col-last">
+                                <a href="previewInvoice.html" class="row-link green">
+                                    $515
+                                </a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="invoices-table-col-1">
+                                06/10/2021
+                            </td>
+                            <td class="invoices-table-col-2">
+                                5106
+                            </td>
+                            <td class="invoices-table-col-3">
+                                The Frosty Place
+                            </td>
+                            <td class="invoices-table-col-4">
+                                Paid
+                            </td>
+                            <td class="invoices-table-col-5 invoices-table-col-last">
+                                <a href="previewInvoice.html" class="row-link green">
+                                    $505
+                                </a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="invoices-table-col-1">
+                                06/10/2021
+                            </td>
+                            <td class="invoices-table-col-2">
+                                5105
+                            </td>
+                            <td class="invoices-table-col-3">
+                                Joe's Pie Diner
+                            </td>
+                            <td class="invoices-table-col-4">
+                                Paid
+                            </td>
+                            <td class="invoices-table-col-5 invoices-table-col-last">
+                                <a href="previewInvoice.html" class="row-link green">
+                                    $685
+                                </a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="invoices-table-col-1">
+                                06/02/2021
+                            </td>
+                            <td class="invoices-table-col-2">
+                                5104
+                            </td>
+                            <td class="invoices-table-col-3">
+                                Chocolate Factory
+                            </td>
+                            <td class="invoices-table-col-4">
+                                Paid
+                            </td>
+                            <td class="invoices-table-col-5 invoices-table-col-last">
+                                <a href="previewInvoice.html" class="row-link green">$575</a> </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
         </div>
     </div>
 
-    <div id="invoices-footer-container"></div>
-
-    <button class="plus-button"><a href="previewInvoice.html"><span class="material-icons"
-                id="plusButton">add_circle</span><span class="plus-button-text">New
-                Invoice</span></a></button>
+    <button class="plus-button button"><a href="previewInvoice.html"><span class="material-icons"
+                id="plusButton">add_circle</span><span id="plus-button-text">New Invoice</a></span></button>
 
 
 </body>
