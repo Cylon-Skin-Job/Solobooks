@@ -654,7 +654,7 @@ tr:nth-child(even) {
 
 .input {
     width: 140px;
-    height: auto;
+    height: 45px;
     border: solid #2a2438 2px;
     border-radius: 5px;
     text-align: center;
@@ -668,13 +668,13 @@ tr:nth-child(even) {
 }
 
 .notes {
-    width: 220px;
+    width: 240px;
     height: 120px;
 }
 
 .label {
     width: auto;
-    font-size: .6rem;
+    font-size: .8rem;
     Font-weight: 800;
     color: black;
     margin: auto;
