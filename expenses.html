@@ -7,486 +7,470 @@
     <meta name="theme-color" content="#2a2438" media="(prefers-color-scheme: light)">
     <meta name="theme-color" content="#2a2438" media="(prefers-color-scheme: dark)">
 
-    <link rel="stylesheet" href="preview.css">
-    <link rel="stylesheet" href="main.css">
-    <link rel="stylesheet" href="expenses.css">
-    <link rel="stylesheet" href="tables.css">
+    <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet"
         href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
 </head>
 
 <body>
 
-    <nav>
+    <div class="site-grid">
+
+        <div class="site-header">
+            <header>
+                <h1 class="site-h1">SoloBooks</h1>
+                <h2 class="site-h2">RC Exhaust</h2>
+            </header>
+        </div>
+
+        <div class="site-nav-background"></div>
+        <div class="site-nav-background-alt"></div>
         <div class="site-nav">
+            <nav>
+                <ul class="navigation">
+                    <li>
 
-            <div class="site-nav-top">
-                <h1 class="solo">SoloBooks</h1>
-                <span class="site-header-company-name">RC Exhaust</span>
+                        <a href="index.html">
+                            <span class="material-symbols-outlined" alt=" ">analytics
+                            </span>
+                            Overview
+                        </a>
+
+                    </li>
+                    <li>
+                        <a href="invoices.html">
+                            <span class="material-symbols-outlined" alt=" ">description</span>
+                            Invoices
+                        </a>
+                    </li>
+                    <li class="active">
+                        <a href="expenses.html">
+                            <span class="material-symbols-outlined" alt=" ">receipt_long</span>
+                            Expenses
+                        </a>
+                    </li>
+                    <li>
+                        <a href="customers.html">
+                            <span class="material-symbols-outlined" alt=" ">people</span>
+                            Customers
+                        </a>
+                    </li>
+                    <li>
+                        <a href="settings.html">
+                            <span class="material-symbols-outlined" alt=" ">settings</span>
+                            Settings
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+
+
+        <section>
+            <div class="site-section">
+                <h3 class="site-h3">Expenses</h3>
             </div>
+        </section>
 
-            <ul class="navigation">
-                <li>
-                    <a href="index.html">
-                        <span class="material-icons" alt=" ">analytics
-                        </span>
-                        Overview
-                    </a>
-                </li>
-                <li>
-                    <a href="invoices.html">
-                        <span class="material-icons" alt=" ">description</span>
-                        Invoices
-                    </a>
-                </li>
-                <li class="active">
-                    <a href="expenses.html">
-                        <span class="material-icons" alt=" ">receipt_long</span>
-                        Expenses
-                    </a>
-                </li>
-                <li>
-                    <a href="customers.html">
-                        <span class="material-icons" alt=" ">people</span>
-                        Customers
-                    </a>
-                </li>
-                <li>
-                    <a href="settings.html">
-                        <span class="material-icons" alt=" ">settings</span>
-                        Settings
-                    </a>
-                </li>
-            </ul>
-        </div>
-    </nav>
-    <header>
-        <h2>Expenses</h2>
-    </header>
+        <div class="site-main">
 
-    <div class="main">
-        <div class="table-container">
+            <div class="whitespace"></div>
 
-            <div class="ribbon fixed-ribbon"><span class="expenses-header-month">September </span><span
-                    class="expenses-header-year">2021</span></div>
-
-
-            <table class="expenses">
-                <thead>
-                    <tr class="tr-head">
-                        <th class="col-1">Date</th>
-                        <th class="col-2">Category</th>
-                        <th class="col-3">Notes</th>
-                        <th class="col-4 col-last">Amount</th>
-                    </tr>
-                </thead>
-
-                <tbody>
-
-
-                    <tr>
-                        <td class="col-1">09/21/2021</td>
-                        <td class="col-2">Job Supplies</td>
-                        <td class="col-3">Home Depot</td>
-                        <td class="col-4 col-last">
-                            <a class="row-link" href="#expense">
-                                $69.58
-                            </a></td>
-
-                    </tr>
-
-                    <tr>
-                        <td class="col-1">09/18/2021</td>
-                        <td class="col-2">Insurance</td>
-                        <td class="col-3">Regressive</td>
-                        <td class="col-4 col-last">
-                            <a class="row-link" href="#expense">
-                                $102.38
-                            </a></td>
-                    </tr>
-
-                    <tr>
-                        <td class="col-1">09/15/2021</td>
-                        <td class="col-2">Advertising</td>
-                        <td class="col-3">XP Printers (business mailer)</td>
-                        <td class="col-4 col-last">
-                            <a class="row-link" href="#expense">
-                                $73.01
-                            </a></td>
-                    </tr>
-
-                    <tr>
-                        <td class="col-1">09/12/2021</td>
-                        <td class="col-2">Utilities & Phone</td>
-                        <td class="col-3">Mountain Communications</td>
-                        <td class="col-4 col-last">
-                            <a class="row-link" href="#expense">
-                                $106.76
-                            </a></td>
-                    </tr>
-
-                    <tr>
-                        <td class="col-1">09/09/2021</td>
-                        <td class="col-2">Fuel</td>
-                        <td class="col-3">Giggle Springs Gas Station</td>
-                        <td class="col-4 col-last">
-                            <a class="row-link" href="#expense">
-                                $27.48
-                            </a></td>
-                    </tr>
-
-                    <tr>
-                        <td class="col-1">09/07/2021</td>
-                        <td class="col-2">Job Supplies</td>
-                        <td class="col-3">Lowes</td>
-                        <td class="col-4 col-last">
-                            <a class="row-link" href="#expense">
-                                $19.52
-                            </a></td>
-                    </tr>
-
-                    <tr>
-                        <td class="col-1">09/06/2021</td>
-                        <td class="col-2">Job Supplies</td>
-                        <td class="col-3">Amazon.com (plastic sheeting)</td>
-                        <td class="col-4 col-last"><a class="row-link" href="#expense">
-                                $12.38
-                            </a></td>
-                    </tr>
-                </tbody>
-
-                <tfoot>
-
-                    <tr class="tr-foot">
-                        <td class="table-foot-1" colspan="2">Total:</td>
-                        <td class="table-foot-2">$411.11</td>
-                    </tr>
-
-                </tfoot>
-            </table>
-
-
-            <div class="ribbon sticky-ribbon"><span class="expenses-header-month">August </span><span
-                    class="expenses-header-year">2021</span></div>
-            <div class="gradient"></div>
-
-            <table class="expenses">
-
-                <tbody>
-
-
-                    <tr>
-                        <td class="col-1">08/20/2021</td>
-                        <td class="col-2">Fuel</td>
-                        <td class="col-3">Station 69</td>
-                        <td class="col-4 col-last">
-                            <a class="row-link" href="#expense">
-                                $21.58
-                            </a></td>
-
-                    </tr>
-
-                    <tr>
-                        <td class="col-1">08/18/2021</td>
-                        <td class="col-2">Insurance</td>
-                        <td class="col-3">Regressive</td>
-                        <td class="col-4 col-last">
-                            <a class="row-link" href="#expense">
-                                $102.38
-                            </a></td>
-                    </tr>
-
-                    <tr>
-                        <td class="col-1">08/15/2021</td>
-                        <td class="col-2">Job Supplies</td>
-                        <td class="col-3">Amazon.com (plastic sheeting)</td>
-                        <td class="col-4 col-last">
-                            <a class="row-link" href="#expense">
-                                $103.01
-                            </a></td>
-                    </tr>
-
-                    <tr>
-                        <td class="col-1">08/12/2021</td>
-                        <td class="col-2">Utilities & Phone</td>
-                        <td class="col-3">Mountain Communications</td>
-                        <td class="col-4 col-last">
-                            <a class="row-link" href="#expense">
-                                $106.76
-                            </a></td>
-                    </tr>
-
-                    <tr>
-                        <td class="col-1">08/07/2021</td>
-                        <td class="col-2">Job Supplies</td>
-                        <td class="col-3">Small Town Hardware</td>
-                        <td class="col-4 col-last">
-                            <a class="row-link" href="#expense">
-                                $20.48
-                            </a></td>
-                    </tr>
-
-                    <tr>
-                        <td class="col-1">08/09/2021</td>
-                        <td class="col-2">Fuel</td>
-                        <td class="col-3">Giggle Springs Gas Station</td>
-                        <td class="col-4 col-last">
-                            <a class="row-link" href="#expense">
-                                $67.52
-                            </a></td>
-                    </tr>
-
-                    <tr>
-                        <td class="col-1">08/06/2021</td>
-                        <td class="col-2">Job Supplies</td>
-                        <td class="col-3">Amazon.com (rags, plastic, trash bags)</td>
-                        <td class="col-4 col-last"><a class="row-link" href="#expense">
-                                $92.58
-                            </a></td>
-                    </tr>
-                </tbody>
-
-                <tfoot>
-
-                    <tr class="tr-foot">
-                        <td class="table-foot-1" colspan="2">Total:</td>
-                        <td class="table-foot-2">$620.19</td>
-                    </tr>
-
-                </tfoot>
-            </table>
-
-            <div class="ribbon sticky-ribbon"><span class="expenses-header-month">July </span><span
-                    class="expenses-header-year">2021</span></div>
-            <div class="gradient"></div>
-
-            <table class="expenses">
-
-                <tbody>
-
-
-                    <tr>
-                        <td class="col-1">07/24/2021</td>
-                        <td class="col-2">Job Supplies</td>
-                        <td class="col-3">Home Depot</td>
-                        <td class="col-4 col-last">
-                            <a class="row-link" href="#expense">
-                                $69.58
-                            </a></td>
-
-                    </tr>
-
-                    <tr>
-                        <td class="col-1">07/21/2021</td>
-                        <td class="col-2">Job Supplies</td>
-                        <td class="col-3">Home Depot</td>
-                        <td class="col-4 col-last">
-                            <a class="row-link" href="#expense">
-                                $69.58
-                            </a></td>
-
-                    </tr>
-
-                    <tr>
-                        <td class="col-1">07/18/2021</td>
-                        <td class="col-2">Insurance</td>
-                        <td class="col-3">Regressive</td>
-                        <td class="col-4 col-last">
-                            <a class="row-link" href="#expense">
-                                $102.38
-                            </a></td>
-                    </tr>
-
-                    <tr>
-                        <td class="col-1">07/15/2021</td>
-                        <td class="col-2">Advertising</td>
-                        <td class="col-3">XP Printers (business mailer)</td>
-                        <td class="col-4 col-last">
-                            <a class="row-link" href="#expense">
-                                $40.12
-                            </a></td>
-                    </tr>
-
-                    <tr>
-                        <td class="col-1">07/12/2021</td>
-                        <td class="col-2">Utilities & Phone</td>
-                        <td class="col-3">Mountain Communications</td>
-                        <td class="col-4 col-last">
-                            <a class="row-link" href="#expense">
-                                $106.76
-                            </a></td>
-                    </tr>
-
-                    <tr>
-                        <td class="col-1">07/11/2021</td>
-                        <td class="col-2">Job Supplies</td>
-                        <td class="col-3">Amazon.com (plastic sheeting)</td>
-                        <td class="col-4 col-last">
-                            <a class="row-link" href="#expense">
-                                $98.06
-                            </a></td>
-                    </tr>
-
-                    <tr>
-                        <td class="col-1">07/07/2021</td>
-                        <td class="col-2">Job Supplies</td>
-                        <td class="col-3">Lowes</td>
-                        <td class="col-4 col-last">
-                            <a class="row-link" href="#expense">
-                                $53.42
-                            </a></td>
-                    </tr>
-
-                    <tr>
-                        <td class="col-1">07/09/2021</td>
-                        <td class="col-2">Fuel</td>
-                        <td class="col-3">Giggle Springs Gas Station</td>
-                        <td class="col-4 col-last">
-                            <a class="row-link" href="#expense">
-                                $97.45
-                            </a></td>
-                    </tr>
-
-                </tbody>
-
-                <tfoot>
-
-                    <tr class="tr-foot">
-                        <td class="table-foot-1" colspan="2">Total:</td>
-                        <td class="table-foot-2">$712.67</td>
-                    </tr>
-
-                </tfoot>
-            </table>
-
-            <div class="ribbon sticky-ribbon"><span class="expenses-header-month">June </span><span
-                    class="expenses-header-year">2021</span></div>
-            <div class="gradient"></div>
-
-            <table>
-                <tbody>
-
-
-                    <tr>
-                        <td class="col-1">06/21/2021</td>
-                        <td class="col-2">Job Supplies</td>
-                        <td class="col-3">Home Depot</td>
-                        <td class="col-4 col-last">
-                            <a class="row-link" href="#expense">
-                                $69.58
-                            </a></td>
-
-                    </tr>
-
-                    <tr>
-                        <td class="col-1">06/18/2021</td>
-                        <td class="col-2">Insurance</td>
-                        <td class="col-3">Regressive</td>
-                        <td class="col-4 col-last">
-                            <a class="row-link" href="#expense">
-                                $102.38
-                            </a></td>
-                    </tr>
-
-                    <tr>
-                        <td class="col-1">06/15/2021</td>
-                        <td class="col-2">Advertising</td>
-                        <td class="col-3">XP Printers (business mailer)</td>
-                        <td class="col-4 col-last">
-                            <a class="row-link" href="#expense">
-                                $73.01
-                            </a></td>
-                    </tr>
-
-                    <tr>
-                        <td class="col-1">06/12/2021</td>
-                        <td class="col-2">Utilities & Phone</td>
-                        <td class="col-3">Mountain Communications</td>
-                        <td class="col-4 col-last">
-                            <a class="row-link" href="#expense">
-                                $106.76
-                            </a></td>
-                    </tr>
-
-                    <tr>
-                        <td class="col-1">06/09/2021</td>
-                        <td class="col-2">Fuel</td>
-                        <td class="col-3">Giggle Springs Gas Station</td>
-                        <td class="col-4 col-last">
-                            <a class="row-link" href="#expense">
-                                $27.48
-                            </a></td>
-                    </tr>
-
-                    <tr>
-                        <td class="col-1">06/07/2021</td>
-                        <td class="col-2">Job Supplies</td>
-                        <td class="col-3">Lowes</td>
-                        <td class="col-4 col-last">
-                            <a class="row-link" href="#expense">
-                                $19.52
-                            </a></td>
-                    </tr>
-
-                    <tr>
-                        <td class="col-1">06/06/2021</td>
-                        <td class="col-2">Job Supplies</td>
-                        <td class="col-3">Amazon.com (plastic sheeting)</td>
-                        <td class="col-4 col-last"><a class="row-link" href="#expense">
-                                $12.38
-                            </a></td>
-                    </tr>
-                </tbody>
-
-                <tfoot>
-
-                    <tr class="tr-foot">
-                        <td class="table-foot-1" colspan="2">Total:</td>
-                        <td class="table-foot-2">$398.29</td>
-                    </tr>
-
-                </tfoot>
-            </table>
-        </div>
-        </div>
-
-
-
-        <button class="plus-button"><a href="#expense"><span class="material-icons"
-                    id="plusButton">add_circle</span><span class="plus-button-text">New
-                    Expense</span></a></button>
-
-        <div class="modal-container" id="expense">
-            <div class="modal-wrapper modal-expense">
+            <div class="site-content">
                 
-                
-                    <div class="modal-header">
-
-                        <h3 class="modal-h3">Edit Expense</h3>
-
-                        <button class="button-exit-modal">
-                            <a href="expenses.html"><span class="material-symbols-outlined">close</span></a>
-                        </button>
-
+                <div>
+                    <div class="ribbon ribbon-top">
+                        <h4 class="site-h4">September 2021</h4>
+                        <span class="ribbon-total">Total: $411.11</span>
                     </div>
 
-                <div class="input_wrapper">
-                    <label for="amount" class="label">Amount: $ </label>
-                    <input type="text" rows="1" cols="10" id="text-area-item-amount" name="amount"
-                        class="input" value="69.58">
+                    <table class="top-table">
+                        <thead>
+                            <tr class="table-head-row">
+                                <th class="td-date">Date</th>
+                                <th class="td-description-1">Category</th>
+                                <th class="td-description-2">Notes</th>
+                                <th class="td-total">Amount</th>
+                            </tr>
+                        </thead>
+
+                        <tbody>
+
+
+                            <tr>
+                                <td class="td-date">09/21/2021</td>
+                                <td class="td-description-1">Job Supplies</td>
+                                <td class="td-description-2">Home Depot</td>
+                                <td class="td-total">
+                                    <a class="row-link" href="#expense">
+                                        $69.58
+                                    </a></td>
+
+                            </tr>
+
+                            <tr>
+                                <td class="td-date">09/18/2021</td>
+                                <td class="td-description-1">Insurance</td>
+                                <td class="td-description-2">Regressive</td>
+                                <td class="td-total">
+                                    <a class="row-link" href="#expense">
+                                        $102.38
+                                    </a></td>
+                            </tr>
+
+                            <tr>
+                                <td class="td-date">09/15/2021</td>
+                                <td class="td-description-1">Advertising</td>
+                                <td class="td-description-2">XP Printers (business mailer)</td>
+                                <td class="td-total">
+                                    <a class="row-link" href="#expense">
+                                        $73.01
+                                    </a></td>
+                            </tr>
+
+                            <tr>
+                                <td class="td-date">09/12/2021</td>
+                                <td class="td-description-1">Utilities & Phone</td>
+                                <td class="td-description-2">Mountain Communications</td>
+                                <td class="td-total">
+                                    <a class="row-link" href="#expense">
+                                        $106.76
+                                    </a></td>
+                            </tr>
+
+                            <tr>
+                                <td class="td-date">09/09/2021</td>
+                                <td class="td-description-1">Fuel</td>
+                                <td class="td-description-2">Giggle Springs Gas Station</td>
+                                <td class="td-total">
+                                    <a class="row-link" href="#expense">
+                                        $27.48
+                                    </a></td>
+                            </tr>
+
+                            <tr>
+                                <td class="td-date">09/07/2021</td>
+                                <td class="td-description-1">Job Supplies</td>
+                                <td class="td-description-2">Lowes</td>
+                                <td class="td-total">
+                                    <a class="row-link" href="#expense">
+                                        $19.52
+                                    </a></td>
+                            </tr>
+
+                            <tr>
+                                <td class="td-date">09/06/2021</td>
+                                <td class="td-description-1">Job Supplies</td>
+                                <td class="td-description-2">Amazon.com (plastic sheeting)</td>
+                                <td class="td-total"><a class="row-link" href="#expense">
+                                        $12.38
+                                    </a></td>
+                            </tr>
+                        </tbody>
+
+                    </table>
                 </div>
 
-                <div class="input_wrapper">
-                    <label for="date" class="label">Date:</label>
-                    <input type="date" id="datePicker2" name="date" class="datepicker" min="1997-01-01" value="2021-09-21"
-                        max="2030-12-31">
+                <div>
+                <div class="ribbon ribbon-top">
+                    <h4 class="site-h4">August 2021</h4>
+                    <span class="ribbon-total">Total: $301.18</span>
                 </div>
 
-                <div class="input_wrapper">
-                    <select id="selectItem" class="selector">
-                        <option value="0">Expense Category:</option>
+                <table class="expenses">
+
+                    <tbody>
+
+
+                        <tr>
+                            <td class="td-date">08/20/2021</td>
+                            <td class="td-description-1">Fuel</td>
+                            <td class="td-description-2">Station 69</td>
+                            <td class="td-total">
+                                <a class="row-link" href="#expense">
+                                    $21.58
+                                </a></td>
+
+                        </tr>
+
+                        <tr>
+                            <td class="td-date">08/18/2021</td>
+                            <td class="td-description-1">Insurance</td>
+                            <td class="td-description-2">Regressive</td>
+                            <td class="td-total">
+                                <a class="row-link" href="#expense">
+                                    $102.38
+                                </a></td>
+                        </tr>
+
+                        <tr>
+                            <td class="td-date">08/15/2021</td>
+                            <td class="td-description-1">Job Supplies</td>
+                            <td class="td-description-2">Amazon.com (plastic sheeting)</td>
+                            <td class="td-total">
+                                <a class="row-link" href="#expense">
+                                    $103.01
+                                </a></td>
+                        </tr>
+
+                        <tr>
+                            <td class="td-date">08/12/2021</td>
+                            <td class="td-description-1">Utilities & Phone</td>
+                            <td class="td-description-2">Mountain Communications</td>
+                            <td class="td-total">
+                                <a class="row-link" href="#expense">
+                                    $106.76
+                                </a></td>
+                        </tr>
+
+                        <tr>
+                            <td class="td-date">08/07/2021</td>
+                            <td class="td-description-1">Job Supplies</td>
+                            <td class="td-description-2">Small Town Hardware</td>
+                            <td class="td-total">
+                                <a class="row-link" href="#expense">
+                                    $20.48
+                                </a></td>
+                        </tr>
+
+                        <tr>
+                            <td class="td-date">08/09/2021</td>
+                            <td class="td-description-1">Fuel</td>
+                            <td class="td-description-2">Giggle Springs Gas Station</td>
+                            <td class="td-total">
+                                <a class="row-link" href="#expense">
+                                    $67.52
+                                </a></td>
+                        </tr>
+
+                        <tr>
+                            <td class="td-date">08/06/2021</td>
+                            <td class="td-description-1">Job Supplies</td>
+                            <td class="td-description-2">Amazon.com (rags, plastic, trash bags)</td>
+                            <td class="td-total"><a class="row-link" href="#expense">
+                                    $92.58
+                                </a></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div>
+                <div class="ribbon ribbon-top">
+                    <h4 class="site-h4">July 2021</h4>
+                    <span class="ribbon-total">Total: $581.91</span>
+                </div>
+
+                <table class="expenses">
+
+                    <tbody>
+
+
+                        <tr>
+                            <td class="td-date">07/24/2021</td>
+                            <td class="td-description-1">Job Supplies</td>
+                            <td class="td-description-2">Home Depot</td>
+                            <td class="td-total">
+                                <a class="row-link" href="#expense">
+                                    $69.58
+                                </a></td>
+
+                        </tr>
+
+                        <tr>
+                            <td class="td-date">07/21/2021</td>
+                            <td class="td-description-1">Job Supplies</td>
+                            <td class="td-description-2">Home Depot</td>
+                            <td class="td-total">
+                                <a class="row-link" href="#expense">
+                                    $70.45 
+                                </a></td>
+
+                        </tr>
+
+                        <tr>
+                            <td class="td-date">07/18/2021</td>
+                            <td class="td-description-1">Insurance</td>
+                            <td class="td-description-2">Regressive</td>
+                            <td class="td-total">
+                                <a class="row-link" href="#expense">
+                                    $102.38
+                                </a></td>
+                        </tr>
+
+                        <tr>
+                            <td class="td-date">07/15/2021</td>
+                            <td class="td-description-1">Advertising</td>
+                            <td class="td-description-2">XP Printers (business mailer)</td>
+                            <td class="td-total">
+                                <a class="row-link" href="#expense">
+                                    $40.12
+                                </a></td>
+                        </tr>
+
+                        <tr>
+                            <td class="td-date">07/12/2021</td>
+                            <td class="td-description-1">Utilities & Phone</td>
+                            <td class="td-description-2">Mountain Communications</td>
+                            <td class="td-total">
+                                <a class="row-link" href="#expense">
+                                    $106.76
+                                </a></td>
+                        </tr>
+
+                        <tr>
+                            <td class="td-date">07/11/2021</td>
+                            <td class="td-description-1">Job Supplies</td>
+                            <td class="td-description-2">Amazon.com (plastic sheeting)</td>
+                            <td class="td-total">
+                                <a class="row-link" href="#expense">
+                                    $98.06
+                                </a></td>
+                        </tr>
+
+                        <tr>
+                            <td class="td-date">07/07/2021</td>
+                            <td class="td-description-1">Job Supplies</td>
+                            <td class="td-description-2">Lowes</td>
+                            <td class="td-total">
+                                <a class="row-link" href="#expense">
+                                    $53.42
+                                </a></td>
+                        </tr>
+
+                        <tr>
+                            <td class="td-date">07/09/2021</td>
+                            <td class="td-description-1">Fuel</td>
+                            <td class="td-description-2">Giggle Springs Gas Station</td>
+                            <td class="td-total">
+                                <a class="row-link" href="#expense">
+                                    $97.45
+                                </a></td>
+                        </tr>
+
+                    </tbody>
+
+                </table>
+
+                <div class="ribbon ribbon-top">
+                    <h4 class="site-h4">June 2021</h4>
+                    <span class="ribbon-total">Total: $521.55</span>
+                </div>
+
+                <table>
+                    <tbody>
+
+
+                        <tr>
+                            <td class="td-date">06/21/2021</td>
+                            <td class="td-description-1">Job Supplies</td>
+                            <td class="td-description-2">Home Depot</td>
+                            <td class="td-total">
+                                <a class="row-link" href="#expense">
+                                    $69.58
+                                </a></td>
+
+                        </tr>
+
+                        <tr>
+                            <td class="td-date">06/18/2021</td>
+                            <td class="td-description-1">Insurance</td>
+                            <td class="td-description-2">Regressive</td>
+                            <td class="td-total">
+                                <a class="row-link" href="#expense">
+                                    $102.38
+                                </a></td>
+                        </tr>
+
+                        <tr>
+                            <td class="td-date">06/15/2021</td>
+                            <td class="td-description-1">Advertising</td>
+                            <td class="td-description-2">XP Printers (business mailer)</td>
+                            <td class="td-total">
+                                <a class="row-link" href="#expense">
+                                    $73.01
+                                </a></td>
+                        </tr>
+
+                        <tr>
+                            <td class="td-date">06/12/2021</td>
+                            <td class="td-description-1">Utilities & Phone</td>
+                            <td class="td-description-2">Mountain Communications</td>
+                            <td class="td-total">
+                                <a class="row-link" href="#expense">
+                                    $106.76
+                                </a></td>
+                        </tr>
+
+                        <tr>
+                            <td class="td-date">06/09/2021</td>
+                            <td class="td-description-1">Fuel</td>
+                            <td class="td-description-2">Giggle Springs Gas Station</td>
+                            <td class="td-total">
+                                <a class="row-link" href="#expense">
+                                    $27.48
+                                </a></td>
+                        </tr>
+
+                        <tr>
+                            <td class="td-date">06/07/2021</td>
+                            <td class="td-description-1">Job Supplies</td>
+                            <td class="td-description-2">Lowes</td>
+                            <td class="td-total">
+                                <a class="row-link" href="#expense">
+                                    $19.52
+                                </a></td>
+                        </tr>
+
+                        <tr>
+                            <td class="td-date">06/06/2021</td>
+                            <td class="td-description-1">Job Supplies</td>
+                            <td class="td-description-2">Amazon.com (plastic sheeting)</td>
+                            <td class="td-total"><a class="row-link" href="#expense">
+                                    $12.38
+                                </a></td>
+                        </tr>
+                    </tbody>
+
+                    <tfoot>
+
+                    </tfoot>
+                </table>
+            </div>
+        </div>
+
+
+
+        <button class="plus-button button"><a href="#expense"><span class="material-symbols-outlined"
+                    id="plusButton">add_circle</span><span id="plus-button-text">New Expense</a></span></button>
+
+        <div class="modal-container" id="expense">
+            <div class="modal-wrapper">
+
+
+                <div class="modal-header">
+
+                    <h3 class="modal-h5">Edit Expense</h3>
+
+                </div>
+
+                <div class="input-wrapper">
+                    <label for="amount" class="label">Amount</label>
+                    <input type="text" rows="1" cols="10" id="text-area-item-amount" name="amount" class="input"
+                        value="69.58">
+                </div>
+
+                <div class="input-wrapper">
+                    <label for="date" class="label">Date</label>
+                    <input type="date" id="datePicker2" name="date" class="input" min="1997-01-01"
+                        value="2021-09-21" max="2030-12-31">
+                </div>
+
+                <div class="input-wrapper">
+                    <label for="category" class="label">Category</label>
+                    <select id="selectItem" name="category" class="input selector">
+                        <option value="0">Choose...</option>
                         <option value="0">Advertizing</option>
                         <option value="1">Fuel</option>
                         <option value="2">Insurance</option>
@@ -496,20 +480,20 @@
                     </select>
                 </div>
 
-                
 
-                <div class="input_wrapper notes_wrapper">
-                    <label for="notes" class="label label-notes">Notes:</label>
-                    <textarea id="description" name="notes" class="textarea-notes" maxlength="160"></textarea>
+
+                <div class="input-wrapper">
+                    <label for="notes" class="label">Notes</label>
+                    <textarea id="description" name="notes" class="input notes" maxlength="160"></textarea>
                 </div>
 
-                <div class="modal-footer preview-footer-mobile">
+                <div class="modal-footer">
 
-                    <button class="button-cancel">
+                    <button class="modal-footer-button button">
                         <a href="expenses.html">Cancel</a>
                     </button>
 
-                    <button class="button-save">
+                    <button class="modal-footer-button button">
                         <a href="expenses.html">Save</a>
                     </button>
                 </div>
@@ -517,7 +501,7 @@
             </div>
             <a class="close-modal" href="expenses.html"></a>
         </div>
-    
+
 
 
 </body>
