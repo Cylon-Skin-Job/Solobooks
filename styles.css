@@ -676,7 +676,7 @@ tr:nth-child(even) {
     width: auto;
     font-size: .6rem;
     Font-weight: 800;
-    color: #2a2438;
+    color: black;
     margin: auto;
     padding: 0px 3px;
     position: relative;
@@ -1748,18 +1748,37 @@ width to create 8.5 x 11 ratio */
 
 .modal-wrapper {
     display: block;
-    width: 300px;
+    width: 100%;
+    height: 100%;
+    border-radius: 0px;
+    background-color: #dbd8e3;
+
 }
 
 .input-wrapper {
     width: 100%;
 }
 
+.label {
+    background-image: linear-gradient(#dbd8e3 75%, white 25%);
+}
+
 .modal-h5 {
     height: 30px;
     width: 100%;
     padding: 0px;
-    margin: 0px;
+    margin: 0px 0px 20px;
+}
+
+.modal-footer {
+    position: fixed;
+    bottom: 0px;
+    height: 50px;
+    justify-content: space-between;
+} 
+
+.modal-footer-button {
+    border: none;
 }
 
     .summary_container-header,
