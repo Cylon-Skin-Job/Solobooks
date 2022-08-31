@@ -14,7 +14,7 @@ document.getElementById('table').appendChild(table);
 
 $.ajax({
     method: 'GET',
-    url: '/data.json',
+    url: 'https://cylon-skin-job.github.io/Solobooks/data.json',
     success: function (response) {
         myArray = response.data
         buildTable(myArray)
