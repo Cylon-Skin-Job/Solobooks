@@ -14,7 +14,7 @@ document.getElementById('table').appendChild(table);
 
 $.ajax({
     method: 'GET',
-    url: 'https://rc-resume.neocities.org/data.json',
+    url: '/data.json',
     success: function (response) {
         myArray = response.data
         buildTable(myArray)

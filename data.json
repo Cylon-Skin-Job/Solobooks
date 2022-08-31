@@ -1,13 +1,30 @@
-{
-    "customerName": "Bob's Burgers",
-    "customerPhone": "(445) 867-5309",
-    "customerEmail": "bob@bobsburgers.com",
-    "customerAddress": [{
-        "customerAddress-1": "Molecule Man",
-        "customerAddress-2": 29,
-        "customerCity": "Dan Jukes",
-        "customerState": "Radiation resistance",
-        "customerZip": "Turning tiny"
-    }]
+[{
+        "iDate": "09/28/2021",
+        "iNum": "5224",
+        "iCus": "Cafe Nervosa",
+        "iStat": "Unpaid",
+        "iTotal": "$690"
+    },
+    {
+        "iDate": "09/25/2021",
+        "iNum": "5141",
+        "iCus": "The Indigo Tea Shop",
+        "iStat": "Unpaid",
+        "iTotal": "$565"
+    },
+    {
+        "iDate": "09/20/2021",
+        "iNum": "5140",
+        "iCus": "Cheer&#39s",
+        "iStat": "Unpaid",
+        "iTotal": "$690"
+    },
+    {
+        "iDate": "09/19/2021",
+        "iNum": "5138",
+        "iCus": "Pizza Planet",
+        "iStat": "Unpaid",
+        "iTotal": "$585"
+    },
 
-}
+]
