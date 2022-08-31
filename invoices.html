@@ -9,7 +9,8 @@
 
     <link rel="stylesheet" href="styles.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-
+    <script src="https://code.jquery.com/jquery-3.6.1.js"
+        integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI=" crossorigin="anonymous"></script>
 </head>
 
 <body>
@@ -77,105 +78,14 @@
             <div class="whitespace"></div>
 
             <div class="site-content">
-                <div>
+                <div id="table">
                     <div class="ribbon ribbon-top">
                         <h4 class="site-h4">Unpaid Invoices</h4>
                         <span class="ribbon-total">Total: $2,190.00</span>
                     </div>
 
+                    <script src="script.js"></script>
 
-
-                    <table class="top-table invoices-table-unpaid">
-                        <thead>
-                            <tr class="table-head-row">
-                                <th class="td-order-3">Date</th>
-                                <th class="td-order-4">Invoice No.</th>
-                                <th class="td-order-1">Customer</th>
-                                <th class="td-order-5">Status</th>
-                                <th class="td-order-2">Amount</th>
-                            </tr>
-                        </thead>
-
-                        <tbody class="row-hover">
-
-                            <tr id="hover">
-                                <td class="td-order-3">
-                                    09/28/2022
-                                </td>
-                                <td class="td-order-4">
-                                    5224
-                                </td>
-                                <td class="td-order-1">
-                                    Cafe Nervosa
-                                </td>
-                                <td class="td-order-5">
-                                    Unpaid
-                                </td>
-                                <td class="td-order-2 invoices-table-col-last">
-                                    <a href="previewInvoice.html" class="row-link red">$690</a>
-                                </td>
-                            </tr>
-
-
-
-                            <tr>
-                                <td class="td-order-3">
-                                    09/25/2021
-                                </td>
-                                <td class="td-order-4">
-                                    5141
-                                </td>
-                                <td class="td-order-1">
-                                    The Indigo Tea Shop
-                                </td>
-                                <td class="td-order-5">
-                                    Unpaid
-                                </td>
-                                <td class="td-order-2 invoices-table-col-last">
-                                    <a href="previewInvoice.html" class="row-link red">$565</a>
-                                </td>
-                            </tr>
-
-
-                            <tr>
-                                <td class="td-order-3">
-                                    09/20/2021
-                                </td>
-                                <td class="td-order-4">
-                                    5140
-                                </td>
-                                <td class="td-order-1">
-                                    Cheer's
-                                </td>
-                                <td class="td-order-5">
-                                    Unpaid
-                                </td>
-                                <td class="td-order-2 invoices-table-col-last">
-                                    <a href="previewInvoice.html" class="row-link red">$450</a>
-                                </td>
-                            </tr>
-
-
-                            <tr>
-                                <td class="td-order-3">
-                                    09/15/2021
-                                </td>
-                                <td class="td-order-4">
-                                    5139
-                                </td>
-                                <td class="td-order-1">
-                                    Joe's Bar
-                                </td>
-                                <td class="td-order-5">
-                                    Unpaid
-                                </td>
-                                <td class="td-order-2 invoices-table-col-last">
-                                    <a href="previewInvoice.html" class="row-link red">$485</a>
-                                </td>
-                            </tr>
-
-                        </tbody>
-                    </table>
                 </div>
 
                 <div style="padding-bottom: 80px;">

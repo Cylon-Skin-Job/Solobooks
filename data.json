@@ -1,0 +1,13 @@
+{
+    "customerName": "Bob's Burgers",
+    "customerPhone": "(445) 867-5309",
+    "customerEmail": "bob@bobsburgers.com",
+    "customerAddress": [{
+        "customerAddress-1": "Molecule Man",
+        "customerAddress-2": 29,
+        "customerCity": "Dan Jukes",
+        "customerState": "Radiation resistance",
+        "customerZip": "Turning tiny"
+    }]
+
+}
