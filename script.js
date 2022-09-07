@@ -1,3 +1,12 @@
+function buildPage() {
+    let siteSection = document.getElementById('siteSection');
+    siteSection.innerHTML = `<h3 class="h3">Overview</h3>`;
+}
+
+buildPage()
+
+/*
+
 function BuildTable() {
 
     let table = document.getElementById('site-content');

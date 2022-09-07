@@ -43,17 +43,19 @@ label {
 /* Overview Cards general styling */
 
 /* Wrappers for Cards */
-.overview-chart-wrapper {
+.overviewChartWrapper {
     background-color: white;
-    width: 100%;
-    height: 100%;
+    width: 98%;
+    margin: 5px auto;
+    height: auto;
     border: darkgrey 1px solid;
     border-radius: 10px;
     box-shadow: 1px 1px 5px grey;
     overflow: hidden;
+    padding-bottom: 20px;
 }
 
-.overview-chart-h5 {
+h5 {
     display: inline-block;
     margin: 10px 0 0 20px;
     width: 100%;
@@ -62,7 +64,7 @@ label {
 }
 
 /* Extra Text beneath h4 */
-.overview-chart-p {
+.overviewChartP {
     display: inline-block;
     margin: 5px 0 0 20px;
     width: 50%;
@@ -71,13 +73,13 @@ label {
 
 /* Invoice Chart Styles*/
 
-.overview-chart-invoice-bar-wrapper {
+.overviewChartInvoiceBarWrapper {
     overflow: hidden;
     margin: 20px auto 0px;
     width: 100%;
 }
 
-.invoice-bar-unpaid {
+.invoiceBarUnpaid {
     float: left;
     box-sizing: border-box;
     display: inline-block;
@@ -89,7 +91,7 @@ label {
     border-radius: 5px;
 }
 
-.invoice-bar-paid {
+.invoiceBarPaid {
     float: left;
     box-sizing: border-box;
     display: inline-block;
@@ -101,19 +103,19 @@ label {
     border-radius: 5px;
 }
 
-.overview-chart-invoice-UNPAID-span {
+.overviewChartInvoiceUnpaidSpan {
     float: right;
     margin-right: 5%;
 }
 
-.overview-chart-invoice-PAID-span {
+.overviewChartInvoicePaidSpan {
     float: left;
     margin-left: 5%;
 }
 
 /* Cash-flow Chart Styles*/
 
-.overview-profit-loss-chart {
+.overviewProfitLossChart {
     position: relative;
     float: left;
     overflow: hidden;
@@ -123,7 +125,7 @@ label {
     border-bottom: darkgrey 2px solid;
 }
 
-.overview-bar-payments {
+.overviewBarPayments {
     position: absolute;
     bottom: 0;
     margin: 0;
@@ -138,7 +140,7 @@ label {
     border-top-right-radius: 5px;
 }
 
-.overview-bar-expenses {
+.overviewBarExpenses {
     position: absolute;
     bottom: 0;
     margin: 0;
@@ -153,7 +155,7 @@ label {
     border-top-right-radius: 5px;
 }
 
-.overview-bar-profit {
+.overviewBarProfit {
     position: absolute;
     bottom: 0;
     margin: 0;
@@ -168,7 +170,7 @@ label {
     border-top-right-radius: 5px;
 }
 
-.overview-profit-loss-left-bold {
+.overviewProfitLossLeftBold {
     float: left;
     width: 20%;
     text-align: center;
@@ -177,7 +179,7 @@ label {
     font-weight: bold;
 }
 
-.overview-profit-loss-center-bold {
+.overviewProfitLossCenterBold {
     float: left;
     text-align: center;
     width: 20%;
@@ -186,7 +188,7 @@ label {
     font-weight: bold;
 }
 
-.overview-profit-loss-right-bold {
+.overviewProfitLossRightBold {
     float: right;
     text-align: center;
     width: 20%;
@@ -195,7 +197,7 @@ label {
     font-weight: bold;
 }
 
-.overview-profit-loss-left-small {
+.overviewProfitLossLeftSmall {
     float: left;
     width: 20%;
     text-align: center;
@@ -203,7 +205,7 @@ label {
     font-size: .6rem;
 }
 
-.overview-profit-loss-center-small {
+.overviewProfitLossCenterSmall {
     float: left;
     text-align: center;
     width: 20%;
@@ -211,7 +213,7 @@ label {
     font-size: .6rem;
 }
 
-.overview-profit-loss-right-small {
+.overviewProfitLossRightSmall {
     float: right;
     text-align: center;
     width: 20%;
@@ -221,45 +223,45 @@ label {
 
 /* Expense Chart Styling */
 
-.overview-expense-list {
+.overviewExpenseList {
     margin-left: 2%;
     columns: 2;
     -webkit-columns: 2;
     -moz-columns: 2;
 }
 
-.overview-expense-list li {
+.overviewExpenseList li {
     margin-bottom: 10px;
 }
 
-.overview-expense-list-bold {
+.overviewExpenseListBold {
     font-weight: bold;
     font-size: 1rem;
     color: #00539a;
 }
 
-.overview-expense-list-small {
+.overviewExpenseListSmall {
     font-size: .6rem;
 }
 
 /* Payments Chart Styling */
 
 
-.overview-payments-chart-more {
+.overviewPaymentsChartMore {
     display: block;
     width: 90%;
     margin: auto;
     padding: 10px;
 }
 
-.overview-payments-chart-more a {
+.overviewPaymentsChartMore a {
     text-decoration: none;
     color: darkblue;
 }
 
 /* Main Desktop Grid and Postioning */
 
-.site-grid {
+.siteGrid {
     width: 100%;
     height: 100vh;
     position: fixed;
@@ -273,10 +275,11 @@ label {
 }
 
 /* Solobooks + Company Name */
-.site-header {
+.siteHeader {
     grid-area: header;
     width: 100%;
-    height: 100% z-index: 5;
+    height: 100%;
+    z-index: 5;
     background-color: #2a2438;
     overflow: hidden;
     text-align: left;
@@ -284,7 +287,7 @@ label {
 }
 
 /* Navigation Bar Down Side */
-.site-nav {
+.siteNav {
     grid-area: nav;
     width: 200px;
     height: 100%;
@@ -296,7 +299,7 @@ label {
 }
 
 /* Top Light Purple Section */
-.site-section {
+.siteSection {
     z-index: 5;
     width: 100%;
     height: 100%;
@@ -311,7 +314,7 @@ label {
 }
 
 /* Main White Area */
-.site-main {
+.siteMain {
     z-index: 5;
     width: 100%;
     height: 100%;
@@ -321,11 +324,22 @@ label {
     overflow: auto;
 }
 
+.siteContent {
+    margin: 30px 30px 0px 30px;
+    height: 100%;
+    display: block;
+    width: auto;
+    max-width: 1000px;
+    width: calc(100vw - 260px);
+    min-width: 740px;
+    justify-content: center;
+}
+
 
 
 /* Desktop Navigation --Start-- */
 
-.site-nav-background {
+.siteNavBackground {
     grid-area: nav;
     width: 100%;
     height: 307px;
@@ -333,7 +347,7 @@ label {
     background-color: #dbd8e3;
 }
 
-.site-nav-background-alt {
+.siteNavBackgroundAlt {
     grid-area: nav;
     width: 100%;
     height: 100%;
@@ -387,7 +401,7 @@ label {
     margin: -.5px 0px;
 }
 
-.bottom-nav {
+.bottomNav {
     width: 200px;
     height: 200px;
     background-color: #2a2438;
@@ -396,7 +410,7 @@ label {
 
 /* Desktop Headers and <h1> thru <h6> */
 
-.site-h1 {
+h1 {
     width: 100%;
     height: 60px;
     padding-right: 10px;
@@ -410,7 +424,7 @@ label {
     display: inline-block;
 }
 
-.site-h2 {
+h2 {
     width: 100%;
     height: 60px;
     padding-right: 10px;
@@ -423,7 +437,7 @@ label {
     display: inline-block;
 }
 
-.site-h3 {
+.h3 {
     color: #2a2438;
     grid-column-start: 2;
     grid-column-end: 3;
@@ -431,7 +445,7 @@ label {
     width: 100%;
 }
 
-.site-h4 {
+h4 {
     height: 25px;
     margin: 5px 0px 5px 5px;
     color: #2a2438;
@@ -444,16 +458,7 @@ label {
 
 /* Div within main to hold content */
 
-.site-content {
-    margin: 30px 30px 0px 30px;
-    height: 100%;
-    display: block;
-    width: auto;
-    max-width: 1000px;
-    width: calc(100vw - 260px);
-    min-width: 740px;
-    justify-content: center;
-}
+
 
 .whitespace {
     width: 100%;
@@ -475,12 +480,12 @@ label {
     border: darkgrey 1px solid;
 }
 
-.ribbon-top {
+.ribbonTop {
     box-shadow: 1px 1px 5px grey;
     
 }
 
-.ribbon-total {
+.ribbonTotal {
     float: right;
     text-align: right;
     padding: 5px;
@@ -496,7 +501,7 @@ table {
     border-bottom: solid grey 1px;
 }
 
-.top-table {
+.topTable {
     margin: 25px 0px 0px;
 }
 
@@ -517,7 +522,7 @@ tr:nth-child(even) {
     background-color: gainsboro;
 }
 
-.table-head-row {
+.tableHeadRow {
     width: calc(100vw - 200px);
     max-width: 1060px;
     min-width: 800px;
@@ -532,13 +537,13 @@ tr:nth-child(even) {
     padding: 0px 30px;
 }
 
-.row-hover tr:hover {
+.rowHover tr:hover {
     background-color: #f0c993;
     border: solid 1px #f0b36a;
     border-radius: 5px;
 }
 
-.row-link::before {
+.rowLink::before {
     position: absolute;
     content: "";
     width: 100%;
@@ -737,7 +742,10 @@ text-align: center;
 /* modifies .site-content for overview page to contain cards
     additional styling below at 1200px break point */
 #overview-content {
+    width: 100%;
     display: grid;
+    padding: 0px;
+    margin: 0px;
     grid-template: 30px 200px 370px 35px 900px / 1fr 1fr;
     gap: 10px;
     grid-template-areas:
@@ -748,16 +756,20 @@ text-align: center;
         "payments payments";
 }
 
-.overview-chart-wrapper-invoices {
-    grid-area: invoice;
-}
+
 
 .overview-chart-wrapper-cashflow {
-    grid-area: cashflow;
+    width: 48.15%;
+    display: inline-block;
+    margin: 1% .5% 1% 1%;
+    height: 370px;
 }
 
 .overview-chart-wrapper-expenses {
-    grid-area: expenses;
+    width: 48.15%;
+    display: inline-block;
+    margin: 1% 1% 1% .5%;
+    height: 370px;
 }
 
 .overview-table-payments {
@@ -1085,16 +1097,29 @@ text-align: center;
 
     .site-content {
         margin: 0px;
+        padding: 0px;
         height: 100%;
         width: 100%;
-        min-width: 100%;
-        max-width: 100%;
+        max-width: auto;
+        min-width: auto;
+        overflow-x: hidden;
     }
 
     .ribbon {
         top: -1px;
         border: none;
         border-bottom: solid darkgrey 1px;
+    }
+
+    .sticky-ribbon-overview {
+        width: 100%;
+        margin: 0px;
+
+    }
+
+    .sticky-ribbon-overview-2 {
+        width: 100%;
+        margin: 0px;
     }
 
     /* Tablet Tables */
@@ -1674,7 +1699,19 @@ width to create 8.5 x 11 ratio */
 
     /* Phone Content --Start-- */
 
+.overview-chart-wrapper-cashflow {
+    width: 98%;
+    display: block;
+    margin: 1% auto;
+    height: auto;
+}
 
+.overview-chart-wrapper-expenses {
+    width: 98%;
+    display: block;
+    margin: 1% auto;
+    height: auto;
+}
 
     /* Phone Tables --Start-- */
     tr {
