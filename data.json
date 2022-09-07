@@ -1,30 +1,87 @@
 [{
-        "iDate": "09/28/2021",
-        "iNum": "5224",
-        "iCus": "Cafe Nervosa",
-        "iStat": "Unpaid",
-        "iTotal": "$690"
+        "customer": {
+            "name": "Cafe Nervosa",
+            "address": {
+                "address1": "2115 E 3rd St.",
+                "address2": "",
+                "city": "Ocean City",
+                "state": "NJ.",
+                "zip": "17740"
+            },
+            "invoices": [
+                {
+                "date": "09/28/2021",
+                "number": "5225",
+                "total": "690.00",
+                "status": "Unpaid",
+                "payment": {
+                    "date": "",
+                    "method": "",
+                    "reference": "",
+                    "notes": ""
+                }
+            },
+            {
+                "date": "10/22/2021",
+                "number": "5224",
+                "total": "690.00",
+                "status": "Unpaid",
+                "payment": {
+                    "date": "",
+                    "method": "",
+                    "reference": "",
+                    "notes": ""
+                }
+            }]
+        }
     },
     {
-        "iDate": "09/25/2021",
-        "iNum": "5141",
-        "iCus": "The Indigo Tea Shop",
-        "iStat": "Unpaid",
-        "iTotal": "$565"
+        "customer": {
+            "name": "The Indigo Tea Shop",
+            "address": {
+                "address1": "1501 Riverwood Dr.",
+                "address2": "",
+                "city": "Burnsville",
+                "state": "MN.",
+                "zip": "55337"
+            },
+            "invoices": {
+                "date": "09/25/2021",
+                "number": "5141",
+                "total": "565.00",
+                "status": "Paid",
+                "payment": {
+                    "date": "",
+                    "method": "",
+                    "reference": "",
+                    "notes": ""
+                }
+            }
+        }
     },
     {
-        "iDate": "09/20/2021",
-        "iNum": "5140",
-        "iCus": "Cheer&#39s",
-        "iStat": "Unpaid",
-        "iTotal": "$690"
-    },
-    {
-        "iDate": "09/19/2021",
-        "iNum": "5138",
-        "iCus": "Pizza Planet",
-        "iStat": "Unpaid",
-        "iTotal": "$585"
-    },
+        "customer": {
+            "name": "Pizza Planet",
+            "address": {
+                "address1": "745 Anchor Ave.",
+                "address2": "",
+                "city": "Orange Cove",
+                "state": "CA.",
+                "zip": "93646"
+            },
+            "invoices": {
+                "date": "09/19/2021",
+                "number": "5138",
+                "total": "585.00",
+                "status": "Unpaid",
+                "payment": {
+                    "date": "",
+                    "method": "",
+                    "reference": "",
+                    "notes": ""
+                }
+            }
+        }
+    }
 
 ]

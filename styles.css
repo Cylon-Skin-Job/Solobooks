@@ -1739,7 +1739,20 @@ width to create 8.5 x 11 ratio */
     }
 
 
+/* Phone Overview Content */
 
+#overview-content {
+    display: grid;
+    grid-template: 30px 200px 370px 370px 35px 900px / 1fr;
+    gap: 10px;
+    grid-template-areas:
+        "ribbon"
+        "invoice"
+        "cashflow"
+        "expenses"
+        "ribbon-2"
+        "payments";
+}
 
 
     /* Phone Modal --Start-- */
