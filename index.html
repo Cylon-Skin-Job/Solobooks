@@ -3,7 +3,8 @@
 
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-    
+    <script src="https://code.jquery.com/jquery-3.6.1.js"
+        integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI=" crossorigin="anonymous"></script>
     <meta name="theme-color" content="#2a2438" media="(prefers-color-scheme: light)">
     <meta name="theme-color" content="#2a2438" media="(prefers-color-scheme: dark)">
     <link rel="stylesheet" href="styles.css">
@@ -12,7 +13,7 @@
 
 <body>
 
-    
+
 
     <div class="siteGrid">
 
@@ -29,44 +30,46 @@
         <div class="siteNav">
             <nav>
                 <ul class="navigation">
-                    <li class="active">
-                        <a href="index.html">
+                    <li>
+
+                        <a href="#overview">
                             <span class="material-icons" alt=" ">analytics
                             </span>
                             Overview
                         </a>
+
                     </li>
-                    <li>
-                        <a href="invoices.html">
+                    <li class="active">
+                        <a href="#invoices">
                             <span class="material-icons" alt=" ">description</span>
                             Invoices
                         </a>
                     </li>
                     <li>
-                        <a href="expenses.html">
+                        <a href="#expenses">
                             <span class="material-icons" alt=" ">receipt_long</span>
                             Expenses
                         </a>
                     </li>
                     <li>
-                        <a href="customers.html">
+                        <a href="#customers">
                             <span class="material-icons" alt=" ">people</span>
                             Customers
                         </a>
                     </li>
                     <li>
-                        <a href="settings.html">
+                        <a href="#settings">
                             <span class="material-icons" alt=" ">settings</span>
                             Settings
                         </a>
                     </li>
-                </ul>
+                    </ul>
             </nav>
         </div>
-        
+
         <section>
             <div class="siteSection" id="siteSection">
-             
+
             </div>
         </section>
 
@@ -75,8 +78,7 @@
 
                 <div class="whitespace"></div>
 
-                <div class="siteContent">
-
+                <div class="siteContentOverview" id="siteContentOverview">
 
                     <div class="ribbon ribbonTop stickyRibbonOverview">
                         <h4>Charts</h4>
@@ -88,15 +90,18 @@
                         <p class="overviewChartP">Year-to-date</p>
 
 
-                        <div class="overviewChartInvoiceBarWrapper">
-                            <span class="overviewChartInvoicePaidSpan"><strong>$11,970.00</strong></span>
-                            <span class="overviewChartInvoiceUnpaidSpan"><strong>$2,190.00</strong></span>
+                        <div class="overviewChartWrapperInvoiceStats">
+                            <span class="overviewChartInvoicePaidSpan"
+                                id="overviewChartInvoicePaidSpan"></span>
+                            <span class="overviewChartInvoiceUnpaidSpan"
+                                id="overviewChartInvoiceUnpaidSpan"></span>
                             <br>
-                            <span class="overviewChartInvoicePaidSpan">PAID</span>
-                            <span class="overviewChartInvoiceUnpaidSpan">UNPAID</span>
-                            <div class="invoiceBarPaid"></div>
-                            <div class="invoiceBarUnpaid"></div>
-
+                            <span class="overviewChartInvoicePaidSpan">Paid</span>
+                            <span class="overviewChartInvoiceUnpaidSpan">Unpaid</span>
+                        </div>
+                        <div class="overviewChartWrapperInvoiceBars">
+                            <div class="invoiceBarPaid" id="invoiceBarPaid"></div>
+                            <div class="invoiceBarUnpaid" id="invoiceBarUnpaid"></div>
                         </div>
 
                     </div>
@@ -108,166 +113,139 @@
                         <p class="overviewChartP">Year-to-date</p>
                         <br>
 
-                        <div class="overview-profit-loss-chart">
-                            <div class="overview-bar-payments"></div>
-                            <div class="overview-bar-expenses"></div>
-                            <div class="overview-bar-profit"></div>
+                        <div class="overviewProfitLossChart">
+                            <div class="overviewBarPayments"></div>
+                            <div class="overviewBarExpenses"></div>
+                            <div class="overviewBarProfit"></div>
                         </div>
-                        <span class="overview-profit-loss-left-bold">$11,970.00</span>
-                        <span class="overview-profit-loss-center-bold">$2,399.42</span>
-                        <span class="overview-profit-loss-right-bold">$9,570.58</span>
+                        <span class="overviewProfitLossLeftBold" id="overveiwProfitPayments"></span>
+                        <span class="overviewProfitLossCenterBold">$2,399.42</span>
+                        <span class="overviewProfitLossRightBold">$9,570.58</span>
                         <br>
-                        <span class="overview-profit-loss-left-small">Payments</span>
-                        <span class="overview-profit-loss-center-small">Expenses</span>
-                        <span class="overview-profit-loss-right-small">Remaining</span>
+                        <span class="overviewProfitLossLeftSmall">Payments</span>
+                        <span class="overviewProfitLossCenterSmall">Expenses</span>
+                        <span class="overviewProfitLossRightSmall">Remaining</span>
                         <br>
-                        <span class="overview-profit-loss-left-small">Recieved</span>
-                        <span class="overview-profit-loss-center-small">Paid</span>
-                        <span class="overview-profit-loss-right-small">Profit</span>
+                        <span class="overviewProfitLossLeftSmall">Recieved</span>
+                        <span class="overviewProfitLossCenterSmall">Paid</span>
+                        <span class="overviewProfitLossRightSmall">Profit</span>
 
                     </div>
 
-                    <div class="overview-chart-wrapper overview-chart-wrapper-expenses">
+                    <div class="overviewChartWrapper overviewChartWrapperExpenses">
 
-                        <h5 class="overview-chart-h5">Expenses</h5>
-                        <p class="overview-chart-p">Year-to-date</p>
+                        <h5 class="overviewChartH5">Expenses</h5>
+                        <p class="overviewChartP">Year-to-date</p>
                         <br>
                         <br>
-                        <ul class="overview-expense-list">
-                            <li><span class="overview-expense-list-bold">$219.03</span>
+                        <ul class="overviewExpenseList">
+                            <li><span class="overviewExpenseListBold">$219.03</span>
                                 <br>
-                                <span class="overview-expense-list-small">Advertising</span>
+                                <span class="overviewExpenseListSmall">Advertising</span>
                             </li>
 
-                            <li><span class="overview-expense-list-bold">$52.44</span>
+                            <li><span class="overviewExpenseListBold">$52.44</span>
                                 <br>
-                                <span class="overview-expense-list-small">Equipment Repairs</span>
+                                <span class="overviewExpenseListSmall">Equipment Repairs</span>
                             </li>
 
-                            <li><span class="overview-expense-list-bold">$66.52</span>
+                            <li><span class="overviewExpenseListBold">$66.52</span>
                                 <br>
-                                <span class="overview-expense-list-small">Fuel</span>
+                                <span class="overviewExpenseListSmall">Fuel</span>
                             </li>
 
-                            <li><span class="overview-expense-list-bold">$204.76</span>
+                            <li><span class="overviewExpenseListBold">$204.76</span>
                                 <br>
-                                <span class="overview-expense-list-small">Insurance</span>
+                                <span class="overviewExpenseListSmall">Insurance</span>
                             </li>
 
-                            <li><span class="overview-expense-list-bold">$940.23</span>
+                            <li><span class="overviewExpenseListBold">$940.23</span>
                                 <br>
-                                <span class="overview-expense-list-small">Job Supplies</span>
+                                <span class="overviewExpenseListSmall">Job Supplies</span>
                             </li>
 
-                            <li><span class="overview-expense-list-bold">$320.28</span>
+                            <li><span class="overviewExpenseListBold">$320.28</span>
                                 <br>
-                                <span class="overview-expense-list-small">Office Supplies</span>
+                                <span class="overviewExpenseListSmall">Office Supplies</span>
                             </li>
-                            <li><span class="overview-expense-list-bold">$373.01</span>
+                            <li><span class="overviewExpenseListBold">$373.01</span>
                                 <br>
-                                <span class="overview-expense-list-small">Travel</span>
+                                <span class="overviewExpenseListSmall">Travel</span>
                             </li>
 
-                            <li><span class="overview-expense-list-bold">$427.04</span>
+                            <li><span class="overviewExpenseListBold">$427.04</span>
                                 <br>
-                                <span class="overview-expense-list-small">Utilities & Phone</span>
+                                <span class="overviewExpenseListSmall">Utilities & Phone</span>
                             </li>
 
 
                         </ul>
                     </div>
-                    <div class="overview-table-payments">
-                        <div class="ribbon sticky-ribbon-overview-2">
-                            <h4 class="site-h4">Recent Payments</h4>
+                    <div class="overviewTablePayments">
+                        <div class="ribbon stickyRibbonOverview">
+                            <h4 class="siteH4">Recent Payments</h4>
                         </div>
 
                         <table>
 
-                            <tbody>
+                            <tbody id="tbodyPayments">
 
-                                <tr>
-                                    <td class="td-date">08/12/2021</td>
-                                    <td class="td-description-1">Bob's Burgers</td>
-                                    <td class="td-total">$550</td>
-                                </tr>
 
-                                <tr>
-                                    <td class="td-date">08/11/2021</td>
-                                    <td class="td-description-1">Paunch Burger</td>
-                                    <td class="td-total">$625</td>
-                                </tr>
-
-                                <tr>
-                                    <td class="td-date">08/10/2021</td>
-                                    <td class="td-description-1">Arnold's Drive In</td>
-                                    <td class="td-total">$485</td>
-                                </tr>
-
-                                <tr>
-                                    <td class="td-date">08/05/2021</td>
-                                    <td class="td-description-1">Central Perk</td>
-                                    <td class="td-total">$385</td>
-                                </tr>
-
-                                <tr>
-                                    <td class="td-date">08/04/2021</td>
-                                    <td class="td-description-1">Cafe Nervosa</td>
-                                    <td class="td-total">$690</td>
-                                </tr>
-
-                                <tr>
-                                    <td class="td-date">08/03/2021</td>
-                                    <td class="td-description-1">The Indigo Tea Shop</td>
-                                    <td class="td-total">$565</td>
-                                </tr>
-
-                                <tr>
-                                    <td class="td-date">08/01/2021</td>
-                                    <td class="td-description-1">Cheer's</td>
-                                    <td class="td-total">$450</td>
-                                </tr>
-
-                                <tr>
-                                    <td class="td-date">07/28/2021</td>
-                                    <td class="td-description-1">Joe's Bar</td>
-                                    <td class="td-total">$485</td>
-                                </tr>
-
-                                <tr>
-                                    <td class="td-date">07/27/2021</td>
-                                    <td class="td-description-1">Three Broomsticks</td>
-                                    <td class="td-total">$645</td>
-                                </tr>
-
-                                <tr>
-                                    <td><a href="">More...</a></td>
-                                </tr>
                             </tbody>
 
                         </table>
 
-                        
+
+                    </div>
+                </div>
+
+                <div class="siteContentInvoices" id="siteContentInvoices">
+                    <div>
+                        <div class="ribbon ribbonTop">
+                            <h4>Unpaid Invoices</h4>
+                            <span class="ribbonTotal" id="totalSpanUnpaid"></span>
+                        </div>
+
+                        <table class="topTable invoicesTableUnpaid">
+                            <thead class="tableHeadRow">
+                                <th class="tdOrder3">Date</th>
+                                <th class="tdOrder4">Invoice No.</th>
+                                <th class="tdOrder1">Customer</td>
+                                <th class="tdOrder5">Status</th>
+                                <th class="tdOrder2">Amount</th>
+                            </thead>
+
+                            <tbody class="rowHover" id="tbodyInvoicesUnpaid">
+                            </tbody>
+                        </table>
                     </div>
 
-                    <div class="siteContentInvoices" id="site-content"></div>
+                    <div>
+                        <div class="ribbon ribbonTop">
+                            <h4>Paid Invoices</h4>
+                            <span class="ribbonTotal" id="totalSpanPaid"></span>
+                        </div>
 
-                
-
-
+                        <table class="invoicesTablePaid">
+                            <tbody class="rowHover" id="tbodyInvoicesPaid">
+                            </tbody>
+                        </table>
+                    </div>
                 </div>
             </main>
         </div>
 
 
     </div>
+    <script src="script.js"></script>
+</body>
 
 
 
 
 
 
-
-    <!--
+<!--
 
     <section>
         <div class="section-top">
@@ -337,43 +315,43 @@
                     <br>
                     <br>
                     <ul class="overview-expense-list">
-                        <li><span class="overview-expense-list-bold">$219.03</span>
+                        <li><span class="overviewExpenseListBold">$219.03</span>
                             <br>
-                            <span class="overview-expense-list-small">Advertising</span>
+                            <span class="overviewExpenseListSmall">Advertising</span>
                         </li>
 
-                        <li><span class="overview-expense-list-bold">$52.44</span>
+                        <li><span class="overviewExpenseListBold">$52.44</span>
                             <br>
-                            <span class="overview-expense-list-small">Equipment Repairs</span>
+                            <span class="overviewExpenseListSmall">Equipment Repairs</span>
                         </li>
 
-                        <li><span class="overview-expense-list-bold">$66.52</span>
+                        <li><span class="overviewExpenseListBold">$66.52</span>
                             <br>
-                            <span class="overview-expense-list-small">Fuel</span>
+                            <span class="overviewExpenseListSmall">Fuel</span>
                         </li>
 
-                        <li><span class="overview-expense-list-bold">$204.76</span>
+                        <li><span class="overviewExpenseListBold">$204.76</span>
                             <br>
-                            <span class="overview-expense-list-small">Insurance</span>
+                            <span class="overviewExpenseListSmall">Insurance</span>
                         </li>
 
-                        <li><span class="overview-expense-list-bold">$940.23</span>
+                        <li><span class="overviewExpenseListBold">$940.23</span>
                             <br>
-                            <span class="overview-expense-list-small">Job Supplies</span>
+                            <span class="overviewExpenseListSmall">Job Supplies</span>
                         </li>
 
-                        <li><span class="overview-expense-list-bold">$320.28</span>
+                        <li><span class="overviewExpenseListBold">$320.28</span>
                             <br>
-                            <span class="overview-expense-list-small">Office Supplies</span>
+                            <span class="overviewExpenseListSmall">Office Supplies</span>
                         </li>
-                        <li><span class="overview-expense-list-bold">$373.01</span>
+                        <li><span class="overviewExpenseListBold">$373.01</span>
                             <br>
-                            <span class="overview-expense-list-small">Travel</span>
+                            <span class="overviewExpenseListSmall">Travel</span>
                         </li>
 
-                        <li><span class="overview-expense-list-bold">$427.04</span>
+                        <li><span class="overviewExpenseListBold">$427.04</span>
                             <br>
-                            <span class="overview-expense-list-small">Utilities & Phone</span>
+                            <span class="overviewExpenseListSmall">Utilities & Phone</span>
                         </li>
 
 
@@ -473,4 +451,3 @@
         </section>
     </div>
     </div> -->
-</body>

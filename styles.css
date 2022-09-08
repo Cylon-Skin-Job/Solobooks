@@ -73,44 +73,55 @@ h5 {
 
 /* Invoice Chart Styles*/
 
-.overviewChartInvoiceBarWrapper {
+.overviewChartWrapperInvoiceStats {
     overflow: hidden;
-    margin: 20px auto 0px;
+    margin: 10px auto 0px;
     width: 100%;
+    height: 40px;
+}
+
+.overviewChartWrapperInvoiceBars {
+    overflow: hidden;
+    margin: 0px auto 0px;
+    width: 98%;
+    height: 50px;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
 }
 
 .invoiceBarUnpaid {
-    float: left;
     box-sizing: border-box;
     display: inline-block;
-    margin: 10px 5% auto 0;
-    width: 13%;
+    margin: 0px;
     height: 50px;
-    border: black 2px solid;
+    border: black 1px solid;
+    border-left: none;
     background-color: darkRed;
-    border-radius: 5px;
+    border-radius: 0px 5px 5px 0px;
 }
 
 .invoiceBarPaid {
     float: left;
     box-sizing: border-box;
-    display: inline-block;
-    margin: 10px 0 auto 5%;
-    width: 77%;
+    margin: 0px;
     height: 50px;
-    border: black 2px solid;
+    border: black 1px solid;
+    border-right: none;
     background-color: green;
-    border-radius: 5px;
+    border-radius: 5px 0px 0px 5px;
 }
 
 .overviewChartInvoiceUnpaidSpan {
     float: right;
-    margin-right: 5%;
+    margin-right: 2%;
+    font-weight: bold;
 }
 
 .overviewChartInvoicePaidSpan {
     float: left;
-    margin-left: 5%;
+    margin-left: 2%;
+    font-weight: bold;
 }
 
 /* Cash-flow Chart Styles*/
@@ -324,7 +335,8 @@ h5 {
     overflow: auto;
 }
 
-.siteContent {
+.siteContentOverview,
+.siteContentInvoices {
     margin: 30px 30px 0px 30px;
     height: 100%;
     display: block;
@@ -333,6 +345,7 @@ h5 {
     width: calc(100vw - 260px);
     min-width: 740px;
     justify-content: center;
+    padding-bottom: 500px;
 }
 
 
@@ -437,7 +450,7 @@ h2 {
     display: inline-block;
 }
 
-.h3 {
+h3 {
     color: #2a2438;
     grid-column-start: 2;
     grid-column-end: 3;
@@ -552,29 +565,29 @@ tr:nth-child(even) {
     left: 0;
 }
 
-.td-description-1,
-.td-description-2,
-.td-order-1 {
+.tdDescription1,
+.tdDescription2,
+.tdOrder1 {
     width: 250px;
     flex-grow: 2;
 }
 
-.td-total,
-.td-order-2 {
+.tdTotal,
+.tdOrder2 {
     width: 80px;
     text-align: right;
     flex-grow: 3;
 }
 
 
-.td-date,
-.td-order-3,
-.td-order-4 {
+.tdDate,
+.tdOrder3,
+.tdOrder4 {
     width: 140px;
 }
 
 
-.td-order-5 {
+.tdOrder5 {
     width: 55px;
     text-align: center;
 }
@@ -582,7 +595,7 @@ tr:nth-child(even) {
 
 /* Desktop Buttons */
 
-.plus-button {
+.plusButton {
     display: block;
     color: #2a2438;
     height: 40px;
@@ -602,7 +615,7 @@ tr:nth-child(even) {
     top: 1px;
 }
 
-#plus-button-text {
+#plusButtonText {
     font-size: 1.2rem;
     padding: 7.5px;
     font-weight: bold;
@@ -616,7 +629,7 @@ tr:nth-child(even) {
 
 /* Modals */
 
-.modal-container {
+.modalContainer {
     width: 100%;
     height: 100%;
     background-color: rgba(0, 0, 0, .7);
@@ -630,11 +643,11 @@ tr:nth-child(even) {
     align-items: center;
 }
 
-.modal-container:target {
+.modalContainer:target {
     display: flex;
 }
 
-.modal-wrapper {
+.modalWrapper {
     background: white;
     border-radius: 10px;
     width: 300px;
@@ -643,7 +656,7 @@ tr:nth-child(even) {
     z-index: 9;
 }
 
-.modal-h5 {
+.modalH5 {
     text-align: center;
     height: 50px;
     padding-top: 20px;
@@ -652,7 +665,7 @@ tr:nth-child(even) {
 
 /* Modal Inputs */
 
-.input-wrapper {
+.inputWrapper {
     width: 200px;
     margin: 0px 30px;
 }
@@ -691,7 +704,7 @@ tr:nth-child(even) {
 
 /* Modal Buttons */
 
-.button-exit-modal {
+.buttonExitModal {
     display: block;
     position: fixed;
     right: 15px;
@@ -707,13 +720,13 @@ tr:nth-child(even) {
     border-radius: 40px;
 }
 
-.button-exit-modal:hover,
-.button-exit-modal a:hover {
+.buttonExitModal:hover,
+.buttonExitModal a:hover {
     background-color: lightgrey;
     color: white;
 }
 
-.modal-footer {
+.modalFooter {
     width: 100%;
     height: 60px;
     margin-top: 30px;
@@ -722,7 +735,7 @@ tr:nth-child(even) {
     justify-content: space-around;
 }
 
-.modal-footer-button {
+.modalFooterButton {
 display: inline-block;
 width: 90px;
 height: 30px;
@@ -741,7 +754,7 @@ text-align: center;
 
 /* modifies .site-content for overview page to contain cards
     additional styling below at 1200px break point */
-#overview-content {
+#overviewContent {
     width: 100%;
     display: grid;
     padding: 0px;
@@ -758,27 +771,27 @@ text-align: center;
 
 
 
-.overview-chart-wrapper-cashflow {
+.overviewChartWrapperCashflow {
     width: 48.15%;
     display: inline-block;
     margin: 1% .5% 1% 1%;
     height: 370px;
 }
 
-.overview-chart-wrapper-expenses {
+.overviewChartWrapperExpenses {
     width: 48.15%;
     display: inline-block;
     margin: 1% 1% 1% .5%;
     height: 370px;
 }
 
-.overview-table-payments {
+.overviewTablePayments {
     grid-area: payments;
     width: 101%;
     margin-left: -.5%;
 }
 
-.sticky-ribbon-overview {
+.stickyRibbonOverview {
     grid-area: ribbon;
     top: 30px;
     width: 101%;
@@ -786,7 +799,7 @@ text-align: center;
 
 }
 
-.sticky-ribbon-overview-2 {
+.stickyRibbonOverview2 {
     grid-area: ribbon-2;
     top: 30px;
     width: 101%;
@@ -1138,11 +1151,11 @@ text-align: center;
         flex-grow: 1;
     }
 
-    .td-order-4::before {
+    .tdOrder4::before {
         content: "No.";
     }
 
-    .invoices-table-unpaid .td-order-5 {
+    .invoices-table-unpaid .tdOrder5 {
         color: darkred;
         border: solid darkred 2px;
         padding: 1px 3px;
@@ -1150,7 +1163,7 @@ text-align: center;
         font-size: .8rem;
     }
 
-    .invoices-table-paid .td-order-5 {
+    .invoices-table-paid .tdOrder5 {
         color: darkgreen;
         border: solid darkgreen 2px;
         padding: 1px 3px;
@@ -1171,7 +1184,7 @@ text-align: center;
 
     /* Mobile buttons */
 
-    .plus-button {
+    .plusButton {
         top: auto;
         bottom: 20px;
     }
@@ -1720,28 +1733,28 @@ width to create 8.5 x 11 ratio */
 
     /* Invoices Styling */
 
-    .td-order-1 {
+    .tdOrder1 {
         order: 1;
         width: 60%;
         height: 25px;
         font-weight: bold;
     }
 
-    .td-order-2 {
+    .tdOrder2 {
         order: 2;
         width: 40%;
         font-weight: bold;
         text-align: right;
     }
 
-    .td-order-3 {
+    .tdOrder3 {
         order: 3;
         width: 33%;
         height: 25px;
         font-size: .8rem;
     }
 
-    .td-order-4 {
+    .tdOrder4 {
         order: 4;
         width: 34%;
         height: 25px;
@@ -1749,7 +1762,7 @@ width to create 8.5 x 11 ratio */
         font-size: .8rem;
     }
 
-    .td-order-5 {
+    .tdOrder5 {
         order: 5;
         width: 55px;
         height: 25px;
@@ -1757,20 +1770,20 @@ width to create 8.5 x 11 ratio */
         margin-left: calc(33% - 55px);
     }
 
-    .td-date {
+    .tdDate {
         width: 30%;
     }
 
-    .td-description-1 {
+    .tdDescription1 {
         width: 50%;
         height: 25px;
     }
 
-    .td-description-2 {
+    .tdDescription2 {
         display: none;
     }
 
-    .td-total {
+    .tdTotal {
         text-align: right;
         width: 20%;
     }
