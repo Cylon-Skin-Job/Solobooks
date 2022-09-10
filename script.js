@@ -199,7 +199,7 @@ var dataInvoices = [{
         "name": "Cafe Nervosa",
         "cusId": "000001",
         "address1": "2115 E 3rd St.",
-        "address2": "",
+        "address2": false,
         "city": "Ocean City",
         "state": "NJ.",
         "zip": "17740",
@@ -207,8 +207,8 @@ var dataInvoices = [{
         "number": "5225",
         "total": 690.00,
         "status": "Unpaid",
-        "item1": false,
-        "item2": false,
+        "item1": "Single System Service; Downstairs hood, duct & fan pressure washed",
+        "item2": "Second Upstairs System Cleaned on Same visit",
         "item3": false,
         "item4": false,
         "item5": false,
@@ -216,8 +216,8 @@ var dataInvoices = [{
         "item7": false,
         "item8": false,
         "item9": false,
-        "amount1": false,
-        "amount2": false,
+        "amount1": 390,
+        "amount2": 200,
         "amount3": false,
         "amount4": false,
         "amount5": false,
@@ -234,20 +234,20 @@ var dataInvoices = [{
         }
     },
     {
-        "id": "20211028005224",
+        "id": "20210822005229",
         "name": "Cafe Nervosa",
         "cusId": "000001",
         "address1": "2115 E 3rd St.",
-        "address2": "",
+        "address2": false,
         "city": "Ocean City",
         "state": "NJ.",
         "zip": "17740",
-        "date": "10/22/2021",
-        "number": "5224",
+        "date": "08/22/2021",
+        "number": "5229",
         "total": 690.00,
         "status": "Unpaid",
-        "item1": false,
-        "item2": false,
+        "item1": "Single System Service; Downstairs hood, duct & fan pressure washed",
+        "item2": "Second Upstairs System Cleaned on Same visit",
         "item3": false,
         "item4": false,
         "item5": false,
@@ -255,8 +255,8 @@ var dataInvoices = [{
         "item7": false,
         "item8": false,
         "item9": false,
-        "amount1": false,
-        "amount2": false,
+        "amount1": 390,
+        "amount2": 200,
         "amount3": false,
         "amount4": false,
         "amount5": false,
@@ -277,7 +277,7 @@ var dataInvoices = [{
         "cusId": "00002",
         "name": "The Indigo Tea Shop",
         "address1": "1501 Riverwood Dr.",
-        "address2": "",
+        "address2": false,
         "city": "Burnsville",
         "state": "MN.",
         "zip": "55337",
@@ -285,7 +285,7 @@ var dataInvoices = [{
         "number": "5141",
         "total": 565.00,
         "status": "Unpaid",
-        "item1": false,
+        "item1": "Main Cookline System Serviced; Downstairs hood, duct & fan pressure washed",
         "item2": false,
         "item3": false,
         "item4": false,
@@ -294,7 +294,7 @@ var dataInvoices = [{
         "item7": false,
         "item8": false,
         "item9": false,
-        "amount1": false,
+        "amount1": 565.00,
         "amount2": false,
         "amount3": false,
         "amount4": false,
@@ -312,20 +312,20 @@ var dataInvoices = [{
         }
     },
     {
-        "id": "20210919005138",
+        "id": "20211019005138",
         "CusId": "00003",
         "name": "Pizza Planet",
         "address1": "745 Anchor Ave.",
-        "address2": "",
+        "address2": false,
         "city": "Orange Cove",
         "state": "CA.",
         "zip": "93646",
-        "date": "09/19/2021",
+        "date": "10/19/2021",
         "number": "5138",
         "total": 585.00,
         "status": "Unpaid",
-        "item1": false,
-        "item2": false,
+        "item1": "Main Cookline System Serviced; Downstairs hood, duct & fan pressure washed",
+        "item2": "Pizza Oven Hood Serviced",
         "item3": false,
         "item4": false,
         "item5": false,
@@ -333,8 +333,8 @@ var dataInvoices = [{
         "item7": false,
         "item8": false,
         "item9": false,
-        "amount1": false,
-        "amount2": false,
+        "amount1": 475.00,
+        "amount2": 110.00,
         "amount3": false,
         "amount4": false,
         "amount5": false,
@@ -355,7 +355,7 @@ var dataInvoices = [{
         "cusId": "00004",
         "name": "Bob's Burgers",
         "address1": "115 W Ocean Dr.",
-        "address2": "",
+        "address2": false,
         "city": "Ocean City",
         "state": "NJ.",
         "zip": "17740",
@@ -363,8 +363,8 @@ var dataInvoices = [{
         "number": "5127",
         "total": 550.00,
         "status": "Unpaid",
-        "item1": false,
-        "item2": false,
+        "item1": "Main Carbroiler System Serviced; Downstairs hood, duct & fan pressure washed",
+        "item2": "Fryer System Cleaned",
         "item3": false,
         "item4": false,
         "item5": false,
@@ -372,8 +372,8 @@ var dataInvoices = [{
         "item7": false,
         "item8": false,
         "item9": false,
-        "amount1": false,
-        "amount2": false,
+        "amount1": 350.00,
+        "amount2": 200.00,
         "amount3": false,
         "amount4": false,
         "amount5": false,
@@ -390,11 +390,11 @@ var dataInvoices = [{
         }
     },
     {
-        "id": "2021081100005",
+        "id": "20210811005126",
         "cusId": "00005",
         "name": "Arnold's Drive In",
         "address1": "488 W East St.",
-        "address2": "",
+        "address2": false,
         "city": "Riverside",
         "state": "CA.",
         "zip": "93723",
@@ -402,7 +402,7 @@ var dataInvoices = [{
         "number": "5126",
         "total": 485.00,
         "status": "Unpaid",
-        "item1": false,
+        "item1": "Cookline Kitchen Exhaust System Cleaned",
         "item2": false,
         "item3": false,
         "item4": false,
@@ -411,7 +411,7 @@ var dataInvoices = [{
         "item7": false,
         "item8": false,
         "item9": false,
-        "amount1": false,
+        "amount1": 485.00,
         "amount2": false,
         "amount3": false,
         "amount4": false,
@@ -429,11 +429,11 @@ var dataInvoices = [{
         }
     },
     {
-        "id": "20210811",
+        "id": "20210811005126",
         "cusId": "00006",
         "name": "Paunch Burger",
         "address1": "565 North Clinton Dr.",
-        "address2": "",
+        "address2": false,
         "city": "Pawnee",
         "state": "IN.",
         "zip": "56100",
@@ -441,8 +441,8 @@ var dataInvoices = [{
         "number": "5126",
         "total": 625.00,
         "status": "Unpaid",
-        "item1": false,
-        "item2": false,
+        "item1": "Main Carbroiler System Serviced; Downstairs hood, duct & fan pressure washed",
+        "item2": "Fryer System Cleaned",
         "item3": false,
         "item4": false,
         "item5": false,
@@ -450,8 +450,8 @@ var dataInvoices = [{
         "item7": false,
         "item8": false,
         "item9": false,
-        "amount1": false,
-        "amount2": false,
+        "amount1": 425.00,
+        "amount2": 200.00,
         "amount3": false,
         "amount4": false,
         "amount5": false,
@@ -472,7 +472,7 @@ var dataInvoices = [{
         "cusId": "00007",
         "name": "Central Perk",
         "address1": "565 5th Ave.",
-        "address2": "",
+        "address2": false,
         "city": "New York City",
         "state": "NY.",
         "zip": "10001",
@@ -480,7 +480,7 @@ var dataInvoices = [{
         "number": 5138,
         "total": 385.00,
         "status": "Paid",
-        "item1": false,
+        "item1": "Bakery/Griddle Oven Hood serviced",
         "item2": false,
         "item3": false,
         "item4": false,
@@ -489,7 +489,7 @@ var dataInvoices = [{
         "item7": false,
         "item8": false,
         "item9": false,
-        "amount1": false,
+        "amount1": 385.00,
         "amount2": false,
         "amount3": false,
         "amount4": false,
@@ -507,20 +507,20 @@ var dataInvoices = [{
         }
     },
     {
-        "id": "20210925005141",
+        "id": "20210925005121",
         "cusId": "00008",
         "name": "Cheer's",
         "address1": "1501 Riverwood Dr.",
-        "address2": "",
+        "address2": false,
         "city": "Burnsville",
         "state": "MN.",
         "zip": "55337",
         "date": "09/25/2021",
-        "number": "5141",
+        "number": "5121",
         "total": 565.00,
         "status": "Unpaid",
-        "item1": false,
-        "item2": false,
+        "item1": "Main Carbroiler System Serviced; Downstairs hood, duct & fan pressure washed",
+        "item2": "Fryer System Cleaned",
         "item3": false,
         "item4": false,
         "item5": false,
@@ -528,8 +528,8 @@ var dataInvoices = [{
         "item7": false,
         "item8": false,
         "item9": false,
-        "amount1": false,
-        "amount2": false,
+        "amount1": 350.00,
+        "amount2": 115.00,
         "amount3": false,
         "amount4": false,
         "amount5": false,
@@ -546,10 +546,11 @@ var dataInvoices = [{
         }
     },
     {
+        "id": "20212307005120",
         "CusId": "00009",
         "name": "Joe's Bar",
         "address1": "940 W Weed St.",
-        "address2": "",
+        "address2": false,
         "city": "Chicago",
         "state": "IL.",
         "zip": "60642",
@@ -557,7 +558,7 @@ var dataInvoices = [{
         "number": "5120",
         "total": 385.00,
         "status": "Paid",
-        "item1": false,
+        "item1": "Single Small System Service; Downstairs hood, duct & fan pressure washed",
         "item2": false,
         "item3": false,
         "item4": false,
@@ -566,7 +567,7 @@ var dataInvoices = [{
         "item7": false,
         "item8": false,
         "item9": false,
-        "amount1": false,
+        "amount1": 385.00,
         "amount2": false,
         "amount3": false,
         "amount4": false,
@@ -588,7 +589,7 @@ var dataInvoices = [{
         "cusId": "00010",
         "name": "Three Broomsticks",
         "address1": "100 Universal Plaza",
-        "address2": "",
+        "address2": false,
         "city": "Universal City",
         "state": "CA.",
         "zip": "91608",
@@ -596,7 +597,7 @@ var dataInvoices = [{
         "number": "5119",
         "total": 625.00,
         "status": "Paid",
-        "item1": false,
+        "item1": "Fryer System and Cookline Serviced: Hood, Ducts & Fans",
         "item2": false,
         "item3": false,
         "item4": false,
@@ -605,7 +606,7 @@ var dataInvoices = [{
         "item7": false,
         "item8": false,
         "item9": false,
-        "amount1": false,
+        "amount1": 625.00,
         "amount2": false,
         "amount3": false,
         "amount4": false,
@@ -627,16 +628,16 @@ var dataInvoices = [{
         "cusId": "00011",
         "name": "Mos Eisley Cantina",
         "address1": "Tattoine",
-        "address2": "",
+        "address2": false,
         "city": "Outer Rim Territories",
-        "state": "",
-        "zip": "",
+        "state": false,
+        "zip": false,
         "date": "07/18/2021",
         "number": "5118",
         "total": 485.00,
         "status": "Paid",
-        "item1": false,
-        "item2": false,
+        "item1": "Rear kitchen system serviced.",
+        "item2": "Discount for assistance from in house droid staff.",
         "item3": false,
         "item4": false,
         "item5": false,
@@ -644,8 +645,8 @@ var dataInvoices = [{
         "item7": false,
         "item8": false,
         "item9": false,
-        "amount1": false,
-        "amount2": false,
+        "amount1": 585.00,
+        "amount2": -100.00,
         "amount3": false,
         "amount4": false,
         "amount5": false,
@@ -662,19 +663,19 @@ var dataInvoices = [{
         }
     },
     {
-        "id": "20210716",
+        "id": "20210716005116",
         "cusId": "00012",
         "name": "Krusty Crab",
         "address1": "Bikini Atoll",
-        "address2": "",
+        "address2": "Ocean Floor",
         "city": "Pacific Ocean",
-        "state": "",
-        "zip": "",
+        "state": false,
+        "zip": false,
         "date": "07/16/2021",
         "number": "5116",
         "total": 385.00,
         "status": "Paid",
-        "item1": false,
+        "item1": "Single System Service",
         "item2": false,
         "item3": false,
         "item4": false,
@@ -683,7 +684,7 @@ var dataInvoices = [{
         "item7": false,
         "item8": false,
         "item9": false,
-        "amount1": false,
+        "amount1": 385.00,
         "amount2": false,
         "amount3": false,
         "amount4": false,
@@ -705,15 +706,15 @@ var dataInvoices = [{
         "cusId": "00013",
         "name": "La Ratatouille",
         "address1": "234 Main St.",
-        "address2": "",
+        "address2": false,
         "city": "Villanueve",
         "state": "France",
-        "zip": "",
+        "zip": false,
         "date": "07/11/2021",
         "number": "5114",
         "total": 485.00,
         "status": "Paid",
-        "item1": false,
+        "item1": "Main Cookline Kitchen Exhaust Cleaning",
         "item2": false,
         "item3": false,
         "item4": false,
@@ -722,7 +723,7 @@ var dataInvoices = [{
         "item7": false,
         "item8": false,
         "item9": false,
-        "amount1": false,
+        "amount1": 485.00,
         "amount2": false,
         "amount3": false,
         "amount4": false,
@@ -744,7 +745,7 @@ var dataInvoices = [{
         "cusId": "00014",
         "name": "Frozen Banana",
         "address1": "565 Ocean Wharf Blvd.",
-        "address2": "",
+        "address2": false,
         "city": "Oceanside",
         "state": "CA.",
         "zip": "92003",
@@ -752,7 +753,7 @@ var dataInvoices = [{
         "number": "5112",
         "total": 385.00,
         "status": "Paid",
-        "item1": false,
+        "item1": "Hood vent over cornballer machine serviced",
         "item2": false,
         "item3": false,
         "item4": false,
@@ -761,7 +762,7 @@ var dataInvoices = [{
         "item7": false,
         "item8": false,
         "item9": false,
-        "amount1": false,
+        "amount1": 385.00,
         "amount2": false,
         "amount3": false,
         "amount4": false,
@@ -783,7 +784,7 @@ var dataInvoices = [{
         "cusId": "00015",
         "name": "Monk's Cafe",
         "address1": "555 W. 122th St.",
-        "address2": "",
+        "address2": false,
         "city": "New York",
         "state": "NY.",
         "zip": "10001",
@@ -791,8 +792,8 @@ var dataInvoices = [{
         "number": "5111",
         "total": 625.00,
         "status": "Paid",
-        "item1": false,
-        "item2": false,
+        "item1": "Main Carbroiler System Serviced; Downstairs hood, duct & fan pressure washed",
+        "item2": "Fryer System Cleaned",
         "item3": false,
         "item4": false,
         "item5": false,
@@ -800,8 +801,8 @@ var dataInvoices = [{
         "item7": false,
         "item8": false,
         "item9": false,
-        "amount1": false,
-        "amount2": false,
+        "amount1": 425.00,
+        "amount2": 200.00,
         "amount3": false,
         "amount4": false,
         "amount5": false,
@@ -822,7 +823,7 @@ var dataInvoices = [{
         "cusId": "00016",
         "name": "Los Pollos Hermano's",
         "address1": "9358 Eagle Ranch Rd.",
-        "address2": "",
+        "address2": false,
         "city": "Albuqueqe",
         "state": "NM.",
         "zip": "87114",
@@ -830,7 +831,7 @@ var dataInvoices = [{
         "number": "5110",
         "total": 525.00,
         "status": "Paid",
-        "item1": false,
+        "item1": "Ventilation ducts over underground meth lab cleaned",
         "item2": false,
         "item3": false,
         "item4": false,
@@ -839,7 +840,7 @@ var dataInvoices = [{
         "item7": false,
         "item8": false,
         "item9": false,
-        "amount1": false,
+        "amount1": 525.00,
         "amount2": false,
         "amount3": false,
         "amount4": false,
@@ -861,7 +862,7 @@ var dataInvoices = [{
         "cusId": "00017",
         "name": "Whistle Stop Cafe",
         "address1": "443 Mc Cracken St.",
-        "address2": "",
+        "address2": false,
         "city": "Juliette",
         "state": "GA.",
         "zip": "31046",
@@ -869,7 +870,7 @@ var dataInvoices = [{
         "number": "5109",
         "total": 555.00,
         "status": "Paid",
-        "item1": false,
+        "item1": "Single Large System Serviced",
         "item2": false,
         "item3": false,
         "item4": false,
@@ -878,7 +879,7 @@ var dataInvoices = [{
         "item7": false,
         "item8": false,
         "item9": false,
-        "amount1": false,
+        "amount1": 555.00,
         "amount2": false,
         "amount3": false,
         "amount4": false,
@@ -900,7 +901,7 @@ var dataInvoices = [{
         "cusId": "00018",
         "name": "Vesuvio",
         "address1": "91 Elizabeth Ave.",
-        "address2": "",
+        "address2": false,
         "city": "Elizabeth",
         "state": "NJ.",
         "zip": "07206",
@@ -908,8 +909,8 @@ var dataInvoices = [{
         "number": "5108",
         "total": 625.00,
         "status": "Paid",
-        "item1": false,
-        "item2": false,
+        "item1": "Main Carbroiler System Serviced; hood, duct & fan pressure washed",
+        "item2": "Fryer System Cleaned",
         "item3": false,
         "item4": false,
         "item5": false,
@@ -917,8 +918,8 @@ var dataInvoices = [{
         "item7": false,
         "item8": false,
         "item9": false,
-        "amount1": false,
-        "amount2": false,
+        "amount1": 425.00,
+        "amount2": 200.00,
         "amount3": false,
         "amount4": false,
         "amount5": false,
@@ -939,7 +940,7 @@ var dataInvoices = [{
         "cusId": "00019",
         "name": "The Pie Pole",
         "address1": "714 Traction Ave.",
-        "address2": "",
+        "address2": false,
         "city": "Los Angeles",
         "state": "CA.",
         "zip": "90013",
@@ -947,8 +948,8 @@ var dataInvoices = [{
         "number": "5107",
         "total": 625.00,
         "status": "Paid",
-        "item1": false,
-        "item2": false,
+        "item1": "Main Cookline System Serviced; hood, duct & fan pressure washed",
+        "item2": "Bakery Hood Cleaned",
         "item3": false,
         "item4": false,
         "item5": false,
@@ -956,8 +957,8 @@ var dataInvoices = [{
         "item7": false,
         "item8": false,
         "item9": false,
-        "amount1": false,
-        "amount2": false,
+        "amount1": 425.00,
+        "amount2": 200.00,
         "amount3": false,
         "amount4": false,
         "amount5": false,
@@ -978,7 +979,7 @@ var dataInvoices = [{
         "cusId": "00020",
         "name": "Louie's Italian Restaurant",
         "address1": "115 W Ocean Dr.",
-        "address2": "",
+        "address2": false,
         "city": "Ocean City",
         "state": "NJ.",
         "zip": "17740",
@@ -986,7 +987,7 @@ var dataInvoices = [{
         "number": "5106",
         "total": 490.00,
         "status": "Paid",
-        "item1": false,
+        "item1": "Main Cookline System Serviced; hood, duct & fan pressure washed",
         "item2": false,
         "item3": false,
         "item4": false,
@@ -995,7 +996,7 @@ var dataInvoices = [{
         "item7": false,
         "item8": false,
         "item9": false,
-        "amount1": false,
+        "amount1": 490.00,
         "amount2": false,
         "amount3": false,
         "amount4": false,
@@ -1019,15 +1020,15 @@ var dataInvoices = [{
         "cusId": "00021",
         "name": "Chocolate Factory",
         "address1": "Munich",
-        "address2": "",
+        "address2": false,
         "city": "Bavaria",
         "state": "West Germany",
-        "zip": "",
+        "zip": false,
         "date": "06/20/2021",
         "number": "5104",
         "total": 590.00,
         "status": "Paid",
-        "item1": false,
+        "item1": "Corpse of bratty teen removed from ductwork",
         "item2": false,
         "item3": false,
         "item4": false,
@@ -1036,7 +1037,7 @@ var dataInvoices = [{
         "item7": false,
         "item8": false,
         "item9": false,
-        "amount1": false,
+        "amount1": 590.00,
         "amount2": false,
         "amount3": false,
         "amount4": false,
@@ -1055,21 +1056,34 @@ var dataInvoices = [{
     }
 ]
 
+function setH3(pageName) {
+    let h3 = document.getElementById('siteSection');
+    let newHeader = pageName.charAt(0).toUpperCase() + pageName.slice(1);
+    h3.innerHTML = `<h3>${newHeader}</h3>`;
+}
+
 function display(pageName) {
 
     if (pageName === "overview") {
         document.getElementById('siteContentOverview').style.display = 'block';
+        document.getElementById('navOverview').className = 'active';
         document.getElementById('siteContentInvoices').style.display = 'none';
+        document.getElementById('navInvoices').className = 'inactive';
+        document.getElementById('previewInv').style.height = '0%';
+        setH3(pageName);
     } else if (pageName === "invoices") {
         document.getElementById('siteContentOverview').style.display = 'none';
+        document.getElementById('navOverview').className = 'inactive';
         document.getElementById('siteContentInvoices').style.display = 'block';
-    }   
-}
-
-
-function loadH3(pageName) {
-    let h3 = document.getElementById('siteSection');
-    h3.innerHTML = `<h3>${pageName}</h3>`;
+        document.getElementById('navInvoices').className = 'active';
+        document.getElementById('previewInv').style.height = '0%';
+        setH3(pageName);
+    } else if (pageName === "Preview Invoice") {
+        document.getElementById('previewInv').style.height = '100%';
+    } else if (pageName === "invoiceEdit") {
+        document.getElementById('modalBackground').style.display = 'block';
+        document.getElementById('modalInvoiceEdit').style.display = 'block';
+    }
 }
 
 
@@ -1113,11 +1127,13 @@ function buildRowInvoices(data) {
         let paymentStatus = data[i].status;
 
         var row = `<tr>
-							<td class = "td-order-3">${data[i].date}</td>
-							<td class = "td-order-4">${data[i].number}</td>
-							<td class= "td-order-1">${data[i].name}</td>
-                            <td class= "td-order-5">${data[i].status}</td>
-                            <td class= "td-order-2">${data[i].total.toFixed(2)}</td>
+							<td class = "tdOrder3">${data[i].date}
+                            <a href = "#previewInv${data[i].id}"
+                            class = "rowLink" ></a></td >
+							<td class = "tdOrder4">${data[i].number}</td>
+							<td class= "tdOrder1">${data[i].name}</td>
+                            <td class= "tdOrder5">${data[i].status}</td>
+                            <td class= "tdOrder2">${data[i].total.toFixed(2)}</td>
 					</tr>`;
 
         document.getElementById(`tbodyInvoices${paymentStatus}`).innerHTML += row;
@@ -1145,7 +1161,7 @@ function invoiceTotal() {
     }
     document.getElementById('totalSpanUnpaid').innerHTML = "Total: $" + sumVal2.toFixed(2);
     document.getElementById(`overviewChartInvoiceUnpaidSpan`).innerHTML = "$" + sumVal2.toFixed(2);
-    
+
 
     let sumVal3 = Math.floor((sumVal1 + sumVal2) / 100);
     let paidPercent = Math.floor(sumVal1 / sumVal3);
@@ -1153,26 +1169,136 @@ function invoiceTotal() {
 
     document.getElementById('invoiceBarPaid').style.width = `${paidPercent}%`;
     document.getElementById('invoiceBarUnpaid').style.width = `${unpaidPercent}%`;
-    
-} 
+
+}
 
 
-    window.addEventListener('load', function () {
-        alert("It's loaded!");
-    loadH3('Overview');
+window.addEventListener('load', function () {
+    alert("It's loaded!");
     buildRowPayments(dataInvoices);
     buildRowInvoices(dataInvoices);
     invoiceTotal(); // Initial call
     display('overview');
     location.hash = "#overview";
-    })
+})
 
-    function navigation(pageName) {
-        loadH3(pageName);
+function navigation(pageName) {
+    loadH3(pageName);
+}
+
+function drawInvoice(data, invoiceId) {
+
+    for (var i = 0; i < data.length; i++) {
+
+        let currentId = data[i].id;
+        let address1 = data[i].address1;
+        let address2 = data[i].address2;
+        let city = data[i].city;
+        let state = data[i].state;
+        let zip = data[i].zip;
+        let addressCustomer = 'Your Mom';
+
+        if (invoiceId === currentId) {
+            document.getElementById('invoiceName').innerText = `${data[i].name}`;
+            document.getElementById('invoiceSummaryName').innerText = `${data[i].name}`;
+            document.getElementById('invoiceNum').innerText = `${data[i].number}`;
+            document.getElementById('invoiceSummaryNumber').innerText = `${data[i].number}`;
+            document.getElementById('invoiceDate').innerText = `${data[i].date}`;
+            document.getElementById('invoiceSummaryDate').innerText = `${data[i].date}`;
+            document.getElementById('invoiceSummaryTotal').innerText = `$ ${data[i].total.toFixed(2)}`;
+            document.getElementById('invoiceTotal').innerText = `$ ${data[i].total.toFixed(2)}`;
+            document.getElementById('invoiceSummaryStatus').innerText = `${data[i].status}`;
+
+            if (address1 !== false) {
+                addressCustomer = `${address1} <br>`;
+            }
+
+            if (address2 !== false) {
+                addressCustomer = `${addressCustomer}${address2} <br>`;
+            }
+
+            if (city !== false) {
+                addressCustomer = `${addressCustomer}${city}, `;
+            }
+
+            if (state !== false) {
+                addressCustomer = `${addressCustomer}${state} `;
+            }
+
+            if (zip !== false) {
+                addressCustomer = `${addressCustomer}${zip}`;
+            }
+            document.getElementById('invoiceAddress').innerHTML = addressCustomer;
+
+            if (data[i].item1 !== false) {
+                document.getElementById('invoiceTableItem1').innerHTML = `${data[i].item1}`;
+            }
+            if (data[i].amount1 !== false) {
+                document.getElementById('invoiceTableAmount1').innerHTML = `$ ${data[i].amount1.toFixed(2)}`;
+            }
+            if (data[i].item2 !== false) {
+                document.getElementById('invoiceTableItem2').innerHTML = `${data[i].item2}`;
+            }
+            if (data[i].amount2 !== false) {
+                document.getElementById('invoiceTableAmount2').innerHTML = `$ ${data[i].amount2.toFixed(2)}`;
+            }
+            if (data[i].item3 !== false) {
+                document.getElementById('invoiceTableItem3').innerHTML = `${data[i].item3}`;
+            }
+            if (data[i].amount3 !== false) {
+                document.getElementById('invoiceTableAmount3').innerHTML = `$ ${data[i].amount3.toFixed(2)}`;
+            }
+            if (data[i].item4 !== false) {
+                document.getElementById('invoiceTableItem4').innerHTML = `${data[i].item4}`;
+            }
+            if (data[i].amount4 !== false) {
+                document.getElementById('invoiceTableAmount4').innerHTML = `$ ${data[i].amount4.toFixed(2)}`;
+            }
+            if (data[i].item5 !== false) {
+                document.getElementById('invoiceTableItem5').innerHTML = `${data[i].item5}`;
+            }
+            if (data[i].amount5 !== false) {
+                document.getElementById('invoiceTableAmount5').innerHTML = `$ ${data[i].amount5.toFixed(2)}`;
+            }
+            if (data[i].item6 !== false) {
+                document.getElementById('invoiceTableItem6').innerHTML = `${data[i].item6}`;
+            }
+            if (data[i].amount6 !== false) {
+                document.getElementById('invoiceTableAmount6').innerHTML = `$ ${data[i].amount6.toFixed(2)}`;
+            }
+            if (data[i].item7 !== false) {
+                document.getElementById('invoiceTableItem7').innerHTML = `${data[i].item7}`;
+            }
+            if (data[i].amount7 !== false) {
+                document.getElementById('invoiceTableAmount7').innerHTML = `$ ${data[i].amount7.toFixed(2)}`;
+            }
+            if (data[i].item8 !== false) {
+                document.getElementById('invoiceTableItem8').innerHTML = `${data[i].item8}`;
+            }
+            if (data[i].amount8 !== false) {
+                document.getElementById('invoiceTableAmount8').innerHTML = `$ ${data[i].amount8.toFixed(2)}`;
+            }
+            if (data[i].item9 !== false) {
+                document.getElementById('invoiceTableItem9').innerHTML = `${data[i].item9}`;
+            }
+            if (data[i].amount9 !== false) {
+                document.getElementById('invoiceTableAmount9').innerHTML = `$ ${data[i].amount9.toFixed(2)}`;
+            }
+        }
+
+
     }
+}
 
-    window.addEventListener("hashchange", () => {
+
+window.addEventListener("hashchange", () => {
+    let previewId = location.hash.slice(11);
+    let previewTest = location.hash.slice(0, -14);
+    if (previewTest === "#previewInv") {
+        display("Preview Invoice");
+        drawInvoice(dataInvoices, previewId);
+    } else if (previewTest !== "previewInv") {
         let newPage = location.hash.substring(1);
         display(newPage);
-    }, false);
-
+    }
+}, false);

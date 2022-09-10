@@ -30,7 +30,7 @@
         <div class="siteNav">
             <nav>
                 <ul class="navigation">
-                    <li>
+                    <li id="navOverview">
 
                         <a href="#overview">
                             <span class="material-icons" alt=" ">analytics
@@ -39,31 +39,31 @@
                         </a>
 
                     </li>
-                    <li class="active">
+                    <li id="navInvoices">
                         <a href="#invoices">
                             <span class="material-icons" alt=" ">description</span>
                             Invoices
                         </a>
                     </li>
-                    <li>
+                    <li id="navExpenses">
                         <a href="#expenses">
                             <span class="material-icons" alt=" ">receipt_long</span>
                             Expenses
                         </a>
                     </li>
-                    <li>
+                    <li id="navCustomers">
                         <a href="#customers">
                             <span class="material-icons" alt=" ">people</span>
                             Customers
                         </a>
                     </li>
-                    <li>
+                    <li id="navSettings">
                         <a href="#settings">
                             <span class="material-icons" alt=" ">settings</span>
                             Settings
                         </a>
                     </li>
-                    </ul>
+                </ul>
             </nav>
         </div>
 
@@ -91,10 +91,8 @@
 
 
                         <div class="overviewChartWrapperInvoiceStats">
-                            <span class="overviewChartInvoicePaidSpan"
-                                id="overviewChartInvoicePaidSpan"></span>
-                            <span class="overviewChartInvoiceUnpaidSpan"
-                                id="overviewChartInvoiceUnpaidSpan"></span>
+                            <span class="overviewChartInvoicePaidSpan" id="overviewChartInvoicePaidSpan"></span>
+                            <span class="overviewChartInvoiceUnpaidSpan" id="overviewChartInvoiceUnpaidSpan"></span>
                             <br>
                             <span class="overviewChartInvoicePaidSpan">Paid</span>
                             <span class="overviewChartInvoiceUnpaidSpan">Unpaid</span>
@@ -233,7 +231,234 @@
                     </div>
                 </div>
             </main>
-        </div>
+
+            <div id="previewInv" class="previewInvoice">
+                <h3 class="previewInvoiceH3">Invoice Preview</h3>
+                <button class="buttonBack">
+                    <a href="#invoices"><span class="material-icons">arrow_back</span></a>
+                </button>
+                <button class="buttonToggle">
+                    <a href="#invoice_pageview"><span class="material-icons">pageview</span></a>
+                </button>
+                <button class="buttonExit">
+                    <a href="#invoices"><span class="material-icons">close</span></a>
+                </button>
+
+                <table class="tableInvoiceSummary">
+                    <tbody id="tbodyinvoiceSummary">
+                        <tr class="tableRowInvoiceSummary">
+                            <td>Invoice No.</td>
+                            <td id="invoiceSummaryNumber"></td>
+                        </tr>
+                        <tr class="tableRowInvoiceSummary">
+                            <td>Date</td>
+                            <td id ="invoiceSummaryDate"></td>
+                        </tr>
+                        <tr class="tableRowInvoiceSummary">
+                            <td>Customer</td>
+                            <td id="invoiceSummaryName"></td>
+                        </tr>
+                        <tr class="tableRowInvoiceSummary">
+                            <td>Total</td>
+                            <td id="invoiceSummaryTotal"></td>
+                        </tr>
+                        <tr class="tableRowInvoiceSummary">
+                            <td>Status</td>
+                            <td id="invoiceSummaryStatus"></td>
+                        </tr>
+                    </tbody>
+                </table>
+                <div class="previewInvoiceFooter">
+
+                    <button class="buttonClose button">
+                        <a href="invoices.html">Close</a>
+                    </button>
+                    <button id="myBtn" class="buttonDelete button">
+                        <span class="material-icons">delete</span>
+                    </button>
+                    <button class="buttonPrint button" onclick="window.print()">
+                        <span class="material-icons">print</span>
+                    </button>
+                    <button class="buttonPayment button">
+                        <a href="#payment">
+                            <span class="material-icons">price_check</span></a>
+                    </button>
+                    <button class="buttonEdit button">
+                        <a href="#invoiceEdit">Edit</a>
+                    </button>
+                </div>
+
+                <div class="previewInvoicePageWrapper">
+
+                    <!-- previewInvoicePage Top Grid 
+            (class="previewInvoicePage_wrapper-top_grid")
+            Next four divs are styled two at the top, and two below, 
+            left to right using their secondary classes as follows:
+            
+            .previewInvoicePage-company-address | .previewInvoicePage-logo
+        
+            .previewInvoicePage-customer-address | .previewInvoicePage-number-date-->
+
+                    <!--2.2.1 Company Address-->
+                    <div class="previewInvoicePageCompany">
+
+                        <!--"previewInvoicePage_wrapper-font" uses vh and vw with @media to style font-size to match page size -->
+                        <p>RC Exhaust</p>
+                        <address>
+                            PO Box 287
+                            <br>
+                            Bishop, Ca. 93515
+                        </address>
+                    </div>
+
+                    <!--2.2.2 Comapny Logo-->
+                    <div class="previewInvoicePageLogoWidth">
+                        <div class="previewInvoicePageLogoHeight">
+                            <img src="https://rc-resume.neocities.org/companyLogo.png" alt="Company Logo"
+                                class="previewInvoicePageLogo">
+                        </div>
+                    </div>
+
+
+                    <!--2.2.3 Customer Address-->
+                    <div class="previewInvoicePageCustomer">
+                        <h6>BILL TO:</h6>
+                        <p id="invoiceName"></p>
+                        <address class="address" id="invoiceAddress">
+                            
+                        </address>
+                    </div>
+
+                    <!--2.2.4 Invoice # and date -->
+
+                    <div class="previewInvoicePageDate">
+
+                        <h5 class="previewInvoicePageH5">INVOICE</h5>
+
+                        <table class="previewInvoicePageTable1">
+                            <tbody>
+                                <tr>
+                                    <td>
+                                        Invoice No.
+                                    </td>
+                                    <td id="invoiceNum">
+                                        
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        Date
+                                    </td>
+                                    <td id="invoiceDate">
+                                        
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+
+                    </div>
+
+                    <!--2.3 Item descriptions and amount. -->
+                    <div class="previewInvoicePageTable">
+
+                        <table class="previewInvoicePageTable2">
+                            <thead>
+                                <tr class="previewInvoicePageTable2Head">
+                                    <th>
+                                        Description
+                                    </th>
+                                    <th>
+                                        Amount
+                                    </th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td id="invoiceTableItem1">
+                                    </td>
+                                    <td id="invoiceTableAmount1">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td id="invoiceTableItem2">
+                                    </td>
+                                    <td id="invoiceTableAmount2">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td id="invoiceTableItem3">
+                                    </td>
+                                    <td id="invoiceTableAmount3">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td id="invoiceTableItem4">
+                                    </td>
+                                    <td id="invoiceTableAmount4">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td id="invoiceTableItem5">
+                                    </td>
+                                    <td id="invoiceTableAmount5">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td id="invoiceTableItem6">
+                                    </td>
+                                    <td id="invoiceTableAmount6">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td id="invoiceTableItem7">
+                                    </td>
+                                    <td id="invoiceTableAmount7">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td id="invoiceTableItem8">
+                                    </td>
+                                    <td id="invoiceTableAmount8">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td id="invoiceTableItem9">
+                                    </td>
+                                    <td id="invoiceTableAmount9">
+                                    </td>
+                                </tr>
+                            </tbody>
+                            <tfoot>
+                                <tr class="previewInvoicePageTable2Foot">
+                                    <td>
+                                        Total
+                                    </td>
+                                    <td id ="invoiceTotal">
+                                    </td>
+                                </tr>
+                            </tfoot>
+                        </table>
+
+                    </div>
+
+                    <!--2.4 Invoice footer-->
+                    <div class="previewInvoicePageFooter">
+                        <address>Phone: (867) 867-5309 | Email: accountspayable@rcexhaust.com</address>
+                    </div>
+                </div>
+                <!--previewInvoicePage-container-->
+</div>
+            <div class="modalBackground" id="modalBackground"></div>
+            </div>
+            <div class="modalInvoiceEditWrapper" id="modalInvoiceEdit">
+                <h4 class="modalH4">Edit Invoice</h4>
+                
+                    <label for="date" class="label">Date:</label>
+                    <input type="date" id="datePicker" name="input" class="input" min="1997-01-01"
+                        max="2030-12-31">
+                
+            </div>
+        
 
 
     </div>
