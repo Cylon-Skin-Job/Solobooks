@@ -114,220 +114,7 @@ label {
     font-family: inherit;
 }
 
-/* Overview Cards general styling */
 
-/* Wrappers for Cards */
-.overviewChartWrapper {
-    background-color: white;
-    width: 98%;
-    margin: 5px auto;
-    height: auto;
-    border: darkgrey 1px solid;
-    border-radius: 10px;
-    box-shadow: 1px 1px 5px grey;
-    overflow: hidden;
-    padding-bottom: 20px;
-}
-
-h5 {
-    display: inline-block;
-    margin: 10px 0 0 20px;
-    width: 100%;
-    font-weight: bold;
-    font-size: 1.1rem;
-}
-
-/* Extra Text beneath h4 */
-.overviewChartP {
-    display: inline-block;
-    margin: 5px 0 0 20px;
-    width: 50%;
-    font-size: .7rem;
-}
-
-/* Invoice Chart Styles*/
-
-.overviewChartWrapperInvoiceStats {
-    overflow: hidden;
-    margin: 10px auto 0px;
-    width: 100%;
-    height: 40px;
-}
-
-.overviewChartWrapperInvoiceBars {
-    overflow: hidden;
-    margin: 0px auto 0px;
-    width: 98%;
-    height: 50px;
-    display: flex;
-    flex-flow: row nowrap;
-    justify-content: center;
-}
-
-.invoiceBarUnpaid {
-    box-sizing: border-box;
-    display: inline-block;
-    margin: 0px;
-    height: 50px;
-    border: black 1px solid;
-    border-left: none;
-    background-color: darkRed;
-    border-radius: 0px 5px 5px 0px;
-}
-
-.invoiceBarPaid {
-    float: left;
-    box-sizing: border-box;
-    margin: 0px;
-    height: 50px;
-    border: black 1px solid;
-    border-right: none;
-    background-color: green;
-    border-radius: 5px 0px 0px 5px;
-}
-
-.overviewChartInvoiceUnpaidSpan {
-    float: right;
-    margin-right: 2%;
-    font-weight: bold;
-}
-
-.overviewChartInvoicePaidSpan {
-    float: left;
-    margin-left: 2%;
-    font-weight: bold;
-}
-
-/* Cash-flow Chart Styles*/
-
-.overviewProfitLossChart {
-    position: relative;
-    float: left;
-    overflow: hidden;
-    margin: 0 5%;
-    width: 90%;
-    height: 200px;
-    border-bottom: darkgrey 2px solid;
-}
-
-.overviewBarPayments {
-    position: absolute;
-    bottom: 0;
-    margin: 0;
-    left: 10%;
-    display: block;
-    width: 20%;
-    height: 166px;
-    border: darkgrey 2px solid;
-    border-bottom: none;
-    background-color: #003a6d;
-    border-top-left-radius: 5px;
-    border-top-right-radius: 5px;
-}
-
-.overviewBarExpenses {
-    position: absolute;
-    bottom: 0;
-    margin: 0;
-    left: 40%;
-    display: block;
-    width: 20%;
-    height: 34px;
-    border: darkgrey 2px solid;
-    border-bottom: none;
-    background-color: #00539a;
-    border-top-left-radius: 5px;
-    border-top-right-radius: 5px;
-}
-
-.overviewBarProfit {
-    position: absolute;
-    bottom: 0;
-    margin: 0;
-    left: 70%;
-    display: block;
-    width: 20%;
-    height: 138px;
-    border: darkgrey 2px solid;
-    border-bottom: none;
-    background-color: #0072c3;
-    border-top-left-radius: 5px;
-    border-top-right-radius: 5px;
-}
-
-.overviewProfitLossLeftBold {
-    float: left;
-    width: 20%;
-    text-align: center;
-    margin: 0 0 0 12.5%;
-    font-size: .6rem;
-    font-weight: bold;
-}
-
-.overviewProfitLossCenterBold {
-    float: left;
-    text-align: center;
-    width: 20%;
-    margin: 0 0 0 7.8%;
-    font-size: .6rem;
-    font-weight: bold;
-}
-
-.overviewProfitLossRightBold {
-    float: right;
-    text-align: center;
-    width: 20%;
-    margin: 0 14% 0 0;
-    font-size: .6rem;
-    font-weight: bold;
-}
-
-.overviewProfitLossLeftSmall {
-    float: left;
-    width: 20%;
-    text-align: center;
-    margin: 0 0 0 12.5%;
-    font-size: .6rem;
-}
-
-.overviewProfitLossCenterSmall {
-    float: left;
-    text-align: center;
-    width: 20%;
-    margin: 0 0 0 7.8%;
-    font-size: .6rem;
-}
-
-.overviewProfitLossRightSmall {
-    float: right;
-    text-align: center;
-    width: 20%;
-    margin: 0 14% 0 0;
-    font-size: .6rem;
-}
-
-/* Expense Chart Styling */
-
-.overviewExpenseList {
-    margin-left: 2%;
-    columns: 2;
-    -webkit-columns: 2;
-    -moz-columns: 2;
-}
-
-.overviewExpenseList li {
-    margin-bottom: 10px;
-}
-
-.overviewExpenseListBold {
-    font-weight: bold;
-    font-size: 1rem;
-    color: #00539a;
-}
-
-.overviewExpenseListSmall {
-    font-size: .6rem;
-}
 
 /* Payments Chart Styling */
 
@@ -409,20 +196,23 @@ h5 {
     overflow: auto;
 }
 
-.siteContentOverview,
-.siteContentInvoices {
+/* Desktop Content Area */
+
+.siteContent {
     margin: 30px 30px 0px 30px;
     height: 100%;
-    display: block;
+    display: none;
     width: auto;
-    max-width: 1000px;
-    width: calc(100vw - 260px);
+    max-width: 1700px;
+    width: calc(100vw - 280px);
     min-width: 740px;
     justify-content: center;
     padding-bottom: 500px;
 }
 
-
+.contentDiv {
+    width: 100%;
+}
 
 /* Desktop Navigation --Start-- */
 
@@ -540,6 +330,14 @@ h4 {
     width: 50%;
 }
 
+h5 {
+    display: inline-block;
+    margin: 10px 0 0 20px;
+    width: 100%;
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+
 .previewInvoiceH3 {
     height: 20px;
     grid-area: header;
@@ -553,17 +351,21 @@ h4 {
 }
 
 .modalH4 {
-    width: 100%;
+    width: calc(100% - 10px);
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 50px;
+    padding-top: 20px;
+    background: white;
+    z-index: 2;
     text-align: center;
-    margin: 20px 0px;
+    border-bottom: solid lightgrey 1px;
 }
 
 
-/* Desktop Content Area */
 
 /* Div within main to hold content */
-
-
 
 .whitespace {
     width: 100%;
@@ -598,10 +400,9 @@ h4 {
 
 /* Desktop Tables */
 
-.invoicesTablePaid,
-.invoicesTableUnpaid {
+table {
     width: 100%;
-    overflow-y: auto;
+    overflow: hidden;
     z-index: 2;
     border-collapse: collapse;
     border-bottom: solid grey 1px;
@@ -630,8 +431,8 @@ tr {
 }
 
 .tableHeadRow {
-    width: calc(100vw - 200px);
-    max-width: 1060px;
+    width: calc(100vw - 280px);
+    max-width: 1760px;
     min-width: 800px;
     position: fixed;
     top: 120px;
@@ -784,6 +585,265 @@ tr {
     box-shadow: 1px 1px 5px grey;
 }
 
+/* Overview */
+
+/* Wrappers for Cards */
+.overviewChartWrapper {
+    background-color: white;
+    width: 98%;
+    margin: 5px auto;
+    height: auto;
+    border: darkgrey 1px solid;
+    border-radius: 10px;
+    box-shadow: 1px 1px 5px grey;
+    overflow: hidden;
+    padding-bottom: 20px;
+}
+
+
+
+/* Extra Text beneath h4 */
+.overviewChartP {
+    display: inline-block;
+    margin: 5px 0 0 20px;
+    width: 50%;
+    font-size: .7rem;
+}
+
+/* Invoice Chart Styles*/
+
+.overviewChartWrapperInvoiceStats {
+    overflow: hidden;
+    margin: 10px auto 0px;
+    width: 100%;
+    height: 40px;
+}
+
+.overviewChartWrapperInvoiceBars {
+    overflow: hidden;
+    margin: 0px auto 0px;
+    width: 98%;
+    height: 50px;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+}
+
+.invoiceBarUnpaid {
+    box-sizing: border-box;
+    display: inline-block;
+    margin: 0px;
+    height: 50px;
+    border: black 1px solid;
+    border-left: none;
+    background-color: darkRed;
+    border-radius: 0px 5px 5px 0px;
+}
+
+.invoiceBarPaid {
+    float: left;
+    box-sizing: border-box;
+    margin: 0px;
+    height: 50px;
+    border: black 1px solid;
+    border-right: none;
+    background-color: green;
+    border-radius: 5px 0px 0px 5px;
+}
+
+.overviewChartInvoiceUnpaid {
+    float: right;
+    margin-right: 2%;
+}
+
+.overviewChartInvoiceUnpaidSpan {
+    float: right;
+    margin-right: 2%;
+    font-weight: bold;
+}
+
+.overviewChartInvoiceUnpaidSpan::before {
+    content: "$ ";
+}
+
+.overviewChartInvoicePaid {
+    float: left;
+    margin-left: 2%;
+}
+
+.overviewChartInvoicePaidSpan {
+    float: left;
+    margin-left: 2%;
+    font-weight: bold;
+}
+
+.overviewChartInvoicePaidSpan::before {
+    content: "$ ";
+}
+
+/* Cash-flow Chart Styles*/
+
+.overviewProfitLossChart {
+    position: relative;
+    float: left;
+    overflow: hidden;
+    margin: 0 5%;
+    width: 90%;
+    height: 250px;
+    border-bottom: darkgrey 2px solid;
+}
+
+.overviewBarPayments {
+    position: absolute;
+    bottom: 0;
+    margin: 0;
+    left: 10%;
+    display: block;
+    width: 20%;
+    border: darkgrey 2px solid;
+    border-bottom: none;
+    background-color: #003a6d;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.overviewBarExpenses {
+    position: absolute;
+    bottom: 0;
+    margin: 0;
+    left: 40%;
+    display: block;
+    width: 20%;
+    border: darkgrey 2px solid;
+    border-bottom: none;
+    background-color: #00539a;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.overviewBarProfit {
+    position: absolute;
+    bottom: 0;
+    margin: 0;
+    left: 70%;
+    display: block;
+    width: 20%;
+    border: darkgrey 2px solid;
+    border-bottom: none;
+    background-color: #0072c3;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.overviewProfitLossLeftBold {
+    float: left;
+    width: 20%;
+    text-align: center;
+    margin: 0 0 0 12.5%;
+    font-size: .7rem;
+    font-weight: bold;
+}
+
+.overviewProfitLossLeftBold::before {
+    content: "$ ";
+}
+
+.overviewProfitLossCenterBold {
+    float: left;
+    text-align: center;
+    width: 20%;
+    margin: 0 0 0 7.8%;
+    font-size: .7rem;
+    font-weight: bold;
+}
+
+.overviewProfitLossCenterBold::before {
+    content: "$ ";
+}
+
+.overviewProfitLossRightBold {
+    float: right;
+    text-align: center;
+    width: 20%;
+    margin: 0 14% 0 0;
+    font-size: .7rem;
+    font-weight: bold;
+}
+
+.overviewProfitLossRightBold::before {
+    content: "$ ";
+}
+
+.overviewProfitLossLeftSmall {
+    float: left;
+    width: 20%;
+    text-align: center;
+    margin: 0 0 0 12.5%;
+    font-size: .6rem;
+}
+
+.overviewProfitLossCenterSmall {
+    float: left;
+    text-align: center;
+    width: 20%;
+    margin: 0 0 0 7.8%;
+    font-size: .6rem;
+}
+
+.overviewProfitLossRightSmall {
+    float: right;
+    text-align: center;
+    width: 20%;
+    margin: 0 14% 0 0;
+    font-size: .6rem;
+}
+
+/* Expense Chart Styling */
+
+.overviewExpenseList {
+    margin-left: 2%;
+    columns: 2;
+    /* -webkit-columns: 3;
+    -moz-columns: 3; */
+    height: 300px;
+}
+
+.overviewExpenseList li {
+    margin-bottom: 10px;
+}
+
+.overviewExpenseListBold {
+    font-weight: bold;
+    font-size: 1rem;
+    color: #00539a;
+    margin: 0px;
+}
+
+.overviewExpenseListSmall {
+    font-size: .6rem;
+}
+
+.tdPayDate {
+    width: 20%;
+}
+
+.tdPayName {
+    width: 60%;
+}
+
+.tdPayTotal {
+    width: 20%;
+    text-align: right;
+}
+
+.tbodyPayments tr:nth-child(even) {
+    background: lightgrey;
+}
+
+/* Invoices */
+
+
+
 /* Modals */
 
 .modalBackground {
@@ -802,13 +862,20 @@ tr {
     background: white;
     border-radius: 10px;
     position: fixed;
-    top: calc(50vh - 250px);
+    top: calc(50vh - 300px);
     left: calc(50vw - 375px);
-    margin: auto;
     width: 750px;
-    height: 500px;
+    height: 570px;
     z-index: 10;
     display: none;
+    padding: 0px;
+}
+
+.modalContent {
+    width: 96%;
+    margin: auto;
+    position: relative;
+    top: 60px;
 }
 
 .modalContainer:target {
@@ -831,6 +898,14 @@ tr {
     font-size: 1.1rem;
 }
 
+.modalFooter {
+    display: block;
+    width: 100%;
+    height: 80px;
+    position: absolute;
+    bottom: 20px;
+} 
+
 /* Modal Inputs */
 
 .inputWrapper {
@@ -840,22 +915,33 @@ tr {
 
 .input {
     width: 160px;
-    height: 45px;
+    height: 30px;
     border: solid #2a2438 2px;
     border-radius: 5px;
-    text-align: center;
     display: block;
     color: black;
-    padding: 10px 5px;
-    margin-left: 20px;
+    padding: 0px 5px;
+    margin-left: 5px;
+}
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+    -moz-appearance: textfield;
 }
 
 input::-webkit-date-and-time-value {
-    height: 43px;
+    height: 28px;
 }
 
 .selector {
-    width: auto;
+    width: 200px;
 }
 
 .notes {
@@ -866,14 +952,95 @@ input::-webkit-date-and-time-value {
 .label {
     width: auto;
     font-size: .8rem;
-    Font-weight: 800;
     color: black;
     margin-left: 20px;
     padding: 0px 3px;
     position: relative;
     left: 10px;
-    bottom: -5px;
+    bottom: -6px;
 }
+
+.itemDescriptionHeadWrapper {
+    width: 100%;
+    background: lightgrey;
+    height: 25px;
+    padding: 3px 10px;
+    margin-top: 20px;
+    border-radius: 3px;
+}
+
+.amountSpan {
+    float: right;
+    text-align: right;
+}
+
+.itemDescriptionBodyWrapper {
+    width: 100%;
+    background: lightgrey;
+    height: auto;
+    margin: 2px 0px;
+    padding: 5px 0px 3px;
+    border-radius: 3px;
+    position: relative;
+    }
+
+    .expandCircle {
+        position: absolute;
+        top: 8px;
+        left: 5px;
+        z-index: 1;
+    }
+
+    .selector2 {
+        width: 20px;
+        height: 30px;
+        background: transparent;
+        color: transparent;
+        border: solid 0px transparent;
+        display: inline-block;
+        z-index: 2;
+        position: absolute;
+        left: 0px;
+        
+    }
+
+    .selector2:hover,
+    .selector2:active,
+    .selector2:target{
+        background: transparent;
+        color: transparent;
+        border: solid 0px transparent;
+    }
+
+    .selector2:focus {
+        outline: none;
+    }
+
+    .itemOption {
+        color: black;
+    }
+    .descriptionTextarea {
+        height: 30px;
+        width: 580px;
+        overflow-wrap: break-word;
+        display: inline-block;
+        margin-left: 32px;
+        padding: 4px;
+        z-index: 4;
+        resize: none;
+    }
+
+    .amountTextarea {
+        height: 30px;
+        width: 100px;
+        overflow: hidden;
+        display: inline-block;
+        position: absolute;
+        right: 5px;
+        padding: 4px;
+    }
+
+
 
 /* Modal Buttons */
 
@@ -904,16 +1071,16 @@ input::-webkit-date-and-time-value {
 .modalFooter {
     width: 100%;
     height: 60px;
-    margin-top: 30px;
+    margin: 30px 0px;
     display: flex;
     flex-flow: row;
-    justify-content: space-around;
+    justify-content: flex-end;
 }
 
 .modalFooterButton {
     display: inline-block;
     width: 90px;
-    height: 30px;
+    height: 40px;
     border: solid 1px #2a2438;
     background-color: #dbd8e3;
     border-radius: 20px;
@@ -921,6 +1088,7 @@ input::-webkit-date-and-time-value {
     font-size: 1rem;
     padding: 5px 6px;
     text-align: center;
+    margin: 30px;
 }
 
 
@@ -943,8 +1111,6 @@ input::-webkit-date-and-time-value {
         "ribbon-2 ribbon-2"
         "payments payments";
 }
-
-
 
 .overviewChartWrapperCashflow {
     width: 48.1%;
@@ -979,6 +1145,29 @@ input::-webkit-date-and-time-value {
     top: 30px;
     width: 101%;
     margin-left: -.5%;
+}
+
+/* Expenses */
+
+.tbodyExpenses tr:nth-child(even) {
+    background: lightgrey;
+}
+
+.tdExpensesDate {
+    width: 20%;
+}
+
+.tdExpensesCategory {
+    width:35%;
+}
+
+.tdExpensesNotes {
+    width: 35%;
+}
+
+.tdExpensesAmount {
+    width: 10%;
+    text-align: right;
 }
 
 /* Invoices Styling */
@@ -1043,6 +1232,13 @@ input::-webkit-date-and-time-value {
     grid-area: footer;
 }
 
+/* Expenses */
+
+.tableCustomers tr:nth-child(even) {
+    background:lightgrey;
+}
+
+   
 
 
 
@@ -1937,18 +2133,18 @@ width to create 8.5 x 11 ratio */
 
     /* Phone Content --Start-- */
 
-    .overview-chart-wrapper-cashflow {
+    .overviewChartWrapperCashflow {
         width: 98%;
         display: block;
         margin: 1% auto;
-        height: auto;
+        height: 370px;
     }
 
-    .overview-chart-wrapper-expenses {
+    .overviewChartWrapperExpenses {
         width: 98%;
         display: block;
         margin: 1% auto;
-        height: auto;
+        height: 350px;
     }
 
     /* Phone Tables --Start-- */
