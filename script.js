@@ -1617,6 +1617,7 @@ function buildTableExpenses() {
             return compareStrings(b.amount, a.amount);
         }
     })
+    
 
     function buildTable(i, data) {
         let month = getExpenseMonth(i, data);
@@ -1627,8 +1628,8 @@ function buildTableExpenses() {
                     <span class ="expenseMonth">${month}</span><span class="expenseYear"> ${year}</span><span class ="ribbonTotal" id ="eTotal${month}${year}"></span>
                     </div>
                     <table id="tableExpenses${month}${year}">
-                    <tbody id="tbodyExpenses${month}${year}" class="tbodyExpenses rowLink">
-                        <tr>
+                    <tbody id="tbodyExpenses${month}${year}" class="tbodyExpenses">
+                        <tr id = "row${i}">
                             <td class="tdExpensesDate">${formatDate(data[i].date)}</td>
                             <td class="tdExpensesCategory">${data[i].category}</td> 
                             <td class="tdExpensesNotes">${data[i].notes}</td> 
@@ -1644,9 +1645,9 @@ function buildTableExpenses() {
     let preMonth = getExpenseMonth(0, data);
     let preYear = getExpenseYear(0, data);
     let total = 0;
-
     document.getElementById(`tableExpenses${preMonth}${preYear}`).className = 'topTable';
-
+    
+    
     for (var i = 1; i < data.length; i++) { // i starts at 1 so 'if' statement can compare month name to previous including the one above
 
         let newYear = getExpenseYear(i, data);
@@ -1658,29 +1659,34 @@ function buildTableExpenses() {
 
         if (newMonth === preMonth && newYear === preYear) { // if same month as last, total is updated and loop repeats
             let row = `
-                        <tr>
+                        <tr id = "row${i}">
                             <td class = "tdExpensesDate">${formatDate(date)}</td>
                             <td class = "tdExpensesCategory">${cat}</td>
                             <td class = "tdExpensesNotes">${notes}</td>
                             <td class = "tdExpensesAmount">$ ${amount.toFixed(2)}</td>
                         </tr>`
             document.getElementById(`tbodyExpenses${newMonth}${newYear}`).innerHTML += row;
-
             total = total + amount;
         }
 
         if (newMonth !== preMonth || preYear !== preYear) { // if new category, new li is drawn then ....
 
             buildTable(i, data);
-
             document.getElementById(`eTotal${preMonth}${preYear}`).innerText = `$ ${total.toFixed(2)}`; // PREVIOUS total added to its span
             total = 0; // total is reset
             total = total + amount; // amount from CURRENT category is added to total
             preMonth = newMonth;
-            preYear = newYear;
+            preYear = newYear;          
+        }
+        if (i % 2 !== 0) {
+            document.getElementById(`row${i}`).className = 'lightgrey';
         }
     }
     document.getElementById(`eTotal${preMonth}${preYear}`).innerText = `$ ${total.toFixed(2)}`; // when loop finishes, last total is added to it's span
+
+    
+        
+    
 }
 
 // Customers
@@ -1740,7 +1746,7 @@ function buildTableCustomers() {
                 </div>
                     <table class="tableCustomers" id="tableCustomers${letter}">
                     <tbody id="tbodyCustomers${letter}">
-                    <tr>
+                    <tr id="row${i}">
                         <td>${name}</td> 
                         <td> ${balance}</td>
                     </tr>
@@ -1765,24 +1771,23 @@ function buildTableCustomers() {
 
         if (newLetter === preLetter && newName !== preName) { // if same month as last, total is updated and loop repeats
             let row =
-                `<tr>
+                `<tr id="row${i}">
                             <td>${newName}</td>  
                             <td>${balance}</td> 
                         </tr>`
             document.getElementById(`tbodyCustomers${newLetter}`).innerHTML += row;
+            if (i % 2 !== 0) {
+                document.getElementById(`row${i}`).className = 'lightgrey';
+            }
         }
 
         if (newLetter !== preLetter) { // if new category, new li is drawn then ....
-
             buildTable(i, data);
             preLetter = newLetter;
-            preName = newName;
+            preName = newName;    
+        }
+        if (i % 2 !== 0) {
+            document.getElementById(`row${i}`).className = 'lightgrey';
         }
     }
 }
-
-
-
-
-
-

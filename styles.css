@@ -460,6 +460,10 @@ tr {
     left: 0;
 }
 
+.lightgrey {
+    background: lightgrey;
+}
+
 .tdDescription1,
 .tdDescription2,
 .tdOrder1 {
@@ -1149,9 +1153,7 @@ input::-webkit-date-and-time-value {
 
 /* Expenses */
 
-.tbodyExpenses tr:nth-child(even) {
-    background: lightgrey;
-}
+
 
 .tdExpensesDate {
     width: 20%;
@@ -1233,10 +1235,6 @@ input::-webkit-date-and-time-value {
 }
 
 /* Expenses */
-
-.tableCustomers tr:nth-child(even) {
-    background:lightgrey;
-}
 
    
 
