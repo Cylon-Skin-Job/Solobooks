@@ -1,0 +1,53 @@
+* {
+    box-sizing: border-box;
+}
+
+.iconContainer {
+    width: 400px;
+    height: 400px;
+    background: purple;
+    position: relative;
+    border-radius: 100%;
+}
+
+.dot {
+    position: relative;
+    left: 4.75em;
+    top: -.25em;
+    color: purple;
+    font-weight: bold;
+    font-size: 3em;
+}
+
+.icon { 
+    width: 16em;
+    height: 7em;
+    background: violet;
+    border-radius: 1em 1em 0px 0px;
+    position: absolute;
+    top: 10em;
+    left: 4.5em;
+}
+
+.icon::after {
+    content: "";
+    width: 13em;
+    height: 4em;
+    background: purple;
+    border: violet solid .5em;
+    position: absolute;
+    top: 3.5em;
+    left: 1em;
+
+}
+
+.icon::before {
+    content: "";
+    width: 13em;
+    height: 2.5em;
+    background: violet;
+    position: absolute;
+    top: -3em;
+    left: 1.5em;
+
+}

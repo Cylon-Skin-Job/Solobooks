@@ -174,7 +174,7 @@ var db = [{
                 "amount4": false,
                 "amount5": false,
                 "amount6": false,
-                "payDate": "",
+                "payDate": "2021-08-29",
                 "method": "",
                 "notes": ""
             },
@@ -656,7 +656,7 @@ var db = [{
                 "id": "000001",
                 "name": "Cafe Nervosa",
                 "address1": "2115 E 3rd St.",
-                "address2": "",
+                "address2": false,
                 "city": "Ocean City",
                 "state": "NJ.",
                 "zip": "17740"
@@ -665,7 +665,7 @@ var db = [{
                 "id": "000002",
                 "name": "The Indigo Tea Shop",
                 "address1": "1501 Riverwood Dr.",
-                "address2": "",
+                "address2": false,
                 "city": "Burnsville",
                 "state": "MN.",
                 "zip": "55337"
@@ -674,7 +674,7 @@ var db = [{
                 "id": "000003",
                 "name": "Pizza Planet",
                 "address1": "745 Anchor Ave.",
-                "address2": "",
+                "address2": false,
                 "city": "Orange Cove",
                 "state": "CA.",
                 "zip": "93646"
@@ -683,7 +683,7 @@ var db = [{
                 "id": "000004",
                 "name": "Bob's Burgers",
                 "address1": "115 W Ocean Dr.",
-                "address2": "",
+                "address2": false,
                 "city": "Ocean City",
                 "state": "NJ.",
                 "zip": "17740"
@@ -692,7 +692,7 @@ var db = [{
                 "id": "000005",
                 "name": "Arnold's Drive In",
                 "address1": "488 W East St.",
-                "address2": "",
+                "address2": "Unit # 555",
                 "city": "Riverside",
                 "state": "CA.",
                 "zip": "93723"
@@ -701,7 +701,7 @@ var db = [{
                 "id": "000006",
                 "name": "Paunch Burger",
                 "address1": "565 North Clinton Dr.",
-                "address2": "",
+                "address2": false,
                 "city": "Pawnee",
                 "state": "IN.",
                 "zip": "56100"
@@ -710,7 +710,7 @@ var db = [{
                 "id": "000007",
                 "name": "Central Perk",
                 "address1": "565 5th Ave.",
-                "address2": "",
+                "address2": false,
                 "city": "New York City",
                 "state": "NY.",
                 "zip": "10001"
@@ -719,7 +719,7 @@ var db = [{
                 "id": "000008",
                 "name": "Cheer's",
                 "address1": "1501 Riverwood Dr.",
-                "address2": "",
+                "address2": false,
                 "city": "Burnsville",
                 "state": "MN.",
                 "zip": "55337"
@@ -728,7 +728,7 @@ var db = [{
                 "id": "000009",
                 "name": "Joe's Bar",
                 "address1": "940 W Weed St.",
-                "address2": "",
+                "address2": false,
                 "city": "Chicago",
                 "state": "IL.",
                 "zip": "60642"
@@ -737,7 +737,7 @@ var db = [{
                 "id": "000010",
                 "name": "Three Broomsticks",
                 "address1": "100 Universal Plaza",
-                "address2": "",
+                "address2": false,
                 "city": "Universal City",
                 "state": "CA.",
                 "zip": "91608"
@@ -746,7 +746,7 @@ var db = [{
                 "id": "000011",
                 "name": "Mos Eisley Cantina",
                 "address1": "Tattoine",
-                "address2": "",
+                "address2": false,
                 "city": "Outer Rim Territories",
                 "state": "",
                 "zip": ""
@@ -755,7 +755,7 @@ var db = [{
                 "id": "000012",
                 "name": "Krusty Crab",
                 "address1": "Bikini Atoll",
-                "address2": "",
+                "address2": false,
                 "city": "Pacific Ocean",
                 "state": "",
                 "zip": ""
@@ -764,7 +764,7 @@ var db = [{
                 "id": "000013",
                 "name": "La Ratatouille",
                 "address1": "234 Main St.",
-                "address2": "",
+                "address2": false,
                 "city": "Villanueve",
                 "state": "France",
                 "zip": ""
@@ -773,7 +773,7 @@ var db = [{
                 "id": "000014",
                 "name": "Frozen Banana",
                 "address1": "565 Ocean Wharf Blvd.",
-                "address2": "",
+                "address2": false,
                 "city": "Oceanside",
                 "state": "CA.",
                 "zip": "92003"
@@ -782,7 +782,7 @@ var db = [{
                 "id": "000015",
                 "name": "Monk's Cafe",
                 "address1": "555 W. 122th St.",
-                "address2": "",
+                "address2": false,
                 "city": "New York",
                 "state": "NY.",
                 "zip": "10001"
@@ -791,7 +791,7 @@ var db = [{
                 "id": "000016",
                 "name": "Los Pollos Hermano's",
                 "address1": "9358 Eagle Ranch Rd.",
-                "address2": "",
+                "address2": false,
                 "city": "Albuqueqe",
                 "state": "NM.",
                 "zip": "87114"
@@ -800,7 +800,7 @@ var db = [{
                 "id": "000017",
                 "name": "Whistle Stop Cafe",
                 "address1": "443 Mc Cracken St.",
-                "address2": "",
+                "address2": false,
                 "city": "Juliette",
                 "state": "GA.",
                 "zip": "31046"
@@ -809,7 +809,7 @@ var db = [{
                 "id": "000018",
                 "name": "Vesuvio",
                 "address1": "91 Elizabeth Ave.",
-                "address2": "",
+                "address2": false,
                 "city": "Elizabeth",
                 "state": "NJ.",
                 "zip": "07206"
@@ -818,7 +818,7 @@ var db = [{
                 "id": "000019",
                 "name": "The Pie Pole",
                 "address1": "714 Traction Ave.",
-                "address2": "",
+                "address2": false,
                 "city": "Los Angeles",
                 "state": "CA.",
                 "zip": "90013"
@@ -827,7 +827,7 @@ var db = [{
                 "id": "000020",
                 "name": "Louie's Italian Restaurant",
                 "address1": "115 W Ocean Dr.",
-                "address2": "",
+                "address2": false,
                 "city": "Ocean City",
                 "state": "NJ.",
                 "zip": "17740"
@@ -836,7 +836,7 @@ var db = [{
                 "id": "000021",
                 "name": "Chocolate Factory",
                 "address1": "Munich",
-                "address2": "",
+                "address2": false,
                 "city": "Bavaria",
                 "state": "West Germany",
                 "zip": ""
@@ -1329,6 +1329,66 @@ function getCustomers() { // creates a new mini db of just expenses (easier for 
     return db[1].customers; // invoices are at position [0]
 }
 
+function formatAddressStacked(i, data) {
+    let address1 = data[i].address1;
+    let address2 = data[i].address2;
+    let city = data[i].city;
+    let state = data[i].state;
+    let zip = data[i].zip;
+    let address = "";
+
+    if (address1 !== false) {
+        address = `${address1} <br>`;
+    }
+
+    if (address2 !== false) {
+        address = `${address}${address2} <br>`;
+    }
+
+    if (city !== false) {
+        address = `${address}${city}, `;
+    }
+
+    if (state !== false) {
+        address = `${address}${state} `;
+    }
+
+    if (zip !== false) {
+        address = `${address}${zip}`;
+    }
+    return address;
+}
+
+function formatAddressLine(i, data) {
+    let address1 = data[i].address1;
+    let address2 = data[i].address2;
+    let city = data[i].city;
+    let state = data[i].state;
+    let zip = data[i].zip;
+    let address = "";
+
+    if (address1 !== false) {
+        address = `${address1},`;
+    }
+
+    if (address2 !== false) {
+        address = `${address} ${address2},`;
+    }
+
+    if (city !== false) {
+        address = `${address} ${city},`;
+    }
+
+    if (state !== false) {
+        address = `${address} ${state}`;
+    }
+
+    if (zip !== false) {
+        address = `${address} ${zip}`;
+    }
+    return address;
+}
+
 // Event Listener Hash Change
 
 window.addEventListener('load', function () {
@@ -1385,7 +1445,7 @@ function killPages() {
 function buildOverview() {
     setH3('Overview');
     document.getElementById('navOverview').className = 'active';
-    document.getElementById('siteContentOverview').style.display = 'block'; // set the Overview div to show content;
+    document.getElementById('siteContentOverview').style.display = 'flex'; // set the Overview div to show content;
     document.getElementById('overviewPaidTotal').innerText = `${invoicesPaidTotal.toFixed(2)}`; // Invoice card total
     document.getElementById('overviewUnpaidTotal').innerText = `${invoicesUnpaidTotal.toFixed(2)}`; //Invoice card total
     document.getElementById('invoiceBarPaid').style.width = `${paidPercent}`; // Invoice card horizontal bar chart
@@ -1470,6 +1530,7 @@ function cashFlowBar() {
 function paymentRows() {
 
     let data = invoicesDB;
+    document.getElementById('tbodyPayments').innerHTML = "";
 
     function compareStrings(a, b) {
         return (a < b) ? -1 : (a > b) ? 1 : 0;
@@ -1500,6 +1561,8 @@ function paymentRows() {
 
 function buildInvoices() {
     setH3('Invoices');
+    document.getElementById('tbodyInvoicesPaid').innerHTML = "";
+    document.getElementById('tbodyInvoicesUnpaid').innerHTML = "";
     document.getElementById('navInvoices').className = 'active';
     document.getElementById('siteContentInvoices').style.display = 'block'; // set the Invoices div to show content;
     buildRowInvoices();
@@ -1510,7 +1573,6 @@ function buildInvoices() {
 function buildRowInvoices() {
 
     let data = invoicesDB;
-
     function compareStrings(a, b) {
         return (a < b) ? -1 : (a > b) ? 1 : 0;
     }
@@ -1548,6 +1610,7 @@ function buildRowInvoices() {
 function buildExpenses() {
     setH3('Expenses');
     document.getElementById('navExpenses').className = 'active';
+    document.getElementById('siteContentExpenses').innerHTML = "";
     document.getElementById('siteContentExpenses').style.display = 'block';
     buildTableExpenses();
 }
@@ -1694,6 +1757,7 @@ function buildTableExpenses() {
 function buildCustomers() {
     setH3('Customers');
     document.getElementById('navCustomers').className = 'active';
+    document.getElementById('siteContentCustomers').innerHTML = "";
     document.getElementById('siteContentCustomers').style.display = 'block';
     buildTableCustomers();
 }
@@ -1739,6 +1803,7 @@ function buildTableCustomers() {
         let name = data[i].name;
         let balance = customerBalance(id);
         let letter = getFirstLetter(i, data);
+        let address = formatAddressLine(i, data);
         let div =
             `<div class="contentDiv">
                 <div class = "ribbon ribbonTop">
@@ -1747,7 +1812,8 @@ function buildTableCustomers() {
                     <table class="tableCustomers" id="tableCustomers${letter}">
                     <tbody id="tbodyCustomers${letter}">
                     <tr id="row${i}">
-                        <td>${name}</td> 
+                        <td>${name}</td>
+                        <td>${address}</td>
                         <td> ${balance}</td>
                     </tr>
                     </tbody>
@@ -1768,17 +1834,15 @@ function buildTableCustomers() {
         let newName = data[i].name;
         let balance = customerBalance(id);
         let newLetter = getFirstLetter(i, data);
-
+        let address = formatAddressLine(i, data);
         if (newLetter === preLetter && newName !== preName) { // if same month as last, total is updated and loop repeats
             let row =
                 `<tr id="row${i}">
-                            <td>${newName}</td>  
+                            <td>${newName}</td>
+                            <td>${address}</td>  
                             <td>${balance}</td> 
                         </tr>`
             document.getElementById(`tbodyCustomers${newLetter}`).innerHTML += row;
-            if (i % 2 !== 0) {
-                document.getElementById(`row${i}`).className = 'lightgrey';
-            }
         }
 
         if (newLetter !== preLetter) { // if new category, new li is drawn then ....
