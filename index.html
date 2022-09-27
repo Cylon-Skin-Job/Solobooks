@@ -34,33 +34,35 @@
                     <li id="navOverview">
 
                         <a href="#overview">
-                            <span class="material-icons" alt=" ">analytics
-                            </span>
+                            <span class="iconChart" alt=" "><span class="iconChart2"></span></span>
                             Overview
                         </a>
 
                     </li>
                     <li id="navInvoices">
                         <a href="#invoices">
-                            <span class="material-icons" alt=" ">description</span>
+                            <span class="iconInvoice" alt=" "><span class="iconInvoice2"></span><span
+                                    class="iconInvoice3"></span></span>
                             Invoices
                         </a>
                     </li>
                     <li id="navExpenses">
-                        <a href="#expenses">
-                            <span class="material-icons" alt=" ">receipt_long</span>
+                        <a href="#expenses" class="color">
+                            <span class="iconExpenses" alt=" "><span class="iconExpenses2" alt=" "></span></span>
                             Expenses
                         </a>
                     </li>
                     <li id="navCustomers">
                         <a href="#customers">
-                            <span class="material-icons" alt=" ">people</span>
+                            <span class="iconCustomers" alt=" "><span class="iconCustomers2" alt=" "></span></span>
                             Customers
                         </a>
                     </li>
                     <li id="navSettings">
                         <a href="#settings">
-                            <span class="material-icons" alt=" ">settings</span>
+                            <span class="iconSettings" alt=" "><span class="iconSettings2" alt=" "></span><span
+                                    class="iconSettings3" alt=" "></span></span>
+
                             Settings
                         </a>
                     </li>
@@ -70,9 +72,14 @@
 
         <section>
             <div class="siteSection" id="siteSection">
-            <h3 id="siteH3"></h3>
+                <h3 id="siteH3"></h3>
             </div>
         </section>
+
+        <button class="plusButton" id="plusButton">
+            <span class="iconPlusButton"></span>
+            <span class="buttonText" id="plusButtonText">Customer</span>
+        </button>
 
         <div class="siteMain">
             <main>
@@ -82,7 +89,7 @@
                 <div class="siteContent" id="siteContentOverview">
                     <div class="contentDivOverview">
 
-                        <div class="ribbon ribbonTop stickyRibbonOverview">
+                        <div class="ribbon ribbonTop">
                             <h4>Charts</h4>
                         </div>
 
@@ -144,11 +151,11 @@
                         </div>
                     </div>
                     <div class="contentDivPayments">
-                        <div class="ribbon stickyRibbonOverview">
+                        <div class="ribbon ribbonTop">
                             <h4 class="siteH4">Recent Payments</h4>
                         </div>
 
-                        <table>
+                        <table class="paymentTable">
                             <tbody id="tbodyPayments" class="tbodyPayments">
                             </tbody>
                         </table>
@@ -166,11 +173,11 @@
                         <table class="topTable invoicesTableUnpaid">
                             <thead>
                                 <tr class="tableHeadRow">
-                                <th class="tdOrder3">Date</th>
-                                <th class="tdOrder4">Invoice No.</th>
-                                <th class="tdOrder1">Customer</td>
-                                <th class="tdOrder5">Status</th>
-                                <th class="tdOrder2">Amount</th>
+                                    <th class="tdOrder3">Date</th>
+                                    <th class="tdOrder4">Invoice No.</th>
+                                    <th class="tdOrder1">Customer</td>
+                                    <th class="tdOrder5">Status</th>
+                                    <th class="tdOrder2">Amount</th>
                                 </tr>
                             </thead>
 
@@ -193,7 +200,7 @@
                 </div>
 
                 <div class="siteContent" id="siteContentExpenses">
-                   
+
                 </div>
 
                 <div class="siteContent" id="siteContentCustomers">
@@ -258,7 +265,7 @@
                     </button>
                 </div>
 
-                <div class="previewInvoicePageWrapper">
+                <div class="previewInvoicePageWrapper" style="display: none">
 
                     <!-- previewInvoicePage Top Grid 
             (class="previewInvoicePage_wrapper-top_grid")
@@ -420,112 +427,115 @@
             </div>
             <div class="modalBackground" id="modalBackground"></div>
         </div>
-        <div class="modalInvoiceEditWrapper" id="modalInvoiceEdit">
-            <h4 class="modalH4">Edit Invoice</h4>
-            <div class="modalContent">
-                <label for="date" class="label">Date</label>
-                <input type="date" id="invoiceEditDatepicker" name="input" class="input" min="1997-01-01"
-                    max="2030-12-31">
 
-                <label for="customer" class="label">Customer</label>
-                <select id="invoiceEditCustomerSelector" class="input selector" name="customer">
+        <div class="modalWrapper" id="modalWrapper">
+            <div class="modalInvoiceEdit" id="invoiceEdit">
+                <h4 class="modalH4">Edit Invoice</h4>
+                <div class="modalContent">
+                    <label for="date" class="label">Date</label>
+                    <input type="date" id="invoiceEditDatepicker" name="input" class="input" min="1997-01-01"
+                        max="2030-12-31">
 
-                </select>
-                <div class="itemDescriptionHeadWrapper">
-                    <span class="descriptionSpan">Description</span>
-                    <span class="amountSpan">Amount</span>
-                </div>
-                <div class="itemDescriptionBodyWrapper">
-                    <span class="material-icons expandCircle" onclick="">
-                        expand_circle_down
-                    </span>
+                    <label for="customer" class="label">Customer</label>
+                    <select id="invoiceEditCustomerSelector" class="input selector" name="customer">
 
-                    <select id="invoiceEditItemSelect1" class="input selector2" name="customer">
                     </select>
+                    <div class="itemDescriptionHeadWrapper">
+                        <span class="descriptionSpan">Description</span>
+                        <span class="amountSpan">Amount</span>
+                    </div>
+                    <div class="itemDescriptionBodyWrapper">
+                        <span class="material-icons expandCircle" onclick="">
+                            expand_circle_down
+                        </span>
 
-                    <input id="invoiceEditItem1" name="description1" class="input descriptionTextarea"
-                        maxlength="160"></input>
-                    <input type="number" rows="1" cols="10" id="invoiceEditAmount1" inputtype="decimal" name="amount1"
-                        class="input amountTextarea">
+                        <select id="invoiceEditItemSelect1" class="input selector2" name="customer">
+                        </select>
+
+                        <textarea id="invoiceEditItem1" name="description1" class="input descriptionTextarea"
+                            maxlength="160">sklajfjsd;lfjslakjfklsjfskldfjalsdkjfl;kasjdfkljasdlk;fjlsdk;ajfklsdajfkl;sdajfklsdjfkl;jsdalk;fjlksdajf</textarea>
+                        <input type="number" rows="1" cols="10" id="invoiceEditAmount1" inputtype="decimal"
+                            name="amount1" class="input amountTextarea" value="666.66">
+                    </div>
+
+                    <div class="itemDescriptionBodyWrapper">
+                        <span class="material-icons expandCircle" onclick="">
+                            expand_circle_down
+                        </span>
+
+                        <select id="invoiceEditItemSelect2" class="input selector2" name="customer">
+                        </select>
+
+                        <input id="invoiceEditItem2" name="description1" class="input descriptionTextarea"
+                            maxlength="160"></input>
+                        <input type="number" rows="1" cols="10" id="invoiceEditAmount2" inputtype="decimal"
+                            name="amount1" class="input amountTextarea">
+                    </div>
+
+                    <div class="itemDescriptionBodyWrapper">
+                        <span class="material-icons expandCircle" onclick="">
+                            expand_circle_down
+                        </span>
+
+                        <select id="invoiceEditItemSelect3" class="input selector2" name="customer">
+                        </select>
+
+                        <input id="invoiceEditItem3" name="description1" class="input descriptionTextarea"
+                            maxlength="160"></input>
+                        <input type="number" rows="1" cols="10" id="invoiceEditAmount3" inputtype="decimal"
+                            name="amount1" class="input amountTextarea">
+                    </div>
+                    <div class="itemDescriptionBodyWrapper">
+                        <span class="material-icons expandCircle" onclick="">
+                            expand_circle_down
+                        </span>
+
+                        <select id="invoiceEditItemSelect4" class="input selector2" name="customer">
+                        </select>
+
+                        <input id="invoiceEditItem4" name="description1" class="input descriptionTextarea"
+                            maxlength="160"></input>
+                        <input type="number" rows="1" cols="10" id="invoiceEditAmount4" inputtype="decimal"
+                            name="amount1" class="input amountTextarea">
+                    </div>
+                    <div class="itemDescriptionBodyWrapper">
+                        <span class="material-icons expandCircle" onclick="">
+                            expand_circle_down
+                        </span>
+
+                        <select id="invoiceEditItemSelect5" class="input selector2" name="customer">
+                        </select>
+
+                        <input id="invoiceEditItem5" name="description1" class="input descriptionTextarea"
+                            maxlength="160"></input>
+                        <input type="number" rows="1" cols="10" id="invoiceEditAmount5" inputtype="decimal"
+                            name="amount1" class="input amountTextarea">
+                    </div>
+                    <div class="itemDescriptionBodyWrapper">
+                        <span class="material-icons expandCircle" onclick="">
+                            expand_circle_down
+                        </span>
+
+                        <select id="invoiceEditItemSelect6" class="input selector2" name="customer">
+                        </select>
+
+                        <input id="invoiceEditItem6" name="description1" class="input descriptionTextarea"
+                            maxlength="160"></input>
+                        <input type="number" rows="1" cols="10" id="invoiceEditAmount6" inputtype="decimal"
+                            name="amount1" class="input amountTextarea">
+                    </div>
                 </div>
+                <div class="modalFooter preview-footer-mobile">
 
-                <div class="itemDescriptionBodyWrapper">
-                    <span class="material-icons expandCircle" onclick="">
-                        expand_circle_down
-                    </span>
-
-                    <select id="invoiceEditItemSelect2" class="input selector2" name="customer">
-                    </select>
-
-                    <input id="invoiceEditItem2" name="description1" class="input descriptionTextarea"
-                        maxlength="160"></input>
-                    <input type="number" rows="1" cols="10" id="invoiceEditAmount2" inputtype="decimal" name="amount1"
-                        class="input amountTextarea">
-                </div>
-
-                <div class="itemDescriptionBodyWrapper">
-                    <span class="material-icons expandCircle" onclick="">
-                        expand_circle_down
-                    </span>
-
-                    <select id="invoiceEditItemSelect3" class="input selector2" name="customer">
-                    </select>
-
-                    <input id="invoiceEditItem3" name="description1" class="input descriptionTextarea"
-                        maxlength="160"></input>
-                    <input type="number" rows="1" cols="10" id="invoiceEditAmount3" inputtype="decimal" name="amount1"
-                        class="input amountTextarea">
-                </div>
-                <div class="itemDescriptionBodyWrapper">
-                    <span class="material-icons expandCircle" onclick="">
-                        expand_circle_down
-                    </span>
-
-                    <select id="invoiceEditItemSelect4" class="input selector2" name="customer">
-                    </select>
-
-                    <input id="invoiceEditItem4" name="description1" class="input descriptionTextarea"
-                        maxlength="160"></input>
-                    <input type="number" rows="1" cols="10" id="invoiceEditAmount4" inputtype="decimal" name="amount1"
-                        class="input amountTextarea">
-                </div>
-                <div class="itemDescriptionBodyWrapper">
-                    <span class="material-icons expandCircle" onclick="">
-                        expand_circle_down
-                    </span>
-
-                    <select id="invoiceEditItemSelect5" class="input selector2" name="customer">
-                    </select>
-
-                    <input id="invoiceEditItem5" name="description1" class="input descriptionTextarea"
-                        maxlength="160"></input>
-                    <input type="number" rows="1" cols="10" id="invoiceEditAmount5" inputtype="decimal" name="amount1"
-                        class="input amountTextarea">
-                </div>
-                <div class="itemDescriptionBodyWrapper">
-                    <span class="material-icons expandCircle" onclick="">
-                        expand_circle_down
-                    </span>
-
-                    <select id="invoiceEditItemSelect6" class="input selector2" name="customer">
-                    </select>
-
-                    <input id="invoiceEditItem6" name="description1" class="input descriptionTextarea"
-                        maxlength="160"></input>
-                    <input type="number" rows="1" cols="10" id="invoiceEditAmount6" inputtype="decimal" name="amount1"
-                        class="input amountTextarea">
-                </div>
-            </div>
-            <div class="modalFooter preview-footer-mobile">
-
-                <button class="button modalFooterButton" id="modalFooterCancelInvoiceButton" value=false
-                    onclick="cancelInvoice()">
+                    <button class="button modalFooterButton" id="modalCancelButton" value=false
+                    onclick="cancelButton()">
                     Cancel
                 </button>
 
-                <button class="button modalFooterButton" id="modalFooterSaveInvoiceButton" onclick="saveInvoice()">
+                <button class="button modalFooterButton" id="modalSaveButton" onclick="save()">
                     Save
                 </button>
+                </div>
             </div>
         </div>
 

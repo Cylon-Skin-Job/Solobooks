@@ -3,7 +3,6 @@ var db = [{
         "invoices": [
 
             {
-                "id": "20210928005225",
                 "name": "Cafe Nervosa",
                 "cusId": "000001",
                 "address1": "2115 E 3rd St.",
@@ -14,7 +13,7 @@ var db = [{
                 "date": "2021-09-28",
                 "number": "5225",
                 "total": 690.00,
-                "stat": "Unpaid",
+                "stat": "Paid",
                 "item1": "Single System Service; Downstairs hood, duct & fan pressure washed",
                 "item2": "Second Upstairs System Cleaned on Same visit",
                 "item3": false,
@@ -27,13 +26,12 @@ var db = [{
                 "amount4": false,
                 "amount5": false,
                 "amount6": false,
-                "payDate": "",
-                "method": "",
+                "payDate": "2021-09-29",
+                "method": "Credit Card",
                 "notes": ""
 
             },
             {
-                "id": "20210822005229",
                 "name": "Cafe Nervosa",
                 "cusId": "000001",
                 "address1": "2115 E 3rd St.",
@@ -63,7 +61,6 @@ var db = [{
 
             },
             {
-                "id": "20210925005141",
                 "cusId": "000002",
                 "name": "The Indigo Tea Shop",
                 "address1": "1501 Riverwood Dr.",
@@ -74,7 +71,7 @@ var db = [{
                 "date": "2021-09-25",
                 "number": "5141",
                 "total": 565.00,
-                "stat": "Unpaid",
+                "stat": "Paid",
                 "item1": "Main Cookline System Serviced; Downstairs hood, duct & fan pressure washed",
                 "item2": false,
                 "item3": false,
@@ -87,12 +84,11 @@ var db = [{
                 "amount4": false,
                 "amount5": false,
                 "amount6": false,
-                "payDate": "",
-                "method": "",
+                "payDate": "2021-09-25",
+                "method": "Cash",
                 "notes": ""
             },
             {
-                "id": "20211019005138",
                 "cusId": "000003",
                 "name": "Pizza Planet",
                 "address1": "745 Anchor Ave.",
@@ -103,7 +99,7 @@ var db = [{
                 "date": "2021-10-19",
                 "number": "5138",
                 "total": 585.00,
-                "stat": "Unpaid",
+                "stat": "Paid",
                 "item1": "Main Cookline System Serviced; Downstairs hood, duct & fan pressure washed",
                 "item2": "Pizza Oven Hood Serviced",
                 "item3": false,
@@ -116,12 +112,11 @@ var db = [{
                 "amount4": false,
                 "amount5": false,
                 "amount6": false,
-                "payDate": "",
+                "payDate": "2021-10-20",
                 "method": "",
                 "notes": ""
             },
             {
-                "id": "20210812005127",
                 "cusId": "000004",
                 "name": "Bob's Burgers",
                 "address1": "115 W Ocean Dr.",
@@ -132,7 +127,7 @@ var db = [{
                 "date": "2021-08-12",
                 "number": "5127",
                 "total": 550.00,
-                "stat": "Unpaid",
+                "stat": "Paid",
                 "item1": "Main Carbroiler System Serviced; Downstairs hood, duct & fan pressure washed",
                 "item2": "Fryer System Cleaned",
                 "item3": false,
@@ -145,12 +140,11 @@ var db = [{
                 "amount4": false,
                 "amount5": false,
                 "amount6": false,
-                "payDate": "",
-                "method": "",
+                "payDate": "2021-08-20",
+                "method": "Cash",
                 "notes": ""
             },
             {
-                "id": "20210811005126",
                 "cusId": "000005",
                 "name": "Arnold's Drive In",
                 "address1": "488 W East St.",
@@ -179,7 +173,6 @@ var db = [{
                 "notes": ""
             },
             {
-                "id": "20210811005126",
                 "cusId": "000006",
                 "name": "Paunch Burger",
                 "address1": "565 North Clinton Dr.",
@@ -190,7 +183,7 @@ var db = [{
                 "date": "2021-08-11",
                 "number": "5126",
                 "total": 625.00,
-                "stat": "Unpaid",
+                "stat": "Paid",
                 "item1": "Main Carbroiler System Serviced; Downstairs hood, duct & fan pressure washed",
                 "item2": "Fryer System Cleaned",
                 "item3": false,
@@ -203,12 +196,11 @@ var db = [{
                 "amount4": false,
                 "amount5": false,
                 "amount6": false,
-                "payDate": "",
+                "payDate": "2021-09-11",
                 "method": "",
                 "notes": ""
             },
             {
-                "id": "20210803005138",
                 "cusId": "000007",
                 "name": "Central Perk",
                 "address1": "565 5th Ave.",
@@ -237,7 +229,6 @@ var db = [{
                 "notes": ""
             },
             {
-                "id": "20210925005121",
                 "cusId": "000008",
                 "name": "Cheer's",
                 "address1": "1501 Riverwood Dr.",
@@ -266,7 +257,6 @@ var db = [{
                 "notes": ""
             },
             {
-                "id": "20210723005120",
                 "CusId": "000009",
                 "name": "Joe's Bar",
                 "address1": "940 W Weed St.",
@@ -295,7 +285,6 @@ var db = [{
                 "notes": "# 7809",
             },
             {
-                "id": "20210722005119",
                 "cusId": "000010",
                 "name": "Three Broomsticks",
                 "address1": "100 Universal Plaza",
@@ -324,7 +313,6 @@ var db = [{
                 "notes": "Held for 2 weeks check # 555"
             },
             {
-                "id": "20210718005118",
                 "cusId": "000011",
                 "name": "Mos Eisley Cantina",
                 "address1": "Tattoine",
@@ -353,7 +341,6 @@ var db = [{
                 "notes": "Rebel scum tried to pay with federation credits"
             },
             {
-                "id": "20210716005116",
                 "cusId": "000012",
                 "name": "Krusty Crab",
                 "address1": "Bikini Atoll",
@@ -382,7 +369,6 @@ var db = [{
                 "notes": "Check reaks of fish smell"
             },
             {
-                "id": "20210711005114",
                 "cusId": "000013",
                 "name": "La Ratatouille",
                 "address1": "234 Main St.",
@@ -411,7 +397,6 @@ var db = [{
                 "notes": "Think I saw a rat in the kitchen"
             },
             {
-                "id": "20210623005112",
                 "cusId": "000014",
                 "name": "Frozen Banana",
                 "address1": "565 Ocean Wharf Blvd.",
@@ -440,7 +425,6 @@ var db = [{
                 "notes": ""
             },
             {
-                "id": "20210622005111",
                 "cusId": "000015",
                 "name": "Monk's Cafe",
                 "address1": "555 W. 122th St.",
@@ -469,7 +453,6 @@ var db = [{
                 "notes": ""
             },
             {
-                "id": "20210618005110",
                 "cusId": "000016",
                 "name": "Los Pollos Hermano's",
                 "address1": "9358 Eagle Ranch Rd.",
@@ -498,7 +481,6 @@ var db = [{
                 "notes": "I think I saw some drug dealers hanging around the office"
             },
             {
-                "id": "20210717005109",
                 "cusId": "000017",
                 "name": "Whistle Stop Cafe",
                 "address1": "443 Mc Cracken St.",
@@ -527,7 +509,6 @@ var db = [{
                 "notes": ""
             },
             {
-                "id": "20210615005108",
                 "cusId": "000018",
                 "name": "Vesuvio",
                 "address1": "91 Elizabeth Ave.",
@@ -559,7 +540,6 @@ var db = [{
                 "notes": ""
             },
             {
-                "id": "20210615005107",
                 "cusId": "000019",
                 "name": "The Pie Pole",
                 "address1": "714 Traction Ave.",
@@ -588,7 +568,6 @@ var db = [{
                 "notes": ""
             },
             {
-                "id": "20210611005106",
                 "cusId": "000020",
                 "name": "Louie's Italian Restaurant",
                 "address1": "115 W Ocean Dr.",
@@ -617,7 +596,6 @@ var db = [{
                 "notes": ""
             },
             {
-                "id": "20210620005104",
                 "cusId": "000021",
                 "name": "Chocolate Factory",
                 "address1": "Munich",
@@ -1261,6 +1239,7 @@ function capitalizeFirstLetter(string) {
 
 
 let alertVal = false;
+let lastHash;
 
 function setAlert() {
     alertVal = true;
@@ -1280,6 +1259,7 @@ let unpaidPercent = Math.floor(invoicesUnpaidTotal / ((invoicesPaidTotal + invoi
 let expensesDB = getExpenses(); // Expense Data Base taken from larger db (easier to parse)
 let invoicesDB = getInvoices(); // Invoices Database taken from larger db (easier to parse)
 let customersDB = getCustomers();
+let hashNum;
 
 
 function paidTotalFromDB() { // checks invoice section of db for paid invoices and returns a total which is passed to invoicesPaidTotal above
@@ -1403,9 +1383,12 @@ window.addEventListener("hashchange", () => {
 }, false);
 
 function previewCheck(page) {
-    if (page.length < 10) {
+    if (page.length < 12) {
         killPages();
         buildPage(page);
+    } else {
+        killPages();
+        buildPreview();
     }
 }
 
@@ -1418,7 +1401,17 @@ function buildPage(page) {
         buildExpenses();
     } else if (page === "customers") {
         buildCustomers();
+    } else if (page === "invoiceEdit") {
+        buildInvoiceEdit();
     }
+}
+
+function buildPreview() {
+    hashNum = location.hash.slice(11);
+    let preview = location.hash.slice(0, 11);
+    if (preview === "#previewInv") {
+        buildInvoicePreview(hashNum);
+    } 
 }
 
 /* function getIdFromHash() {
@@ -1430,6 +1423,7 @@ function removeIdFromHash() {
 } */
 
 function killPages() {
+    document.getElementById('plusButton').style.display = 'none';
     document.getElementById('siteContentOverview').style.display = 'none';
     document.getElementById('navOverview').className = 'off';
     document.getElementById('siteContentInvoices').style.display = 'none';
@@ -1438,6 +1432,9 @@ function killPages() {
     document.getElementById('navExpenses').className = 'off';
     document.getElementById('siteContentCustomers').style.display = 'none';
     document.getElementById('navCustomers').className = 'off';
+    document.getElementById('modalBackground').style.display = 'none';
+    document.getElementById('modalWrapper').style.width = '0px';
+    document.getElementById('invoiceEdit').style.display = 'none';
 }
 
 // Overview 
@@ -1545,7 +1542,7 @@ function paymentRows() {
     for (var i = 0; i < data.length; i++) {
 
 
-        if (data[i].stat === "Paid" && counter < 20) { // Max of 20 rows
+        if (data[i].stat === "Paid" && counter < 18) { // Max of 20 rows
             var row = `<tr>
 							<td class = "tdPayDate">${formatDate(data[i].payDate)}</td>
 							<td class = "tdPayName">${data[i].name}</td>
@@ -1555,12 +1552,18 @@ function paymentRows() {
             counter += 1;
         }
     }
+    var row = `<tr>
+							<td class = "tdPayDate">More...</td>
+					</tr>`;
+    document.getElementById('tbodyPayments').innerHTML += row;
 }
 
 // Invoices
 
 function buildInvoices() {
     setH3('Invoices');
+    document.getElementById('plusButtonText').innerText = 'Invoice';
+    document.getElementById('plusButton').style.display = 'block';
     document.getElementById('tbodyInvoicesPaid').innerHTML = "";
     document.getElementById('tbodyInvoicesUnpaid').innerHTML = "";
     document.getElementById('navInvoices').className = 'active';
@@ -1593,7 +1596,7 @@ function buildRowInvoices() {
 
         var row = `<tr>
 							<td class = "tdOrder3">${formatDate(data[i].date)}
-                            <a href = "#previewInv${data[i].id}"
+                            <a href = "#previewInv${data[i].number}"
                             class = "rowLink" ></a></td >
 							<td class = "tdOrder4">${data[i].number}</td>
 							<td class= "tdOrder1">${data[i].name}</td>
@@ -1605,10 +1608,183 @@ function buildRowInvoices() {
     }
 }
 
+// Invoice Preview 
+
+
+function buildInvoicePreview(number) {
+    document.getElementById('previewInv').style.height = '100%';
+    drawInvoice(number);
+    lastHash = location.hash;
+}
+     function drawInvoice(invoiceNumber) {
+
+        let data = invoicesDB;
+
+        let i = getInvoiceLocationByNumber(invoiceNumber);
+
+            let addressCustomer = formatAddressStacked(i, data)
+            document.getElementById('invoiceAddress').innerHTML = addressCustomer;
+
+            let name = data[i].name;
+            let date = data[i].date;
+            let number = data[i].number;
+            let total = data[i].total;
+            let stat = data[i].stat;
+            let item1 = data[i].item1;
+            let item2 = data[i].item2;
+            let item3 = data[i].item3;
+            let item4 = data[i].item4;
+            let item5 = data[i].item5;
+            let item6 = data[i].item6;
+            let amount1 = data[i].amount1;
+            let amount2 = data[i].amount2;
+            let amount3 = data[i].amount3;
+            let amount4 = data[i].amount4;
+            let amount5 = data[i].amount5;
+            let amount6 = data[i].amount6;
+            
+                document.getElementById('invoiceName').innerText = `${name}`;
+                document.getElementById('invoiceSummaryName').innerText = `${name}`;
+                document.getElementById('invoiceNum').innerText = `${number}`;
+                document.getElementById('invoiceSummaryNumber').innerText = `${number}`;
+                document.getElementById('invoiceDate').innerText = `${formatDate(date)}`;
+                document.getElementById('invoiceSummaryDate').innerText = `${formatDate(date)}`;
+                document.getElementById('invoiceSummaryTotal').innerText = `$ ${total.toFixed(2)}`;
+                document.getElementById('invoiceTotal').innerText = `$ ${total.toFixed(2)}`;
+                document.getElementById('invoiceSummaryStatus').innerText = `${stat}`;
+
+                
+
+                if (item1 !== false) {
+                    document.getElementById('invoiceTableItem1').innerHTML = "";
+                    document.getElementById('invoiceTableItem1').innerHTML = `${item1}`;
+                } else {
+                    document.getElementById('invoiceTableItem1').innerHTML = "";
+                }
+
+                if (amount1 !== false) {
+                    document.getElementById('invoiceTableAmount1').innerHTML = "";
+                    document.getElementById('invoiceTableAmount1').innerHTML = `$ ${amount1.toFixed(2)}`;
+                } else {
+                    document.getElementById('invoiceTableAmount1').innerHTML = "";
+                }
+
+                if (item2 !== false) {
+                    document.getElementById('invoiceTableItem2').innerHTML = `${item2}`;
+                    document.getElementById('invoiceTableItem2').innerHTML = `${item2}`;
+                } else {
+                    document.getElementById('invoiceTableItem2').innerHTML = "";
+                }
+
+                if (amount2 !== false) {
+                    document.getElementById('invoiceTableAmount2').innerHTML = "";
+                    document.getElementById('invoiceTableAmount2').innerHTML = `$ ${amount2.toFixed(2)}`;
+                } else {
+                    document.getElementById('invoiceTableAmount2').innerHTML = "";
+                }
+
+                if (item3 !== false) {
+                    document.getElementById('invoiceTableItem3').innerHTML = "";
+                    document.getElementById('invoiceTableItem3').innerHTML = `${item3}`;
+                } else {
+                    document.getElementById('invoiceTableItem3').innerHTML = "";
+                }
+
+                if (amount3 !== false) {
+                    document.getElementById('invoiceTableAmount3').innerHTML = "";
+                    document.getElementById('invoiceTableAmount3').innerHTML = `$ ${amount3.toFixed(2)}`;
+                } else {
+                    document.getElementById('invoiceTableAmount3').innerHTML = "";
+                }
+
+                if (item4 !== false) {
+                    document.getElementById('invoiceTableItem4').innerHTML = "";
+                    document.getElementById('invoiceTableItem4').innerHTML = `${item4}`;
+                } else {
+                    document.getElementById('invoiceTableItem4').innerHTML = "";
+                }
+
+                if (amount4 !== false) {
+                    document.getElementById('invoiceTableAmount4').innerHTML = "";
+                    document.getElementById('invoiceTableAmount4').innerHTML = `$ ${amount4.toFixed(2)}`;
+                } else {
+                    document.getElementById('invoiceTableAmount4').innerHTML = "";
+                }
+
+                if (item5 !== false) {
+                    document.getElementById('invoiceTableItem5').innerHTML = "";
+                    document.getElementById('invoiceTableItem5').innerHTML = `${item5}`;
+                } else {
+                    document.getElementById('invoiceTableItem5').innerHTML = "";
+                }
+
+                if (amount5 !== false) {
+                    document.getElementById('invoiceTableAmount5').innerHTML = "";
+                    document.getElementById('invoiceTableAmount5').innerHTML = `$ ${amount5.toFixed(2)}`;
+                } else {
+                    document.getElementById('invoiceTableAmount5').innerHTML = "";
+                }
+
+                if (item6 !== false) {
+                    document.getElementById('invoiceTableItem4').innerHTML = "";
+                    document.getElementById('invoiceTableItem6').innerHTML = `${item6}`;
+                } else {
+                    document.getElementById('invoiceTableItem6').innerHTML = "";
+                }
+
+                if (amount6 !== false) {
+                    document.getElementById('invoiceTableAmount6').innerHTML = "";
+                    document.getElementById('invoiceTableAmount6').innerHTML = `$ ${amount6.toFixed(2)}`;
+                } else {
+                    document.getElementById('invoiceTableAmount6').innerHTML = "";
+                }
+
+                
+            }
+    
+function getInvoiceLocationByNumber(number) {
+
+    let data = invoicesDB;
+        for (var i = 0; i < data.length; i++) {
+            let currentId = data[i].number;
+        if (currentId === number) {
+            return i;
+        }
+}
+}
+
+// Modals 
+
+function cancelButton() {
+        
+    let buttonVal = document.getElementById('modalCancelButton').value;
+     alertVal = true;   
+    if (alertVal === false) {
+            window.location.hash = buttonVal;
+        } else {
+            if (confirm("Leave without saving changes?") == true) {
+                window.location.hash = buttonVal;
+                alertVal = false;
+            } else {}
+        }
+    }
+
+// Edit Invoice
+
+function buildInvoiceEdit() {
+    document.getElementById('modalBackground').style.display = 'block';
+    document.getElementById('modalWrapper').style.width = '1024px';
+    document.getElementById('invoiceEdit').style.display = 'block';
+    document.getElementById('modalSaveButton').value = lastHash;
+    document.getElementById('modalCancelButton').value = lastHash;
+}
+
 // Expenses
 
 function buildExpenses() {
     setH3('Expenses');
+    document.getElementById('plusButtonText').innerText = 'Expense';
+    document.getElementById('plusButton').style.display = 'block';
     document.getElementById('navExpenses').className = 'active';
     document.getElementById('siteContentExpenses').innerHTML = "";
     document.getElementById('siteContentExpenses').style.display = 'block';
@@ -1756,6 +1932,8 @@ function buildTableExpenses() {
 
 function buildCustomers() {
     setH3('Customers');
+    document.getElementById('plusButtonText').innerText = 'Customer';
+    document.getElementById('plusButton').style.display = 'block';
     document.getElementById('navCustomers').className = 'active';
     document.getElementById('siteContentCustomers').innerHTML = "";
     document.getElementById('siteContentCustomers').style.display = 'block';
@@ -1849,9 +2027,6 @@ function buildTableCustomers() {
             buildTable(i, data);
             preLetter = newLetter;
             preName = newName;    
-        }
-        if (i % 2 !== 0) {
-            document.getElementById(`row${i}`).className = 'lightgrey';
         }
     }
 }

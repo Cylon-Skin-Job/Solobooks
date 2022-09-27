@@ -114,7 +114,438 @@ label {
     font-family: inherit;
 }
 
+/* Icons */
 
+.iconChart {
+    display: inline-block;
+    height: 30px;
+    width: 30px;
+    background-color: inherit;
+    border: solid 3px;
+    border-radius: 3px;
+    position: relative;
+    margin-left: -5px;
+}
+
+.iconChart::before {
+    content: "";
+    display: inline-block;
+    height: 8px;
+    width: 2px;
+    background-color: inherit;
+    border-radius: .5px;
+    border: solid 2px;
+    position: absolute;
+    left: 2px;
+    top: 10px;
+    border-radius: 1.5px;
+}
+
+.iconChart::after {
+    content: "";
+    display: inline-block;
+    height: 12px;
+    width: 2px;
+    border: solid 2px;
+    background-color: inherit;
+    border-radius: .5px;
+    position: absolute;
+    left: 9px;
+    top: 6px;
+    border-radius: 1.5px;
+}
+
+.iconChart2 {
+    display: inline-block;
+    height: 20px;
+    width: 6px;
+    background-color: inherit;
+    border-radius: .5px;
+    position: absolute;
+    border: solid 2px;
+    left: 16px;
+    top: 2px;
+    border-radius: 1.5px;
+}
+
+.iconInvoice {
+    display: inline-block;
+    height: 35px;
+    width: 28px;
+    background-color: inherit;
+    border-left: solid 3px;
+    border-bottom: solid 3px;
+    position: relative;
+    border-radius: 3px;
+    margin-left: -2px;
+}
+
+.iconInvoice::before {
+     content: "";
+     display: inline-block;
+     height: 19px;
+     width: 5px;
+     border-top: solid 3px;
+     border-right: solid 3px;
+     position: absolute;
+     top: 12px;
+     right: 0px;
+     border-radius: 3px;
+}
+
+.iconInvoice::after {
+    content: "";
+    display: inline-block;
+    height: 5px;
+    width: 10px;
+    border-left: solid 3px;
+    border-top: solid 3px;
+    border-right: solid 3px;
+    position: absolute;
+    top: 0px;
+    left: -3px;
+    border-radius: 3px;
+}
+
+.iconInvoice2 {
+    display: inline-block;
+    height: 12px;
+    width: 12px;
+    background-color: inherit;
+    border-left: solid 3px;
+    border-bottom: solid 3px;
+    position: absolute;
+    top: 3px;
+    right: 3px;
+    border-radius: 3px;
+}
+
+.iconInvoice2::before {
+    content: "";
+    display: inline-block;
+    height: 18.5px;
+    width: 0px;
+    background-color: inherit;
+    border-left: solid 3px;
+    position: absolute;
+    top: -4.5px;
+    right: 3px;
+    border-radius: 1.75px / 2px;
+    transform: rotate(135deg);
+}
+
+.iconInvoice3 {
+    display: inline-block;
+    height: 0px;
+    width: 18px;
+    background-color: inherit;
+    border: solid 6px;
+    position: absolute;
+    top: 16.5px;
+    left: 2px;
+}
+
+.iconInvoice3::after {
+    content: "";
+    display: inline-block;
+    height: 4px;
+    width: 20px;
+    background-color: inherit;
+    position: absolute;
+    top: -1.75px;
+    left: -8px;
+    border-radius: 0px;
+}
+
+.iconExpenses {
+    display: inline-block;
+    height: 32px;
+    width: 22px;
+    background-color: inherit;
+    border: solid 3px;
+    border-top: solid 5px;
+    position: relative;
+    border-radius: 0px 0px 10px 10px;
+    margin-left: 3px;
+}
+
+.iconExpenses::before {
+    content: "";
+    display: inline-block;
+    height: 10px;
+    width: 5px;
+    background-color: inherit;
+    border: solid 3px;
+    border-top: none;
+    position: absolute;
+    bottom: -3px;
+    right: -3px;
+    border-radius: 0px 0px 10px 10px;
+}
+
+ .iconExpenses::after {
+    content: "";
+    display: inline-block;
+    height: 7px;
+    width: 15px;
+    background-color: inherit;
+    border-top: solid 3px;
+    border-bottom: solid 3px;
+    border-left: solid 3px;
+    position: absolute;
+    bottom: -3px;
+    left: -10px;
+    border-radius: 0px 0px 0px 7px;
+}
+
+.iconExpenses2 {
+    display: inline-block;
+    background: inherit;
+    height: 0px;
+    width: 12px;
+    padding: 0px;
+    border: 5px solid;
+    position: absolute;
+    font-size: 10px;
+    top: 2px;
+    left: 2px;
+}
+
+.iconExpenses2::before {
+    content: "";
+    display: inline-block;
+    background: inherit;
+    height: 3px;
+    width: 15px;
+    padding: 0px;
+    font-size: 10px;
+    position: absolute;
+    top: -1.25px;
+    left: -6px;
+}
+
+.iconExpenses2::after {
+    content: "";
+    display: inline-block;
+    background: inherit;
+    height: 12px;
+    width: 2px;
+    padding: 0px;
+    font-size: 10px;
+    position: absolute;
+    top: -6px;
+    left: 2px;
+}
+
+.iconCustomers {
+    display: inline-block;
+    height: 0px;
+    width: 25px;
+    background-color: inherit;
+    border: solid 7px;
+    position: relative;
+    border-radius: 10px 10px 1px 1px;
+}
+
+.iconCustomers::before {
+    content: "";
+    display: inline-block;
+    height: 0px;
+    width: 0px;
+    background-color: inherit;
+    border: solid 6px;
+    position: absolute;
+    border-radius: 100%;
+    top: -20px;
+    left: -2px;
+}
+
+.iconCustomers2 {
+    display: inline-block;
+    height: 16px;
+    width: 20px;
+    background-color: inherit;
+    position: absolute;
+    top: -8px;
+    left: -17px;
+    border-radius: 10px 9px 1px 1px;
+}
+
+.iconCustomers:after {
+    content: "";
+    display: inline-block;
+    height: 0px;
+    width: 10px;
+    background-color: inherit;
+    border: solid 7px;
+    position: absolute;
+    border-radius: 10px 10px 1px 1px;
+    left: -24px;
+    top: -7px;
+}
+
+.iconCustomers2::before {
+    content: "";
+    display: inline-block;
+    height: 0px;
+    width: 0px;
+    background-color: inherit;
+    border: solid 6px;
+    position: absolute;
+    border-radius: 100%;
+    top: -12px;
+    left: -1px;
+}
+
+.iconSettings {
+    position: relative;
+    margin-left: -8px;
+    display: inline-block;
+    width: 32px;
+    height: 32px;
+    background-color: inherit;
+    border: solid 12px;
+    border-radius: 100%;
+}
+
+.iconSettings::before {
+    content: "";
+    position: absolute;
+    display: inline-block;
+    width: 8px;
+    height: 8px;
+    background-color: inherit;
+    border-radius: 0px 0px 50% 0px;
+    top: -13px;
+    left: -8px;
+    transform: rotate(15deg);
+}
+
+.iconSettings::after {
+    content: "";
+    position: absolute;
+    display: inline-block;
+    width: 8px;
+    height: 8px;
+    background-color: inherit;
+    border-radius: 50% 0px 0px 0px;
+    bottom: -13px;
+    right: -7.5px;
+    transform: rotate(17deg);
+}
+
+.iconSettings2 {
+    content: "";
+    position: absolute;
+    display: inline-block;
+    width: 8px;
+    height: 8px;
+    background-color: inherit;
+    border-radius: 0px 0px 0px 50%;
+    top: -13.5px;
+    right: -8px;
+    transform: rotate(-15deg);
+}
+
+.iconSettings2::after {
+    content: "";
+    position: absolute;
+    display: inline-block;
+    width: 8px;
+    height: 8px;
+    background-color: inherit;
+    border-radius: 0px 50% 0px 0px;
+    bottom: -21px;
+    left: -23px;
+    transform: rotate(6deg);
+}
+
+.iconSettings3 {
+    content: "";
+    position: absolute;
+    display: inline-block;
+    width: 8px;
+    height: 8px;
+    background-color: inherit;
+    border-radius: 0px 0px 0px 50%;
+    top: 0px;
+    right: -15px;
+    transform: rotate(45deg);
+}
+
+.iconSettings3::after {
+    content: "";
+    position: absolute;
+    display: inline-block;
+    width: 8px;
+    height: 8px;
+    background-color: inherit;
+    border-radius: 0px 50% 0px 0px;
+    top: 22px;
+    left: -22px;
+}
+
+.line {
+    width: 3px;
+    height: 100%;
+    z-index: 200;
+    position: fixed;
+    top: 0px;
+    left: 62px;
+    background-color: white;
+}
+
+
+.iconPlusButton {
+    display: block;
+    width: 42px;
+    height: 42px;
+    background: #2a2438;
+    position: absolute;
+    left: 3px;
+    top: 3px;
+    border-radius: 100%;
+    font-size: 16px;
+}
+
+.iconPlusButton::before {
+    content: "";
+    display: block;
+    width: 5px;
+    height: 32px;
+    background-color: #dbd8e3;
+    position: absolute;
+    top: 5px;
+    left: 18.5px;
+    border-radius: 1em;
+}
+
+.iconPlusButton::after {
+    content: "";
+    display: block;
+    width: 32px;
+    height: 5px;
+    background-color: #dbd8e3;
+    position: absolute;
+    top: 18.5px;
+    left: 5px;
+    border-radius: 1em;
+}
+
+.buttonText {
+    display: block;
+    width: calc(100% - 46px);
+    height: 100%;
+    background-color: transparent;
+    color: #2a2438;
+    position: relative;
+    left: 44px;
+    top: 0px;
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-align: center;
+    padding-top: 9px;
+}
 
 /* Payments Chart Styling */
 
@@ -138,7 +569,7 @@ label {
     height: 100vh;
     position: fixed;
     display: grid;
-    grid-template: 90px 30px 1fr / 200px 1fr;
+    grid-template: 90px 30px 1fr / 220px 1fr;
     grid-template-areas:
         "header section"
         "header main"
@@ -161,7 +592,7 @@ label {
 /* Navigation Bar Down Side */
 .siteNav {
     grid-area: nav;
-    width: 200px;
+    width: 100%;
     height: 100%;
     z-index: 5;
     background-color: transparent;
@@ -209,7 +640,6 @@ label {
     min-width: 740px;
     justify-content: center;
     padding-bottom: 500px;
-    overflow: hidden;
 }
 
 .contentDiv {
@@ -221,7 +651,7 @@ label {
 .siteNavBackground {
     grid-area: nav;
     width: 100%;
-    height: 391px;
+    height: 509px;
     z-index: 4;
     background-color: #dbd8e3;
 }
@@ -251,14 +681,10 @@ label {
     display: inline-block;
 }
 
-.navigation span {
-    display: inline-block;
-    text-align: center;
-}
-
 .navigation a {
-    padding: 24px;
-    font-size: 1.2rem;
+    height: 100px;
+    padding: 35px 0px 30px 30px;
+    font-size: 1.4rem;
     display: block;
     border-radius: 0px;
     color: #dbd8e3;
@@ -273,11 +699,11 @@ label {
 
 .active a {
     background-color: #dbd8e3;
+    padding: 35px 0px 30px 30px;    
     color: #2a2438;
-    padding: 24px;
     border-top: #2a2438 solid 1px;
     border-bottom: #2a2438 solid 1px;
-    margin: -.5px 0px;
+    margin: -1px 0px;
 }
 
 .bottomNav {
@@ -322,6 +748,7 @@ h3 {
     grid-column-end: 3;
     height: 100%;
     width: 100%;
+    font-size: 1.7rem;
 }
 
 h4 {
@@ -371,7 +798,7 @@ h5 {
 
 .whitespace {
     width: 100%;
-    height: 30px;
+    height: 54px;
     background-color: white;
     z-index: 6;
     position: fixed;
@@ -412,6 +839,10 @@ table {
 
 .topTable {
     margin: 25px 0px 0px;
+}
+
+.paymentTable {
+    margin: 5px 0px 0px;
 }
 
 tr {
@@ -534,26 +965,20 @@ tr {
 /* Desktop Buttons */
 
 .plusButton {
-    display: block;
+    display: none;
     color: #2a2438;
-    height: 40px;
+    height: 52px;
+    width: 180px;
     background-color: #dbd8e3;
-    border: solid 1px #2a2438;
-    border-radius: 20px;
+    border: solid 2px #2a2438;
+    border-radius: 50px;
     position: fixed;
     top: 20px;
     right: 20px;
+    z-index: 8;
 }
 
-#plusButton {
-    font-size: 36px;
-    border-radius: 18px;
-    position: absolute;
-    left: 2px;
-    top: 1px;
-}
-
-#plusButtonText {
+.plusButtonText {
     font-size: 1.2rem;
     padding: 7.5px;
     font-weight: bold;
@@ -922,17 +1347,24 @@ tr {
     
 }
 
-.modalInvoiceEditWrapper {
+.modalWrapper {
     background: white;
-    border-radius: 10px;
     position: fixed;
-    top: calc(50vh - 300px);
-    left: calc(50vw - 375px);
-    width: 750px;
-    height: 570px;
+    top: 0px;
+    right: 0px;
+    width: 0px;
+    max-width: 100%;
+    height: 100%;
     z-index: 10;
-    display: none;
     padding: 0px;
+}
+
+.modalInvoiceEdit {
+    background: white;
+    width: 100%;
+    height: 100%;
+    padding: 0px;
+    display: none;
 }
 
 .modalContent {
@@ -946,14 +1378,6 @@ tr {
     display: flex;
 }
 
-.modalWrapper {
-    background: white;
-    border-radius: 10px;
-    width: 300px;
-    height: auto;
-    margin: 0px auto 0px;
-    z-index: 9;
-}
 
 .modalH5 {
     text-align: center;
@@ -974,7 +1398,7 @@ tr {
 
 .inputWrapper {
     width: 200px;
-    margin: 0px 30px;
+    margin: 50px 30px;
 }
 
 .input {
@@ -1029,7 +1453,7 @@ input::-webkit-date-and-time-value {
     background: lightgrey;
     height: 25px;
     padding: 3px 10px;
-    margin-top: 20px;
+    margin-top: 80px;
     border-radius: 3px;
 }
 
@@ -1083,25 +1507,33 @@ input::-webkit-date-and-time-value {
     .itemOption {
         color: black;
     }
+
     .descriptionTextarea {
-        height: 30px;
-        width: 580px;
-        overflow-wrap: break-word;
+        height: 40px;
+        width: calc(100% - 145px);
+        overflow: hidden;
         display: inline-block;
         margin-left: 32px;
-        padding: 4px;
+        padding: 6px 4px;
         z-index: 4;
         resize: none;
+        line-height: 1.6;
     }
 
+     .descriptionTextarea:focus {
+         height: 70px;
+     }
+
     .amountTextarea {
-        height: 30px;
+        height: 40px;
         width: 100px;
         overflow: hidden;
         display: inline-block;
         position: absolute;
         right: 5px;
+        top: 5px;
         padding: 4px;
+        text-align: center;
     }
 
 
@@ -1425,7 +1857,7 @@ input::-webkit-date-and-time-value {
         height: 100%;
         position: fixed;
         display: grid;
-        grid-template: 40px 55px 1fr / 100%;
+        grid-template: 40px 65px 1fr / 100%;
         grid-template-areas:
             "header"
             "nav"
@@ -1451,7 +1883,7 @@ input::-webkit-date-and-time-value {
     .siteContent {
         min-width: auto;
         width: 100%;
-        padding: 0px 0px 80px;
+        margin: 0px;
     }
 
     /* Main Mobile Area */
@@ -1459,7 +1891,7 @@ input::-webkit-date-and-time-value {
         width: 100%;
         height: 100%;
         border: none;
-        overflow: scroll;
+        padding: 0px 0px 80px;
     }
 
     /* Tablet Navigation --Start-- */
@@ -1484,7 +1916,7 @@ input::-webkit-date-and-time-value {
     }
 
     .navigation li {
-        width: 18%;
+        width: 20%;
         height: 100%;
         margin: 0px;
         text-align: center;
@@ -1496,7 +1928,7 @@ input::-webkit-date-and-time-value {
         font-size: .6rem;
         text-align: center;
         border-radius: 5px 5px 0px 0px;
-        padding: 10px;
+        padding: 45px 10px 0px;
         border: none;
     }
 
@@ -1509,7 +1941,35 @@ input::-webkit-date-and-time-value {
         text-align: center;
     }
 
+    .iconChart {
+        position: fixed;
+        top: 55px;
+        left: 7.3%;
+    }
 
+    .iconInvoice {
+        position: fixed;
+        top: 51px;
+        left: 27%;
+    }
+
+    .iconExpenses {
+         position: fixed;
+         top: 54px;
+         left: 47.5%;
+    }
+
+    .iconCustomers {
+        position: fixed;
+        top: 71px;
+        left: 69%;
+    }
+
+    .iconSettings {
+        position: fixed;
+        top: 55px;
+        left: 88%;
+    }
 
     /* Tablet Headers and <h1> thru <h6> */
 
@@ -1640,7 +2100,7 @@ input::-webkit-date-and-time-value {
 
     .plusButton {
         top: auto;
-        bottom: 20px;
+        bottom: 50px;
     }
 
     /* Mobile Containers --Start-- */
@@ -1668,7 +2128,17 @@ input::-webkit-date-and-time-value {
         z-index: 500;
     }
 
+ /* Preview Invoice */
 
+ .previewInvoice {
+     grid-template-rows: 40px 1fr 40px;
+     grid-template-columns: 40px 1fr 40px;
+     gap: 0px;
+     grid-template-areas:
+         "back header view"
+         "space table space"
+         "footer footer footer";
+ }
 
 
     /* Mobile Headers --Start-- */
@@ -2261,7 +2731,7 @@ width to create 8.5 x 11 ratio */
 
     /* Phone Modal --Start-- */
 
-
+    
 
     .modal-wrapper {
         display: block;
