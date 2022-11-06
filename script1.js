@@ -1335,13 +1335,6 @@ function buildItemSelect(data = dataItems) {
     document.getElementById('invoiceEditItemSelect5').innerHTML = "";
     document.getElementById('invoiceEditItemSelect6').innerHTML = "";
 
-    document.getElementById('invoiceEditItemSelect1').innerHTML = empty;
-    document.getElementById('invoiceEditItemSelect2').innerHTML = empty;
-    document.getElementById('invoiceEditItemSelect3').innerHTML = empty;
-    document.getElementById('invoiceEditItemSelect4').innerHTML = empty;
-    document.getElementById('invoiceEditItemSelect5').innerHTML = empty;
-    document.getElementById('invoiceEditItemSelect6').innerHTML = empty;
-
     function compareStrings(a, b) {
         return (a < b) ? -1 : (a > b) ? 1 : 0;
     }

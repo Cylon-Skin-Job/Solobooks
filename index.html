@@ -1,22 +1,27 @@
 <!DOCTYPE html>
 <html>
+<!-- Head -->
 
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
     <script src="https://code.jquery.com/jquery-3.6.1.js"
         integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI=" crossorigin="anonymous"></script>
-    <meta name="theme-color" content="#2a2438" media="(prefers-color-scheme: light)">
-    <meta name="theme-color" content="#2a2438" media="(prefers-color-scheme: dark)">
+    <meta name="theme-color" content="#dbd8e3" media="(prefers-color-scheme: light)">
+    <meta name="theme-color" content="#dbd8e3" media="(prefers-color-scheme: dark)">
     <link rel="stylesheet" href="styles.css">
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+
     <link rel="shortcut icon" href="data:image/x-icon;," type="image/x-icon">
 </head>
+
 
 <body>
 
 
+    <div class="siteGrid" id="siteGrid">
 
-    <div class="siteGrid">
+        <!-- Navigation-->
 
         <div class="siteHeader">
             <header>
@@ -34,34 +39,42 @@
                     <li id="navOverview">
 
                         <a href="#overview">
-                            <span class="iconChart" alt=" "><span class="iconChart2"></span></span>
+                            <span class="material-symbols-outlined navIcon">
+                                bar_chart
+                            </span>
                             Overview
                         </a>
 
                     </li>
                     <li id="navInvoices">
                         <a href="#invoices">
-                            <span class="iconInvoice" alt=" "><span class="iconInvoice2"></span><span
-                                    class="iconInvoice3"></span></span>
+                            <span class="material-symbols-outlined navIcon">
+                                description
+                            </span>
                             Invoices
                         </a>
                     </li>
                     <li id="navExpenses">
                         <a href="#expenses" class="color">
-                            <span class="iconExpenses" alt=" "><span class="iconExpenses2" alt=" "></span></span>
+                            <span class="material-symbols-outlined navIcon">
+                                receipt_long
+                            </span>
                             Expenses
                         </a>
                     </li>
                     <li id="navCustomers">
                         <a href="#customers">
-                            <span class="iconCustomers" alt=" "><span class="iconCustomers2" alt=" "></span></span>
+                            <span class="material-symbols-outlined navIcon">
+                                group
+                            </span>
                             Customers
                         </a>
                     </li>
                     <li id="navSettings">
                         <a href="#settings">
-                            <span class="iconSettings" alt=" "><span class="iconSettings2" alt=" "></span><span
-                                    class="iconSettings3" alt=" "></span></span>
+                            <span class="material-symbols-outlined navIcon">
+                                settings
+                            </span>
 
                             Settings
                         </a>
@@ -70,35 +83,38 @@
             </nav>
         </div>
 
+        <!-- Section -->
+
         <section>
             <div class="siteSection" id="siteSection">
                 <h3 id="siteH3"></h3>
             </div>
         </section>
 
-        <button class="plusButton" id="plusButton">
-            <span class="iconPlusButton"></span>
-            <span class="buttonText" id="plusButtonText">Customer</span>
-        </button>
+        <!-- Plus Button -->
+
+        <div id="plusButton"></div>
+
+        <!-- Main Content Area-->
 
         <div class="siteMain">
             <main>
 
-                <div class="whitespace"></div>
+                <div class="whitespace"></div> <!-- Hides table content above the sticky elements as you scroll-->
+
+                <!-- Overview -->
 
                 <div class="siteContent" id="siteContentOverview">
-                    <div class="contentDivOverview">
 
+                    <!-- Charts -->
+                    <div class="contentDivOverview">
                         <div class="ribbon ribbonTop">
                             <h4>Charts</h4>
                         </div>
 
                         <div class="overviewChartWrapper">
-
                             <h5>Invoices</h5>
                             <p class="overviewChartP">Year-to-date</p>
-
-
                             <div class="overviewChartWrapperInvoiceStats">
                                 <span class="overviewChartInvoicePaidSpan" id="overviewPaidTotal"></span>
                                 <span class="overviewChartInvoiceUnpaidSpan" id="overviewUnpaidTotal"></span>
@@ -110,16 +126,13 @@
                                 <div class="invoiceBarPaid" id="invoiceBarPaid"></div>
                                 <div class="invoiceBarUnpaid" id="invoiceBarUnpaid"></div>
                             </div>
-
                         </div>
 
 
                         <div class="overviewChartWrapper overviewChartWrapperCashflow">
-
                             <h5 class="overviewChartH5">Cash Flow</h5>
                             <p class="overviewChartP">Year-to-date</p>
                             <br>
-
                             <div class="overviewProfitLossChart">
                                 <div class="overviewBarPayments" id="overviewBarPayments"></div>
                                 <div class="overviewBarExpenses" id="overviewBarExpenses"></div>
@@ -136,33 +149,32 @@
                             <span class="overviewProfitLossLeftSmall">Recieved</span>
                             <span class="overviewProfitLossCenterSmall">Paid</span>
                             <span class="overviewProfitLossRightSmall">Profit</span>
-
                         </div>
 
                         <div class="overviewChartWrapper overviewChartWrapperExpenses">
-
                             <h5 class="overviewChartH5">Expenses</h5>
                             <p class="overviewChartP">Year-to-date</p>
                             <br>
                             <br>
                             <ul class="overviewExpenseList" id="overviewExpenseList">
-
                             </ul>
                         </div>
                     </div>
+
+                    <!--Payments Table -->
                     <div class="contentDivPayments">
                         <div class="ribbon ribbonTop">
                             <h4 class="siteH4">Recent Payments</h4>
                         </div>
-
                         <table class="paymentTable">
                             <tbody id="tbodyPayments" class="tbodyPayments">
                             </tbody>
                         </table>
                     </div>
-
                 </div>
+                <!-- End Overview-->
 
+                <!-- Invoices Main-->
                 <div class="siteContent" id="siteContentInvoices">
                     <div class="contentDiv">
                         <div class="ribbon ribbonTop">
@@ -170,28 +182,19 @@
                             <span class="ribbonTotal" id="totalSpanUnpaid"></span>
                         </div>
 
+                        <!-- Unpaid Table-->
                         <table class="topTable invoicesTableUnpaid">
-                            <thead>
-                                <tr class="tableHeadRow">
-                                    <th class="tdOrder3">Date</th>
-                                    <th class="tdOrder4">Invoice No.</th>
-                                    <th class="tdOrder1">Customer</td>
-                                    <th class="tdOrder5">Status</th>
-                                    <th class="tdOrder2">Amount</th>
-                                </tr>
-                            </thead>
-
                             <tbody class="rowHover" id="tbodyInvoicesUnpaid">
                             </tbody>
                         </table>
                     </div>
 
+                    <!-- Paid Table-->
                     <div class="contentDiv">
                         <div class="ribbon ribbonTop">
                             <h4>Paid Invoices</h4>
                             <span class="ribbonTotal" id="totalSpanPaid"></span>
                         </div>
-
                         <table class="invoicesTablePaid">
                             <tbody class="rowHover" id="tbodyInvoicesPaid">
                             </tbody>
@@ -199,34 +202,39 @@
                     </div>
                 </div>
 
+                <!-- Expenses-->
                 <div class="siteContent" id="siteContentExpenses">
-
                 </div>
 
+                <!-- Customers-->
                 <div class="siteContent" id="siteContentCustomers">
-
                 </div>
 
             </main>
+        </div>
 
+        <!-- Preview Invoice-->
+        <div id="previewInvoiceSlider" class="previewInvoiceSlider">
             <div id="previewInv" class="previewInvoice">
-                <h3 class="previewInvoiceH3">Invoice Preview</h3>
-                <button class="buttonBack">
-                    <a href="#invoices"><span class="material-icons">arrow_back</span></a>
+
+
+                <!-- Preview Header and Buttons-->
+                <button class="buttonBack" onclick="killPreviewInvoice()">
+                    <span class="material-symbols-outlined">
+                        arrow_back
+                    </span>
                 </button>
+                <h3 class="previewInvoiceH3" id="previewInvoiceH3"></h3>
                 <button class="buttonToggle">
                     <a href="#invoice_pageview"><span class="material-icons">pageview</span></a>
                 </button>
-                <button class="buttonExit">
-                    <a href="#invoices"><span class="material-icons">close</span></a>
+                <button class="buttonExit" onclick="killPreviewInvoice()">
+                    <span class="material-symbols-outlined">close</span>
                 </button>
 
+                <!-- Preview Summary -->
                 <table class="tableInvoiceSummary">
                     <tbody id="tbodyinvoiceSummary">
-                        <tr class="tableRowInvoiceSummary">
-                            <td>Invoice No.</td>
-                            <td id="invoiceSummaryNumber"></td>
-                        </tr>
                         <tr class="tableRowInvoiceSummary">
                             <td>Date</td>
                             <td id="invoiceSummaryDate"></td>
@@ -245,41 +253,39 @@
                         </tr>
                     </tbody>
                 </table>
-                <div class="previewInvoiceFooter">
 
-                    <button class="buttonClose button">
-                        <a href="invoices.html">Close</a>
+                <!-- Preview Footer-->
+
+                <div class="previewInvoiceFooter">
+                    <button class="buttonClose button" onclick="killPreviewInvoice()">
+                        Close
                     </button>
                     <button id="myBtn" class="buttonDelete button">
-                        <span class="material-icons">delete</span>
+                        <span class="material-symbols-outlined">
+                            delete
+                        </span>
                     </button>
                     <button class="buttonPrint button" onclick="window.print()">
-                        <span class="material-icons">print</span>
+                        <span class="material-symbols-outlined">
+                            print
+                        </span>
                     </button>
-                    <button class="buttonPayment button">
-                        <a href="#payment">
-                            <span class="material-icons">price_check</span></a>
+                    <button class="buttonPayment button" onclick="buildInvoicePayment()">
+                            <span class="material-symbols-outlined">
+                                price_check
+                            </span>
                     </button>
-                    <button class="buttonEdit button">
-                        <a href="#invoiceEdit">Edit</a>
+                    <button class="buttonEdit button" onclick="buildInvoiceEdit()">
+                        Edit
                     </button>
                 </div>
 
-                <div class="previewInvoicePageWrapper" style="display: none">
+                <!-- Invoice Page-->
 
-                    <!-- previewInvoicePage Top Grid 
-            (class="previewInvoicePage_wrapper-top_grid")
-            Next four divs are styled two at the top, and two below, 
-            left to right using their secondary classes as follows:
-            
-            .previewInvoicePage-company-address | .previewInvoicePage-logo
-        
-            .previewInvoicePage-customer-address | .previewInvoicePage-number-date-->
+                <div class="invoicePageWrapper">
+                    <!-- Font Set Within this class using vw vh to scale -->
 
-                    <!--2.2.1 Company Address-->
-                    <div class="previewInvoicePageCompany">
-
-                        <!--"previewInvoicePage_wrapper-font" uses vh and vw with @media to style font-size to match page size -->
+                    <div class="invoicePageCompany">
                         <p>RC Exhaust</p>
                         <address>
                             PO Box 287
@@ -288,38 +294,33 @@
                         </address>
                     </div>
 
-                    <!--2.2.2 Comapny Logo-->
-                    <div class="previewInvoicePageLogoWidth">
-                        <div class="previewInvoicePageLogoHeight">
+                    <!--Company Logo-->
+                    <div class="invoicePageLogoWidth">
+                        <div class="invoicePageLogoHeight">
                             <img src="https://rc-resume.neocities.org/companyLogo.png" alt="Company Logo"
-                                class="previewInvoicePageLogo">
+                                class="invoicePageLogo">
                         </div>
                     </div>
 
 
-                    <!--2.2.3 Customer Address-->
-                    <div class="previewInvoicePageCustomer">
-                        <h6>BILL TO:</h6>
+                    <!--Customer Address-->
+                    <div class="invoicePageCustomer">
+                        <h6 class="invoiceH6">BILL TO:</h6>
                         <p id="invoiceName"></p>
                         <address class="address" id="invoiceAddress">
-
                         </address>
                     </div>
 
-                    <!--2.2.4 Invoice # and date -->
-
-                    <div class="previewInvoicePageDate">
-
-                        <h5 class="previewInvoicePageH5">INVOICE</h5>
-
-                        <table class="previewInvoicePageTable1">
+                    <!--Invoice # and date -->
+                    <div class="invoicePageDate">
+                        <h5 class="invoicePageH5">INVOICE</h5>
+                        <table class="invoicePageTable1">
                             <tbody>
                                 <tr>
                                     <td>
                                         Invoice No.
                                     </td>
                                     <td id="invoiceNum">
-
                                     </td>
                                 </tr>
                                 <tr>
@@ -327,432 +328,343 @@
                                         Date
                                     </td>
                                     <td id="invoiceDate">
-
                                     </td>
                                 </tr>
                             </tbody>
                         </table>
-
                     </div>
 
-                    <!--2.3 Item descriptions and amount. -->
-                    <div class="previewInvoicePageTable">
+                    <!-- Item descriptions and amount -->
+                    <div class="invoicePageDescription">
+                        <div class="preDescriptionAmount">
+                            <span class="iDesc">
+                                Description
+                            </span>
+                            <span class="iAmount">
+                                Amount
+                            </span>
+                        </div>
 
-                        <table class="previewInvoicePageTable2">
-                            <thead>
-                                <tr class="previewInvoicePageTable2Head">
-                                    <th>
-                                        Description
-                                    </th>
-                                    <th>
-                                        Amount
-                                    </th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td id="invoiceTableItem1">
-                                    </td>
-                                    <td id="invoiceTableAmount1">
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td id="invoiceTableItem2">
-                                    </td>
-                                    <td id="invoiceTableAmount2">
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td id="invoiceTableItem3">
-                                    </td>
-                                    <td id="invoiceTableAmount3">
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td id="invoiceTableItem4">
-                                    </td>
-                                    <td id="invoiceTableAmount4">
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td id="invoiceTableItem5">
-                                    </td>
-                                    <td id="invoiceTableAmount5">
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td id="invoiceTableItem6">
-                                    </td>
-                                    <td id="invoiceTableAmount6">
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td id="invoiceTableItem7">
-                                    </td>
-                                    <td id="invoiceTableAmount7">
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td id="invoiceTableItem8">
-                                    </td>
-                                    <td id="invoiceTableAmount8">
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td id="invoiceTableItem9">
-                                    </td>
-                                    <td id="invoiceTableAmount9">
-                                    </td>
-                                </tr>
-                            </tbody>
-                            <tfoot>
-                                <tr class="previewInvoicePageTable2Foot">
-                                    <td>
-                                        Total
-                                    </td>
-                                    <td id="invoiceTotal">
-                                    </td>
-                                </tr>
-                            </tfoot>
-                        </table>
+                        <div id="invoiceTableItem1" class="i1"></div>
+                        <div id="invoiceTableAmount1" class="a1"></div>
 
+                        <div id="invoiceTableItem2" class="i2"></div>
+                        <div id="invoiceTableAmount2" class="a2"></div>
+
+                        <div id="invoiceTableItem3" class="i3"></div>
+                        <div id="invoiceTableAmount3" class="a3"></div>
+
+                        <div id="invoiceTableItem4" class="i4"></div>
+                        <div id="invoiceTableAmount4" class="a4"></div>
+
+                        <div id="invoiceTableItem5" class="i5">
+                        </div>
+                        <div id="invoiceTableAmount5" class="a5">
+                        </div>
+
+                        <div id="invoiceTableItem6" class="i6">
+                        </div>
+                        <div id="invoiceTableAmount6" class="a6">
+                        </div>
+
+                        <div class="iT">
+                            Total
+                        </div>
+                        <div class="iTotal" id="invoiceTotal">
+                        </div>
                     </div>
 
-                    <!--2.4 Invoice footer-->
-                    <div class="previewInvoicePageFooter">
+                    <!--Footer-->
+
+                    <div class="invoicePageFooter">
                         <address>Phone: (867) 867-5309 | Email: accountspayable@rcexhaust.com</address>
                     </div>
                 </div>
-                <!--previewInvoicePage-container-->
             </div>
-            <div class="modalBackground" id="modalBackground"></div>
+            <!-- Preview Invoice End-->
         </div>
+        <!-- Invoice Slider End-->
 
-        <div class="modalWrapper" id="modalWrapper">
+        <!-- Modal Grey Background-->
+        <div class="modalBackground" id="modalBackground"></div>
+
+        <!-- Modal Wrapper-->
+
+        <div class="modalWrapperEdit" id="modalWrapperEdit">
+
+            <!-- Edit Invoice Container-->
             <div class="modalInvoiceEdit" id="invoiceEdit">
+
+                <!-- Edit Invoice Header-->
                 <h4 class="modalH4">Edit Invoice</h4>
+
+                <!-- Edit Invoice Content-->
                 <div class="modalContent">
+
+                    <!-- Datepicker-->
                     <label for="date" class="label">Date</label>
                     <input type="date" id="invoiceEditDatepicker" name="input" class="input" min="1997-01-01"
                         max="2030-12-31">
 
+                    <!-- Customer Select-->
                     <label for="customer" class="label">Customer</label>
-                    <select id="invoiceEditCustomerSelector" class="input selector" name="customer">
-
+                    <select id="invoiceEditCustomerSelect" class="input selector" name="customer">
                     </select>
+
+                    <!-- Description Head-->
                     <div class="itemDescriptionHeadWrapper">
                         <span class="descriptionSpan">Description</span>
                         <span class="amountSpan">Amount</span>
                     </div>
+
+                    <!-- 1 Item Box-->
                     <div class="itemDescriptionBodyWrapper">
-                        <span class="material-icons expandCircle" onclick="">
-                            expand_circle_down
+                        <span class="material-symbols-outlined expandCircle" onclick="">
+                            arrow_drop_down_circle
                         </span>
 
                         <select id="invoiceEditItemSelect1" class="input selector2" name="customer">
                         </select>
 
                         <textarea id="invoiceEditItem1" name="description1" class="input descriptionTextarea"
-                            maxlength="160">sklajfjsd;lfjslakjfklsjfskldfjalsdkjfl;kasjdfkljasdlk;fjlsdk;ajfklsdajfkl;sdajfklsdjfkl;jsdalk;fjlksdajf</textarea>
+                            maxlength="160"></textarea>
                         <input type="number" rows="1" cols="10" id="invoiceEditAmount1" inputtype="decimal"
-                            name="amount1" class="input amountTextarea" value="666.66">
+                            name="amount1" class="input amountTextarea" value="">
                     </div>
 
+                    <!-- 2 Item Box-->
                     <div class="itemDescriptionBodyWrapper">
-                        <span class="material-icons expandCircle" onclick="">
-                            expand_circle_down
+                        <span class="material-symbols-outlined expandCircle" onclick="">
+                            arrow_drop_down_circle
                         </span>
 
                         <select id="invoiceEditItemSelect2" class="input selector2" name="customer">
                         </select>
 
-                        <input id="invoiceEditItem2" name="description1" class="input descriptionTextarea"
-                            maxlength="160"></input>
+                        <textarea id="invoiceEditItem2" name="description1" class="input descriptionTextarea"
+                            maxlength="160"></textarea>
                         <input type="number" rows="1" cols="10" id="invoiceEditAmount2" inputtype="decimal"
                             name="amount1" class="input amountTextarea">
                     </div>
 
+                    <!-- 3 Item Box-->
                     <div class="itemDescriptionBodyWrapper">
-                        <span class="material-icons expandCircle" onclick="">
-                            expand_circle_down
+                        <span class="material-symbols-outlined expandCircle" onclick="">
+                            arrow_drop_down_circle
                         </span>
 
                         <select id="invoiceEditItemSelect3" class="input selector2" name="customer">
                         </select>
 
-                        <input id="invoiceEditItem3" name="description1" class="input descriptionTextarea"
-                            maxlength="160"></input>
+                        <textarea id="invoiceEditItem3" name="description1" class="input descriptionTextarea"
+                            maxlength="160"></textarea>
                         <input type="number" rows="1" cols="10" id="invoiceEditAmount3" inputtype="decimal"
                             name="amount1" class="input amountTextarea">
                     </div>
+
+                    <!-- 4 Item Box-->
                     <div class="itemDescriptionBodyWrapper">
-                        <span class="material-icons expandCircle" onclick="">
-                            expand_circle_down
+                        <span class="material-symbols-outlined expandCircle" onclick="">
+                            arrow_drop_down_circle
                         </span>
 
                         <select id="invoiceEditItemSelect4" class="input selector2" name="customer">
                         </select>
 
-                        <input id="invoiceEditItem4" name="description1" class="input descriptionTextarea"
-                            maxlength="160"></input>
+                        <textarea id="invoiceEditItem4" name="description1" class="input descriptionTextarea"
+                            maxlength="160"></textarea>
                         <input type="number" rows="1" cols="10" id="invoiceEditAmount4" inputtype="decimal"
                             name="amount1" class="input amountTextarea">
                     </div>
+
+                    <!-- 5 Item Box-->
                     <div class="itemDescriptionBodyWrapper">
-                        <span class="material-icons expandCircle" onclick="">
-                            expand_circle_down
+                        <span class="material-symbols-outlined expandCircle" onclick="">
+                            arrow_drop_down_circle
                         </span>
 
                         <select id="invoiceEditItemSelect5" class="input selector2" name="customer">
                         </select>
 
-                        <input id="invoiceEditItem5" name="description1" class="input descriptionTextarea"
-                            maxlength="160"></input>
+                        <textarea id="invoiceEditItem5" name="description1" class="input descriptionTextarea"
+                            maxlength="160"></textarea>
                         <input type="number" rows="1" cols="10" id="invoiceEditAmount5" inputtype="decimal"
                             name="amount1" class="input amountTextarea">
                     </div>
+
+                    <!-- 6 Item Box-->
                     <div class="itemDescriptionBodyWrapper">
-                        <span class="material-icons expandCircle" onclick="">
-                            expand_circle_down
+                        <span class="material-symbols-outlined expandCircle" onclick="">
+                            arrow_drop_down_circle
                         </span>
 
                         <select id="invoiceEditItemSelect6" class="input selector2" name="customer">
                         </select>
 
-                        <input id="invoiceEditItem6" name="description1" class="input descriptionTextarea"
-                            maxlength="160"></input>
+                        <textarea id="invoiceEditItem6" name="description1" class="input descriptionTextarea"
+                            maxlength="160"></textarea>
                         <input type="number" rows="1" cols="10" id="invoiceEditAmount6" inputtype="decimal"
                             name="amount1" class="input amountTextarea">
                     </div>
                 </div>
-                <div class="modalFooter preview-footer-mobile">
 
-                    <button class="button modalFooterButton" id="modalCancelButton" value=false
-                    onclick="cancelButton()">
-                    Cancel
-                </button>
+                <!-- Edit Invoice Footer-->
+                <div class="modalFooter">
+                    <button class="button modalFooterButton" id="cancelButtonEditInvoice" value=false
+                        onclick="cancelButtonEditInvoice()">
+                        Cancel
+                    </button>
 
-                <button class="button modalFooterButton" id="modalSaveButton" onclick="save()">
-                    Save
-                </button>
+                    <button class="button modalFooterButton" id="saveButtonEditInvoice"
+                        onclick="saveButtonEditInvoice()">
+                        Save
+                    </button>
                 </div>
             </div>
+            <!--Edit Invoice End-->
+
+            <!--New Invoice-->
+
+            <div class="modalInvoiceEdit" id="invoiceNew">
+
+                <!-- Edit Invoice Header-->
+                <h4 class="modalH4">New Invoice</h4>
+
+                <!-- Edit Invoice Content-->
+                <div class="modalContent">
+
+                    <!-- Datepicker-->
+                    <label for="date" class="label">Date</label>
+                    <input type="date" id="invoiceNewDatepicker" name="date" class="input" min="1997-01-01"
+                        max="2030-12-31">
+
+                    <!-- Customer Select-->
+                    <label for="customer" class="label">Customer</label>
+                    <select id="invoiceNewCustomerSelect" class="input selector" name="customer">
+                        <option selected disabled hidden>Select...</option>
+                    </select>
+
+                    <!-- Description Head-->
+                    <div class="itemDescriptionHeadWrapper">
+                        <span class="descriptionSpan">Description</span>
+                        <span class="amountSpan">Amount</span>
+                    </div>
+
+                    <!-- 1 Item Box-->
+                    <div class="itemDescriptionBodyWrapper">
+                        <span class="material-symbols-outlined expandCircle" onclick="">
+                            arrow_drop_down_circle
+                        </span>
+
+                        <select id="invoiceNewItemSelect1" class="input selector2" name="customer">
+                        </select>
+
+                        <textarea id="invoiceNewItem1" name="description1" class="input descriptionTextarea"
+                            maxlength="160"></textarea>
+                        <input type="number" rows="1" cols="10" id="invoiceNewAmount1" inputtype="decimal"
+                            name="amount1" class="input amountTextarea" value="">
+                    </div>
+
+                    <!-- 2 Item Box-->
+                    <div class="itemDescriptionBodyWrapper">
+                        <span class="material-symbols-outlined expandCircle" onclick="">
+                            arrow_drop_down_circle
+                        </span>
+
+                        <select id="invoiceNewItemSelect2" class="input selector2" name="customer">
+                        </select>
+
+                        <textarea id="invoiceNewItem2" name="description1" class="input descriptionTextarea"
+                            maxlength="160"></textarea>
+                        <input type="number" rows="1" cols="10" id="invoiceNewAmount2" inputtype="decimal"
+                            name="amount1" class="input amountTextarea">
+                    </div>
+
+                    <!-- 3 Item Box-->
+                    <div class="itemDescriptionBodyWrapper">
+                        <span class="material-symbols-outlined expandCircle" onclick="">
+                            arrow_drop_down_circle
+                        </span>
+
+                        <select id="invoiceNewItemSelect3" class="input selector2" name="customer">
+                        </select>
+
+                        <textarea id="invoiceNewItem3" name="description1" class="input descriptionTextarea"
+                            maxlength="160"></textarea>
+                        <input type="number" rows="1" cols="10" id="invoiceNewAmount3" inputtype="decimal"
+                            name="amount1" class="input amountTextarea">
+                    </div>
+
+                    <!-- 4 Item Box-->
+                    <div class="itemDescriptionBodyWrapper">
+                        <span class="material-symbols-outlined expandCircle" onclick="">
+                            arrow_drop_down_circle
+                        </span>
+
+                        <select id="invoiceNewItemSelect4" class="input selector2" name="customer">
+                        </select>
+
+                        <textarea id="invoiceNewItem4" name="description1" class="input descriptionTextarea"
+                            maxlength="160"></textarea>
+                        <input type="number" rows="1" cols="10" id="invoiceNewAmount4" inputtype="decimal"
+                            name="amount1" class="input amountTextarea">
+                    </div>
+
+                    <!-- 5 Item Box-->
+                    <div class="itemDescriptionBodyWrapper">
+                        <span class="material-symbols-outlined expandCircle" onclick="">
+                            arrow_drop_down_circle
+                        </span>
+
+                        <select id="invoiceNewItemSelect5" class="input selector2" name="customer">
+                        </select>
+
+                        <textarea id="invoiceNewItem5" name="description1" class="input descriptionTextarea"
+                            maxlength="160"></textarea>
+                        <input type="number" rows="1" cols="10" id="invoiceNewAmount5" inputtype="decimal"
+                            name="amount1" class="input amountTextarea">
+                    </div>
+
+                    <!-- 6 Item Box-->
+                    <div class="itemDescriptionBodyWrapper">
+                        <span class="material-symbols-outlined expandCircle" onclick="">
+                            arrow_drop_down_circle
+                        </span>
+
+                        <select id="invoiceNewItemSelect6" class="input selector2" name="customer">
+                        </select>
+
+                        <textarea id="invoiceNewItem6" name="description1" class="input descriptionTextarea"
+                            maxlength="160"></textarea>
+                        <input type="number" rows="1" cols="10" id="invoiceNewAmount6" inputtype="decimal"
+                            name="amount1" class="input amountTextarea">
+                    </div>
+                </div>
+
+                <!-- Edit Invoice Footer-->
+                <div class="modalFooter">
+                    <button class="button modalFooterButton" id="cancelButtonNewInvoice" value=false
+                        onclick="cancelButtonNewInvoice()">
+                        Cancel
+                    </button>
+
+                    <button class="button modalFooterButton" id="saveButtonNewInvoice" onclick="saveButtonNewInvoice()">
+                        Save
+                    </button>
+                </div>
+            </div>
+            <!--Edit Invoice End-->
         </div>
 
 
-
     </div>
+
+    <div class="modalWrapperItem" id="modalWrapperNewInvoiceItem">
+    </div>
+
+
+
     <script src="script.js"></script>
 </body>
 
-
-
-
-
-
-<!--
-
-    <section>
-        <div class="section-top">
-            <h2>Overview</h2>
-        </div>
-    </section>
-    <div class="main-overview">
-
-        <div class="ribbon fixed-ribbon" id="invoices-footer">Overview</div>
-
-        <div class="gradient"></div>
-
-        <div class="table-container">
-
-
-
-            <div class="overview-container-large">
-                <div class="overview-invoice-chart-wrapper">
-
-                    <h3 class="overview-chart-h5">Invoices</h3>
-                    <p class="overview-chart-p">Year-to-date</p>
-
-
-                    <div class="overview-chart-invoice-bar-wrapper">
-                        <span class="overview-chart-invoice-PAID-span"><strong>$11,970.00</strong></span>
-                        <span class="overview-chart-invoice-UNPAID-span"><strong>$2,190.00</strong></span>
-                        <br>
-                        <span class="overview-chart-invoice-PAID-span">PAID</span>
-                        <span class="overview-chart-invoice-UNPAID-span">UNPAID</span>
-                        <div class="invoice-bar-paid"></div>
-                        <div class="invoice-bar-unpaid"></div>
-
-                    </div>
-
-                </div>
-
-                <div class="overview-cashFlow-chart-wrapper">
-
-                    <h3 class="overview-chart-h5">Cash Flow</h3>
-                    <p class="overview-chart-p">Year-to-date</p>
-                    <br>
-
-                    <div class="overview-profit-loss-chart">
-                        <div class="overview-bar-payments"></div>
-                        <div class="overview-bar-expenses"></div>
-                        <div class="overview-bar-profit"></div>
-                    </div>
-                    <span class="overview-profit-loss-left-bold">$11,970.00</span>
-                    <span class="overview-profit-loss-center-bold">$2,399.42</span>
-                    <span class="overview-profit-loss-right-bold">$9,570.58</span>
-                    <br>
-                    <span class="overview-profit-loss-left-small">Payments</span>
-                    <span class="overview-profit-loss-center-small">Expenses</span>
-                    <span class="overview-profit-loss-right-small">Remaining</span>
-                    <br>
-                    <span class="overview-profit-loss-left-small">Recieved</span>
-                    <span class="overview-profit-loss-center-small">Paid</span>
-                    <span class="overview-profit-loss-right-small">Profit</span>
-
-                </div>
-
-
-                <div class="overview-cashFlow-chart-wrapper">
-
-                    <h4 class="overview-chart-h5">Expenses</h4>
-                    <p class="overview-chart-p">Year-to-date</p>
-                    <br>
-                    <br>
-                    <ul class="overview-expense-list">
-                        <li><span class="overviewExpenseListBold">$219.03</span>
-                            <br>
-                            <span class="overviewExpenseListSmall">Advertising</span>
-                        </li>
-
-                        <li><span class="overviewExpenseListBold">$52.44</span>
-                            <br>
-                            <span class="overviewExpenseListSmall">Equipment Repairs</span>
-                        </li>
-
-                        <li><span class="overviewExpenseListBold">$66.52</span>
-                            <br>
-                            <span class="overviewExpenseListSmall">Fuel</span>
-                        </li>
-
-                        <li><span class="overviewExpenseListBold">$204.76</span>
-                            <br>
-                            <span class="overviewExpenseListSmall">Insurance</span>
-                        </li>
-
-                        <li><span class="overviewExpenseListBold">$940.23</span>
-                            <br>
-                            <span class="overviewExpenseListSmall">Job Supplies</span>
-                        </li>
-
-                        <li><span class="overviewExpenseListBold">$320.28</span>
-                            <br>
-                            <span class="overviewExpenseListSmall">Office Supplies</span>
-                        </li>
-                        <li><span class="overviewExpenseListBold">$373.01</span>
-                            <br>
-                            <span class="overviewExpenseListSmall">Travel</span>
-                        </li>
-
-                        <li><span class="overviewExpenseListBold">$427.04</span>
-                            <br>
-                            <span class="overviewExpenseListSmall">Utilities & Phone</span>
-                        </li>
-
-
-                    </ul>
-                </div>
-
-            </div>
-
-            <div class="overview-container-small">
-                <div class="overview-payments-chart-wrapper">
-                    <h4 class="overview-chart-h5">Recent Payments</h4>
-                    <br>
-
-
-                    <table>
-
-                        <tbody>
-
-                            <tr>
-                                <td class="td-date">08/12/2021</td>
-                                <td>Bob's Burgers</td>
-                                <td class="td-total">$550</td>
-                                <td class="td-date">08/12/2021</td>
-                            </tr>
-
-                            <tr>
-                                <td class="td-date">08/11/2021</td>
-                                <td>Paunch Burger</td>
-                                <td class="td-total">$625</td>
-                                <td class="td-date">08/11/2021</td>
-                            </tr>
-
-                            <tr>
-                                <td class="td-date">08/10/2021</td>
-                                <td>Arnold's Drive In</td>
-                                <td class="td-total">$485</td>
-                                <td class="td-date">08/10/2021</td>
-                            </tr>
-
-                            <tr>
-                                <td class="td-date">08/05/2021</td>
-                                <td>Central Perk</td>
-                                <td class="td-total">$385</td>
-                                <td class="td-date">08/05/2021</td>
-                            </tr>
-
-                            <tr>
-                                <td class="td-date">08/04/2021</td>
-                                <td>Cafe Nervosa</td>
-                                <td class="td-total">$690</td>
-                                <td class="td-date">08/04/2021</td>
-                            </tr>
-
-                            <tr>
-                                <td class="td-date">08/03/2021</td>
-                                <td>The Indigo Tea Shop</td>
-                                <td class="td-total">$565</td>
-                                <td class="td-date">08/03/2021</td>
-                            </tr>
-
-                            <tr>
-                                <td class="td-date">08/01/2021</td>
-                                <td>Cheer's</td>
-                                <td class="td-total">$450</td>
-                                <td class="td-date">08/01/2021</td>
-                            </tr>
-
-                            <tr>
-                                <td>07/28/2021</td>
-                                <td>Joe's Bar</td>
-                                <td class="td-total">$485</td>
-                                <td>07/28/2021</td>
-                            </tr>
-
-                            <tr>
-                                <td>07/27/2021</td>
-                                <td>Three Broomsticks</td>
-                                <td class="td-total">$645</td>
-                                <td>07/27/2021</td>
-                            </tr>
-                        </tbody>
-
-                    </table>
-
-                    <span class="overview-table-more"><a href="">See more...</a></span>
-                </div>
-            </div>
-        </div>
-
-
-
-
-
-
-
-
-        </section>
-    </div>
-    </div> -->
+</html>
