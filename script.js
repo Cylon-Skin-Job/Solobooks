@@ -2837,7 +2837,7 @@ function drawModalNewInvoiceAddCustomer() {
 function printPDF() {
         // Choose the element that your content will be rendered to.
         const element = document.getElementById('invoicePageWrapper');
-        // Choose the element and save the PDF for your user.
+        // Choose the element and save the PDF for your user..
  
 
         html2pdf().from(element).toPdf().get('pdf').then(function (pdf) {
