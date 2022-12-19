@@ -2842,11 +2842,14 @@ function printPDF() {
 
         html2pdf().from(element).toPdf().get('pdf').then(function (pdf) {
             window.open(pdf.output('bloburl'), '_blank');
-        });
-
-        console.log("Print");
-    
+        });   
 }
+
+function dlPDF() {
+    var element = document.getElementById('invoicePageWrapper');
+    html2pdf(element);
+}
+
 
 // BBB Payment
 
