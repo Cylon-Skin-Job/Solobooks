@@ -2840,7 +2840,7 @@ function printPDF() {
         // Choose the element and save the PDF for your user.
  
 
-        html2pdf().set(opt).from(element).toPdf().get('pdf').then(function (pdf) {
+        html2pdf().from(element).toPdf().get('pdf').then(function (pdf) {
             window.open(pdf.output('bloburl'), '_blank');
         });
 
