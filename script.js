@@ -1926,6 +1926,7 @@ function drawInvoice() {
     document.getElementById('invoiceDate').innerText = `${formatDate(invoiceDate)}`;
     document.getElementById('invoiceEditDatepicker').value = invoiceDate;
     document.getElementById('invoiceSummaryDate').innerText = `${formatDate(invoiceDate)}`;
+    document.getElementById('invoicePageWrapper').className = "invoicePageWrapper";
 
 
 
@@ -2838,15 +2839,17 @@ function printPDF() {
         // Choose the element that your content will be rendered to.
         const element = document.getElementById('invoicePageWrapper');
         // Choose the element and save the PDF for your user..
- 
+        element.className = "printInvoice";
 
         html2pdf().from(element).toPdf().get('pdf').then(function (pdf) {
-            window.open(pdf.output('bloburl'), '_blank');
-        });   
+            window.open(pdf.output('bloburl'), '_blank').then(element.className = "invoicePageWrapper");
+        });
+        
 }
 
 function dlPDF() {
     var element = document.getElementById('invoicePageWrapper');
+    element.className = "printInvoice";
     html2pdf(element);
 }
 
