@@ -2840,13 +2840,13 @@ function printPDF() {
         const element = document.getElementById('invoicePageWrapper');
         // Choose the element and save the PDF for your user..
         document.getElementById('loadScreen').style.display = "flex";
-        element.className = "printInvoice";
-
-        html2pdf().from(element).toPdf().get('pdf').then(function (pdf) {
-            window.open(pdf.output('bloburl'), '_blank').then(element.className = "invoicePageWrapper");
-        }
-        );
-
+        setTimeout(() => {
+            element.className = "printInvoice";
+            html2pdf().from(element).toPdf().get('pdf').then(function (pdf) {
+                window.open(pdf.output('bloburl'), '_blank').then(element.className = "invoicePageWrapper");
+            });
+        }, 100)
+        
         setTimeout(() => {
              document.getElementById('loadScreen').style.display = "none";
         }, 1000)
