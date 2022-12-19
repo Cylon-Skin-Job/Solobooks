@@ -2833,18 +2833,23 @@ function drawModalNewInvoiceAddCustomer() {
             </div>`;
 }
 
-// Print Invoice
+// BBB Print Invoice
 
 function printPDF() {
         // Choose the element that your content will be rendered to.
         const element = document.getElementById('invoicePageWrapper');
         // Choose the element and save the PDF for your user..
+        document.getElementById('loadScreen').style.display = "flex";
         element.className = "printInvoice";
 
         html2pdf().from(element).toPdf().get('pdf').then(function (pdf) {
             window.open(pdf.output('bloburl'), '_blank').then(element.className = "invoicePageWrapper");
-        });
-        
+        }
+        );
+
+        setTimeout(() => {
+             document.getElementById('loadScreen').style.display = "none";
+        }, 1000)
 }
 
 function dlPDF() {
