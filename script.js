@@ -2838,6 +2838,7 @@ function drawModalNewInvoiceAddCustomer() {
 function printPDF() {
         // Choose the element that your content will be rendered to.
         const element = document.getElementById('invoicePageWrapper');
+
         // Choose the element and save the PDF for your user..
         document.getElementById('loadScreen').style.display = "flex";
         setTimeout(() => {
@@ -2849,13 +2850,25 @@ function printPDF() {
         
         setTimeout(() => {
              document.getElementById('loadScreen').style.display = "none";
-        }, 1000)
+        }, 1000) 
 }
 
 function dlPDF() {
     var element = document.getElementById('invoicePageWrapper');
-    element.className = "printInvoice";
-    html2pdf(element);
+
+     document.getElementById('loadScreen').style.display = "flex";
+     setTimeout(() => {
+         element.className = "printInvoice";
+     }, 50) 
+     
+     setTimeout(() => {
+    html2pdf(element)
+     }, 100)
+
+     setTimeout(() => {
+        element.className = "invoicePageWrapper";
+         document.getElementById('loadScreen').style.display = "none";
+     }, 1000)
 }
 
 
