@@ -1,8 +1,435 @@
 let db = [{
         // BBB [0] dbInvoices
         "invoices": [
-
             {
+                "companyName": "RC Exhaust",
+                "companyAddress1": "PO Box 287",
+                "companyAddress2": false,
+                "companyCity": "Bishop",
+                "companyState": "CA",
+                "companyZip": "93515",
+                "companyPhone": "760-447-0492",
+                "companyEmail": "rc@rcexhaust.com",
+                 "customerName": "Cafe Nervosa",
+                 "customerId": 1666430128801,
+                 "address1": "2115 E 3rd St.",
+                 "address2": false,
+                 "city": "Ocean City",
+                 "state": "NJ",
+                 "zip": "17740",
+                 "invoiceDate": "2023-03-28",
+                 "invoiceNumber": 5399,
+                 "invoicePayment": false,
+                 "invoiceItem1": "Single System Service; Downstairs hood, duct & fan pressure washed",
+                 "invoiceItem2": "Second Upstairs System Cleaned on Same visit",
+                 "invoiceItem3": false,
+                 "invoiceItem4": false,
+                 "invoiceItem5": false,
+                 "invoiceItem6": false,
+                 "invoiceAmount1": 390,
+                 "invoiceAmount2": 200,
+                 "invoiceAmount3": false,
+                 "invoiceAmount4": false,
+                 "invoiceAmount5": false,
+                 "invoiceAmount6": false,
+                 "paymentDate": false,
+                 "paymentMethod": false,
+                 "paymentNotes": ""
+             }, 
+             {
+                "companyName": "RC Exhaust",
+                "companyAddress1": "PO Box 287",
+                "companyAddress2": false,
+                "companyCity": "Bishop",
+                "companyState": "CA",
+                "companyZip": "93515",
+                "companyPhone": "760-447-0492",
+                "companyEmail": "rc@rcexhaust.com",
+                 "customerName": "Cafe Nervosa",
+                 "customerId": 1666430128801,
+                 "address1": "2115 E 3rd St.",
+                 "address2": false,
+                 "city": "Ocean City",
+                 "state": "NJ",
+                 "zip": "17740",
+                 "invoiceDate": "2023-03-22",
+                 "invoiceNumber": 5398,
+                 "invoicePayment": false,
+                 "invoiceItem1": "Single System Service; Downstairs hood, duct & fan pressure washed",
+                 "invoiceItem2": "Second Upstairs System Cleaned on Same visit",
+                 "invoiceItem3": false,
+                 "invoiceItem4": false,
+                 "invoiceItem5": false,
+                 "invoiceItem6": false,
+                 "invoiceAmount1": 390,
+                 "invoiceAmount2": 200,
+                 "invoiceAmount3": false,
+                 "invoiceAmount4": false,
+                 "invoiceAmount5": false,
+                 "invoiceAmount6": false,
+                 "paymentDate": false,
+                 "paymentMethod": false,
+                 "paymentNotes": ""
+             }, 
+             {
+                "companyName": "RC Exhaust",
+                "companyAddress1": "PO Box 287",
+                "companyAddress2": false,
+                "companyCity": "Bishop",
+                "companyState": "CA",
+                "companyZip": "93515",
+                "companyPhone": "760-447-0492",
+                "companyEmail": "rc@rcexhaust.com",
+                 "customerId": 1666430128802,
+                 "customerName": "The Indigo Tea Shop",
+                 "address1": "1501 Riverwood Dr.",
+                 "address2": false,
+                 "city": "Burnsville",
+                 "state": "MN",
+                 "zip": "55337",
+                 "invoiceDate": "2023-03-25",
+                 "invoiceNumber": 5397,
+                 "invoicePayment": true,
+                 "invoiceItem1": "Main Cookline System Serviced; Downstairs hood, duct & fan pressure washed",
+                 "invoiceItem2": false,
+                 "invoiceItem3": false,
+                 "invoiceItem4": false,
+                 "invoiceItem5": false,
+                 "invoiceItem6": false,
+                 "invoiceAmount1": 565.00,
+                 "invoiceAmount2": false,
+                 "invoiceAmount3": false,
+                 "invoiceAmount4": false,
+                 "invoiceAmount5": false,
+                 "invoiceAmount6": false,
+                 "paymentDate": "2023-03-25",
+                 "paymentMethod": "Cash",
+                 "paymentNotes": ""
+             }, 
+             {
+                "companyName": "RC Exhaust",
+                "companyAddress1": "PO Box 287",
+                "companyAddress2": false,
+                "companyCity": "Bishop",
+                "companyState": "CA",
+                "companyZip": "93515",
+                "companyPhone": "760-447-0492",
+                "companyEmail": "rc@rcexhaust.com",
+                 "customerId": 1666430128803,
+                 "customerName": "Pizza Planet",
+                 "address1": "745 Anchor Ave.",
+                 "address2": false,
+                 "city": "Orange Cove",
+                 "state": "CA",
+                 "zip": "93646",
+                 "invoiceDate": "2023-03-19",
+                 "invoiceNumber": 5396,
+                 "invoicePayment": true,
+                 "invoiceItem1": "Main Cookline System Serviced; Downstairs hood, duct & fan pressure washed",
+                 "invoiceItem2": "Pizza Oven Hood Serviced",
+                 "invoiceItem3": false,
+                 "invoiceItem4": false,
+                 "invoiceItem5": false,
+                 "invoiceItem6": false,
+                 "invoiceAmount1": 475.00,
+                 "invoiceAmount2": 110.00,
+                 "invoiceAmount3": false,
+                 "invoiceAmount4": false,
+                 "invoiceAmount5": false,
+                 "invoiceAmount6": false,
+                 "paymentDate": "2023-03-20",
+                 "paymentMethod": false,
+                 "paymentNotes": ""
+             }, 
+             {
+                "companyName": "RC Exhaust",
+                "companyAddress1": "PO Box 287",
+                "companyAddress2": false,
+                "companyCity": "Bishop",
+                "companyState": "CA",
+                "companyZip": "93515",
+                "companyPhone": "760-447-0492",
+                "companyEmail": "rc@rcexhaust.com",
+                 "customerId": 1666430128804,
+                 "customerName": "Bob's Burgers",
+                 "address1": "115 W Ocean Dr.",
+                 "address2": false,
+                 "city": "Ocean City",
+                 "state": "NJ",
+                 "zip": "17740",
+                 "invoiceDate": "2023-03-12",
+                 "invoiceNumber": 5394,
+                 "invoicePayment": true,
+                 "invoiceItem1": "Main Carbroiler System Serviced; Downstairs hood, duct & fan pressure washed",
+                 "invoiceItem2": "Fryer System Cleaned",
+                 "invoiceItem3": false,
+                 "invoiceItem4": false,
+                 "invoiceItem5": false,
+                 "invoiceItem6": false,
+                 "invoiceAmount1": 350.00,
+                 "invoiceAmount2": 200.00,
+                 "invoiceAmount3": false,
+                 "invoiceAmount4": false,
+                 "invoiceAmount5": false,
+                 "invoiceAmount6": false,
+                 "paymentDate": "2023-03-20",
+                 "paymentMethod": "Cash",
+                 "paymentNotes": ""
+             }, 
+             {
+                "companyName": "RC Exhaust",
+                "companyAddress1": "PO Box 287",
+                "companyAddress2": false,
+                "companyCity": "Bishop",
+                "companyState": "CA",
+                "companyZip": "93515",
+                "companyPhone": "760-447-0492",
+                "companyEmail": "rc@rcexhaust.com",
+                 "customerId": 1666430128805,
+                 "customerName": "Arnold's Drive In",
+                 "address1": "488 W East St.",
+                 "address2": false,
+                 "city": "Riverside",
+                 "state": "CA",
+                 "zip": "93723",
+                 "invoiceDate": "2023-03-11",
+                 "invoiceNumber": 5392,
+                 "invoicePayment": true,
+                 "invoiceItem1": "Cookline Kitchen Exhaust System Cleaned",
+                 "invoiceItem2": false,
+                 "invoiceItem3": false,
+                 "invoiceItem4": false,
+                 "invoiceItem5": false,
+                 "invoiceItem6": false,
+                 "invoiceAmount1": 485.00,
+                 "invoiceAmount2": false,
+                 "invoiceAmount3": false,
+                 "invoiceAmount4": false,
+                 "invoiceAmount5": false,
+                 "invoiceAmount6": false,
+                 "paymentDate": "2023-03-29",
+                 "paymentMethod": false,
+                 "paymentNotes": ""
+             }, 
+             {
+                "companyName": "RC Exhaust",
+                "companyAddress1": "PO Box 287",
+                "companyAddress2": false,
+                "companyCity": "Bishop",
+                "companyState": "CA",
+                "companyZip": "93515",
+                "companyPhone": "760-447-0492",
+                "companyEmail": "rc@rcexhaust.com",
+                 "customerId": 1666430128806,
+                 "customerName": "Paunch Burger",
+                 "address1": "565 North Clinton Dr.",
+                 "address2": false,
+                 "city": "Pawnee",
+                 "state": "IN",
+                 "zip": "56100",
+                 "invoiceDate": "2023-03-11",
+                 "invoiceNumber": 5391,
+                 "invoicePayment": true,
+                 "invoiceItem1": "Main Carbroiler System Serviced; Downstairs hood, duct & fan pressure washed",
+                 "invoiceItem2": "Fryer System Cleaned",
+                 "invoiceItem3": false,
+                 "invoiceItem4": false,
+                 "invoiceItem5": false,
+                 "invoiceItem6": false,
+                 "invoiceAmount1": 425.00,
+                 "invoiceAmount2": 200.00,
+                 "invoiceAmount3": false,
+                 "invoiceAmount4": false,
+                 "invoiceAmount5": false,
+                 "invoiceAmount6": false,
+                 "paymentDate": false,
+                 "paymentMethod": false,
+                 "paymentNotes": ""
+             }, 
+             {
+                "companyName": "RC Exhaust",
+                "companyAddress1": "PO Box 287",
+                "companyAddress2": false,
+                "companyCity": "Bishop",
+                "companyState": "CA",
+                "companyZip": "93515",
+                "companyPhone": "760-447-0492",
+                "companyEmail": "rc@rcexhaust.com",
+                 "customerId": 1666430128807,
+                 "customerName": "Central Perk",
+                 "address1": "565 5th Ave.",
+                 "address2": false,
+                 "city": "New York City",
+                 "state": "NY",
+                 "zip": "10001",
+                 "invoiceDate": "2023-03-03",
+                 "invoiceNumber": 5390,
+                 "invoicePayment": false,
+                 "invoiceItem1": "Bakery/Griddle Oven Hood serviced",
+                 "invoiceItem2": false,
+                 "invoiceItem3": false,
+                 "invoiceItem4": false,
+                 "invoiceItem5": false,
+                 "invoiceItem6": false,
+                 "invoiceAmount1": 385.00,
+                 "invoiceAmount2": false,
+                 "invoiceAmount3": false,
+                 "invoiceAmount4": false,
+                 "invoiceAmount5": false,
+                 "invoiceAmount6": false,
+                 "paymentDate": false,
+                 "paymentMethod": false,
+                 "paymentNotes": ""
+             }, 
+             {
+                "companyName": "RC Exhaust",
+                "companyAddress1": "PO Box 287",
+                "companyAddress2": false,
+                "companyCity": "Bishop",
+                "companyState": "CA",
+                "companyZip": "93515",
+                "companyPhone": "760-447-0492",
+                "companyEmail": "rc@rcexhaust.com",
+                 "customerId": 1666430128808,
+                 "customerName": "Cheer's",
+                 "address1": "1501 Riverwood Dr.",
+                 "address2": false,
+                 "city": "Burnsville",
+                 "state": "MN",
+                 "zip": "55337",
+                 "invoiceDate": "2023-03-25",
+                 "invoiceNumber": 5388,
+                 "invoicePayment": false,
+                 "invoiceItem1": "Main Carbroiler System Serviced; Downstairs hood, duct & fan pressure washed",
+                 "invoiceItem2": "Fryer System Cleaned",
+                 "invoiceItem3": false,
+                 "invoiceItem4": false,
+                 "invoiceItem5": false,
+                 "invoiceItem6": false,
+                 "invoiceAmount1": 350.00,
+                 "invoiceAmount2": 115.00,
+                 "invoiceAmount3": false,
+                 "invoiceAmount4": false,
+                 "invoiceAmount5": false,
+                 "invoiceAmount6": false,
+                 "paymentDate": false,
+                 "paymentMethod": false,
+                 "paymentNotes": ""
+             }, 
+             {
+                "companyName": "RC Exhaust",
+                "companyAddress1": "PO Box 287",
+                "companyAddress2": false,
+                "companyCity": "Bishop",
+                "companyState": "CA",
+                "companyZip": "93515",
+                "companyPhone": "760-447-0492",
+                "companyEmail": "rc@rcexhaust.com",
+                 "customerId": 1666430128809,
+                 "customerName": "Joe's Bar",
+                 "address1": "940 W Weed St.",
+                 "address2": false,
+                 "city": "Chicago",
+                 "state": "IL",
+                 "zip": "60642",
+                 "invoiceDate": "2022-02-23",
+                 "invoiceNumber": 5386,
+                 "invoicePayment": true,
+                 "invoiceItem1": "Single Small System Service; Downstairs hood, duct & fan pressure washed",
+                 "invoiceItem2": false,
+                 "invoiceItem3": false,
+                 "invoiceItem4": false,
+                 "invoiceItem5": false,
+                 "invoiceItem6": false,
+                 "invoiceAmount1": 385.00,
+                 "invoiceAmount2": false,
+                 "invoiceAmount3": false,
+                 "invoiceAmount4": false,
+                 "invoiceAmount5": false,
+                 "invoiceAmount6": false,
+                 "paymentDate": "2022-02-25",
+                 "paymentMethod": "Check",
+                 "paymentNotes": "# 7809",
+             }, 
+             {
+                "companyName": "RC Exhaust",
+                "companyAddress1": "PO Box 287",
+                "companyAddress2": false,
+                "companyCity": "Bishop",
+                "companyState": "CA",
+                "companyZip": "93515",
+                "companyPhone": "760-447-0492",
+                "companyEmail": "rc@rcexhaust.com",
+                 "customerId": 1666430128810,
+                 "customerName": "Three Broomsticks",
+                 "address1": "100 Universal Plaza",
+                 "address2": false,
+                 "city": "Universal City",
+                 "state": "CA",
+                 "zip": "91608",
+                 "invoiceDate": "2023-03-22",
+                 "invoiceNumber": 5384,
+                 "invoicePayment": true,
+                 "invoiceItem1": "Fryer System and Cookline Serviced: Hood, Ducts & Fans",
+                 "invoiceItem2": false,
+                 "invoiceItem3": false,
+                 "invoiceItem4": false,
+                 "invoiceItem5": false,
+                 "invoiceItem6": false,
+                 "invoiceAmount1": 625.00,
+                 "invoiceAmount2": false,
+                 "invoiceAmount3": false,
+                 "invoiceAmount4": false,
+                 "invoiceAmount5": false,
+                 "invoiceAmount6": false,
+                 "paymentDate": "2023-03-25",
+                 "paymentMethod": "Check",
+                 "paymentNotes": "Held for 2 weeks check # 555"
+             }, 
+             {
+                "companyName": "RC Exhaust",
+                "companyAddress1": "PO Box 287",
+                "companyAddress2": false,
+                "companyCity": "Bishop",
+                "companyState": "CA",
+                "companyZip": "93515",
+                "companyPhone": "760-447-0492",
+                "companyEmail": "rc@rcexhaust.com",
+                 "customerId": 1666430128811,
+                 "customerName": "Mos Eisley Cantina",
+                 "address1": "Tattoine",
+                 "address2": false,
+                 "city": "Outer Rim Territories",
+                 "state": false,
+                 "zip": false,
+                 "invoiceDate": "2023-02-18",
+                 "invoiceNumber": 5383,
+                 "invoicePayment": true,
+                 "invoiceItem1": "Rear kitchen system serviced.",
+                 "invoiceItem2": "Discount for assistance from in house droid staff.",
+                 "invoiceItem3": false,
+                 "invoiceItem4": false,
+                 "invoiceItem5": false,
+                 "invoiceItem6": false,
+                 "invoiceAmount1": 585.00,
+                 "invoiceAmount2": -100.00,
+                 "invoiceAmount3": false,
+                 "invoiceAmount4": false,
+                 "invoiceAmount5": false,
+                 "invoiceAmount6": false,
+                 "paymentDate": "2023-03-29",
+                 "paymentMethod": "Check",
+                 "paymentNotes": "Rebel scum tried to pay with federation credits"
+             }, 
+             {
+                "companyName": "RC Exhaust",
+                "companyAddress1": "PO Box 287",
+                "companyAddress2": false,
+                "companyCity": "Bishop",
+                "companyState": "CA",
+                "companyZip": "93515",
+                "companyPhone": "760-447-0492",
+                "companyEmail": "rc@rcexhaust.com",
                 "customerName": "Cafe Nervosa",
                 "customerId": 1666430128801,
                 "address1": "2115 E 3rd St.",
@@ -10,8 +437,8 @@ let db = [{
                 "city": "Ocean City",
                 "state": "NJ",
                 "zip": "17740",
-                "invoiceDate": "2021-09-28",
-                "invoiceNumber": 5225,
+                "invoiceDate": "2023-02-21",
+                "invoiceNumber": 5382,
                 "invoiceItem1": "Single System Service; Downstairs hood, duct & fan pressure washed",
                 "invoiceItem2": "Second Upstairs System Cleaned on Same visit",
                 "invoiceItem3": false,
@@ -25,12 +452,20 @@ let db = [{
                 "invoiceAmount5": false,
                 "invoiceAmount6": false,
                 "invoicePayment": true,
-                "paymentDate": "2021-09-29",
+                "paymentDate": "2023-02-27",
                 "paymentMethod": "Credit Card",
                 "paymentNotes": ""
 
             },
             {
+                "companyName": "RC Exhaust",
+                "companyAddress1": "PO Box 287",
+                "companyAddress2": false,
+                "companyCity": "Bishop",
+                "companyState": "CA",
+                "companyZip": "93515",
+                "companyPhone": "760-447-0492",
+                "companyEmail": "rc@rcexhaust.com",
                 "customerName": "Cafe Nervosa",
                 "customerId": 1666430128801,
                 "address1": "2115 E 3rd St.",
@@ -38,8 +473,8 @@ let db = [{
                 "city": "Ocean City",
                 "state": "NJ",
                 "zip": "17740",
-                "invoiceDate": "2021-08-22",
-                "invoiceNumber": 5229,
+                "invoiceDate": "2023-02-22",
+                "invoiceNumber": 5381,
                 "invoicePayment": false,
                 "invoiceItem1": "Single System Service; Downstairs hood, duct & fan pressure washed",
                 "invoiceItem2": "Second Upstairs System Cleaned on Same visit",
@@ -59,6 +494,14 @@ let db = [{
 
             },
             {
+                "companyName": "RC Exhaust",
+                "companyAddress1": "PO Box 287",
+                "companyAddress2": false,
+                "companyCity": "Bishop",
+                "companyState": "CA",
+                "companyZip": "93515",
+                "companyPhone": "760-447-0492",
+                "companyEmail": "rc@rcexhaust.com",
                 "customerId": 1666430128802,
                 "customerName": "The Indigo Tea Shop",
                 "address1": "1501 Riverwood Dr.",
@@ -66,8 +509,8 @@ let db = [{
                 "city": "Burnsville",
                 "state": "MN",
                 "zip": "55337",
-                "invoiceDate": "2021-09-25",
-                "invoiceNumber": 5141,
+                "invoiceDate": "2023-02-25",
+                "invoiceNumber": 5380,
                 "invoicePayment": true,
                 "invoiceItem1": "Main Cookline System Serviced; Downstairs hood, duct & fan pressure washed",
                 "invoiceItem2": false,
@@ -81,11 +524,19 @@ let db = [{
                 "invoiceAmount4": false,
                 "invoiceAmount5": false,
                 "invoiceAmount6": false,
-                "paymentDate": "2021-09-25",
+                "paymentDate": "2023-02-25",
                 "paymentMethod": "Cash",
                 "paymentNotes": ""
             },
             {
+                "companyName": "RC Exhaust",
+                "companyAddress1": "PO Box 287",
+                "companyAddress2": false,
+                "companyCity": "Bishop",
+                "companyState": "CA",
+                "companyZip": "93515",
+                "companyPhone": "760-447-0492",
+                "companyEmail": "rc@rcexhaust.com",
                 "customerId": 1666430128803,
                 "customerName": "Pizza Planet",
                 "address1": "745 Anchor Ave.",
@@ -93,8 +544,8 @@ let db = [{
                 "city": "Orange Cove",
                 "state": "CA",
                 "zip": "93646",
-                "invoiceDate": "2021-10-19",
-                "invoiceNumber": 5142,
+                "invoiceDate": "2023-02-19",
+                "invoiceNumber": 5378,
                 "invoicePayment": true,
                 "invoiceItem1": "Main Cookline System Serviced; Downstairs hood, duct & fan pressure washed",
                 "invoiceItem2": "Pizza Oven Hood Serviced",
@@ -108,11 +559,19 @@ let db = [{
                 "invoiceAmount4": false,
                 "invoiceAmount5": false,
                 "invoiceAmount6": false,
-                "paymentDate": "2021-10-20",
+                "paymentDate": "2023-02-20",
                 "paymentMethod": false,
                 "paymentNotes": ""
             },
             {
+                "companyName": "RC Exhaust",
+                "companyAddress1": "PO Box 287",
+                "companyAddress2": false,
+                "companyCity": "Bishop",
+                "companyState": "CA",
+                "companyZip": "93515",
+                "companyPhone": "760-447-0492",
+                "companyEmail": "rc@rcexhaust.com",
                 "customerId": 1666430128804,
                 "customerName": "Bob's Burgers",
                 "address1": "115 W Ocean Dr.",
@@ -120,7 +579,7 @@ let db = [{
                 "city": "Ocean City",
                 "state": "NJ",
                 "zip": "17740",
-                "invoiceDate": "2021-08-12",
+                "invoiceDate": "2023-02-12",
                 "invoiceNumber": 5127,
                 "invoicePayment": true,
                 "invoiceItem1": "Main Carbroiler System Serviced; Downstairs hood, duct & fan pressure washed",
@@ -135,11 +594,19 @@ let db = [{
                 "invoiceAmount4": false,
                 "invoiceAmount5": false,
                 "invoiceAmount6": false,
-                "paymentDate": "2021-08-20",
+                "paymentDate": "2023-02-20",
                 "paymentMethod": "Cash",
                 "paymentNotes": ""
             },
             {
+                "companyName": "RC Exhaust",
+                "companyAddress1": "PO Box 287",
+                "companyAddress2": false,
+                "companyCity": "Bishop",
+                "companyState": "CA",
+                "companyZip": "93515",
+                "companyPhone": "760-447-0492",
+                "companyEmail": "rc@rcexhaust.com",
                 "customerId": 1666430128805,
                 "customerName": "Arnold's Drive In",
                 "address1": "488 W East St.",
@@ -147,7 +614,7 @@ let db = [{
                 "city": "Riverside",
                 "state": "CA",
                 "zip": "93723",
-                "invoiceDate": "2021-08-11",
+                "invoiceDate": "2023-02-11",
                 "invoiceNumber": 5104,
                 "invoicePayment": true,
                 "invoiceItem1": "Cookline Kitchen Exhaust System Cleaned",
@@ -162,11 +629,19 @@ let db = [{
                 "invoiceAmount4": false,
                 "invoiceAmount5": false,
                 "invoiceAmount6": false,
-                "paymentDate": "2021-08-29",
+                "paymentDate": "2023-02-28",
                 "paymentMethod": false,
                 "paymentNotes": ""
             },
             {
+                "companyName": "RC Exhaust",
+                "companyAddress1": "PO Box 287",
+                "companyAddress2": false,
+                "companyCity": "Bishop",
+                "companyState": "CA",
+                "companyZip": "93515",
+                "companyPhone": "760-447-0492",
+                "companyEmail": "rc@rcexhaust.com",
                 "customerId": 1666430128806,
                 "customerName": "Paunch Burger",
                 "address1": "565 North Clinton Dr.",
@@ -174,7 +649,7 @@ let db = [{
                 "city": "Pawnee",
                 "state": "IN",
                 "zip": "56100",
-                "invoiceDate": "2021-08-11",
+                "invoiceDate": "2023-02-11",
                 "invoiceNumber": 5126,
                 "invoicePayment": true,
                 "invoiceItem1": "Main Carbroiler System Serviced; Downstairs hood, duct & fan pressure washed",
@@ -189,11 +664,19 @@ let db = [{
                 "invoiceAmount4": false,
                 "invoiceAmount5": false,
                 "invoiceAmount6": false,
-                "paymentDate": "2021-09-11",
+                "paymentDate": "2023-02-11",
                 "paymentMethod": false,
                 "paymentNotes": ""
             },
             {
+                "companyName": "RC Exhaust",
+                "companyAddress1": "PO Box 287",
+                "companyAddress2": false,
+                "companyCity": "Bishop",
+                "companyState": "CA",
+                "companyZip": "93515",
+                "companyPhone": "760-447-0492",
+                "companyEmail": "rc@rcexhaust.com",
                 "customerId": 1666430128807,
                 "customerName": "Central Perk",
                 "address1": "565 5th Ave.",
@@ -201,7 +684,7 @@ let db = [{
                 "city": "New York City",
                 "state": "NY",
                 "zip": "10001",
-                "invoiceDate": "2021-08-03",
+                "invoiceDate": "2023-02-03",
                 "invoiceNumber": 5138,
                 "invoicePayment": false,
                 "invoiceItem1": "Bakery/Griddle Oven Hood serviced",
@@ -221,6 +704,14 @@ let db = [{
                 "paymentNotes": ""
             },
             {
+                "companyName": "RC Exhaust",
+                "companyAddress1": "PO Box 287",
+                "companyAddress2": false,
+                "companyCity": "Bishop",
+                "companyState": "CA",
+                "companyZip": "93515",
+                "companyPhone": "760-447-0492",
+                "companyEmail": "rc@rcexhaust.com",
                 "customerId": 1666430128808,
                 "customerName": "Cheer's",
                 "address1": "1501 Riverwood Dr.",
@@ -228,7 +719,7 @@ let db = [{
                 "city": "Burnsville",
                 "state": "MN",
                 "zip": "55337",
-                "invoiceDate": "2021-09-25",
+                "invoiceDate": "2023-02-25",
                 "invoiceNumber": 5121,
                 "invoicePayment": false,
                 "invoiceItem1": "Main Carbroiler System Serviced; Downstairs hood, duct & fan pressure washed",
@@ -248,6 +739,14 @@ let db = [{
                 "paymentNotes": ""
             },
             {
+                "companyName": "RC Exhaust",
+                "companyAddress1": "PO Box 287",
+                "companyAddress2": false,
+                "companyCity": "Bishop",
+                "companyState": "CA",
+                "companyZip": "93515",
+                "companyPhone": "760-447-0492",
+                "companyEmail": "rc@rcexhaust.com",
                 "customerId": 1666430128809,
                 "customerName": "Joe's Bar",
                 "address1": "940 W Weed St.",
@@ -255,7 +754,7 @@ let db = [{
                 "city": "Chicago",
                 "state": "IL",
                 "zip": "60642",
-                "invoiceDate": "2021-07-23",
+                "invoiceDate": "2023-01-23",
                 "invoiceNumber": 5120,
                 "invoicePayment": true,
                 "invoiceItem1": "Single Small System Service; Downstairs hood, duct & fan pressure washed",
@@ -270,11 +769,19 @@ let db = [{
                 "invoiceAmount4": false,
                 "invoiceAmount5": false,
                 "invoiceAmount6": false,
-                "paymentDate": "2021-07-25",
+                "paymentDate": "2023-01-25",
                 "paymentMethod": "Check",
                 "paymentNotes": "# 7809",
             },
             {
+                "companyName": "RC Exhaust",
+                "companyAddress1": "PO Box 287",
+                "companyAddress2": false,
+                "companyCity": "Bishop",
+                "companyState": "CA",
+                "companyZip": "93515",
+                "companyPhone": "760-447-0492",
+                "companyEmail": "rc@rcexhaust.com",
                 "customerId": 1666430128810,
                 "customerName": "Three Broomsticks",
                 "address1": "100 Universal Plaza",
@@ -282,7 +789,7 @@ let db = [{
                 "city": "Universal City",
                 "state": "CA",
                 "zip": "91608",
-                "invoiceDate": "2021-07-22",
+                "invoiceDate": "2023-01-22",
                 "invoiceNumber": 5119,
                 "invoicePayment": true,
                 "invoiceItem1": "Fryer System and Cookline Serviced: Hood, Ducts & Fans",
@@ -297,11 +804,19 @@ let db = [{
                 "invoiceAmount4": false,
                 "invoiceAmount5": false,
                 "invoiceAmount6": false,
-                "paymentDate": "2021-07-25",
+                "paymentDate": "2023-01-25",
                 "paymentMethod": "Check",
                 "paymentNotes": "Held for 2 weeks check # 555"
             },
             {
+                "companyName": "RC Exhaust",
+                "companyAddress1": "PO Box 287",
+                "companyAddress2": false,
+                "companyCity": "Bishop",
+                "companyState": "CA",
+                "companyZip": "93515",
+                "companyPhone": "760-447-0492",
+                "companyEmail": "rc@rcexhaust.com",
                 "customerId": 1666430128811,
                 "customerName": "Mos Eisley Cantina",
                 "address1": "Tattoine",
@@ -309,7 +824,7 @@ let db = [{
                 "city": "Outer Rim Territories",
                 "state": false,
                 "zip": false,
-                "invoiceDate": "2021-07-18",
+                "invoiceDate": "2023-01-18",
                 "invoiceNumber": 5118,
                 "invoicePayment": true,
                 "invoiceItem1": "Rear kitchen system serviced.",
@@ -324,11 +839,19 @@ let db = [{
                 "invoiceAmount4": false,
                 "invoiceAmount5": false,
                 "invoiceAmount6": false,
-                "paymentDate": "2021-07-29",
+                "paymentDate": "2023-01-29",
                 "paymentMethod": "Check",
                 "paymentNotes": "Rebel scum tried to pay with federation credits"
             },
             {
+                "companyName": "RC Exhaust",
+                "companyAddress1": "PO Box 287",
+                "companyAddress2": false,
+                "companyCity": "Bishop",
+                "companyState": "CA",
+                "companyZip": "93515",
+                "companyPhone": "760-447-0492",
+                "companyEmail": "rc@rcexhaust.com",
                 "customerId": 1666430128812,
                 "customerName": "Krusty Crab",
                 "address1": "Bikini Atoll",
@@ -336,7 +859,7 @@ let db = [{
                 "city": "Pacific Ocean",
                 "state": false,
                 "zip": false,
-                "invoiceDate": "2021-07-16",
+                "invoiceDate": "2023-01-16",
                 "invoiceNumber": 5116,
                 "invoicePayment": true,
                 "invoiceItem1": "Single System Service",
@@ -351,11 +874,19 @@ let db = [{
                 "invoiceAmount4": false,
                 "invoiceAmount5": false,
                 "invoiceAmount6": false,
-                "paymentDate": "2021-07-20",
+                "paymentDate": "2023-01-20",
                 "paymentMethod": "Check",
                 "paymentNotes": "Check reaks of fish smell"
             },
             {
+                "companyName": "RC Exhaust",
+                "companyAddress1": "PO Box 287",
+                "companyAddress2": false,
+                "companyCity": "Bishop",
+                "companyState": "CA",
+                "companyZip": "93515",
+                "companyPhone": "760-447-0492",
+                "companyEmail": "rc@rcexhaust.com",
                 "customerId": 1666430128813,
                 "customerName": "La Ratatouille",
                 "address1": "234 Main St.",
@@ -363,7 +894,7 @@ let db = [{
                 "city": "Villanueve",
                 "state": "France",
                 "zip": false,
-                "invoiceDate": "2021-07-11",
+                "invoiceDate": "2023-01-01",
                 "invoiceNumber": 5114,
                 "invoicePayment": true,
                 "invoiceItem1": "Main Cookline Kitchen Exhaust Cleaning",
@@ -378,11 +909,19 @@ let db = [{
                 "invoiceAmount4": false,
                 "invoiceAmount5": false,
                 "invoiceAmount6": false,
-                "paymentDate": "2021-06-19",
+                "paymentDate": "2023-01-19",
                 "paymentMethod": "Cash",
                 "paymentNotes": "Think I saw a rat in the kitchen"
             },
             {
+                "companyName": "RC Exhaust",
+                "companyAddress1": "PO Box 287",
+                "companyAddress2": false,
+                "companyCity": "Bishop",
+                "companyState": "CA",
+                "companyZip": "93515",
+                "companyPhone": "760-447-0492",
+                "companyEmail": "rc@rcexhaust.com",
                 "customerId": 1666430128814,
                 "customerName": "Frozen Banana",
                 "address1": "565 Ocean Wharf Blvd.",
@@ -390,7 +929,7 @@ let db = [{
                 "city": "Oceanside",
                 "state": "CA",
                 "zip": "92003",
-                "invoiceDate": "2021-06-23",
+                "invoiceDate": "2023-01-23",
                 "invoiceNumber": 5112,
                 "invoicePayment": true,
                 "invoiceItem1": "Hood vent over cornballer machine serviced",
@@ -405,11 +944,19 @@ let db = [{
                 "invoiceAmount4": false,
                 "invoiceAmount5": false,
                 "invoiceAmount6": false,
-                "paymentDate": "2021-07-01",
+                "paymentDate": "2023-01-01",
                 "paymentMethod": "Cash",
                 "paymentNotes": ""
             },
             {
+                "companyName": "RC Exhaust",
+                "companyAddress1": "PO Box 287",
+                "companyAddress2": false,
+                "companyCity": "Bishop",
+                "companyState": "CA",
+                "companyZip": "93515",
+                "companyPhone": "760-447-0492",
+                "companyEmail": "rc@rcexhaust.com",
                 "customerId": 1666430128815,
                 "customerName": "Monk's Cafe",
                 "address1": "555 W. 122th St.",
@@ -417,7 +964,7 @@ let db = [{
                 "city": "New York",
                 "state": "NY",
                 "zip": "10001",
-                "invoiceDate": "2021-06-22",
+                "invoiceDate": "2023-01-23",
                 "invoiceNumber": 5111,
                 "invoicePayment": true,
                 "invoiceItem1": "Main Carbroiler System Serviced; Downstairs hood, duct & fan pressure washed",
@@ -432,11 +979,19 @@ let db = [{
                 "invoiceAmount4": false,
                 "invoiceAmount5": false,
                 "invoiceAmount6": false,
-                "paymentDate": "2021-06-23",
+                "paymentDate": "2023-01-23",
                 "paymentMethod": "Cash",
                 "paymentNotes": ""
             },
             {
+                "companyName": "RC Exhaust",
+                "companyAddress1": "PO Box 287",
+                "companyAddress2": false,
+                "companyCity": "Bishop",
+                "companyState": "CA",
+                "companyZip": "93515",
+                "companyPhone": "760-447-0492",
+                "companyEmail": "rc@rcexhaust.com",
                 "customerId": 1666430128816,
                 "customerName": "Los Pollos Hermano's",
                 "address1": "9358 Eagle Ranch Rd.",
@@ -444,7 +999,7 @@ let db = [{
                 "city": "Albuqueqe",
                 "state": "NM",
                 "zip": "87114",
-                "invoiceDate": "2021-06-18",
+                "invoiceDate": "2023-01-18",
                 "invoiceNumber": 5110,
                 "invoicePayment": true,
                 "invoiceItem1": "Ventilation ducts over underground meth lab cleaned",
@@ -459,11 +1014,19 @@ let db = [{
                 "invoiceAmount4": false,
                 "invoiceAmount5": false,
                 "invoiceAmount6": false,
-                "paymentDate": "2021-06-29",
+                "paymentDate": "2023-01-29",
                 "paymentMethod": "Cash",
                 "paymentNotes": "I think I saw some drug dealers hanging around the office"
             },
             {
+                "companyName": "RC Exhaust",
+                "companyAddress1": "PO Box 287",
+                "companyAddress2": false,
+                "companyCity": "Bishop",
+                "companyState": "CA",
+                "companyZip": "93515",
+                "companyPhone": "760-447-0492",
+                "companyEmail": "rc@rcexhaust.com",
                 "customerId": 1666430128817,
                 "customerName": "Whistle Stop Cafe",
                 "address1": "443 Mc Cracken St.",
@@ -471,7 +1034,7 @@ let db = [{
                 "city": "Juliette",
                 "state": "GA",
                 "zip": "31046",
-                "invoiceDate": "2021-07-17",
+                "invoiceDate": "2023-01-17",
                 "invoiceNumber": 5109,
                 "invoicePayment": true,
                 "invoiceItem1": "Single Large System Serviced",
@@ -486,11 +1049,19 @@ let db = [{
                 "invoiceAmount4": false,
                 "invoiceAmount5": false,
                 "invoiceAmount6": false,
-                "paymentDate": "2021-06-01",
+                "paymentDate": "2023-02-01",
                 "paymentMethod": "Check",
                 "paymentNotes": ""
             },
             {
+                "companyName": "RC Exhaust",
+                "companyAddress1": "PO Box 287",
+                "companyAddress2": false,
+                "companyCity": "Bishop",
+                "companyState": "CA",
+                "companyZip": "93515",
+                "companyPhone": "760-447-0492",
+                "companyEmail": "rc@rcexhaust.com",
                 "customerId": 1666430128818,
                 "customerName": "Vesuvio",
                 "address1": "91 Elizabeth Ave.",
@@ -498,7 +1069,7 @@ let db = [{
                 "city": "Elizabeth",
                 "state": "NJ",
                 "zip": "07206",
-                "invoiceDate": "2021-06-15",
+                "invoiceDate": "2023-01-15",
                 "invoiceNumber": "5108",
                 "invoicePayment": true,
                 "invoiceItem1": "Main Carbroiler System Serviced; hood, duct & fan pressure washed",
@@ -516,11 +1087,19 @@ let db = [{
                 "invoiceAmount4": false,
                 "invoiceAmount5": false,
                 "invoiceAmount6": false,
-                "paymentDate": "2021-06-15",
+                "paymentDate": "2023-01-15",
                 "paymentMethod": "Check",
                 "paymentNotes": ""
             },
             {
+                "companyName": "RC Exhaust",
+                "companyAddress1": "PO Box 287",
+                "companyAddress2": false,
+                "companyCity": "Bishop",
+                "companyState": "CA",
+                "companyZip": "93515",
+                "companyPhone": "760-447-0492",
+                "companyEmail": "rc@rcexhaust.com",
                 "customerId": 1666430128819,
                 "customerName": "The Pie Pole",
                 "address1": "714 Traction Ave.",
@@ -528,7 +1107,7 @@ let db = [{
                 "city": "Los Angeles",
                 "state": "CA",
                 "zip": "90013",
-                "invoiceDate": "2021-06-15",
+                "invoiceDate": "2023-01-15",
                 "invoiceNumber": "5107",
                 "invoicePayment": true,
                 "invoiceItem1": "Main Cookline System Serviced; hood, duct & fan pressure washed",
@@ -543,11 +1122,19 @@ let db = [{
                 "invoiceAmount4": false,
                 "invoiceAmount5": false,
                 "invoiceAmount6": false,
-                "paymentDate": "2021-06-20",
+                "paymentDate": "2023-01-20",
                 "paymentMethod": "Cash",
                 "paymentNotes": ""
             },
             {
+                "companyName": "RC Exhaust",
+                "companyAddress1": "PO Box 287",
+                "companyAddress2": false,
+                "companyCity": "Bishop",
+                "companyState": "CA",
+                "companyZip": "93515",
+                "companyPhone": "760-447-0492",
+                "companyEmail": "rc@rcexhaust.com",
                 "customerId": 1666430128820,
                 "customerName": "Louie's Italian Restaurant",
                 "address1": "115 W Ocean Dr.",
@@ -555,7 +1142,7 @@ let db = [{
                 "city": "Ocean City",
                 "state": "NJ",
                 "zip": "17740",
-                "invoiceDate": "2021-06-11",
+                "invoiceDate": "2023-01-11",
                 "invoiceNumber": 5106,
                 "invoicePayment": true,
                 "invoiceItem1": "Main Cookline System Serviced; hood, duct & fan pressure washed",
@@ -570,11 +1157,19 @@ let db = [{
                 "invoiceAmount4": false,
                 "invoiceAmount5": false,
                 "invoiceAmount6": false,
-                "paymentDate": "2021-06-12",
+                "paymentDate": "2023-01-12",
                 "paymentMethod": "Check",
                 "paymentNotes": ""
             },
             {
+                "companyName": "RC Exhaust",
+                "companyAddress1": "PO Box 287",
+                "companyAddress2": false,
+                "companyCity": "Bishop",
+                "companyState": "CA",
+                "companyZip": "93515",
+                "companyPhone": "760-447-0492",
+                "companyEmail": "rc@rcexhaust.com",
                 "customerId": 1666430128821,
                 "customerName": "Chocolate Factory",
                 "address1": "Munich",
@@ -582,7 +1177,7 @@ let db = [{
                 "city": "Bavaria",
                 "state": "West Germany",
                 "zip": false,
-                "invoiceDate": "2021-06-20",
+                "invoiceDate": "2023-01-20",
                 "invoiceNumber": 5104,
                 "invoicePayment": true,
                 "invoiceItem1": "Corpse of bratty teen removed from ductwork",
@@ -597,10 +1192,1650 @@ let db = [{
                 "invoiceAmount4": false,
                 "invoiceAmount5": false,
                 "invoiceAmount6": false,
-                "paymentDate": "2021-06-30",
+                "paymentDate": "2023-01-30",
                 "paymentMethod": "Credit",
                 "paymentNotes": "Unsafe work conditions, not worth the money"
-            }
+            },
+             {
+                "companyName": "RC Exhaust",
+                "companyAddress1": "PO Box 287",
+                "companyAddress2": false,
+                "companyCity": "Bishop",
+                "companyState": "CA",
+                "companyZip": "93515",
+                "companyPhone": "760-447-0492",
+                "companyEmail": "rc@rcexhaust.com",
+                 "customerName": "Cafe Nervosa",
+                 "customerId": 1666430128801,
+                 "address1": "2115 E 3rd St.",
+                 "address2": false,
+                 "city": "Ocean City",
+                 "state": "NJ",
+                 "zip": "17740",
+                 "invoiceDate": "2022-12-28",
+                 "invoiceNumber": 5399,
+                 "invoicePayment": false,
+                 "invoiceItem1": "Single System Service; Downstairs hood, duct & fan pressure washed",
+                 "invoiceItem2": "Second Upstairs System Cleaned on Same visit",
+                 "invoiceItem3": false,
+                 "invoiceItem4": false,
+                 "invoiceItem5": false,
+                 "invoiceItem6": false,
+                 "invoiceAmount1": 390,
+                 "invoiceAmount2": 200,
+                 "invoiceAmount3": false,
+                 "invoiceAmount4": false,
+                 "invoiceAmount5": false,
+                 "invoiceAmount6": false,
+                 "paymentDate": false,
+                 "paymentMethod": false,
+                 "paymentNotes": ""
+             }, {
+                "companyName": "RC Exhaust",
+                "companyAddress1": "PO Box 287",
+                "companyAddress2": false,
+                "companyCity": "Bishop",
+                "companyState": "CA",
+                "companyZip": "93515",
+                "companyPhone": "760-447-0492",
+                "companyEmail": "rc@rcexhaust.com",
+                 "customerName": "Cafe Nervosa",
+                 "customerId": 1666430128801,
+                 "address1": "2115 E 3rd St.",
+                 "address2": false,
+                 "city": "Ocean City",
+                 "state": "NJ",
+                 "zip": "17740",
+                 "invoiceDate": "2022-12-22",
+                 "invoiceNumber": 5398,
+                 "invoicePayment": false,
+                 "invoiceItem1": "Single System Service; Downstairs hood, duct & fan pressure washed",
+                 "invoiceItem2": "Second Upstairs System Cleaned on Same visit",
+                 "invoiceItem3": false,
+                 "invoiceItem4": false,
+                 "invoiceItem5": false,
+                 "invoiceItem6": false,
+                 "invoiceAmount1": 390,
+                 "invoiceAmount2": 200,
+                 "invoiceAmount3": false,
+                 "invoiceAmount4": false,
+                 "invoiceAmount5": false,
+                 "invoiceAmount6": false,
+                 "paymentDate": false,
+                 "paymentMethod": false,
+                 "paymentNotes": ""
+
+             }, {
+                "companyName": "RC Exhaust",
+                "companyAddress1": "PO Box 287",
+                "companyAddress2": false,
+                "companyCity": "Bishop",
+                "companyState": "CA",
+                "companyZip": "93515",
+                "companyPhone": "760-447-0492",
+                "companyEmail": "rc@rcexhaust.com",
+                 "customerId": 1666430128802,
+                 "customerName": "The Indigo Tea Shop",
+                 "address1": "1501 Riverwood Dr.",
+                 "address2": false,
+                 "city": "Burnsville",
+                 "state": "MN",
+                 "zip": "55337",
+                 "invoiceDate": "2022-12-25",
+                 "invoiceNumber": 5397,
+                 "invoicePayment": true,
+                 "invoiceItem1": "Main Cookline System Serviced; Downstairs hood, duct & fan pressure washed",
+                 "invoiceItem2": false,
+                 "invoiceItem3": false,
+                 "invoiceItem4": false,
+                 "invoiceItem5": false,
+                 "invoiceItem6": false,
+                 "invoiceAmount1": 565.00,
+                 "invoiceAmount2": false,
+                 "invoiceAmount3": false,
+                 "invoiceAmount4": false,
+                 "invoiceAmount5": false,
+                 "invoiceAmount6": false,
+                 "paymentDate": "2021-12-25",
+                 "paymentMethod": "Cash",
+                 "paymentNotes": ""
+             }, {
+                "companyName": "RC Exhaust",
+                "companyAddress1": "PO Box 287",
+                "companyAddress2": false,
+                "companyCity": "Bishop",
+                "companyState": "CA",
+                "companyZip": "93515",
+                "companyPhone": "760-447-0492",
+                "companyEmail": "rc@rcexhaust.com",
+                 "customerId": 1666430128803,
+                 "customerName": "Pizza Planet",
+                 "address1": "745 Anchor Ave.",
+                 "address2": false,
+                 "city": "Orange Cove",
+                 "state": "CA",
+                 "zip": "93646",
+                 "invoiceDate": "2022-12-19",
+                 "invoiceNumber": 5396,
+                 "invoicePayment": true,
+                 "invoiceItem1": "Main Cookline System Serviced; Downstairs hood, duct & fan pressure washed",
+                 "invoiceItem2": "Pizza Oven Hood Serviced",
+                 "invoiceItem3": false,
+                 "invoiceItem4": false,
+                 "invoiceItem5": false,
+                 "invoiceItem6": false,
+                 "invoiceAmount1": 475.00,
+                 "invoiceAmount2": 110.00,
+                 "invoiceAmount3": false,
+                 "invoiceAmount4": false,
+                 "invoiceAmount5": false,
+                 "invoiceAmount6": false,
+                 "paymentDate": "2021-12-20",
+                 "paymentMethod": false,
+                 "paymentNotes": ""
+             }, {
+                "companyName": "RC Exhaust",
+                "companyAddress1": "PO Box 287",
+                "companyAddress2": false,
+                "companyCity": "Bishop",
+                "companyState": "CA",
+                "companyZip": "93515",
+                "companyPhone": "760-447-0492",
+                "companyEmail": "rc@rcexhaust.com",
+                 "customerId": 1666430128804,
+                 "customerName": "Bob's Burgers",
+                 "address1": "115 W Ocean Dr.",
+                 "address2": false,
+                 "city": "Ocean City",
+                 "state": "NJ",
+                 "zip": "17740",
+                 "invoiceDate": "2022-12-12",
+                 "invoiceNumber": 5394,
+                 "invoicePayment": true,
+                 "invoiceItem1": "Main Carbroiler System Serviced; Downstairs hood, duct & fan pressure washed",
+                 "invoiceItem2": "Fryer System Cleaned",
+                 "invoiceItem3": false,
+                 "invoiceItem4": false,
+                 "invoiceItem5": false,
+                 "invoiceItem6": false,
+                 "invoiceAmount1": 350.00,
+                 "invoiceAmount2": 200.00,
+                 "invoiceAmount3": false,
+                 "invoiceAmount4": false,
+                 "invoiceAmount5": false,
+                 "invoiceAmount6": false,
+                 "paymentDate": "2021-12-20",
+                 "paymentMethod": "Cash",
+                 "paymentNotes": ""
+             }, {
+                "companyName": "RC Exhaust",
+                "companyAddress1": "PO Box 287",
+                "companyAddress2": false,
+                "companyCity": "Bishop",
+                "companyState": "CA",
+                "companyZip": "93515",
+                "companyPhone": "760-447-0492",
+                "companyEmail": "rc@rcexhaust.com",
+                 "customerId": 1666430128805,
+                 "customerName": "Arnold's Drive In",
+                 "address1": "488 W East St.",
+                 "address2": false,
+                 "city": "Riverside",
+                 "state": "CA",
+                 "zip": "93723",
+                 "invoiceDate": "2022-12-11",
+                 "invoiceNumber": 5392,
+                 "invoicePayment": true,
+                 "invoiceItem1": "Cookline Kitchen Exhaust System Cleaned",
+                 "invoiceItem2": false,
+                 "invoiceItem3": false,
+                 "invoiceItem4": false,
+                 "invoiceItem5": false,
+                 "invoiceItem6": false,
+                 "invoiceAmount1": 485.00,
+                 "invoiceAmount2": false,
+                 "invoiceAmount3": false,
+                 "invoiceAmount4": false,
+                 "invoiceAmount5": false,
+                 "invoiceAmount6": false,
+                 "paymentDate": "2021-12-29",
+                 "paymentMethod": false,
+                 "paymentNotes": ""
+             }, {
+                "companyName": "RC Exhaust",
+                "companyAddress1": "PO Box 287",
+                "companyAddress2": false,
+                "companyCity": "Bishop",
+                "companyState": "CA",
+                "companyZip": "93515",
+                "companyPhone": "760-447-0492",
+                "companyEmail": "rc@rcexhaust.com",
+                 "customerId": 1666430128806,
+                 "customerName": "Paunch Burger",
+                 "address1": "565 North Clinton Dr.",
+                 "address2": false,
+                 "city": "Pawnee",
+                 "state": "IN",
+                 "zip": "56100",
+                 "invoiceDate": "2022-12-11",
+                 "invoiceNumber": 5391,
+                 "invoicePayment": true,
+                 "invoiceItem1": "Main Carbroiler System Serviced; Downstairs hood, duct & fan pressure washed",
+                 "invoiceItem2": "Fryer System Cleaned",
+                 "invoiceItem3": false,
+                 "invoiceItem4": false,
+                 "invoiceItem5": false,
+                 "invoiceItem6": false,
+                 "invoiceAmount1": 425.00,
+                 "invoiceAmount2": 200.00,
+                 "invoiceAmount3": false,
+                 "invoiceAmount4": false,
+                 "invoiceAmount5": false,
+                 "invoiceAmount6": false,
+                 "paymentDate": false,
+                 "paymentMethod": false,
+                 "paymentNotes": ""
+             }, {
+                "companyName": "RC Exhaust",
+                "companyAddress1": "PO Box 287",
+                "companyAddress2": false,
+                "companyCity": "Bishop",
+                "companyState": "CA",
+                "companyZip": "93515",
+                "companyPhone": "760-447-0492",
+                "companyEmail": "rc@rcexhaust.com",
+                 "customerId": 1666430128807,
+                 "customerName": "Central Perk",
+                 "address1": "565 5th Ave.",
+                 "address2": false,
+                 "city": "New York City",
+                 "state": "NY",
+                 "zip": "10001",
+                 "invoiceDate": "2022-12-03",
+                 "invoiceNumber": 5390,
+                 "invoicePayment": false,
+                 "invoiceItem1": "Bakery/Griddle Oven Hood serviced",
+                 "invoiceItem2": false,
+                 "invoiceItem3": false,
+                 "invoiceItem4": false,
+                 "invoiceItem5": false,
+                 "invoiceItem6": false,
+                 "invoiceAmount1": 385.00,
+                 "invoiceAmount2": false,
+                 "invoiceAmount3": false,
+                 "invoiceAmount4": false,
+                 "invoiceAmount5": false,
+                 "invoiceAmount6": false,
+                 "paymentDate": false,
+                 "paymentMethod": false,
+                 "paymentNotes": ""
+             }, {
+                "companyName": "RC Exhaust",
+                "companyAddress1": "PO Box 287",
+                "companyAddress2": false,
+                "companyCity": "Bishop",
+                "companyState": "CA",
+                "companyZip": "93515",
+                "companyPhone": "760-447-0492",
+                "companyEmail": "rc@rcexhaust.com",
+                 "customerId": 1666430128808,
+                 "customerName": "Cheer's",
+                 "address1": "1501 Riverwood Dr.",
+                 "address2": false,
+                 "city": "Burnsville",
+                 "state": "MN",
+                 "zip": "55337",
+                 "invoiceDate": "2022-12-25",
+                 "invoiceNumber": 5388,
+                 "invoicePayment": false,
+                 "invoiceItem1": "Main Carbroiler System Serviced; Downstairs hood, duct & fan pressure washed",
+                 "invoiceItem2": "Fryer System Cleaned",
+                 "invoiceItem3": false,
+                 "invoiceItem4": false,
+                 "invoiceItem5": false,
+                 "invoiceItem6": false,
+                 "invoiceAmount1": 350.00,
+                 "invoiceAmount2": 115.00,
+                 "invoiceAmount3": false,
+                 "invoiceAmount4": false,
+                 "invoiceAmount5": false,
+                 "invoiceAmount6": false,
+                 "paymentDate": false,
+                 "paymentMethod": false,
+                 "paymentNotes": ""
+             }, {
+                "companyName": "RC Exhaust",
+                "companyAddress1": "PO Box 287",
+                "companyAddress2": false,
+                "companyCity": "Bishop",
+                "companyState": "CA",
+                "companyZip": "93515",
+                "companyPhone": "760-447-0492",
+                "companyEmail": "rc@rcexhaust.com",
+                 "customerId": 1666430128809,
+                 "customerName": "Joe's Bar",
+                 "address1": "940 W Weed St.",
+                 "address2": false,
+                 "city": "Chicago",
+                 "state": "IL",
+                 "zip": "60642",
+                 "invoiceDate": "2022-12-23",
+                 "invoiceNumber": 5386,
+                 "invoicePayment": true,
+                 "invoiceItem1": "Single Small System Service; Downstairs hood, duct & fan pressure washed",
+                 "invoiceItem2": false,
+                 "invoiceItem3": false,
+                 "invoiceItem4": false,
+                 "invoiceItem5": false,
+                 "invoiceItem6": false,
+                 "invoiceAmount1": 385.00,
+                 "invoiceAmount2": false,
+                 "invoiceAmount3": false,
+                 "invoiceAmount4": false,
+                 "invoiceAmount5": false,
+                 "invoiceAmount6": false,
+                 "paymentDate": "2022-12-25",
+                 "paymentMethod": "Check",
+                 "paymentNotes": "# 7809",
+             }, {
+                "companyName": "RC Exhaust",
+                "companyAddress1": "PO Box 287",
+                "companyAddress2": false,
+                "companyCity": "Bishop",
+                "companyState": "CA",
+                "companyZip": "93515",
+                "companyPhone": "760-447-0492",
+                "companyEmail": "rc@rcexhaust.com",
+                 "customerId": 1666430128810,
+                 "customerName": "Three Broomsticks",
+                 "address1": "100 Universal Plaza",
+                 "address2": false,
+                 "city": "Universal City",
+                 "state": "CA",
+                 "zip": "91608",
+                 "invoiceDate": "2022-11-22",
+                 "invoiceNumber": 5384,
+                 "invoicePayment": true,
+                 "invoiceItem1": "Fryer System and Cookline Serviced: Hood, Ducts & Fans",
+                 "invoiceItem2": false,
+                 "invoiceItem3": false,
+                 "invoiceItem4": false,
+                 "invoiceItem5": false,
+                 "invoiceItem6": false,
+                 "invoiceAmount1": 625.00,
+                 "invoiceAmount2": false,
+                 "invoiceAmount3": false,
+                 "invoiceAmount4": false,
+                 "invoiceAmount5": false,
+                 "invoiceAmount6": false,
+                 "paymentDate": "2022-11-25",
+                 "paymentMethod": "Check",
+                 "paymentNotes": "Held for 2 weeks check # 555"
+             }, {
+                "companyName": "RC Exhaust",
+                "companyAddress1": "PO Box 287",
+                "companyAddress2": false,
+                "companyCity": "Bishop",
+                "companyState": "CA",
+                "companyZip": "93515",
+                "companyPhone": "760-447-0492",
+                "companyEmail": "rc@rcexhaust.com",
+                 "customerId": 1666430128811,
+                 "customerName": "Mos Eisley Cantina",
+                 "address1": "Tattoine",
+                 "address2": false,
+                 "city": "Outer Rim Territories",
+                 "state": false,
+                 "zip": false,
+                 "invoiceDate": "2022-11-18",
+                 "invoiceNumber": 5383,
+                 "invoicePayment": true,
+                 "invoiceItem1": "Rear kitchen system serviced.",
+                 "invoiceItem2": "Discount for assistance from in house droid staff.",
+                 "invoiceItem3": false,
+                 "invoiceItem4": false,
+                 "invoiceItem5": false,
+                 "invoiceItem6": false,
+                 "invoiceAmount1": 585.00,
+                 "invoiceAmount2": -100.00,
+                 "invoiceAmount3": false,
+                 "invoiceAmount4": false,
+                 "invoiceAmount5": false,
+                 "invoiceAmount6": false,
+                 "paymentDate": "2022-11-29",
+                 "paymentMethod": "Check",
+                 "paymentNotes": "Rebel scum tried to pay with federation credits"
+             }, 
+             {
+                "companyName": "RC Exhaust",
+                "companyAddress1": "PO Box 287",
+                "companyAddress2": false,
+                "companyCity": "Bishop",
+                "companyState": "CA",
+                "companyZip": "93515",
+                "companyPhone": "760-447-0492",
+                "companyEmail": "rc@rcexhaust.com",
+                "customerName": "Cafe Nervosa",
+                "customerId": 1666430128801,
+                "address1": "2115 E 3rd St.",
+                "address2": false,
+                "city": "Ocean City",
+                "state": "NJ",
+                "zip": "17740",
+                "invoiceDate": "2022-11-28",
+                "invoiceNumber": 5382,
+                "invoiceItem1": "Single System Service; Downstairs hood, duct & fan pressure washed",
+                "invoiceItem2": "Second Upstairs System Cleaned on Same visit",
+                "invoiceItem3": false,
+                "invoiceItem4": false,
+                "invoiceItem5": false,
+                "invoiceItem6": false,
+                "invoiceAmount1": 390,
+                "invoiceAmount2": 200,
+                "invoiceAmount3": false,
+                "invoiceAmount4": false,
+                "invoiceAmount5": false,
+                "invoiceAmount6": false,
+                "invoicePayment": true,
+                "paymentDate": "2022-11-29",
+                "paymentMethod": "Credit Card",
+                "paymentNotes": ""
+            },
+            {
+                "companyName": "RC Exhaust",
+                "companyAddress1": "PO Box 287",
+                "companyAddress2": false,
+                "companyCity": "Bishop",
+                "companyState": "CA",
+                "companyZip": "93515",
+                "companyPhone": "760-447-0492",
+                "companyEmail": "rc@rcexhaust.com",
+                "customerName": "Cafe Nervosa",
+                "customerId": 1666430128801,
+                "address1": "2115 E 3rd St.",
+                "address2": false,
+                "city": "Ocean City",
+                "state": "NJ",
+                "zip": "17740",
+                "invoiceDate": "2022-10-22",
+                "invoiceNumber": 5381,
+                "invoicePayment": false,
+                "invoiceItem1": "Single System Service; Downstairs hood, duct & fan pressure washed",
+                "invoiceItem2": "Second Upstairs System Cleaned on Same visit",
+                "invoiceItem3": false,
+                "invoiceItem4": false,
+                "invoiceItem5": false,
+                "invoiceItem6": false,
+                "invoiceAmount1": 390,
+                "invoiceAmount2": 200,
+                "invoiceAmount3": false,
+                "invoiceAmount4": false,
+                "invoiceAmount5": false,
+                "invoiceAmount6": false,
+                "paymentDate": false,
+                "paymentMethod": false,
+                "paymentNotes": ""
+
+            },
+            {
+                "companyName": "RC Exhaust",
+                "companyAddress1": "PO Box 287",
+                "companyAddress2": false,
+                "companyCity": "Bishop",
+                "companyState": "CA",
+                "companyZip": "93515",
+                "companyPhone": "760-447-0492",
+                "companyEmail": "rc@rcexhaust.com",
+                "customerId": 1666430128802,
+                "customerName": "The Indigo Tea Shop",
+                "address1": "1501 Riverwood Dr.",
+                "address2": false,
+                "city": "Burnsville",
+                "state": "MN",
+                "zip": "55337",
+                "invoiceDate": "2022-10-25",
+                "invoiceNumber": 5380,
+                "invoicePayment": true,
+                "invoiceItem1": "Main Cookline System Serviced; Downstairs hood, duct & fan pressure washed",
+                "invoiceItem2": false,
+                "invoiceItem3": false,
+                "invoiceItem4": false,
+                "invoiceItem5": false,
+                "invoiceItem6": false,
+                "invoiceAmount1": 565.00,
+                "invoiceAmount2": false,
+                "invoiceAmount3": false,
+                "invoiceAmount4": false,
+                "invoiceAmount5": false,
+                "invoiceAmount6": false,
+                "paymentDate": "2022-10-25",
+                "paymentMethod": "Cash",
+                "paymentNotes": ""
+            },
+            {
+                "companyName": "RC Exhaust",
+                "companyAddress1": "PO Box 287",
+                "companyAddress2": false,
+                "companyCity": "Bishop",
+                "companyState": "CA",
+                "companyZip": "93515",
+                "companyPhone": "760-447-0492",
+                "companyEmail": "rc@rcexhaust.com",
+                "customerId": 1666430128803,
+                "customerName": "Pizza Planet",
+                "address1": "745 Anchor Ave.",
+                "address2": false,
+                "city": "Orange Cove",
+                "state": "CA",
+                "zip": "93646",
+                "invoiceDate": "2022-10-19",
+                "invoiceNumber": 5378,
+                "invoicePayment": true,
+                "invoiceItem1": "Main Cookline System Serviced; Downstairs hood, duct & fan pressure washed",
+                "invoiceItem2": "Pizza Oven Hood Serviced",
+                "invoiceItem3": false,
+                "invoiceItem4": false,
+                "invoiceItem5": false,
+                "invoiceItem6": false,
+                "invoiceAmount1": 475.00,
+                "invoiceAmount2": 110.00,
+                "invoiceAmount3": false,
+                "invoiceAmount4": false,
+                "invoiceAmount5": false,
+                "invoiceAmount6": false,
+                "paymentDate": "2022-10-20",
+                "paymentMethod": false,
+                "paymentNotes": ""
+            },
+            {
+                "companyName": "RC Exhaust",
+                "companyAddress1": "PO Box 287",
+                "companyAddress2": false,
+                "companyCity": "Bishop",
+                "companyState": "CA",
+                "companyZip": "93515",
+                "companyPhone": "760-447-0492",
+                "companyEmail": "rc@rcexhaust.com",
+                "customerId": 1666430128804,
+                "customerName": "Bob's Burgers",
+                "address1": "115 W Ocean Dr.",
+                "address2": false,
+                "city": "Ocean City",
+                "state": "NJ",
+                "zip": "17740",
+                "invoiceDate": "2022-08-12",
+                "invoiceNumber": 5127,
+                "invoicePayment": true,
+                "invoiceItem1": "Main Carbroiler System Serviced; Downstairs hood, duct & fan pressure washed",
+                "invoiceItem2": "Fryer System Cleaned",
+                "invoiceItem3": false,
+                "invoiceItem4": false,
+                "invoiceItem5": false,
+                "invoiceItem6": false,
+                "invoiceAmount1": 350.00,
+                "invoiceAmount2": 200.00,
+                "invoiceAmount3": false,
+                "invoiceAmount4": false,
+                "invoiceAmount5": false,
+                "invoiceAmount6": false,
+                "paymentDate": "2022-08-20",
+                "paymentMethod": "Cash",
+                "paymentNotes": ""
+            },
+            {
+                "companyName": "RC Exhaust",
+                "companyAddress1": "PO Box 287",
+                "companyAddress2": false,
+                "companyCity": "Bishop",
+                "companyState": "CA",
+                "companyZip": "93515",
+                "companyPhone": "760-447-0492",
+                "companyEmail": "rc@rcexhaust.com",
+                "customerId": 1666430128805,
+                "customerName": "Arnold's Drive In",
+                "address1": "488 W East St.",
+                "address2": false,
+                "city": "Riverside",
+                "state": "CA",
+                "zip": "93723",
+                "invoiceDate": "2022-08-11",
+                "invoiceNumber": 5104,
+                "invoicePayment": true,
+                "invoiceItem1": "Cookline Kitchen Exhaust System Cleaned",
+                "invoiceItem2": false,
+                "invoiceItem3": false,
+                "invoiceItem4": false,
+                "invoiceItem5": false,
+                "invoiceItem6": false,
+                "invoiceAmount1": 485.00,
+                "invoiceAmount2": false,
+                "invoiceAmount3": false,
+                "invoiceAmount4": false,
+                "invoiceAmount5": false,
+                "invoiceAmount6": false,
+                "paymentDate": "2022-08-29",
+                "paymentMethod": false,
+                "paymentNotes": ""
+            },
+            {
+                "companyName": "RC Exhaust",
+                "companyAddress1": "PO Box 287",
+                "companyAddress2": false,
+                "companyCity": "Bishop",
+                "companyState": "CA",
+                "companyZip": "93515",
+                "companyPhone": "760-447-0492",
+                "companyEmail": "rc@rcexhaust.com",
+                "customerId": 1666430128806,
+                "customerName": "Paunch Burger",
+                "address1": "565 North Clinton Dr.",
+                "address2": false,
+                "city": "Pawnee",
+                "state": "IN",
+                "zip": "56100",
+                "invoiceDate": "2022-08-11",
+                "invoiceNumber": 5126,
+                "invoicePayment": true,
+                "invoiceItem1": "Main Carbroiler System Serviced; Downstairs hood, duct & fan pressure washed",
+                "invoiceItem2": "Fryer System Cleaned",
+                "invoiceItem3": false,
+                "invoiceItem4": false,
+                "invoiceItem5": false,
+                "invoiceItem6": false,
+                "invoiceAmount1": 425.00,
+                "invoiceAmount2": 200.00,
+                "invoiceAmount3": false,
+                "invoiceAmount4": false,
+                "invoiceAmount5": false,
+                "invoiceAmount6": false,
+                "paymentDate": "2022-09-11",
+                "paymentMethod": false,
+                "paymentNotes": ""
+            },
+            {
+                "companyName": "RC Exhaust",
+                "companyAddress1": "PO Box 287",
+                "companyAddress2": false,
+                "companyCity": "Bishop",
+                "companyState": "CA",
+                "companyZip": "93515",
+                "companyPhone": "760-447-0492",
+                "companyEmail": "rc@rcexhaust.com",
+                "customerId": 1666430128807,
+                "customerName": "Central Perk",
+                "address1": "565 5th Ave.",
+                "address2": false,
+                "city": "New York City",
+                "state": "NY",
+                "zip": "10001",
+                "invoiceDate": "2022-08-03",
+                "invoiceNumber": 5138,
+                "invoicePayment": false,
+                "invoiceItem1": "Bakery/Griddle Oven Hood serviced",
+                "invoiceItem2": false,
+                "invoiceItem3": false,
+                "invoiceItem4": false,
+                "invoiceItem5": false,
+                "invoiceItem6": false,
+                "invoiceAmount1": 385.00,
+                "invoiceAmount2": false,
+                "invoiceAmount3": false,
+                "invoiceAmount4": false,
+                "invoiceAmount5": false,
+                "invoiceAmount6": false,
+                "paymentDate": false,
+                "paymentMethod": false,
+                "paymentNotes": ""
+            },
+            {
+                "companyName": "RC Exhaust",
+                "companyAddress1": "PO Box 287",
+                "companyAddress2": false,
+                "companyCity": "Bishop",
+                "companyState": "CA",
+                "companyZip": "93515",
+                "companyPhone": "760-447-0492",
+                "companyEmail": "rc@rcexhaust.com",
+                "customerId": 1666430128808,
+                "customerName": "Cheer's",
+                "address1": "1501 Riverwood Dr.",
+                "address2": false,
+                "city": "Burnsville",
+                "state": "MN",
+                "zip": "55337",
+                "invoiceDate": "2022-09-25",
+                "invoiceNumber": 5121,
+                "invoicePayment": false,
+                "invoiceItem1": "Main Carbroiler System Serviced; Downstairs hood, duct & fan pressure washed",
+                "invoiceItem2": "Fryer System Cleaned",
+                "invoiceItem3": false,
+                "invoiceItem4": false,
+                "invoiceItem5": false,
+                "invoiceItem6": false,
+                "invoiceAmount1": 350.00,
+                "invoiceAmount2": 115.00,
+                "invoiceAmount3": false,
+                "invoiceAmount4": false,
+                "invoiceAmount5": false,
+                "invoiceAmount6": false,
+                "paymentDate": false,
+                "paymentMethod": false,
+                "paymentNotes": ""
+            },
+            {
+                "companyName": "RC Exhaust",
+                "companyAddress1": "PO Box 287",
+                "companyAddress2": false,
+                "companyCity": "Bishop",
+                "companyState": "CA",
+                "companyZip": "93515",
+                "companyPhone": "760-447-0492",
+                "companyEmail": "rc@rcexhaust.com",
+                "customerId": 1666430128809,
+                "customerName": "Joe's Bar",
+                "address1": "940 W Weed St.",
+                "address2": false,
+                "city": "Chicago",
+                "state": "IL",
+                "zip": "60642",
+                "invoiceDate": "2022-07-23",
+                "invoiceNumber": 5120,
+                "invoicePayment": true,
+                "invoiceItem1": "Single Small System Service; Downstairs hood, duct & fan pressure washed",
+                "invoiceItem2": false,
+                "invoiceItem3": false,
+                "invoiceItem4": false,
+                "invoiceItem5": false,
+                "invoiceItem6": false,
+                "invoiceAmount1": 385.00,
+                "invoiceAmount2": false,
+                "invoiceAmount3": false,
+                "invoiceAmount4": false,
+                "invoiceAmount5": false,
+                "invoiceAmount6": false,
+                "paymentDate": "2022-07-25",
+                "paymentMethod": "Check",
+                "paymentNotes": "# 7809",
+            },
+            {
+                "companyName": "RC Exhaust",
+                "companyAddress1": "PO Box 287",
+                "companyAddress2": false,
+                "companyCity": "Bishop",
+                "companyState": "CA",
+                "companyZip": "93515",
+                "companyPhone": "760-447-0492",
+                "companyEmail": "rc@rcexhaust.com",
+                "customerId": 1666430128810,
+                "customerName": "Three Broomsticks",
+                "address1": "100 Universal Plaza",
+                "address2": false,
+                "city": "Universal City",
+                "state": "CA",
+                "zip": "91608",
+                "invoiceDate": "2022-07-22",
+                "invoiceNumber": 5119,
+                "invoicePayment": true,
+                "invoiceItem1": "Fryer System and Cookline Serviced: Hood, Ducts & Fans",
+                "invoiceItem2": false,
+                "invoiceItem3": false,
+                "invoiceItem4": false,
+                "invoiceItem5": false,
+                "invoiceItem6": false,
+                "invoiceAmount1": 625.00,
+                "invoiceAmount2": false,
+                "invoiceAmount3": false,
+                "invoiceAmount4": false,
+                "invoiceAmount5": false,
+                "invoiceAmount6": false,
+                "paymentDate": "2022-07-25",
+                "paymentMethod": "Check",
+                "paymentNotes": "Held for 2 weeks check # 555"
+            },
+            {
+                "companyName": "RC Exhaust",
+                "companyAddress1": "PO Box 287",
+                "companyAddress2": false,
+                "companyCity": "Bishop",
+                "companyState": "CA",
+                "companyZip": "93515",
+                "companyPhone": "760-447-0492",
+                "companyEmail": "rc@rcexhaust.com",
+                "customerId": 1666430128811,
+                "customerName": "Mos Eisley Cantina",
+                "address1": "Tattoine",
+                "address2": false,
+                "city": "Outer Rim Territories",
+                "state": false,
+                "zip": false,
+                "invoiceDate": "2022-07-18",
+                "invoiceNumber": 5118,
+                "invoicePayment": true,
+                "invoiceItem1": "Rear kitchen system serviced.",
+                "invoiceItem2": "Discount for assistance from in house droid staff.",
+                "invoiceItem3": false,
+                "invoiceItem4": false,
+                "invoiceItem5": false,
+                "invoiceItem6": false,
+                "invoiceAmount1": 585.00,
+                "invoiceAmount2": -100.00,
+                "invoiceAmount3": false,
+                "invoiceAmount4": false,
+                "invoiceAmount5": false,
+                "invoiceAmount6": false,
+                "paymentDate": "2022-07-29",
+                "paymentMethod": "Check",
+                "paymentNotes": "Rebel scum tried to pay with federation credits"
+            },
+            {
+                "companyName": "RC Exhaust",
+                "companyAddress1": "PO Box 287",
+                "companyAddress2": false,
+                "companyCity": "Bishop",
+                "companyState": "CA",
+                "companyZip": "93515",
+                "companyPhone": "760-447-0492",
+                "companyEmail": "rc@rcexhaust.com",
+                "customerId": 1666430128812,
+                "customerName": "Krusty Crab",
+                "address1": "Bikini Atoll",
+                "address2": "Ocean Floor",
+                "city": "Pacific Ocean",
+                "state": false,
+                "zip": false,
+                "invoiceDate": "2022-07-16",
+                "invoiceNumber": 5116,
+                "invoicePayment": true,
+                "invoiceItem1": "Single System Service",
+                "invoiceItem2": false,
+                "invoiceItem3": false,
+                "invoiceItem4": false,
+                "invoiceItem5": false,
+                "invoiceItem6": false,
+                "invoiceAmount1": 385.00,
+                "invoiceAmount2": false,
+                "invoiceAmount3": false,
+                "invoiceAmount4": false,
+                "invoiceAmount5": false,
+                "invoiceAmount6": false,
+                "paymentDate": "2022-07-20",
+                "paymentMethod": "Check",
+                "paymentNotes": "Check reaks of fish smell"
+            },
+            {
+                "companyName": "RC Exhaust",
+                "companyAddress1": "PO Box 287",
+                "companyAddress2": false,
+                "companyCity": "Bishop",
+                "companyState": "CA",
+                "companyZip": "93515",
+                "companyPhone": "760-447-0492",
+                "companyEmail": "rc@rcexhaust.com",
+                "customerId": 1666430128813,
+                "customerName": "La Ratatouille",
+                "address1": "234 Main St.",
+                "address2": false,
+                "city": "Villanueve",
+                "state": "France",
+                "zip": false,
+                "invoiceDate": "2022-07-11",
+                "invoiceNumber": 5114,
+                "invoicePayment": true,
+                "invoiceItem1": "Main Cookline Kitchen Exhaust Cleaning",
+                "invoiceItem2": false,
+                "invoiceItem3": false,
+                "invoiceItem4": false,
+                "invoiceItem5": false,
+                "invoiceItem6": false,
+                "invoiceAmount1": 485.00,
+                "invoiceAmount2": false,
+                "invoiceAmount3": false,
+                "invoiceAmount4": false,
+                "invoiceAmount5": false,
+                "invoiceAmount6": false,
+                "paymentDate": "2022-06-19",
+                "paymentMethod": "Cash",
+                "paymentNotes": "Think I saw a rat in the kitchen"
+            },
+            {
+                "companyName": "RC Exhaust",
+                "companyAddress1": "PO Box 287",
+                "companyAddress2": false,
+                "companyCity": "Bishop",
+                "companyState": "CA",
+                "companyZip": "93515",
+                "companyPhone": "760-447-0492",
+                "companyEmail": "rc@rcexhaust.com",
+                "customerId": 1666430128814,
+                "customerName": "Frozen Banana",
+                "address1": "565 Ocean Wharf Blvd.",
+                "address2": false,
+                "city": "Oceanside",
+                "state": "CA",
+                "zip": "92003",
+                "invoiceDate": "2022-06-23",
+                "invoiceNumber": 5112,
+                "invoicePayment": true,
+                "invoiceItem1": "Hood vent over cornballer machine serviced",
+                "invoiceItem2": false,
+                "invoiceItem3": false,
+                "invoiceItem4": false,
+                "invoiceItem5": false,
+                "invoiceItem6": false,
+                "invoiceAmount1": 385.00,
+                "invoiceAmount2": false,
+                "invoiceAmount3": false,
+                "invoiceAmount4": false,
+                "invoiceAmount5": false,
+                "invoiceAmount6": false,
+                "paymentDate": "2022-07-01",
+                "paymentMethod": "Cash",
+                "paymentNotes": ""
+            },
+            {
+                "companyName": "RC Exhaust",
+                "companyAddress1": "PO Box 287",
+                "companyAddress2": false,
+                "companyCity": "Bishop",
+                "companyState": "CA",
+                "companyZip": "93515",
+                "companyPhone": "760-447-0492",
+                "companyEmail": "rc@rcexhaust.com",
+                "customerId": 1666430128815,
+                "customerName": "Monk's Cafe",
+                "address1": "555 W. 122th St.",
+                "address2": false,
+                "city": "New York",
+                "state": "NY",
+                "zip": "10001",
+                "invoiceDate": "2022-06-22",
+                "invoiceNumber": 5111,
+                "invoicePayment": true,
+                "invoiceItem1": "Main Carbroiler System Serviced; Downstairs hood, duct & fan pressure washed",
+                "invoiceItem2": "Fryer System Cleaned",
+                "invoiceItem3": false,
+                "invoiceItem4": false,
+                "invoiceItem5": false,
+                "invoiceItem6": false,
+                "invoiceAmount1": 425.00,
+                "invoiceAmount2": 200.00,
+                "invoiceAmount3": false,
+                "invoiceAmount4": false,
+                "invoiceAmount5": false,
+                "invoiceAmount6": false,
+                "paymentDate": "2022-06-23",
+                "paymentMethod": "Cash",
+                "paymentNotes": ""
+            },
+            {
+                "companyName": "RC Exhaust",
+                "companyAddress1": "PO Box 287",
+                "companyAddress2": false,
+                "companyCity": "Bishop",
+                "companyState": "CA",
+                "companyZip": "93515",
+                "companyPhone": "760-447-0492",
+                "companyEmail": "rc@rcexhaust.com",
+                "customerId": 1666430128816,
+                "customerName": "Los Pollos Hermano's",
+                "address1": "9358 Eagle Ranch Rd.",
+                "address2": false,
+                "city": "Albuqueqe",
+                "state": "NM",
+                "zip": "87114",
+                "invoiceDate": "2022-06-18",
+                "invoiceNumber": 5110,
+                "invoicePayment": true,
+                "invoiceItem1": "Ventilation ducts over underground meth lab cleaned",
+                "invoiceItem2": false,
+                "invoiceItem3": false,
+                "invoiceItem4": false,
+                "invoiceItem5": false,
+                "invoiceItem6": false,
+                "invoiceAmount1": 525.00,
+                "invoiceAmount2": false,
+                "invoiceAmount3": false,
+                "invoiceAmount4": false,
+                "invoiceAmount5": false,
+                "invoiceAmount6": false,
+                "paymentDate": "2022-06-29",
+                "paymentMethod": "Cash",
+                "paymentNotes": "I think I saw some drug dealers hanging around the office"
+            },
+            {
+                "companyName": "RC Exhaust",
+                "companyAddress1": "PO Box 287",
+                "companyAddress2": false,
+                "companyCity": "Bishop",
+                "companyState": "CA",
+                "companyZip": "93515",
+                "companyPhone": "760-447-0492",
+                "companyEmail": "rc@rcexhaust.com",
+                "customerId": 1666430128817,
+                "customerName": "Whistle Stop Cafe",
+                "address1": "443 Mc Cracken St.",
+                "address2": false,
+                "city": "Juliette",
+                "state": "GA",
+                "zip": "31046",
+                "invoiceDate": "2022-07-17",
+                "invoiceNumber": 5109,
+                "invoicePayment": true,
+                "invoiceItem1": "Single Large System Serviced",
+                "invoiceItem2": false,
+                "invoiceItem3": false,
+                "invoiceItem4": false,
+                "invoiceItem5": false,
+                "invoiceItem6": false,
+                "invoiceAmount1": 555.00,
+                "invoiceAmount2": false,
+                "invoiceAmount3": false,
+                "invoiceAmount4": false,
+                "invoiceAmount5": false,
+                "invoiceAmount6": false,
+                "paymentDate": "2022-06-01",
+                "paymentMethod": "Check",
+                "paymentNotes": ""
+            },
+            {
+                "companyName": "RC Exhaust",
+                "companyAddress1": "PO Box 287",
+                "companyAddress2": false,
+                "companyCity": "Bishop",
+                "companyState": "CA",
+                "companyZip": "93515",
+                "companyPhone": "760-447-0492",
+                "companyEmail": "rc@rcexhaust.com",
+                "customerId": 1666430128818,
+                "customerName": "Vesuvio",
+                "address1": "91 Elizabeth Ave.",
+                "address2": false,
+                "city": "Elizabeth",
+                "state": "NJ",
+                "zip": "07206",
+                "invoiceDate": "2022-06-15",
+                "invoiceNumber": "5108",
+                "invoicePayment": true,
+                "invoiceItem1": "Main Carbroiler System Serviced; hood, duct & fan pressure washed",
+                "invoiceItem2": "Fryer System Cleaned",
+                "invoiceItem3": false,
+                "invoiceItem4": false,
+                "invoiceItem5": false,
+                "invoiceItem6": false,
+                "invoiceItem7": false,
+                "invoiceItem8": false,
+                "invoiceItem9": false,
+                "invoiceAmount1": 425.00,
+                "invoiceAmount2": 200.00,
+                "invoiceAmount3": false,
+                "invoiceAmount4": false,
+                "invoiceAmount5": false,
+                "invoiceAmount6": false,
+                "paymentDate": "2022-06-15",
+                "paymentMethod": "Check",
+                "paymentNotes": ""
+            },
+            {
+                "companyName": "RC Exhaust",
+                "companyAddress1": "PO Box 287",
+                "companyAddress2": false,
+                "companyCity": "Bishop",
+                "companyState": "CA",
+                "companyZip": "93515",
+                "companyPhone": "760-447-0492",
+                "companyEmail": "rc@rcexhaust.com",
+                "customerId": 1666430128819,
+                "customerName": "The Pie Pole",
+                "address1": "714 Traction Ave.",
+                "address2": false,
+                "city": "Los Angeles",
+                "state": "CA",
+                "zip": "90013",
+                "invoiceDate": "2022-06-15",
+                "invoiceNumber": "5107",
+                "invoicePayment": true,
+                "invoiceItem1": "Main Cookline System Serviced; hood, duct & fan pressure washed",
+                "invoiceItem2": "Bakery Hood Cleaned",
+                "invoiceItem3": false,
+                "invoiceItem4": false,
+                "invoiceItem5": false,
+                "invoiceItem6": false,
+                "invoiceAmount1": 425.00,
+                "invoiceAmount2": 200.00,
+                "invoiceAmount3": false,
+                "invoiceAmount4": false,
+                "invoiceAmount5": false,
+                "invoiceAmount6": false,
+                "paymentDate": "2022-06-20",
+                "paymentMethod": "Cash",
+                "paymentNotes": ""
+            },
+            {
+                "companyName": "RC Exhaust",
+                "companyAddress1": "PO Box 287",
+                "companyAddress2": false,
+                "companyCity": "Bishop",
+                "companyState": "CA",
+                "companyZip": "93515",
+                "companyPhone": "760-447-0492",
+                "companyEmail": "rc@rcexhaust.com",
+                "customerId": 1666430128820,
+                "customerName": "Louie's Italian Restaurant",
+                "address1": "115 W Ocean Dr.",
+                "address2": false,
+                "city": "Ocean City",
+                "state": "NJ",
+                "zip": "17740",
+                "invoiceDate": "2022-06-11",
+                "invoiceNumber": 5106,
+                "invoicePayment": true,
+                "invoiceItem1": "Main Cookline System Serviced; hood, duct & fan pressure washed",
+                "invoiceItem2": false,
+                "invoiceItem3": false,
+                "invoiceItem4": false,
+                "invoiceItem5": false,
+                "invoiceItem6": false,
+                "invoiceAmount1": 490.00,
+                "invoiceAmount2": false,
+                "invoiceAmount3": false,
+                "invoiceAmount4": false,
+                "invoiceAmount5": false,
+                "invoiceAmount6": false,
+                "paymentDate": "2022-06-12",
+                "paymentMethod": "Check",
+                "paymentNotes": ""
+            },
+            {
+                "companyName": "RC Exhaust",
+                "companyAddress1": "PO Box 287",
+                "companyAddress2": false,
+                "companyCity": "Bishop",
+                "companyState": "CA",
+                "companyZip": "93515",
+                "companyPhone": "760-447-0492",
+                "companyEmail": "rc@rcexhaust.com",
+                "customerId": 1666430128821,
+                "customerName": "Chocolate Factory",
+                "address1": "Munich",
+                "address2": false,
+                "city": "Bavaria",
+                "state": "West Germany",
+                "zip": false,
+                "invoiceDate": "2022-06-20",
+                "invoiceNumber": 5104,
+                "invoicePayment": true,
+                "invoiceItem1": "Corpse of bratty teen removed from ductwork",
+                "invoiceItem2": false,
+                "invoiceItem3": false,
+                "invoiceItem4": false,
+                "invoiceItem5": false,
+                "invoiceItem6": false,
+                "invoiceAmount1": 590.00,
+                "invoiceAmount2": false,
+                "invoiceAmount3": false,
+                "invoiceAmount4": false,
+                "invoiceAmount5": false,
+                "invoiceAmount6": false,
+                "paymentDate": "2022-06-30",
+                "paymentMethod": "Credit",
+                "paymentNotes": "Unsafe work conditions, not worth the money"
+            },
+            {
+                "companyName": "RC Exhaust",
+                "companyAddress1": "PO Box 287",
+                "companyAddress2": false,
+                "companyCity": "Bishop",
+                "companyState": "CA",
+                "companyZip": "93515",
+                "companyPhone": "760-447-0492",
+                "companyEmail": "rc@rcexhaust.com",
+                 "customerId": 1666430128805,
+                 "customerName": "Arnold's Drive In",
+                 "address1": "488 W East St.",
+                 "address2": false,
+                 "city": "Riverside",
+                 "state": "CA",
+                 "zip": "93723",
+                 "invoiceDate": "2021-03-11",
+                 "invoiceNumber": 4900,
+                 "invoicePayment": true,
+                 "invoiceItem1": "Cookline Kitchen Exhaust System Cleaned",
+                 "invoiceItem2": false,
+                 "invoiceItem3": false,
+                 "invoiceItem4": false,
+                 "invoiceItem5": false,
+                 "invoiceItem6": false,
+                 "invoiceAmount1": 485.00,
+                 "invoiceAmount2": false,
+                 "invoiceAmount3": false,
+                 "invoiceAmount4": false,
+                 "invoiceAmount5": false,
+                 "invoiceAmount6": false,
+                 "paymentDate": "2021-03-29",
+                 "paymentMethod": false,
+                 "paymentNotes": ""
+             }, 
+             {
+                "companyName": "RC Exhaust",
+                "companyAddress1": "PO Box 287",
+                "companyAddress2": false,
+                "companyCity": "Bishop",
+                "companyState": "CA",
+                "companyZip": "93515",
+                "companyPhone": "760-447-0492",
+                "companyEmail": "rc@rcexhaust.com",
+                 "customerId": 1666430128805,
+                 "customerName": "Arnold's Drive In",
+                 "address1": "488 W East St.",
+                 "address2": false,
+                 "city": "Riverside",
+                 "state": "CA",
+                 "zip": "93723",
+                 "invoiceDate": "2021-03-11",
+                 "invoiceNumber": 4902,
+                 "invoicePayment": true,
+                 "invoiceItem1": "Cookline Kitchen Exhaust System Cleaned",
+                 "invoiceItem2": false,
+                 "invoiceItem3": false,
+                 "invoiceItem4": false,
+                 "invoiceItem5": false,
+                 "invoiceItem6": false,
+                 "invoiceAmount1": 485.00,
+                 "invoiceAmount2": false,
+                 "invoiceAmount3": false,
+                 "invoiceAmount4": false,
+                 "invoiceAmount5": false,
+                 "invoiceAmount6": false,
+                 "paymentDate": "2021-03-29",
+                 "paymentMethod": false,
+                 "paymentNotes": ""
+             }, 
+             {
+                "companyName": "RC Exhaust",
+                "companyAddress1": "PO Box 287",
+                "companyAddress2": false,
+                "companyCity": "Bishop",
+                "companyState": "CA",
+                "companyZip": "93515",
+                "companyPhone": "760-447-0492",
+                "companyEmail": "rc@rcexhaust.com",
+                 "customerId": 1666430128805,
+                 "customerName": "Arnold's Drive In",
+                 "address1": "488 W East St.",
+                 "address2": false,
+                 "city": "Riverside",
+                 "state": "CA",
+                 "zip": "93723",
+                 "invoiceDate": "2021-03-11",
+                 "invoiceNumber": 4903,
+                 "invoicePayment": true,
+                 "invoiceItem1": "Cookline Kitchen Exhaust System Cleaned",
+                 "invoiceItem2": false,
+                 "invoiceItem3": false,
+                 "invoiceItem4": false,
+                 "invoiceItem5": false,
+                 "invoiceItem6": false,
+                 "invoiceAmount1": 485.00,
+                 "invoiceAmount2": false,
+                 "invoiceAmount3": false,
+                 "invoiceAmount4": false,
+                 "invoiceAmount5": false,
+                 "invoiceAmount6": false,
+                 "paymentDate": "2021-03-29",
+                 "paymentMethod": false,
+                 "paymentNotes": ""
+             }, 
+             {
+                "companyName": "RC Exhaust",
+                "companyAddress1": "PO Box 287",
+                "companyAddress2": false,
+                "companyCity": "Bishop",
+                "companyState": "CA",
+                "companyZip": "93515",
+                "companyPhone": "760-447-0492",
+                "companyEmail": "rc@rcexhaust.com",
+                 "customerId": 1666430128805,
+                 "customerName": "Arnold's Drive In",
+                 "address1": "488 W East St.",
+                 "address2": false,
+                 "city": "Riverside",
+                 "state": "CA",
+                 "zip": "93723",
+                 "invoiceDate": "2021-03-11",
+                 "invoiceNumber": 4904,
+                 "invoicePayment": true,
+                 "invoiceItem1": "Cookline Kitchen Exhaust System Cleaned",
+                 "invoiceItem2": false,
+                 "invoiceItem3": false,
+                 "invoiceItem4": false,
+                 "invoiceItem5": false,
+                 "invoiceItem6": false,
+                 "invoiceAmount1": 485.00,
+                 "invoiceAmount2": false,
+                 "invoiceAmount3": false,
+                 "invoiceAmount4": false,
+                 "invoiceAmount5": false,
+                 "invoiceAmount6": false,
+                 "paymentDate": "2021-03-29",
+                 "paymentMethod": false,
+                 "paymentNotes": ""
+             }, 
+             {
+                "companyName": "RC Exhaust",
+                "companyAddress1": "PO Box 287",
+                "companyAddress2": false,
+                "companyCity": "Bishop",
+                "companyState": "CA",
+                "companyZip": "93515",
+                "companyPhone": "760-447-0492",
+                "companyEmail": "rc@rcexhaust.com",
+                 "customerId": 1666430128805,
+                 "customerName": "Arnold's Drive In",
+                 "address1": "488 W East St.",
+                 "address2": false,
+                 "city": "Riverside",
+                 "state": "CA",
+                 "zip": "93723",
+                 "invoiceDate": "2021-03-11",
+                 "invoiceNumber": 4905,
+                 "invoicePayment": true,
+                 "invoiceItem1": "Cookline Kitchen Exhaust System Cleaned",
+                 "invoiceItem2": false,
+                 "invoiceItem3": false,
+                 "invoiceItem4": false,
+                 "invoiceItem5": false,
+                 "invoiceItem6": false,
+                 "invoiceAmount1": 485.00,
+                 "invoiceAmount2": false,
+                 "invoiceAmount3": false,
+                 "invoiceAmount4": false,
+                 "invoiceAmount5": false,
+                 "invoiceAmount6": false,
+                 "paymentDate": "2021-03-29",
+                 "paymentMethod": false,
+                 "paymentNotes": ""
+             }, 
+             {
+                "companyName": "RC Exhaust",
+                "companyAddress1": "PO Box 287",
+                "companyAddress2": false,
+                "companyCity": "Bishop",
+                "companyState": "CA",
+                "companyZip": "93515",
+                "companyPhone": "760-447-0492",
+                "companyEmail": "rc@rcexhaust.com",
+                 "customerId": 1666430128805,
+                 "customerName": "Arnold's Drive In",
+                 "address1": "488 W East St.",
+                 "address2": false,
+                 "city": "Riverside",
+                 "state": "CA",
+                 "zip": "93723",
+                 "invoiceDate": "2021-03-11",
+                 "invoiceNumber": 4906,
+                 "invoicePayment": true,
+                 "invoiceItem1": "Cookline Kitchen Exhaust System Cleaned",
+                 "invoiceItem2": false,
+                 "invoiceItem3": false,
+                 "invoiceItem4": false,
+                 "invoiceItem5": false,
+                 "invoiceItem6": false,
+                 "invoiceAmount1": 485.00,
+                 "invoiceAmount2": false,
+                 "invoiceAmount3": false,
+                 "invoiceAmount4": false,
+                 "invoiceAmount5": false,
+                 "invoiceAmount6": false,
+                 "paymentDate": "2021-03-29",
+                 "paymentMethod": false,
+                 "paymentNotes": ""
+             }, 
+             {
+                "companyName": "RC Exhaust",
+                "companyAddress1": "PO Box 287",
+                "companyAddress2": false,
+                "companyCity": "Bishop",
+                "companyState": "CA",
+                "companyZip": "93515",
+                "companyPhone": "760-447-0492",
+                "companyEmail": "rc@rcexhaust.com",
+                 "customerId": 1666430128805,
+                 "customerName": "Arnold's Drive In",
+                 "address1": "488 W East St.",
+                 "address2": false,
+                 "city": "Riverside",
+                 "state": "CA",
+                 "zip": "93723",
+                 "invoiceDate": "2021-03-11",
+                 "invoiceNumber": 4907,
+                 "invoicePayment": true,
+                 "invoiceItem1": "Cookline Kitchen Exhaust System Cleaned",
+                 "invoiceItem2": false,
+                 "invoiceItem3": false,
+                 "invoiceItem4": false,
+                 "invoiceItem5": false,
+                 "invoiceItem6": false,
+                 "invoiceAmount1": 485.00,
+                 "invoiceAmount2": false,
+                 "invoiceAmount3": false,
+                 "invoiceAmount4": false,
+                 "invoiceAmount5": false,
+                 "invoiceAmount6": false,
+                 "paymentDate": "2021-03-29",
+                 "paymentMethod": false,
+                 "paymentNotes": ""
+             }, 
+             {
+                "companyName": "RC Exhaust",
+                "companyAddress1": "PO Box 287",
+                "companyAddress2": false,
+                "companyCity": "Bishop",
+                "companyState": "CA",
+                "companyZip": "93515",
+                "companyPhone": "760-447-0492",
+                "companyEmail": "rc@rcexhaust.com",
+                 "customerId": 1666430128805,
+                 "customerName": "Arnold's Drive In",
+                 "address1": "488 W East St.",
+                 "address2": false,
+                 "city": "Riverside",
+                 "state": "CA",
+                 "zip": "93723",
+                 "invoiceDate": "2021-03-11",
+                 "invoiceNumber": 4908,
+                 "invoicePayment": true,
+                 "invoiceItem1": "Cookline Kitchen Exhaust System Cleaned",
+                 "invoiceItem2": false,
+                 "invoiceItem3": false,
+                 "invoiceItem4": false,
+                 "invoiceItem5": false,
+                 "invoiceItem6": false,
+                 "invoiceAmount1": 485.00,
+                 "invoiceAmount2": false,
+                 "invoiceAmount3": false,
+                 "invoiceAmount4": false,
+                 "invoiceAmount5": false,
+                 "invoiceAmount6": false,
+                 "paymentDate": "2021-03-29",
+                 "paymentMethod": false,
+                 "paymentNotes": ""
+             }, 
+             {
+                "companyName": "RC Exhaust",
+                "companyAddress1": "PO Box 287",
+                "companyAddress2": false,
+                "companyCity": "Bishop",
+                "companyState": "CA",
+                "companyZip": "93515",
+                "companyPhone": "760-447-0492",
+                "companyEmail": "rc@rcexhaust.com",
+                 "customerId": 1666430128805,
+                 "customerName": "Arnold's Drive In",
+                 "address1": "488 W East St.",
+                 "address2": false,
+                 "city": "Riverside",
+                 "state": "CA",
+                 "zip": "93723",
+                 "invoiceDate": "2021-03-11",
+                 "invoiceNumber": 4909,
+                 "invoicePayment": true,
+                 "invoiceItem1": "Cookline Kitchen Exhaust System Cleaned",
+                 "invoiceItem2": false,
+                 "invoiceItem3": false,
+                 "invoiceItem4": false,
+                 "invoiceItem5": false,
+                 "invoiceItem6": false,
+                 "invoiceAmount1": 485.00,
+                 "invoiceAmount2": false,
+                 "invoiceAmount3": false,
+                 "invoiceAmount4": false,
+                 "invoiceAmount5": false,
+                 "invoiceAmount6": false,
+                 "paymentDate": "2021-03-29",
+                 "paymentMethod": false,
+                 "paymentNotes": ""
+             }, 
+             {
+                "companyName": "RC Exhaust",
+                "companyAddress1": "PO Box 287",
+                "companyAddress2": false,
+                "companyCity": "Bishop",
+                "companyState": "CA",
+                "companyZip": "93515",
+                "companyPhone": "760-447-0492",
+                "companyEmail": "rc@rcexhaust.com",
+                 "customerId": 1666430128805,
+                 "customerName": "Arnold's Drive In",
+                 "address1": "488 W East St.",
+                 "address2": false,
+                 "city": "Riverside",
+                 "state": "CA",
+                 "zip": "93723",
+                 "invoiceDate": "2021-03-11",
+                 "invoiceNumber": 4910,
+                 "invoicePayment": true,
+                 "invoiceItem1": "Cookline Kitchen Exhaust System Cleaned",
+                 "invoiceItem2": false,
+                 "invoiceItem3": false,
+                 "invoiceItem4": false,
+                 "invoiceItem5": false,
+                 "invoiceItem6": false,
+                 "invoiceAmount1": 485.00,
+                 "invoiceAmount2": false,
+                 "invoiceAmount3": false,
+                 "invoiceAmount4": false,
+                 "invoiceAmount5": false,
+                 "invoiceAmount6": false,
+                 "paymentDate": "2021-03-29",
+                 "paymentMethod": false,
+                 "paymentNotes": ""
+             }, 
+             {
+                "companyName": "RC Exhaust",
+                "companyAddress1": "PO Box 287",
+                "companyAddress2": false,
+                "companyCity": "Bishop",
+                "companyState": "CA",
+                "companyZip": "93515",
+                "companyPhone": "760-447-0492",
+                "companyEmail": "rc@rcexhaust.com",
+                 "customerId": 1666430128805,
+                 "customerName": "Arnold's Drive In",
+                 "address1": "488 W East St.",
+                 "address2": false,
+                 "city": "Riverside",
+                 "state": "CA",
+                 "zip": "93723",
+                 "invoiceDate": "2021-03-11",
+                 "invoiceNumber": 4911,
+                 "invoicePayment": true,
+                 "invoiceItem1": "Cookline Kitchen Exhaust System Cleaned",
+                 "invoiceItem2": false,
+                 "invoiceItem3": false,
+                 "invoiceItem4": false,
+                 "invoiceItem5": false,
+                 "invoiceItem6": false,
+                 "invoiceAmount1": 485.00,
+                 "invoiceAmount2": false,
+                 "invoiceAmount3": false,
+                 "invoiceAmount4": false,
+                 "invoiceAmount5": false,
+                 "invoiceAmount6": false,
+                 "paymentDate": "2021-03-29",
+                 "paymentMethod": false,
+                 "paymentNotes": ""
+             }, 
+             {
+                "companyName": "RC Exhaust",
+                "companyAddress1": "PO Box 287",
+                "companyAddress2": false,
+                "companyCity": "Bishop",
+                "companyState": "CA",
+                "companyZip": "93515",
+                "companyPhone": "760-447-0492",
+                "companyEmail": "rc@rcexhaust.com",
+                 "customerId": 1666430128805,
+                 "customerName": "Arnold's Drive In",
+                 "address1": "488 W East St.",
+                 "address2": false,
+                 "city": "Riverside",
+                 "state": "CA",
+                 "zip": "93723",
+                 "invoiceDate": "2021-03-11",
+                 "invoiceNumber": 4912,
+                 "invoicePayment": true,
+                 "invoiceItem1": "Cookline Kitchen Exhaust System Cleaned",
+                 "invoiceItem2": false,
+                 "invoiceItem3": false,
+                 "invoiceItem4": false,
+                 "invoiceItem5": false,
+                 "invoiceItem6": false,
+                 "invoiceAmount1": 485.00,
+                 "invoiceAmount2": false,
+                 "invoiceAmount3": false,
+                 "invoiceAmount4": false,
+                 "invoiceAmount5": false,
+                 "invoiceAmount6": false,
+                 "paymentDate": "2021-03-29",
+                 "paymentMethod": false,
+                 "paymentNotes": ""
+             }, 
+             {
+                "companyName": "RC Exhaust",
+                "companyAddress1": "PO Box 287",
+                "companyAddress2": false,
+                "companyCity": "Bishop",
+                "companyState": "CA",
+                "companyZip": "93515",
+                "companyPhone": "760-447-0492",
+                "companyEmail": "rc@rcexhaust.com",
+                 "customerId": 1666430128805,
+                 "customerName": "Arnold's Drive In",
+                 "address1": "488 W East St.",
+                 "address2": false,
+                 "city": "Riverside",
+                 "state": "CA",
+                 "zip": "93723",
+                 "invoiceDate": "2021-03-11",
+                 "invoiceNumber": 4913,
+                 "invoicePayment": true,
+                 "invoiceItem1": "Cookline Kitchen Exhaust System Cleaned",
+                 "invoiceItem2": false,
+                 "invoiceItem3": false,
+                 "invoiceItem4": false,
+                 "invoiceItem5": false,
+                 "invoiceItem6": false,
+                 "invoiceAmount1": 485.00,
+                 "invoiceAmount2": false,
+                 "invoiceAmount3": false,
+                 "invoiceAmount4": false,
+                 "invoiceAmount5": false,
+                 "invoiceAmount6": false,
+                 "paymentDate": "2021-03-29",
+                 "paymentMethod": false,
+                 "paymentNotes": ""
+             }, 
+
         ]
     },
 
@@ -808,22 +3043,26 @@ let db = [{
             {
                 "itemName": "Single System Small",
                 "itemDescription": "Single Small System Service: Kitchen Exhaust Cleaning, hoods, ducts & fans",
-                "itemAmount": 385.00
+                "itemAmount": 385.00,
+                "itemId" : 1669514751416
             },
             {
                 "itemName": "Single System Large",
                 "itemDescription": "Single Large System Service: Kitchen Exhaust Cleaning, hoods, ducts & fans",
-                "itemAmount": 585.00
+                "itemAmount": 585.00,
+                "itemId" : 1669514751415
             },
             {
                 "itemName": "Second System Small",
                 "itemDescription": "Second System Serviced on Same Visit",
-                "itemAmount": 200.00
+                "itemAmount": 200.00,
+                "itemId" : 1669514751414
             },
             {
                 "itemName": "Second System Large",
                 "itemDescription": "Second System Serviced on Same Visit",
-                "itemAmount": 300.00
+                "itemAmount": 300.00,
+                "itemId" : 1669514751413
             }
         ]
     },
@@ -831,238 +3070,443 @@ let db = [{
         // BBB [3] expenses
         "expenses": [{
                 "expenseCategory": "Supplies",
-                "expenseDate": "2021-09-28",
+                "expenseDate": "2022-12-28",
                 "expenseAmount": 69.58,
                 "expenseNotes": "Acme Supply Shop",
                 "expenseId": 1669514751416
             },
             {
                 "expenseCategory": "Supplies",
-                "expenseDate": "2021-09-02",
+                "expenseDate": "2022-12-02",
+                "expenseAmount": 19.78,
+                "expenseNotes": "Acme Supply Shop",
+                "expenseId": 1669514751417
+            }, {
+                "expenseCategory": "Supplies",
+                "expenseDate": "2022-12-28",
+                "expenseAmount": 189.34,
+                "expenseNotes": "Acme Supply Shop",
+                "expenseId": 1669514751418
+            }, {
+                "expenseCategory": "Supplies",
+                "expenseDate": "2022-10-22",
+                "expenseAmount": 29.78,
+                "expenseNotes": "Local Hardware",
+                "expenseId": 1669514751419
+            }, {
+                "expenseCategory": "Supplies",
+                "expenseDate": "2022-11-03",
+                "expenseAmount": 107.37,
+                "expenseNotes": "Local Hardware",
+                "expenseId": 1669514751420
+            }, {
+                "expenseCategory": "Supplies",
+                "expenseDate": "2022-12-20",
+                "expenseAmount": 99.34,
+                "expenseNotes": "bigriver.com",
+                "expenseId": 1669514751421
+            }, {
+                "expenseCategory": "Supplies",
+                "expenseDate": "2022-12-19",
+                "expenseAmount": 19.78,
+                "expenseNotes": "bigriver.com",
+                "expenseId": 1669514751422
+            }, {
+                "expenseCategory": "Supplies",
+                "expenseDate": "2022-12-13",
+                "expenseAmount": 127.37,
+                "expenseNotes": "bigriver.com",
+                "expenseId": 1669514751423
+            }, {
+                "expenseCategory": "Fuel",
+                "expenseDate": "2022-12-27",
+                "expenseAmount": 11.58,
+                "expenseNotes": "24/7 Pump-N-Go",
+                "expenseId": 1669514751424
+            }, {
+                "expenseCategory": "Insurance",
+                "expenseDate": "2022-12-26",
+                "expenseAmount": 102.38,
+                "expenseNotes": "Regressive",
+                "expenseId": 1669514751425
+            }, {
+                "expenseCategory": "Fuel",
+                "expenseDate": "2022-12-15",
+                "expenseAmount": 44.37,
+                "expenseNotes": "Hwy 1 Gas Station",
+                "expenseId": 1669514751426
+            }, {
+                "expenseCategory": "Advertising",
+                "expenseDate": "2022-12-26",
+                "expenseAmount": 73.01,
+                "expenseNotes": "XP Printers",
+                "expenseId": 1669514751427
+            }, {
+                "expenseCategory": "Utilities & Phone",
+                "expenseDate": "2022-12-21",
+                "expenseAmount": 95.58,
+                "expenseNotes": "Mountain Communications",
+                "expenseId": 1669514751428
+            }, {
+                "expenseCategory": "Insurance",
+                "expenseDate": "2022-11-26",
+                "expenseAmount": 102.38,
+                "expenseNotes": "Regressive",
+                "expenseId": 1669514751429
+            }, {
+                "expenseCategory": "Fuel",
+                "expenseDate": "2022-10-12",
+                "expenseAmount": 41.58,
+                "expenseNotes": "Hwy 1 Gas Station",
+                "expenseId": 1669514751430
+            }, {
+                "expenseCategory": "Utilities & Phone",
+                "expenseDate": "2022-12-21",
+                "expenseAmount": 95.58,
+                "expenseNotes": "Mountain Communications",
+                "expenseId": 1669514751431
+            }, {
+                "expenseCategory": "Insurance",
+                "expenseDate": "2022-12-26",
+                "expenseAmount": 102.38,
+                "expenseNotes": "Regressive",
+                "expenseId": 1669514751432
+            }, {
+                "expenseCategory": "Fuel",
+                "expenseDate": "2022-10-20",
+                "expenseAmount": 11.58,
+                "expenseNotes": "24/7 Pump-N-Go",
+                "expenseId": 1669514751433
+            }, {
+                "expenseCategory": "Advertising",
+                "expenseDate": "2022-12-25",
+                "expenseAmount": 73.01,
+                "expenseNotes": "XP Printers",
+                "expenseId": 1669514751434
+            }, {
+                "expenseCategory": "Utilities & Phone",
+                "expenseDate": "2022-12-21",
+                "expenseAmount": 95.58,
+                "expenseNotes": "Mountain Communications",
+                "expenseId": 1669514751435
+            }, {
+                "expenseCategory": "Fuel",
+                "expenseDate": "2022-11-01",
+                "expenseAmount": 31.58,
+                "expenseNotes": "Hwy 1 Gas Station",
+                "expenseId": 1669514751436
+            }, {
+                "expenseCategory": "Insurance",
+                "expenseDate": "2022-11-26",
+                "expenseAmount": 102.38,
+                "expenseNotes": "Regressive",
+                "expenseId": 1669514751437
+            }, {
+                "expenseCategory": "Utilities & Phone",
+                "expenseDate": "2022-11-21",
+                "expenseAmount": 95.58,
+                "expenseNotes": "Mountain Communications",
+                "expenseId": 1669514751438
+            }, {
+                "expenseCategory": "Fuel",
+                "expenseDate": "2022-11-20",
+                "expenseAmount": 18.92,
+                "expenseNotes": "24/7 Pump-N-Go",
+                "expenseId": 1669514751439
+            }, {
+                "expenseCategory": "Fuel",
+                "expenseDate": "2022-11-10",
+                "expenseAmount": 21.76,
+                "expenseNotes": "Hwy 1 Gas Station",
+                "expenseId": 1669514751440
+            }, {
+                "expenseCategory": "Repairs",
+                "expenseDate": "2022-11-04",
+                "expenseAmount": 92.38,
+                "expenseNotes": "Jimmies Industrial",
+                "expenseId": 1669514751441
+            }, {
+                "expenseCategory": "Repairs",
+                "expenseDate": "2022-11-06",
+                "expenseAmount": 135.58,
+                "expenseNotes": "Highlands Hose Supply",
+                "expenseId": 1669514751442
+            }, {
+                "expenseCategory": "Repairs",
+                "expenseDate": "2022-11-09",
+                "expenseAmount": 128.92,
+                "expenseNotes": "Small Engine Supply",
+                "expenseId": 1669514751443
+            }, {
+                "expenseCategory": "Travel",
+                "expenseDate": "2022-11-12",
+                "expenseAmount": 702.38,
+                "expenseNotes": "Beach Inn",
+                "expenseId": 1669514751444
+            }, {
+                "expenseCategory": "Office Supplies",
+                "expenseDate": "2022-11-21",
+                "expenseAmount": 75.48,
+                "expenseNotes": "",
+                "expenseId": 1669514751445
+            }, {
+                "expenseCategory": "Training",
+                "expenseDate": "2022-10-01",
+                "expenseAmount": 28.92,
+                "expenseNotes": "",
+                "expenseId": 1669514751446
+            }, {
+                "expenseCategory": "Meals",
+                "expenseDate": "2022-10-10",
+                "expenseAmount": 21.76,
+                "expenseNotes": "Golden Arches",
+                "expenseId": 1669514751447
+            }, {
+                "expenseCategory": "Consultant",
+                "expenseDate": "2022-10-04",
+                "expenseAmount": 192.38,
+                "expenseNotes": "A+ Knowledge",
+                "expenseId": 1669514751448
+            }, {
+                "expenseCategory": "Uniforms",
+                "expenseDate": "2022-10-06",
+                "expenseAmount": 125.58,
+                "expenseNotes": "",
+                "expenseId": 1669514751449
+            }, {
+                "expenseCategory": "Legal",
+                "expenseDate": "2022-10-09",
+                "expenseAmount": 600.92,
+                "expenseNotes": "",
+                "expenseId": 1669514751450
+            },
+            {
+                "expenseCategory": "Supplies",
+                "expenseDate": "2022-09-02",
                 "expenseAmount": 19.78,
                 "expenseNotes": "Acme Supply Shop",
                 "expenseId": 1669514751417
             },
             {
                 "expenseCategory": "Supplies",
-                "expenseDate": "2021-06-28",
+                "expenseDate": "2022-06-28",
                 "expenseAmount": 189.34,
                 "expenseNotes": "Acme Supply Shop",
                 "expenseId": 1669514751418
             },
             {
                 "expenseCategory": "Supplies",
-                "expenseDate": "2021-07-22",
+                "expenseDate": "2022-07-22",
                 "expenseAmount": 29.78,
                 "expenseNotes": "Local Hardware",
                 "expenseId": 1669514751419
             },
             {
                 "expenseCategory": "Supplies",
-                "expenseDate": "2021-08-03",
+                "expenseDate": "2022-08-03",
                 "expenseAmount": 107.37,
                 "expenseNotes": "Local Hardware",
                 "expenseId": 1669514751420
             },
             {
                 "expenseCategory": "Supplies",
-                "expenseDate": "2021-06-20",
+                "expenseDate": "2022-06-20",
                 "expenseAmount": 99.34,
                 "expenseNotes": "bigriver.com",
                 "expenseId": 1669514751421
             },
             {
                 "expenseCategory": "Supplies",
-                "expenseDate": "2021-08-19",
+                "expenseDate": "2022-08-19",
                 "expenseAmount": 19.78,
                 "expenseNotes": "bigriver.com",
                 "expenseId": 1669514751422
             },
             {
                 "expenseCategory": "Supplies",
-                "expenseDate": "2021-06-13",
+                "expenseDate": "2022-06-13",
                 "expenseAmount": 127.37,
                 "expenseNotes": "bigriver.com",
                 "expenseId": 1669514751423
             },
             {
                 "expenseCategory": "Fuel",
-                "expenseDate": "2021-09-27",
+                "expenseDate": "2022-09-27",
                 "expenseAmount": 11.58,
                 "expenseNotes": "24/7 Pump-N-Go",
                 "expenseId": 1669514751424
             },
             {
                 "expenseCategory": "Insurance",
-                "expenseDate": "2021-09-26",
+                "expenseDate": "2022-09-26",
                 "expenseAmount": 102.38,
                 "expenseNotes": "Regressive",
                 "expenseId": 1669514751425
             },
             {
                 "expenseCategory": "Fuel",
-                "expenseDate": "2021-09-15",
+                "expenseDate": "2022-09-15",
                 "expenseAmount": 44.37,
                 "expenseNotes": "Hwy 1 Gas Station",
                 "expenseId": 1669514751426
             },
             {
                 "expenseCategory": "Advertising",
-                "expenseDate": "2021-09-26",
+                "expenseDate": "2022-09-26",
                 "expenseAmount": 73.01,
                 "expenseNotes": "XP Printers",
                 "expenseId": 1669514751427
             },
             {
                 "expenseCategory": "Utilities & Phone",
-                "expenseDate": "2021-09-21",
+                "expenseDate": "2022-09-21",
                 "expenseAmount": 95.58,
                 "expenseNotes": "Mountain Communications",
                 "expenseId": 1669514751428
             },
             {
                 "expenseCategory": "Insurance",
-                "expenseDate": "2021-08-26",
+                "expenseDate": "2022-08-26",
                 "expenseAmount": 102.38,
                 "expenseNotes": "Regressive",
                 "expenseId": 1669514751429
             },
             {
                 "expenseCategory": "Fuel",
-                "expenseDate": "2021-08-12",
+                "expenseDate": "2022-08-12",
                 "expenseAmount": 41.58,
                 "expenseNotes": "Hwy 1 Gas Station",
                 "expenseId": 1669514751430
             },
             {
                 "expenseCategory": "Utilities & Phone",
-                "expenseDate": "2021-08-21",
+                "expenseDate": "2022-08-21",
                 "expenseAmount": 95.58,
                 "expenseNotes": "Mountain Communications",
                 "expenseId": 1669514751431
             },
             {
                 "expenseCategory": "Insurance",
-                "expenseDate": "2021-07-26",
+                "expenseDate": "2022-07-26",
                 "expenseAmount": 102.38,
                 "expenseNotes": "Regressive",
                 "expenseId": 1669514751432
             },
             {
                 "expenseCategory": "Fuel",
-                "expenseDate": "2021-07-20",
+                "expenseDate": "2022-07-20",
                 "expenseAmount": 11.58,
                 "expenseNotes": "24/7 Pump-N-Go",
                 "expenseId": 1669514751433
             },
             {
                 "expenseCategory": "Advertising",
-                "expenseDate": "2021-07-25",
+                "expenseDate": "2022-07-25",
                 "expenseAmount": 73.01,
                 "expenseNotes": "XP Printers",
                 "expenseId": 1669514751434
             },
             {
                 "expenseCategory": "Utilities & Phone",
-                "expenseDate": "2021-07-21",
+                "expenseDate": "2022-07-21",
                 "expenseAmount": 95.58,
                 "expenseNotes": "Mountain Communications",
                 "expenseId": 1669514751435
             },
             {
                 "expenseCategory": "Fuel",
-                "expenseDate": "2021-07-01",
+                "expenseDate": "2022-07-01",
                 "expenseAmount": 31.58,
                 "expenseNotes": "Hwy 1 Gas Station",
                 "expenseId": 1669514751436
             },
             {
                 "expenseCategory": "Insurance",
-                "expenseDate": "2021-06-26",
+                "expenseDate": "2022-06-26",
                 "expenseAmount": 102.38,
                 "expenseNotes": "Regressive",
                 "expenseId": 1669514751437
             },
             {
                 "expenseCategory": "Utilities & Phone",
-                "expenseDate": "2021-06-21",
+                "expenseDate": "2022-06-21",
                 "expenseAmount": 95.58,
                 "expenseNotes": "Mountain Communications",
                 "expenseId": 1669514751438
             },
             {
                 "expenseCategory": "Fuel",
-                "expenseDate": "2021-06-20",
+                "expenseDate": "2022-06-20",
                 "expenseAmount": 18.92,
                 "expenseNotes": "24/7 Pump-N-Go",
                 "expenseId": 1669514751439
             },
             {
                 "expenseCategory": "Fuel",
-                "expenseDate": "2021-06-10",
+                "expenseDate": "2022-06-10",
                 "expenseAmount": 21.76,
                 "expenseNotes": "Hwy 1 Gas Station",
                 "expenseId": 1669514751440
             },
             {
                 "expenseCategory": "Repairs",
-                "expenseDate": "2021-08-04",
+                "expenseDate": "2022-08-04",
                 "expenseAmount": 92.38,
                 "expenseNotes": "Jimmies Industrial",
                 "expenseId": 1669514751441
             },
             {
                 "expenseCategory": "Repairs",
-                "expenseDate": "2021-07-06",
+                "expenseDate": "2022-07-06",
                 "expenseAmount": 135.58,
                 "expenseNotes": "Highlands Hose Supply",
                 "expenseId": 1669514751442
             }, {
                 "expenseCategory": "Repairs",
-                "expenseDate": "2021-08-09",
+                "expenseDate": "2022-08-09",
                 "expenseAmount": 128.92,
                 "expenseNotes": "Small Engine Supply",
                 "expenseId": 1669514751443
             },
             {
                 "expenseCategory": "Travel",
-                "expenseDate": "2021-06-12",
+                "expenseDate": "2022-06-12",
                 "expenseAmount": 702.38,
                 "expenseNotes": "Beach Inn",
                 "expenseId": 1669514751444
             }, {
                 "expenseCategory": "Office Supplies",
-                "expenseDate": "2021-08-21",
+                "expenseDate": "2022-08-21",
                 "expenseAmount": 75.48,
                 "expenseNotes": "",
                 "expenseId": 1669514751445
             }, {
                 "expenseCategory": "Training",
-                "expenseDate": "2021-06-01",
+                "expenseDate": "2022-06-01",
                 "expenseAmount": 28.92,
                 "expenseNotes": "",
                 "expenseId": 1669514751446
             }, {
                 "expenseCategory": "Meals",
-                "expenseDate": "2021-07-10",
+                "expenseDate": "2022-07-10",
                 "expenseAmount": 21.76,
                 "expenseNotes": "Golden Arches",
                 "expenseId": 1669514751447
             }, {
                 "expenseCategory": "Consultant",
-                "expenseDate": "2021-08-04",
+                "expenseDate": "2022-08-04",
                 "expenseAmount": 192.38,
                 "expenseNotes": "A+ Knowledge",
                 "expenseId": 1669514751448
             }, {
                 "expenseCategory": "Uniforms",
-                "expenseDate": "2021-07-06",
+                "expenseDate": "2022-07-06",
                 "expenseAmount": 125.58,
                 "expenseNotes": "",
                 "expenseId": 1669514751449
             }, {
                 "expenseCategory": "Legal",
-                "expenseDate": "2021-08-09",
+                "expenseDate": "2022-08-09",
                 "expenseAmount": 600.92,
                 "expenseNotes": "",
                 "expenseId": 1669514751450
@@ -1116,13 +3560,13 @@ let db = [{
         // BBB [5] company info
         "company": [{
                 "companyName": "RC Exhaust",
-                "address1": "PO Box 287",
-                "address2": false,
-                "city": "Bishop",
-                "state": "CA",
-                "zip": "93515",
-                "phone": "760-447-0492",
-                "email": "rc@rcexhaust.com"
+                "companyAddress1": "PO Box 287",
+                "companyAddress2": false,
+                "companyCity": "Bishop",
+                "companyState": "CA",
+                "companyZip": "93515",
+                "companyPhone": "760-447-0492",
+                "companyEmail": "rc@rcexhaust.com"
             }
         ]
     }
@@ -1168,17 +3612,20 @@ let expenseDate = false;
 let expenseAmount = false;
 let expenseNotes = false;
 
-let companyName = db[5].company[0].companyName;
-let companyAddress1 = db[5].company[0].address1;
-let companyAddress2 = db[5].company[0].address2;
-let companyCity = db[5].company[0].city;
-let companyState = db[5].company[0].state;
-let companyZip = db[5].company[0].zip;
-let companyPhone = db[5].company[0].phone;
-let companyEmail = db[5].company[0].email;
+let companyName;
+let companyAddress1;
+let companyAddress2;
+let companyCity;
+let companyState;
+let companyZip;
+let companyPhone;
+let companyEmail;
 
 let invoicesTotalPaid = 0;
 let invoicesTotalUnpaid = 0;
+
+let sortDateTop = new Date().toJSON().slice(0, 10);
+let sortDateBottom = `${new Date().toJSON().slice(0, 4)}-01-01`;
 
 function resetDataVariables() {
     n = false;
@@ -1218,6 +3665,7 @@ function resetDataVariables() {
 
 function resetInvoiceVariables() {
 
+n = false;
 invoiceDate = false;
 invoiceNumber = false;
 invoiceItem1 = false;
@@ -1501,22 +3949,21 @@ function buildPreview() {
 function killPages() {
     document.getElementById('siteContentOverview').style.display = 'none';
     document.getElementById('navOverview').className = 'off';
-    document.getElementById('siteContentInvoices').style.display = 'none';
+    document.getElementById('siteContentMain').style.display = 'none';
     document.getElementById('navInvoices').className = 'off';
-    document.getElementById('siteContentExpenses').style.display = 'none';
     document.getElementById('navExpenses').className = 'off';
-    document.getElementById('siteContentCustomers').style.display = 'none';
     document.getElementById('navCustomers').className = 'off';
     document.getElementById('siteContentSettings').style.display = 'none';
     document.getElementById('navSettings').className = 'off';
-    document.getElementById('previewInvoiceSlider').style.height = '0px';
+    document.getElementById('previewInvoiceSlider').style.height = "";
+    document.getElementById('previewInvoiceSlider').style.width = "";
     document.getElementById('previewInv').style.display = 'none';
-    document.getElementById('modalBackground').style.display = 'none';
-    document.getElementById('modalWrapperEdit').style.width = '0px';
-    document.getElementById('invoiceEdit').style.display = 'none';
-    document.getElementById('invoiceNew').style.display = 'none';
+    document.getElementById('modalSliderBackground').style.display = 'none';
+    document.getElementById('modalWrapperEditSlider').style.width = '0px';
+    document.getElementById('modalInvoiceEdit').style.display = 'none';
 
     document.getElementById('plusButton').style.display = 'none';
+    document.getElementById('whitespace').innerHTML = "";
 }
 
 
@@ -1527,18 +3974,29 @@ function buildOverview() {
     document.getElementById('siteH3').innerText = 'Overview';
     document.getElementById('navOverview').className = 'active'; // set navigation to light purple
     document.getElementById('siteContentOverview').style.display = 'flex'; // set the Overview div to show content;
+    buildCards();
+    overviewSelectMonitor();
+}
+
+function buildCards() {
 
     updateInvoiceTotals();
     let paid = invoicesTotalPaid;
-    document.getElementById('overviewPaidTotal').innerText = `${paid.toFixed(2)}`;
+    document.getElementById('overviewPaidTotal').innerText = "";
+    document.getElementById('overviewPaidTotal').innerText = `$${paid.toFixed(2)}`;
 
     let unpaid = invoicesTotalUnpaid;
-    document.getElementById('overviewUnpaidTotal').innerText = `${unpaid.toFixed(2)}`; //Invoice card total
+    document.getElementById('overviewUnpaidTotal').innerText = "";
+        document.getElementById('overviewUnpaidTotal').innerText = `$${unpaid.toFixed(2)}`;  //Invoice card total
 
     let expenses = expenseTotalFromDatabase();
     let profit = paid - expenses;
 
-    if (paid > expenses) {
+    if (paid === 0 && expenses === 0) {
+        document.getElementById('overviewBarPayments').style.height = '0px'; // Payments set to full height
+        document.getElementById('overviewBarExpenses').style.height = '0px';
+        document.getElementById('overviewBarProfit').style.height = '0px';
+    }else if (paid > expenses) {
         document.getElementById('overviewBarPayments').style.height = '200px'; // Payments set to full height
         let expenseBar = expenses / (paid / 200) + "px"; // Math to determine what portion of 200px is proportional
         document.getElementById('overviewBarExpenses').style.height = expenseBar;
@@ -1555,15 +4013,247 @@ function buildOverview() {
     let paidPercent = Math.floor(paid / increment);
     let unpaidPercent = Math.floor(unpaid / increment);
 
+    document.getElementById('invoiceBarPaid').style.width = "0px";
+    document.getElementById('invoiceBarUnpaid').style.width = "0px";
+
     document.getElementById('invoiceBarPaid').style.width = `${paidPercent}%`;
     document.getElementById('invoiceBarUnpaid').style.width = `${unpaidPercent}%`;
-    document.getElementById('overviewPayments').innerHTML = paid.toFixed(2);
-    document.getElementById('overviewExpenses').innerHTML = expenses.toFixed(2);
-    document.getElementById('overviewProfit').innerHTML = profit.toFixed(2);
+    document.getElementById('overviewPayments').innerHTML = `$${paid.toFixed(2)}`;
+    document.getElementById('overviewExpenses').innerHTML = `$${expenses.toFixed(2)}`;
+    document.getElementById('overviewProfit').innerHTML = `$${profit.toFixed(2)}`;
 
     expensesCard(db[3].expenses); // adds data to Expense Card
     paymentRows();
+
 }
+
+function overviewSelectMonitor() {
+
+    let overviewSelect = document.getElementById('overviewSort');
+
+    
+    let d = new Date();
+    let today = d.getDay();
+    let bow = new Date();
+    bow.setDate(bow.getDate() + (0 - today));
+    bow = bow.toJSON().slice(0, 10);
+    let eow = new Date();
+    eow.setDate(eow.getDate() + (6 - today));
+    eow = eow.toJSON().slice(0, 10);
+    let boLw = new Date();
+    boLw.setDate(boLw.getDate() - (7 + today));
+    boLw = boLw.toJSON().slice(0, 10);
+    let eoLw = new Date();
+    eoLw.setDate(eoLw.getDate() - (1 + today));
+    eoLw = eoLw.toJSON().slice(0, 10);
+    let boNw = new Date();
+    boNw.setDate(boNw.getDate() + (7 - today));
+    boNw = boNw.toJSON().slice(0, 10);
+    let eoNw = new Date();
+    eoNw.setDate(eoNw.getDate() + (13 - today));
+    eoNw = eoNw.toJSON().slice(0, 10);
+    let lj = `${new Date().toJSON().slice(0, 4)}-01-01`;
+    let pj = `${(new Date().toJSON().slice(0, 4)) - 1}-01-01`;
+    let nd = `${new Date().toJSON().slice(0, 4)}-12-31`;
+    let ld = `${(new Date().toJSON().slice(0, 4)) - 1}-12-31`;
+  
+    d = d.toJSON().slice(0, 10);
+    let date = d.charAt(8) + d.charAt(9);
+     let month = d.charAt(5) + d.charAt(6);
+     let year = d.slice(0, 4);
+
+    let eoq;
+    let boq;
+    let eoLq;
+    let boLq;
+    let eom;
+    let bom;
+    let eoLm;
+    let boLm;
+
+    if (month === "12") {
+        eoq = `${year}-12-31`;
+        boq = `${year}-10-01`;
+        eoLq = `${year}-09-31`;
+        boLq = `${year}-07-01`;
+        eom = `${year}-12-31`;
+        bom = `${year}-12-01`;
+        eoLm = `${year}-11-31`;
+        boLm = `${year}-11-01`;
+    } else if (month === "11") {
+        eoq = `${year}-12-31`;
+        boq = `${year}-10-01`;
+        eoLq = `${year}-09-31`;
+        boLq = `${year}-07-01`;
+        eom = `${year}-11-31`;
+        bom = `${year}-11-01`;
+        eoLm = `${year}-10-31`;
+        boLm = `${year}-10-01`;
+    } else if (month === "10") {
+        eoq = `${year}-12-31`;
+        boq = `${year}-10-01`;
+        eoLq = `${year}-09-31`;
+        boLq = `${year}-07-01`;
+        eom = `${year}-10-31`;
+        bom = `${year}-10-01`;
+        eoLm = `${year}-09-31`;
+        boLm = `${year}-09-01`;
+        } else if (month === "9") {
+        eoq = `${year}-09-31`;
+        boq = `${year}-07-01`;
+        eoLq = `${year}-06-31`;
+        boLq = `${year}-04-01`;
+        eom = `${year}-09-31`;
+        bom = `${year}-09-01`;
+        eoLm = `${year}-08-31`;
+        boLm = `${year}-08-01`;
+    } else if (month === "8") {
+        eoq = `${year}-09-31`;
+        boq = `${year}-07-01`;
+        eoLq = `${year}-06-31`;
+        boLq = `${year}-04-01`;
+        eom = `${year}-08-31`;
+        bom = `${year}-08-01`;
+        eoLm = `${year}-07-31`;
+        boLm = `${year}-07-01`;
+    } else if (month === "7") {
+        eoq = `${year}-09-31`;
+        boq = `${year}-07-01`;
+        eoLq = `${year}-06-31`;
+        boLq = `${year}-04-01`;
+        eom = `${year}-07-31`;
+        bom = `${year}-07-01`;
+        eoLm = `${year}-06-31`;
+        boLm = `${year}-06-01`;
+    } else if (month === "6") {
+        eoq = `${year}-06-31`;
+        boq = `${year}-04-01`;
+        eoLq = `${year}-03-31`;
+        boLq = `${year}-01-01`;
+        eom = `${year}-06-31`;
+        bom = `${year}-6-01`;
+        eoLm = `${year}-05-31`;
+        boLm = `${year}-05-01`;
+    } else if (month === "5") {
+        eoq = `${year}-06-31`;
+        boq = `${year}-04-01`;
+        eoLq = `${year}-03-31`;
+        boLq = `${year}-01-01`;
+        eom = `${year}-05-31`;
+        bom = `${year}-5-01`;
+        eoLm = `${year}-04-31`;
+        boLm = `${year}-04-01`;
+    } else if (month === "4") {
+        eoq = `${year}-06-31`;
+        boq = `${year}-04-01`;
+        eoLq = `${year}-03-31`;
+        boLq = `${year}-01-01`;
+        eom = `${year}-04-31`;
+        bom = `${year}-4-01`;
+        eoLm = `${year}-03-31`;
+        boLm = `${year}-03-01`;
+    } else if (month === "3") {
+        eoq = `${year}-03-31`;
+        boq = `${year}-01-01`;
+        eoLq = `${(year - 1)}-12-31`;
+        boLq = `${(year - 1)}-10-01`;
+        eom = `${year}-03-31`;
+        bom = `${year}-03-01`;
+        eoLm = `${year}-02-31`;
+        boLm = `${year}-02-01`;
+    } else if (month === "2") {
+        eoq = `${year}-03-31`;
+        boq = `${year}-01-01`;
+        eoLq = `${(year - 1)}-12-31`;
+        boLq = `${(year - 1)}-10-01`;
+        eom = `${year}-02-31`;
+        bom = `${year}-02-01`;
+        eoLm = `${year}-01-31`;
+        boLm = `${year}-01-01`;
+    } else {
+        eoq = `${year}-03-31`;
+        boq = `${year}-01-01`;
+        eoLq = `${(year - 1)}-12-31`;
+        boLq = `${(year - 1)}-10-01`;
+        eom = `${year}-01-31`;
+        bom = `${year}-01-01`;
+        eoLm = `${(year - 1)}-12-31`;
+        boLm = `${(year - 1)}-12-01`;
+    }
+
+    /*
+    console.log("d = " + d);
+    console.log("date = " + date);
+    console.log("today = " + today);
+    console.log("Beginning of Week = " + bow);
+    console.log("End of Week = " + eow);
+    console.log("Beggining of Next Week = " + boNw);
+    console.log("End of Next Week = " + eoNw);
+    console.log("Beggining of Last Week = " + boLw);
+    console.log("End of Last Week = " + eoLw);
+    console.log("next December = " + nd);
+    console.log("last December = " + ld);
+    console.log("last January = " + lj);
+    console.log("previous January = " + pj);
+    console.log("date = " + date);
+    console.log("month = " + month);
+    console.log("year = " + year);
+    console.log("end of quarter = " + eoq);
+    console.log("beginning of quarter = " + boq);
+    console.log("end of last quarter = " + eoLq);
+    console.log("beginning of last quarter = " + boLq);
+    console.log("end of month = " + eom);
+    console.log("beginning of month = " + bom);
+    console.log("end of last month = " + eoLm);
+    console.log("beginning of last month = " + boLm); */
+
+function  rename(name) {
+    document.getElementById('O1').innerText = name;
+    document.getElementById('O2').innerText = name;
+    document.getElementById('O3').innerText = name;
+    document.getElementById('O4').innerText = name;
+}
+
+    overviewSelect.addEventListener('change', function () {
+        let i = overviewSelect.value;
+        if (i === "ytd") {
+           sortDateTop = d;
+           sortDateBottom = lj;
+           rename("Year-To-Date");
+        } else if (i === "lastY") {
+            sortDateTop = ld;
+            sortDateBottom = pj;
+            rename("Last Year");
+        } else if (i === "thisQ") {
+            sortDateTop = eoq;
+            sortDateBottom = boq;
+             rename("This Quarter");
+        } else if (i === "lastQ") {
+            sortDateTop = eoLq;
+            sortDateBottom = boLq;
+            rename("Last Quarter");
+        } else if (i === "thisM") {
+            sortDateTop = eom;
+            sortDateBottom = bom;
+            rename("This Month");
+        } else if (i === "lastM") {
+            sortDateTop = eoLm;
+            sortDateBottom = boLm;
+            rename("Last Month");
+        } else if (i === "thisW") {
+            sortDateTop = eow;
+            sortDateBottom = bow;
+             rename("This Week");
+        } else if (i === "lastW") {
+            sortDateTop = eoLw;
+            sortDateBottom = boLw;
+            rename("Last Week");
+        }
+        buildCards()
+    })
+
+}
+ 
 
 // BBB Overview Invoice Totals
 
@@ -1617,11 +4307,14 @@ function updateInvoiceTotals() { // checks invoice section of db for paid invoic
 
     for (var i = 0; i < db[0].invoices.length; i++) {
 
-        if (db[0].invoices[i].invoicePayment === true) { // loop checks each invoices for "true" and if so adds that invoice total to the counter
+        let payment = db[0].invoices[i].invoicePayment;
+        let date = db[0].invoices[i].invoiceDate;
+
+        if (payment === true && date <= sortDateTop && date >= sortDateBottom) { // loop checks each invoices for "true" and if so adds that invoice total to the counter
 
             let newPaid = invoiceTotalFromLocation(i);
             counterPaid += newPaid;
-        } else {
+        } else if (payment === false && date <= sortDateTop && date >= sortDateBottom) {
              let newUnpaid = invoiceTotalFromLocation(i);
              counterUnpaid += newUnpaid;
         }
@@ -1635,14 +4328,21 @@ function updateInvoiceTotals() { // checks invoice section of db for paid invoic
 function expenseTotalFromDatabase() { // Same as documented above but for "expenses"
     var counter = 0;
     for (var i = 0; i < db[3].expenses.length; i++) {
+        let date = db[3].expenses[i].expenseDate;
         let total = db[3].expenses[i].expenseAmount;
-        total = total * 1;
-        counter += total;
+
+        if (date <= sortDateTop && date >= sortDateBottom) {
+            total = total * 1;
+            counter += total;
+        }
+        
     }
     return counter;
 }
 
 function expensesCard(data) {
+
+    document.getElementById('overviewExpenseList').innerHTML = "";
 
     function compareStrings(a, b) {
         return (a < b) ? -1 : (a > b) ? 1 : 0;
@@ -1651,55 +4351,65 @@ function expensesCard(data) {
         return compareStrings(a.expenseCategory, b.expenseCategory); // sorts expense data alphabetically by category 
     })
 
-    let preCat = data[0].expenseCategory; // "Starts with 0, loop starts at 1"
-    let total = data[0].expenseAmount * 1; // Amount at data.[0] is added to "total" which will be incremented in the loop and inserted each time category changes
-
+    let preCat  = false; // "Starts with 0, loop starts at 1"
+    let total = 0; // Amount at data.[0] is added to "total" which will be incremented in the loop and inserted each time category changes
+    let amount = 0;
+    let cat = false;
     // First li drawn before loop.
 
-    document.getElementById('overviewExpenseList').innerHTML = `
-            <li><span class="overviewExpenseListBold" id="overview${preCat}"></span>
-                                <br>
-                                <span class="overviewExpenseListSmall">${preCat}</span>
-                            </li>`
+    
     counter = 0;
 
-    for (var i = 1; i < data.length; i++) { // i starts at 1 so 'if' statement can compare category name to previous including the one above
+    for (var i = 0; i < data.length; i++) { // i starts at 1 so 'if' statement can compare category name to previous including the one above
 
-        let cat = data[i].expenseCategory;
-        let amount = data[i].expenseAmount * 1;
-
-        if (cat === preCat) { // if same category as last, total is updated and loop repeats
-            total = total + amount;
-        }
-
-        if (cat !== preCat) { // if new category, new li is drawn then ....
-
-            document.getElementById('overviewExpenseList').innerHTML += `         
-            <li><span class="overviewExpenseListBold" id="overview${cat}"></span>
+        let date = data[i].expenseDate;
+        
+        if (date <= sortDateTop && date >= sortDateBottom) {
+            cat = data[i].expenseCategory;
+            amount = data[i].expenseAmount * 1;
+                if (cat !== preCat) {
+                    document.getElementById('overviewExpenseList').innerHTML += `
+                             <li><span class="overviewExpenseListBold" id="overview${cat}"></span>
                                 <br>
                                 <span class="overviewExpenseListSmall">${cat}</span>
                             </li>`
+                
+                if (preCat !== false) {
+                    document.getElementById(`overview${preCat}`).innerText = `$${total.toFixed(2)}`;
 
-            document.getElementById(`overview${preCat}`).innerText = total.toFixed(2); // PREVIOUS total added to its span
-            total = 0; // total is reset
-            total = total + amount; // amount from CURRENT category is added to total
+                    total = 0; // total is reset
+                    total = total + amount; // amount from CURRENT category is added to total
+                    counter += 1;
+                } else {
+                total = 0; // total is reset
+                total = total + amount; // amount from CURRENT category is added to total
+                counter += 1;
+            }
+        } else {
+                total = total + amount;
+            }
             preCat = cat;
-            counter += 1;
-            if (counter > 10) {
-                document.getElementById('overviewExpenseList').style.columns = '3'; // extra columns for more than 10 li
+        } 
+        }
+            document.getElementById('overviewExpenseList').style.columns = '1'; // extra columns for more than 10 li
+        if (counter > 4 && counter < 10 ) {
+            document.getElementById('overviewExpenseList').style.columns = '2';
+        } else if (counter > 9) {
+            document.getElementById('overviewExpenseList').style.columns = '3';
+        }
+        if (preCat !== false) {
+            document.getElementById(`overview${cat}`).innerText = `$${total.toFixed(2)}`; // when loop finishes, last total is added to it's span
             }
         }
+        
 
-        document.getElementById(`overview${cat}`).innerText = total.toFixed(2); // when loop finishes, last total is added to it's span
-    }
-}
 
 
 
 function paymentRows() {
 
-    let data = db[0].invoices;
     document.getElementById('tbodyPayments').innerHTML = "";
+    let data = db[0].invoices;
 
     function compareStrings(a, b) {
         return (a < b) ? -1 : (a > b) ? 1 : 0;
@@ -1713,14 +4423,16 @@ function paymentRows() {
 
     for (var i = 0; i < data.length; i++) {
 
+        let payment = data[i].invoicePayment;
+        let date = data[i].paymentDate;
 
-        if (data[i].invoicePayment === true && counter < 19) { // Max of 20 rows
+        if (date <= sortDateTop && date >= sortDateBottom && payment === true) { // Max of 20 rows
 
             let paymentTotal = invoiceTotalFromLocation(i);
             var row = `<tr>
 							<td class = "tdPayDate">${formatDate(data[i].paymentDate)}</td>
 							<td class = "tdPayName">${data[i].customerName}</td>
-							<td class= "tdPayTotal">$ ${paymentTotal.toFixed(2)}</td>
+							<td class= "tdPayTotal">$${paymentTotal.toFixed(2)}</td>
 					</tr>`;
             document.getElementById('tbodyPayments').innerHTML += row;
             counter += 1;
@@ -1732,10 +4444,9 @@ function paymentRows() {
 
 function buildInvoices() {
     document.getElementById('siteH3').innerText = 'Invoices';
-    document.getElementById('tbodyInvoicesPaid').innerHTML = "";
-    document.getElementById('tbodyInvoicesUnpaid').innerHTML = "";
+    document.getElementById('mainTableBody').innerHTML = "";
     document.getElementById('navInvoices').className = 'active';
-    document.getElementById('siteContentInvoices').style.display = 'block'; // set the Invoices div to show content;
+    document.getElementById('siteContentMain').style.display = 'block'; // set the Invoices div to show content;
     buildRowInvoices();
 
     document.getElementById('plusButton').style.display = 'block';
@@ -1745,11 +4456,133 @@ function buildInvoices() {
         <span class = "buttonText">Invoice</span> 
     </button> `;
 
-    updateInvoiceTotals();
-    let paid = invoicesTotalPaid;
-    let unpaid = invoicesTotalUnpaid;
-    document.getElementById('totalSpanPaid').innerText = `$ ${paid.toFixed(2)}`; //Invoice card total
-    document.getElementById('totalSpanUnpaid').innerText = `$ ${unpaid.toFixed(2)}`;
+    document.getElementById('whitespace').innerHTML = 
+    `<input type="text" id="searchBox" class="searchBox" onkeyup="searchTable()" placeholder="Search...">
+    <button class="closeIcon" onclick="clearSearch()">X</button>
+    <span class="material-symbols-outlined searchIcon">search</span>
+    <button class = "blueLinkButton" onclick = "itemTemplates()">Manage Templates</button>`;
+
+    document.getElementById('mainTableHead').innerHTML = `<tr class = "tableHeadRow">
+                                    <th class="tdOrder3">DATE</th>
+                                    <th class="tdOrder4">NUMBER</th>
+                                    <th class="tdOrder1">CUSTOMER</th>
+                                    <th class="tdOrder2">AMOUNT</th>
+                                    <th class="tdOrder5">STATUS</th>
+                                </tr>`
+}
+
+function searchTable() {
+
+    var input, array, filter1, filter2, filter3, filter4, filter5, table, tr, td0, td1, td2, td3, td4, i, txtValue0, txtValue1, txtValue2, txtValue3, txtValue4;
+    input = document.getElementById("searchBox").value.toUpperCase();
+    array = input.split(" ");
+    filter1 = array[0];
+    filter2 = array[1];
+    filter3 = array[2];
+    filter4 = array[3];
+    filter5 = array[4];
+
+    table = document.getElementById("mainTable");
+    tr = table.getElementsByTagName("tr");
+
+    for (i = 0; i < tr.length; i++) {
+        td0 = tr[i].getElementsByTagName("td")[0];
+        td1 = tr[i].getElementsByTagName("td")[1];
+        td2 = tr[i].getElementsByTagName("td")[2];
+        td3 = tr[i].getElementsByTagName("td")[3];
+        td4 = tr[i].getElementsByTagName("td")[4];
+        if (td0 || td1 || td2 || td3) {
+            txtValue0 = td0.textContent || td0.innerText;
+            txtValue1 = td1.textContent || td1.innerText;
+            txtValue2 = td2.textContent || td2.innerText;
+            txtValue3 = td3.textContent || td3.innerText;
+   
+                if (txtValue0.toUpperCase().indexOf(filter1) > -1 || txtValue1.toUpperCase().indexOf(filter1) > -1 || txtValue2.toUpperCase().indexOf(filter1) > -1 || txtValue3.toUpperCase().indexOf(filter1) > -1) {
+                    if (filter2) {                  
+                        if (txtValue0.toUpperCase().indexOf(filter2) > -1 || txtValue1.toUpperCase().indexOf(filter2) > -1 || txtValue2.toUpperCase().indexOf(filter2) > -1 || txtValue3.toUpperCase().indexOf(filter2) > -1) {
+                            if (filter3) {                  
+                                if (txtValue0.toUpperCase().indexOf(filter3) > -1 || txtValue1.toUpperCase().indexOf(filter3) > -1 || txtValue2.toUpperCase().indexOf(filter3) > -1 || txtValue3.toUpperCase().indexOf(filter3) > -1) {
+                                    if (filter4) {                  
+                                        if (txtValue0.toUpperCase().indexOf(filter4) > -1 || txtValue1.toUpperCase().indexOf(filter4) > -1 || txtValue2.toUpperCase().indexOf(filter4) > -1 || txtValue3.toUpperCase().indexOf(filter4) > -1) {
+                                            if (filter5) {                  
+                                                if (txtValue0.toUpperCase().indexOf(filter5) > -1 || txtValue1.toUpperCase().indexOf(filter5) > -1 || txtValue2.toUpperCase().indexOf(filter5) > -1 || txtValue3.toUpperCase().indexOf(filter5) > -1) {
+                                                    tr[i].style.display = "";
+                                                     } else {
+                                                    tr[i].style.display = "none";
+                                                    }
+                                                } else {
+                                                    tr[i].style.display = "";
+                                                }
+                                            } else {
+                                                tr[i].style.display = "none";
+                                            }
+                                        } else {
+                                            tr[i].style.display = "";
+                                        }
+                                    } else {
+                                    tr[i].style.display = "none";
+                                    }
+                                } else {
+                                    tr[i].style.display = "";
+                                }
+                            } else {
+                            tr[i].style.display = "none";
+                            }                  
+                        } else {
+                            tr[i].style.display = "";
+                        }
+                    } else {
+                            tr[i].style.display = "none";
+                        }
+
+                if (td4) {
+                    txtValue4 = td4.textContent || td4.innerText;
+                        if (txtValue0.toUpperCase().indexOf(filter1) > -1 || txtValue1.toUpperCase().indexOf(filter1) > -1 || txtValue2.toUpperCase().indexOf(filter1) > -1 || txtValue3.toUpperCase().indexOf(filter1) > -1 || txtValue4.toUpperCase().indexOf(filter1) > -1) {
+                    if (filter2) {                  
+                        if (txtValue0.toUpperCase().indexOf(filter2) > -1 || txtValue1.toUpperCase().indexOf(filter2) > -1 || txtValue2.toUpperCase().indexOf(filter2) > -1 || txtValue3.toUpperCase().indexOf(filter2) > -1 || txtValue4.toUpperCase().indexOf(filter2) > -1) {
+                            if (filter3) {                  
+                                if (txtValue0.toUpperCase().indexOf(filter3) > -1 || txtValue1.toUpperCase().indexOf(filter3) > -1 || txtValue2.toUpperCase().indexOf(filter3) > -1 || txtValue3.toUpperCase().indexOf(filter3) > -1 || txtValue4.toUpperCase().indexOf(filter3) > -1) {
+                                    if (filter4) {                  
+                                        if (txtValue0.toUpperCase().indexOf(filter4) > -1 || txtValue1.toUpperCase().indexOf(filter4) > -1 || txtValue2.toUpperCase().indexOf(filter4) > -1 || txtValue3.toUpperCase().indexOf(filter4) > -1 || txtValue4.toUpperCase().indexOf(filter4) > -1) {
+                                            if (filter5) {                  
+                                                if (txtValue0.toUpperCase().indexOf(filter5) > -1 || txtValue1.toUpperCase().indexOf(filter5) > -1 || txtValue2.toUpperCase().indexOf(filter5) > -1 || txtValue3.toUpperCase().indexOf(filter5) > -1 || txtValue4.toUpperCase().indexOf(filter5) > -1) {
+                                                    tr[i].style.display = "";
+                                                     } else {
+                                                    tr[i].style.display = "none";
+                                                    }
+                                                } else {
+                                                    tr[i].style.display = "";
+                                                }
+                                            } else {
+                                                tr[i].style.display = "none";
+                                            }
+                                        } else {
+                                            tr[i].style.display = "";
+                                        }
+                                    } else {
+                                    tr[i].style.display = "none";
+                                    }
+                                } else {
+                                    tr[i].style.display = "";
+                                }
+                            } else {
+                            tr[i].style.display = "none";
+                            }                  
+                        } else {
+                            tr[i].style.display = "";
+                        }
+                    } else {
+                            tr[i].style.display = "none";
+                        }
+                    }
+            }
+            
+        }
+        }   
+
+function clearSearch() {
+    document.getElementById("searchBox").value = "";
+    searchTable();
 }
 
 function buildRowInvoices() {
@@ -1765,51 +4598,181 @@ function buildRowInvoices() {
     })
 
     data.sort(function (a, b) {
-        if (a.date === b.date) {
+        if (a.invoiceDate === b.invoiceDate) {
             return compareStrings(b.invoiceNumber, a.invoiceNumber);
         }
     })
 
+
     for (var i = 0; i < data.length; i++) {
 
-        let paymentStatus = data[i].invoicePayment;
         let invoiceTotal = invoiceTotalFromLocation(i);
+        let row;
+        if (data[i].invoicePayment === true) {
+                row = `<tr class="tableRow">
+							<td class = "tdOrder3">${formatDate(data[i].invoiceDate)}
+                            <a href = "#previewInv${data[i].invoiceNumber}" class = "rowLink" ></a></td >
+							<td class = "tdOrder4">${data[i].invoiceNumber}</td>
+							<td class= "tdOrder1">${data[i].customerName}</td>
+                            <td class= "tdOrder2">$${invoiceTotal.toFixed(2)}</td>
+                            <td class= "tdOrder5 green">PAID</td>
+					</tr>`;
+            
+        } else if (data[i].invoicePayment === false) {
+            row = `<tr class="tableRow">
+							<td class = "tdOrder3">${formatDate(data[i].invoiceDate)}
+                            <a href = "#previewInv${data[i].invoiceNumber}"
+                            class = "rowLink" ></a></td >
+							<td class = "tdOrder4">${data[i].invoiceNumber}</td>
+							<td class= "tdOrder1">${data[i].customerName}</td>
+                            <td class= "tdOrder2">$${invoiceTotal.toFixed(2)}</td>
+                            <td class = "tdOrder5 red">OPEN</td>
+					</tr>`;
 
-        if (paymentStatus === true) {
-            var row = `<tr>
-							<td class = "tdOrder3">${formatDate(data[i].invoiceDate)}
-                            <a href = "#previewInv${data[i].invoiceNumber}"
-                            class = "rowLink" ></a></td >
-							<td class = "tdOrder4">${data[i].invoiceNumber}</td>
-							<td class= "tdOrder1">${data[i].customerName}</td>
-                            <td class= "tdOrder5">Paid</td>
-                            <td class= "tdOrder2">$ ${invoiceTotal.toFixed(2)}</td>
-					</tr>`;
-            document.getElementById('tbodyInvoicesPaid').innerHTML += row;
-        } else {
-            var row = `<tr>
-							<td class = "tdOrder3">${formatDate(data[i].invoiceDate)}
-                            <a href = "#previewInv${data[i].invoiceNumber}"
-                            class = "rowLink" ></a></td >
-							<td class = "tdOrder4">${data[i].invoiceNumber}</td>
-							<td class= "tdOrder1">${data[i].customerName}</td>
-                            <td class= "tdOrder5">Unpaid</td>
-                            <td class= "tdOrder2">$ ${invoiceTotal.toFixed(2)}</td>
-					</tr>`;
-            document.getElementById('tbodyInvoicesUnpaid').innerHTML += row;
+        } 
+        document.getElementById('mainTableBody').innerHTML += row;
         }
-    }
+
 }
+
+
+function itemTemplates() {
+    let modal = document.getElementById('modalWrapperSlider');
+    document.getElementById('modalSliderBackground').style.display = 'block';
+    modal.style.display = "block";
+    modal.style.width = "768px";
+    
+        modal.innerHTML =
+            `<h4 class="modalSliderH4">Item Templates</h4>
+
+            <div class = "itemTemplatesDiv">
+            <table class="itemsTable">
+                <tbody id = "itemTemplatesTable">
+                    
+                </tbody>
+            </table>
+            </div>
+            
+            <div class = "modalSliderFooter">
+            <button class = "button modalFooterButton" id = "closeButton" onclick = "closeButton()">Close</button></div>`
+
+            let data = db[2].listItems;
+
+            function compareStrings(a, b) {
+                return (a < b) ? -1 : (a > b) ? 1 : 0;
+            }
+
+            data.sort(function (a, b) {
+                return compareStrings(a.itemName, b.itemName);
+            })
+
+            for (var i = 0; i < data.length; i++) {
+
+                let name = data[i].itemName;
+                let amount = data[i].itemAmount * 1;
+                amount = amount.toFixed(2);
+                let id = data[i].itemId;
+                let des = data[i].itemDescription;
+
+                    var row = `<tr id = "${id}">
+                            <td class = "tdItem1">${name}</td>
+                            <td class= "tdItem2">$${amount}</td>
+                            <td class= "tdItem3"><button class="itemListButton" onclick="deleteItem(${id})"><span class = "material-symbols-outlined">delete</span></button>
+                            <button class="itemListButton" onclick="editItem(${id})"><span class = "material-symbols-outlined">edit</span></button></td>
+                            <td class = "tdItem4">Description: ${des}</td>
+					</tr>`;
+                    document.getElementById('itemTemplatesTable').innerHTML += row;
+                }
+            }   
+
+function editItem(val) {
+
+    document.getElementById('modalPopUpBackground').style.display = 'flex';
+    document.getElementById('modalPopUpCenterBox').style.display = 'block';
+
+    let data = db[2].listItems;
+
+    for (var i = 0; i < data.length; i++) {
+
+        let name = data[i].itemName;
+        let description = data[i].itemDescription;
+        let amount = data[i].itemAmount * 1;
+        amount = amount.toFixed(2);
+        
+        if (data[i].itemId === val) {
+            document.getElementById('modalPopUpCenterBox').innerHTML =
+        `<h4 class="modalPopUpH4">Add New Item Template</h4>
+            <label for="itemName" class="label">Item Name</label>
+            <input type="text" id="itemName" name="itemName" class="input" value="${name}">
+            
+            <label for="itemDescription" class="labelTextarea">Description</label>
+            <textarea id="itemDescription" name="itemDescription" class="inputTextarea" maxlength="240" placeholder="Type item description here..." value="">${description}</textarea>
+            
+            <label for="itemAmount" class="label">Amount</label>
+            <input type="invoiceNumber" rows="1" cols="10" id="itemAmount" inputtype="decimal" name="itemAmount" class="inputSmall" value="${amount}">
+            <div class = "modalFooterPopUp">
+                <button class = "button modalFooterButton" onclick = "cancelButton()">Cancel</button>
+                <button class = "button modalFooterButton" onclick = "saveButtonEditItem(${val})">Save</button>
+            </div>` 
+        } 
+    }   
+}
+
+function saveButtonEditItem(val) {
+
+    let data = db[2].listItems;
+
+    for (var i = 0; i < data.length; i++) {
+
+        if (data[i].itemId === val) {
+
+            data[i].itemName = document.getElementById('itemName').value;
+            data[i].itemDescription = document.getElementById('itemDescription').value;
+            data[i].itemAmount = document.getElementById('itemAmount').value * 1;
+        }
+
+    document.getElementById('modalPopUpBackground').style.display = 'none';
+    document.getElementById('modalPopUpCenterBox').style.display = 'none';
+    document.getElementById('modalPopUpCenterBox').innerHTML = "";
+    itemTemplates();
+}
+}
+
+function deleteItem(val) {
+
+        let data = db[2].listItems;   
+        for (j = 0; j < data.length; j++) {
+
+        if (data[j].itemId === val) {
+       if (confirm(`Permanently delete the item "${data[j].itemName}" from items list?`) === true) {
+        db[2].listItems.splice(j, 1);
+        }      
+    }
+    }
+itemTemplates();
+    
+    }
+            
+    
+    
+    
+        
+    
+
+
+
+    
 
 // BBB Invoice Preview 
 
 
 function buildInvoicePreview() {
-    document.getElementById('previewInvoiceSlider').style.height = '100%';
     var tablet = window.matchMedia("(max-width: 1024px)");
     if (tablet.matches) { // If media query matches
+        document.getElementById('previewInvoiceSlider').style.width = '100%';
         document.getElementById('previewInv').style.display = 'flex';
     } else {
+        document.getElementById('previewInvoiceSlider').style.height = '100%';
         document.getElementById('previewInv').style.display = 'grid';
     }
     setInvoiceVariables();
@@ -1838,6 +4801,14 @@ function newInvoiceNumberDate() {
 function setInvoiceVariables() {
     if (newInvoicePreview === true) {
         newInvoiceNumberDate();
+        companyName = db[5].company[0].companyName;
+        companyAddress1 = db[5].company[0].companyAddress1;
+        companyAddress2 = db[5].company[0].companyAddress2;
+        companyCity = db[5].company[0].companyCity;
+        companyState = db[5].company[0].companyState;
+        companyZip = db[5].company[0].companyZip;
+        companyPhone = db[5].company[0].companyPhone;
+        companyEmail = db[5].company[0].companyEmail;
     } else {
 
         for (var i = 0; i < db[0].invoices.length; i++) {
@@ -1847,6 +4818,14 @@ function setInvoiceVariables() {
                 n = i;
             }
         }
+        companyName = db[0].invoices[n].companyName;
+        companyAddress1 = db[0].invoices[n].companyAddress1;
+        companyAddress2 = db[0].invoices[n].companyAddress2;
+        companyCity = db[0].invoices[n].companyCity;
+        companyState = db[0].invoices[n].companyState;
+        companyZip = db[0].invoices[n].companyZip;
+        companyPhone = db[0].invoices[n].companyPhone;
+        companyEmail = db[0].invoices[n].companyEmail;
         customerName = db[0].invoices[n].customerName;
         customerId = db[0].invoices[n].customerId;
         address1 = db[0].invoices[n].address1;
@@ -1871,7 +4850,7 @@ function setInvoiceVariables() {
         paymentDate = db[0].invoices[n].paymentDate;
         paymentMethod = db[0].invoices[n].paymentMethod;
         paymentNotes = db[0].invoices[n].paymentNotes;
-   }
+    }
 }
 
 function formatAddressStacked() {
@@ -1896,6 +4875,8 @@ function formatAddressStacked() {
 
 }
 
+
+
 function companyAddressStacked() {
 
     let newAddress;
@@ -1915,7 +4896,6 @@ function companyAddressStacked() {
         newAddress = `${newAddress}${companyZip}`;
     }
     return newAddress;
-
 }
 
 
@@ -1928,7 +4908,10 @@ function drawInvoice() {
     document.getElementById('invoiceSummaryDate').innerText = `${formatDate(invoiceDate)}`;
     document.getElementById('invoicePageWrapper').className = "invoicePageWrapper";
 
+    document.getElementById('companyName').innerText = companyName;
+    let a = companyAddressStacked();
 
+    document.getElementById('companyAddress').innerHTML = a;
 
     if (address1 === false && address2 === false && city === false && state === false && zip === false) {
         document.getElementById('invoiceAddress').innerHTML = "";
@@ -1945,7 +4928,7 @@ function drawInvoice() {
     }
     if (invoicePayment === true) {
         document.getElementById('invoiceSummaryStatus').innerText = 'Paid';
-    } else {
+    } else if (invoicePayment === false) {
         document.getElementById('invoiceSummaryStatus').innerText = 'Unpaid';
     }
 
@@ -2082,13 +5065,14 @@ function invoiceTotalFromMemory() {
 function updateInvoiceTotal() {
     let invoiceTotal = invoiceTotalFromMemory();
     document.getElementById('invoiceTotal').innerText = `${invoiceTotal.toFixed(2)}`;
-    document.getElementById('invoiceSummaryTotal').innerText = `$ ${invoiceTotal.toFixed(2)}`;
+    document.getElementById('invoiceSummaryTotal').innerText = `$${invoiceTotal.toFixed(2)}`;
 }
 
 // BBB Invoice Preview Buttons
 
 function killPreviewInvoice() {
-    document.getElementById('previewInvoiceSlider').style.height = '0px';
+    document.getElementById('previewInvoiceSlider').style.height = "";
+    document.getElementById('previewInvoiceSlider').style.width = "";
     setTimeout(function () {
         document.getElementById('previewInv').style.display = 'none';
     }, 300);
@@ -2100,6 +5084,7 @@ function killPreviewInvoice() {
         
         resetInvoiceVariables();
     } else {
+        buildInvoices();
         resetDataVariables();
     }
     
@@ -2128,15 +5113,15 @@ if (confirm(`Permanently delete invoice number ${invoiceNumber}?`) === true) {
 function buildInvoiceEdit() {
     var tablet = window.matchMedia("(max-width: 1024px)");
     if (tablet.matches) { // If media query matches
-        document.getElementById('modalWrapperEdit').style.width = '1024px';
+        document.getElementById('modalWrapperEditSlider').style.width = '1024px';
         setTimeout(function () {
-            document.getElementById('invoiceEdit').style.display = 'block';
+            document.getElementById('modalInvoiceEdit').style.display = 'block';
         }, 100);
     } else {
-        document.getElementById('modalBackground').style.display = 'block';
-        document.getElementById('modalWrapperEdit').style.width = '1024px';
+        document.getElementById('modalSliderBackground').style.display = 'block';
+        document.getElementById('modalWrapperEditSlider').style.width = '1024px';
         setTimeout(function () {
-            document.getElementById('invoiceEdit').style.display = 'block';
+            document.getElementById('modalInvoiceEdit').style.display = 'block';
         }, 100);
     }
     buildItemSelect();
@@ -2526,10 +5511,10 @@ function addEventListenerItemTextArea() {
 // BBB Invoice Edit Buttons
 
 function killInvoiceEdit() {
-    document.getElementById('modalBackground').style.display = 'none';
-    document.getElementById('modalWrapperEdit').style.width = '0px';
+    document.getElementById('modalSliderBackground').style.display = 'none';
+    document.getElementById('modalWrapperEditSlider').style.width = '0px';
     setTimeout(function () {
-        document.getElementById('invoiceEdit').style.display = 'none';
+        document.getElementById('modalInvoiceEdit').style.display = 'none';
     }, 200);
 }
 
@@ -2539,12 +5524,14 @@ function cancelButtonEditInvoice() {
         killInvoiceEdit();
         if (newInvoicePreview === true) {
             killPreviewInvoice()
+            newInvoicePreview = false;
         }
     } else {
         if (confirm("Leave without saving changes?") === true) {
             killInvoiceEdit();
             if (newInvoicePreview === true) {
                 killPreviewInvoice()
+                newInvoicePreview = false;
             }
             alertVal = false;
         }
@@ -2560,6 +5547,14 @@ function saveButtonEditInvoice() {
         alert("Please enter a dollar amount before saving invoice.")
     } else if (customerName !== false && invoiceTotalFromMemory() > 0 && location.hash.charAt(1) === "p") {
 
+        db[0].invoices[n].companyName = companyName;
+        db[0].invoices[n].companyAddress1 = companyAddress1;
+        db[0].invoices[n].companyAddress2 = companyAddress2;
+        db[0].invoices[n].companyCity = companyCity;
+        db[0].invoices[n].companyState = cpmpanyState;
+        db[0].invoices[n].companyZip = companyZip;
+        db[0].invoices[n].companyPhone = companyPhone;
+        db[0].invoices[n].companyEmail = companyEmail;
         db[0].invoices[n].customerName = customerName;
         db[0].invoices[n].customerId = customerId;
         db[0].invoices[n].address1 = address1;
@@ -2590,6 +5585,15 @@ function saveButtonEditInvoice() {
         alertVal = false;
     } else if (customerName !== false && invoiceTotalFromMemory() > 0 && location.hash.charAt(1) === "n") {
         let newData = {
+
+            "companyName": companyName,
+            "companyAddress1": companyAddress1,
+            "companyAddress2": companyAddress2,
+            "companyCity": companyCity,
+            "companyState": companyState,
+            "companyZip": companyZip,
+            "companyPhone": companyPhone,
+            "companyEmail": companyEmail,
             "customerName": customerName,
             "customerId": customerId,
             "invoiceDate": invoiceDate,
@@ -2850,7 +5854,7 @@ function printPDF() {
         
         setTimeout(() => {
              document.getElementById('loadScreen').style.display = "none";
-        }, 1000) 
+        }, 2000) 
 }
 
 function dlPDF() {
@@ -2868,7 +5872,7 @@ function dlPDF() {
      setTimeout(() => {
         element.className = "invoicePageWrapper";
          document.getElementById('loadScreen').style.display = "none";
-     }, 1000)
+     }, 2000)
 }
 
 
@@ -2876,56 +5880,68 @@ function dlPDF() {
 
 
 function buildInvoicePayment() {
-    let modal = document.getElementById('modalWrapperNewInvoiceItem');
+    let modal = document.getElementById('modalWrapperSlider');
     let total = invoiceTotalFromMemory();
     if (paymentDate === false) {
         paymentDate = new Date().toJSON().slice(0, 10);
     }
-    document.getElementById('modalBackground').style.display = 'block';
+    document.getElementById('modalSliderBackground').style.display = 'block';
     modal.style.display = "block";
-    modal.style.width = "1024px";
+    modal.style.width = "600px";
     if (invoicePayment === false) {
+        modal.innerHTML = "";
         modal.innerHTML =
-            `<h4 class="modalH4">Payment Record</h4>
-        <span class = "modalSpan">Invoice No. ${invoiceNumber}</span>
-        <span class = "modalSpan">$ ${total}</span>
+        `<h4 class="modalSliderH4" id = "paymentH4">Payment Record</h4>
+                <span class = "paymentSpan1">Invoice No. ${invoiceNumber}</span>
+                <span class = "paymentSpan2">$${total}</span>
 
-        <div class="paymentRadioDiv">
-        <input type = "radio" id = "paymentRadioFalse" name = "unpaid" value = "false" class = "paymentRadioLeft" checked>
-        <label for = "unpaid">Unpaid</label> 
-        <input type = "radio" id = "paymentRadioTrue" name = "paid" value = "true" class = "paymentRadioRight" onclick="markInvoicePaid()">
-        <label for = "paid">Paid</label>
-        </div>
-        
-        <div class = "modalFooter" >
-            <button class = "button modalFooterButton" id = "cancelButtonInvoicePayment" onclick = "cancelButtonInvoicePayment()">Cancel</button> 
-            <button class = "button modalFooterButton" id = "saveButtonInvoicePayment" onclick = "saveButtonInvoicePayment()">Save</button></div>`
+                <div class="paymentRadioDiv">
+                    <input type = "radio" id = "paymentRadioFalse" name = "unpaid" value = "false" class = "paymentRadioLeft" onclick="markInvoiceUnpaid()" checked>
+                    <label for = "unpaid">Unpaid</label> 
+                    <input type = "radio" id = "paymentRadioTrue" name = "paid" value = "true" class = "paymentRadioRight" onclick="markInvoicePaid()">
+                    <label for = "paid">Paid</label>
+                </div>
+
+                <div class="modalSliderPayment">
+                
+     
+                <div class = "modalSliderFooter">
+                    <button class = "button modalFooterButton" id = "cancelButtonInvoicePayment" onclick = "cancelButtonInvoicePayment()">Cancel</button> 
+                    <button class = "button modalFooterButton" id = "saveButtonInvoicePayment" onclick = "saveButtonInvoicePayment()">Save</button>
+                </div>
+            </div>
+            `
+
     } else {
+        modal.innerHTML = "";
         modal.innerHTML =
-            `<h4 class="modalH4">Payment Record</h4>
-        <span class = "modalSpan">Invoice No. ${invoiceNumber}</span>
-        <span class = "modalSpan">$ ${total}</span>
+        `<h4 class="modalSliderH4" id="paymentH4">Payment Record</h4>
+                <span class = "paymentSpan1">Invoice No. ${invoiceNumber}</span>
+                <span class = "paymentSpan2">$${total}</span>
 
-        <div class="paymentRadioDiv">
-        <input type = "radio" id = "paymentRadioFalse" name = "unpaid" value = "false" class = "paymentRadioLeft" onclick="markInvoiceUnpaid()">
-        <label for = "unpaid">Unpaid</label> 
-        <input type = "radio" id = "paymentRadioTrue" name = "paid" value = "true" class = "paymentRadioRight" checked>
-        <label for = "paid">Paid</label>
-        </div>
+                <div class="paymentRadioDiv">
+                    <input type = "radio" id = "paymentRadioFalse" name = "unpaid" value = "false" class = "paymentRadioLeft" onclick="markInvoiceUnpaid()">
+                    <label for = "unpaid">Unpaid</label> 
+                    <input type = "radio" id = "paymentRadioTrue" name = "paid" value = "true" class = "paymentRadioRight" checked onclick="markInvoicePaid()">
+                    <label for = "paid">Paid</label>
+                </div> 
 
-        <label for="date" class="label">Date</label> 
-        <input type="date" id="paymentDatepicker" name ="date" class="inputSmall" min="1997-01-01" max="2030-12-31" value ="${paymentDate}">
+                <div class="modalSliderPayment">             
 
-        <label for="paymentSelect" class="label">Payment Type</label>
-            <select class = "input" id="paymentSelect" name="paymentSelect">
-            </select>
+                <label for="date" class="label">Date</label> 
+                <input type="date" id="paymentDatepicker" name ="date" class="inputSmall" min="1997-01-01" max="2030-12-31" value ="${paymentDate}">
 
-            <label for = "paymentNotes" class = "labelTextarea">Notes</label>
-            <textarea id = "paymentNotes" name = "paymentNotes" class = "inputTextarea" maxlength = "240" placeholder = "Notes...">${paymentNotes}</textarea>
+                <label for="paymentSelect" class="label">Payment Type</label>
+                <select class = "input" id="paymentSelect" name="paymentSelect">
+                </select>
+
+                <label for = "paymentNotes" class = "labelTextarea">Notes</label>
+                <textarea id = "paymentNotes" name = "paymentNotes" class = "inputTextarea" maxlength = "240" placeholder = "Notes...">${paymentNotes}</textarea>
             
-            <div class = "modalFooter">
-                <button class = "button modalFooterButton" id = "cancelButtonInvoicePayment"  onclick="cancelButtonInvoicePayment()">Cancel</button>
-                <button class = "button modalFooterButton" id = "saveButtonInvoicePayment" onclick="saveButtonInvoicePayment()">Save</button>
+                <div class = "modalSliderFooter">
+                    <button class = "button modalFooterButton" id = "cancelButtonInvoicePayment"  onclick="cancelButtonInvoicePayment()">Cancel</button>
+                    <button class = "button modalFooterButton" id = "saveButtonInvoicePayment" onclick="saveButtonInvoicePayment()">Save</button>
+                </div>
             </div>`;
 
         let pSelect = document.getElementById('paymentSelect');
@@ -2981,14 +5997,14 @@ function saveButtonInvoicePayment() {
         db[0].invoices[n].paymentDate = false;
         db[0].invoices[n].paymentMethod = false;
         db[0].invoices[n].paymentNotes = "";
-    } else {
-        db[0].invoices[n].invoicePayment = invoicePayment;
+    } else if (invoicePayment === true) {
+        db[0].invoices[n].invoicePayment = true;
         db[0].invoices[n].paymentDate = document.getElementById('paymentDatepicker').value;
         db[0].invoices[n].paymentMethod = document.getElementById('paymentSelect').value;
         db[0].invoices[n].paymentNotes = document.getElementById('paymentNotes').value;
     }
-    document.getElementById('modalBackground').style.display = 'none';
-    let modal = document.getElementById('modalWrapperNewInvoiceItem');
+    document.getElementById('modalSliderBackground').style.display = 'none';
+    let modal = document.getElementById('modalWrapperSlider');
     modal.style.width = "0px";
     modal.style.display = "none";
     modal.innerHTML = '';
@@ -2999,16 +6015,16 @@ function cancelButtonInvoicePayment() {
 
     if (invoicePayment !== db[0].invoices[n].invoicePayment) {
         if (confirm("Leave without saving changes?") === true) {
-        document.getElementById('modalBackground').style.display = 'none';
-        let modal = document.getElementById('modalWrapperNewInvoiceItem');
+        document.getElementById('modalSliderBackground').style.display = 'none';
+        let modal = document.getElementById('modalWrapperSlider');
         modal.style.width = "0px";
         modal.style.display = "none";
         modal.innerHTML = '';
         invoicePayment = db[0].invoices[n].invoicePayment;
         }
     } else {
-        document.getElementById('modalBackground').style.display = 'none';
-        let modal = document.getElementById('modalWrapperNewInvoiceItem');
+        document.getElementById('modalSliderBackground').style.display = 'none';
+        let modal = document.getElementById('modalWrapperSlider');
         modal.style.width = "0px";
         modal.style.display = "none";
         modal.innerHTML = '';
@@ -3027,53 +6043,28 @@ function buildExpenses() {
     <button class = "plusButton button" onclick = "buildExpenseEdit('new')">
         <span class = "iconPlusButton"></span>
         <span class = "buttonText">Expense</span> 
-    </button>`
+    </button>`;
+    document.getElementById('whitespace').innerHTML =
+        `<input type="text" id="searchBox" class="searchBox" onkeyup="searchTable()" placeholder="Search...">
+    <button class="closeIcon" onclick="clearSearch()">X</button>
+        <span class="material-symbols-outlined searchIcon">search</span>
+    <button class = "blueLinkButton" onclick = "expenseCategories()">Manage Categories</button>`;
+
+
     document.getElementById('navExpenses').className = 'active';
-    document.getElementById('siteContentExpenses').innerHTML = "";
-    document.getElementById('siteContentExpenses').style.display = 'block';
+    document.getElementById('siteContentMain').style.display = 'block';
+
+    document.getElementById('mainTableHead').innerHTML = `<tr class = "tableHeadRow">
+                                    <th class="tdOrder3">DATE</th>
+                                    <th class="tdOrder1">CATEGORY</th>
+                                    <th class="tdNotes">NOTES</th>
+                                    <th class="tdOrder2">AMOUNT</th>
+                                </tr>`
+    
     buildTableExpenses();
 }
 
-function getExpenseMonth(i, data) {
-    let date = data[i].expenseDate;
-    let monthNumber = date.charAt(5) + date.charAt(6);
-    if (monthNumber === '01') {
-        return "Jan"
-    }
-    if (monthNumber === '02') {
-        return "Feb"
-    }
-    if (monthNumber === '03') {
-        return "Mar"
-    }
-    if (monthNumber === '04') {
-        return "Apr"
-    }
-    if (monthNumber === '05') {
-        return "May"
-    }
-    if (monthNumber === '06') {
-        return "June"
-    }
-    if (monthNumber === '07') {
-        return "July"
-    }
-    if (monthNumber === '08') {
-        return "Aug"
-    }
-    if (monthNumber === '09') {
-        return "Sep"
-    }
-    if (monthNumber === '10') {
-        return "Oct"
-    }
-    if (monthNumber === '11') {
-        return "Nov"
-    }
-    if (monthNumber === '12') {
-        return "Dec"
-    }
-}
+
 
 function getExpenseYear(i, data) {
     let date = data[i].expenseDate;
@@ -3081,8 +6072,9 @@ function getExpenseYear(i, data) {
     return year;
 }
 
-
 function buildTableExpenses() {
+
+     document.getElementById('mainTableBody').innerHTML = "";
 
     let data = db[3].expenses;
 
@@ -3100,84 +6092,34 @@ function buildTableExpenses() {
         }
     })
 
-    let total = 0;
-    let preMonth;
-    let preYear;
-
-    function buildTable(i, data) {
-        preMonth = getExpenseMonth(i, data);
-        preYear = getExpenseYear(i, data);
-        let amount = data[i].expenseAmount * 1;
-        expenseId = data[i].expenseId;
-
-        let div =
-            `<div class="contentDiv">
-                <div class = "ribbon ribbonTop">
-                    <span class ="expenseMonth">${preMonth}</span><span class="expenseYear"> ${preYear}</span><span class ="ribbonTotal" id ="eTotal${preMonth}${preYear}"></span>
-                    </div>
-                    <table id="tableExpenses${preMonth}${preYear}">
-                    <tbody id="tbodyExpenses${preMonth}${preYear}" class="tbodyExpenses">
-                        <tr id = "row${i}" class = "rowHover" onclick = "buildExpenseEdit(${expenseId})">
-                            <td class="tdExpensesDate">${formatDate(data[i].expenseDate)}</td>
-                            <td class="tdExpensesCategory">${data[i].expenseCategory}</td> 
-                            <td class="tdExpensesNotes">${data[i].expenseNotes}</td> 
-                            <td class="tdExpensesAmount">$ ${amount.toFixed(2)}</td> 
-                        </tr>
-                    </tbody></table>               
-            </div>`;
-        document.getElementById('siteContentExpenses').innerHTML += div;
-        total += amount;
-    }
-
-
-
-    buildTable(0, data);
-
-    document.getElementById(`tableExpenses${preMonth}${preYear}`).className = 'topTable';
-
 
     for (var i = 1; i < data.length; i++) { // i starts at 1 so 'if' statement can compare month name to previous including the one above
 
-        let newYear = getExpenseYear(i, data);
-        let newMonth = getExpenseMonth(i, data);
         let date = data[i].expenseDate;
         let cat = data[i].expenseCategory;
         let notes = data[i].expenseNotes;
         let amount = data[i].expenseAmount * 1;
         expenseId = data[i].expenseId;
 
-        if (newMonth === preMonth && newYear === preYear) { // if same month as last, total is updated and loop repeats
             let row = `
-                        <tr id = "row${i}" class = "rowHover" onclick = "buildExpenseEdit(${expenseId})">
-                            <td class = "tdExpensesDate">${formatDate(date)}</td>
-                            <td class = "tdExpensesCategory">${cat}</td>
-                            <td class = "tdExpensesNotes">${notes}</td>
-                            <td class = "tdExpensesAmount">$ ${amount.toFixed(2)}</td>
+                        <tr class = "tableRow" onclick = "buildExpenseEdit(${expenseId})">
+                            <td class = "tdOrder3">${formatDate(date)}</td>
+                            <td class = "tdOrder1">${cat}</td>
+                            <td class = "tdNotes">${notes}</td>
+                            <td class = "tdOrder2">$${amount.toFixed(2)}</td>
                         </tr>`
-            document.getElementById(`tbodyExpenses${newMonth}${newYear}`).innerHTML += row;
-            total += amount;
+            document.getElementById('mainTableBody').innerHTML += row;
         }
 
-        if (newMonth !== preMonth || newYear !== preYear) { // if new category, new li is drawn then ....
-
-            document.getElementById(`eTotal${preMonth}${preYear}`).innerText = `$ ${total.toFixed(2)}`;
-            buildTable(i, data);
-            total = 0; // total is reset
-            total = total + amount; // amount from CURRENT category is added to total
-        }
-        if (i % 2 !== 0) {
-            document.getElementById(`row${i}`).className = 'lightgrey';
-        }
-    }
-    document.getElementById(`eTotal${preMonth}${preYear}`).innerText = `$ ${total.toFixed(2)}`; // when loop finishes, last total is added to it's span
+       
 }
 
 
 // BBB Expense Edit
 
 function buildExpenseEdit(val) {
-    let modal = document.getElementById('modalWrapperNewInvoiceItem');
-    document.getElementById('modalBackground').style.display = 'block';
+    let modal = document.getElementById('modalWrapperSlider');
+    document.getElementById('modalSliderBackground').style.display = 'block';
     modal.style.display = "block";
     modal.style.width = "1024px";
     expenseId = val;
@@ -3230,9 +6172,10 @@ function buildExpenseEdit(val) {
             <label for = "paymentNotes" class = "labelTextarea">Notes</label>
             <textarea id = "expenseNotes" name = "paymentNotes" class = "inputTextarea" maxlength = "240" placeholder = "Notes..." value="">${expenseNotes}</textarea>
         
-        <div class = "modalFooter" >
+        <div class = "modalFooter">
             <button class = "button modalFooterButton" id = "cancelButtonExpense" onclick = "cancelButtonExpense()">Cancel</button> 
             <button class = "button modalFooterButton" id = "saveButtonExpense" onclick = "saveButtonExpense()">Save</button></div>`
+            
         buildExpenseSelect(); 
         }
         }
@@ -3276,13 +6219,13 @@ function buildExpenseSelect() {
             i = event.target.value;
 
             if (i === "new") {
-                drawExpensePopUp()
+                drawExpensePopUp('select')
             }
         });
     }
 }
 
-function drawExpensePopUp() {
+function drawExpensePopUp(val) {
     document.getElementById('modalPopUpBackground').style.display = 'flex';
     document.getElementById('modalPopUpCenterBox').style.display = 'block';
     document.getElementById('modalPopUpCenterBox').innerHTML = `
@@ -3290,11 +6233,13 @@ function drawExpensePopUp() {
     <input type="text" id ="newExpenseCategory" name = "invoiceNewCustomerAddress1" class="input inputCentered" value="">
     <div class = "modalFooterPopUp">
                 <button class = "button modalFooterButton" id = "cancelButtonNewInvoiceAddCustomer"  onclick = "cancelNewExpenseCategory()">Cancel</button>
-                <button class = "button modalFooterButton" id = "saveButtonNewInvoiceAddCustomer" onclick = "saveNewExpenseCategory()">Save</button>
+                <button class = "button modalFooterButton" id = "saveButtonNewInvoiceAddCustomer" onclick = "saveNewExpenseCategory('${val}')">Save</button>
             </div>`;
 }
 
-function saveNewExpenseCategory() {
+
+
+function saveNewExpenseCategory(val) {
     let newCategory = document.getElementById('newExpenseCategory').value;
     expenseCategory = newCategory;
     let newData = {
@@ -3306,11 +6251,16 @@ function saveNewExpenseCategory() {
     document.getElementById('modalPopUpCenterBox').style.display = 'none';
     document.getElementById('modalPopUpCenterBox').innerHTML = '';
 
-    buildExpenseSelect()
+    if (val === 'select') {
+        buildExpenseSelect()
+    } else {
+        expenseCategories();
+    }
+    
 }
 
 function saveButtonExpense() {
-    let modal = document.getElementById('modalWrapperNewInvoiceItem');
+    let modal = document.getElementById('modalWrapperSlider');
     let expenseCategory = document.getElementById('expenseSelect').value;
     let expenseDate = document.getElementById('expenseDatepicker').value;
     let expenseAmount = document.getElementById('expenseAmount').value;
@@ -3337,7 +6287,7 @@ function saveButtonExpense() {
         modal.style.width = "0px";
         modal.style.display = "none";
         modal.innerHTML = "";
-        document.getElementById('modalBackground').style.display = 'none';
+        document.getElementById('modalSliderBackground').style.display = 'none';
         resetDataVariables();
         buildExpenses();
     }
@@ -3356,7 +6306,7 @@ function saveButtonExpense() {
     modal.style.width = "0px";
     modal.style.display = "none";
     modal.innerHTML = "";
-    document.getElementById('modalBackground').style.display = 'none';
+    document.getElementById('modalSliderBackground').style.display = 'none';
     resetDataVariables();
     buildExpenses();
     }      
@@ -3364,14 +6314,78 @@ function saveButtonExpense() {
 
 function cancelButtonExpense() {
 
-    let modal = document.getElementById('modalWrapperNewInvoiceItem');
+    let modal = document.getElementById('modalWrapperSlider');
     modal.style.width = "0px";
     modal.style.display = "none";
     modal.innerHTML = "";
-    document.getElementById('modalBackground').style.display = 'none';
+    document.getElementById('modalSliderBackground').style.display = 'none';
 }
 
 
+// BBB Expense Categories
+
+function expenseCategories() {
+    let modal = document.getElementById('modalWrapperSlider');
+    document.getElementById('modalSliderBackground').style.display = 'block';
+    modal.style.display = "block";
+    modal.style.width = "768px";
+        modal.innerHTML =
+            `<h4 class="modalSliderH4">Expense Categories</h4>
+
+            <button class = "plusButton button" onclick = "drawExpensePopUp()">
+                    <span class = "iconPlusButton"></span>
+                    <span class = "buttonText">Category</span> 
+                </button>
+
+            <div class = "itemTemplatesDiv">
+            <table class="itemsTable">
+                <tbody id = "itemTemplatesTable">
+                    
+                </tbody>
+            </table>
+            </div>
+            
+            <div class = "modalSliderFooter">
+            <button class = "button modalFooterButton" id = "closeButton" onclick = "closeButton()">Close</button></div>`
+
+
+             // Work Area
+            let data = db[4].categories;
+
+            function compareStrings(a, b) {
+                return (a < b) ? -1 : (a > b) ? 1 : 0;
+            }
+
+            data.sort(function (a, b) {
+                return compareStrings(a.category, b.category);
+            })
+
+            for (var i = 0; i < data.length; i++) {
+
+                let cat = data[i].category
+
+                    var row = `<tr id = "${cat}">
+                            <td class = "tdItem1">${cat}</td>
+                            <td class= "tdItem3"><button class="itemListButton" onclick="deleteCategory('${cat}')"><span class = "material-symbols-outlined">delete</span></button>
+					</tr>`;
+                    document.getElementById('itemTemplatesTable').innerHTML += row;
+                }
+            } 
+
+function deleteCategory(val) {
+
+        let data = db[4].categories;   
+        for (j = 0; j < data.length; j++) {
+
+        if (data[j].category === val) {
+       if (confirm(`Permanently delete the item "${data[j].category}" from your expense categories list?`) === true) {
+        db[4].categories.splice(j, 1);
+        }      
+    }
+    }
+    expenseCategories();
+
+    }
 
 // BBB Customers
 
@@ -3386,9 +6400,21 @@ function buildCustomers() {
     </button>`
 
     document.getElementById('navCustomers').className = 'active';
-    document.getElementById('siteContentCustomers').innerHTML = "";
-    document.getElementById('siteContentCustomers').style.display = 'block';
+    document.getElementById('mainTableBody').innerHTML = "";
+    document.getElementById('siteContentMain').style.display = 'block';
     buildTableCustomers();
+
+     document.getElementById('whitespace').innerHTML =
+        `<input type="text" id="searchBox" class="searchBox" onkeyup="searchTable()" placeholder="Search...">
+        <button class="closeIcon" onclick="clearSearch()">X</button>
+        <span class="material-symbols-outlined searchIcon">search</span>`;
+
+     document.getElementById('mainTableHead').innerHTML = `<tr class = "tableHeadRow">
+                                    <th class="tdOrder1">NAME</th>
+                                    <th class="tdAddress">ADDRESS</th>
+                                    <th class="tdOrder2">BALANCE</th>
+                                    <th class="tdOrder5">STATUS</th> 
+                                </tr>`
 }
 
 function customerBalance(cusId) {
@@ -3401,38 +6427,38 @@ function customerBalance(cusId) {
 
         if (newId === cusId) {
 
+            if (data[i].invoicePayment !== true) {
         
-            if (data[i].invoiceAmount1 !== false) {
-            total = data[i].invoiceAmount1 * 1;
-            }
-            if (data[i].invoiceAmount2 !== false) {
-            total += data[i].invoiceAmount2 * 1;
-            }
-            if (data[i].invoiceAmount3 !== false) {
-            total += data[i].invoiceAmount3 * 1;
-            }
-            if (data[i].invoiceAmount4 !== false) {
-            total += data[i].invoiceAmount4 * 1;
-            }
-            if (data[i].invoiceAmount5 !== false) {
-            total += data[i].invoiceAmount5 * 1;
-            }
-            if (data[i].invoiceAmount6 !== false) {
-            total += data[i].invoiceAmount6 * 1;
-            }
-            balance = balance + total;
-        }       
-        }
-    
-    if (balance > 0) {
-        return '$ ' + balance.toFixed(2);
-    } else {
-        return '---'
-    }
-}
+                if (data[i].invoiceAmount1 !== false) {
+                total = data[i].invoiceAmount1 * 1;
+                }
 
-function getFirstLetter(i, data) {
-    return data[i].customerName.charAt(0);
+                if (data[i].invoiceAmount2 !== false) {
+                total += data[i].invoiceAmount2 * 1;
+                }
+
+                if (data[i].invoiceAmount3 !== false) {
+                total += data[i].invoiceAmount3 * 1;
+                }
+
+                if (data[i].invoiceAmount4 !== false) {
+                total += data[i].invoiceAmount4 * 1;
+                }
+
+                if (data[i].invoiceAmount5 !== false) {
+                total += data[i].invoiceAmount5 * 1;
+                }
+
+                if (data[i].invoiceAmount6 !== false) {
+                total += data[i].invoiceAmount6 * 1;
+                }
+
+                balance = balance + total;
+        }     
+        }
+    }
+    
+    return balance;
 }
 
 
@@ -3447,75 +6473,50 @@ function buildTableCustomers() {
     data.sort(function (a, b) {
         return compareStrings(a.customerName, b.customerName);
     })
+        
 
-    function buildTable(i, data) {
-        let id = data[i].customerId;
-        let name = data[i].customerName;
-        let balance = customerBalance(id);
-        let letter = getFirstLetter(i, data);
-        let address = formatAddressLine(i, data);
-        let div =
-            `<div class="contentDiv">
-                <div class = "ribbon ribbonTop">
-                    <h4>${letter}</h4>
-                </div>
-                    <table class="tableCustomers" id="tableCustomers${letter}">
-                    <tbody id="tbodyCustomers${letter}">
-                    <tr id="row${letter}${i}" onclick = "buildCustomerView(${id})">
-                        <td>${name}</td>
-                        <td>${address}</td>
-                        <td> ${balance}</td>
-                    </tr>
-                    </tbody>
-                    </table>               
-            </div>`;
-        document.getElementById('siteContentCustomers').innerHTML += div;
-        if (i % 2 !== 0) {
-            document.getElementById(`row${letter}${i}`).className = 'lightgrey';
-        }
-    }
-    buildTable(0, data);
-
-    let preLetter = getFirstLetter(0, data);
-    let preName = data[0].customerName;
-
-    document.getElementById(`tableCustomers${preLetter}`).className = 'topTable';
-
-    for (var i = 1; i < data.length; i++) { // i starts at 1 so 'if' statement can compare month name to previous including the one above
+    for (var i = 0; i < data.length; i++) { // i starts at 1 so 'if' statement can compare month name to previous including the one above
 
         let id = data[i].customerId;
         let newName = data[i].customerName;
         let balance = customerBalance(id);
-        let newLetter = getFirstLetter(i, data);
+        balance = balance * 1;
         let address = formatAddressLine(i, data);
-        if (newLetter === preLetter && newName !== preName) { // if same month as last, total is updated and loop repeats
-            let row =
-                `<tr id="row${newLetter}${i}" onclick = "buildCustomerView(${id})">
-                            <td>${newName}</td>
-                            <td>${address}</td>  
-                            <td>${balance}</td> 
+        let row;
+        
+        if (balance === 0) {
+            row =
+                `<tr class = "tableRow" onclick = "buildCustomerView(${id})">
+                            <td class = "tdOrder1">${newName}</td>
+                            <td class = "tdAddress">${address}</td>  
+                            <td class = "tdOrder2">--</td>
+                            <td class = "tdBalance">CURRENT</td> 
                         </tr>`
-            document.getElementById(`tbodyCustomers${newLetter}`).innerHTML += row;
-            if (i % 2 !== 0) {
-                document.getElementById(`row${newLetter}${i}`).className = 'lightgrey';
-            }
+        } else {
+            row =
+                `<tr class = "tableRow" onclick = "buildCustomerView(${id})">
+                            <td class = "tdOrder1">${newName}</td>
+                            <td class = "tdAddress">${address}</td>  
+                            <td class = "tdOrder2">$${balance.toFixed(2)}</td>
+                            <td class = "tdBalance red">DUE</td> 
+                        </tr>`
+        }
+         document.getElementById('mainTableBody').innerHTML += row;
+    }
+   
         }
 
-        if (newLetter !== preLetter) { // if new category, new li is drawn then ....
-            buildTable(i, data);
-            preLetter = newLetter;
-            preName = newName;
-        }
-    }
-}
+        
+    
+
 
 
 
 // BBB Customer View
 
 function buildCustomerView(val) {
-    let modal = document.getElementById('modalWrapperNewInvoiceItem');
-    document.getElementById('modalBackground').style.display = 'block';
+    let modal = document.getElementById('modalWrapperSlider');
+    document.getElementById('modalSliderBackground').style.display = 'block';
     modal.style.display = "block";
     setTimeout(() => {
         modal.style.width = "768px";
@@ -3556,7 +6557,15 @@ function buildCustomerView(val) {
                 </button>
             </div>
             <div class = "customerViewInvoicesDiv">
-            <table>
+            <table class="customerViewTable">
+                <thead>
+                        <tr class = "customerViewThead" id ="customerViewThead">
+                            <th>Invoice</th>
+                            <th>Date</th>
+                            <th>Amount</th>
+                            <th>Status</th>
+                        </tr>   
+                </thead>
                 <tbody id = "customerViewTable">
                     
                 </tbody>
@@ -3565,12 +6574,13 @@ function buildCustomerView(val) {
             
             </div>
         
-        <div class = "modalFooter" >
+        <div class = "modalSliderFooter">
             <button class = "button modalFooterButton" id = "cancelButtonExpense" onclick = "closeButtonCustomer()">Close</button> 
         </div>`
 
+
         let balance = customerBalance(customerId);
-        document.getElementById('customerBalanceSpan').innerText = `${balance}`;
+        document.getElementById('customerBalanceSpan').innerText = `$${balance}`;
 
         let data = db[0].invoices;
 
@@ -3592,25 +6602,40 @@ function buildCustomerView(val) {
 
                 let newId = data[i].customerId;
                 let invoiceTotal = invoiceTotalFromLocation(i);
+                let paymentValue = data[i].invoicePayment;
 
                 if (newId === customerId) {
-                    var row = `<tr>
-                            <td class = "tdOrder1"><strong>Invoice No. ${data[i].invoiceNumber}</strong></td>
-							<td class = "tdOrder3">${formatDate(data[i].invoiceDate)}
-                            <a href = "#previewInv${data[i].invoiceNumber}"
-                            class = "rowLink" ></a></td >
-                            <td class= "tdOrder5">Paid</td>
-                            <td class= "tdOrder2">$ ${invoiceTotal.toFixed(2)}</td>
-					</tr>`;
-                    document.getElementById('customerViewTable').innerHTML += row;
+                    if (paymentValue === true) {
+                            var row = `<tr class = "customerViewTR">
+                            <td>No. ${data[i].invoiceNumber}</td>
+							<td>${formatDate(data[i].invoiceDate)}<a href = "#previewInv${data[i].invoiceNumber}" class = "rowLink"></a></td>
+                            <td>$${invoiceTotal.toFixed(2)}</td>
+                            <td class= "green">PAID</td>
+					        </tr>`;
+                    } else {
+                            var row = `<tr class = "customerViewTR">
+                            <td>No. ${data[i].invoiceNumber}</td>
+							<td>${formatDate(data[i].invoiceDate)}<a href = "#previewInv${data[i].invoiceNumber}" class = "rowLink"></a></td>
+                            <td>$${invoiceTotal.toFixed(2)}</td>
+                            <td class= "red">OPEN</td>
+					        </tr>`;
+                    }
+                   document.getElementById('customerViewTable').innerHTML += row;
                 } 
             }
+            let thead = document.getElementById('customerViewThead');
+            setTimeout(() => {
+                thead.style.width = "768px";
+                }, 10)
+            
 }
 
 function closeButtonCustomer() {
-    document.getElementById('modalBackground').style.display = 'none';
-    let modal = document.getElementById('modalWrapperNewInvoiceItem');
+    document.getElementById('modalSliderBackground').style.display = 'none';
+    let thead = document.getElementById('customerViewThead');
+    let modal = document.getElementById('modalWrapperSlider');
     modal.style.width = "0px";
+    thead.style.width = "0px";
     setTimeout(() => {
         modal.style.display = "none";
     }, 220)
@@ -4008,8 +7033,8 @@ function saveButtonAddCustomer() {
 }
 
 function newInvoiceFromCustomer() {
-    let modal = document.getElementById('modalWrapperNewInvoiceItem');
-    document.getElementById('modalBackground').style.display = 'none';
+    let modal = document.getElementById('modalWrapperSlider');
+    document.getElementById('modalSliderBackground').style.display = 'none';
     modal.style.display = "none";
     modal.style.width = "0px";
     modal.innerHTML = "";
@@ -4025,6 +7050,16 @@ function buildSettings() {
     document.getElementById('navSettings').className = 'active';
     document.getElementById('siteContentSettings').style.display = 'block';
     document.getElementById('siteContentSettings').innerHTML = '';
+
+        companyName = db[5].company[0].companyName;
+        companyAddress1 = db[5].company[0].companyAddress1;
+        companyAddress2 = db[5].company[0].companyAddress2;
+        companyCity = db[5].company[0].companyCity;
+        companyState = db[5].company[0].companyState;
+        companyZip = db[5].company[0].companyZip;
+        companyPhone = db[5].company[0].companyPhone;
+        companyEmail = db[5].company[0].companyEmail;
+
             address = companyAddressStacked()
             if (companyPhone === false) {
                 companyPhone = '';
@@ -4472,6 +7507,12 @@ function cancelButtonCompany() {
     document.getElementById('modalPopUpBackground').style.display = 'none';
     document.getElementById('modalPopUpCenterBox').style.display = 'none';
     document.getElementById('modalPopUpCenterBox').innerHTML = '';
+}
+
+function closeButton() {
+    document.getElementById('modalWrapperSlider').innerHTML = "";
+    document.getElementById('modalWrapperSlider').style.width = "0px";
+    document.getElementById('modalSliderBackground').style.display = "none";
 }
 
 
