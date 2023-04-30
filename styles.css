@@ -304,6 +304,7 @@ h5 {
     font-size: 16px;
 }
 
+
 /* Top Content (Tables) */
 
 .whitespace {
@@ -2478,12 +2479,58 @@ input::-webkit-date-and-time-value {
 
     /* Mobile buttons */
 
-    .plusButton {
-        top: auto;
-        bottom: 20px;
-        width: 3.2em;
-        font-size: 14px;
+    .button {
+        width: 40px;
+        margin: 0px;
+        border: none;
+        padding-top: 15px;
     }
+
+    .plusButton {
+        left: auto;
+        top: auto;
+        right: 20px;
+        bottom: 20px;
+        font-size: 14px;
+        height: 70px;
+        width: 70px;
+    }
+
+    .iconPlusButton {
+    display: block;
+    width: 60px;
+    height: 60px;
+    background: #2a2438;
+    position: absolute;
+    left: 5px;
+    top: 5px;
+    border-radius: 100%;
+    font-size: 23px;
+}
+
+.iconPlusButton::before {
+    content: "";
+    display: block;
+    width: .3em;
+    height: 2.1em;
+    background-color: #dbd8e3;
+    position: absolute;
+    top: .25em;
+    left: 1.15em;
+    border-radius: 1em;
+}
+
+.iconPlusButton::after {
+    content: "";
+    display: block;
+    width: 2.1em;
+    height: .3em;
+    background-color: #dbd8e3;
+    position: absolute;
+    top: 1.15em;
+    left: .25em;
+    border-radius: 1em;
+}
 
     .buttonText {
         display: none;
@@ -2537,13 +2584,6 @@ input::-webkit-date-and-time-value {
         align-items: center;
         padding: 50px 0px;
         overflow: hidden;
-    }
-
-    .button {
-        width: 40px;
-        margin: 0px;
-        border: none;
-        padding-top: 15px;
     }
 
     .modalFooterButton {
