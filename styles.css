@@ -369,11 +369,11 @@ h5 {
 .closeIcon {
     background-color: lightgrey;
     border: none;
-    border-left: 2px darkgrey solid;
-    border-radius: 0px 1px 1px 0px;
-	left: 638px;
-    top: 87px;
-    height: 36px;
+    border: 2px darkgrey solid;
+    border-radius: 0px 3px 3px 0px;
+	left: 640px;
+    top: 85px;
+    height: 40px;
     width: 45px;
     font-size: 20px;
 	display: inline-block;
@@ -2358,8 +2358,8 @@ input::-webkit-date-and-time-value {
     }
 
     .closeIcon {
-	left: 393px;
-    top: 107px;
+	left: 395px;
+    top: 105px;
     width: 45px;
     font-size: 20px;
 }
@@ -3130,11 +3130,7 @@ width to create 8.5 x 11 ratio */
     }
 
     .blueLinkButton {
-        text-align: left;
-        right: 5px;
-        top: 20px;
-        font-size: .9rem;
-        height: 20px;
+        display: none;
     }
 
     .searchBox {
@@ -3149,7 +3145,7 @@ width to create 8.5 x 11 ratio */
     }
 
     .closeIcon {
-    top: 108px;
+    top: 106px;
 	left: auto;
     right: 6px;
 }
