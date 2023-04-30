@@ -335,15 +335,16 @@ h5 {
 }
 
 .searchBox {
-    width: 350px;
+    width: 435px;
     height: 40px;
     background-color: white;
-    border-radius: 5px;
-    padding-left: 45px;
+    border-radius: 3px;
+    padding-left: 40px;
+    padding-top: 5px;
     position: fixed;
     top: 85px;
     color: darkgrey;
-    border: solid 1px darkgrey;
+    border: solid 2px darkgrey;
     font-size: 1.1rem;
 }
 
@@ -366,19 +367,21 @@ h5 {
 }
 
 .closeIcon {
-	border: 1px solid lightgrey;
-	background-color: lightgrey;
+    background-color: lightgrey;
+    border: none;
+    border-left: 2px darkgrey solid;
+    border-radius: 0px 1px 1px 0px;
+	left: 638px;
+    top: 87px;
+    height: 36px;
+    width: 45px;
+    font-size: 20px;
 	display: inline-block;
 	vertical-align: middle;
     outline: 0;
     cursor: pointer;
     z-index: 20;
     position: fixed;
-    top: 86px;
-    left: 567px;
-    width: 32px;
-    height: 38px;
-    border-radius: 0px 4px 4px 0px;
     color: white;
     font-size: 24px;
 }
@@ -2266,7 +2269,7 @@ input::-webkit-date-and-time-value {
         max-width: auto;
         top: 95px;
         left: 0px;
-        height: 48px;
+        height: 60px;
         background: #e9e7ee;
         border: none;
         box-shadow: none;
@@ -2290,7 +2293,7 @@ input::-webkit-date-and-time-value {
     .blueLinkButton {
         left: auto;
         right: 10px;
-        top: 15px;
+        top: 30px;
         background: #e9e7ee;
         color: #2a2438;
         font-weight: 600;
@@ -2347,29 +2350,33 @@ input::-webkit-date-and-time-value {
     }
 
     .searchBox {
-        height: 30px;
         left: 5px;
         background: white;
         z-index: 2;
         top: 105px;
+        box-shadow: none;
     }
 
     .closeIcon {
-	left: 322px;
-    top: 106px;
-    height: 28px;
+	left: 393px;
+    top: 107px;
+    width: 45px;
     font-size: 20px;
 }
 
-    .searchBox:focus {
-        box-shadow: none;
-        background: white;
-    }
+    .searchBox:hover {
+    box-shadow: none;
+}
+
+.searchBox:focus {
+    box-shadow: none;
+}
 
     .searchIcon {
-        top: 13px;
+        top: 18px;
         left: 15px;
         z-index: 3;
+        color: darkgrey;
     }
 
 
@@ -3122,10 +3129,6 @@ width to create 8.5 x 11 ratio */
         border-bottom: 1px solid darkgrey;
     }
 
-    .searchIcon {
-        color: #2a2438;
-    }
-
     .blueLinkButton {
         text-align: left;
         right: 5px;
@@ -3133,6 +3136,7 @@ width to create 8.5 x 11 ratio */
         font-size: .9rem;
         height: 20px;
     }
+
     .searchBox {
         display: inline-block;
         position: relative;
@@ -3140,43 +3144,14 @@ width to create 8.5 x 11 ratio */
         left: 5px;
         background: white;
         color: transparent;
-        width: 160px;
-        border: none;
-        border-radius: 3px 0px 0px 3px;
+        width: calc(100vw - 10px);
         padding-left: 35px;
-        transition-duration: .3s;
-    }
-
-    .searchBox:hover {
-    box-shadow: none;
-}
-
-    .searchBox:focus {
-        box-shadow: none;
-        background: white;
-        width: 89vw;
-    }
-
-    .searchBox:focus::placeholder {
-        color: darkgrey;
-    }
-
-    .searchIcon {
-        top: 15px;
-        left: 8px;
     }
 
     .closeIcon {
-	background-color: lightgrey;
-	display: inline-block;
-	vertical-align: middle;
-    cursor: pointer;
-    position: relative;
-    top: 10px;
-    left: -2px;
-    width: 32px;
-    height: 30px;
-    border-radius: 0px 3px 3px 0px;
+    top: 108px;
+	left: auto;
+    right: 6px;
 }
 
 
