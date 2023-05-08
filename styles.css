@@ -2144,7 +2144,7 @@ input::-webkit-date-and-time-value {
 }
 
 
-@media only screen and (max-width:1024px) and (max-height: 1366px) and (orientation: portrait) {
+@media only screen and (max-width:1024px) {
 
     /* Main Mobile General*/
 
@@ -2262,7 +2262,7 @@ input::-webkit-date-and-time-value {
         color: #dbd8e3;
     }
 
-    /* Search Box */
+    /* Tablet Search Box */
 
     .whitespace {
         position: fixed;
@@ -2579,8 +2579,7 @@ input::-webkit-date-and-time-value {
         height: 100%;
         padding: 0px;
         margin: 0px;
-        gap: 0px;
-        padding: 60px 0px;
+        padding: 60px 0px 0px;
         overflow: scroll;
     }
 
@@ -2655,12 +2654,13 @@ input::-webkit-date-and-time-value {
     .previewInvoiceFooter {
         display: flex;
         position: absolute;
+        padding: 0px;
         top: auto;
         bottom: 0px;
         left: 0px;
         width: 100%;
         z-index: 15;
-        height: 60px;
+        height: 70px;
         background-color: #dbd8e3;
         border-top: solid lightgrey 1px;
     }
