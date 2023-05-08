@@ -3898,7 +3898,7 @@ function cancelButtonNewCustomer() {
 // BBB Hash Change
 
 window.addEventListener('load', function () {
-    alert("Version 05.07.01");
+    alert("Version 05.07.2023");
     buildOverview()
     location.hash = "#overview";
     siteHash = "#overview";
@@ -4778,6 +4778,18 @@ function buildInvoicePreview() {
     setInvoiceVariables();
     drawInvoice();
 }
+
+let pageView = true;
+
+function togglePageView() {
+    if (pageView) {
+        document.getElementById('invoicePageWrapper').style.display = "none";
+        pageView = false;
+    } else {
+        document.getElementById('invoicePageWrapper').style.display = "grid";
+        pageView = true;
+    }
+} 
 
 
 

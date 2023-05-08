@@ -227,8 +227,8 @@
                     </span>
                 </button>
                 <h3 class="previewInvoiceH3" id="previewInvoiceH3"></h3>
-                <button class="buttonToggle">
-                    <a href="#invoice_pageview"><span class="material-icons">pageview</span></a>
+                <button class="buttonToggle" onclick="togglePageView()">
+                    <span class="material-symbols-outlined">pageview</span>
                 </button>
                 <button class="buttonExit" onclick="killPreviewInvoice()">
                     <span class="material-symbols-outlined">close</span>
@@ -289,7 +289,7 @@
 
                 <!-- Invoice Page-->
 
-                <div id="invoicePageWrapper">
+                <div id="invoicePageWrapper" class="invoicePageWrapper">
                     <!-- Font Set Within this class using vw vh to scale -->
 
                     <div class="invoicePageCompany">
