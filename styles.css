@@ -2144,7 +2144,7 @@ input::-webkit-date-and-time-value {
 }
 
 
-@media screen and (max-width:1024px) and (orientation:portrait) and (min-resolution: 180dpi) {
+@media only screen and (max-width:1024px) and (orientation:portrait) and (min-resolution: 180dpi) {
 
     /* Main Mobile General*/
 
@@ -2659,7 +2659,7 @@ input::-webkit-date-and-time-value {
         bottom: 0px;
         left: 0px;
         width: 100%;
-        z-index: 16;
+        z-index: 15;
         height: 60px;
         background-color: #dbd8e3;
         border-top: solid lightgrey 1px;
