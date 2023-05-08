@@ -7079,7 +7079,9 @@ function buildSettings() {
             if (companyEmail === false) {
                 companyEmail = '';
             }
-        
+    document.getElementById('whitespace').innerHTML = 
+    `<button class = "blueLinkButtonBorder" onclick = "itemTemplates()">Invoice Templates</button>
+    <button class = "blueLinkButtonBorder" onclick = "expenseCategories()">Expense Categories</button>`;    
     document.getElementById('siteContentSettings').innerHTML = `
     <div class="settingsViewCardDiv">
                         <h4>Company Info</h4>

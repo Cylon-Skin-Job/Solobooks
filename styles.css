@@ -532,7 +532,7 @@ h5 {
     height: 37px;
     top: 85px;
     left: 330px;
-    z-index: 4;
+    z-index: 14;
     border: darkgrey solid 1px;
     border-radius: 5px;
     padding: 0px 5px;
@@ -553,7 +553,7 @@ h5 {
     font-size: .8rem;
     top: 95px;
     left: 275px;
-    z-index: 4;
+    z-index: 14;
 }
 
 .whitespaceSlider {
@@ -2276,6 +2276,8 @@ input::-webkit-date-and-time-value {
         background: #e9e7ee;
         border: none;
         box-shadow: none;
+        display: flex;
+        flex-flow: row nowrap;
     }
 
     .whitespaceFixed {
@@ -2293,6 +2295,36 @@ input::-webkit-date-and-time-value {
         display: none;
     }
 
+     .searchBox {
+        left: 5px;
+        background: white;
+        z-index: 2;
+        top: 105px;
+        box-shadow: none;
+    }
+
+    .closeIcon {
+	left: 395px;
+    top: 105px;
+    width: 45px;
+    font-size: 20px;
+}
+
+    .searchBox:hover {
+    box-shadow: none;
+}
+
+.searchBox:focus {
+    box-shadow: none;
+}
+
+    .searchIcon {
+        top: 18px;
+        left: 15px;
+        z-index: 3;
+        color: darkgrey;
+    }
+
     .blueLinkButton {
         left: auto;
         right: 10px;
@@ -2300,6 +2332,10 @@ input::-webkit-date-and-time-value {
         background: #e9e7ee;
         color: #2a2438;
         font-weight: 600;
+    }
+
+     .blueLinkButtonBorder {
+        display: none;
     }
     
 
@@ -2340,46 +2376,19 @@ input::-webkit-date-and-time-value {
     
 
     .overviewSortLabel {
+        position: fixed;
         left: auto;
-        top: 110px;
+        top: 115px;
         right: 165px;
         background: #e9e7ee;
     }
+
     .overviewSortSelector {
+        position: fixed;
         left: auto;
         right: 10px;
-        top: 101px;
-        background: #e9e7ee;
-    }
-
-    .searchBox {
-        left: 5px;
-        background: white;
-        z-index: 2;
         top: 105px;
-        box-shadow: none;
-    }
-
-    .closeIcon {
-	left: 395px;
-    top: 105px;
-    width: 45px;
-    font-size: 20px;
-}
-
-    .searchBox:hover {
-    box-shadow: none;
-}
-
-.searchBox:focus {
-    box-shadow: none;
-}
-
-    .searchIcon {
-        top: 18px;
-        left: 15px;
-        z-index: 3;
-        color: darkgrey;
+        background: #e9e7ee;
     }
 
 
@@ -2388,7 +2397,7 @@ input::-webkit-date-and-time-value {
         max-width: auto;
         max-width: auto;
         left: 0px;
-        margin-top: 18px;
+        margin-top: 25px;
     }
 
     .tableHeadRow {
@@ -2396,13 +2405,12 @@ input::-webkit-date-and-time-value {
         max-width: auto;
         max-width: auto;
         position: fixed;
-        top: 143px;
+        top: 150px;
         left: 0px;
     }
 
 
-    #siteContentOverview,
-    .siteContentInvoices {
+    #siteContentOverview {
         margin: 0px;
         padding: 50px 0px;
         height: 100%;
@@ -2410,6 +2418,36 @@ input::-webkit-date-and-time-value {
         max-width: auto;
         min-width: auto;
     }
+
+    .overviewChartWrapperLarge {
+    background-color: white;
+    min-width: 580px;
+    max-width: 98%;
+    margin: 5px 1%;
+    flex-grow: 2;
+    height: 375px;
+    border: darkgrey 1px solid;
+    border-radius: 10px;
+    box-shadow: 1px 1px 5px grey;
+    overflow: hidden;
+    padding-bottom: 20px;
+    position: relative;
+}
+
+    .overviewChartWrapperSmall {
+    min-width: 290px;
+    max-width: auto;
+    display: inline-block;
+    flex-grow: 1;
+    margin: 5px 1%;
+    height: 375px;
+    border: darkgrey 1px solid;
+    border-radius: 10px;
+    box-shadow: 1px 1px 5px grey;
+    overflow: hidden;
+    padding-bottom: 20px;
+    position: relative;
+}
 
     .overviewChartWrapper,
     .overviewChartWrapperCashflow,
@@ -2470,9 +2508,7 @@ input::-webkit-date-and-time-value {
 
     /* Tablet Overview */
 
-    #overviewContent {
-        grid-template-columns: 49% 49%;
-    }
+    
 
 
     /* Modifies Overview div .site-content */
@@ -2575,7 +2611,7 @@ input::-webkit-date-and-time-value {
         height: 100%;
         padding: 0px;
         margin: 0px;
-        padding: calc(50vh - 64vw) 0px 0px;
+        padding: calc(49vh - 64vw) 0px 0px;
         overflow: scroll;
     }
 
@@ -2634,16 +2670,12 @@ input::-webkit-date-and-time-value {
         margin: 0px;
     }
 
-    
-
     .buttonEdit {
         width: 30%;
         text-align: right;
         padding-top: 10px;
         margin: 0px 0px 0px 30%;
     }
-
-    
 
     .previewInvoiceH3 {
         position: absolute;
@@ -2974,184 +3006,13 @@ input::-webkit-date-and-time-value {
         border-radius: 3px;
     }
 
-    /* mimics a sheet of paper 99% width with height as a function of
-width to create 8.5 x 11 ratio */
-    .x8x11_wrapper {
-        position: relative;
-        width: 98vw;
-        height: 129vw;
-        background: white;
-        color: black;
-        margin: 0px;
-    }
-
-    /* font-size relative to page size / scales from mobile to 
-1024px width screen. Adjusted below for desktop with @media 1025px */
-    .x8x11_wrapper-font {
-        font-size: 2vw;
-    }
-
-    .x8x11_wrapper-number_date h3 {
-        font-size: 4vw;
-    }
-
     /* eliminate gap between name and address, set font to normal */
     address {
         font-style: normal;
         margin-top: -4%;
     }
 
-    /* 4 boxes to contain company/customer info, logo and date/_container number */
-    .x8x11_wrapper-top_grid {
-        display: inline-block;
-        width: 49%;
-        height: 15%;
-    }
-
-    /* Company address in upper left corner*/
-
-    .x8x11_wrapper-top_grid-company_address {
-        position: absolute;
-        top: 0px;
-        left: 0px;
-        margin: 0px;
-        padding: 2% 0px 0px 3%;
-    }
-
-    .x8x11_wrapper-top_grid-company_address p {
-        font-weight: bold;
-
-    }
-
-    /* Company logo in upper right corner */
-
-    .x8x11_wrapper-top_grid-company_logo {
-        position: absolute;
-        top: 0px;
-        right: 0px;
-        margin: 0px;
-        padding: 2% 3% 0px 0px;
-    }
-
-    .x8x11_wrapper-top_grid-company_logo-img_logo {
-        float: right;
-        width: 30%;
-        height: auto;
-        margin-top: 0;
-
-    }
-
-    /* Customer "BILL TO:" name and address*/
-
-    .x8x11_wrapper-top_grid-customer_address {
-        position: absolute;
-        top: 16%;
-        left: 0px;
-        margin: 0px;
-        padding: 0px 0px 0px 5%;
-    }
-
-    .x8x11_wrapper-top_grid-customer_address h3 {
-        height: 25%;
-
-    }
-
-    /* "INVOICE" h3 and _container number/date */
-
-    .x8x11_wrapper-top_grid-number_date {
-        position: absolute;
-        top: 16%;
-        right: 0px;
-        margin: 0px;
-        padding: 2% 3% 0px 0px;
-    }
-
-    .x8x11_wrapper-top_grid-number_date h3 {
-        display: block;
-        text-align: right;
-        width: 100%;
-        height: 30%;
-        padding: 0px 2%;
-        margin: -5% 0px 5%;
-        /* Set-font size above */
-    }
-
-    .x8x11_wrapper-top_grid-number_date-span-left,
-    .x8x11_wrapper-top_grid-number_date-span-right {
-        display: inline-block;
-        width: 48%;
-        background-color: white;
-        height: 5%;
-        margin: 0px;
-    }
-
-    .x8x11_wrapper-top_grid-number_date-span-left {
-        text-align: right;
-        font-weight: bold;
-    }
-
-    /* Work descriptions and amounts */
-
-    /* box to hold table */
-
-    .x8x11_wrapper-center_box {
-        display: block;
-        position: absolute;
-        top: 31%;
-        width: 100%;
-        height: 60%;
-    }
-
-    /* the table */
-
-    .x8x11_wrapper-center_box-table {
-        width: 96%;
-        position: relative;
-        border-collapse: collapse;
-        margin: 0px auto;
-    }
-
-    .x8x11_wrapper-center_box-table thead tr {
-        width: 100%;
-        border-bottom: solid darkgrey 3px;
-    }
-
-    .x8x11_wrapper-center_box-table tr {
-        width: 100%;
-    }
-
-    .x8x11_wrapper-center_box-table td {
-        padding-top: 1%;
-    }
-
-    .x8x11_wrapper-center_box-table td:nth-child(1),
-    .x8x11_wrapper-center_box-table th:nth-child(1) {
-        width: 85%;
-        padding-left: 2vw;
-    }
-
-    .x8x11_wrapper-center_box-table td:nth-child(2),
-    .x8x11_wrapper-center_box-table th:nth-child(2) {
-        width: 15%;
-        text-align: right;
-        padding-right: 2vw;
-    }
-
-    .x8x11_wrapper-center_box-table tfoot tr {
-        border-top: solid black 1px;
-    }
-
-    .x8x11_wrapper-center_box-table tfoot td:nth-child(1) {
-        text-align: right;
-    }
-
-    .x8x11_wrapper-footer {
-        display: block;
-        text-align: center;
-        width: 100%;
-        position: absolute;
-        bottom: 5%;
-    }
+   
 
 }
 
@@ -3208,7 +3069,7 @@ width to create 8.5 x 11 ratio */
     .mainTable {
     min-width: auto;
     top: 0px;
-    margin-top: 47px;
+    margin-top: 57px;
     width: 100%;
     max-width: auto;
 }
@@ -3339,7 +3200,7 @@ width to create 8.5 x 11 ratio */
 }
     /* Phone Overview Content */
 
-    #overview-content {
+   /* #overview-content {
         display: grid;
         grid-template: 30px 200px 370px 370px 35px 900px / 1fr;
         gap: 10px;
@@ -3350,8 +3211,76 @@ width to create 8.5 x 11 ratio */
             "expenses"
             "ribbon-2"
             "payments";
+    } */
+
+    #siteContentOverview {
+        margin: 0px;
+        padding: 50px 0px;
+        height: 100%;
+        width: 100%;
+        max-width: auto;
+        min-width: auto;
     }
 
+    .overviewChartWrapperLarge {
+    background-color: white;
+    min-width: 100%;
+    max-width: 100%;
+    margin: 5px 0px;
+    flex-grow: 2;
+    height: 375px;
+    border: none;
+    border-top: darkgrey 1px solid;
+    border-bottom: darkgrey 1px solid;
+    border-radius: 0px;
+    box-shadow: 1px 1px 5px grey;
+    overflow: hidden;
+    padding-bottom: 20px;
+    position: relative;
+}
+
+    .overviewChartWrapperInvoiceStats {
+        margin: 20px auto 5px;
+    }
+
+    .overviewChartWrapperInvoiceBars {
+    margin: 10px auto 0px;
+    width: 94%;
+    height: 80px;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+}
+
+    .overviewChartTop {
+        height: 220px;
+    }
+
+    .overviewChartWrapperSmall {
+    min-width: 100%;
+    max-width: 100%;
+    display: inline-block;
+    flex-grow: 1;
+    margin: 5px 0px;
+    height: 375px;
+    border: none;
+    border-top: darkgrey 1px solid;
+    border-bottom: darkgrey 1px solid;
+    border-radius: 0px;
+    box-shadow: 1px 1px 5px grey;
+    overflow: hidden;
+    padding-bottom: 20px;
+    position: relative;
+}
+
+    .overviewPaymentScrollDiv {
+        height: auto;
+        overflow: none;
+    }
+
+    .overviewChartBottom {
+        height: auto;
+    }
 
     /* Phone Modal --Start-- */
 
@@ -3462,7 +3391,19 @@ width to create 8.5 x 11 ratio */
         margin: 0px 10px;
     }
 
-
+     .blueLinkButtonBorder {
+        display: inline-block;
+        background: #e9e7ee;
+        color: #2a2438;
+        border: 1px solid #2a2438;
+        border-radius: 20px;
+        padding: 10px;
+        font-weight: 600;
+        font-size: .9rem;
+        margin: 10px auto;
+        width: 170px;
+        height: 40px;
+    }
 
 }
 
