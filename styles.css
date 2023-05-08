@@ -2663,7 +2663,7 @@ input::-webkit-date-and-time-value {
         z-index: 15;
         height: 70px;
         background-color: #dbd8e3;
-        border-top: solid lightgrey 1px;
+        border: solid blue 5px;
     }
 
 
