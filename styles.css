@@ -2144,7 +2144,7 @@ input::-webkit-date-and-time-value {
 }
 
 
-@media only screen and (max-width:1024px) and (min-resolution: 160dpi) {
+@media only screen and (max-width:1024px) and (orientation: portrait) {
 
     /* Main Mobile General*/
 
