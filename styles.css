@@ -2484,7 +2484,7 @@ input::-webkit-date-and-time-value {
         width: 40px;
         margin: 0px;
         border: none;
-        padding-top: 15px;
+        padding-top: 10px;
     }
 
     .plusButton {
@@ -2635,7 +2635,7 @@ input::-webkit-date-and-time-value {
     .buttonEdit {
         width: 50%;
         text-align: right;
-        padding-top: 20px;
+        padding-top: 10px;
         margin: 0px;
     }
 
