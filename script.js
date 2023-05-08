@@ -3898,7 +3898,7 @@ function cancelButtonNewCustomer() {
 // BBB Hash Change
 
 window.addEventListener('load', function () {
-    alert("Version 05.07.2023.PADDING2");
+    alert("Version 05.07.2023.PADDING3");
     buildOverview()
     location.hash = "#overview";
     siteHash = "#overview";
