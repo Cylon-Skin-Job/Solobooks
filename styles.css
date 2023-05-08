@@ -865,6 +865,7 @@ h5 {
     justify-content: center;
     align-items: center;
     overflow: hidden;
+    position: relative;
 }
 
 .previewInvoiceH3 {
