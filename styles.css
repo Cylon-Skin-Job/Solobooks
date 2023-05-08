@@ -2655,15 +2655,14 @@ input::-webkit-date-and-time-value {
     .previewInvoiceFooter {
         display: flex;
         position: fixed;
-        padding: 0px 10px 20px;
+        padding: 5px 10px 10px;
         top: auto;
         bottom: 0px;
         left: 0px;
         width: 100%;
         z-index: 15;
-        height: 70px;
+        height: 60px;
         background-color: #dbd8e3;
-        border: solid blue 5px;
     }
 
 
