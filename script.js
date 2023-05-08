@@ -3898,7 +3898,7 @@ function cancelButtonNewCustomer() {
 // BBB Hash Change
 
 window.addEventListener('load', function () {
-    alert("Version 04.30.2");
+    alert("Version 05.07.01");
     buildOverview()
     location.hash = "#overview";
     siteHash = "#overview";
