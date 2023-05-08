@@ -2480,12 +2480,7 @@ input::-webkit-date-and-time-value {
 
     /* Mobile buttons */
 
-    .button {
-        width: 30px;
-        margin: 0px;
-        border: none;
-        padding-top: 10px;
-    }
+    
 
     .plusButton {
         left: auto;
@@ -2598,6 +2593,13 @@ input::-webkit-date-and-time-value {
     margin: 10px 40px;
 }
 
+    .button {
+        width: 30px;
+        margin: 0px 10px;
+        border: none;
+        padding-top: 10px;
+    }
+
     .buttonBack {
         display: block;
         position: absolute;
@@ -2632,12 +2634,16 @@ input::-webkit-date-and-time-value {
         margin: 0px;
     }
 
+    
+
     .buttonEdit {
-        width: 50%;
+        width: 30%;
         text-align: right;
         padding-top: 10px;
-        margin: 0px;
+        margin: 0px 0px 0px 30%;
     }
+
+    
 
     .previewInvoiceH3 {
         position: absolute;
