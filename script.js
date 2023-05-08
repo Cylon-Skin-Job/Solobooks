@@ -4770,7 +4770,7 @@ function buildInvoicePreview() {
     var tablet = window.matchMedia("(max-width: 1024px)");
     if (tablet.matches) { // If media query matches
         document.getElementById('previewInvoiceSlider').style.width = '100%';
-        document.getElementById('previewInv').style.display = 'flex';
+        document.getElementById('previewInv').style.display = 'block';
     } else {
         document.getElementById('previewInvoiceSlider').style.height = '100%';
         document.getElementById('previewInv').style.display = 'grid';
@@ -5646,7 +5646,7 @@ function newInvoice() {
     document.getElementById('previewInvoiceSlider').style.height = '100%';
     var tablet = window.matchMedia("(max-width: 1024px)");
     if (tablet.matches) { // If media query matches
-        document.getElementById('previewInv').style.display = 'flex';
+        document.getElementById('previewInv').style.display = 'block';
     } else {
         document.getElementById('previewInv').style.display = 'grid';
     }

@@ -2579,11 +2579,8 @@ input::-webkit-date-and-time-value {
         padding: 0px;
         margin: 0px;
         gap: 0px;
-        flex-flow: column nowrap;
-        justify-content: center;
-        align-items: center;
-        padding: 50px 0px;
-        overflow: hidden;
+        padding: 60px 0px;
+        overflow: scroll;
     }
 
     .modalFooterButton {
@@ -2601,12 +2598,12 @@ input::-webkit-date-and-time-value {
 }
 
     .buttonBack {
-        position: absolute;
+        position: fixed;
         top: 10px;
         left: 10px;
         width: 45px;
         height: 45px;
-        z-index: 10;
+        z-index: 20;
     }
     .buttonEdit {
         width: 50%;
@@ -2617,19 +2614,20 @@ input::-webkit-date-and-time-value {
     }
 
     .previewInvoiceH3 {
-        position: absolute;
+        position: fixed;
         margin: 0px;
-        width: 80%;
-        left: 10%;
+        width: 100%;
+        left: 0px;
         top: 0px;
         padding-top: 10px;
         text-align: center;
         background: #dbd8e3;
-        z-index: 9;
+        height: 50px;
+        z-index: 12;
     }
 
     .previewInvoiceFooter {
-        position: absolute;
+        position: fixed;
         bottom: 0px;
         width: 100%;
         z-index: 10;
@@ -2642,8 +2640,8 @@ input::-webkit-date-and-time-value {
 
     .invoicePageWrapper {
         position: relative;
-        grid-area: middle;
-        margin: 0px;
+        grid-area: invoice;
+        margin: 0px auto;
         padding: 0px;
         width: 99vw;
         height: 128vw;
@@ -2800,7 +2798,6 @@ input::-webkit-date-and-time-value {
         padding: 0px;
         font-weight: bold;
         margin: 0px;
-        z-index: 2;
     }
 
     .buttonBack {
