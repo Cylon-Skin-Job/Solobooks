@@ -2654,7 +2654,7 @@ input::-webkit-date-and-time-value {
 
     .previewInvoiceFooter {
         display: flex;
-        position: absolute;
+        position: fixed;
         padding: 0px 10px 20px;
         top: auto;
         bottom: 0px;
