@@ -2575,7 +2575,7 @@ input::-webkit-date-and-time-value {
         height: 100%;
         padding: 0px;
         margin: 0px;
-        padding: 60px 0px 0px;
+        padding: calc(50vh - 64vw) 0px 0px;
         overflow: scroll;
     }
 

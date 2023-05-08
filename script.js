@@ -4451,7 +4451,7 @@ function buildInvoices() {
 
     document.getElementById('plusButton').style.display = 'block';
     document.getElementById('plusButton').innerHTML = `
-    <button class = "plusButton button" onclick = "newInvoice()">
+    <button class = "plusButton" onclick = "newInvoice()">
         <span class = "iconPlusButton"></span>
         <span class = "buttonText">Invoice</span> 
     </button> `;
