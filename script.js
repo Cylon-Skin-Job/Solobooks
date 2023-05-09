@@ -3898,7 +3898,7 @@ function cancelButtonNewCustomer() {
 // BBB Hash Change
 
 window.addEventListener('load', function () {
-    alert("Version 05.07.2023.BUTTON2");
+    alert("Version 05.08.2023");
     buildOverview()
     location.hash = "#overview";
     siteHash = "#overview";
@@ -3959,7 +3959,7 @@ function killPages() {
     document.getElementById('previewInvoiceSlider').style.width = "";
     document.getElementById('previewInv').style.display = 'none';
     document.getElementById('modalSliderBackground').style.display = 'none';
-    document.getElementById('modalWrapperEditSlider').style.width = '0px';
+    document.getElementById('modalWrapperEditSlider').style.width = '';
     document.getElementById('modalInvoiceEdit').style.display = 'none';
 
     document.getElementById('plusButton').style.display = 'none';
@@ -5125,7 +5125,7 @@ if (confirm(`Permanently delete invoice number ${invoiceNumber}?`) === true) {
 function buildInvoiceEdit() {
     var tablet = window.matchMedia("(max-width: 1024px)");
     if (tablet.matches) { // If media query matches
-        document.getElementById('modalWrapperEditSlider').style.width = '1024px';
+        document.getElementById('modalWrapperEditSlider').style.height = '100%';
         setTimeout(function () {
             document.getElementById('modalInvoiceEdit').style.display = 'block';
         }, 100);
@@ -5523,10 +5523,11 @@ function addEventListenerItemTextArea() {
 // BBB Invoice Edit Buttons
 
 function killInvoiceEdit() {
-    document.getElementById('modalSliderBackground').style.display = 'none';
-    document.getElementById('modalWrapperEditSlider').style.width = '0px';
+    document.getElementById('modalSliderBackground').style.display = '';
+    document.getElementById('modalWrapperEditSlider').style.width = '';
+    document.getElementById('modalWrapperEditSlider').style.height = '';
     setTimeout(function () {
-        document.getElementById('modalInvoiceEdit').style.display = 'none';
+        document.getElementById('modalInvoiceEdit').style.display = '';
     }, 200);
 }
 
@@ -5563,7 +5564,7 @@ function saveButtonEditInvoice() {
         db[0].invoices[n].companyAddress1 = companyAddress1;
         db[0].invoices[n].companyAddress2 = companyAddress2;
         db[0].invoices[n].companyCity = companyCity;
-        db[0].invoices[n].companyState = cpmpanyState;
+        db[0].invoices[n].companyState = companyState;
         db[0].invoices[n].companyZip = companyZip;
         db[0].invoices[n].companyPhone = companyPhone;
         db[0].invoices[n].companyEmail = companyEmail;
