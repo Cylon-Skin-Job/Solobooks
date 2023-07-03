@@ -2510,6 +2510,7 @@ input::-webkit-date-and-time-value {
 
     /* Tablet Modals */
 
+    .modalWrapperSlider,
 .modalWrapperEditSlider {
     background: white;
     position: fixed;
@@ -2539,6 +2540,8 @@ input::-webkit-date-and-time-value {
 .modalSliderFooter {
     height: 0px;
 }
+
+#cancelButtonExpense,
 #cancelButtonEditInvoice {
     position: fixed;
     top: 15px;
@@ -2548,6 +2551,7 @@ input::-webkit-date-and-time-value {
     color: darkblue;
 }
 
+#saveButtonExpense,
 #saveButtonEditInvoice {
     position: fixed;
     top: 15px;

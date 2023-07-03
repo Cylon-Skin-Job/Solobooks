@@ -4640,7 +4640,8 @@ function itemTemplates() {
     let modal = document.getElementById('modalWrapperSlider');
     document.getElementById('modalSliderBackground').style.display = 'block';
     modal.style.display = "block";
-    modal.style.width = "768px";
+    modal.style.width = "1024px";
+    modal.style.height = "100%";
     
         modal.innerHTML =
             `<h4 class="modalSliderH4">Item Templates</h4>
@@ -5901,6 +5902,7 @@ function buildInvoicePayment() {
     document.getElementById('modalSliderBackground').style.display = 'block';
     modal.style.display = "block";
     modal.style.width = "600px";
+    modal.style.height = "100%";
     if (invoicePayment === false) {
         modal.innerHTML = "";
         modal.innerHTML =
@@ -6018,8 +6020,9 @@ function saveButtonInvoicePayment() {
     }
     document.getElementById('modalSliderBackground').style.display = 'none';
     let modal = document.getElementById('modalWrapperSlider');
-    modal.style.width = "0px";
-    modal.style.display = "none";
+    modal.style.width = "";
+    modal.style.height = "";
+    modal.style.display = "";
     modal.innerHTML = '';
     buildInvoicePreview();
 }
@@ -6030,16 +6033,18 @@ function cancelButtonInvoicePayment() {
         if (confirm("Leave without saving changes?") === true) {
         document.getElementById('modalSliderBackground').style.display = 'none';
         let modal = document.getElementById('modalWrapperSlider');
-        modal.style.width = "0px";
-        modal.style.display = "none";
+        modal.style.width = "";
+        modal.style.height = "";
+        modal.style.display = "";
         modal.innerHTML = '';
         invoicePayment = db[0].invoices[n].invoicePayment;
         }
     } else {
         document.getElementById('modalSliderBackground').style.display = 'none';
         let modal = document.getElementById('modalWrapperSlider');
-        modal.style.width = "0px";
-        modal.style.display = "none";
+        modal.style.width = "";
+        modal.style.height = "";
+        modal.style.display = "";
         modal.innerHTML = '';
         invoicePayment = db[0].invoices[n].invoicePayment;
     }
@@ -6135,10 +6140,11 @@ function buildExpenseEdit(val) {
     document.getElementById('modalSliderBackground').style.display = 'block';
     modal.style.display = "block";
     modal.style.width = "1024px";
+    modal.style.height = "100%";
     expenseId = val;
     if (expenseId === 'new') {
         modal.innerHTML =
-            `<h4 class="modalH4 modalH4Gap">New Expense</h4>
+            `<h4 class="modalSliderH4"">New Expense</h4>
 
             <label for="expenseAmount" class="label">Amount</label>
             <input type="number" rows="1" cols="10" id="expenseAmount" inputtype="decimal" name="invoiceNewItemAmount" class="inputSmall" value="">
@@ -6170,7 +6176,7 @@ function buildExpenseEdit(val) {
              expenseNotes = db[3].expenses[i].expenseNotes;
 
         modal.innerHTML =
-            `<h4 class="modalH4 modalH4Gap">Edit Expense</h4>
+            `<h4 class="modalSliderH4">Edit Expense</h4>
 
             <label for="expenseAmount" class="label">Amount</label>
             <input type="number" rows="1" cols="10" id="expenseAmount" inputtype="decimal" name="invoiceNewItemAmount" class="inputSmall" value="${expenseAmount}">
@@ -6297,8 +6303,9 @@ function saveButtonExpense() {
         }
         db[3].expenses.push(newData);
 
-        modal.style.width = "0px";
-        modal.style.display = "none";
+        modal.style.width = "";
+        modal.style.display = "";
+        modal.style.height = "";
         modal.innerHTML = "";
         document.getElementById('modalSliderBackground').style.display = 'none';
         resetDataVariables();
@@ -6316,8 +6323,9 @@ function saveButtonExpense() {
                 db[3].expenses[i].expenseNotes = expenseNotes;
     }   
     }
-    modal.style.width = "0px";
-    modal.style.display = "none";
+    modal.style.width = "";
+    modal.style.display = "";
+    modal.style.height = "";
     modal.innerHTML = "";
     document.getElementById('modalSliderBackground').style.display = 'none';
     resetDataVariables();
@@ -6328,8 +6336,9 @@ function saveButtonExpense() {
 function cancelButtonExpense() {
 
     let modal = document.getElementById('modalWrapperSlider');
-    modal.style.width = "0px";
-    modal.style.display = "none";
+    modal.style.width = "";
+    modal.style.height = "";
+    modal.style.display = "";
     modal.innerHTML = "";
     document.getElementById('modalSliderBackground').style.display = 'none';
 }
@@ -6342,6 +6351,7 @@ function expenseCategories() {
     document.getElementById('modalSliderBackground').style.display = 'block';
     modal.style.display = "block";
     modal.style.width = "768px";
+    modal.style.height = "100%";
         modal.innerHTML =
             `<h4 class="modalSliderH4">Expense Categories</h4>
 
@@ -6532,7 +6542,8 @@ function buildCustomerView(val) {
     document.getElementById('modalSliderBackground').style.display = 'block';
     modal.style.display = "block";
     setTimeout(() => {
-        modal.style.width = "768px";
+        modal.style.width = "1024px";
+        modal.style.height = "100%";
     }, 10)
     customerId = val;
 
@@ -6647,8 +6658,9 @@ function closeButtonCustomer() {
     document.getElementById('modalSliderBackground').style.display = 'none';
     let thead = document.getElementById('customerViewThead');
     let modal = document.getElementById('modalWrapperSlider');
-    modal.style.width = "0px";
-    thead.style.width = "0px";
+    modal.style.width = "";
+    modal.style.height = "";
+    thead.style.width = "";
     setTimeout(() => {
         modal.style.display = "none";
     }, 220)
@@ -7048,8 +7060,9 @@ function saveButtonAddCustomer() {
 function newInvoiceFromCustomer() {
     let modal = document.getElementById('modalWrapperSlider');
     document.getElementById('modalSliderBackground').style.display = 'none';
-    modal.style.display = "none";
-    modal.style.width = "0px";
+    modal.style.display = "";
+    modal.style.width = "";
+    modal.style.height = "";
     modal.innerHTML = "";
     newInvoice();
 }
@@ -7526,8 +7539,9 @@ function cancelButtonCompany() {
 
 function closeButton() {
     document.getElementById('modalWrapperSlider').innerHTML = "";
-    document.getElementById('modalWrapperSlider').style.width = "0px";
-    document.getElementById('modalSliderBackground').style.display = "none";
+    document.getElementById('modalWrapperSlider').style.width = "";
+    document.getElementById('modalWrapperSlider').style.height = "";
+    document.getElementById('modalSliderBackground').style.display = "";
 }
 
 
