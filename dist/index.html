@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html>
+<!-- Head -->
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+    <script src="https://code.jquery.com/jquery-3.6.1.js"
+        integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI=" crossorigin="anonymous"></script>
+    <meta name="theme-color" content="#dbd8e3" media="(prefers-color-scheme: light)">
+    <meta name="theme-color" content="#dbd8e3" media="(prefers-color-scheme: dark)">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"
+        integrity="sha512-GsLlZN/3F2ErC5ifS5QtgpiJtWd43JWSuIgh7mbzZ8zBps+dvLusV+eNQATqgA/HdeKFVgA5v3S/cIrLF7QnIg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</head>
+
+
+<body>
+
+
+    <div class="siteGrid" id="siteGrid">
+
+        <!-- Navigation-->
+
+        <div class="siteHeader">
+            <header>
+                <h1>SoloBooks</h1>
+                <h2>RC Exhaust</h2>
+            </header>
+        </div>
+
+        <div class="siteNavBackground"></div>
+        <div class="siteNavBackgroundAlt"></div>
+
+        <div class="siteNav">
+            <nav>
+                <ul class="navigation">
+                    <li id="navOverview">
+
+                        <a href="#overview">
+                            <span class="material-symbols-outlined navIcon">
+                                bar_chart
+                            </span>
+                            Overview
+                        </a>
+
+                    </li>
+                    <li id="navInvoices">
+                        <a href="#invoices">
+                            <span class="material-symbols-outlined navIcon">
+                                description
+                            </span>
+                            Invoices
+                        </a>
+                    </li>
+                    <li id="navExpenses">
+                        <a href="#expenses" class="color">
+                            <span class="material-symbols-outlined navIcon">
+                                receipt_long
+                            </span>
+                            Expenses
+                        </a>
+                    </li>
+                    <li id="navCustomers">
+                        <a href="#customers">
+                            <span class="material-symbols-outlined navIcon">
+                                group
+                            </span>
+                            Customers
+                        </a>
+                    </li>
+                    <li id="navSettings">
+                        <a href="#settings">
+                            <span class="material-symbols-outlined navIcon">
+                                settings
+                            </span>
+
+                            Settings
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+
+        <!-- Section -->
+
+        <section>
+            <div class="siteSection" id="siteSection">
+                <h3 id="siteH3"></h3>
+            </div>
+        </section>
+
+        <!-- Plus Button -->
+
+        <div id="plusButton"></div>
+
+        <!-- Main Content Area-->
+
+        <div class="siteMain">
+            <main>
+
+                
+                <!-- Hides table content above the sticky elements as you scroll-->
+
+                <!-- Overview -->
+
+                <div class="siteContent" id="siteContentOverview">
+
+                     <label for="overviewSort" class="overviewSortLabel">Sort by</label>
+                     <select id="overviewSort" class="overviewSortSelector" name="overviewSort">
+                        <option selected value="ytd">Year-To-Date</option>
+                        <option value="lastY">Last Year</option>
+                        <option value="thisQ">This Quarter</option>
+                        <option value="lastQ">Last Quarter</option>
+                        <option value="thisM">This Month</option>
+                        <option value="lastM">Last Month</option>
+                        <option value="thisW">This Week</option>
+                        <option value="lastW">Last Week</option>
+                     </select>
+
+                    <div class="whitespaceFixed"></div>
+                    <div class="whitespaceSlider"></div>
+                    
+
+                    <!-- Charts -->
+
+                        <div class="overviewChartWrapperLarge overviewChartTop">
+                            <h5>Invoices</h5>
+                            <p class="overviewChartP" id = "O1">Year-to-date</p>
+                            <div class="overviewChartWrapperInvoiceStats">
+                                <span class="overviewChartInvoicePaidSpan" id="overviewPaidTotal"></span>
+                                <span class="overviewChartInvoiceUnpaidSpan" id="overviewUnpaidTotal"></span>
+                                <br>
+                                <span class="overviewChartInvoicePaid">Paid</span>
+                                <span class="overviewChartInvoiceUnpaid">Unpaid</span>
+                            </div>
+                            <div class="overviewChartWrapperInvoiceBars">
+                                <div class="invoiceBarPaid" id="invoiceBarPaid"></div>
+                                <div class="invoiceBarUnpaid" id="invoiceBarUnpaid"></div>
+                            </div>
+                        </div>
+
+
+                        <div class="overviewChartWrapperSmall">
+                            <h5 class="overviewChartH5">Cash Flow</h5>
+                            <p class="overviewChartP" id = "O2">Year-to-date</p>
+                            <br>
+                            <div class="overviewProfitLossChart">
+                                <div class="overviewBarPayments" id="overviewBarPayments"></div>
+                                <div class="overviewBarExpenses" id="overviewBarExpenses"></div>
+                                <div class="overviewBarProfit" id="overviewBarProfit"></div>
+                            </div>
+
+                            <ul class="overviewCashFlowUL">
+                                <li class="overviewPaymentsRecievedLI"><span class="overviewCashFlowSpan1" id="overviewPayments"></span><span class="overviewCashFlowSpan2"> Cash-In</span></li>
+                                <li class="overviewExpensesPaidLI"><span class="overviewCashFlowSpan1" id="overviewExpenses"></span><span class="overviewCashFlowSpan2"> Cash-Out</span></li>
+                                <li class="overviewRemainingProfitLI"><span class="overviewCashFlowSpan1" id="overviewProfit"></span><span class="overviewCashFlowSpan2"> Profit</span></li>
+                            </ul>
+                            
+                            
+                        
+                        </div>
+
+                        <div class="overviewChartWrapperSmall">
+                            <h5 class="overviewChartH5">Expenses</h5>
+                            <p class="overviewChartP" id ="O3">Year-to-date</p>
+                            <br>
+                            <br>
+                            <ul class="overviewExpenseList" id="overviewExpenseList">
+                            </ul>
+                        </div>
+
+                        <div class="overviewChartWrapperLarge overviewChartBottom">
+                            <h5>Payments</h5>
+                            <p class="overviewChartP" id ="O4">Year-to-date</p>
+                            <div class="overviewPaymentScrollDiv">
+                            <table id="paymentTable" class="overviewPaymentsTable">
+                                <tbody id="tbodyPayments" class="overviewPaymentsTbody">
+                                </tbody>
+                            </table>
+                            </div>
+                        </div>
+
+                </div>
+
+                    
+                    
+                <!-- End Overview-->
+
+                <!-- Main Tables -->
+                <div class="whitespace" id="whitespace"></div>
+                <div class="siteContent" id="siteContentMain">
+                    
+                    <div class="contentDiv">
+
+                        <!-- Unpaid Table-->
+                        <table class="mainTable" id="mainTable">
+                            <thead id ="mainTableHead">    
+                            </thead>
+                            
+                            <tbody class="rowHover" id="mainTableBody">
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+                <div class="siteContent" id="siteContentSettings">
+
+                </div>
+
+            </main>
+        </div>
+    </div>
+        <!-- Preview Invoice-->
+        <div id="previewInvoiceSlider" class="previewInvoiceSlider">
+            
+            <!-- Preview Invoice End-->
+        </div>
+        <!-- Invoice Slider End-->
+
+        <!-- Modal Grey Background-->
+        <div class="modalSliderBackground" id="modalSliderBackground"></div>
+
+        <!-- Modal Wrapper-->
+
+        <div class="modalWrapperEditSlider" id="modalWrapperEditSlider">
+
+            
+
+            <!-- Edit Invoice Container-->
+            <div class="modalSliderDiv" id="modalInvoiceEdit">
+
+                <!-- Edit Invoice Header-->
+                <h4 class="modalSliderH4">Edit Invoice</h4>
+
+                <!-- Edit Invoice Content-->
+                <div class="modalContentBox">
+
+                    <!-- Datepicker-->
+                    <label for="invoiceEditDatepicker">Date</label>
+                    <input type="date" id="invoiceEditDatepicker" name="invoiceDate" class="inputSmall" min="1997-01-01"
+                        max="2030-12-31">
+
+                    <!-- Customer Select-->
+                    <label for="invoiceEditCustomerSelect" class="label">Customer</label>
+                    <select id="invoiceEditCustomerSelect" class="input selector" name="customer">
+                    </select>
+
+                    <!-- Description Head-->
+                    <div class="itemDescriptionHeadWrapper">
+                        <span class="descriptionSpan">Description</span>
+                        <span class="amountSpan">Amount</span>
+                    </div>
+
+                    <!-- 1 Item Box-->
+                    <div class="itemDescriptionBodyWrapper">
+                        <span class="material-symbols-outlined expandDropdown">
+                            expand_more
+                        </span>
+
+                        <select id="invoiceEditItemSelect1" class="input selector2" name="customer">
+                        </select>
+
+                        <textarea id="invoiceEditItem1" name="description1" class="input descriptionTextarea"
+                            maxlength="160"></textarea>
+                        <input type="number" rows="1" cols="10" id="invoiceEditAmount1" inputtype="decimal"
+                            name="amount1" class="input amountTextarea" value="">
+                    </div>
+
+                    <!-- 2 Item Box-->
+                    <div class="itemDescriptionBodyWrapper">
+                        <span class="material-symbols-outlined expandDropdown">
+                            expand_more
+                        </span>
+
+                        <select id="invoiceEditItemSelect2" class="input selector2" name="customer">
+                        </select>
+
+                        <textarea id="invoiceEditItem2" name="description1" class="input descriptionTextarea"
+                            maxlength="160"></textarea>
+                        <input type="number" rows="1" cols="10" id="invoiceEditAmount2" inputtype="decimal"
+                            name="amount1" class="input amountTextarea">
+                    </div>
+
+                    <!-- 3 Item Box-->
+                    <div class="itemDescriptionBodyWrapper">
+                        <span class="material-symbols-outlined expandDropdown">
+                            expand_more
+                        </span>
+
+                        <select id="invoiceEditItemSelect3" class="input selector2" name="customer">
+                        </select>
+
+                        <textarea id="invoiceEditItem3" name="description1" class="input descriptionTextarea"
+                            maxlength="160"></textarea>
+                        <input type="number" rows="1" cols="10" id="invoiceEditAmount3" inputtype="decimal"
+                            name="amount1" class="input amountTextarea">
+                    </div>
+
+                    <!-- 4 Item Box-->
+                    <div class="itemDescriptionBodyWrapper">
+                        <span class="material-symbols-outlined expandDropdown">
+                            expand_more
+                        </span>
+
+                        <select id="invoiceEditItemSelect4" class="input selector2" name="customer">
+                        </select>
+
+                        <textarea id="invoiceEditItem4" name="description1" class="input descriptionTextarea"
+                            maxlength="160"></textarea>
+                        <input type="number" rows="1" cols="10" id="invoiceEditAmount4" inputtype="decimal"
+                            name="amount1" class="input amountTextarea">
+                    </div>
+
+                    <!-- 5 Item Box-->
+                    <div class="itemDescriptionBodyWrapper">
+                        <span class="material-symbols-outlined expandDropdown">
+                            expand_more
+                        </span>
+
+                        <select id="invoiceEditItemSelect5" class="input selector2" name="customer">
+                        </select>
+
+                        <textarea id="invoiceEditItem5" name="description1" class="input descriptionTextarea"
+                            maxlength="160"></textarea>
+                        <input type="number" rows="1" cols="10" id="invoiceEditAmount5" inputtype="decimal"
+                            name="amount1" class="input amountTextarea">
+                    </div>
+
+                    <!-- 6 Item Box-->
+                    <div class="itemDescriptionBodyWrapper">
+                        <span class="material-symbols-outlined expandDropdown">
+                            expand_more
+                        </span>
+
+                        <select id="invoiceEditItemSelect6" class="input selector2" name="customer">
+                        </select>
+
+                        <textarea id="invoiceEditItem6" name="description1" class="input descriptionTextarea"
+                            maxlength="160"></textarea>
+                        <input type="number" rows="1" cols="10" id="invoiceEditAmount6" inputtype="decimal"
+                            name="amount1" class="input amountTextarea">
+                    </div>
+                </div>
+
+                <!-- Edit Invoice Footer-->
+                <div class="modalSliderFooter">
+                    <button class="button modalFooterButton" id="cancelButtonEditInvoice" value=false>
+                        Cancel
+                    </button>
+
+                    <button class="button modalFooterButton" id="saveButtonEditInvoice">
+                        Save
+                    </button>
+                </div>
+            </div>
+            <!--Edit Invoice End-->
+
+            <!--New Invoice-->
+
+            
+            <!--Edit Invoice End-->
+        </div>
+    
+
+    <!--Modals-->
+
+    <div class="modalWrapperSlider" id="modalWrapperSlider">
+    </div>
+
+    <div class="modalPopUpBackground" id="modalPopUpBackground">
+        <div class="modalPopUpCenterBox" id="modalPopUpCenterBox"></div>
+    </div>
+
+    <div class="loadScreen" id="loadScreen">
+        <img src="https://cylon-skin-job.github.io/Solobooks/loading-gif.gif" alt="Loading">
+
+    </div>
+
+
+</body>
+
+<script src="bundle.js"></script>
+
+</html>
