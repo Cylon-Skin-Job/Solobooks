@@ -1,194 +1,96 @@
-// init firebase
-initializeApp(firebaseConfig)
 
-// init services
-const db = getFirestore()
-
-// collection ref
-const colRef = collection(db, 'invoices')
-
-let invoicesDb;
-let siteHash;
-
-// get collection data
-getDocs(colRef)
-  .then(snapshot => {
-    console.log(snapshot.docs)
-    let invoices = []
-    snapshot.docs.forEach(doc => {
-      invoices.push({ ...doc.data(), id: doc.id })
-    })
-    invoicesDb = invoices;
-    console.log(invoicesDb)
-  })
-  .catch(err => {
-    console.log(err.message)
-  })
-
-// BBB Event Listeners
-
-  window.addEventListener('load', function () {
-    alert("Version 05.08.2023");
-    //buildOverview()
-    location.hash = "#overview";
-    siteHash = "#overview";
-    console.log(invoicesDb)
-})
-
-
-
-window.addEventListener("hashchange", () => {
-  let newPage = location.hash.substring(1);
-  previewCheck(newPage);
-}, false);
-
-function previewCheck(page) {
-  if (page.length < 12) {
-      killPages();
-      siteHash = location.hash;
-      buildPage(page);
-  }
-}
-
-
-function buildPage(page) {
-  if (page === "overview") {
-      buildOverview();
-  } else if (page === "invoices") {
-      buildInvoices();
-    } else if (page === "expenses") {
-      buildExpenses();
-  } else if (page === "customers") {
-      buildCustomers();
-  } else if (page === "settings") {
-      buildSettings();
-  }
-}
-
-
-
-function killPages() {
-  document.getElementById('siteContentOverview').style.display = 'none';
-  document.getElementById('navOverview').className = 'off';
-  document.getElementById('siteContentMain').style.display = 'none';
-  document.getElementById('navInvoices').className = 'off';
-  document.getElementById('navExpenses').className = 'off';
-  document.getElementById('navCustomers').className = 'off';
-  document.getElementById('siteContentSettings').style.display = 'none';
-  document.getElementById('navSettings').className = 'off';
-  document.getElementById('previewInvoiceSlider').style.height = "";
-  document.getElementById('previewInvoiceSlider').style.width = "";
-  // document.getElementById('previewInv').style.display = 'none';
-  document.getElementById('modalSliderBackground').style.display = 'none';
-  document.getElementById('modalWrapperEditSlider').style.width = '';
-  document.getElementById('modalInvoiceEdit').style.display = 'none';
-
-  document.getElementById('plusButton').style.display = 'none';
-  document.getElementById('whitespace').innerHTML = "";
-} 
-
-function formatDate(date) {
-  return `${date.charAt(5)}${date.charAt(6)}/${date.charAt(8)}${date.charAt(9)}/${date.charAt(0)}${date.charAt(1)}${date.charAt(2)}${date.charAt(3)}`;
-}
-
-
-
-// Invoices
-
-let newInvoicePreview = false;
 
 function buildInvoices() {
-  document.getElementById('siteH3').innerText = 'Invoices';
-  document.getElementById('mainTableBody').innerHTML = "";
-  document.getElementById('navInvoices').className = 'active';
-  document.getElementById('siteContentMain').style.display = 'block'; // set the Invoices div to show content;
-  buildRowInvoices();
-
-  document.getElementById('plusButton').style.display = 'block';
-  document.getElementById('plusButton').innerHTML = `
-  <button class = "plusButton" id = "newInvoice">
-      <span class = "iconPlusButton"></span>
-      <span class = "buttonText">Invoice</span> 
-  </button> `;
-
-  document.getElementById('whitespace').innerHTML = 
-  `<input type="text" id="searchBox" class="searchBox" onkeyup="searchTable()" placeholder="Search...">
-  <button class="closeIcon" onclick="clearSearch()">X</button>
-  <span class="material-symbols-outlined searchIcon">search</span>
-  <button class = "blueLinkButton" onclick = "itemTemplates()">Manage Templates</button>`;
-
-  document.getElementById('mainTableHead').innerHTML = `<tr class = "tableHeadRow">
-                                  <th class="tdOrder3">DATE</th>
-                                  <th class="tdOrder4">NUMBER</th>
-                                  <th class="tdOrder1">CUSTOMER</th>
-                                  <th class="tdOrder2">AMOUNT</th>
-                                  <th class="tdOrder5">STATUS</th>
-                              </tr>`
-
-  const element = document.getElementById("newInvoice");
-  element.addEventListener("click", () => {
-    console.log("New Invoice")
-    document.getElementById('previewInvoiceSlider').style.height = '100%';
-    newInvoicePreview = true;
-    buildInvoicePreview();
-    buildInvoiceEdit();
-    location.hash = `#newInvoice${invoiceNumber}`;
-  })
-}
-
-function buildRowInvoices() {
-
-  let data = invoicesDb;
-
-  function compareStrings(a, b) {
-      return (a < b) ? -1 : (a > b) ? 1 : 0;
+    document.getElementById('siteH3').innerText = 'Invoices';
+    document.getElementById('mainTableBody').innerHTML = "";
+    document.getElementById('navInvoices').className = 'active';
+    document.getElementById('siteContentMain').style.display = 'block'; // set the Invoices div to show content;
+    buildRowInvoices();
+  
+    document.getElementById('plusButton').style.display = 'block';
+    document.getElementById('plusButton').innerHTML = `
+    <button class = "plusButton" id = "newInvoice">
+        <span class = "iconPlusButton"></span>
+        <span class = "buttonText">Invoice</span> 
+    </button> `;
+  
+    document.getElementById('whitespace').innerHTML = 
+    `<input type="text" id="searchBox" class="searchBox" onkeyup="searchTable()" placeholder="Search...">
+    <button class="closeIcon" onclick="clearSearch()">X</button>
+    <span class="material-symbols-outlined searchIcon">search</span>
+    <button class = "blueLinkButton" onclick = "itemTemplates()">Manage Templates</button>`;
+  
+    document.getElementById('mainTableHead').innerHTML = `<tr class = "tableHeadRow">
+                                    <th class="tdOrder3">DATE</th>
+                                    <th class="tdOrder4">NUMBER</th>
+                                    <th class="tdOrder1">CUSTOMER</th>
+                                    <th class="tdOrder2">AMOUNT</th>
+                                    <th class="tdOrder5">STATUS</th>
+                                </tr>`
+  
+    const element = document.getElementById("newInvoice");
+    element.addEventListener("click", () => {
+      console.log("New Invoice")
+      document.getElementById('previewInvoiceSlider').style.height = '100%';
+      newInvoicePreview = true;
+      buildInvoicePreview();
+      buildInvoiceEdit();
+      location.hash = `#newInvoice${invoiceNumber}`;
+    })
   }
-
-  data.sort(function (a, b) {
-      return compareStrings(b.invoiceDate, a.invoiceDate);
-  })
-
-  data.sort(function (a, b) {
-      if (a.invoiceDate === b.invoiceDate) {
-          return compareStrings(b.invoiceNumber, a.invoiceNumber);
-      }
-  })
-
-let invoiceTotal = 390
-  for (var i = 0; i < data.length; i++) {
-
-      // let invoiceTotal = invoiceTotalFromLocation(i);
-      let row;
-      if (data[i].payment === true) {
-              row = `<tr class="tableRow">
-            <td class = "tdOrder3">${formatDate(data[i].invoiceDate)}
-                          <a href = "#previewInv${data[i].invoiceNumber}" class = "rowLink" ></a></td >
-            <td class = "tdOrder4">${data[i].invoiceNumber}</td>
-            <td class= "tdOrder1">${data[i].customerName}</td>
-                          <td class= "tdOrder2">$${invoiceTotal.toFixed(2)}</td>
-                          <td class= "tdOrder5 green">PAID</td>
-        </tr>`;
-          
-      } else if (data[i].payment === false) {
-          row = `<tr class="tableRow">
-            <td class = "tdOrder3">${formatDate(data[i].invoiceDate)}
-                          <a href = "#previewInv${data[i].invoiceNumber}"
-                          class = "rowLink" ></a></td >
-            <td class = "tdOrder4">${data[i].invoiceNumber}</td>
-            <td class= "tdOrder1">${data[i].customerName}</td>
-                          <td class= "tdOrder2">$${invoiceTotal.toFixed(2)}</td>
-                          <td class = "tdOrder5 red">OPEN</td>
-        </tr>`;
-
-      } 
-      document.getElementById('mainTableBody').innerHTML += row;
-      }
-
-}
+  
+  function buildRowInvoices() {
+  
+    let data = invoicesDb;
+  
+    function compareStrings(a, b) {
+        return (a < b) ? -1 : (a > b) ? 1 : 0;
+    }
+  
+    data.sort(function (a, b) {
+        return compareStrings(b.invoiceDate, a.invoiceDate);
+    })
+  
+    data.sort(function (a, b) {
+        if (a.invoiceDate === b.invoiceDate) {
+            return compareStrings(b.invoiceNumber, a.invoiceNumber);
+        }
+    })
+  
+  let invoiceTotal = 390
+    for (var i = 0; i < data.length; i++) {
+  
+        // let invoiceTotal = invoiceTotalFromLocation(i);
+        let row;
+        if (data[i].payment === true) {
+                row = `<tr class="tableRow">
+              <td class = "tdOrder3">${formatDate(data[i].invoiceDate)}
+                            <a href = "#previewInv${data[i].invoiceNumber}" class = "rowLink" ></a></td >
+              <td class = "tdOrder4">${data[i].invoiceNumber}</td>
+              <td class= "tdOrder1">${data[i].customerName}</td>
+                            <td class= "tdOrder2">$${invoiceTotal.toFixed(2)}</td>
+                            <td class= "tdOrder5 green">PAID</td>
+          </tr>`;
+            
+        } else if (data[i].payment === false) {
+            row = `<tr class="tableRow">
+              <td class = "tdOrder3">${formatDate(data[i].invoiceDate)}
+                            <a href = "#previewInv${data[i].invoiceNumber}"
+                            class = "rowLink" ></a></td >
+              <td class = "tdOrder4">${data[i].invoiceNumber}</td>
+              <td class= "tdOrder1">${data[i].customerName}</td>
+                            <td class= "tdOrder2">$${invoiceTotal.toFixed(2)}</td>
+                            <td class = "tdOrder5 red">OPEN</td>
+          </tr>`;
+  
+        } 
+        document.getElementById('mainTableBody').innerHTML += row;
+        }
+  
+  }
 
 // Preview Invoice
 function buildInvoicePreview() {
-
 document.getElementById('previewInvoiceSlider').innerHTML = 
               
               `<div id="previewInv" class="previewInvoice">  
@@ -367,12 +269,5 @@ document.getElementById('previewInvoiceSlider').innerHTML =
   if (location.hash.charAt(1) === "i") {
       resetDataVariables();
   }
-  setInvoiceVariables();
   drawInvoice();
 }
-
-
-// New Invoice
-
-
-

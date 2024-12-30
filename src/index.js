@@ -1,3 +1,5 @@
+console.log("index")
+
 import { initializeApp } from 'firebase/app'
 import {
   getFirestore, collection, getDocs
@@ -12,4 +14,7 @@ const firebaseConfig = {
   appId: "1:468811698920:web:19cb5ca3086509082cef5d"
 }
 
+
+// init firebase
+initializeApp(firebaseConfig)
 
