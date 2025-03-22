@@ -12,7 +12,7 @@ window.addEventListener('load', function () {
 
 // Overview
 
-function buildOverview() {
+/* function buildOverview() {
     document.getElementById('siteH3').innerText = 'Overview';
     document.getElementById('navOverview').className = 'active'; // set navigation to light purple
     document.getElementById('siteContentOverview').style.display = 'flex'; // set the Overview div to show content;
@@ -91,4 +91,5 @@ function updateInvoiceTotals() { // checks invoice section of db for paid invoic
     }
     invoicesTotalPaid = counterPaid;
     invoicesTotalUnpaid = counterUnpaid;
-}
+} /*
+

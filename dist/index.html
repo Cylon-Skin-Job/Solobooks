@@ -107,7 +107,7 @@
 
                 <!-- Overview -->
 
-                <div class="siteContent" id="siteContentOverview">
+                <div class="siteContent" id="siteContentOverview" style = "display:none;">
 
                      <label for="overviewSort" class="overviewSortLabel">Sort by</label>
                      <select id="overviewSort" class="overviewSortSelector" name="overviewSort">
@@ -186,6 +186,8 @@
 
                 </div>
 
+
+
                     
                     
                 <!-- End Overview-->
@@ -198,7 +200,12 @@
 
                         <!-- Unpaid Table-->
                         <table class="mainTable" id="mainTable">
-                            <thead id ="mainTableHead">    
+                            <thead id ="mainTableHead">
+                                <tr>
+                                    <th>Name</th>
+                                    <th>Age</th>
+                                    <th>City</th>
+                                </tr>    
                             </thead>
                             
                             <tbody class="rowHover" id="mainTableBody">
